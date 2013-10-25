@@ -1,0 +1,1491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E15B58F174081DF006D1881 /* mensSwimmingSchedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E15B58E174081DF006D1881 /* mensSwimmingSchedule.txt */; };
+		1E15B59217408334006D1881 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E15B59117408334006D1881 /* ScheduleViewController.m */; };
+		1E18AACC174002A200AFA86F /* BowdoinNews.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E18AACB174002A200AFA86F /* BowdoinNews.png */; };
+		1E2F1772172881B80023515F /* mensCrew.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F176C172881B70023515F /* mensCrew.jpg */; };
+		1E2F1773172881B80023515F /* mensGolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F176D172881B70023515F /* mensGolf.jpg */; };
+		1E2F1774172881B80023515F /* mensRugby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F176E172881B70023515F /* mensRugby.jpg */; };
+		1E2F1775172881B80023515F /* mensSailing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F176F172881B80023515F /* mensSailing.jpg */; };
+		1E2F1776172881B80023515F /* mensSquash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F1770172881B80023515F /* mensSquash.jpg */; };
+		1E2F1777172881B80023515F /* mensTennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F1771172881B80023515F /* mensTennis.jpg */; };
+		1E2F177A172883550023515F /* ScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F1779172883550023515F /* ScheduleCell.m */; };
+		1E2F177D1728837D0023515F /* ScheduleTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F177C1728837D0023515F /* ScheduleTVC.m */; };
+		1E4837971734C04F008D8C06 /* FootballRosterPictures in Resources */ = {isa = PBXBuildFile; fileRef = 1E4837961734C04F008D8C06 /* FootballRosterPictures */; };
+		1EA69CD9173F1C2300C31786 /* News Story View Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA69CD8173F1C2300C31786 /* News Story View Controller.m */; };
+		1EBB3DF017223EF40032238C /* 9.-Bowdoin-College.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DEC17223EF40032238C /* 9.-Bowdoin-College.png */; };
+		1EBB3DF117223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DED17223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg */; };
+		1EBB3DF217223EF40032238C /* winter-quad-266.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DEE17223EF40032238C /* winter-quad-266.jpg */; };
+		1EBB3DF317223EF40032238C /* Bowdoin_College_Quad_308x150.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DEF17223EF40032238C /* Bowdoin_College_Quad_308x150.jpg */; };
+		1EBB3DF9172256AD0032238C /* RosterTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB3DF8172256AD0032238C /* RosterTVC.m */; };
+		1ECC555F173F092400EBD61D /* RSSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC555A173F092400EBD61D /* RSSCell.m */; };
+		1ECC5560173F092400EBD61D /* RSSTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC555C173F092400EBD61D /* RSSTVC.m */; };
+		1ECC5561173F092400EBD61D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC555E173F092400EBD61D /* WebViewController.m */; };
+		1ECC557A173F0DF300EBD61D /* RSSEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5573173F0DF300EBD61D /* RSSEntry.m */; };
+		1ECC557B173F0DF300EBD61D /* RSSHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5575173F0DF300EBD61D /* RSSHomeCell.m */; };
+		1ECC557C173F0DF300EBD61D /* RSSHomeTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5577173F0DF300EBD61D /* RSSHomeTVC.m */; };
+		1ECC557D173F0DF300EBD61D /* RSSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5579173F0DF300EBD61D /* RSSWebView.m */; };
+		1ECC5583173F0FDD00EBD61D /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5582173F0FDD00EBD61D /* NewsFeedViewController.m */; };
+		1ECC5586173F168200EBD61D /* TeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5585173F168200EBD61D /* TeamViewController.m */; };
+		1EFF35BF1725EFFA003A5A1E /* RosterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF35BE1725EFFA003A5A1E /* RosterCell.m */; };
+		CF024E1F180F0EC100F9CF54 /* B Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E1E180F0EC100F9CF54 /* B Logo.png */; };
+		CF024E21180FB11C00F9CF54 /* AddFav.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E20180FB11C00F9CF54 /* AddFav.png */; };
+		CF024E2518102BF200F9CF54 /* HomeB.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2418102BF200F9CF54 /* HomeB.png */; };
+		CF024E2718102ECF00F9CF54 /* HomeBearLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2618102ECF00F9CF54 /* HomeBearLogo.png */; };
+		CF024E291810304000F9CF54 /* FavsB.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E281810304000F9CF54 /* FavsB.png */; };
+		CF247A19173B40C50079AD32 /* LiveScoresLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A18173B40C50079AD32 /* LiveScoresLogo.png */; };
+		CF247A1B173B40D10079AD32 /* MyPhotosLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A1A173B40D10079AD32 /* MyPhotosLogo.png */; };
+		CF247A1D173B41040079AD32 /* MyTeamsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A1C173B41040079AD32 /* MyTeamsLogo.png */; };
+		CF247A1F173B41330079AD32 /* HomeBearLogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A1E173B41330079AD32 /* HomeBearLogo2.png */; };
+		CF247A21173B41510079AD32 /* TeamsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A20173B41510079AD32 /* TeamsLogo.png */; };
+		CF247A23173B42320079AD32 /* BowdoinMen.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A22173B42320079AD32 /* BowdoinMen.png */; };
+		CF247A25173B42370079AD32 /* BowdoinWomen.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A24173B42370079AD32 /* BowdoinWomen.png */; };
+		CF247A27173B423F0079AD32 /* BackButtonWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A26173B423F0079AD32 /* BackButtonWhite.png */; };
+		CF247A29173B425F0079AD32 /* LionHome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF247A28173B425F0079AD32 /* LionHome.jpg */; };
+		CF247A2B173B42680079AD32 /* BowdoinClawWhite.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF247A2A173B42680079AD32 /* BowdoinClawWhite.jpeg */; };
+		CF247A2D173B426C0079AD32 /* BowdoinClawBlack.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF247A2C173B426C0079AD32 /* BowdoinClawBlack.jpeg */; };
+		CF247A2F173B42830079AD32 /* BowdoinOfficailLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A2E173B42830079AD32 /* BowdoinOfficailLogo.png */; };
+		CF247A31173B428C0079AD32 /* GenericFaceProfilePic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF247A30173B428C0079AD32 /* GenericFaceProfilePic.jpg */; };
+		CF247A44173B6D6A0079AD32 /* LiveScoresBig.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A43173B6D6A0079AD32 /* LiveScoresBig.png */; };
+		CF247A46173B6D6F0079AD32 /* RecentPhotosBig.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A45173B6D6F0079AD32 /* RecentPhotosBig.png */; };
+		CF247A48173B6FD10079AD32 /* BowdoinMenFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A47173B6FD10079AD32 /* BowdoinMenFinal.png */; };
+		CF247A4A173B6FD60079AD32 /* BowdoinWomenFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A49173B6FD60079AD32 /* BowdoinWomenFinal.png */; };
+		CF247A4C173BD31B0079AD32 /* BowdoinLogin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF247A4B173BD31B0079AD32 /* BowdoinLogin.jpg */; };
+		CF247A4E173BD6890079AD32 /* wordmark.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A4D173BD6890079AD32 /* wordmark.png */; };
+		CF247A56173BD91D0079AD32 /* LoginButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A55173BD91D0079AD32 /* LoginButton2.png */; };
+		CF247A6D173BF7AB0079AD32 /* BowdoinClubFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A6C173BF7AB0079AD32 /* BowdoinClubFinal.png */; };
+		CF247A6E173BF7AB0079AD32 /* BowdoinClubFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A6C173BF7AB0079AD32 /* BowdoinClubFinal.png */; };
+		CF247A75173C0B8D0079AD32 /* PersonalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = CF247A74173C0B8D0079AD32 /* PersonalAccount.m */; };
+		CF247A76173C0B8D0079AD32 /* PersonalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = CF247A74173C0B8D0079AD32 /* PersonalAccount.m */; };
+		CF247A78173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF247A77173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt */; };
+		CF247A79173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF247A77173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt */; };
+		CF247A7E173C26720079AD32 /* WSoccerFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A7D173C26720079AD32 /* WSoccerFinal.png */; };
+		CF247A7F173C26720079AD32 /* WSoccerFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A7D173C26720079AD32 /* WSoccerFinal.png */; };
+		CF247A81173C26840079AD32 /* WLaxFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A80173C26840079AD32 /* WLaxFinal.png */; };
+		CF247A82173C26840079AD32 /* WLaxFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A80173C26840079AD32 /* WLaxFinal.png */; };
+		CF247A84173C269D0079AD32 /* MBballFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A83173C269D0079AD32 /* MBballFinal.png */; };
+		CF247A85173C269D0079AD32 /* MBballFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A83173C269D0079AD32 /* MBballFinal.png */; };
+		CF247A87173C26B90079AD32 /* WRugbyFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A86173C26B90079AD32 /* WRugbyFinal.png */; };
+		CF247A88173C26B90079AD32 /* WRugbyFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A86173C26B90079AD32 /* WRugbyFinal.png */; };
+		CF247A8A173C26CC0079AD32 /* CRoboCupFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A89173C26CC0079AD32 /* CRoboCupFinal.png */; };
+		CF247A8B173C26CC0079AD32 /* CRoboCupFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A89173C26CC0079AD32 /* CRoboCupFinal.png */; };
+		CF247A8D173C27DC0079AD32 /* MSailFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A8C173C27DC0079AD32 /* MSailFinal.png */; };
+		CF247A8E173C27DC0079AD32 /* MSailFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A8C173C27DC0079AD32 /* MSailFinal.png */; };
+		CF247A90173C28660079AD32 /* MTennisFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A8F173C28660079AD32 /* MTennisFinal.png */; };
+		CF247A91173C28660079AD32 /* MTennisFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A8F173C28660079AD32 /* MTennisFinal.png */; };
+		CF247A93173C2FA30079AD32 /* WCrewFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A92173C2FA30079AD32 /* WCrewFinal.png */; };
+		CF247A94173C2FA30079AD32 /* WCrewFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A92173C2FA30079AD32 /* WCrewFinal.png */; };
+		CF247A96173C307D0079AD32 /* MGolfFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A95173C307C0079AD32 /* MGolfFinal.png */; };
+		CF247A97173C307D0079AD32 /* MGolfFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A95173C307C0079AD32 /* MGolfFinal.png */; };
+		CF247A99173C308F0079AD32 /* MCrewFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A98173C308F0079AD32 /* MCrewFinal.png */; };
+		CF247A9A173C308F0079AD32 /* MCrewFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A98173C308F0079AD32 /* MCrewFinal.png */; };
+		CF247AA4173C31C00079AD32 /* WSkiFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AA3173C31C00079AD32 /* WSkiFinal.png */; };
+		CF247AA7173C31D70079AD32 /* MLaxFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AA6173C31D70079AD32 /* MLaxFinal.png */; };
+		CF247AA9173C31E70079AD32 /* WSailFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AA8173C31E70079AD32 /* WSailFinal.png */; };
+		CF247AAB173C31FE0079AD32 /* WGolfFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AAA173C31FE0079AD32 /* WGolfFinal.png */; };
+		CF247AAD173C32120079AD32 /* MBaseballFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AAC173C32120079AD32 /* MBaseballFinal.png */; };
+		CF247AAF173C322A0079AD32 /* WHockeyFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AAE173C322A0079AD32 /* WHockeyFinal.png */; };
+		CF247AB1173C323C0079AD32 /* WTrackFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AB0173C323C0079AD32 /* WTrackFinal.png */; };
+		CF247AB3173C324F0079AD32 /* WSquashFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AB2173C324F0079AD32 /* WSquashFinal.png */; };
+		CF247AB5173C32670079AD32 /* MRugbyFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AB4173C32670079AD32 /* MRugbyFinal.png */; };
+		CF247AB7173C32760079AD32 /* MSquashFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AB6173C32760079AD32 /* MSquashFinal.png */; };
+		CF247AB9173C32840079AD32 /* WCrossCountry.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AB8173C32840079AD32 /* WCrossCountry.png */; };
+		CF247ABB173C32940079AD32 /* WTennisFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247ABA173C32940079AD32 /* WTennisFinal.png */; };
+		CF247ABD173C32A70079AD32 /* WVoleyFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247ABC173C32A70079AD32 /* WVoleyFinal.png */; };
+		CF247ABF173C32B40079AD32 /* WSoftballFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247ABE173C32B40079AD32 /* WSoftballFinal.png */; };
+		CF247ADB173D8C280079AD32 /* BMenFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247ADA173D8C270079AD32 /* BMenFinal.png */; };
+		CF247ADD173D8C2C0079AD32 /* BWomenFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247ADC173D8C2B0079AD32 /* BWomenFinal.png */; };
+		CF247AE3173D8D0D0079AD32 /* BClubFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AE2173D8D0D0079AD32 /* BClubFinal.png */; };
+		CF247AE5173D8D140079AD32 /* WWaterPoloFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AE4173D8D130079AD32 /* WWaterPoloFinal.png */; };
+		CF247AE7173D8D1A0079AD32 /* MWaterPoloFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AE6173D8D190079AD32 /* MWaterPoloFinal.png */; };
+		CF247AE9173D8D660079AD32 /* iPhoneSetFallBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AE8173D8D660079AD32 /* iPhoneSetFallBackground.png */; };
+		CF247AEB173DAA0F0079AD32 /* WSwimFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AEA173DAA0E0079AD32 /* WSwimFinal.png */; };
+		CF247AED173DAA130079AD32 /* WBasketballFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AEC173DAA120079AD32 /* WBasketballFinal.png */; };
+		CF247AEF173DAC7B0079AD32 /* WFieldHockeyFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AEE173DAC7B0079AD32 /* WFieldHockeyFinal.png */; };
+		CF4684D7173DC2D1001F8A1F /* BOWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684D2173DC2D1001F8A1F /* BOWAppDelegate.m */; };
+		CF4684D8173DC2D1001F8A1F /* BOWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */; };
+		CF4684DB173DC4D0001F8A1F /* LoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4684DA173DC4D0001F8A1F /* LoginButton.png */; };
+		CF4684E1173DF963001F8A1F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4684E0173DF963001F8A1F /* Icon.png */; };
+		CF4684F0173DFD9B001F8A1F /* FlickrPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684E4173DFD9B001F8A1F /* FlickrPhotoViewController.m */; };
+		CF4684F1173DFD9B001F8A1F /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684E6173DFD9B001F8A1F /* Flickr.m */; };
+		CF4684F2173DFD9B001F8A1F /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684E8173DFD9B001F8A1F /* FlickrPhoto.m */; };
+		CF4684F3173DFD9B001F8A1F /* FlickrPracticeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684EA173DFD9B001F8A1F /* FlickrPracticeAppDelegate.m */; };
+		CF4684F5173DFD9B001F8A1F /* FlickrPracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684ED173DFD9B001F8A1F /* FlickrPracticeViewController.m */; };
+		CF4684F6173DFD9B001F8A1F /* FlickrPhotoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684EF173DFD9B001F8A1F /* FlickrPhotoHeaderView.m */; };
+		CF468501173E0246001F8A1F /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF468500173E0245001F8A1F /* FlickrPhotoCell.m */; };
+		CF56488F174096690067FBBB /* NewsfeedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF56488E174096690067FBBB /* NewsfeedIcon.png */; };
+		CF6568D5171782B700AE84AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D4171782B700AE84AC /* UIKit.framework */; };
+		CF6568D7171782B700AE84AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D6171782B700AE84AC /* Foundation.framework */; };
+		CF6568D9171782B700AE84AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D8171782B700AE84AC /* CoreGraphics.framework */; };
+		CF6568DF171782B700AE84AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF6568DD171782B700AE84AC /* InfoPlist.strings */; };
+		CF6568E1171782B700AE84AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6568E0171782B700AE84AC /* main.m */; };
+		CF6568E5171782B700AE84AC /* Pocket_RosterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6568E4171782B700AE84AC /* Pocket_RosterAppDelegate.m */; };
+		CF6568E7171782B700AE84AC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6568E6171782B700AE84AC /* Default.png */; };
+		CF6568E9171782B700AE84AC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6568E8171782B700AE84AC /* Default@2x.png */; };
+		CF6568EB171782B700AE84AC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6568EA171782B700AE84AC /* Default-568h@2x.png */; };
+		CF6568EE171782B700AE84AC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6568EC171782B700AE84AC /* MainStoryboard.storyboard */; };
+		CF6568F1171782B700AE84AC /* Pocket_RosterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6568F0171782B700AE84AC /* Pocket_RosterViewController.m */; };
+		CF6568F9171782B700AE84AC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568F8171782B700AE84AC /* SenTestingKit.framework */; };
+		CF6568FA171782B700AE84AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D4171782B700AE84AC /* UIKit.framework */; };
+		CF6568FB171782B700AE84AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D6171782B700AE84AC /* Foundation.framework */; };
+		CF656903171782B700AE84AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF656901171782B700AE84AC /* InfoPlist.strings */; };
+		CF656906171782B700AE84AC /* Pocket_RosterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF656905171782B700AE84AC /* Pocket_RosterTests.m */; };
+		CF6569161717863100AE84AC /* FlickrPhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6569141717863100AE84AC /* FlickrPhotoTableViewController.m */; };
+		CF65691A1717870700AE84AC /* LatestFlickrPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6569191717870700AE84AC /* LatestFlickrPhotosTVC.m */; };
+		CF65691D171787DF00AE84AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65691C171787DF00AE84AC /* AppDelegate.m */; };
+		CF656920171795E800AE84AC /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65691F171795E800AE84AC /* ImageViewController.m */; };
+		CF6569231717968500AE84AC /* AttributedStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6569221717968500AE84AC /* AttributedStringViewController.m */; };
+		CF65692A17179C1F00AE84AC /* BowdoinButton.jpm.png in Resources */ = {isa = PBXBuildFile; fileRef = CF65692917179C1F00AE84AC /* BowdoinButton.jpm.png */; };
+		CF65692C17179F9800AE84AC /* SwimmingCover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF65692B17179F9800AE84AC /* SwimmingCover.jpg */; };
+		CF65692E1717ABD700AE84AC /* SwimLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF65692D1717ABD700AE84AC /* SwimLogo.jpg */; };
+		CF6569321717BA1B00AE84AC /* FootballLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6569311717BA1B00AE84AC /* FootballLogo.png */; };
+		CF833B19171E14110011DED3 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF833B18171E14110011DED3 /* iPad.storyboard */; };
+		CF833B1D171E14430011DED3 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CF833B1C171E14420011DED3 /* FlickrFetcher.m */; };
+		CF833B28171ED4080011DED3 /* RosterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF833B27171ED4080011DED3 /* RosterViewController.m */; };
+		CF833B391720C0E40011DED3 /* BowdoinSwimming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B381720C0E40011DED3 /* BowdoinSwimming.jpg */; };
+		CF833B3A1720C0E40011DED3 /* BowdoinSwimming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B381720C0E40011DED3 /* BowdoinSwimming.jpg */; };
+		CF833B3D1720C38A0011DED3 /* BowdoinFootball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B3C1720C38A0011DED3 /* BowdoinFootball.jpg */; };
+		CF833B3E1720C38A0011DED3 /* BowdoinFootball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B3C1720C38A0011DED3 /* BowdoinFootball.jpg */; };
+		CF833B401720C73E0011DED3 /* BowdoinSoccer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B3F1720C73D0011DED3 /* BowdoinSoccer.jpg */; };
+		CF833B411720C73E0011DED3 /* BowdoinSoccer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B3F1720C73D0011DED3 /* BowdoinSoccer.jpg */; };
+		CF833B431720C8410011DED3 /* Bowdoin Basketball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B421720C8410011DED3 /* Bowdoin Basketball.jpg */; };
+		CF833B441720C8410011DED3 /* Bowdoin Basketball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B421720C8410011DED3 /* Bowdoin Basketball.jpg */; };
+		CF833B491720C9AC0011DED3 /* BowdoinHockey.png in Resources */ = {isa = PBXBuildFile; fileRef = CF833B481720C9AC0011DED3 /* BowdoinHockey.png */; };
+		CF833B4A1720C9AC0011DED3 /* BowdoinHockey.png in Resources */ = {isa = PBXBuildFile; fileRef = CF833B481720C9AC0011DED3 /* BowdoinHockey.png */; };
+		CF833B4C1720C9FF0011DED3 /* BowdoinLacrose.png in Resources */ = {isa = PBXBuildFile; fileRef = CF833B4B1720C9FF0011DED3 /* BowdoinLacrose.png */; };
+		CF833B4D1720C9FF0011DED3 /* BowdoinLacrose.png in Resources */ = {isa = PBXBuildFile; fileRef = CF833B4B1720C9FF0011DED3 /* BowdoinLacrose.png */; };
+		CF833B4F1720CAA80011DED3 /* BowdoinTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = CF833B4E1720CAA80011DED3 /* BowdoinTrack.png */; };
+		CF833B501720CAA80011DED3 /* BowdoinTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = CF833B4E1720CAA80011DED3 /* BowdoinTrack.png */; };
+		CF833B521720CAAD0011DED3 /* BowdoinBaseball.png in Resources */ = {isa = PBXBuildFile; fileRef = CF833B511720CAAD0011DED3 /* BowdoinBaseball.png */; };
+		CF833B531720CAAD0011DED3 /* BowdoinBaseball.png in Resources */ = {isa = PBXBuildFile; fileRef = CF833B511720CAAD0011DED3 /* BowdoinBaseball.png */; };
+		CF833B581720CBF50011DED3 /* Bowdoin Basketball 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B541720CBF50011DED3 /* Bowdoin Basketball 2.jpg */; };
+		CF833B591720CBF50011DED3 /* Bowdoin Basketball 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B541720CBF50011DED3 /* Bowdoin Basketball 2.jpg */; };
+		CF833B5A1720CBF50011DED3 /* BowdoinCrossCountry 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B551720CBF50011DED3 /* BowdoinCrossCountry 2.jpg */; };
+		CF833B5B1720CBF50011DED3 /* BowdoinCrossCountry 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B551720CBF50011DED3 /* BowdoinCrossCountry 2.jpg */; };
+		CF833B5C1720CBF50011DED3 /* BowdoinSoccer 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B561720CBF50011DED3 /* BowdoinSoccer 2.jpg */; };
+		CF833B5D1720CBF50011DED3 /* BowdoinSoccer 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B561720CBF50011DED3 /* BowdoinSoccer 2.jpg */; };
+		CF833B5E1720CBF50011DED3 /* BowdoinTrack 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF833B571720CBF50011DED3 /* BowdoinTrack 2.png */; };
+		CF833B5F1720CBF50011DED3 /* BowdoinTrack 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF833B571720CBF50011DED3 /* BowdoinTrack 2.png */; };
+		CF833B611720D19C0011DED3 /* BowdoinBearPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B601720D19C0011DED3 /* BowdoinBearPhoto.jpg */; };
+		CF833B621720D19C0011DED3 /* BowdoinBearPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B601720D19C0011DED3 /* BowdoinBearPhoto.jpg */; };
+		CF833B681720E2120011DED3 /* Lloyd Anderson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B631720E2120011DED3 /* Lloyd Anderson.jpg */; };
+		CF833B691720E2120011DED3 /* Lloyd Anderson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B631720E2120011DED3 /* Lloyd Anderson.jpg */; };
+		CF833B6A1720E2120011DED3 /* EliBass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B641720E2120011DED3 /* EliBass.jpg */; };
+		CF833B6B1720E2120011DED3 /* EliBass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B641720E2120011DED3 /* EliBass.jpg */; };
+		CF833B6C1720E2120011DED3 /* HenryBrockway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B651720E2120011DED3 /* HenryBrockway.jpg */; };
+		CF833B6D1720E2120011DED3 /* HenryBrockway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B651720E2120011DED3 /* HenryBrockway.jpg */; };
+		CF833B6E1720E2120011DED3 /* LyleAnderson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B661720E2120011DED3 /* LyleAnderson.jpg */; };
+		CF833B6F1720E2120011DED3 /* LyleAnderson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B661720E2120011DED3 /* LyleAnderson.jpg */; };
+		CF833B701720E2120011DED3 /* JoeClestin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B671720E2120011DED3 /* JoeClestin.jpg */; };
+		CF833B711720E2120011DED3 /* JoeClestin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B671720E2120011DED3 /* JoeClestin.jpg */; };
+		CF833B791720E8C30011DED3 /* Chris Granata.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B721720E8C30011DED3 /* Chris Granata.jpg */; };
+		CF833B7A1720E8C30011DED3 /* Chris Granata.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B721720E8C30011DED3 /* Chris Granata.jpg */; };
+		CF833B7B1720E8C30011DED3 /* Edwards Googins.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B731720E8C30011DED3 /* Edwards Googins.jpg */; };
+		CF833B7C1720E8C30011DED3 /* Edwards Googins.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B731720E8C30011DED3 /* Edwards Googins.jpg */; };
+		CF833B7D1720E8C30011DED3 /* Mark Fernandez.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B741720E8C30011DED3 /* Mark Fernandez.jpg */; };
+		CF833B7E1720E8C30011DED3 /* Mark Fernandez.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B741720E8C30011DED3 /* Mark Fernandez.jpg */; };
+		CF833B7F1720E8C30011DED3 /* JR Chansakul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B751720E8C30011DED3 /* JR Chansakul.jpg */; };
+		CF833B801720E8C30011DED3 /* JR Chansakul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B751720E8C30011DED3 /* JR Chansakul.jpg */; };
+		CF833B811720E8C30011DED3 /* AlexanderEdison.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B761720E8C30011DED3 /* AlexanderEdison.jpg */; };
+		CF833B821720E8C30011DED3 /* AlexanderEdison.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B761720E8C30011DED3 /* AlexanderEdison.jpg */; };
+		CF833B831720E8C30011DED3 /* Peter Deardorff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B771720E8C30011DED3 /* Peter Deardorff.jpg */; };
+		CF833B841720E8C30011DED3 /* Peter Deardorff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B771720E8C30011DED3 /* Peter Deardorff.jpg */; };
+		CF833B851720E8C30011DED3 /* Fred Elias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B781720E8C30011DED3 /* Fred Elias.jpg */; };
+		CF833B861720E8C30011DED3 /* Fred Elias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B781720E8C30011DED3 /* Fred Elias.jpg */; };
+		CF833B951720EBF80011DED3 /* Alexander Tougas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B871720EBF80011DED3 /* Alexander Tougas.jpg */; };
+		CF833B961720EBF80011DED3 /* Alexander Tougas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B871720EBF80011DED3 /* Alexander Tougas.jpg */; };
+		CF833B971720EBF80011DED3 /* Kevin Koh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B881720EBF80011DED3 /* Kevin Koh.jpg */; };
+		CF833B981720EBF80011DED3 /* Kevin Koh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B881720EBF80011DED3 /* Kevin Koh.jpg */; };
+		CF833B991720EBF80011DED3 /* Thomas Kramer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B891720EBF80011DED3 /* Thomas Kramer.jpg */; };
+		CF833B9A1720EBF80011DED3 /* Thomas Kramer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B891720EBF80011DED3 /* Thomas Kramer.jpg */; };
+		CF833B9B1720EBF80011DED3 /* Andrew Park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8A1720EBF80011DED3 /* Andrew Park.jpg */; };
+		CF833B9C1720EBF80011DED3 /* Andrew Park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8A1720EBF80011DED3 /* Andrew Park.jpg */; };
+		CF833B9D1720EBF80011DED3 /* Karl Reinhardt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8B1720EBF80011DED3 /* Karl Reinhardt.jpg */; };
+		CF833B9E1720EBF80011DED3 /* Karl Reinhardt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8B1720EBF80011DED3 /* Karl Reinhardt.jpg */; };
+		CF833B9F1720EBF80011DED3 /* Linc Rhodes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8C1720EBF80011DED3 /* Linc Rhodes.jpg */; };
+		CF833BA01720EBF80011DED3 /* Linc Rhodes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8C1720EBF80011DED3 /* Linc Rhodes.jpg */; };
+		CF833BA11720EBF80011DED3 /* Ryan Kulesza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8D1720EBF80011DED3 /* Ryan Kulesza.jpg */; };
+		CF833BA21720EBF80011DED3 /* Ryan Kulesza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8D1720EBF80011DED3 /* Ryan Kulesza.jpg */; };
+		CF833BA31720EBF80011DED3 /* Ryan Peabody.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8E1720EBF80011DED3 /* Ryan Peabody.jpg */; };
+		CF833BA41720EBF80011DED3 /* Ryan Peabody.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8E1720EBF80011DED3 /* Ryan Peabody.jpg */; };
+		CF833BA51720EBF80011DED3 /* Basyl Stuyvesant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8F1720EBF80011DED3 /* Basyl Stuyvesant.jpg */; };
+		CF833BA61720EBF80011DED3 /* Basyl Stuyvesant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8F1720EBF80011DED3 /* Basyl Stuyvesant.jpg */; };
+		CF833BA71720EBF80011DED3 /* Colin Kennedy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B901720EBF80011DED3 /* Colin Kennedy.jpg */; };
+		CF833BA81720EBF80011DED3 /* Colin Kennedy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B901720EBF80011DED3 /* Colin Kennedy.jpg */; };
+		CF833BA91720EBF80011DED3 /* Omar Sohail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B911720EBF80011DED3 /* Omar Sohail.jpg */; };
+		CF833BAA1720EBF80011DED3 /* Omar Sohail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B911720EBF80011DED3 /* Omar Sohail.jpg */; };
+		CF833BAB1720EBF80011DED3 /* Hugo Tran.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B921720EBF80011DED3 /* Hugo Tran.jpg */; };
+		CF833BAC1720EBF80011DED3 /* Hugo Tran.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B921720EBF80011DED3 /* Hugo Tran.jpg */; };
+		CF833BAD1720EBF80011DED3 /* William Shi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B931720EBF80011DED3 /* William Shi.jpg */; };
+		CF833BAE1720EBF80011DED3 /* William Shi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B931720EBF80011DED3 /* William Shi.jpg */; };
+		CF833BAF1720EBF80011DED3 /* John Lagasse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B941720EBF80011DED3 /* John Lagasse.jpg */; };
+		CF833BB01720EBF80011DED3 /* John Lagasse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B941720EBF80011DED3 /* John Lagasse.jpg */; };
+		CF833BBC17217CF20011DED3 /* Katherine Carter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB117217CF20011DED3 /* Katherine Carter.jpg */; };
+		CF833BBD17217CF20011DED3 /* Katherine Carter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB117217CF20011DED3 /* Katherine Carter.jpg */; };
+		CF833BBE17217CF20011DED3 /* Katherine Foley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB217217CF20011DED3 /* Katherine Foley.jpg */; };
+		CF833BBF17217CF20011DED3 /* Katherine Foley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB217217CF20011DED3 /* Katherine Foley.jpg */; };
+		CF833BC017217CF20011DED3 /* Lela Garner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB317217CF20011DED3 /* Lela Garner.jpg */; };
+		CF833BC117217CF20011DED3 /* Lela Garner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB317217CF20011DED3 /* Lela Garner.jpg */; };
+		CF833BC217217CF20011DED3 /* Megan Chong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB417217CF20011DED3 /* Megan Chong.jpg */; };
+		CF833BC317217CF20011DED3 /* Megan Chong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB417217CF20011DED3 /* Megan Chong.jpg */; };
+		CF833BC417217CF20011DED3 /* Patty Boyer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB517217CF20011DED3 /* Patty Boyer.jpg */; };
+		CF833BC517217CF20011DED3 /* Patty Boyer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB517217CF20011DED3 /* Patty Boyer.jpg */; };
+		CF833BC617217CF20011DED3 /* Teri Faller.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB617217CF20011DED3 /* Teri Faller.jpg */; };
+		CF833BC717217CF20011DED3 /* Teri Faller.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB617217CF20011DED3 /* Teri Faller.jpg */; };
+		CF833BC817217CF20011DED3 /* Kelsey Goodwin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB717217CF20011DED3 /* Kelsey Goodwin.jpg */; };
+		CF833BC917217CF20011DED3 /* Kelsey Goodwin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB717217CF20011DED3 /* Kelsey Goodwin.jpg */; };
+		CF833BCA17217CF20011DED3 /* Sarah Hirschfeld.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB817217CF20011DED3 /* Sarah Hirschfeld.jpg */; };
+		CF833BCB17217CF20011DED3 /* Sarah Hirschfeld.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB817217CF20011DED3 /* Sarah Hirschfeld.jpg */; };
+		CF833BCC17217CF20011DED3 /* Bridget Killian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB917217CF20011DED3 /* Bridget Killian.jpg */; };
+		CF833BCD17217CF20011DED3 /* Bridget Killian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB917217CF20011DED3 /* Bridget Killian.jpg */; };
+		CF833BCE17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BBA17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg */; };
+		CF833BCF17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BBA17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg */; };
+		CF833BD017217CF20011DED3 /* Tricia Hartley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BBB17217CF20011DED3 /* Tricia Hartley.jpg */; };
+		CF833BD117217CF20011DED3 /* Tricia Hartley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BBB17217CF20011DED3 /* Tricia Hartley.jpg */; };
+		CF833BDF1721821B0011DED3 /* Kaley Kokomoor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD21721821B0011DED3 /* Kaley Kokomoor.jpg */; };
+		CF833BE01721821B0011DED3 /* Kaley Kokomoor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD21721821B0011DED3 /* Kaley Kokomoor.jpg */; };
+		CF833BE11721821B0011DED3 /* Helen Newton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD31721821B0011DED3 /* Helen Newton.jpg */; };
+		CF833BE21721821B0011DED3 /* Helen Newton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD31721821B0011DED3 /* Helen Newton.jpg */; };
+		CF833BE31721821B0011DED3 /* Maeve O'Leary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD41721821B0011DED3 /* Maeve O'Leary.jpg */; };
+		CF833BE41721821B0011DED3 /* Maeve O'Leary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD41721821B0011DED3 /* Maeve O'Leary.jpg */; };
+		CF833BE51721821B0011DED3 /* Sasha Kramer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD51721821B0011DED3 /* Sasha Kramer.jpg */; };
+		CF833BE61721821B0011DED3 /* Sasha Kramer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD51721821B0011DED3 /* Sasha Kramer.jpg */; };
+		CF833BE71721821B0011DED3 /* Serena Taj.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD61721821B0011DED3 /* Serena Taj.jpg */; };
+		CF833BE81721821B0011DED3 /* Serena Taj.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD61721821B0011DED3 /* Serena Taj.jpg */; };
+		CF833BE91721821B0011DED3 /* Mariah Reading.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD71721821B0011DED3 /* Mariah Reading.jpg */; };
+		CF833BEA1721821B0011DED3 /* Mariah Reading.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD71721821B0011DED3 /* Mariah Reading.jpg */; };
+		CF833BEB1721821B0011DED3 /* Olivia Pfeifer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD81721821B0011DED3 /* Olivia Pfeifer.jpg */; };
+		CF833BEC1721821B0011DED3 /* Olivia Pfeifer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD81721821B0011DED3 /* Olivia Pfeifer.jpg */; };
+		CF833BED1721821B0011DED3 /* Sue Sim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD91721821B0011DED3 /* Sue Sim.jpg */; };
+		CF833BEE1721821B0011DED3 /* Sue Sim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD91721821B0011DED3 /* Sue Sim.jpg */; };
+		CF833BEF1721821B0011DED3 /* Caroline Moore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDA1721821B0011DED3 /* Caroline Moore.jpg */; };
+		CF833BF01721821B0011DED3 /* Caroline Moore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDA1721821B0011DED3 /* Caroline Moore.jpg */; };
+		CF833BF11721821B0011DED3 /* Christine Rholl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDB1721821B0011DED3 /* Christine Rholl.jpg */; };
+		CF833BF21721821B0011DED3 /* Christine Rholl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDB1721821B0011DED3 /* Christine Rholl.jpg */; };
+		CF833BF31721821B0011DED3 /* Laurel Varnell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDC1721821B0011DED3 /* Laurel Varnell.jpg */; };
+		CF833BF41721821B0011DED3 /* Laurel Varnell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDC1721821B0011DED3 /* Laurel Varnell.jpg */; };
+		CF833BF51721821B0011DED3 /* Sonia Manssen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDD1721821B0011DED3 /* Sonia Manssen.jpg */; };
+		CF833BF61721821B0011DED3 /* Sonia Manssen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDD1721821B0011DED3 /* Sonia Manssen.jpg */; };
+		CF833BF71721821B0011DED3 /* Sage Mikami.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDE1721821B0011DED3 /* Sage Mikami.jpg */; };
+		CF833BF81721821B0011DED3 /* Sage Mikami.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDE1721821B0011DED3 /* Sage Mikami.jpg */; };
+		CFD5FC5717E957D8002F2BA2 /* Get_Data_From_Website.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */; };
+		CFF5ECFB17FE448B0071814C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFA17FE448B0071814C /* Icon.png */; };
+		CFF5ECFD17FE45900071814C /* HomeBearLogo4.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFC17FE45900071814C /* HomeBearLogo4.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF6568FC171782B700AE84AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF6568C7171782B700AE84AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF6568CF171782B700AE84AC;
+			remoteInfo = "Pocket Roster";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E15B58E174081DF006D1881 /* mensSwimmingSchedule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mensSwimmingSchedule.txt; sourceTree = "<group>"; };
+		1E15B59017408334006D1881 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		1E15B59117408334006D1881 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		1E18AACB174002A200AFA86F /* BowdoinNews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinNews.png; sourceTree = "<group>"; };
+		1E2F176C172881B70023515F /* mensCrew.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensCrew.jpg; sourceTree = "<group>"; };
+		1E2F176D172881B70023515F /* mensGolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensGolf.jpg; sourceTree = "<group>"; };
+		1E2F176E172881B70023515F /* mensRugby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensRugby.jpg; sourceTree = "<group>"; };
+		1E2F176F172881B80023515F /* mensSailing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensSailing.jpg; sourceTree = "<group>"; };
+		1E2F1770172881B80023515F /* mensSquash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensSquash.jpg; sourceTree = "<group>"; };
+		1E2F1771172881B80023515F /* mensTennis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensTennis.jpg; sourceTree = "<group>"; };
+		1E2F1778172883550023515F /* ScheduleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleCell.h; sourceTree = "<group>"; };
+		1E2F1779172883550023515F /* ScheduleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleCell.m; sourceTree = "<group>"; };
+		1E2F177B1728837D0023515F /* ScheduleTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTVC.h; sourceTree = "<group>"; };
+		1E2F177C1728837D0023515F /* ScheduleTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTVC.m; sourceTree = "<group>"; };
+		1E4837961734C04F008D8C06 /* FootballRosterPictures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FootballRosterPictures; sourceTree = "<group>"; };
+		1EA69CD7173F1C2300C31786 /* News Story View Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "News Story View Controller.h"; path = "../News Story View Controller.h"; sourceTree = "<group>"; };
+		1EA69CD8173F1C2300C31786 /* News Story View Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "News Story View Controller.m"; path = "../News Story View Controller.m"; sourceTree = "<group>"; };
+		1EBB3DEC17223EF40032238C /* 9.-Bowdoin-College.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9.-Bowdoin-College.png"; sourceTree = "<group>"; };
+		1EBB3DED17223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bowdoin-hubbard-hall-spring-2012.jpg"; sourceTree = "<group>"; };
+		1EBB3DEE17223EF40032238C /* winter-quad-266.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "winter-quad-266.jpg"; sourceTree = "<group>"; };
+		1EBB3DEF17223EF40032238C /* Bowdoin_College_Quad_308x150.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bowdoin_College_Quad_308x150.jpg; sourceTree = "<group>"; };
+		1EBB3DF7172256AD0032238C /* RosterTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RosterTVC.h; path = ../RosterTVC.h; sourceTree = "<group>"; };
+		1EBB3DF8172256AD0032238C /* RosterTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RosterTVC.m; path = ../RosterTVC.m; sourceTree = "<group>"; };
+		1ECC5559173F092400EBD61D /* RSSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSCell.h; sourceTree = "<group>"; };
+		1ECC555A173F092400EBD61D /* RSSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSCell.m; sourceTree = "<group>"; };
+		1ECC555B173F092400EBD61D /* RSSTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSTVC.h; sourceTree = "<group>"; };
+		1ECC555C173F092400EBD61D /* RSSTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSTVC.m; sourceTree = "<group>"; };
+		1ECC555D173F092400EBD61D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		1ECC555E173F092400EBD61D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		1ECC5572173F0DF300EBD61D /* RSSEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSEntry.h; sourceTree = "<group>"; };
+		1ECC5573173F0DF300EBD61D /* RSSEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSEntry.m; sourceTree = "<group>"; };
+		1ECC5574173F0DF300EBD61D /* RSSHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSHomeCell.h; sourceTree = "<group>"; };
+		1ECC5575173F0DF300EBD61D /* RSSHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSHomeCell.m; sourceTree = "<group>"; };
+		1ECC5576173F0DF300EBD61D /* RSSHomeTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSHomeTVC.h; sourceTree = "<group>"; };
+		1ECC5577173F0DF300EBD61D /* RSSHomeTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSHomeTVC.m; sourceTree = "<group>"; };
+		1ECC5578173F0DF300EBD61D /* RSSWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSWebView.h; sourceTree = "<group>"; };
+		1ECC5579173F0DF300EBD61D /* RSSWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSWebView.m; sourceTree = "<group>"; };
+		1ECC5581173F0FDD00EBD61D /* NewsFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedViewController.h; sourceTree = "<group>"; };
+		1ECC5582173F0FDD00EBD61D /* NewsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedViewController.m; sourceTree = "<group>"; };
+		1ECC5584173F168200EBD61D /* TeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeamViewController.h; path = ../TeamViewController.h; sourceTree = "<group>"; };
+		1ECC5585173F168200EBD61D /* TeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeamViewController.m; path = ../TeamViewController.m; sourceTree = "<group>"; };
+		1EFF35BD1725EFFA003A5A1E /* RosterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RosterCell.h; path = ../RosterCell.h; sourceTree = "<group>"; };
+		1EFF35BE1725EFFA003A5A1E /* RosterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RosterCell.m; path = ../RosterCell.m; sourceTree = "<group>"; };
+		CF024E1E180F0EC100F9CF54 /* B Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "B Logo.png"; sourceTree = "<group>"; };
+		CF024E20180FB11C00F9CF54 /* AddFav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddFav.png; sourceTree = "<group>"; };
+		CF024E2418102BF200F9CF54 /* HomeB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeB.png; sourceTree = "<group>"; };
+		CF024E2618102ECF00F9CF54 /* HomeBearLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBearLogo.png; sourceTree = "<group>"; };
+		CF024E281810304000F9CF54 /* FavsB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavsB.png; sourceTree = "<group>"; };
+		CF247A18173B40C50079AD32 /* LiveScoresLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiveScoresLogo.png; sourceTree = "<group>"; };
+		CF247A1A173B40D10079AD32 /* MyPhotosLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyPhotosLogo.png; sourceTree = "<group>"; };
+		CF247A1C173B41040079AD32 /* MyTeamsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyTeamsLogo.png; sourceTree = "<group>"; };
+		CF247A1E173B41330079AD32 /* HomeBearLogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBearLogo2.png; sourceTree = "<group>"; };
+		CF247A20173B41510079AD32 /* TeamsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TeamsLogo.png; sourceTree = "<group>"; };
+		CF247A22173B42320079AD32 /* BowdoinMen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinMen.png; sourceTree = "<group>"; };
+		CF247A24173B42370079AD32 /* BowdoinWomen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinWomen.png; sourceTree = "<group>"; };
+		CF247A26173B423F0079AD32 /* BackButtonWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButtonWhite.png; sourceTree = "<group>"; };
+		CF247A28173B425F0079AD32 /* LionHome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LionHome.jpg; sourceTree = "<group>"; };
+		CF247A2A173B42680079AD32 /* BowdoinClawWhite.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinClawWhite.jpeg; sourceTree = "<group>"; };
+		CF247A2C173B426C0079AD32 /* BowdoinClawBlack.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinClawBlack.jpeg; sourceTree = "<group>"; };
+		CF247A2E173B42830079AD32 /* BowdoinOfficailLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinOfficailLogo.png; sourceTree = "<group>"; };
+		CF247A30173B428C0079AD32 /* GenericFaceProfilePic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GenericFaceProfilePic.jpg; sourceTree = "<group>"; };
+		CF247A43173B6D6A0079AD32 /* LiveScoresBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiveScoresBig.png; sourceTree = "<group>"; };
+		CF247A45173B6D6F0079AD32 /* RecentPhotosBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecentPhotosBig.png; sourceTree = "<group>"; };
+		CF247A47173B6FD10079AD32 /* BowdoinMenFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinMenFinal.png; sourceTree = "<group>"; };
+		CF247A49173B6FD60079AD32 /* BowdoinWomenFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinWomenFinal.png; sourceTree = "<group>"; };
+		CF247A4B173BD31B0079AD32 /* BowdoinLogin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinLogin.jpg; sourceTree = "<group>"; };
+		CF247A4D173BD6890079AD32 /* wordmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wordmark.png; sourceTree = "<group>"; };
+		CF247A55173BD91D0079AD32 /* LoginButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton2.png; sourceTree = "<group>"; };
+		CF247A6C173BF7AB0079AD32 /* BowdoinClubFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinClubFinal.png; sourceTree = "<group>"; };
+		CF247A73173C0B8D0079AD32 /* PersonalAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalAccount.h; sourceTree = "<group>"; };
+		CF247A74173C0B8D0079AD32 /* PersonalAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalAccount.m; sourceTree = "<group>"; };
+		CF247A77173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = POCKETROSTERTEXTFILE.txt; sourceTree = "<group>"; };
+		CF247A7D173C26720079AD32 /* WSoccerFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSoccerFinal.png; sourceTree = "<group>"; };
+		CF247A80173C26840079AD32 /* WLaxFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WLaxFinal.png; sourceTree = "<group>"; };
+		CF247A83173C269D0079AD32 /* MBballFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MBballFinal.png; sourceTree = "<group>"; };
+		CF247A86173C26B90079AD32 /* WRugbyFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WRugbyFinal.png; sourceTree = "<group>"; };
+		CF247A89173C26CC0079AD32 /* CRoboCupFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CRoboCupFinal.png; sourceTree = "<group>"; };
+		CF247A8C173C27DC0079AD32 /* MSailFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MSailFinal.png; sourceTree = "<group>"; };
+		CF247A8F173C28660079AD32 /* MTennisFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MTennisFinal.png; sourceTree = "<group>"; };
+		CF247A92173C2FA30079AD32 /* WCrewFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WCrewFinal.png; sourceTree = "<group>"; };
+		CF247A95173C307C0079AD32 /* MGolfFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MGolfFinal.png; sourceTree = "<group>"; };
+		CF247A98173C308F0079AD32 /* MCrewFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MCrewFinal.png; sourceTree = "<group>"; };
+		CF247AA3173C31C00079AD32 /* WSkiFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSkiFinal.png; sourceTree = "<group>"; };
+		CF247AA6173C31D70079AD32 /* MLaxFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MLaxFinal.png; sourceTree = "<group>"; };
+		CF247AA8173C31E70079AD32 /* WSailFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSailFinal.png; sourceTree = "<group>"; };
+		CF247AAA173C31FE0079AD32 /* WGolfFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WGolfFinal.png; sourceTree = "<group>"; };
+		CF247AAC173C32120079AD32 /* MBaseballFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MBaseballFinal.png; sourceTree = "<group>"; };
+		CF247AAE173C322A0079AD32 /* WHockeyFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WHockeyFinal.png; sourceTree = "<group>"; };
+		CF247AB0173C323C0079AD32 /* WTrackFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WTrackFinal.png; sourceTree = "<group>"; };
+		CF247AB2173C324F0079AD32 /* WSquashFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSquashFinal.png; sourceTree = "<group>"; };
+		CF247AB4173C32670079AD32 /* MRugbyFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MRugbyFinal.png; sourceTree = "<group>"; };
+		CF247AB6173C32760079AD32 /* MSquashFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MSquashFinal.png; sourceTree = "<group>"; };
+		CF247AB8173C32840079AD32 /* WCrossCountry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WCrossCountry.png; sourceTree = "<group>"; };
+		CF247ABA173C32940079AD32 /* WTennisFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WTennisFinal.png; sourceTree = "<group>"; };
+		CF247ABC173C32A70079AD32 /* WVoleyFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WVoleyFinal.png; sourceTree = "<group>"; };
+		CF247ABE173C32B40079AD32 /* WSoftballFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSoftballFinal.png; sourceTree = "<group>"; };
+		CF247ADA173D8C270079AD32 /* BMenFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMenFinal.png; sourceTree = "<group>"; };
+		CF247ADC173D8C2B0079AD32 /* BWomenFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BWomenFinal.png; sourceTree = "<group>"; };
+		CF247AE2173D8D0D0079AD32 /* BClubFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BClubFinal.png; sourceTree = "<group>"; };
+		CF247AE4173D8D130079AD32 /* WWaterPoloFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WWaterPoloFinal.png; sourceTree = "<group>"; };
+		CF247AE6173D8D190079AD32 /* MWaterPoloFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MWaterPoloFinal.png; sourceTree = "<group>"; };
+		CF247AE8173D8D660079AD32 /* iPhoneSetFallBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneSetFallBackground.png; sourceTree = "<group>"; };
+		CF247AEA173DAA0E0079AD32 /* WSwimFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSwimFinal.png; sourceTree = "<group>"; };
+		CF247AEC173DAA120079AD32 /* WBasketballFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WBasketballFinal.png; sourceTree = "<group>"; };
+		CF247AEE173DAC7B0079AD32 /* WFieldHockeyFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WFieldHockeyFinal.png; sourceTree = "<group>"; };
+		CF4684D1173DC2D1001F8A1F /* BOWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWAppDelegate.h; sourceTree = "<group>"; };
+		CF4684D2173DC2D1001F8A1F /* BOWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOWAppDelegate.m; sourceTree = "<group>"; };
+		CF4684D3173DC2D1001F8A1F /* BOWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWLoginViewController.h; sourceTree = "<group>"; };
+		CF4684D4173DC2D1001F8A1F /* BOWLoginViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWLoginViewControllerDelegate.h; sourceTree = "<group>"; };
+		CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOWLoginViewController.m; sourceTree = "<group>"; };
+		CF4684DA173DC4D0001F8A1F /* LoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton.png; sourceTree = "<group>"; };
+		CF4684E0173DF963001F8A1F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CF4684E3173DFD9B001F8A1F /* FlickrPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoViewController.h; sourceTree = "<group>"; };
+		CF4684E4173DFD9B001F8A1F /* FlickrPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoViewController.m; sourceTree = "<group>"; };
+		CF4684E5173DFD9B001F8A1F /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flickr.h; sourceTree = "<group>"; };
+		CF4684E6173DFD9B001F8A1F /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flickr.m; sourceTree = "<group>"; };
+		CF4684E7173DFD9B001F8A1F /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
+		CF4684E8173DFD9B001F8A1F /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
+		CF4684E9173DFD9B001F8A1F /* FlickrPracticeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPracticeAppDelegate.h; sourceTree = "<group>"; };
+		CF4684EA173DFD9B001F8A1F /* FlickrPracticeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPracticeAppDelegate.m; sourceTree = "<group>"; };
+		CF4684EC173DFD9B001F8A1F /* FlickrPracticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPracticeViewController.h; sourceTree = "<group>"; };
+		CF4684ED173DFD9B001F8A1F /* FlickrPracticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPracticeViewController.m; sourceTree = "<group>"; };
+		CF4684EE173DFD9B001F8A1F /* FlickrPhotoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoHeaderView.h; sourceTree = "<group>"; };
+		CF4684EF173DFD9B001F8A1F /* FlickrPhotoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoHeaderView.m; sourceTree = "<group>"; };
+		CF4684FF173E0245001F8A1F /* FlickrPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoCell.h; sourceTree = "<group>"; };
+		CF468500173E0245001F8A1F /* FlickrPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoCell.m; sourceTree = "<group>"; };
+		CF56488E174096690067FBBB /* NewsfeedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewsfeedIcon.png; sourceTree = "<group>"; };
+		CF6568D0171782B700AE84AC /* Pocket Roster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Roster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6568D4171782B700AE84AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF6568D6171782B700AE84AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF6568D8171782B700AE84AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF6568DC171782B700AE84AC /* Pocket Roster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pocket Roster-Info.plist"; sourceTree = "<group>"; };
+		CF6568DE171782B700AE84AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF6568E0171782B700AE84AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF6568E2171782B700AE84AC /* Pocket Roster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pocket Roster-Prefix.pch"; sourceTree = "<group>"; };
+		CF6568E3171782B700AE84AC /* Pocket_RosterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pocket_RosterAppDelegate.h; sourceTree = "<group>"; };
+		CF6568E4171782B700AE84AC /* Pocket_RosterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pocket_RosterAppDelegate.m; sourceTree = "<group>"; };
+		CF6568E6171782B700AE84AC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CF6568E8171782B700AE84AC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CF6568EA171782B700AE84AC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CF6568ED171782B700AE84AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		CF6568EF171782B700AE84AC /* Pocket_RosterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pocket_RosterViewController.h; sourceTree = "<group>"; };
+		CF6568F0171782B700AE84AC /* Pocket_RosterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pocket_RosterViewController.m; sourceTree = "<group>"; };
+		CF6568F7171782B700AE84AC /* Pocket RosterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pocket RosterTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6568F8171782B700AE84AC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CF656900171782B700AE84AC /* Pocket RosterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pocket RosterTests-Info.plist"; sourceTree = "<group>"; };
+		CF656902171782B700AE84AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF656904171782B700AE84AC /* Pocket_RosterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pocket_RosterTests.h; sourceTree = "<group>"; };
+		CF656905171782B700AE84AC /* Pocket_RosterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pocket_RosterTests.m; sourceTree = "<group>"; };
+		CF6569131717863100AE84AC /* FlickrPhotoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoTableViewController.h; sourceTree = "<group>"; };
+		CF6569141717863100AE84AC /* FlickrPhotoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTableViewController.m; sourceTree = "<group>"; };
+		CF6569181717870700AE84AC /* LatestFlickrPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestFlickrPhotosTVC.h; sourceTree = "<group>"; };
+		CF6569191717870700AE84AC /* LatestFlickrPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestFlickrPhotosTVC.m; sourceTree = "<group>"; };
+		CF65691B171787DF00AE84AC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF65691C171787DF00AE84AC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF65691E171795E800AE84AC /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		CF65691F171795E800AE84AC /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		CF6569211717968500AE84AC /* AttributedStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedStringViewController.h; sourceTree = "<group>"; };
+		CF6569221717968500AE84AC /* AttributedStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedStringViewController.m; sourceTree = "<group>"; };
+		CF656924171797A100AE84AC /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		CF65692917179C1F00AE84AC /* BowdoinButton.jpm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinButton.jpm.png; sourceTree = "<group>"; };
+		CF65692B17179F9800AE84AC /* SwimmingCover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwimmingCover.jpg; sourceTree = "<group>"; };
+		CF65692D1717ABD700AE84AC /* SwimLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwimLogo.jpg; sourceTree = "<group>"; };
+		CF6569311717BA1B00AE84AC /* FootballLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FootballLogo.png; sourceTree = "<group>"; };
+		CF833B18171E14110011DED3 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
+		CF833B1B171E143B0011DED3 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		CF833B1C171E14420011DED3 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		CF833B26171ED4080011DED3 /* RosterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosterViewController.h; sourceTree = "<group>"; };
+		CF833B27171ED4080011DED3 /* RosterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RosterViewController.m; sourceTree = "<group>"; };
+		CF833B381720C0E40011DED3 /* BowdoinSwimming.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinSwimming.jpg; sourceTree = "<group>"; };
+		CF833B3C1720C38A0011DED3 /* BowdoinFootball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinFootball.jpg; sourceTree = "<group>"; };
+		CF833B3F1720C73D0011DED3 /* BowdoinSoccer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinSoccer.jpg; sourceTree = "<group>"; };
+		CF833B421720C8410011DED3 /* Bowdoin Basketball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bowdoin Basketball.jpg"; sourceTree = "<group>"; };
+		CF833B481720C9AC0011DED3 /* BowdoinHockey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinHockey.png; sourceTree = "<group>"; };
+		CF833B4B1720C9FF0011DED3 /* BowdoinLacrose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinLacrose.png; sourceTree = "<group>"; };
+		CF833B4E1720CAA80011DED3 /* BowdoinTrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinTrack.png; sourceTree = "<group>"; };
+		CF833B511720CAAD0011DED3 /* BowdoinBaseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinBaseball.png; sourceTree = "<group>"; };
+		CF833B541720CBF50011DED3 /* Bowdoin Basketball 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bowdoin Basketball 2.jpg"; sourceTree = "<group>"; };
+		CF833B551720CBF50011DED3 /* BowdoinCrossCountry 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BowdoinCrossCountry 2.jpg"; sourceTree = "<group>"; };
+		CF833B561720CBF50011DED3 /* BowdoinSoccer 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BowdoinSoccer 2.jpg"; sourceTree = "<group>"; };
+		CF833B571720CBF50011DED3 /* BowdoinTrack 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BowdoinTrack 2.png"; sourceTree = "<group>"; };
+		CF833B601720D19C0011DED3 /* BowdoinBearPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinBearPhoto.jpg; sourceTree = "<group>"; };
+		CF833B631720E2120011DED3 /* Lloyd Anderson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lloyd Anderson.jpg"; sourceTree = "<group>"; };
+		CF833B641720E2120011DED3 /* EliBass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EliBass.jpg; sourceTree = "<group>"; };
+		CF833B651720E2120011DED3 /* HenryBrockway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HenryBrockway.jpg; sourceTree = "<group>"; };
+		CF833B661720E2120011DED3 /* LyleAnderson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LyleAnderson.jpg; sourceTree = "<group>"; };
+		CF833B671720E2120011DED3 /* JoeClestin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JoeClestin.jpg; sourceTree = "<group>"; };
+		CF833B721720E8C30011DED3 /* Chris Granata.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Chris Granata.jpg"; sourceTree = "<group>"; };
+		CF833B731720E8C30011DED3 /* Edwards Googins.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Edwards Googins.jpg"; sourceTree = "<group>"; };
+		CF833B741720E8C30011DED3 /* Mark Fernandez.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mark Fernandez.jpg"; sourceTree = "<group>"; };
+		CF833B751720E8C30011DED3 /* JR Chansakul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "JR Chansakul.jpg"; sourceTree = "<group>"; };
+		CF833B761720E8C30011DED3 /* AlexanderEdison.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlexanderEdison.jpg; sourceTree = "<group>"; };
+		CF833B771720E8C30011DED3 /* Peter Deardorff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Peter Deardorff.jpg"; sourceTree = "<group>"; };
+		CF833B781720E8C30011DED3 /* Fred Elias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fred Elias.jpg"; sourceTree = "<group>"; };
+		CF833B871720EBF80011DED3 /* Alexander Tougas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Alexander Tougas.jpg"; sourceTree = "<group>"; };
+		CF833B881720EBF80011DED3 /* Kevin Koh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kevin Koh.jpg"; sourceTree = "<group>"; };
+		CF833B891720EBF80011DED3 /* Thomas Kramer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Thomas Kramer.jpg"; sourceTree = "<group>"; };
+		CF833B8A1720EBF80011DED3 /* Andrew Park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Andrew Park.jpg"; sourceTree = "<group>"; };
+		CF833B8B1720EBF80011DED3 /* Karl Reinhardt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Karl Reinhardt.jpg"; sourceTree = "<group>"; };
+		CF833B8C1720EBF80011DED3 /* Linc Rhodes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Linc Rhodes.jpg"; sourceTree = "<group>"; };
+		CF833B8D1720EBF80011DED3 /* Ryan Kulesza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ryan Kulesza.jpg"; sourceTree = "<group>"; };
+		CF833B8E1720EBF80011DED3 /* Ryan Peabody.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ryan Peabody.jpg"; sourceTree = "<group>"; };
+		CF833B8F1720EBF80011DED3 /* Basyl Stuyvesant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Basyl Stuyvesant.jpg"; sourceTree = "<group>"; };
+		CF833B901720EBF80011DED3 /* Colin Kennedy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Colin Kennedy.jpg"; sourceTree = "<group>"; };
+		CF833B911720EBF80011DED3 /* Omar Sohail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Omar Sohail.jpg"; sourceTree = "<group>"; };
+		CF833B921720EBF80011DED3 /* Hugo Tran.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hugo Tran.jpg"; sourceTree = "<group>"; };
+		CF833B931720EBF80011DED3 /* William Shi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "William Shi.jpg"; sourceTree = "<group>"; };
+		CF833B941720EBF80011DED3 /* John Lagasse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "John Lagasse.jpg"; sourceTree = "<group>"; };
+		CF833BB117217CF20011DED3 /* Katherine Carter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katherine Carter.jpg"; sourceTree = "<group>"; };
+		CF833BB217217CF20011DED3 /* Katherine Foley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katherine Foley.jpg"; sourceTree = "<group>"; };
+		CF833BB317217CF20011DED3 /* Lela Garner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lela Garner.jpg"; sourceTree = "<group>"; };
+		CF833BB417217CF20011DED3 /* Megan Chong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Megan Chong.jpg"; sourceTree = "<group>"; };
+		CF833BB517217CF20011DED3 /* Patty Boyer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Patty Boyer.jpg"; sourceTree = "<group>"; };
+		CF833BB617217CF20011DED3 /* Teri Faller.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Teri Faller.jpg"; sourceTree = "<group>"; };
+		CF833BB717217CF20011DED3 /* Kelsey Goodwin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kelsey Goodwin.jpg"; sourceTree = "<group>"; };
+		CF833BB817217CF20011DED3 /* Sarah Hirschfeld.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sarah Hirschfeld.jpg"; sourceTree = "<group>"; };
+		CF833BB917217CF20011DED3 /* Bridget Killian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bridget Killian.jpg"; sourceTree = "<group>"; };
+		CF833BBA17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Caitlin Hutchinson Maddox.jpg"; sourceTree = "<group>"; };
+		CF833BBB17217CF20011DED3 /* Tricia Hartley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tricia Hartley.jpg"; sourceTree = "<group>"; };
+		CF833BD21721821B0011DED3 /* Kaley Kokomoor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kaley Kokomoor.jpg"; sourceTree = "<group>"; };
+		CF833BD31721821B0011DED3 /* Helen Newton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Helen Newton.jpg"; sourceTree = "<group>"; };
+		CF833BD41721821B0011DED3 /* Maeve O'Leary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Maeve O'Leary.jpg"; sourceTree = "<group>"; };
+		CF833BD51721821B0011DED3 /* Sasha Kramer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sasha Kramer.jpg"; sourceTree = "<group>"; };
+		CF833BD61721821B0011DED3 /* Serena Taj.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Serena Taj.jpg"; sourceTree = "<group>"; };
+		CF833BD71721821B0011DED3 /* Mariah Reading.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mariah Reading.jpg"; sourceTree = "<group>"; };
+		CF833BD81721821B0011DED3 /* Olivia Pfeifer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Olivia Pfeifer.jpg"; sourceTree = "<group>"; };
+		CF833BD91721821B0011DED3 /* Sue Sim.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sue Sim.jpg"; sourceTree = "<group>"; };
+		CF833BDA1721821B0011DED3 /* Caroline Moore.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Caroline Moore.jpg"; sourceTree = "<group>"; };
+		CF833BDB1721821B0011DED3 /* Christine Rholl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Christine Rholl.jpg"; sourceTree = "<group>"; };
+		CF833BDC1721821B0011DED3 /* Laurel Varnell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Laurel Varnell.jpg"; sourceTree = "<group>"; };
+		CF833BDD1721821B0011DED3 /* Sonia Manssen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sonia Manssen.jpg"; sourceTree = "<group>"; };
+		CF833BDE1721821B0011DED3 /* Sage Mikami.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sage Mikami.jpg"; sourceTree = "<group>"; };
+		CFD5FC5517E957D7002F2BA2 /* Get_Data_From_Website.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Get_Data_From_Website.h; sourceTree = "<group>"; };
+		CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Get_Data_From_Website.m; sourceTree = "<group>"; };
+		CFF5ECFA17FE448B0071814C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = "Pocket Roster/Icon.png"; sourceTree = "<group>"; };
+		CFF5ECFC17FE45900071814C /* HomeBearLogo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBearLogo4.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF6568CD171782B700AE84AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6568D5171782B700AE84AC /* UIKit.framework in Frameworks */,
+				CF6568D7171782B700AE84AC /* Foundation.framework in Frameworks */,
+				CF6568D9171782B700AE84AC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6568F3171782B700AE84AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6568F9171782B700AE84AC /* SenTestingKit.framework in Frameworks */,
+				CF6568FA171782B700AE84AC /* UIKit.framework in Frameworks */,
+				CF6568FB171782B700AE84AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EBB3DF4172241650032238C /* Swim Team */ = {
+			isa = PBXGroup;
+			children = (
+				1E15B58E174081DF006D1881 /* mensSwimmingSchedule.txt */,
+				CF833BD21721821B0011DED3 /* Kaley Kokomoor.jpg */,
+				CF833BD31721821B0011DED3 /* Helen Newton.jpg */,
+				CF833BD41721821B0011DED3 /* Maeve O'Leary.jpg */,
+				CF833BD51721821B0011DED3 /* Sasha Kramer.jpg */,
+				CF833BD61721821B0011DED3 /* Serena Taj.jpg */,
+				CF833BD71721821B0011DED3 /* Mariah Reading.jpg */,
+				CF833BD81721821B0011DED3 /* Olivia Pfeifer.jpg */,
+				CF833BD91721821B0011DED3 /* Sue Sim.jpg */,
+				CF833BDA1721821B0011DED3 /* Caroline Moore.jpg */,
+				CF833BDB1721821B0011DED3 /* Christine Rholl.jpg */,
+				CF833BDC1721821B0011DED3 /* Laurel Varnell.jpg */,
+				CF833BDD1721821B0011DED3 /* Sonia Manssen.jpg */,
+				CF833BDE1721821B0011DED3 /* Sage Mikami.jpg */,
+				CF833BB117217CF20011DED3 /* Katherine Carter.jpg */,
+				CF833BB217217CF20011DED3 /* Katherine Foley.jpg */,
+				CF833BB317217CF20011DED3 /* Lela Garner.jpg */,
+				CF833BB417217CF20011DED3 /* Megan Chong.jpg */,
+				CF833BB517217CF20011DED3 /* Patty Boyer.jpg */,
+				CF833BB617217CF20011DED3 /* Teri Faller.jpg */,
+				CF833BB717217CF20011DED3 /* Kelsey Goodwin.jpg */,
+				CF833BB817217CF20011DED3 /* Sarah Hirschfeld.jpg */,
+				CF833BB917217CF20011DED3 /* Bridget Killian.jpg */,
+				CF833BBA17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg */,
+				CF833BBB17217CF20011DED3 /* Tricia Hartley.jpg */,
+				CF833B871720EBF80011DED3 /* Alexander Tougas.jpg */,
+				CF833B881720EBF80011DED3 /* Kevin Koh.jpg */,
+				CF833B891720EBF80011DED3 /* Thomas Kramer.jpg */,
+				CF833B8A1720EBF80011DED3 /* Andrew Park.jpg */,
+				CF833B8B1720EBF80011DED3 /* Karl Reinhardt.jpg */,
+				CF833B8C1720EBF80011DED3 /* Linc Rhodes.jpg */,
+				CF833B8D1720EBF80011DED3 /* Ryan Kulesza.jpg */,
+				CF833B8E1720EBF80011DED3 /* Ryan Peabody.jpg */,
+				CF833B8F1720EBF80011DED3 /* Basyl Stuyvesant.jpg */,
+				CF833B901720EBF80011DED3 /* Colin Kennedy.jpg */,
+				CF833B911720EBF80011DED3 /* Omar Sohail.jpg */,
+				CF833B921720EBF80011DED3 /* Hugo Tran.jpg */,
+				CF833B931720EBF80011DED3 /* William Shi.jpg */,
+				CF833B941720EBF80011DED3 /* John Lagasse.jpg */,
+				CF833B721720E8C30011DED3 /* Chris Granata.jpg */,
+				CF833B731720E8C30011DED3 /* Edwards Googins.jpg */,
+				CF833B741720E8C30011DED3 /* Mark Fernandez.jpg */,
+				CF833B751720E8C30011DED3 /* JR Chansakul.jpg */,
+				CF833B761720E8C30011DED3 /* AlexanderEdison.jpg */,
+				CF833B771720E8C30011DED3 /* Peter Deardorff.jpg */,
+				CF833B781720E8C30011DED3 /* Fred Elias.jpg */,
+				CF833B631720E2120011DED3 /* Lloyd Anderson.jpg */,
+				CF833B641720E2120011DED3 /* EliBass.jpg */,
+				CF833B651720E2120011DED3 /* HenryBrockway.jpg */,
+				CF833B661720E2120011DED3 /* LyleAnderson.jpg */,
+				CF833B671720E2120011DED3 /* JoeClestin.jpg */,
+			);
+			name = "Swim Team";
+			sourceTree = "<group>";
+		};
+		1ECC557E173F0EE400EBD61D /* Roster */ = {
+			isa = PBXGroup;
+			children = (
+				1EFF35BD1725EFFA003A5A1E /* RosterCell.h */,
+				1EFF35BE1725EFFA003A5A1E /* RosterCell.m */,
+				1EBB3DF7172256AD0032238C /* RosterTVC.h */,
+				1EBB3DF8172256AD0032238C /* RosterTVC.m */,
+			);
+			name = Roster;
+			sourceTree = "<group>";
+		};
+		1ECC557F173F0EF300EBD61D /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				1E2F1778172883550023515F /* ScheduleCell.h */,
+				1E2F1779172883550023515F /* ScheduleCell.m */,
+				1E2F177B1728837D0023515F /* ScheduleTVC.h */,
+				1E2F177C1728837D0023515F /* ScheduleTVC.m */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		1ECC5580173F0F0500EBD61D /* RSS News */ = {
+			isa = PBXGroup;
+			children = (
+				1EA69CD7173F1C2300C31786 /* News Story View Controller.h */,
+				1EA69CD8173F1C2300C31786 /* News Story View Controller.m */,
+				1ECC5581173F0FDD00EBD61D /* NewsFeedViewController.h */,
+				1ECC5582173F0FDD00EBD61D /* NewsFeedViewController.m */,
+				1ECC5559173F092400EBD61D /* RSSCell.h */,
+				1ECC555A173F092400EBD61D /* RSSCell.m */,
+				1ECC555B173F092400EBD61D /* RSSTVC.h */,
+				1ECC555C173F092400EBD61D /* RSSTVC.m */,
+				1ECC555D173F092400EBD61D /* WebViewController.h */,
+				1ECC555E173F092400EBD61D /* WebViewController.m */,
+				1ECC5572173F0DF300EBD61D /* RSSEntry.h */,
+				1ECC5573173F0DF300EBD61D /* RSSEntry.m */,
+				1ECC5574173F0DF300EBD61D /* RSSHomeCell.h */,
+				1ECC5575173F0DF300EBD61D /* RSSHomeCell.m */,
+				1ECC5576173F0DF300EBD61D /* RSSHomeTVC.h */,
+				1ECC5577173F0DF300EBD61D /* RSSHomeTVC.m */,
+				1ECC5578173F0DF300EBD61D /* RSSWebView.h */,
+				1ECC5579173F0DF300EBD61D /* RSSWebView.m */,
+			);
+			name = "RSS News";
+			sourceTree = "<group>";
+		};
+		CF024E1D180F0EB000F9CF54 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				CF024E281810304000F9CF54 /* FavsB.png */,
+				CF024E2418102BF200F9CF54 /* HomeB.png */,
+				CF024E20180FB11C00F9CF54 /* AddFav.png */,
+				CF024E1E180F0EC100F9CF54 /* B Logo.png */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		CF247A16173B408F0079AD32 /* General Images */ = {
+			isa = PBXGroup;
+			children = (
+				CF024E2618102ECF00F9CF54 /* HomeBearLogo.png */,
+				CFF5ECFC17FE45900071814C /* HomeBearLogo4.png */,
+				CF56488E174096690067FBBB /* NewsfeedIcon.png */,
+				CF247A6C173BF7AB0079AD32 /* BowdoinClubFinal.png */,
+				1E18AACB174002A200AFA86F /* BowdoinNews.png */,
+				CF247A55173BD91D0079AD32 /* LoginButton2.png */,
+				CF247A4D173BD6890079AD32 /* wordmark.png */,
+				CF247A4B173BD31B0079AD32 /* BowdoinLogin.jpg */,
+				CF247A49173B6FD60079AD32 /* BowdoinWomenFinal.png */,
+				CF247A47173B6FD10079AD32 /* BowdoinMenFinal.png */,
+				CF247A45173B6D6F0079AD32 /* RecentPhotosBig.png */,
+				CF247A43173B6D6A0079AD32 /* LiveScoresBig.png */,
+				CF247A30173B428C0079AD32 /* GenericFaceProfilePic.jpg */,
+				CF247A2E173B42830079AD32 /* BowdoinOfficailLogo.png */,
+				CF247A2C173B426C0079AD32 /* BowdoinClawBlack.jpeg */,
+				CF247A2A173B42680079AD32 /* BowdoinClawWhite.jpeg */,
+				CF247A28173B425F0079AD32 /* LionHome.jpg */,
+				CF247A26173B423F0079AD32 /* BackButtonWhite.png */,
+				CF247A24173B42370079AD32 /* BowdoinWomen.png */,
+				CF247A22173B42320079AD32 /* BowdoinMen.png */,
+				CF247A20173B41510079AD32 /* TeamsLogo.png */,
+				CF247A1E173B41330079AD32 /* HomeBearLogo2.png */,
+				CF247A1C173B41040079AD32 /* MyTeamsLogo.png */,
+				CF247A1A173B40D10079AD32 /* MyPhotosLogo.png */,
+				CF247A18173B40C50079AD32 /* LiveScoresLogo.png */,
+			);
+			name = "General Images";
+			sourceTree = "<group>";
+		};
+		CF4684BE173DBF8E001F8A1F /* TumbnailFinal */ = {
+			isa = PBXGroup;
+			children = (
+				CF247AE4173D8D130079AD32 /* WWaterPoloFinal.png */,
+				1E2F176C172881B70023515F /* mensCrew.jpg */,
+				1E2F176D172881B70023515F /* mensGolf.jpg */,
+				1E2F176E172881B70023515F /* mensRugby.jpg */,
+				1E2F176F172881B80023515F /* mensSailing.jpg */,
+				1E2F1770172881B80023515F /* mensSquash.jpg */,
+				1E2F1771172881B80023515F /* mensTennis.jpg */,
+				CF833B601720D19C0011DED3 /* BowdoinBearPhoto.jpg */,
+				1EBB3DED17223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg */,
+				1EBB3DEE17223EF40032238C /* winter-quad-266.jpg */,
+				1EBB3DEF17223EF40032238C /* Bowdoin_College_Quad_308x150.jpg */,
+				CF833B541720CBF50011DED3 /* Bowdoin Basketball 2.jpg */,
+				CF833B551720CBF50011DED3 /* BowdoinCrossCountry 2.jpg */,
+				CF833B561720CBF50011DED3 /* BowdoinSoccer 2.jpg */,
+				CF833B571720CBF50011DED3 /* BowdoinTrack 2.png */,
+				CF833B511720CAAD0011DED3 /* BowdoinBaseball.png */,
+				CF833B4E1720CAA80011DED3 /* BowdoinTrack.png */,
+				CF833B4B1720C9FF0011DED3 /* BowdoinLacrose.png */,
+				CF833B481720C9AC0011DED3 /* BowdoinHockey.png */,
+				CF833B421720C8410011DED3 /* Bowdoin Basketball.jpg */,
+				CF833B3F1720C73D0011DED3 /* BowdoinSoccer.jpg */,
+				CF833B3C1720C38A0011DED3 /* BowdoinFootball.jpg */,
+				CF833B381720C0E40011DED3 /* BowdoinSwimming.jpg */,
+				CF6569311717BA1B00AE84AC /* FootballLogo.png */,
+				CF65692D1717ABD700AE84AC /* SwimLogo.jpg */,
+				CF65692B17179F9800AE84AC /* SwimmingCover.jpg */,
+				CF65692917179C1F00AE84AC /* BowdoinButton.jpm.png */,
+				CF247AE2173D8D0D0079AD32 /* BClubFinal.png */,
+				CF247ADC173D8C2B0079AD32 /* BWomenFinal.png */,
+				CF247ADA173D8C270079AD32 /* BMenFinal.png */,
+				CF247AB2173C324F0079AD32 /* WSquashFinal.png */,
+				CF247AB0173C323C0079AD32 /* WTrackFinal.png */,
+				CF247AAE173C322A0079AD32 /* WHockeyFinal.png */,
+				CF247AAC173C32120079AD32 /* MBaseballFinal.png */,
+				CF247AB4173C32670079AD32 /* MRugbyFinal.png */,
+				CF247AAA173C31FE0079AD32 /* WGolfFinal.png */,
+				CF247AA8173C31E70079AD32 /* WSailFinal.png */,
+				CF247AA6173C31D70079AD32 /* MLaxFinal.png */,
+				CF247AA3173C31C00079AD32 /* WSkiFinal.png */,
+				CF247A98173C308F0079AD32 /* MCrewFinal.png */,
+				CF247AB6173C32760079AD32 /* MSquashFinal.png */,
+				CF247AB8173C32840079AD32 /* WCrossCountry.png */,
+				CF247A95173C307C0079AD32 /* MGolfFinal.png */,
+				CF247A92173C2FA30079AD32 /* WCrewFinal.png */,
+				CF247ABC173C32A70079AD32 /* WVoleyFinal.png */,
+				CF247ABE173C32B40079AD32 /* WSoftballFinal.png */,
+				CF247ABA173C32940079AD32 /* WTennisFinal.png */,
+				CF247A8F173C28660079AD32 /* MTennisFinal.png */,
+				CF247A8C173C27DC0079AD32 /* MSailFinal.png */,
+				CF247A89173C26CC0079AD32 /* CRoboCupFinal.png */,
+				CF247A86173C26B90079AD32 /* WRugbyFinal.png */,
+				CF247A83173C269D0079AD32 /* MBballFinal.png */,
+				CF247A80173C26840079AD32 /* WLaxFinal.png */,
+				CF247A7D173C26720079AD32 /* WSoccerFinal.png */,
+				CF247AE6173D8D190079AD32 /* MWaterPoloFinal.png */,
+				CF247AEE173DAC7B0079AD32 /* WFieldHockeyFinal.png */,
+				CF247AEA173DAA0E0079AD32 /* WSwimFinal.png */,
+				CF247AEC173DAA120079AD32 /* WBasketballFinal.png */,
+			);
+			name = TumbnailFinal;
+			sourceTree = "<group>";
+		};
+		CF4684C0173DC009001F8A1F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CF4684DA173DC4D0001F8A1F /* LoginButton.png */,
+				CF4684D1173DC2D1001F8A1F /* BOWAppDelegate.h */,
+				CF4684D2173DC2D1001F8A1F /* BOWAppDelegate.m */,
+				CF4684D3173DC2D1001F8A1F /* BOWLoginViewController.h */,
+				CF4684D4173DC2D1001F8A1F /* BOWLoginViewControllerDelegate.h */,
+				CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */,
+				CF4684C3173DC034001F8A1F /* Supporting Files */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		CF4684C3173DC034001F8A1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF4684E2173DFD59001F8A1F /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				CF4684FF173E0245001F8A1F /* FlickrPhotoCell.h */,
+				CF468500173E0245001F8A1F /* FlickrPhotoCell.m */,
+				CF4684E3173DFD9B001F8A1F /* FlickrPhotoViewController.h */,
+				CF4684E4173DFD9B001F8A1F /* FlickrPhotoViewController.m */,
+				CF4684E5173DFD9B001F8A1F /* Flickr.h */,
+				CF4684E6173DFD9B001F8A1F /* Flickr.m */,
+				CF4684E7173DFD9B001F8A1F /* FlickrPhoto.h */,
+				CF4684E8173DFD9B001F8A1F /* FlickrPhoto.m */,
+				CF4684E9173DFD9B001F8A1F /* FlickrPracticeAppDelegate.h */,
+				CF4684EA173DFD9B001F8A1F /* FlickrPracticeAppDelegate.m */,
+				CF4684EC173DFD9B001F8A1F /* FlickrPracticeViewController.h */,
+				CF4684ED173DFD9B001F8A1F /* FlickrPracticeViewController.m */,
+				CF4684EE173DFD9B001F8A1F /* FlickrPhotoHeaderView.h */,
+				CF4684EF173DFD9B001F8A1F /* FlickrPhotoHeaderView.m */,
+			);
+			name = Flickr;
+			sourceTree = "<group>";
+		};
+		CF6568C5171782B700AE84AC = {
+			isa = PBXGroup;
+			children = (
+				1E15B59017408334006D1881 /* ScheduleViewController.h */,
+				1E15B59117408334006D1881 /* ScheduleViewController.m */,
+				CFF5ECFA17FE448B0071814C /* Icon.png */,
+				CF4684BE173DBF8E001F8A1F /* TumbnailFinal */,
+				CF247AE8173D8D660079AD32 /* iPhoneSetFallBackground.png */,
+				1EBB3DF4172241650032238C /* Swim Team */,
+				1EBB3DEC17223EF40032238C /* 9.-Bowdoin-College.png */,
+				1E4837961734C04F008D8C06 /* FootballRosterPictures */,
+				CF247A16173B408F0079AD32 /* General Images */,
+				CF6568DA171782B700AE84AC /* Pocket Roster */,
+				CF6568FE171782B700AE84AC /* Pocket RosterTests */,
+				CF6568D3171782B700AE84AC /* Frameworks */,
+				CF6568D1171782B700AE84AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF6568D1171782B700AE84AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF6568D0171782B700AE84AC /* Pocket Roster.app */,
+				CF6568F7171782B700AE84AC /* Pocket RosterTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF6568D3171782B700AE84AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF6568D4171782B700AE84AC /* UIKit.framework */,
+				CF6568D6171782B700AE84AC /* Foundation.framework */,
+				CF6568D8171782B700AE84AC /* CoreGraphics.framework */,
+				CF6568F8171782B700AE84AC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF6568DA171782B700AE84AC /* Pocket Roster */ = {
+			isa = PBXGroup;
+			children = (
+				CF024E1D180F0EB000F9CF54 /* New Group */,
+				CF4684E0173DF963001F8A1F /* Icon.png */,
+				CF247A77173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt */,
+				CF4684C0173DC009001F8A1F /* Login */,
+				CF4684E2173DFD59001F8A1F /* Flickr */,
+				CF247A74173C0B8D0079AD32 /* PersonalAccount.m */,
+				CF247A73173C0B8D0079AD32 /* PersonalAccount.h */,
+				1ECC5584173F168200EBD61D /* TeamViewController.h */,
+				1ECC5585173F168200EBD61D /* TeamViewController.m */,
+				1ECC557E173F0EE400EBD61D /* Roster */,
+				1ECC5580173F0F0500EBD61D /* RSS News */,
+				1ECC557F173F0EF300EBD61D /* Schedule */,
+				CF6569131717863100AE84AC /* FlickrPhotoTableViewController.h */,
+				CF6569141717863100AE84AC /* FlickrPhotoTableViewController.m */,
+				CF65691B171787DF00AE84AC /* AppDelegate.h */,
+				CF65691C171787DF00AE84AC /* AppDelegate.m */,
+				CF6569181717870700AE84AC /* LatestFlickrPhotosTVC.h */,
+				CF6569191717870700AE84AC /* LatestFlickrPhotosTVC.m */,
+				CF656924171797A100AE84AC /* FlickrAPIKey.h */,
+				CF833B1C171E14420011DED3 /* FlickrFetcher.m */,
+				CF833B1B171E143B0011DED3 /* FlickrFetcher.h */,
+				CF833B18171E14110011DED3 /* iPad.storyboard */,
+				CF6568E3171782B700AE84AC /* Pocket_RosterAppDelegate.h */,
+				CF6568E4171782B700AE84AC /* Pocket_RosterAppDelegate.m */,
+				CF6569211717968500AE84AC /* AttributedStringViewController.h */,
+				CF6569221717968500AE84AC /* AttributedStringViewController.m */,
+				CF6568EC171782B700AE84AC /* MainStoryboard.storyboard */,
+				CFD5FC5517E957D7002F2BA2 /* Get_Data_From_Website.h */,
+				CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */,
+				CF833B26171ED4080011DED3 /* RosterViewController.h */,
+				CF833B27171ED4080011DED3 /* RosterViewController.m */,
+				CF6568EF171782B700AE84AC /* Pocket_RosterViewController.h */,
+				CF6568F0171782B700AE84AC /* Pocket_RosterViewController.m */,
+				CF65691E171795E800AE84AC /* ImageViewController.h */,
+				CF65691F171795E800AE84AC /* ImageViewController.m */,
+				CF6568DB171782B700AE84AC /* Supporting Files */,
+			);
+			path = "Pocket Roster";
+			sourceTree = "<group>";
+		};
+		CF6568DB171782B700AE84AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF6568DC171782B700AE84AC /* Pocket Roster-Info.plist */,
+				CF6568DD171782B700AE84AC /* InfoPlist.strings */,
+				CF6568E0171782B700AE84AC /* main.m */,
+				CF6568E2171782B700AE84AC /* Pocket Roster-Prefix.pch */,
+				CF6568E6171782B700AE84AC /* Default.png */,
+				CF6568E8171782B700AE84AC /* Default@2x.png */,
+				CF6568EA171782B700AE84AC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF6568FE171782B700AE84AC /* Pocket RosterTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF656904171782B700AE84AC /* Pocket_RosterTests.h */,
+				CF656905171782B700AE84AC /* Pocket_RosterTests.m */,
+				CF6568FF171782B700AE84AC /* Supporting Files */,
+			);
+			path = "Pocket RosterTests";
+			sourceTree = "<group>";
+		};
+		CF6568FF171782B700AE84AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF656900171782B700AE84AC /* Pocket RosterTests-Info.plist */,
+				CF656901171782B700AE84AC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF6568CF171782B700AE84AC /* Pocket Roster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF656909171782B700AE84AC /* Build configuration list for PBXNativeTarget "Pocket Roster" */;
+			buildPhases = (
+				CF6568CC171782B700AE84AC /* Sources */,
+				CF6568CD171782B700AE84AC /* Frameworks */,
+				CF6568CE171782B700AE84AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pocket Roster";
+			productName = "Pocket Roster";
+			productReference = CF6568D0171782B700AE84AC /* Pocket Roster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF6568F6171782B700AE84AC /* Pocket RosterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF65690C171782B700AE84AC /* Build configuration list for PBXNativeTarget "Pocket RosterTests" */;
+			buildPhases = (
+				CF6568F2171782B700AE84AC /* Sources */,
+				CF6568F3171782B700AE84AC /* Frameworks */,
+				CF6568F4171782B700AE84AC /* Resources */,
+				CF6568F5171782B700AE84AC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF6568FD171782B700AE84AC /* PBXTargetDependency */,
+			);
+			name = "Pocket RosterTests";
+			productName = "Pocket RosterTests";
+			productReference = CF6568F7171782B700AE84AC /* Pocket RosterTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF6568C7171782B700AE84AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "Pocket Roster";
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Pocket Roster";
+				TargetAttributes = {
+					CF6568CF171782B700AE84AC = {
+						DevelopmentTeam = 3KJ7PYAZ5Y;
+					};
+				};
+			};
+			buildConfigurationList = CF6568CA171782B700AE84AC /* Build configuration list for PBXProject "Pocket Roster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF6568C5171782B700AE84AC;
+			productRefGroup = CF6568D1171782B700AE84AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF6568CF171782B700AE84AC /* Pocket Roster */,
+				CF6568F6171782B700AE84AC /* Pocket RosterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF6568CE171782B700AE84AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6568DF171782B700AE84AC /* InfoPlist.strings in Resources */,
+				CF6568E7171782B700AE84AC /* Default.png in Resources */,
+				CF6568E9171782B700AE84AC /* Default@2x.png in Resources */,
+				CF6568EB171782B700AE84AC /* Default-568h@2x.png in Resources */,
+				CF6568EE171782B700AE84AC /* MainStoryboard.storyboard in Resources */,
+				CF65692A17179C1F00AE84AC /* BowdoinButton.jpm.png in Resources */,
+				CF65692C17179F9800AE84AC /* SwimmingCover.jpg in Resources */,
+				CF65692E1717ABD700AE84AC /* SwimLogo.jpg in Resources */,
+				CF6569321717BA1B00AE84AC /* FootballLogo.png in Resources */,
+				CF833B19171E14110011DED3 /* iPad.storyboard in Resources */,
+				CF833B391720C0E40011DED3 /* BowdoinSwimming.jpg in Resources */,
+				CF024E2518102BF200F9CF54 /* HomeB.png in Resources */,
+				CF833B3D1720C38A0011DED3 /* BowdoinFootball.jpg in Resources */,
+				CF833B401720C73E0011DED3 /* BowdoinSoccer.jpg in Resources */,
+				CF833B431720C8410011DED3 /* Bowdoin Basketball.jpg in Resources */,
+				CF833B491720C9AC0011DED3 /* BowdoinHockey.png in Resources */,
+				CF833B4C1720C9FF0011DED3 /* BowdoinLacrose.png in Resources */,
+				CF833B4F1720CAA80011DED3 /* BowdoinTrack.png in Resources */,
+				CF833B521720CAAD0011DED3 /* BowdoinBaseball.png in Resources */,
+				CF833B581720CBF50011DED3 /* Bowdoin Basketball 2.jpg in Resources */,
+				CF833B5A1720CBF50011DED3 /* BowdoinCrossCountry 2.jpg in Resources */,
+				CF833B5C1720CBF50011DED3 /* BowdoinSoccer 2.jpg in Resources */,
+				CF833B5E1720CBF50011DED3 /* BowdoinTrack 2.png in Resources */,
+				CF833B611720D19C0011DED3 /* BowdoinBearPhoto.jpg in Resources */,
+				CF833B681720E2120011DED3 /* Lloyd Anderson.jpg in Resources */,
+				CF833B6A1720E2120011DED3 /* EliBass.jpg in Resources */,
+				CF833B6C1720E2120011DED3 /* HenryBrockway.jpg in Resources */,
+				CF833B6E1720E2120011DED3 /* LyleAnderson.jpg in Resources */,
+				CF833B701720E2120011DED3 /* JoeClestin.jpg in Resources */,
+				CF833B791720E8C30011DED3 /* Chris Granata.jpg in Resources */,
+				CF833B7B1720E8C30011DED3 /* Edwards Googins.jpg in Resources */,
+				CF833B7D1720E8C30011DED3 /* Mark Fernandez.jpg in Resources */,
+				CF833B7F1720E8C30011DED3 /* JR Chansakul.jpg in Resources */,
+				CF833B811720E8C30011DED3 /* AlexanderEdison.jpg in Resources */,
+				CF833B831720E8C30011DED3 /* Peter Deardorff.jpg in Resources */,
+				CF833B851720E8C30011DED3 /* Fred Elias.jpg in Resources */,
+				CF833B951720EBF80011DED3 /* Alexander Tougas.jpg in Resources */,
+				CFF5ECFB17FE448B0071814C /* Icon.png in Resources */,
+				CF833B971720EBF80011DED3 /* Kevin Koh.jpg in Resources */,
+				CF833B991720EBF80011DED3 /* Thomas Kramer.jpg in Resources */,
+				CF833B9B1720EBF80011DED3 /* Andrew Park.jpg in Resources */,
+				CF833B9D1720EBF80011DED3 /* Karl Reinhardt.jpg in Resources */,
+				CF833B9F1720EBF80011DED3 /* Linc Rhodes.jpg in Resources */,
+				CF833BA11720EBF80011DED3 /* Ryan Kulesza.jpg in Resources */,
+				CF833BA31720EBF80011DED3 /* Ryan Peabody.jpg in Resources */,
+				CF833BA51720EBF80011DED3 /* Basyl Stuyvesant.jpg in Resources */,
+				CF833BA71720EBF80011DED3 /* Colin Kennedy.jpg in Resources */,
+				CF833BA91720EBF80011DED3 /* Omar Sohail.jpg in Resources */,
+				CF833BAB1720EBF80011DED3 /* Hugo Tran.jpg in Resources */,
+				CF833BAD1720EBF80011DED3 /* William Shi.jpg in Resources */,
+				CF833BAF1720EBF80011DED3 /* John Lagasse.jpg in Resources */,
+				CF833BBC17217CF20011DED3 /* Katherine Carter.jpg in Resources */,
+				CF833BBE17217CF20011DED3 /* Katherine Foley.jpg in Resources */,
+				CF833BC017217CF20011DED3 /* Lela Garner.jpg in Resources */,
+				CF833BC217217CF20011DED3 /* Megan Chong.jpg in Resources */,
+				CF024E2718102ECF00F9CF54 /* HomeBearLogo.png in Resources */,
+				CF833BC417217CF20011DED3 /* Patty Boyer.jpg in Resources */,
+				CF833BC617217CF20011DED3 /* Teri Faller.jpg in Resources */,
+				CF833BC817217CF20011DED3 /* Kelsey Goodwin.jpg in Resources */,
+				CF833BCA17217CF20011DED3 /* Sarah Hirschfeld.jpg in Resources */,
+				CF024E1F180F0EC100F9CF54 /* B Logo.png in Resources */,
+				CF833BCC17217CF20011DED3 /* Bridget Killian.jpg in Resources */,
+				CF833BCE17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg in Resources */,
+				CF833BD017217CF20011DED3 /* Tricia Hartley.jpg in Resources */,
+				CF833BDF1721821B0011DED3 /* Kaley Kokomoor.jpg in Resources */,
+				CF833BE11721821B0011DED3 /* Helen Newton.jpg in Resources */,
+				CF833BE31721821B0011DED3 /* Maeve O'Leary.jpg in Resources */,
+				CF833BE51721821B0011DED3 /* Sasha Kramer.jpg in Resources */,
+				CF833BE71721821B0011DED3 /* Serena Taj.jpg in Resources */,
+				CF833BE91721821B0011DED3 /* Mariah Reading.jpg in Resources */,
+				CF833BEB1721821B0011DED3 /* Olivia Pfeifer.jpg in Resources */,
+				CF833BED1721821B0011DED3 /* Sue Sim.jpg in Resources */,
+				CF833BEF1721821B0011DED3 /* Caroline Moore.jpg in Resources */,
+				CF833BF11721821B0011DED3 /* Christine Rholl.jpg in Resources */,
+				CF833BF31721821B0011DED3 /* Laurel Varnell.jpg in Resources */,
+				CF833BF51721821B0011DED3 /* Sonia Manssen.jpg in Resources */,
+				CF833BF71721821B0011DED3 /* Sage Mikami.jpg in Resources */,
+				CF024E21180FB11C00F9CF54 /* AddFav.png in Resources */,
+				1EBB3DF017223EF40032238C /* 9.-Bowdoin-College.png in Resources */,
+				1EBB3DF117223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg in Resources */,
+				1EBB3DF217223EF40032238C /* winter-quad-266.jpg in Resources */,
+				1EBB3DF317223EF40032238C /* Bowdoin_College_Quad_308x150.jpg in Resources */,
+				1E2F1772172881B80023515F /* mensCrew.jpg in Resources */,
+				1E2F1773172881B80023515F /* mensGolf.jpg in Resources */,
+				1E2F1774172881B80023515F /* mensRugby.jpg in Resources */,
+				1E2F1775172881B80023515F /* mensSailing.jpg in Resources */,
+				1E2F1776172881B80023515F /* mensSquash.jpg in Resources */,
+				1E2F1777172881B80023515F /* mensTennis.jpg in Resources */,
+				1E4837971734C04F008D8C06 /* FootballRosterPictures in Resources */,
+				CF247A19173B40C50079AD32 /* LiveScoresLogo.png in Resources */,
+				CF247A1B173B40D10079AD32 /* MyPhotosLogo.png in Resources */,
+				CFF5ECFD17FE45900071814C /* HomeBearLogo4.png in Resources */,
+				CF247A1D173B41040079AD32 /* MyTeamsLogo.png in Resources */,
+				CF247A1F173B41330079AD32 /* HomeBearLogo2.png in Resources */,
+				CF247A21173B41510079AD32 /* TeamsLogo.png in Resources */,
+				CF247A23173B42320079AD32 /* BowdoinMen.png in Resources */,
+				CF247A25173B42370079AD32 /* BowdoinWomen.png in Resources */,
+				CF247A27173B423F0079AD32 /* BackButtonWhite.png in Resources */,
+				CF247A29173B425F0079AD32 /* LionHome.jpg in Resources */,
+				CF247A2B173B42680079AD32 /* BowdoinClawWhite.jpeg in Resources */,
+				CF247A2D173B426C0079AD32 /* BowdoinClawBlack.jpeg in Resources */,
+				CF247A2F173B42830079AD32 /* BowdoinOfficailLogo.png in Resources */,
+				CF247A31173B428C0079AD32 /* GenericFaceProfilePic.jpg in Resources */,
+				CF247A44173B6D6A0079AD32 /* LiveScoresBig.png in Resources */,
+				CF247A46173B6D6F0079AD32 /* RecentPhotosBig.png in Resources */,
+				CF024E291810304000F9CF54 /* FavsB.png in Resources */,
+				CF247A48173B6FD10079AD32 /* BowdoinMenFinal.png in Resources */,
+				CF247A4A173B6FD60079AD32 /* BowdoinWomenFinal.png in Resources */,
+				CF247A4C173BD31B0079AD32 /* BowdoinLogin.jpg in Resources */,
+				CF247A4E173BD6890079AD32 /* wordmark.png in Resources */,
+				CF247A6D173BF7AB0079AD32 /* BowdoinClubFinal.png in Resources */,
+				CF247A78173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt in Resources */,
+				CF247A7E173C26720079AD32 /* WSoccerFinal.png in Resources */,
+				CF247A81173C26840079AD32 /* WLaxFinal.png in Resources */,
+				CF247A84173C269D0079AD32 /* MBballFinal.png in Resources */,
+				CF247A87173C26B90079AD32 /* WRugbyFinal.png in Resources */,
+				CF247A8A173C26CC0079AD32 /* CRoboCupFinal.png in Resources */,
+				CF247A8D173C27DC0079AD32 /* MSailFinal.png in Resources */,
+				CF247A90173C28660079AD32 /* MTennisFinal.png in Resources */,
+				CF247A93173C2FA30079AD32 /* WCrewFinal.png in Resources */,
+				CF247A96173C307D0079AD32 /* MGolfFinal.png in Resources */,
+				CF247A99173C308F0079AD32 /* MCrewFinal.png in Resources */,
+				CF247AA4173C31C00079AD32 /* WSkiFinal.png in Resources */,
+				CF247AA7173C31D70079AD32 /* MLaxFinal.png in Resources */,
+				CF247AA9173C31E70079AD32 /* WSailFinal.png in Resources */,
+				CF247AAB173C31FE0079AD32 /* WGolfFinal.png in Resources */,
+				CF247AAD173C32120079AD32 /* MBaseballFinal.png in Resources */,
+				CF247AAF173C322A0079AD32 /* WHockeyFinal.png in Resources */,
+				CF247AB1173C323C0079AD32 /* WTrackFinal.png in Resources */,
+				CF247AB3173C324F0079AD32 /* WSquashFinal.png in Resources */,
+				CF247AB5173C32670079AD32 /* MRugbyFinal.png in Resources */,
+				CF247AB7173C32760079AD32 /* MSquashFinal.png in Resources */,
+				CF247AB9173C32840079AD32 /* WCrossCountry.png in Resources */,
+				CF247ABB173C32940079AD32 /* WTennisFinal.png in Resources */,
+				CF247ABD173C32A70079AD32 /* WVoleyFinal.png in Resources */,
+				CF247ABF173C32B40079AD32 /* WSoftballFinal.png in Resources */,
+				CF247ADB173D8C280079AD32 /* BMenFinal.png in Resources */,
+				CF247ADD173D8C2C0079AD32 /* BWomenFinal.png in Resources */,
+				CF247AE3173D8D0D0079AD32 /* BClubFinal.png in Resources */,
+				CF247AE5173D8D140079AD32 /* WWaterPoloFinal.png in Resources */,
+				CF247AE7173D8D1A0079AD32 /* MWaterPoloFinal.png in Resources */,
+				CF247AE9173D8D660079AD32 /* iPhoneSetFallBackground.png in Resources */,
+				CF247AEB173DAA0F0079AD32 /* WSwimFinal.png in Resources */,
+				CF247AED173DAA130079AD32 /* WBasketballFinal.png in Resources */,
+				CF247AEF173DAC7B0079AD32 /* WFieldHockeyFinal.png in Resources */,
+				CF4684DB173DC4D0001F8A1F /* LoginButton.png in Resources */,
+				CF4684E1173DF963001F8A1F /* Icon.png in Resources */,
+				1E15B58F174081DF006D1881 /* mensSwimmingSchedule.txt in Resources */,
+				CF56488F174096690067FBBB /* NewsfeedIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6568F4171782B700AE84AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF656903171782B700AE84AC /* InfoPlist.strings in Resources */,
+				CF833B3A1720C0E40011DED3 /* BowdoinSwimming.jpg in Resources */,
+				CF833B3E1720C38A0011DED3 /* BowdoinFootball.jpg in Resources */,
+				CF833B411720C73E0011DED3 /* BowdoinSoccer.jpg in Resources */,
+				CF833B441720C8410011DED3 /* Bowdoin Basketball.jpg in Resources */,
+				CF833B4A1720C9AC0011DED3 /* BowdoinHockey.png in Resources */,
+				CF833B4D1720C9FF0011DED3 /* BowdoinLacrose.png in Resources */,
+				CF833B501720CAA80011DED3 /* BowdoinTrack.png in Resources */,
+				CF833B531720CAAD0011DED3 /* BowdoinBaseball.png in Resources */,
+				CF833B591720CBF50011DED3 /* Bowdoin Basketball 2.jpg in Resources */,
+				CF833B5B1720CBF50011DED3 /* BowdoinCrossCountry 2.jpg in Resources */,
+				CF833B5D1720CBF50011DED3 /* BowdoinSoccer 2.jpg in Resources */,
+				CF833B5F1720CBF50011DED3 /* BowdoinTrack 2.png in Resources */,
+				CF833B621720D19C0011DED3 /* BowdoinBearPhoto.jpg in Resources */,
+				CF833B691720E2120011DED3 /* Lloyd Anderson.jpg in Resources */,
+				CF833B6B1720E2120011DED3 /* EliBass.jpg in Resources */,
+				CF833B6D1720E2120011DED3 /* HenryBrockway.jpg in Resources */,
+				CF833B6F1720E2120011DED3 /* LyleAnderson.jpg in Resources */,
+				CF833B711720E2120011DED3 /* JoeClestin.jpg in Resources */,
+				CF833B7A1720E8C30011DED3 /* Chris Granata.jpg in Resources */,
+				CF833B7C1720E8C30011DED3 /* Edwards Googins.jpg in Resources */,
+				CF833B7E1720E8C30011DED3 /* Mark Fernandez.jpg in Resources */,
+				CF833B801720E8C30011DED3 /* JR Chansakul.jpg in Resources */,
+				CF833B821720E8C30011DED3 /* AlexanderEdison.jpg in Resources */,
+				CF833B841720E8C30011DED3 /* Peter Deardorff.jpg in Resources */,
+				CF833B861720E8C30011DED3 /* Fred Elias.jpg in Resources */,
+				CF833B961720EBF80011DED3 /* Alexander Tougas.jpg in Resources */,
+				CF833B981720EBF80011DED3 /* Kevin Koh.jpg in Resources */,
+				CF833B9A1720EBF80011DED3 /* Thomas Kramer.jpg in Resources */,
+				CF833B9C1720EBF80011DED3 /* Andrew Park.jpg in Resources */,
+				CF833B9E1720EBF80011DED3 /* Karl Reinhardt.jpg in Resources */,
+				CF833BA01720EBF80011DED3 /* Linc Rhodes.jpg in Resources */,
+				CF833BA21720EBF80011DED3 /* Ryan Kulesza.jpg in Resources */,
+				CF833BA41720EBF80011DED3 /* Ryan Peabody.jpg in Resources */,
+				CF833BA61720EBF80011DED3 /* Basyl Stuyvesant.jpg in Resources */,
+				CF833BA81720EBF80011DED3 /* Colin Kennedy.jpg in Resources */,
+				CF833BAA1720EBF80011DED3 /* Omar Sohail.jpg in Resources */,
+				CF833BAC1720EBF80011DED3 /* Hugo Tran.jpg in Resources */,
+				CF833BAE1720EBF80011DED3 /* William Shi.jpg in Resources */,
+				CF833BB01720EBF80011DED3 /* John Lagasse.jpg in Resources */,
+				CF833BBD17217CF20011DED3 /* Katherine Carter.jpg in Resources */,
+				CF833BBF17217CF20011DED3 /* Katherine Foley.jpg in Resources */,
+				CF833BC117217CF20011DED3 /* Lela Garner.jpg in Resources */,
+				CF833BC317217CF20011DED3 /* Megan Chong.jpg in Resources */,
+				CF833BC517217CF20011DED3 /* Patty Boyer.jpg in Resources */,
+				CF833BC717217CF20011DED3 /* Teri Faller.jpg in Resources */,
+				CF833BC917217CF20011DED3 /* Kelsey Goodwin.jpg in Resources */,
+				CF833BCB17217CF20011DED3 /* Sarah Hirschfeld.jpg in Resources */,
+				CF833BCD17217CF20011DED3 /* Bridget Killian.jpg in Resources */,
+				CF833BCF17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg in Resources */,
+				CF833BD117217CF20011DED3 /* Tricia Hartley.jpg in Resources */,
+				CF833BE01721821B0011DED3 /* Kaley Kokomoor.jpg in Resources */,
+				CF833BE21721821B0011DED3 /* Helen Newton.jpg in Resources */,
+				CF833BE41721821B0011DED3 /* Maeve O'Leary.jpg in Resources */,
+				CF833BE61721821B0011DED3 /* Sasha Kramer.jpg in Resources */,
+				CF833BE81721821B0011DED3 /* Serena Taj.jpg in Resources */,
+				CF833BEA1721821B0011DED3 /* Mariah Reading.jpg in Resources */,
+				CF833BEC1721821B0011DED3 /* Olivia Pfeifer.jpg in Resources */,
+				CF833BEE1721821B0011DED3 /* Sue Sim.jpg in Resources */,
+				CF833BF01721821B0011DED3 /* Caroline Moore.jpg in Resources */,
+				CF833BF21721821B0011DED3 /* Christine Rholl.jpg in Resources */,
+				CF833BF41721821B0011DED3 /* Laurel Varnell.jpg in Resources */,
+				CF833BF61721821B0011DED3 /* Sonia Manssen.jpg in Resources */,
+				CF833BF81721821B0011DED3 /* Sage Mikami.jpg in Resources */,
+				CF247A56173BD91D0079AD32 /* LoginButton2.png in Resources */,
+				CF247A6E173BF7AB0079AD32 /* BowdoinClubFinal.png in Resources */,
+				CF247A79173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt in Resources */,
+				CF247A7F173C26720079AD32 /* WSoccerFinal.png in Resources */,
+				CF247A82173C26840079AD32 /* WLaxFinal.png in Resources */,
+				CF247A85173C269D0079AD32 /* MBballFinal.png in Resources */,
+				CF247A88173C26B90079AD32 /* WRugbyFinal.png in Resources */,
+				CF247A8B173C26CC0079AD32 /* CRoboCupFinal.png in Resources */,
+				CF247A8E173C27DC0079AD32 /* MSailFinal.png in Resources */,
+				CF247A91173C28660079AD32 /* MTennisFinal.png in Resources */,
+				CF247A94173C2FA30079AD32 /* WCrewFinal.png in Resources */,
+				CF247A97173C307D0079AD32 /* MGolfFinal.png in Resources */,
+				CF247A9A173C308F0079AD32 /* MCrewFinal.png in Resources */,
+				1E18AACC174002A200AFA86F /* BowdoinNews.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF6568F5171782B700AE84AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF6568CC171782B700AE84AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6568E1171782B700AE84AC /* main.m in Sources */,
+				CF6568E5171782B700AE84AC /* Pocket_RosterAppDelegate.m in Sources */,
+				CF6568F1171782B700AE84AC /* Pocket_RosterViewController.m in Sources */,
+				CF6569161717863100AE84AC /* FlickrPhotoTableViewController.m in Sources */,
+				CF65691A1717870700AE84AC /* LatestFlickrPhotosTVC.m in Sources */,
+				CF65691D171787DF00AE84AC /* AppDelegate.m in Sources */,
+				CF656920171795E800AE84AC /* ImageViewController.m in Sources */,
+				CF6569231717968500AE84AC /* AttributedStringViewController.m in Sources */,
+				CF833B1D171E14430011DED3 /* FlickrFetcher.m in Sources */,
+				CF833B28171ED4080011DED3 /* RosterViewController.m in Sources */,
+				1EBB3DF9172256AD0032238C /* RosterTVC.m in Sources */,
+				1EFF35BF1725EFFA003A5A1E /* RosterCell.m in Sources */,
+				1E2F177A172883550023515F /* ScheduleCell.m in Sources */,
+				1E2F177D1728837D0023515F /* ScheduleTVC.m in Sources */,
+				CF247A75173C0B8D0079AD32 /* PersonalAccount.m in Sources */,
+				CF4684D7173DC2D1001F8A1F /* BOWAppDelegate.m in Sources */,
+				CF4684D8173DC2D1001F8A1F /* BOWLoginViewController.m in Sources */,
+				CF4684F0173DFD9B001F8A1F /* FlickrPhotoViewController.m in Sources */,
+				CF4684F1173DFD9B001F8A1F /* Flickr.m in Sources */,
+				CF4684F2173DFD9B001F8A1F /* FlickrPhoto.m in Sources */,
+				CF4684F3173DFD9B001F8A1F /* FlickrPracticeAppDelegate.m in Sources */,
+				CF4684F5173DFD9B001F8A1F /* FlickrPracticeViewController.m in Sources */,
+				CF4684F6173DFD9B001F8A1F /* FlickrPhotoHeaderView.m in Sources */,
+				CF468501173E0246001F8A1F /* FlickrPhotoCell.m in Sources */,
+				1ECC555F173F092400EBD61D /* RSSCell.m in Sources */,
+				1ECC5560173F092400EBD61D /* RSSTVC.m in Sources */,
+				1ECC5561173F092400EBD61D /* WebViewController.m in Sources */,
+				1ECC557A173F0DF300EBD61D /* RSSEntry.m in Sources */,
+				1ECC557B173F0DF300EBD61D /* RSSHomeCell.m in Sources */,
+				1ECC557C173F0DF300EBD61D /* RSSHomeTVC.m in Sources */,
+				1ECC557D173F0DF300EBD61D /* RSSWebView.m in Sources */,
+				1ECC5583173F0FDD00EBD61D /* NewsFeedViewController.m in Sources */,
+				1ECC5586173F168200EBD61D /* TeamViewController.m in Sources */,
+				1EA69CD9173F1C2300C31786 /* News Story View Controller.m in Sources */,
+				1E15B59217408334006D1881 /* ScheduleViewController.m in Sources */,
+				CFD5FC5717E957D8002F2BA2 /* Get_Data_From_Website.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6568F2171782B700AE84AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF656906171782B700AE84AC /* Pocket_RosterTests.m in Sources */,
+				CF247A76173C0B8D0079AD32 /* PersonalAccount.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF6568FD171782B700AE84AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF6568CF171782B700AE84AC /* Pocket Roster */;
+			targetProxy = CF6568FC171782B700AE84AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF6568DD171782B700AE84AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF6568DE171782B700AE84AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF6568EC171782B700AE84AC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF6568ED171782B700AE84AC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		CF656901171782B700AE84AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF656902171782B700AE84AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF656907171782B700AE84AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF656908171782B700AE84AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF65690A171782B700AE84AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ryan Kulesza (ZM3384VEN6)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pocket Roster/Pocket Roster-Prefix.pch";
+				INFOPLIST_FILE = "Pocket Roster/Pocket Roster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF65690B171782B700AE84AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pocket Roster/Pocket Roster-Prefix.pch";
+				INFOPLIST_FILE = "Pocket Roster/Pocket Roster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CF65690D171782B700AE84AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pocket Roster.app/Pocket Roster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pocket Roster/Pocket Roster-Prefix.pch";
+				INFOPLIST_FILE = "Pocket RosterTests/Pocket RosterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CF65690E171782B700AE84AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pocket Roster.app/Pocket Roster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pocket Roster/Pocket Roster-Prefix.pch";
+				INFOPLIST_FILE = "Pocket RosterTests/Pocket RosterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF6568CA171782B700AE84AC /* Build configuration list for PBXProject "Pocket Roster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF656907171782B700AE84AC /* Debug */,
+				CF656908171782B700AE84AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF656909171782B700AE84AC /* Build configuration list for PBXNativeTarget "Pocket Roster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF65690A171782B700AE84AC /* Debug */,
+				CF65690B171782B700AE84AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF65690C171782B700AE84AC /* Build configuration list for PBXNativeTarget "Pocket RosterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF65690D171782B700AE84AC /* Debug */,
+				CF65690E171782B700AE84AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF6568C7171782B700AE84AC /* Project object */;
+}
