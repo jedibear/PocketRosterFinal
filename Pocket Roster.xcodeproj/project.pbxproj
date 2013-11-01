@@ -39,7 +39,13 @@
 		CF024E21180FB11C00F9CF54 /* AddFav.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E20180FB11C00F9CF54 /* AddFav.png */; };
 		CF024E2518102BF200F9CF54 /* HomeB.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2418102BF200F9CF54 /* HomeB.png */; };
 		CF024E2718102ECF00F9CF54 /* HomeBearLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2618102ECF00F9CF54 /* HomeBearLogo.png */; };
-		CF024E291810304000F9CF54 /* FavsB.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E281810304000F9CF54 /* FavsB.png */; };
+		CF024E2B1814DF5700F9CF54 /* FavsB.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2A1814DF5700F9CF54 /* FavsB.png */; };
+		CF024E2D18162E3100F9CF54 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2C18162E3100F9CF54 /* icon2.png */; };
+		CF024E2F1816307F00F9CF54 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2E1816307F00F9CF54 /* icon.png */; };
+		CF024E321818C0C600F9CF54 /* GetTeamLinks.m in Sources */ = {isa = PBXBuildFile; fileRef = CF024E311818C0C600F9CF54 /* GetTeamLinks.m */; };
+		CF024E351818DDD100F9CF54 /* GetImages.m in Sources */ = {isa = PBXBuildFile; fileRef = CF024E341818DDD100F9CF54 /* GetImages.m */; };
+		CF024E38181A165900F9CF54 /* InitTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = CF024E37181A165900F9CF54 /* InitTeam.m */; };
+		CF024E3A181AB16300F9CF54 /* Football Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF024E39181AB16300F9CF54 /* Football Background.jpg */; };
 		CF247A19173B40C50079AD32 /* LiveScoresLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A18173B40C50079AD32 /* LiveScoresLogo.png */; };
 		CF247A1B173B40D10079AD32 /* MyPhotosLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A1A173B40D10079AD32 /* MyPhotosLogo.png */; };
 		CF247A1D173B41040079AD32 /* MyTeamsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A1C173B41040079AD32 /* MyTeamsLogo.png */; };
@@ -112,7 +118,7 @@
 		CF4684D7173DC2D1001F8A1F /* BOWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684D2173DC2D1001F8A1F /* BOWAppDelegate.m */; };
 		CF4684D8173DC2D1001F8A1F /* BOWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */; };
 		CF4684DB173DC4D0001F8A1F /* LoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4684DA173DC4D0001F8A1F /* LoginButton.png */; };
-		CF4684E1173DF963001F8A1F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4684E0173DF963001F8A1F /* Icon.png */; };
+		CF4684E1173DF963001F8A1F /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4684E0173DF963001F8A1F /* OldIcon.png */; };
 		CF4684F0173DFD9B001F8A1F /* FlickrPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684E4173DFD9B001F8A1F /* FlickrPhotoViewController.m */; };
 		CF4684F1173DFD9B001F8A1F /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684E6173DFD9B001F8A1F /* Flickr.m */; };
 		CF4684F2173DFD9B001F8A1F /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684E8173DFD9B001F8A1F /* FlickrPhoto.m */; };
@@ -276,7 +282,7 @@
 		CF833BF71721821B0011DED3 /* Sage Mikami.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDE1721821B0011DED3 /* Sage Mikami.jpg */; };
 		CF833BF81721821B0011DED3 /* Sage Mikami.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDE1721821B0011DED3 /* Sage Mikami.jpg */; };
 		CFD5FC5717E957D8002F2BA2 /* Get_Data_From_Website.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */; };
-		CFF5ECFB17FE448B0071814C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFA17FE448B0071814C /* Icon.png */; };
+		CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFA17FE448B0071814C /* OldIcon.png */; };
 		CFF5ECFD17FE45900071814C /* HomeBearLogo4.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFC17FE45900071814C /* HomeBearLogo4.png */; };
 /* End PBXBuildFile section */
 
@@ -338,7 +344,16 @@
 		CF024E20180FB11C00F9CF54 /* AddFav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddFav.png; sourceTree = "<group>"; };
 		CF024E2418102BF200F9CF54 /* HomeB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeB.png; sourceTree = "<group>"; };
 		CF024E2618102ECF00F9CF54 /* HomeBearLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBearLogo.png; sourceTree = "<group>"; };
-		CF024E281810304000F9CF54 /* FavsB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavsB.png; sourceTree = "<group>"; };
+		CF024E2A1814DF5700F9CF54 /* FavsB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavsB.png; sourceTree = "<group>"; };
+		CF024E2C18162E3100F9CF54 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
+		CF024E2E1816307F00F9CF54 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		CF024E301818C0C600F9CF54 /* GetTeamLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTeamLinks.h; sourceTree = "<group>"; };
+		CF024E311818C0C600F9CF54 /* GetTeamLinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTeamLinks.m; sourceTree = "<group>"; };
+		CF024E331818DDD100F9CF54 /* GetImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetImages.h; sourceTree = "<group>"; };
+		CF024E341818DDD100F9CF54 /* GetImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetImages.m; sourceTree = "<group>"; };
+		CF024E36181A165900F9CF54 /* InitTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitTeam.h; sourceTree = "<group>"; };
+		CF024E37181A165900F9CF54 /* InitTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitTeam.m; sourceTree = "<group>"; };
+		CF024E39181AB16300F9CF54 /* Football Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Football Background.jpg"; sourceTree = "<group>"; };
 		CF247A18173B40C50079AD32 /* LiveScoresLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiveScoresLogo.png; sourceTree = "<group>"; };
 		CF247A1A173B40D10079AD32 /* MyPhotosLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyPhotosLogo.png; sourceTree = "<group>"; };
 		CF247A1C173B41040079AD32 /* MyTeamsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyTeamsLogo.png; sourceTree = "<group>"; };
@@ -402,7 +417,7 @@
 		CF4684D4173DC2D1001F8A1F /* BOWLoginViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWLoginViewControllerDelegate.h; sourceTree = "<group>"; };
 		CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOWLoginViewController.m; sourceTree = "<group>"; };
 		CF4684DA173DC4D0001F8A1F /* LoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton.png; sourceTree = "<group>"; };
-		CF4684E0173DF963001F8A1F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CF4684E0173DF963001F8A1F /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OldIcon.png; sourceTree = "<group>"; };
 		CF4684E3173DFD9B001F8A1F /* FlickrPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoViewController.h; sourceTree = "<group>"; };
 		CF4684E4173DFD9B001F8A1F /* FlickrPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoViewController.m; sourceTree = "<group>"; };
 		CF4684E5173DFD9B001F8A1F /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flickr.h; sourceTree = "<group>"; };
@@ -525,7 +540,7 @@
 		CF833BDE1721821B0011DED3 /* Sage Mikami.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sage Mikami.jpg"; sourceTree = "<group>"; };
 		CFD5FC5517E957D7002F2BA2 /* Get_Data_From_Website.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Get_Data_From_Website.h; sourceTree = "<group>"; };
 		CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Get_Data_From_Website.m; sourceTree = "<group>"; };
-		CFF5ECFA17FE448B0071814C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = "Pocket Roster/Icon.png"; sourceTree = "<group>"; };
+		CFF5ECFA17FE448B0071814C /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OldIcon.png; path = "Pocket Roster/OldIcon.png"; sourceTree = "<group>"; };
 		CFF5ECFC17FE45900071814C /* HomeBearLogo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBearLogo4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -661,7 +676,7 @@
 		CF024E1D180F0EB000F9CF54 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				CF024E281810304000F9CF54 /* FavsB.png */,
+				CF024E2A1814DF5700F9CF54 /* FavsB.png */,
 				CF024E2418102BF200F9CF54 /* HomeB.png */,
 				CF024E20180FB11C00F9CF54 /* AddFav.png */,
 				CF024E1E180F0EC100F9CF54 /* B Logo.png */,
@@ -672,6 +687,7 @@
 		CF247A16173B408F0079AD32 /* General Images */ = {
 			isa = PBXGroup;
 			children = (
+				CF024E39181AB16300F9CF54 /* Football Background.jpg */,
 				CF024E2618102ECF00F9CF54 /* HomeBearLogo.png */,
 				CFF5ECFC17FE45900071814C /* HomeBearLogo4.png */,
 				CF56488E174096690067FBBB /* NewsfeedIcon.png */,
@@ -813,7 +829,9 @@
 			children = (
 				1E15B59017408334006D1881 /* ScheduleViewController.h */,
 				1E15B59117408334006D1881 /* ScheduleViewController.m */,
-				CFF5ECFA17FE448B0071814C /* Icon.png */,
+				CF024E2E1816307F00F9CF54 /* icon.png */,
+				CF024E2C18162E3100F9CF54 /* icon2.png */,
+				CFF5ECFA17FE448B0071814C /* OldIcon.png */,
 				CF4684BE173DBF8E001F8A1F /* TumbnailFinal */,
 				CF247AE8173D8D660079AD32 /* iPhoneSetFallBackground.png */,
 				1EBB3DF4172241650032238C /* Swim Team */,
@@ -851,7 +869,7 @@
 			isa = PBXGroup;
 			children = (
 				CF024E1D180F0EB000F9CF54 /* New Group */,
-				CF4684E0173DF963001F8A1F /* Icon.png */,
+				CF4684E0173DF963001F8A1F /* OldIcon.png */,
 				CF247A77173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt */,
 				CF4684C0173DC009001F8A1F /* Login */,
 				CF4684E2173DFD59001F8A1F /* Flickr */,
@@ -859,6 +877,8 @@
 				CF247A73173C0B8D0079AD32 /* PersonalAccount.h */,
 				1ECC5584173F168200EBD61D /* TeamViewController.h */,
 				1ECC5585173F168200EBD61D /* TeamViewController.m */,
+				CF024E36181A165900F9CF54 /* InitTeam.h */,
+				CF024E37181A165900F9CF54 /* InitTeam.m */,
 				1ECC557E173F0EE400EBD61D /* Roster */,
 				1ECC5580173F0F0500EBD61D /* RSS News */,
 				1ECC557F173F0EF300EBD61D /* Schedule */,
@@ -879,6 +899,10 @@
 				CF6568EC171782B700AE84AC /* MainStoryboard.storyboard */,
 				CFD5FC5517E957D7002F2BA2 /* Get_Data_From_Website.h */,
 				CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */,
+				CF024E301818C0C600F9CF54 /* GetTeamLinks.h */,
+				CF024E311818C0C600F9CF54 /* GetTeamLinks.m */,
+				CF024E331818DDD100F9CF54 /* GetImages.h */,
+				CF024E341818DDD100F9CF54 /* GetImages.m */,
 				CF833B26171ED4080011DED3 /* RosterViewController.h */,
 				CF833B27171ED4080011DED3 /* RosterViewController.m */,
 				CF6568EF171782B700AE84AC /* Pocket_RosterViewController.h */,
@@ -1007,6 +1031,7 @@
 				CF6568EE171782B700AE84AC /* MainStoryboard.storyboard in Resources */,
 				CF65692A17179C1F00AE84AC /* BowdoinButton.jpm.png in Resources */,
 				CF65692C17179F9800AE84AC /* SwimmingCover.jpg in Resources */,
+				CF024E2F1816307F00F9CF54 /* icon.png in Resources */,
 				CF65692E1717ABD700AE84AC /* SwimLogo.jpg in Resources */,
 				CF6569321717BA1B00AE84AC /* FootballLogo.png in Resources */,
 				CF833B19171E14110011DED3 /* iPad.storyboard in Resources */,
@@ -1037,7 +1062,7 @@
 				CF833B831720E8C30011DED3 /* Peter Deardorff.jpg in Resources */,
 				CF833B851720E8C30011DED3 /* Fred Elias.jpg in Resources */,
 				CF833B951720EBF80011DED3 /* Alexander Tougas.jpg in Resources */,
-				CFF5ECFB17FE448B0071814C /* Icon.png in Resources */,
+				CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */,
 				CF833B971720EBF80011DED3 /* Kevin Koh.jpg in Resources */,
 				CF833B991720EBF80011DED3 /* Thomas Kramer.jpg in Resources */,
 				CF833B9B1720EBF80011DED3 /* Andrew Park.jpg in Resources */,
@@ -1064,6 +1089,7 @@
 				CF833BCC17217CF20011DED3 /* Bridget Killian.jpg in Resources */,
 				CF833BCE17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg in Resources */,
 				CF833BD017217CF20011DED3 /* Tricia Hartley.jpg in Resources */,
+				CF024E3A181AB16300F9CF54 /* Football Background.jpg in Resources */,
 				CF833BDF1721821B0011DED3 /* Kaley Kokomoor.jpg in Resources */,
 				CF833BE11721821B0011DED3 /* Helen Newton.jpg in Resources */,
 				CF833BE31721821B0011DED3 /* Maeve O'Leary.jpg in Resources */,
@@ -1105,7 +1131,6 @@
 				CF247A31173B428C0079AD32 /* GenericFaceProfilePic.jpg in Resources */,
 				CF247A44173B6D6A0079AD32 /* LiveScoresBig.png in Resources */,
 				CF247A46173B6D6F0079AD32 /* RecentPhotosBig.png in Resources */,
-				CF024E291810304000F9CF54 /* FavsB.png in Resources */,
 				CF247A48173B6FD10079AD32 /* BowdoinMenFinal.png in Resources */,
 				CF247A4A173B6FD60079AD32 /* BowdoinWomenFinal.png in Resources */,
 				CF247A4C173BD31B0079AD32 /* BowdoinLogin.jpg in Resources */,
@@ -1119,6 +1144,7 @@
 				CF247A8A173C26CC0079AD32 /* CRoboCupFinal.png in Resources */,
 				CF247A8D173C27DC0079AD32 /* MSailFinal.png in Resources */,
 				CF247A90173C28660079AD32 /* MTennisFinal.png in Resources */,
+				CF024E2B1814DF5700F9CF54 /* FavsB.png in Resources */,
 				CF247A93173C2FA30079AD32 /* WCrewFinal.png in Resources */,
 				CF247A96173C307D0079AD32 /* MGolfFinal.png in Resources */,
 				CF247A99173C308F0079AD32 /* MCrewFinal.png in Resources */,
@@ -1146,7 +1172,8 @@
 				CF247AED173DAA130079AD32 /* WBasketballFinal.png in Resources */,
 				CF247AEF173DAC7B0079AD32 /* WFieldHockeyFinal.png in Resources */,
 				CF4684DB173DC4D0001F8A1F /* LoginButton.png in Resources */,
-				CF4684E1173DF963001F8A1F /* Icon.png in Resources */,
+				CF024E2D18162E3100F9CF54 /* icon2.png in Resources */,
+				CF4684E1173DF963001F8A1F /* OldIcon.png in Resources */,
 				1E15B58F174081DF006D1881 /* mensSwimmingSchedule.txt in Resources */,
 				CF56488F174096690067FBBB /* NewsfeedIcon.png in Resources */,
 			);
@@ -1270,6 +1297,7 @@
 				CF6569231717968500AE84AC /* AttributedStringViewController.m in Sources */,
 				CF833B1D171E14430011DED3 /* FlickrFetcher.m in Sources */,
 				CF833B28171ED4080011DED3 /* RosterViewController.m in Sources */,
+				CF024E351818DDD100F9CF54 /* GetImages.m in Sources */,
 				1EBB3DF9172256AD0032238C /* RosterTVC.m in Sources */,
 				1EFF35BF1725EFFA003A5A1E /* RosterCell.m in Sources */,
 				1E2F177A172883550023515F /* ScheduleCell.m in Sources */,
@@ -1279,6 +1307,7 @@
 				CF4684D8173DC2D1001F8A1F /* BOWLoginViewController.m in Sources */,
 				CF4684F0173DFD9B001F8A1F /* FlickrPhotoViewController.m in Sources */,
 				CF4684F1173DFD9B001F8A1F /* Flickr.m in Sources */,
+				CF024E321818C0C600F9CF54 /* GetTeamLinks.m in Sources */,
 				CF4684F2173DFD9B001F8A1F /* FlickrPhoto.m in Sources */,
 				CF4684F3173DFD9B001F8A1F /* FlickrPracticeAppDelegate.m in Sources */,
 				CF4684F5173DFD9B001F8A1F /* FlickrPracticeViewController.m in Sources */,
@@ -1289,6 +1318,7 @@
 				1ECC5561173F092400EBD61D /* WebViewController.m in Sources */,
 				1ECC557A173F0DF300EBD61D /* RSSEntry.m in Sources */,
 				1ECC557B173F0DF300EBD61D /* RSSHomeCell.m in Sources */,
+				CF024E38181A165900F9CF54 /* InitTeam.m in Sources */,
 				1ECC557C173F0DF300EBD61D /* RSSHomeTVC.m in Sources */,
 				1ECC557D173F0DF300EBD61D /* RSSWebView.m in Sources */,
 				1ECC5583173F0FDD00EBD61D /* NewsFeedViewController.m in Sources */,

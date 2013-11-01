@@ -10,6 +10,7 @@
 #import "NewsFeedViewController.h"
 #import "FlickrPracticeViewController.h"
 
+
 @interface TeamViewController ()
 
 @end
@@ -79,6 +80,7 @@
             fVC.teamName = self.teamName;
         }
     }
+
     
 }
 
