@@ -7,6 +7,7 @@
 //
 
 #import "TeamViewController.h"
+#import "TeamTVC.h"
 #import "NewsFeedViewController.h"
 #import "FlickrPracticeViewController.h"
 
@@ -29,7 +30,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,46 +43,13 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"teamNews"]) {
-        self.teamName = @"Football";
-        NSLog(@"%@", self.teamName);
+    if ([segue.identifier isEqualToString:@"embedTeam"]) {
         
-        if ([segue.destinationViewController isKindOfClass:[NewsFeedViewController class]]) {
-            NewsFeedViewController *nFVC = (NewsFeedViewController *)segue.destinationViewController;
-            nFVC.teamName = self.teamName;
-        }
-        
-        //[segue.destinationViewController setTeamName:self.teamName];
-        
-    }
-    else if ([segue.identifier isEqualToString:@"sTeamNews"]){
-        self.teamName = @"Mens Swimming and Diving";
-        
-        
-        if ([segue.destinationViewController isKindOfClass:[NewsFeedViewController class]]) {
-            NewsFeedViewController *nFVC = (NewsFeedViewController *)segue.destinationViewController;
-            nFVC.teamName = self.teamName;
+        if ([segue.destinationViewController isKindOfClass:[TeamTVC class]]) {
+            TeamTVC *nFVC = (TeamTVC *)segue.destinationViewController;
+            nFVC.incommingTeamURL =self.incommingTeamURL;
         }
     }
-    else if([segue.identifier isEqualToString:@"footballPhotos"]){
-        self.teamName = @"Football";
-        
-        
-        if ([segue.identifier isKindOfClass:[FlickrPracticeViewController class]]) {
-            FlickrPracticeViewController *fVC = (FlickrPracticeViewController *)segue.destinationViewController;
-            fVC.teamName = self.teamName;
-            NSLog(@"%@", fVC.teamName);
-        }
-    }
-    else if ([segue.identifier isEqualToString:@"swimmingPhotos"]){
-        self.teamName = @"Swimming";
-        
-        if ([segue.destinationViewController isKindOfClass:[FlickrPracticeViewController class]]) {
-            FlickrPracticeViewController *fVC = (FlickrPracticeViewController *)segue.destinationViewController;
-            fVC.teamName = self.teamName;
-        }
-    }
-
     
 }
 

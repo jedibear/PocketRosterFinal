@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E15B58F174081DF006D1881 /* mensSwimmingSchedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E15B58E174081DF006D1881 /* mensSwimmingSchedule.txt */; };
 		1E15B59217408334006D1881 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E15B59117408334006D1881 /* ScheduleViewController.m */; };
 		1E18AACC174002A200AFA86F /* BowdoinNews.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E18AACB174002A200AFA86F /* BowdoinNews.png */; };
 		1E2F1772172881B80023515F /* mensCrew.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F176C172881B70023515F /* mensCrew.jpg */; };
@@ -18,7 +17,6 @@
 		1E2F1777172881B80023515F /* mensTennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F1771172881B80023515F /* mensTennis.jpg */; };
 		1E2F177A172883550023515F /* ScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F1779172883550023515F /* ScheduleCell.m */; };
 		1E2F177D1728837D0023515F /* ScheduleTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F177C1728837D0023515F /* ScheduleTVC.m */; };
-		1E4837971734C04F008D8C06 /* FootballRosterPictures in Resources */ = {isa = PBXBuildFile; fileRef = 1E4837961734C04F008D8C06 /* FootballRosterPictures */; };
 		1EA69CD9173F1C2300C31786 /* News Story View Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA69CD8173F1C2300C31786 /* News Story View Controller.m */; };
 		1EBB3DF017223EF40032238C /* 9.-Bowdoin-College.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DEC17223EF40032238C /* 9.-Bowdoin-College.png */; };
 		1EBB3DF117223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DED17223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg */; };
@@ -181,106 +179,8 @@
 		CF833B5F1720CBF50011DED3 /* BowdoinTrack 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF833B571720CBF50011DED3 /* BowdoinTrack 2.png */; };
 		CF833B611720D19C0011DED3 /* BowdoinBearPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B601720D19C0011DED3 /* BowdoinBearPhoto.jpg */; };
 		CF833B621720D19C0011DED3 /* BowdoinBearPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B601720D19C0011DED3 /* BowdoinBearPhoto.jpg */; };
-		CF833B681720E2120011DED3 /* Lloyd Anderson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B631720E2120011DED3 /* Lloyd Anderson.jpg */; };
-		CF833B691720E2120011DED3 /* Lloyd Anderson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B631720E2120011DED3 /* Lloyd Anderson.jpg */; };
-		CF833B6A1720E2120011DED3 /* EliBass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B641720E2120011DED3 /* EliBass.jpg */; };
-		CF833B6B1720E2120011DED3 /* EliBass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B641720E2120011DED3 /* EliBass.jpg */; };
-		CF833B6C1720E2120011DED3 /* HenryBrockway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B651720E2120011DED3 /* HenryBrockway.jpg */; };
-		CF833B6D1720E2120011DED3 /* HenryBrockway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B651720E2120011DED3 /* HenryBrockway.jpg */; };
-		CF833B6E1720E2120011DED3 /* LyleAnderson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B661720E2120011DED3 /* LyleAnderson.jpg */; };
-		CF833B6F1720E2120011DED3 /* LyleAnderson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B661720E2120011DED3 /* LyleAnderson.jpg */; };
-		CF833B701720E2120011DED3 /* JoeClestin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B671720E2120011DED3 /* JoeClestin.jpg */; };
-		CF833B711720E2120011DED3 /* JoeClestin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B671720E2120011DED3 /* JoeClestin.jpg */; };
-		CF833B791720E8C30011DED3 /* Chris Granata.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B721720E8C30011DED3 /* Chris Granata.jpg */; };
-		CF833B7A1720E8C30011DED3 /* Chris Granata.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B721720E8C30011DED3 /* Chris Granata.jpg */; };
-		CF833B7B1720E8C30011DED3 /* Edwards Googins.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B731720E8C30011DED3 /* Edwards Googins.jpg */; };
-		CF833B7C1720E8C30011DED3 /* Edwards Googins.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B731720E8C30011DED3 /* Edwards Googins.jpg */; };
-		CF833B7D1720E8C30011DED3 /* Mark Fernandez.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B741720E8C30011DED3 /* Mark Fernandez.jpg */; };
-		CF833B7E1720E8C30011DED3 /* Mark Fernandez.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B741720E8C30011DED3 /* Mark Fernandez.jpg */; };
-		CF833B7F1720E8C30011DED3 /* JR Chansakul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B751720E8C30011DED3 /* JR Chansakul.jpg */; };
-		CF833B801720E8C30011DED3 /* JR Chansakul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B751720E8C30011DED3 /* JR Chansakul.jpg */; };
-		CF833B811720E8C30011DED3 /* AlexanderEdison.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B761720E8C30011DED3 /* AlexanderEdison.jpg */; };
-		CF833B821720E8C30011DED3 /* AlexanderEdison.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B761720E8C30011DED3 /* AlexanderEdison.jpg */; };
-		CF833B831720E8C30011DED3 /* Peter Deardorff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B771720E8C30011DED3 /* Peter Deardorff.jpg */; };
-		CF833B841720E8C30011DED3 /* Peter Deardorff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B771720E8C30011DED3 /* Peter Deardorff.jpg */; };
-		CF833B851720E8C30011DED3 /* Fred Elias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B781720E8C30011DED3 /* Fred Elias.jpg */; };
-		CF833B861720E8C30011DED3 /* Fred Elias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B781720E8C30011DED3 /* Fred Elias.jpg */; };
-		CF833B951720EBF80011DED3 /* Alexander Tougas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B871720EBF80011DED3 /* Alexander Tougas.jpg */; };
-		CF833B961720EBF80011DED3 /* Alexander Tougas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B871720EBF80011DED3 /* Alexander Tougas.jpg */; };
-		CF833B971720EBF80011DED3 /* Kevin Koh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B881720EBF80011DED3 /* Kevin Koh.jpg */; };
-		CF833B981720EBF80011DED3 /* Kevin Koh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B881720EBF80011DED3 /* Kevin Koh.jpg */; };
-		CF833B991720EBF80011DED3 /* Thomas Kramer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B891720EBF80011DED3 /* Thomas Kramer.jpg */; };
-		CF833B9A1720EBF80011DED3 /* Thomas Kramer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B891720EBF80011DED3 /* Thomas Kramer.jpg */; };
-		CF833B9B1720EBF80011DED3 /* Andrew Park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8A1720EBF80011DED3 /* Andrew Park.jpg */; };
-		CF833B9C1720EBF80011DED3 /* Andrew Park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8A1720EBF80011DED3 /* Andrew Park.jpg */; };
-		CF833B9D1720EBF80011DED3 /* Karl Reinhardt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8B1720EBF80011DED3 /* Karl Reinhardt.jpg */; };
-		CF833B9E1720EBF80011DED3 /* Karl Reinhardt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8B1720EBF80011DED3 /* Karl Reinhardt.jpg */; };
-		CF833B9F1720EBF80011DED3 /* Linc Rhodes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8C1720EBF80011DED3 /* Linc Rhodes.jpg */; };
-		CF833BA01720EBF80011DED3 /* Linc Rhodes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8C1720EBF80011DED3 /* Linc Rhodes.jpg */; };
-		CF833BA11720EBF80011DED3 /* Ryan Kulesza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8D1720EBF80011DED3 /* Ryan Kulesza.jpg */; };
-		CF833BA21720EBF80011DED3 /* Ryan Kulesza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8D1720EBF80011DED3 /* Ryan Kulesza.jpg */; };
-		CF833BA31720EBF80011DED3 /* Ryan Peabody.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8E1720EBF80011DED3 /* Ryan Peabody.jpg */; };
-		CF833BA41720EBF80011DED3 /* Ryan Peabody.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8E1720EBF80011DED3 /* Ryan Peabody.jpg */; };
-		CF833BA51720EBF80011DED3 /* Basyl Stuyvesant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8F1720EBF80011DED3 /* Basyl Stuyvesant.jpg */; };
-		CF833BA61720EBF80011DED3 /* Basyl Stuyvesant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B8F1720EBF80011DED3 /* Basyl Stuyvesant.jpg */; };
-		CF833BA71720EBF80011DED3 /* Colin Kennedy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B901720EBF80011DED3 /* Colin Kennedy.jpg */; };
-		CF833BA81720EBF80011DED3 /* Colin Kennedy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B901720EBF80011DED3 /* Colin Kennedy.jpg */; };
-		CF833BA91720EBF80011DED3 /* Omar Sohail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B911720EBF80011DED3 /* Omar Sohail.jpg */; };
-		CF833BAA1720EBF80011DED3 /* Omar Sohail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B911720EBF80011DED3 /* Omar Sohail.jpg */; };
-		CF833BAB1720EBF80011DED3 /* Hugo Tran.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B921720EBF80011DED3 /* Hugo Tran.jpg */; };
-		CF833BAC1720EBF80011DED3 /* Hugo Tran.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B921720EBF80011DED3 /* Hugo Tran.jpg */; };
-		CF833BAD1720EBF80011DED3 /* William Shi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B931720EBF80011DED3 /* William Shi.jpg */; };
-		CF833BAE1720EBF80011DED3 /* William Shi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B931720EBF80011DED3 /* William Shi.jpg */; };
-		CF833BAF1720EBF80011DED3 /* John Lagasse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B941720EBF80011DED3 /* John Lagasse.jpg */; };
-		CF833BB01720EBF80011DED3 /* John Lagasse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B941720EBF80011DED3 /* John Lagasse.jpg */; };
-		CF833BBC17217CF20011DED3 /* Katherine Carter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB117217CF20011DED3 /* Katherine Carter.jpg */; };
-		CF833BBD17217CF20011DED3 /* Katherine Carter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB117217CF20011DED3 /* Katherine Carter.jpg */; };
-		CF833BBE17217CF20011DED3 /* Katherine Foley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB217217CF20011DED3 /* Katherine Foley.jpg */; };
-		CF833BBF17217CF20011DED3 /* Katherine Foley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB217217CF20011DED3 /* Katherine Foley.jpg */; };
-		CF833BC017217CF20011DED3 /* Lela Garner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB317217CF20011DED3 /* Lela Garner.jpg */; };
-		CF833BC117217CF20011DED3 /* Lela Garner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB317217CF20011DED3 /* Lela Garner.jpg */; };
-		CF833BC217217CF20011DED3 /* Megan Chong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB417217CF20011DED3 /* Megan Chong.jpg */; };
-		CF833BC317217CF20011DED3 /* Megan Chong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB417217CF20011DED3 /* Megan Chong.jpg */; };
-		CF833BC417217CF20011DED3 /* Patty Boyer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB517217CF20011DED3 /* Patty Boyer.jpg */; };
-		CF833BC517217CF20011DED3 /* Patty Boyer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB517217CF20011DED3 /* Patty Boyer.jpg */; };
-		CF833BC617217CF20011DED3 /* Teri Faller.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB617217CF20011DED3 /* Teri Faller.jpg */; };
-		CF833BC717217CF20011DED3 /* Teri Faller.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB617217CF20011DED3 /* Teri Faller.jpg */; };
-		CF833BC817217CF20011DED3 /* Kelsey Goodwin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB717217CF20011DED3 /* Kelsey Goodwin.jpg */; };
-		CF833BC917217CF20011DED3 /* Kelsey Goodwin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB717217CF20011DED3 /* Kelsey Goodwin.jpg */; };
-		CF833BCA17217CF20011DED3 /* Sarah Hirschfeld.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB817217CF20011DED3 /* Sarah Hirschfeld.jpg */; };
-		CF833BCB17217CF20011DED3 /* Sarah Hirschfeld.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB817217CF20011DED3 /* Sarah Hirschfeld.jpg */; };
-		CF833BCC17217CF20011DED3 /* Bridget Killian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB917217CF20011DED3 /* Bridget Killian.jpg */; };
-		CF833BCD17217CF20011DED3 /* Bridget Killian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BB917217CF20011DED3 /* Bridget Killian.jpg */; };
-		CF833BCE17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BBA17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg */; };
-		CF833BCF17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BBA17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg */; };
-		CF833BD017217CF20011DED3 /* Tricia Hartley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BBB17217CF20011DED3 /* Tricia Hartley.jpg */; };
-		CF833BD117217CF20011DED3 /* Tricia Hartley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BBB17217CF20011DED3 /* Tricia Hartley.jpg */; };
-		CF833BDF1721821B0011DED3 /* Kaley Kokomoor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD21721821B0011DED3 /* Kaley Kokomoor.jpg */; };
-		CF833BE01721821B0011DED3 /* Kaley Kokomoor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD21721821B0011DED3 /* Kaley Kokomoor.jpg */; };
-		CF833BE11721821B0011DED3 /* Helen Newton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD31721821B0011DED3 /* Helen Newton.jpg */; };
-		CF833BE21721821B0011DED3 /* Helen Newton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD31721821B0011DED3 /* Helen Newton.jpg */; };
-		CF833BE31721821B0011DED3 /* Maeve O'Leary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD41721821B0011DED3 /* Maeve O'Leary.jpg */; };
-		CF833BE41721821B0011DED3 /* Maeve O'Leary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD41721821B0011DED3 /* Maeve O'Leary.jpg */; };
-		CF833BE51721821B0011DED3 /* Sasha Kramer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD51721821B0011DED3 /* Sasha Kramer.jpg */; };
-		CF833BE61721821B0011DED3 /* Sasha Kramer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD51721821B0011DED3 /* Sasha Kramer.jpg */; };
-		CF833BE71721821B0011DED3 /* Serena Taj.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD61721821B0011DED3 /* Serena Taj.jpg */; };
-		CF833BE81721821B0011DED3 /* Serena Taj.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD61721821B0011DED3 /* Serena Taj.jpg */; };
-		CF833BE91721821B0011DED3 /* Mariah Reading.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD71721821B0011DED3 /* Mariah Reading.jpg */; };
-		CF833BEA1721821B0011DED3 /* Mariah Reading.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD71721821B0011DED3 /* Mariah Reading.jpg */; };
-		CF833BEB1721821B0011DED3 /* Olivia Pfeifer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD81721821B0011DED3 /* Olivia Pfeifer.jpg */; };
-		CF833BEC1721821B0011DED3 /* Olivia Pfeifer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD81721821B0011DED3 /* Olivia Pfeifer.jpg */; };
-		CF833BED1721821B0011DED3 /* Sue Sim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD91721821B0011DED3 /* Sue Sim.jpg */; };
-		CF833BEE1721821B0011DED3 /* Sue Sim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BD91721821B0011DED3 /* Sue Sim.jpg */; };
-		CF833BEF1721821B0011DED3 /* Caroline Moore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDA1721821B0011DED3 /* Caroline Moore.jpg */; };
-		CF833BF01721821B0011DED3 /* Caroline Moore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDA1721821B0011DED3 /* Caroline Moore.jpg */; };
-		CF833BF11721821B0011DED3 /* Christine Rholl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDB1721821B0011DED3 /* Christine Rholl.jpg */; };
-		CF833BF21721821B0011DED3 /* Christine Rholl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDB1721821B0011DED3 /* Christine Rholl.jpg */; };
-		CF833BF31721821B0011DED3 /* Laurel Varnell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDC1721821B0011DED3 /* Laurel Varnell.jpg */; };
-		CF833BF41721821B0011DED3 /* Laurel Varnell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDC1721821B0011DED3 /* Laurel Varnell.jpg */; };
-		CF833BF51721821B0011DED3 /* Sonia Manssen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDD1721821B0011DED3 /* Sonia Manssen.jpg */; };
-		CF833BF61721821B0011DED3 /* Sonia Manssen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDD1721821B0011DED3 /* Sonia Manssen.jpg */; };
-		CF833BF71721821B0011DED3 /* Sage Mikami.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDE1721821B0011DED3 /* Sage Mikami.jpg */; };
-		CF833BF81721821B0011DED3 /* Sage Mikami.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833BDE1721821B0011DED3 /* Sage Mikami.jpg */; };
+		CFA603A1182747BB00C21507 /* MasterTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA603A0182747BB00C21507 /* MasterTVC.m */; };
+		CFA603A41827592700C21507 /* TeamTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA603A31827592700C21507 /* TeamTVC.m */; };
 		CFD5FC5717E957D8002F2BA2 /* Get_Data_From_Website.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */; };
 		CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFA17FE448B0071814C /* OldIcon.png */; };
 		CFF5ECFD17FE45900071814C /* HomeBearLogo4.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFC17FE45900071814C /* HomeBearLogo4.png */; };
@@ -297,7 +197,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E15B58E174081DF006D1881 /* mensSwimmingSchedule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mensSwimmingSchedule.txt; sourceTree = "<group>"; };
 		1E15B59017408334006D1881 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
 		1E15B59117408334006D1881 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 		1E18AACB174002A200AFA86F /* BowdoinNews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinNews.png; sourceTree = "<group>"; };
@@ -311,7 +210,6 @@
 		1E2F1779172883550023515F /* ScheduleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleCell.m; sourceTree = "<group>"; };
 		1E2F177B1728837D0023515F /* ScheduleTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTVC.h; sourceTree = "<group>"; };
 		1E2F177C1728837D0023515F /* ScheduleTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTVC.m; sourceTree = "<group>"; };
-		1E4837961734C04F008D8C06 /* FootballRosterPictures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FootballRosterPictures; sourceTree = "<group>"; };
 		1EA69CD7173F1C2300C31786 /* News Story View Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "News Story View Controller.h"; path = "../News Story View Controller.h"; sourceTree = "<group>"; };
 		1EA69CD8173F1C2300C31786 /* News Story View Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "News Story View Controller.m"; path = "../News Story View Controller.m"; sourceTree = "<group>"; };
 		1EBB3DEC17223EF40032238C /* 9.-Bowdoin-College.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9.-Bowdoin-College.png"; sourceTree = "<group>"; };
@@ -488,56 +386,10 @@
 		CF833B561720CBF50011DED3 /* BowdoinSoccer 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BowdoinSoccer 2.jpg"; sourceTree = "<group>"; };
 		CF833B571720CBF50011DED3 /* BowdoinTrack 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BowdoinTrack 2.png"; sourceTree = "<group>"; };
 		CF833B601720D19C0011DED3 /* BowdoinBearPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinBearPhoto.jpg; sourceTree = "<group>"; };
-		CF833B631720E2120011DED3 /* Lloyd Anderson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lloyd Anderson.jpg"; sourceTree = "<group>"; };
-		CF833B641720E2120011DED3 /* EliBass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EliBass.jpg; sourceTree = "<group>"; };
-		CF833B651720E2120011DED3 /* HenryBrockway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HenryBrockway.jpg; sourceTree = "<group>"; };
-		CF833B661720E2120011DED3 /* LyleAnderson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LyleAnderson.jpg; sourceTree = "<group>"; };
-		CF833B671720E2120011DED3 /* JoeClestin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JoeClestin.jpg; sourceTree = "<group>"; };
-		CF833B721720E8C30011DED3 /* Chris Granata.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Chris Granata.jpg"; sourceTree = "<group>"; };
-		CF833B731720E8C30011DED3 /* Edwards Googins.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Edwards Googins.jpg"; sourceTree = "<group>"; };
-		CF833B741720E8C30011DED3 /* Mark Fernandez.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mark Fernandez.jpg"; sourceTree = "<group>"; };
-		CF833B751720E8C30011DED3 /* JR Chansakul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "JR Chansakul.jpg"; sourceTree = "<group>"; };
-		CF833B761720E8C30011DED3 /* AlexanderEdison.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlexanderEdison.jpg; sourceTree = "<group>"; };
-		CF833B771720E8C30011DED3 /* Peter Deardorff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Peter Deardorff.jpg"; sourceTree = "<group>"; };
-		CF833B781720E8C30011DED3 /* Fred Elias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fred Elias.jpg"; sourceTree = "<group>"; };
-		CF833B871720EBF80011DED3 /* Alexander Tougas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Alexander Tougas.jpg"; sourceTree = "<group>"; };
-		CF833B881720EBF80011DED3 /* Kevin Koh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kevin Koh.jpg"; sourceTree = "<group>"; };
-		CF833B891720EBF80011DED3 /* Thomas Kramer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Thomas Kramer.jpg"; sourceTree = "<group>"; };
-		CF833B8A1720EBF80011DED3 /* Andrew Park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Andrew Park.jpg"; sourceTree = "<group>"; };
-		CF833B8B1720EBF80011DED3 /* Karl Reinhardt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Karl Reinhardt.jpg"; sourceTree = "<group>"; };
-		CF833B8C1720EBF80011DED3 /* Linc Rhodes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Linc Rhodes.jpg"; sourceTree = "<group>"; };
-		CF833B8D1720EBF80011DED3 /* Ryan Kulesza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ryan Kulesza.jpg"; sourceTree = "<group>"; };
-		CF833B8E1720EBF80011DED3 /* Ryan Peabody.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ryan Peabody.jpg"; sourceTree = "<group>"; };
-		CF833B8F1720EBF80011DED3 /* Basyl Stuyvesant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Basyl Stuyvesant.jpg"; sourceTree = "<group>"; };
-		CF833B901720EBF80011DED3 /* Colin Kennedy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Colin Kennedy.jpg"; sourceTree = "<group>"; };
-		CF833B911720EBF80011DED3 /* Omar Sohail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Omar Sohail.jpg"; sourceTree = "<group>"; };
-		CF833B921720EBF80011DED3 /* Hugo Tran.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hugo Tran.jpg"; sourceTree = "<group>"; };
-		CF833B931720EBF80011DED3 /* William Shi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "William Shi.jpg"; sourceTree = "<group>"; };
-		CF833B941720EBF80011DED3 /* John Lagasse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "John Lagasse.jpg"; sourceTree = "<group>"; };
-		CF833BB117217CF20011DED3 /* Katherine Carter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katherine Carter.jpg"; sourceTree = "<group>"; };
-		CF833BB217217CF20011DED3 /* Katherine Foley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Katherine Foley.jpg"; sourceTree = "<group>"; };
-		CF833BB317217CF20011DED3 /* Lela Garner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lela Garner.jpg"; sourceTree = "<group>"; };
-		CF833BB417217CF20011DED3 /* Megan Chong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Megan Chong.jpg"; sourceTree = "<group>"; };
-		CF833BB517217CF20011DED3 /* Patty Boyer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Patty Boyer.jpg"; sourceTree = "<group>"; };
-		CF833BB617217CF20011DED3 /* Teri Faller.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Teri Faller.jpg"; sourceTree = "<group>"; };
-		CF833BB717217CF20011DED3 /* Kelsey Goodwin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kelsey Goodwin.jpg"; sourceTree = "<group>"; };
-		CF833BB817217CF20011DED3 /* Sarah Hirschfeld.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sarah Hirschfeld.jpg"; sourceTree = "<group>"; };
-		CF833BB917217CF20011DED3 /* Bridget Killian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bridget Killian.jpg"; sourceTree = "<group>"; };
-		CF833BBA17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Caitlin Hutchinson Maddox.jpg"; sourceTree = "<group>"; };
-		CF833BBB17217CF20011DED3 /* Tricia Hartley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tricia Hartley.jpg"; sourceTree = "<group>"; };
-		CF833BD21721821B0011DED3 /* Kaley Kokomoor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kaley Kokomoor.jpg"; sourceTree = "<group>"; };
-		CF833BD31721821B0011DED3 /* Helen Newton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Helen Newton.jpg"; sourceTree = "<group>"; };
-		CF833BD41721821B0011DED3 /* Maeve O'Leary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Maeve O'Leary.jpg"; sourceTree = "<group>"; };
-		CF833BD51721821B0011DED3 /* Sasha Kramer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sasha Kramer.jpg"; sourceTree = "<group>"; };
-		CF833BD61721821B0011DED3 /* Serena Taj.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Serena Taj.jpg"; sourceTree = "<group>"; };
-		CF833BD71721821B0011DED3 /* Mariah Reading.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mariah Reading.jpg"; sourceTree = "<group>"; };
-		CF833BD81721821B0011DED3 /* Olivia Pfeifer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Olivia Pfeifer.jpg"; sourceTree = "<group>"; };
-		CF833BD91721821B0011DED3 /* Sue Sim.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sue Sim.jpg"; sourceTree = "<group>"; };
-		CF833BDA1721821B0011DED3 /* Caroline Moore.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Caroline Moore.jpg"; sourceTree = "<group>"; };
-		CF833BDB1721821B0011DED3 /* Christine Rholl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Christine Rholl.jpg"; sourceTree = "<group>"; };
-		CF833BDC1721821B0011DED3 /* Laurel Varnell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Laurel Varnell.jpg"; sourceTree = "<group>"; };
-		CF833BDD1721821B0011DED3 /* Sonia Manssen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sonia Manssen.jpg"; sourceTree = "<group>"; };
-		CF833BDE1721821B0011DED3 /* Sage Mikami.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sage Mikami.jpg"; sourceTree = "<group>"; };
+		CFA6039F182747BB00C21507 /* MasterTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTVC.h; sourceTree = "<group>"; };
+		CFA603A0182747BB00C21507 /* MasterTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTVC.m; sourceTree = "<group>"; };
+		CFA603A21827592700C21507 /* TeamTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamTVC.h; sourceTree = "<group>"; };
+		CFA603A31827592700C21507 /* TeamTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamTVC.m; sourceTree = "<group>"; };
 		CFD5FC5517E957D7002F2BA2 /* Get_Data_From_Website.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Get_Data_From_Website.h; sourceTree = "<group>"; };
 		CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Get_Data_From_Website.m; sourceTree = "<group>"; };
 		CFF5ECFA17FE448B0071814C /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OldIcon.png; path = "Pocket Roster/OldIcon.png"; sourceTree = "<group>"; };
@@ -568,64 +420,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1EBB3DF4172241650032238C /* Swim Team */ = {
-			isa = PBXGroup;
-			children = (
-				1E15B58E174081DF006D1881 /* mensSwimmingSchedule.txt */,
-				CF833BD21721821B0011DED3 /* Kaley Kokomoor.jpg */,
-				CF833BD31721821B0011DED3 /* Helen Newton.jpg */,
-				CF833BD41721821B0011DED3 /* Maeve O'Leary.jpg */,
-				CF833BD51721821B0011DED3 /* Sasha Kramer.jpg */,
-				CF833BD61721821B0011DED3 /* Serena Taj.jpg */,
-				CF833BD71721821B0011DED3 /* Mariah Reading.jpg */,
-				CF833BD81721821B0011DED3 /* Olivia Pfeifer.jpg */,
-				CF833BD91721821B0011DED3 /* Sue Sim.jpg */,
-				CF833BDA1721821B0011DED3 /* Caroline Moore.jpg */,
-				CF833BDB1721821B0011DED3 /* Christine Rholl.jpg */,
-				CF833BDC1721821B0011DED3 /* Laurel Varnell.jpg */,
-				CF833BDD1721821B0011DED3 /* Sonia Manssen.jpg */,
-				CF833BDE1721821B0011DED3 /* Sage Mikami.jpg */,
-				CF833BB117217CF20011DED3 /* Katherine Carter.jpg */,
-				CF833BB217217CF20011DED3 /* Katherine Foley.jpg */,
-				CF833BB317217CF20011DED3 /* Lela Garner.jpg */,
-				CF833BB417217CF20011DED3 /* Megan Chong.jpg */,
-				CF833BB517217CF20011DED3 /* Patty Boyer.jpg */,
-				CF833BB617217CF20011DED3 /* Teri Faller.jpg */,
-				CF833BB717217CF20011DED3 /* Kelsey Goodwin.jpg */,
-				CF833BB817217CF20011DED3 /* Sarah Hirschfeld.jpg */,
-				CF833BB917217CF20011DED3 /* Bridget Killian.jpg */,
-				CF833BBA17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg */,
-				CF833BBB17217CF20011DED3 /* Tricia Hartley.jpg */,
-				CF833B871720EBF80011DED3 /* Alexander Tougas.jpg */,
-				CF833B881720EBF80011DED3 /* Kevin Koh.jpg */,
-				CF833B891720EBF80011DED3 /* Thomas Kramer.jpg */,
-				CF833B8A1720EBF80011DED3 /* Andrew Park.jpg */,
-				CF833B8B1720EBF80011DED3 /* Karl Reinhardt.jpg */,
-				CF833B8C1720EBF80011DED3 /* Linc Rhodes.jpg */,
-				CF833B8D1720EBF80011DED3 /* Ryan Kulesza.jpg */,
-				CF833B8E1720EBF80011DED3 /* Ryan Peabody.jpg */,
-				CF833B8F1720EBF80011DED3 /* Basyl Stuyvesant.jpg */,
-				CF833B901720EBF80011DED3 /* Colin Kennedy.jpg */,
-				CF833B911720EBF80011DED3 /* Omar Sohail.jpg */,
-				CF833B921720EBF80011DED3 /* Hugo Tran.jpg */,
-				CF833B931720EBF80011DED3 /* William Shi.jpg */,
-				CF833B941720EBF80011DED3 /* John Lagasse.jpg */,
-				CF833B721720E8C30011DED3 /* Chris Granata.jpg */,
-				CF833B731720E8C30011DED3 /* Edwards Googins.jpg */,
-				CF833B741720E8C30011DED3 /* Mark Fernandez.jpg */,
-				CF833B751720E8C30011DED3 /* JR Chansakul.jpg */,
-				CF833B761720E8C30011DED3 /* AlexanderEdison.jpg */,
-				CF833B771720E8C30011DED3 /* Peter Deardorff.jpg */,
-				CF833B781720E8C30011DED3 /* Fred Elias.jpg */,
-				CF833B631720E2120011DED3 /* Lloyd Anderson.jpg */,
-				CF833B641720E2120011DED3 /* EliBass.jpg */,
-				CF833B651720E2120011DED3 /* HenryBrockway.jpg */,
-				CF833B661720E2120011DED3 /* LyleAnderson.jpg */,
-				CF833B671720E2120011DED3 /* JoeClestin.jpg */,
-			);
-			name = "Swim Team";
-			sourceTree = "<group>";
-		};
 		1ECC557E173F0EE400EBD61D /* Roster */ = {
 			isa = PBXGroup;
 			children = (
@@ -834,9 +628,7 @@
 				CFF5ECFA17FE448B0071814C /* OldIcon.png */,
 				CF4684BE173DBF8E001F8A1F /* TumbnailFinal */,
 				CF247AE8173D8D660079AD32 /* iPhoneSetFallBackground.png */,
-				1EBB3DF4172241650032238C /* Swim Team */,
 				1EBB3DEC17223EF40032238C /* 9.-Bowdoin-College.png */,
-				1E4837961734C04F008D8C06 /* FootballRosterPictures */,
 				CF247A16173B408F0079AD32 /* General Images */,
 				CF6568DA171782B700AE84AC /* Pocket Roster */,
 				CF6568FE171782B700AE84AC /* Pocket RosterTests */,
@@ -877,6 +669,8 @@
 				CF247A73173C0B8D0079AD32 /* PersonalAccount.h */,
 				1ECC5584173F168200EBD61D /* TeamViewController.h */,
 				1ECC5585173F168200EBD61D /* TeamViewController.m */,
+				CFA6039F182747BB00C21507 /* MasterTVC.h */,
+				CFA603A0182747BB00C21507 /* MasterTVC.m */,
 				CF024E36181A165900F9CF54 /* InitTeam.h */,
 				CF024E37181A165900F9CF54 /* InitTeam.m */,
 				1ECC557E173F0EE400EBD61D /* Roster */,
@@ -897,6 +691,8 @@
 				CF6569211717968500AE84AC /* AttributedStringViewController.h */,
 				CF6569221717968500AE84AC /* AttributedStringViewController.m */,
 				CF6568EC171782B700AE84AC /* MainStoryboard.storyboard */,
+				CFA603A21827592700C21507 /* TeamTVC.h */,
+				CFA603A31827592700C21507 /* TeamTVC.m */,
 				CFD5FC5517E957D7002F2BA2 /* Get_Data_From_Website.h */,
 				CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */,
 				CF024E301818C0C600F9CF54 /* GetTeamLinks.h */,
@@ -1049,60 +845,10 @@
 				CF833B5C1720CBF50011DED3 /* BowdoinSoccer 2.jpg in Resources */,
 				CF833B5E1720CBF50011DED3 /* BowdoinTrack 2.png in Resources */,
 				CF833B611720D19C0011DED3 /* BowdoinBearPhoto.jpg in Resources */,
-				CF833B681720E2120011DED3 /* Lloyd Anderson.jpg in Resources */,
-				CF833B6A1720E2120011DED3 /* EliBass.jpg in Resources */,
-				CF833B6C1720E2120011DED3 /* HenryBrockway.jpg in Resources */,
-				CF833B6E1720E2120011DED3 /* LyleAnderson.jpg in Resources */,
-				CF833B701720E2120011DED3 /* JoeClestin.jpg in Resources */,
-				CF833B791720E8C30011DED3 /* Chris Granata.jpg in Resources */,
-				CF833B7B1720E8C30011DED3 /* Edwards Googins.jpg in Resources */,
-				CF833B7D1720E8C30011DED3 /* Mark Fernandez.jpg in Resources */,
-				CF833B7F1720E8C30011DED3 /* JR Chansakul.jpg in Resources */,
-				CF833B811720E8C30011DED3 /* AlexanderEdison.jpg in Resources */,
-				CF833B831720E8C30011DED3 /* Peter Deardorff.jpg in Resources */,
-				CF833B851720E8C30011DED3 /* Fred Elias.jpg in Resources */,
-				CF833B951720EBF80011DED3 /* Alexander Tougas.jpg in Resources */,
 				CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */,
-				CF833B971720EBF80011DED3 /* Kevin Koh.jpg in Resources */,
-				CF833B991720EBF80011DED3 /* Thomas Kramer.jpg in Resources */,
-				CF833B9B1720EBF80011DED3 /* Andrew Park.jpg in Resources */,
-				CF833B9D1720EBF80011DED3 /* Karl Reinhardt.jpg in Resources */,
-				CF833B9F1720EBF80011DED3 /* Linc Rhodes.jpg in Resources */,
-				CF833BA11720EBF80011DED3 /* Ryan Kulesza.jpg in Resources */,
-				CF833BA31720EBF80011DED3 /* Ryan Peabody.jpg in Resources */,
-				CF833BA51720EBF80011DED3 /* Basyl Stuyvesant.jpg in Resources */,
-				CF833BA71720EBF80011DED3 /* Colin Kennedy.jpg in Resources */,
-				CF833BA91720EBF80011DED3 /* Omar Sohail.jpg in Resources */,
-				CF833BAB1720EBF80011DED3 /* Hugo Tran.jpg in Resources */,
-				CF833BAD1720EBF80011DED3 /* William Shi.jpg in Resources */,
-				CF833BAF1720EBF80011DED3 /* John Lagasse.jpg in Resources */,
-				CF833BBC17217CF20011DED3 /* Katherine Carter.jpg in Resources */,
-				CF833BBE17217CF20011DED3 /* Katherine Foley.jpg in Resources */,
-				CF833BC017217CF20011DED3 /* Lela Garner.jpg in Resources */,
-				CF833BC217217CF20011DED3 /* Megan Chong.jpg in Resources */,
 				CF024E2718102ECF00F9CF54 /* HomeBearLogo.png in Resources */,
-				CF833BC417217CF20011DED3 /* Patty Boyer.jpg in Resources */,
-				CF833BC617217CF20011DED3 /* Teri Faller.jpg in Resources */,
-				CF833BC817217CF20011DED3 /* Kelsey Goodwin.jpg in Resources */,
-				CF833BCA17217CF20011DED3 /* Sarah Hirschfeld.jpg in Resources */,
 				CF024E1F180F0EC100F9CF54 /* B Logo.png in Resources */,
-				CF833BCC17217CF20011DED3 /* Bridget Killian.jpg in Resources */,
-				CF833BCE17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg in Resources */,
-				CF833BD017217CF20011DED3 /* Tricia Hartley.jpg in Resources */,
 				CF024E3A181AB16300F9CF54 /* Football Background.jpg in Resources */,
-				CF833BDF1721821B0011DED3 /* Kaley Kokomoor.jpg in Resources */,
-				CF833BE11721821B0011DED3 /* Helen Newton.jpg in Resources */,
-				CF833BE31721821B0011DED3 /* Maeve O'Leary.jpg in Resources */,
-				CF833BE51721821B0011DED3 /* Sasha Kramer.jpg in Resources */,
-				CF833BE71721821B0011DED3 /* Serena Taj.jpg in Resources */,
-				CF833BE91721821B0011DED3 /* Mariah Reading.jpg in Resources */,
-				CF833BEB1721821B0011DED3 /* Olivia Pfeifer.jpg in Resources */,
-				CF833BED1721821B0011DED3 /* Sue Sim.jpg in Resources */,
-				CF833BEF1721821B0011DED3 /* Caroline Moore.jpg in Resources */,
-				CF833BF11721821B0011DED3 /* Christine Rholl.jpg in Resources */,
-				CF833BF31721821B0011DED3 /* Laurel Varnell.jpg in Resources */,
-				CF833BF51721821B0011DED3 /* Sonia Manssen.jpg in Resources */,
-				CF833BF71721821B0011DED3 /* Sage Mikami.jpg in Resources */,
 				CF024E21180FB11C00F9CF54 /* AddFav.png in Resources */,
 				1EBB3DF017223EF40032238C /* 9.-Bowdoin-College.png in Resources */,
 				1EBB3DF117223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg in Resources */,
@@ -1114,7 +860,6 @@
 				1E2F1775172881B80023515F /* mensSailing.jpg in Resources */,
 				1E2F1776172881B80023515F /* mensSquash.jpg in Resources */,
 				1E2F1777172881B80023515F /* mensTennis.jpg in Resources */,
-				1E4837971734C04F008D8C06 /* FootballRosterPictures in Resources */,
 				CF247A19173B40C50079AD32 /* LiveScoresLogo.png in Resources */,
 				CF247A1B173B40D10079AD32 /* MyPhotosLogo.png in Resources */,
 				CFF5ECFD17FE45900071814C /* HomeBearLogo4.png in Resources */,
@@ -1174,7 +919,6 @@
 				CF4684DB173DC4D0001F8A1F /* LoginButton.png in Resources */,
 				CF024E2D18162E3100F9CF54 /* icon2.png in Resources */,
 				CF4684E1173DF963001F8A1F /* OldIcon.png in Resources */,
-				1E15B58F174081DF006D1881 /* mensSwimmingSchedule.txt in Resources */,
 				CF56488F174096690067FBBB /* NewsfeedIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1197,56 +941,6 @@
 				CF833B5D1720CBF50011DED3 /* BowdoinSoccer 2.jpg in Resources */,
 				CF833B5F1720CBF50011DED3 /* BowdoinTrack 2.png in Resources */,
 				CF833B621720D19C0011DED3 /* BowdoinBearPhoto.jpg in Resources */,
-				CF833B691720E2120011DED3 /* Lloyd Anderson.jpg in Resources */,
-				CF833B6B1720E2120011DED3 /* EliBass.jpg in Resources */,
-				CF833B6D1720E2120011DED3 /* HenryBrockway.jpg in Resources */,
-				CF833B6F1720E2120011DED3 /* LyleAnderson.jpg in Resources */,
-				CF833B711720E2120011DED3 /* JoeClestin.jpg in Resources */,
-				CF833B7A1720E8C30011DED3 /* Chris Granata.jpg in Resources */,
-				CF833B7C1720E8C30011DED3 /* Edwards Googins.jpg in Resources */,
-				CF833B7E1720E8C30011DED3 /* Mark Fernandez.jpg in Resources */,
-				CF833B801720E8C30011DED3 /* JR Chansakul.jpg in Resources */,
-				CF833B821720E8C30011DED3 /* AlexanderEdison.jpg in Resources */,
-				CF833B841720E8C30011DED3 /* Peter Deardorff.jpg in Resources */,
-				CF833B861720E8C30011DED3 /* Fred Elias.jpg in Resources */,
-				CF833B961720EBF80011DED3 /* Alexander Tougas.jpg in Resources */,
-				CF833B981720EBF80011DED3 /* Kevin Koh.jpg in Resources */,
-				CF833B9A1720EBF80011DED3 /* Thomas Kramer.jpg in Resources */,
-				CF833B9C1720EBF80011DED3 /* Andrew Park.jpg in Resources */,
-				CF833B9E1720EBF80011DED3 /* Karl Reinhardt.jpg in Resources */,
-				CF833BA01720EBF80011DED3 /* Linc Rhodes.jpg in Resources */,
-				CF833BA21720EBF80011DED3 /* Ryan Kulesza.jpg in Resources */,
-				CF833BA41720EBF80011DED3 /* Ryan Peabody.jpg in Resources */,
-				CF833BA61720EBF80011DED3 /* Basyl Stuyvesant.jpg in Resources */,
-				CF833BA81720EBF80011DED3 /* Colin Kennedy.jpg in Resources */,
-				CF833BAA1720EBF80011DED3 /* Omar Sohail.jpg in Resources */,
-				CF833BAC1720EBF80011DED3 /* Hugo Tran.jpg in Resources */,
-				CF833BAE1720EBF80011DED3 /* William Shi.jpg in Resources */,
-				CF833BB01720EBF80011DED3 /* John Lagasse.jpg in Resources */,
-				CF833BBD17217CF20011DED3 /* Katherine Carter.jpg in Resources */,
-				CF833BBF17217CF20011DED3 /* Katherine Foley.jpg in Resources */,
-				CF833BC117217CF20011DED3 /* Lela Garner.jpg in Resources */,
-				CF833BC317217CF20011DED3 /* Megan Chong.jpg in Resources */,
-				CF833BC517217CF20011DED3 /* Patty Boyer.jpg in Resources */,
-				CF833BC717217CF20011DED3 /* Teri Faller.jpg in Resources */,
-				CF833BC917217CF20011DED3 /* Kelsey Goodwin.jpg in Resources */,
-				CF833BCB17217CF20011DED3 /* Sarah Hirschfeld.jpg in Resources */,
-				CF833BCD17217CF20011DED3 /* Bridget Killian.jpg in Resources */,
-				CF833BCF17217CF20011DED3 /* Caitlin Hutchinson Maddox.jpg in Resources */,
-				CF833BD117217CF20011DED3 /* Tricia Hartley.jpg in Resources */,
-				CF833BE01721821B0011DED3 /* Kaley Kokomoor.jpg in Resources */,
-				CF833BE21721821B0011DED3 /* Helen Newton.jpg in Resources */,
-				CF833BE41721821B0011DED3 /* Maeve O'Leary.jpg in Resources */,
-				CF833BE61721821B0011DED3 /* Sasha Kramer.jpg in Resources */,
-				CF833BE81721821B0011DED3 /* Serena Taj.jpg in Resources */,
-				CF833BEA1721821B0011DED3 /* Mariah Reading.jpg in Resources */,
-				CF833BEC1721821B0011DED3 /* Olivia Pfeifer.jpg in Resources */,
-				CF833BEE1721821B0011DED3 /* Sue Sim.jpg in Resources */,
-				CF833BF01721821B0011DED3 /* Caroline Moore.jpg in Resources */,
-				CF833BF21721821B0011DED3 /* Christine Rholl.jpg in Resources */,
-				CF833BF41721821B0011DED3 /* Laurel Varnell.jpg in Resources */,
-				CF833BF61721821B0011DED3 /* Sonia Manssen.jpg in Resources */,
-				CF833BF81721821B0011DED3 /* Sage Mikami.jpg in Resources */,
 				CF247A56173BD91D0079AD32 /* LoginButton2.png in Resources */,
 				CF247A6E173BF7AB0079AD32 /* BowdoinClubFinal.png in Resources */,
 				CF247A79173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt in Resources */,
@@ -1316,8 +1010,10 @@
 				1ECC555F173F092400EBD61D /* RSSCell.m in Sources */,
 				1ECC5560173F092400EBD61D /* RSSTVC.m in Sources */,
 				1ECC5561173F092400EBD61D /* WebViewController.m in Sources */,
+				CFA603A41827592700C21507 /* TeamTVC.m in Sources */,
 				1ECC557A173F0DF300EBD61D /* RSSEntry.m in Sources */,
 				1ECC557B173F0DF300EBD61D /* RSSHomeCell.m in Sources */,
+				CFA603A1182747BB00C21507 /* MasterTVC.m in Sources */,
 				CF024E38181A165900F9CF54 /* InitTeam.m in Sources */,
 				1ECC557C173F0DF300EBD61D /* RSSHomeTVC.m in Sources */,
 				1ECC557D173F0DF300EBD61D /* RSSWebView.m in Sources */,
