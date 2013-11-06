@@ -13,14 +13,14 @@
 
 
 @property (nonatomic) NSString *key;
-
+@property (nonatomic) NSString *incommingURL;
 /*
  @property (nonatomic) NSString *yearOfGraduation;
  @property (nonatomic) NSString *number;
  @property (nonatomic) NSString *position;
  @property (nonatomic) UIImage *athletePicture;
  */
-@property (nonatomic) NSMutableDictionary *footballTeamRoster;
+@property (nonatomic) NSMutableDictionary *teamRoster;
 
--(void)initializeFootballTeamRoster;
+//-(void)initializeFootballTeamRoster;
 @end

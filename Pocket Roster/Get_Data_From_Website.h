@@ -12,7 +12,7 @@
 
 
 
-//+(void) getInfo: (NSString *) linkForURLSearch;
-+(void) getInfo;
++(void) getInfo: (NSString *) linkForURLSearch;
+//+(void) getInfo;
 
 @end

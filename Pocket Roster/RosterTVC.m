@@ -8,6 +8,7 @@
 
 #import "RosterTVC.h"
 #import "RosterCell.h"
+#import "Get_Data_From_Website.h"
 
 @interface RosterTVC ()
 
@@ -35,8 +36,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self initializeFootballTeamRoster];
+    //need to give the URL here using self.incommingURL.
+    teamRoster = [Get_Data_From_Website getInfo];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -46,7 +47,7 @@
 }
 
 
-
+/*
 -(void)initializeFootballTeamRoster{
     
     NSArray *images = [[NSBundle mainBundle] pathsForResourcesOfType:@"jpg" inDirectory:@"FootballRosterPictures"];
@@ -80,7 +81,7 @@
         
         
     }
-    
+*/    
     /*
     
     NSArray *allKeys = [self.footballTeamRoster allKeys];
@@ -137,7 +138,7 @@
 {
 
     // Return the number of rows in the section.
-    return [self.footballTeamRoster count]-1;
+    return [self.teamRoster count]-1;
     
 }
 
@@ -150,7 +151,7 @@
     
     self.key = [[NSString alloc] initWithFormat:@"%ld", (long)[indexPath row]+1];
     
-    NSArray* athleteObjects = [self.footballTeamRoster objectForKey:self.key];
+    NSArray* athleteObjects = [self.teamRoster objectForKey:self.key];
     
     if(cell == nil && [athleteObjects objectAtIndex:0]!=nil ) {
         cell = [[RosterCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];

@@ -10,8 +10,8 @@
 
 @implementation Get_Data_From_Website
 
-//+ (void) getInfo: (NSString *) linkForURLSearch
-+(void) getInfo
++ (NSMutableDictionary *) getInfo: (NSString *) linkForURLSearch
+//+(void) getInfo
 {
     int key = 0;
     NSString *urlStr = @"http://athletics.bowdoin.edu/sports/mxc/2013-14/roster";
@@ -191,6 +191,8 @@ for (int i = 0; i < 100; i++)
  
      
 }
+
+return bowdoinEntireTeam;
 /*
     
     -(void)setTeamRosterMenBaseball{

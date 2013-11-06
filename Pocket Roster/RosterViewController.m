@@ -41,4 +41,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryBoardSegue *)segue sender:(id)sender{
+
+	if([segue.identifier isEqualToString:@"embedRoster"]){
+		if([segue.destinationViewController isKindOfClass:[RosterTVC class]]){
+			RosterTVC *rTVC = (RosterTVC *)segue.destinationViewController;
+			rTVC.incommingURL = self.rosterURL;
+		}
+	}
+
+
+}
+
 @end
