@@ -11,6 +11,6 @@
 @interface NewsFeedViewController : UIViewController
 
 @property (nonatomic) NSString *teamName;
-
+@property (nonatomic) NSString *newsURL;
 
 @end

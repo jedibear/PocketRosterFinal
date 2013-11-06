@@ -8,6 +8,12 @@
 
 #import "TeamTVC.h"
 #import "GetTeamLinks.h"
+#import "RosterViewController.h"
+#import "ScheduleViewController.h"
+#import "NewsFeedViewController.h"
+#import "CoachesViewController.h"
+#import "FacilitiesViewController.h"
+#import "RecordsViewController.h"
 
 @interface TeamTVC ()
 
@@ -191,17 +197,25 @@
 }
 
 
-//this is the code for the segues for each team. Each class will need to be tweaked or created
-//to make it work. Needs to take URL and get stuff from site. 
+/*
+ *
+ *  Prepare the segue to the appropriate view the user is looking to navigate to. Right now
+ *  just the incommingURL is passed. The specific naviagtion found above will have to be appended
+ *  to a string to get the full URL to be passed. String will be converted to an actual URL in
+ *  the destination view controller.
+ *
+ */
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-	
+
     if ([segue.identifier isEqualToString:@"roster"]) {
 	//not sure if this is the right class, nothing is in RosterViewController right now.         
 	//football roster no longer works/ was using pics, need to pull from site
         if ([segue.destinationViewController isKindOfClass:[RosterViewController class]]) {
             RosterViewController *rVC = (RosterViewController *)segue.destinationViewController;
-            rVC.incommingTeamURL =self.incommingTeamURL;
+            rVC.rosterURL =self.incommingTeamURL;
         }
     }else if ([segue.identifier isEqualToString:@"schedule/results"]) {
         
@@ -213,25 +227,25 @@
         
         if ([segue.destinationViewController isKindOfClass:[NewsFeedViewController class]]) {
             NewsFeedViewController *nFVC = (NewsFeedViewController *)segue.destinationViewController;
-            nFVC.incommingTeamURL =self.incommingTeamURL;
+            nFVC.newsURL =self.incommingTeamURL;
         }
     }else if ([segue.identifier isEqualToString:@"coaches"]) {
 	//CoachesViewController Class needs to be created        
         if ([segue.destinationViewController isKindOfClass:[CoachesViewController class]]) {
             CoachesViewController *cVC = (CoachesViewController *)segue.destinationViewController;
-            cVC.incommingTeamURL =self.incommingTeamURL;
+            cVC.coachesURL =self.incommingTeamURL;
         }
     }else if ([segue.identifier isEqualToString:@"facilities"]) {
         //FacilitiesViewController Class needs to be created
         if ([segue.destinationViewController isKindOfClass:[FacilitiesViewController class]]) {
             FacilitiesViewController *fVC = (FacilitiesViewController *)segue.destinationViewController;
-            nFVC.incommingTeamURL =self.incommingTeamURL;
+            fVC.facilitiesURL =self.incommingTeamURL;
         }
     }else if ([segue.identifier isEqualToString:@"records"]) {
-        //RecordsViewController Class needs to be created
+        
         if ([segue.destinationViewController isKindOfClass:[RecordsViewController class]]) {
             RecordsViewController *rEVC = (RecordsViewController *)segue.destinationViewController;
-            nFVC.incommingTeamURL =self.incommingTeamURL;
+            rEVC.recordsURL =self.incommingTeamURL;
         }
     }
 }    

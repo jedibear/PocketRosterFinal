@@ -10,4 +10,6 @@
 
 @interface RosterViewController : UIViewController
 
+@property (nonatomic) NSString *rosterURL;
+
 @end
