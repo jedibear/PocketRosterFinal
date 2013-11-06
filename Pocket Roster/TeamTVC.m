@@ -230,14 +230,14 @@
             nFVC.newsURL =self.incommingTeamURL;
         }
     }else if ([segue.identifier isEqualToString:@"coaches"]) {
-	//CoachesViewController Class needs to be created        
-        if ([segue.destinationViewController isKindOfClass:[CoachesViewController class]]) {
+        
+	if ([segue.destinationViewController isKindOfClass:[CoachesViewController class]]) {
             CoachesViewController *cVC = (CoachesViewController *)segue.destinationViewController;
             cVC.coachesURL =self.incommingTeamURL;
         }
     }else if ([segue.identifier isEqualToString:@"facilities"]) {
-        //FacilitiesViewController Class needs to be created
-        if ([segue.destinationViewController isKindOfClass:[FacilitiesViewController class]]) {
+        
+	if ([segue.destinationViewController isKindOfClass:[FacilitiesViewController class]]) {
             FacilitiesViewController *fVC = (FacilitiesViewController *)segue.destinationViewController;
             fVC.facilitiesURL =self.incommingTeamURL;
         }
