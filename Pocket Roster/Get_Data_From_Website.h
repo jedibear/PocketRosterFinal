@@ -12,7 +12,7 @@
 
 
 
-+(void) getInfo: (NSString *) linkForURLSearch;
++(NSMutableDictionary *) getInfo: (NSString *) linkForURLSearch;
 //+(void) getInfo;
 
 @end

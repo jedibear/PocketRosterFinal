@@ -13,6 +13,7 @@
 @property (nonatomic) NSString *teamName;
 @property (nonatomic) NSString *incommingTeamURL;
 @property (nonatomic) NSMutableArray *teamLinks;
+@property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
 
 -(void)setTeamName:(NSString *)team;
 

@@ -81,7 +81,7 @@
     
     
     
-    NSString *sURL = [[NSString alloc]init];
+    /*NSString *sURL = [[NSString alloc]init];
     if([self.teamName isEqualToString:@"General"])
         sURL = genURL;
     else if ([self.teamName isEqualToString:@"Football"])
@@ -94,8 +94,9 @@
         sURL = laxMURL;
     
     NSLog(@"%@   %@\n", self.teamName, sURL);
+     */
        
-    return sURL;
+    return self.incommingURL;
 }
 
 

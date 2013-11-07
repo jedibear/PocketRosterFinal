@@ -47,7 +47,7 @@
         
         if([segue.destinationViewController isKindOfClass:[RSSTVC class]]){
             RSSTVC *rSSTmp = (RSSTVC *)segue.destinationViewController;
-            rSSTmp.teamName = self.teamName;
+            rSSTmp.incommingURL = self.newsURL;
             NSLog(@"inhere");
             //[segue.destinationViewController setTeamName:self.teamName];
         }

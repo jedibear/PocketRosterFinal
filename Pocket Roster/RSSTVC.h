@@ -15,7 +15,7 @@
 @property (nonatomic) NSMutableArray *stories;
 @property (nonatomic) NSMutableDictionary * item;
 @property (nonatomic) NSMutableString *currentTitle, *currentDate, *currentSummary, *currentLink, *imageURL, *sequeLink;
-@property (nonatomic) NSString *currentElement, *teamName;
+@property (nonatomic) NSString *currentElement, *teamName, *incommingURL;
 @property (nonatomic) UIImage *storyImage;
 
 

@@ -30,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.teamNameLabel setText: self.teamName];
 	
     
 }

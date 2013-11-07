@@ -27,17 +27,17 @@
 
 -(NSMutableDictionary*) footballTeamRoster{
     
-    if(!_footballTeamRoster){
-        _footballTeamRoster = [[NSMutableDictionary alloc] init];
+    if(!_teamRoster){
+        _teamRoster = [[NSMutableDictionary alloc] init];
     }
-    return _footballTeamRoster;
+    return _teamRoster;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     //need to give the URL here using self.incommingURL.
-    teamRoster = [Get_Data_From_Website getInfo];
+    self.teamRoster = [Get_Data_From_Website getInfo:self.incommingURL];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -81,8 +81,8 @@
         
         
     }
-*/    
-    /*
+ 
+ 
     
     NSArray *allKeys = [self.footballTeamRoster allKeys];
     
@@ -106,10 +106,10 @@
             NSLog(@"%@", [self.footballTeamRoster objectForKey:self.key]);
         }
     }
-     */
+ 
     
 }
-
+*/
 
 
 

@@ -41,7 +41,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     //[GetTeamLinks getTeamLinkBreakdown];
 	
-
+/*
 	//sanity check
      NSLog(@"%@here", self.incommingTeamURL);
     
@@ -85,13 +85,13 @@
     [miniScanner scanUpToString:@"navbar-secondary" intoString:NULL];
     [miniScanner scanUpToString:@"<div id=\"links-container\">" intoString:NULL];
     [miniScanner scanUpToString:@"</div>" intoString:&linksString];
-    
+    */
     /**
      ********************************
      *            Roster            *
      ********************************
      */
-    
+    /*
     NSScanner *linkScanner = [NSScanner scannerWithString:linksString];
     [linkScanner scanUpToString:@">Home</a>" intoString:NULL];
     [linkScanner scanUpToString:@"<a href=" intoString:NULL];
@@ -104,12 +104,13 @@
         numberOfElements++;
         [self.teamLinks addObject:rosterTabFinal];
     }
+     */
     /**
      ********************************
      *        Schedule/Results      *
      ********************************
      */
-    
+    /*
     [linkScanner scanUpToString:@"<a href=" intoString:NULL];
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&scheduleTab];
@@ -120,13 +121,13 @@
         numberOfElements++;
         [self.teamLinks addObject:scheduleTabFinal];
     }
-    
+    */
     /**
      ********************************
      *             News             *
      ********************************
      */
-    
+    /*
     [linkScanner scanUpToString:@"<a href=" intoString:NULL];
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&newsTab];
@@ -137,12 +138,13 @@
         numberOfElements++;
         [self.teamLinks addObject:newsTabFinal];
     }
-    
+    */
     /**
      ********************************
      *             Coaches          *
      ********************************
      */
+    /*
     [linkScanner scanUpToString:@"<a href=" intoString:NULL];
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&coachesTab];
@@ -153,12 +155,14 @@
         numberOfElements++;
         [self.teamLinks addObject:coachesTabFinal];
     }
-    
+    */
     /**
      ********************************
      *          Facilities          *
      ********************************
      */
+    
+    /*
     [linkScanner scanUpToString:@"<a href=" intoString:NULL];
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&facilitiesTab];
@@ -169,12 +173,13 @@
         numberOfElements++;
         [self.teamLinks addObject:facilitiesTabFinal];
     }
-    
+    */
     /**
      ********************************
      *            Records           *
      ********************************
      */
+    /*
     [linkScanner scanUpToString:@"<a href=" intoString:NULL];
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&recordsTab];
@@ -186,7 +191,7 @@
         [self.teamLinks addObject:recordsTabFinal];
     }
     
-    
+    */
     
 }
 
@@ -216,6 +221,7 @@
         if ([segue.destinationViewController isKindOfClass:[RosterViewController class]]) {
             RosterViewController *rVC = (RosterViewController *)segue.destinationViewController;
             rVC.rosterURL =self.incommingTeamURL;
+            
         }
     }else if ([segue.identifier isEqualToString:@"schedule/results"]) {
         

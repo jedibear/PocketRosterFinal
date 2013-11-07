@@ -7,6 +7,7 @@
 //
 
 #import "RosterViewController.h"
+#import "RosterTVC.h"
 #define NUMBER_OF_ROWS 12;
 #import "Get_Data_From_Website.h"
 
@@ -32,7 +33,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [Get_Data_From_Website getInfo];
+    //[Get_Data_From_Website getInfo];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,7 +42,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)prepareForSegue:(UIStoryBoardSegue *)segue sender:(id)sender{
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 
 	if([segue.identifier isEqualToString:@"embedRoster"]){
 		if([segue.destinationViewController isKindOfClass:[RosterTVC class]]){
