@@ -41,7 +41,6 @@
 		CF024E2D18162E3100F9CF54 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2C18162E3100F9CF54 /* icon2.png */; };
 		CF024E2F1816307F00F9CF54 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2E1816307F00F9CF54 /* icon.png */; };
 		CF024E321818C0C600F9CF54 /* GetTeamLinks.m in Sources */ = {isa = PBXBuildFile; fileRef = CF024E311818C0C600F9CF54 /* GetTeamLinks.m */; };
-		CF024E351818DDD100F9CF54 /* GetImages.m in Sources */ = {isa = PBXBuildFile; fileRef = CF024E341818DDD100F9CF54 /* GetImages.m */; };
 		CF024E38181A165900F9CF54 /* InitTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = CF024E37181A165900F9CF54 /* InitTeam.m */; };
 		CF024E3A181AB16300F9CF54 /* Football Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF024E39181AB16300F9CF54 /* Football Background.jpg */; };
 		CF247A19173B40C50079AD32 /* LiveScoresLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A18173B40C50079AD32 /* LiveScoresLogo.png */; };
@@ -183,6 +182,7 @@
 		CFA603A41827592700C21507 /* TeamTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA603A31827592700C21507 /* TeamTVC.m */; };
 		CFA603A618282EA900C21507 /* MenFTBall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA603A518282EA900C21507 /* MenFTBall.jpg */; };
 		CFD5FC5717E957D8002F2BA2 /* Get_Data_From_Website.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */; };
+		CFE1F89A182D3AAF00E8BD9E /* GetImages.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1F899182D3AAF00E8BD9E /* GetImages.m */; };
 		CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFA17FE448B0071814C /* OldIcon.png */; };
 		CFF5ECFD17FE45900071814C /* HomeBearLogo4.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFC17FE45900071814C /* HomeBearLogo4.png */; };
 /* End PBXBuildFile section */
@@ -248,8 +248,6 @@
 		CF024E2E1816307F00F9CF54 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		CF024E301818C0C600F9CF54 /* GetTeamLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTeamLinks.h; sourceTree = "<group>"; };
 		CF024E311818C0C600F9CF54 /* GetTeamLinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTeamLinks.m; sourceTree = "<group>"; };
-		CF024E331818DDD100F9CF54 /* GetImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetImages.h; sourceTree = "<group>"; };
-		CF024E341818DDD100F9CF54 /* GetImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetImages.m; sourceTree = "<group>"; };
 		CF024E36181A165900F9CF54 /* InitTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitTeam.h; sourceTree = "<group>"; };
 		CF024E37181A165900F9CF54 /* InitTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitTeam.m; sourceTree = "<group>"; };
 		CF024E39181AB16300F9CF54 /* Football Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Football Background.jpg"; sourceTree = "<group>"; };
@@ -394,6 +392,8 @@
 		CFA603A518282EA900C21507 /* MenFTBall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MenFTBall.jpg; sourceTree = "<group>"; };
 		CFD5FC5517E957D7002F2BA2 /* Get_Data_From_Website.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Get_Data_From_Website.h; sourceTree = "<group>"; };
 		CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Get_Data_From_Website.m; sourceTree = "<group>"; };
+		CFE1F898182D3AAF00E8BD9E /* GetImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetImages.h; path = ../GetImages.h; sourceTree = "<group>"; };
+		CFE1F899182D3AAF00E8BD9E /* GetImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetImages.m; path = ../GetImages.m; sourceTree = "<group>"; };
 		CFF5ECFA17FE448B0071814C /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OldIcon.png; path = "Pocket Roster/OldIcon.png"; sourceTree = "<group>"; };
 		CFF5ECFC17FE45900071814C /* HomeBearLogo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBearLogo4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -700,8 +700,8 @@
 				CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */,
 				CF024E301818C0C600F9CF54 /* GetTeamLinks.h */,
 				CF024E311818C0C600F9CF54 /* GetTeamLinks.m */,
-				CF024E331818DDD100F9CF54 /* GetImages.h */,
-				CF024E341818DDD100F9CF54 /* GetImages.m */,
+				CFE1F898182D3AAF00E8BD9E /* GetImages.h */,
+				CFE1F899182D3AAF00E8BD9E /* GetImages.m */,
 				CF833B26171ED4080011DED3 /* RosterViewController.h */,
 				CF833B27171ED4080011DED3 /* RosterViewController.m */,
 				CF6568EF171782B700AE84AC /* Pocket_RosterViewController.h */,
@@ -995,7 +995,6 @@
 				CF6569231717968500AE84AC /* AttributedStringViewController.m in Sources */,
 				CF833B1D171E14430011DED3 /* FlickrFetcher.m in Sources */,
 				CF833B28171ED4080011DED3 /* RosterViewController.m in Sources */,
-				CF024E351818DDD100F9CF54 /* GetImages.m in Sources */,
 				1EBB3DF9172256AD0032238C /* RosterTVC.m in Sources */,
 				1EFF35BF1725EFFA003A5A1E /* RosterCell.m in Sources */,
 				1E2F177A172883550023515F /* ScheduleCell.m in Sources */,
@@ -1011,6 +1010,7 @@
 				CF4684F5173DFD9B001F8A1F /* FlickrPracticeViewController.m in Sources */,
 				CF4684F6173DFD9B001F8A1F /* FlickrPhotoHeaderView.m in Sources */,
 				CF468501173E0246001F8A1F /* FlickrPhotoCell.m in Sources */,
+				CFE1F89A182D3AAF00E8BD9E /* GetImages.m in Sources */,
 				1ECC555F173F092400EBD61D /* RSSCell.m in Sources */,
 				1ECC5560173F092400EBD61D /* RSSTVC.m in Sources */,
 				1ECC5561173F092400EBD61D /* WebViewController.m in Sources */,
