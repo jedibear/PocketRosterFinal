@@ -13,6 +13,6 @@
 
 
 //+(NSMutableDictionary *) getInfo: (NSString *) linkForURLSearch;
-//+(void) getInfo;
++(void) getCoachesInfo;
 
 @end

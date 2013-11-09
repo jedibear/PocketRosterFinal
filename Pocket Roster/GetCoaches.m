@@ -14,11 +14,11 @@
 
 @implementation GetCoaches
 
-+ (NSMutableDictionary *) getCoaches: (NSString *) linkForURLSearch
-//+(void) getInfo
+//+ (NSMutableDictionary *) getCoaches: (NSString *) linkForURLSearch
++(void) getCoachesInfo
 {
-    int key = 0;
-    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/mxc/2013-14/roster";
+    //int key = 0;
+    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/bsb/coaches/index";
     NSURL *theURL = [[NSURL alloc] initWithString:urlStr];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
