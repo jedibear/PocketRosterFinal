@@ -51,6 +51,10 @@
     NSString *coachEmail;
     
     NSString *coachBioPre;
+    NSString *wholeCoachesBioTab;
+    NSString *coachBio;
+    
+
     NSString *coachBio;
     
     
@@ -135,21 +139,35 @@
             }
             // Add bio
             [scanner scanUpToString:@"class=\"synopsis" intoString:NULL];
-            [scanner scanUpToString:@"<p>" intoString:NULL];
+            [scanner scanUpToString:@"</div>" intoString:&wholeCoachesBioTab];
             
-            [scanner scanUpToString:@"</p>" intoString:&coachBioPre];
-            //Test whether there is a bio video in the format
+            NSScanner *miniScanner = [NSScanner scannerWithString:allCoachElements];
+            NSMutableString *wholeBio = [[NSMutableString alloc] initWithString:@""];
+            for (int i = 0; i < 10; i++)
+            {
+                [miniScanner scanUpToString:@"<p>" intoString:NULL];
+            
+                [miniScanner scanUpToString:@"</p>" intoString:&coachBioPre];
+                if(coachBioPre)
+                {
+                    //Test whether there is a bio video in the format
 
-            if ([coachBioPre rangeOfString:@"object"].location != NSNotFound)
-            {
-                [scanner scanUpToString:@"</object>" intoString:NULL];
+                    if ([coachBioPre rangeOfString:@"object"].location != NSNotFound)
+                    {
+                        [scanner scanUpToString:@"</object>" intoString:NULL];
+                        [miniScanner scanUpToString:@"<p>" intoString:NULL];
+                        [miniScanner scanUpToString:@"</p>" intoString:&coachBioPre];
+                        coachBioPre = [coachBioPre substringFromIndex: 3];
+                        [wholeBio appendString: coachBioPre];
+                    }
+                    else
+                    {
+                        coachBioPre = [coachBioPre substringFromIndex: 3];
+                        [wholeBio appendString: coachBioPre];
+                    }
+                }
             }
-            else
-            {
-                coachBio = [coachBioPre substringFromIndex: 3];
-            }
-            
-            while(
+            coachBio = wholeBio;
         }
     }
 
