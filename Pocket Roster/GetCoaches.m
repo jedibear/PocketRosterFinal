@@ -18,7 +18,7 @@
 +(void) getCoachesInfo
 {
     //int key = 0;
-    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/bsb/coaches/index";
+    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/wbkb/coaches/index";
     NSURL *theURL = [[NSURL alloc] initWithString:urlStr];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -33,37 +33,79 @@
     
     
     NSString *stringBreakdown;
-    NSString *entireRoster;
+    NSString *allCoachElements;
     
-    NSString *rosterElement1Final;
-    NSString *rosterElement1;
+    NSString *coachTitlePre;
+    NSString *coachTitle;
     
+    NSString *coachImagePre;
+    NSString *coachImage;
+    
+    NSString *coachPositionPre;
+    NSString *coachPosition;
+    
+    
+    
+    int dumbVariable = 1;
     
     /**
      ***************************************
      *   This is for the Coaches Profile  *
      ***************************************
      */
-    NSMutableArray *bowdoinPlayer = [NSMutableArray new];
+    NSMutableArray *bowdoinCoachesElements = [NSMutableArray new];
     
     /**
      ***************************************
-     *      This is for the Table View     *
+     *                Parser               *
      ***************************************
      */
-    NSMutableDictionary *allRosterAthletes = [NSMutableDictionary new];
-    NSMutableArray *singleRosterCells = [NSMutableArray new];
+
     
     NSScanner *megaScanner = [NSScanner scannerWithString:htmlFromURL];
-    [megaScanner scanUpToString:@"<table class=\"roster" intoString:NULL];
-    [megaScanner scanUpToString:@"</table>" intoString:&entireRoster];
+    [megaScanner scanUpToString:@"div id=\"mainbody\" class=\"clearfix\">" intoString:NULL];
+    [megaScanner scanUpToString:@"<footer class=\"clearfix\">" intoString:&allCoachElements];
     
-    NSScanner *scanner = [NSScanner scannerWithString:entireRoster];
+    NSScanner *scanner = [NSScanner scannerWithString:allCoachElements];
     
-    // Name
-    [scanner scanUpToString:@"tr class=\"roster-row" intoString:nil];
-    [scanner scanUpToString:@"/tr>" intoString:&stringBreakdown];
-    
+
+    for (int i = 0; i < 5; i++)
+    {
+        [scanner scanUpToString:@"class=\"bio-title\">" intoString:nil];
+        [scanner scanUpToString:@"class=\"name" intoString:nil];
+        [scanner scanUpToString:@">" intoString:nil];
+        [scanner scanUpToString:@"<" intoString:&coachTitlePre];
+        coachTitle = [coachTitlePre substringFromIndex: dumbVariable];
+        NSLog(@"%@", coachTitle);
+        if (coachTitle)
+        {
+            // Adding Name
+            [bowdoinCoachesElements addObject:coachTitle];
+            // Adding Image
+            [scanner scanUpToString:@"class=\"about" intoString:NULL];
+            [scanner scanUpToString:@"<img src=" intoString:NULL];
+            [scanner scanUpToString:@"\"" intoString:NULL];
+            [scanner scanUpToString:@"\"" intoString:&coachImagePre];
+            coachImage = [coachImagePre substringFromIndex: dumbVariable];
+            NSLog(@"%@", coachImage);
+            if (coachImage)
+            {
+                [bowdoinCoachesElements addObject:coachImage];
+            }
+            // Add Position
+            [scanner scanUpToString:@"class=\"about" intoString:NULL];
+            [scanner scanUpToString:@"<img src=" intoString:NULL];
+            [scanner scanUpToString:@"\"" intoString:NULL];
+            [scanner scanUpToString:@"\"" intoString:&coachImagePre];
+            coachImage = [coachImagePre substringFromIndex: dumbVariable];
+            NSLog(@"%@", coachImage);
+            if (coachImage)
+            {
+                [bowdoinCoachesElements addObject:coachImage];
+            }
+        }
+    }
+
 
 }
 
