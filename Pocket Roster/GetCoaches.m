@@ -37,6 +37,34 @@
     
     NSString *rosterElement1Final;
     NSString *rosterElement1;
+    
+    
+    /**
+     ***************************************
+     *   This is for the Coaches Profile  *
+     ***************************************
+     */
+    NSMutableArray *bowdoinPlayer = [NSMutableArray new];
+    
+    /**
+     ***************************************
+     *      This is for the Table View     *
+     ***************************************
+     */
+    NSMutableDictionary *allRosterAthletes = [NSMutableDictionary new];
+    NSMutableArray *singleRosterCells = [NSMutableArray new];
+    
+    NSScanner *megaScanner = [NSScanner scannerWithString:htmlFromURL];
+    [megaScanner scanUpToString:@"<table class=\"roster" intoString:NULL];
+    [megaScanner scanUpToString:@"</table>" intoString:&entireRoster];
+    
+    NSScanner *scanner = [NSScanner scannerWithString:entireRoster];
+    
+    // Name
+    [scanner scanUpToString:@"tr class=\"roster-row" intoString:nil];
+    [scanner scanUpToString:@"/tr>" intoString:&stringBreakdown];
+    
+
 }
 
 @end
