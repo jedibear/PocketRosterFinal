@@ -1,5 +1,5 @@
 //
-//  GetSchedule.h
+//  GetFacilities.h
 //  Pocket Roster
 //
 //  Created by Ryan Kulesza on 11/10/13.
@@ -8,13 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface GetSchedule : NSObject
 
-
-
-//+(NSMutableDictionary *) getSchedule: (NSString *) linkForURLSearch;
-//This method is just for testing while I can push 
-+(void) getSchedule;
+//+(NSMutableDictionary *) GetSchedule: (NSString *) linkForURLSearch;
+//This method is just for testing while I can push
++(void) GetSchedule;
 
 @end
