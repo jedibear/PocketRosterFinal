@@ -54,10 +54,6 @@
     NSString *wholeCoachesBioTab;
     NSString *coachBio;
     
-
-    NSString *coachBio;
-    
-    
     int dumbVariable = 1;
     
     /**
@@ -168,6 +164,11 @@
                 }
             }
             coachBio = wholeBio;
+            if (coachBio)
+            {
+                [bowdoinCoachesElements addObject:coachBio];
+            }
+
         }
     }
 
