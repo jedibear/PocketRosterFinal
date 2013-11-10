@@ -1,21 +1,21 @@
 //
-//  GetSchedule.m
+//  GetFacilities.m
 //  Pocket Roster
 //
 //  Created by Ryan Kulesza on 11/10/13.
 //  Copyright (c) 2013 Pocket Roster. All rights reserved.
 //
 
-#import "GetSchedule.h"
+#import "GetFacilities.h"
 
-@interface GetSchedule ()
+@interface GetFacilities ()
 
 @end
 
-@implementation GetSchedule
-
-//+ (NSMutableDictionary *) getSchedule: (NSString *) linkForURLSearch
-+(void) getSchedule
+@implementation GetFacilities
+//+(NSMutableDictionary *) getFacilities: (NSString *) linkForURLSearch;
+//This method is just for testing while I can push
++(void) getFacilities;
 {
 
     NSString *urlStr = @"http://athletics.bowdoin.edu/sports/bsb/2012-13/schedule";
@@ -54,7 +54,7 @@
      *    This is where we get the data     *
      ***************************************
      */
-
+    
     
     NSScanner *megaScanner = [NSScanner scannerWithString:htmlFromURL];
     [megaScanner scanUpToString:@"<table class=\"schedule" intoString:NULL];
@@ -67,7 +67,7 @@
     {
         [scanner scanUpToString:@"tr class=\"schedule-row" intoString:nil];
         [scanner scanUpToString:@"/tr>" intoString:&stringBreakdown];
-    
+        
         NSScanner *miniScanner = [NSScanner scannerWithString:stringBreakdown];
         //Number
         for (int i = 0; i < 20; i++)
@@ -77,14 +77,14 @@
             [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement1];
             scheduleElement1Final = [scheduleElement1 substringFromIndex: dumbVariable];
             NSLog(@"%@", scheduleElement1Final);
-        
-                if ( ![scheduleElement1Final isEqual: NULL])
-                {
-                    numberOfElements++;
-                    [allScheduleElements addObject:scheduleElement1Final];
-                }
             
+            if ( ![scheduleElement1Final isEqual: NULL])
+            {
+                numberOfElements++;
+                [allScheduleElements addObject:scheduleElement1Final];
             }
+            
+        }
         [scanner scanUpToString:@"tr class=\"schedule-row" intoString:nil];
         [scanner scanUpToString:@"/tr>" intoString:nil];
     }
