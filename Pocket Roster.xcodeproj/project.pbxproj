@@ -214,6 +214,7 @@
 		CFE1F8D8182EEB4E00E8BD9E /* WTennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8BA182EEB4E00E8BD9E /* WTennis.jpg */; };
 		CFE1F8D9182EEB4E00E8BD9E /* WTrack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8BB182EEB4E00E8BD9E /* WTrack.jpg */; };
 		CFE1F8DA182EEB4E00E8BD9E /* WVolleyball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8BC182EEB4E00E8BD9E /* WVolleyball.jpg */; };
+		CFE1F8DD1830067100E8BD9E /* GetSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1F8DC1830067100E8BD9E /* GetSchedule.m */; };
 		CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFA17FE448B0071814C /* OldIcon.png */; };
 		CFF5ECFD17FE45900071814C /* HomeBearLogo4.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFC17FE45900071814C /* HomeBearLogo4.png */; };
 /* End PBXBuildFile section */
@@ -457,6 +458,8 @@
 		CFE1F8BA182EEB4E00E8BD9E /* WTennis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTennis.jpg; sourceTree = "<group>"; };
 		CFE1F8BB182EEB4E00E8BD9E /* WTrack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTrack.jpg; sourceTree = "<group>"; };
 		CFE1F8BC182EEB4E00E8BD9E /* WVolleyball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WVolleyball.jpg; sourceTree = "<group>"; };
+		CFE1F8DB1830067100E8BD9E /* GetSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetSchedule.h; sourceTree = "<group>"; };
+		CFE1F8DC1830067100E8BD9E /* GetSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSchedule.m; sourceTree = "<group>"; };
 		CFF5ECFA17FE448B0071814C /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OldIcon.png; path = "Pocket Roster/OldIcon.png"; sourceTree = "<group>"; };
 		CFF5ECFC17FE45900071814C /* HomeBearLogo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBearLogo4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -763,6 +766,8 @@
 				CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */,
 				CFE1F89B182D431200E8BD9E /* GetCoaches.h */,
 				CFE1F89C182D431200E8BD9E /* GetCoaches.m */,
+				CFE1F8DB1830067100E8BD9E /* GetSchedule.h */,
+				CFE1F8DC1830067100E8BD9E /* GetSchedule.m */,
 				CF024E301818C0C600F9CF54 /* GetTeamLinks.h */,
 				CF024E311818C0C600F9CF54 /* GetTeamLinks.m */,
 				CFE1F898182D3AAF00E8BD9E /* GetImages.h */,
@@ -1139,6 +1144,7 @@
 				CF4684F1173DFD9B001F8A1F /* Flickr.m in Sources */,
 				CF024E321818C0C600F9CF54 /* GetTeamLinks.m in Sources */,
 				CF4684F2173DFD9B001F8A1F /* FlickrPhoto.m in Sources */,
+				CFE1F8DD1830067100E8BD9E /* GetSchedule.m in Sources */,
 				CF4684F3173DFD9B001F8A1F /* FlickrPracticeAppDelegate.m in Sources */,
 				CF4684F5173DFD9B001F8A1F /* FlickrPracticeViewController.m in Sources */,
 				CF4684F6173DFD9B001F8A1F /* FlickrPhotoHeaderView.m in Sources */,
