@@ -44,6 +44,14 @@
     NSString *coachPositionPre;
     NSString *coachPosition;
     
+    NSString *coachPhonePre;
+    NSString *coachPhone;
+    
+    NSString *coachEmailPre;
+    NSString *coachEmail;
+    
+    NSString *coachBioPre;
+    NSString *coachBio;
     
     
     int dumbVariable = 1;
@@ -93,16 +101,55 @@
                 [bowdoinCoachesElements addObject:coachImage];
             }
             // Add Position
-            [scanner scanUpToString:@"class=\"about" intoString:NULL];
-            [scanner scanUpToString:@"<img src=" intoString:NULL];
+            [scanner scanUpToString:@"class=\"lbl" intoString:NULL];
+            [scanner scanUpToString:@"class=\"val" intoString:NULL];
             [scanner scanUpToString:@"\"" intoString:NULL];
-            [scanner scanUpToString:@"\"" intoString:&coachImagePre];
-            coachImage = [coachImagePre substringFromIndex: dumbVariable];
-            NSLog(@"%@", coachImage);
-            if (coachImage)
+            [scanner scanUpToString:@"</td>" intoString:&coachPositionPre];
+            coachPosition = [coachPositionPre substringFromIndex: dumbVariable];
+            NSLog(@"%@", coachPosition);
+            if (coachPosition)
             {
-                [bowdoinCoachesElements addObject:coachImage];
+                [bowdoinCoachesElements addObject:coachPosition];
             }
+            // Add Phone
+            [scanner scanUpToString:@"class=\"lbl" intoString:NULL];
+            [scanner scanUpToString:@"class=\"val" intoString:NULL];
+            [scanner scanUpToString:@"\"" intoString:NULL];
+            [scanner scanUpToString:@"</td>" intoString:&coachPhonePre];
+            coachPhone = [coachPhonePre substringFromIndex: dumbVariable];
+            NSLog(@"%@", coachPhone);
+            if (coachPhone)
+            {
+                [bowdoinCoachesElements addObject:coachPhonePre];
+            }
+            // Add email
+            [scanner scanUpToString:@"class=\"lbl" intoString:NULL];
+            [scanner scanUpToString:@"class=\"val" intoString:NULL];
+            [scanner scanUpToString:@"\"" intoString:NULL];
+            [scanner scanUpToString:@"</td>" intoString:&coachEmailPre];
+            coachEmail = [coachEmailPre substringFromIndex: dumbVariable];
+            NSLog(@"%@", coachEmail);
+            if (coachEmail)
+            {
+                [bowdoinCoachesElements addObject:coachEmail];
+            }
+            // Add bio
+            [scanner scanUpToString:@"class=\"synopsis" intoString:NULL];
+            [scanner scanUpToString:@"<p>" intoString:NULL];
+            
+            [scanner scanUpToString:@"</p>" intoString:&coachBioPre];
+            //Test whether there is a bio video in the format
+
+            if ([coachBioPre rangeOfString:@"object"].location != NSNotFound)
+            {
+                [scanner scanUpToString:@"</object>" intoString:NULL];
+            }
+            else
+            {
+                coachBio = [coachBioPre substringFromIndex: 3];
+            }
+            
+            while(
         }
     }
 
