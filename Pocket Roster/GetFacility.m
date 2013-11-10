@@ -40,8 +40,12 @@
     NSString *facilityName;
     NSString *facilityNamePre;
 
+    NSString *writingForFacilitiesPre;
+    NSString *writingForFacilitiesPre2;
     NSMutableString *writingForFacilities = [[NSMutableString alloc] initWithString:@""];
-    
+   
+    NSString *imageVariable;
+    NSString *imageVariablePre;
     
     int dumbVariable = 1;
     int numberOfElements = 0;
@@ -72,26 +76,49 @@
     [scanner scanUpToString:@">" intoString:nil];
     [scanner scanUpToString:@"</strong>" intoString:&facilityNamePre];
     facilityName = [facilityNamePre substringFromIndex: dumbVariable];
-    NSLog(@"%@", facilityName);
+    NSLog(@"Facility Name: %@", facilityName);
         
                 if ( ![facilityName isEqual: NULL])
                 {
                     numberOfElements++;
                     [allfacilitiesElements addObject:facilityName];
                 }
+    //Gets the initial writing paragraph
     
-    [scanner scanUpToString:@"\"" intoString:nil];
     [scanner scanUpToString:@">" intoString:nil];
+    [scanner scanUpToString:@"\"" intoString:nil];
+    [scanner scanUpToString:@"\" </p>" intoString:&writingForFacilitiesPre];
+    writingForFacilitiesPre2 = [writingForFacilitiesPre substringFromIndex: dumbVariable];
+    [writingForFacilities appendString: writingForFacilitiesPre2];
+    // If there is more writing this is where I will get it
+    while ([writingForFacilitiesPre rangeOfString:@"img style="].location != NSNotFound)
+    {
+        [scanner scanUpToString:@"<p" intoString:nil];
+        [scanner scanUpToString:@">" intoString:nil];
+        [scanner scanUpToString:@"</p>" intoString:&writingForFacilitiesPre];
+        writingForFacilitiesPre2 = [writingForFacilitiesPre substringFromIndex: dumbVariable];
+        [writingForFacilities appendString: writingForFacilitiesPre2];
+    }
+    for(int i = 0; i < 10; i++)
+    {
+        [scanner scanUpToString:@"<p>" intoString:nil];
+        [scanner scanUpToString:@"src=" intoString:nil];
+        [scanner scanUpToString:@"\"" intoString:nil];
+        [scanner scanUpToString:@"?" intoString:&imageVariablePre];
+        imageVariable = [imageVariablePre substringFromIndex: dumbVariable];
+        
+        if( ![imageVariable isEqual: NULL])
+        {
+            numberOfElements++;
+            [allfacilitiesElements addObject:facilityName];
+            NSLog(@"Number of Images: %@", numberOfElements);
 
-    NSScanner *miniScanner1 = [NSScanner scannerWithString:entireFacilitiesHTML];
-    [miniScanner1 scanUpToString:@"<div class=\"rich mobile-article clearfix" intoString:NULL];
-    [miniScanner1 scanUpToString:@"<div>" intoString:&entireFacilitiesHTML];
-            
-    
-        [scanner scanUpToString:@"tr class=\"schedule-row" intoString:nil];
-        [scanner scanUpToString:@"/tr>" intoString:nil];
-    //        [wholeBio appendString: coachBioPre];
-    
+            NSLog(@"Image Name: %@", facilityName);
+
+        }
+        
+    }
+     
 }
 
 @end
