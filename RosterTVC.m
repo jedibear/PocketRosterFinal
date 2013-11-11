@@ -36,7 +36,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"%@ HERE I AM DUMB DUMB", self.incommingURL);
+    //NSLog(@"%@ HERE I AM DUMB DUMB", self.incommingURL);
     
     self.teamRoster = [Get_Data_From_Website getInfo:self.incommingURL];
 
@@ -139,8 +139,8 @@
 {
 
     // Return the number of rows in the section.
-    return [self.teamRoster count]-1;
-    
+    //return [self.teamRoster count]-1;
+    return 10;
 }
 
 

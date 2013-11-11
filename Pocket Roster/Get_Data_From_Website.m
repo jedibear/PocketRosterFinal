@@ -25,7 +25,6 @@
     //get the data from the web page
     NSString * htmlFromURL = [[NSString alloc] initWithData:dataFromURL encoding:NSASCIIStringEncoding];
     
-    NSLog(@" %@", htmlFromURL);
     
     
     NSString *stringBreakdown;
@@ -76,18 +75,22 @@
     NSScanner *scanner = [NSScanner scannerWithString:entireRoster];
     
     // Name
-    [scanner scanUpToString:@"tr class=\"roster-row" intoString:nil];
-    [scanner scanUpToString:@"/tr>" intoString:&stringBreakdown];
-
-    NSScanner *miniScanner = [NSScanner scannerWithString:stringBreakdown];
+   
     //Number
 for (int i = 0; i < 100; i++)
 {
+    // Get Athlete
+    [scanner scanUpToString:@"tr class=\"roster-row" intoString:nil];
+    [scanner scanUpToString:@"/tr>" intoString:&stringBreakdown];
+    
+    //Get Athlete's Info
+    NSScanner *miniScanner = [NSScanner scannerWithString:stringBreakdown];
+    
     [miniScanner scanUpToString:@"<td" intoString:nil];
     [miniScanner scanUpToString:@">" intoString:nil];
     [miniScanner scanUpToString:@"</td>" intoString:&rosterElement1];
     rosterElement1Final = [rosterElement1 substringFromIndex: dumbVariable];
-    NSLog(@"%@", rosterElement1Final);
+    NSLog(@" ROSTER INFO: %@", rosterElement1Final);
    if ([rosterElement1Final rangeOfString:@"href"].location != NSNotFound)
    {
        NSScanner *nameScanner = [NSScanner scannerWithString:rosterElement1Final];
@@ -95,7 +98,7 @@ for (int i = 0; i < 100; i++)
        [nameScanner scanUpToString:@">" intoString:NULL];
        [nameScanner scanUpToString:@"</a>" intoString:&rosterElement1];
        rosterElement1Final = [rosterElement1 substringFromIndex: dumbVariable];
-       NSLog(@"%@", rosterElement1Final);
+       NSLog(@"ROSTER INFO: %@", rosterElement1Final);
        
        if ( ![rosterElement1Final isEqual: NULL])
        {
@@ -111,7 +114,7 @@ for (int i = 0; i < 100; i++)
         [miniScanner scanUpToString:@">" intoString:NULL];
         [miniScanner scanUpToString:@"</a>" intoString:&rosterElement2];
         rosterElement2Final = [rosterElement2 substringFromIndex: dumbVariable];
-        NSLog(@"%@", rosterElement2Final);
+        NSLog(@"ROSTER INFO: %@", rosterElement2Final);
         if (rosterElement2Final)
         {
             numberOfElements++;
@@ -125,7 +128,7 @@ for (int i = 0; i < 100; i++)
     [miniScanner scanUpToString:@">" intoString:NULL];
     [miniScanner scanUpToString:@"</td>" intoString:&rosterElement3];
     rosterElement3Final = [rosterElement3 substringFromIndex: dumbVariable];
-    NSLog(@"%@", rosterElement3Final);
+    NSLog(@"ROSTER INFO: %@", rosterElement3Final);
     if (rosterElement3Final)
     {
         numberOfElements++;
@@ -193,8 +196,8 @@ for (int i = 0; i < 100; i++)
 
      
 }
-    NSLog(@"%@", bowdoinEntireTeam);
-return bowdoinEntireTeam;
+   // NSLog(@"%@", bowdoinEntireTeam);
+//return bowdoinEntireTeam;
 /*
     
     -(void)setTeamRosterMenBaseball{
