@@ -1,5 +1,5 @@
 //
-//  GetFacilities.h
+//  GetSchedule.h
 //  Pocket Roster
 //
 //  Created by Ryan Kulesza on 11/10/13.

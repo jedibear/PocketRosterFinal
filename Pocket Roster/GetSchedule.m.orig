@@ -84,10 +84,12 @@
             }
             
         }
-
+<<<<<<< HEAD
         [scanner scanUpToString:@"\"" intoString:nil];
         [scanner scanUpToString:@"/tr>" intoString:nil];
         
+=======
+>>>>>>> fec88058138bad64c96b8003cea9c6f04e3e50e8
 
     }
     

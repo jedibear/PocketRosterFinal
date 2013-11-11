@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 
 
+<<<<<<< HEAD
+@interface GetFacility : NSObject;
+=======
 @interface GetFacility : NSObject
-
+>>>>>>> fec88058138bad64c96b8003cea9c6f04e3e50e8
 
 
 
