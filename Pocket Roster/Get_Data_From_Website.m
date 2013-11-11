@@ -14,7 +14,7 @@
 //+(void) getInfo
 {
     int key = 0;
-    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/mxc/2013-14/roster";
+    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/fball/2013-14/roster";
     NSURL *theURL = [[NSURL alloc] initWithString:urlStr];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -186,12 +186,12 @@ for (int i = 0; i < 100; i++)
         numberOfElements++;
         [bowdoinPlayer addObject:rosterElement8Final];
     }
-    key++;
     [bowdoinEntireTeam setObject:bowdoinPlayer forKey:[NSString stringWithFormat:@"%d", key]];
- 
+     key++;
+
      
 }
-
+    NSLog(@"%@", bowdoinEntireTeam);
 return bowdoinEntireTeam;
 /*
     

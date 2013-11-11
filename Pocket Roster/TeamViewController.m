@@ -30,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"%@ TVC", self.incommingTeamURL);
     [self.teamNameLabel setText: self.teamName];
     [self.teamBackgroundImage setImage:[[UIImage alloc] initWithContentsOfFile:self.backgroundImagePath]];
 	
@@ -46,7 +47,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"embedTeam"]) {
-        
+        NSLog(@"%@",self.incommingTeamURL);
         if ([segue.destinationViewController isKindOfClass:[TeamTVC class]]) {
             TeamTVC *nFVC = (TeamTVC *)segue.destinationViewController;
             nFVC.incommingTeamURL =self.incommingTeamURL;

@@ -3522,7 +3522,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="TNU-PS-vvn" kind="embed" id="6a7-NG-zO8"/>
+                                    <segue destination="TNU-PS-vvn" kind="embed" identifier="embedTeam" id="6a7-NG-zO8"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -4206,7 +4206,7 @@
             <objects>
                 <tableViewController id="hc7-YG-V3Z" customClass="RSSHomeTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="79D-FI-1N7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.61345232660000004" alpha="1" colorSpace="calibratedWhite"/>
@@ -5104,7 +5104,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="DOJ-bs-u27" kind="embed" id="heP-tZ-qYM"/>
+                                    <segue destination="DOJ-bs-u27" kind="embed" identifier="embedRoster" id="heP-tZ-qYM"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -5113,7 +5113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAh-wC-0eI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1299" y="-3407"/>
+            <point key="canvasLocation" x="1445" y="-3658"/>
         </scene>
         <!--RosterTVC-->
         <scene sceneID="h2l-nj-3e5">
@@ -5151,6 +5151,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="athleteDetails" destination="dJI-zf-lJw" id="Vko-da-2J7"/>
                                     <outlet property="athleteImage" destination="Co3-GG-hoq" id="zuE-3W-Nkh"/>
@@ -5166,7 +5167,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ubh-YG-NZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1731" y="-3331"/>
+            <point key="canvasLocation" x="1960" y="-3584"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="nX6-BY-B3n">
@@ -7648,7 +7649,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4q-yC-1Nl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="613" y="-1107"/>
+            <point key="canvasLocation" x="690" y="-1255"/>
         </scene>
         <!--TeamTVC-->
         <scene sceneID="SVV-rW-gR8">
@@ -8253,6 +8254,9 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="P19-ba-p3H" kind="modal" identifier="roster" id="eQg-tR-NKe"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="S1E-ZG-j9a">
                                         <rect key="frame" x="0.0" y="80" width="320" height="80"/>
@@ -8927,26 +8931,26 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ydm-gM-c9Z"/>
-        <segue reference="6cF-zF-AY6"/>
-        <segue reference="nz0-8Y-JHX"/>
-        <segue reference="Xk8-Gx-FJl"/>
-        <segue reference="yCL-Xr-dJB"/>
-        <segue reference="zKd-1U-8sy"/>
-        <segue reference="wDP-wj-eyJ"/>
-        <segue reference="72q-0R-X8d"/>
-        <segue reference="11h-8S-kvl"/>
-        <segue reference="Hfi-uz-pbk"/>
-        <segue reference="ohy-EF-KnQ"/>
-        <segue reference="hTh-Tg-b3d"/>
+        <segue reference="2Df-7p-Pwb"/>
         <segue reference="oQX-lm-Ye2"/>
         <segue reference="WsU-3Z-bMu"/>
-        <segue reference="aOv-SL-9e3"/>
-        <segue reference="1cP-Of-ahw"/>
-        <segue reference="xnd-Wf-AnJ"/>
-        <segue reference="WiX-Q1-oB5"/>
-        <segue reference="C6f-BF-Oyy"/>
+        <segue reference="Xk8-Gx-FJl"/>
+        <segue reference="nz0-8Y-JHX"/>
+        <segue reference="ydm-gM-c9Z"/>
+        <segue reference="6cF-zF-AY6"/>
         <segue reference="sQv-Q6-vTb"/>
         <segue reference="pLB-uG-dLC"/>
+        <segue reference="zKd-1U-8sy"/>
+        <segue reference="yCL-Xr-dJB"/>
+        <segue reference="Hfi-uz-pbk"/>
+        <segue reference="ohy-EF-KnQ"/>
+        <segue reference="1cP-Of-ahw"/>
+        <segue reference="aOv-SL-9e3"/>
+        <segue reference="WiX-Q1-oB5"/>
+        <segue reference="C6f-BF-Oyy"/>
+        <segue reference="72q-0R-X8d"/>
+        <segue reference="wDP-wj-eyJ"/>
+        <segue reference="11h-8S-kvl"/>
+        <segue reference="xnd-Wf-AnJ"/>
     </inferredMetricsTieBreakers>
 </document>

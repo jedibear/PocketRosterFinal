@@ -60,7 +60,7 @@
         self.teamURL = @"http://athletics.bowdoin.edu/sports/fball/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.incommingTeamURL = self.teamURL;
+            teamVC.incommingTeamURL = @"http://athletics.bowdoin.edu/sports/fball/index";
             teamVC.teamName = @"Football";
             teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MFootball" ofType:@"jpg"];
         }

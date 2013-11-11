@@ -31,6 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"%@ fuck", self.rosterURL);
 	// Do any additional setup after loading the view.
     
     //[Get_Data_From_Website getInfo];

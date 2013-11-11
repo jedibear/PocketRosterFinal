@@ -8,6 +8,7 @@
 
 #import "RosterTVC.h"
 #import "RosterCell.h"
+#import "Get_Data_From_Website.h"
 
 @interface RosterTVC ()
 
@@ -24,19 +25,20 @@
     return self;
 }
 
--(NSMutableDictionary*) footballTeamRoster{
+-(NSMutableDictionary*) teamRoster{
     
-    if(!_footballTeamRoster){
-        _footballTeamRoster = [[NSMutableDictionary alloc] init];
+    if(!_teamRoster){
+        _teamRoster = [[NSMutableDictionary alloc] init];
     }
-    return _footballTeamRoster;
+    return _teamRoster;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"%@ HERE I AM DUMB DUMB", self.incommingURL);
     
-    [self initializeFootballTeamRoster];
+    self.teamRoster = [Get_Data_From_Website getInfo:self.incommingURL];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -68,7 +70,7 @@
             
             
             
-            [self.footballTeamRoster setObject:[NSArray arrayWithObjects:name, position, number, yearOfGraduation, anImage,  nil] forKey:self.key];
+            [self.teamRoster setObject:[NSArray arrayWithObjects:name, position, number, yearOfGraduation, anImage,  nil] forKey:self.key];
             //NSLog(@"%@", imagePath);
         }
         
@@ -137,7 +139,7 @@
 {
 
     // Return the number of rows in the section.
-    return [self.footballTeamRoster count]-1;
+    return [self.teamRoster count]-1;
     
 }
 
@@ -150,7 +152,7 @@
     
     self.key = [[NSString alloc] initWithFormat:@"%ld", (long)[indexPath row]+1];
     
-    NSArray* athleteObjects = [self.footballTeamRoster objectForKey:self.key];
+    NSArray* athleteObjects = [self.teamRoster objectForKey:self.key];
     
     if(cell == nil && [athleteObjects objectAtIndex:0]!=nil ) {
         cell = [[RosterCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
@@ -160,11 +162,11 @@
     if ([athleteObjects objectAtIndex:0]!=nil) {
         NSString* athleteName = [[NSString alloc]initWithFormat:@"%@", [athleteObjects objectAtIndex:0]];
         NSString* athleteDetails = [[NSString alloc]initWithFormat:@"%@   %@    %@", [athleteObjects objectAtIndex:1],[athleteObjects objectAtIndex:3],[athleteObjects objectAtIndex:2]];
-        UIImage* athletePic = [athleteObjects objectAtIndex:4];
+        //UIImage* athletePic = [athleteObjects objectAtIndex:4];
         
         cell.athleteName.text = athleteName;
         cell.athleteDetails.text = athleteDetails;
-        cell.athleteImage.image = athletePic;
+        //cell.athleteImage.image = athletePic;
         
         //NSLog(@"%lu", (unsigned long)[self.footballTeamRoster count]);
     }
