@@ -58,6 +58,7 @@
     */
     NSMutableDictionary *bowdoinEntireTeam = [NSMutableDictionary new];
     NSMutableArray *bowdoinPlayer = [NSMutableArray new];
+    NSMutableArray *rosterImages = [NSMutableArray new];
     
     /**
      ***************************************
@@ -66,6 +67,7 @@
      */
     NSMutableDictionary *allRosterAthletes = [NSMutableDictionary new];
     NSMutableArray *singleRosterCells = [NSMutableArray new];
+    
 
     NSScanner *megaScanner = [NSScanner scannerWithString:htmlFromURL];
     [megaScanner scanUpToString:@"<table class=\"roster" intoString:NULL];
