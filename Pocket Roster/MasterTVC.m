@@ -52,7 +52,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Soccer";
-            teamVC.backgroundImagePath = @"Pocket Roster/MSoccer.jpg";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MSoccer" ofType:@"jpg"];
             
         }
         
@@ -62,6 +62,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Football";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MFootball" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensXCountryTVCInit"]){
@@ -70,6 +71,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Cross Country";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MCrossCountry" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensRugbyTVCInit"]){
@@ -78,6 +80,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Rugby";
+            //teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MSoccer" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensGolfTVCInit"]){
@@ -86,6 +89,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Golf";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MGolf" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensSailingTVCInit"]){
@@ -94,6 +98,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Sailing";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MSailing" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensTennisTVCInit"]){
@@ -102,6 +107,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Tennis";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MTennis" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensSwimmingAndDiving"]){
@@ -110,6 +116,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Swimming And Diving";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MSwimming" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensHockey"]){
@@ -118,6 +125,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Hockey";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MHockey" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensBasketball"]){
@@ -126,6 +134,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Basketball";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MBacketball" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensIndoorTrack"]){
@@ -134,6 +143,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Indoor Track";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MTrack" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensSquash"]){
@@ -142,6 +152,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Squash";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MSquash" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensLax"]){
@@ -150,6 +161,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Lacrosse";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"BLax" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensTrack"]){
@@ -158,6 +170,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Track";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MTrack" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensBaseball"]){
@@ -166,6 +179,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Baseball";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MBaseball" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wRugby"]){
@@ -174,6 +188,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Rugby";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WRugby" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wSoccer"]){
@@ -182,6 +197,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Soccer";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WSoccer" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wXCountry"]){
@@ -190,6 +206,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Cross Country";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WCrossCountry" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wGolf"]){
@@ -198,6 +215,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Golf";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WGolf" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wSailing"]){
@@ -206,6 +224,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Sailing";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WSailing" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wTennis"]){
@@ -214,6 +233,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Tennis";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WTennis" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wFieldHockey"]){
@@ -222,6 +242,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"FieldHockey";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WFeildHockey" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wVolleyball"]){
@@ -230,6 +251,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Volleyball";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WVolleyball" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wSwimmingAndDiving"]){
@@ -238,6 +260,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Swimming And Diving";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WSwimming" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wHockey"]){
@@ -246,6 +269,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Hockey";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WHockey" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wBasketball"]){
@@ -254,6 +278,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Basketball";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WBasketball" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wIndoorTrack"]){
@@ -262,6 +287,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Indoor Track";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WTrack" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wSquash"]){
@@ -270,6 +296,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Squash";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WSquash" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wNorticSkiing"]){
@@ -278,6 +305,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Nortic Skiing";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WSkiing" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wLax"]){
@@ -286,6 +314,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Lacrosse";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WLax" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wTrack"]){
@@ -294,6 +323,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Track";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WTrack" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"wSoftball"]){
@@ -302,6 +332,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Softball";
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WSoftball" ofType:@"jpg"];
         }
         
     }

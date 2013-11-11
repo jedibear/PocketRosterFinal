@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Pocket Roster. All rights reserved.
 //
 
-#import "GetSchedule"
+#import "GetSchedule.h"
 
 @interface GetSchedule ()
 
@@ -84,7 +84,7 @@
             }
             
         }
-        [scanner scanUpToString:@"\"" intoString:];
+        [scanner scanUpToString:@"\"" intoString:nil];
         [scanner scanUpToString:@"/tr>" intoString:nil];
         
 

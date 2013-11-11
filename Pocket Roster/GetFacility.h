@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 
 
-@interface GetFacility.h : NSObject
+@interface GetFacility : NSObject;
 
 
 
 //+(NSMutableDictionary *) GetFacility.h: (NSString *) linkForURLSearch;
 //This method is just for testing while I can push 
-+(void) GetFacility.h;
++(void) GetFacility;
 
 @end
