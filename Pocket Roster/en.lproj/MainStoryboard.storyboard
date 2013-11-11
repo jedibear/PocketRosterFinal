@@ -2022,7 +2022,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USn-c2-r45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-153" y="-1206"/>
+            <point key="canvasLocation" x="-157" y="-1255"/>
         </scene>
         <!--MasterTVC-->
         <scene sceneID="npP-1J-hSG">
@@ -2235,7 +2235,7 @@
             <objects>
                 <tableViewController id="gTb-Eb-g7v" customClass="MasterTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rId-7y-hTK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.61345232660000004" alpha="1" colorSpace="calibratedWhite"/>
@@ -3340,7 +3340,7 @@
             <objects>
                 <tableViewController id="7br-fV-zIz" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dXs-ad-1Bj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -3451,18 +3451,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenFTBall.jpg" id="8oc-YA-NSb">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <containerView opaque="NO" alpha="0.49999999999999994" tag="-1" contentMode="scaleToFill" id="znX-FZ-tJ4">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="0wi-zV-61v" kind="embed" identifier="embedTeam" id="Bco-89-Rh5"/>
-                                </connections>
-                            </containerView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="exO-kl-j4g">
                                 <rect key="frame" x="162" y="25" width="158" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3522,16 +3510,29 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="jCT-fh-8Jz">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" id="UNN-Rg-GMx">
+                                <rect key="frame" x="66" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="0wi-zV-61v" kind="embed" identifier="embedTeam" id="wZZ-Gt-sdl"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="teamNameLabel" destination="PlS-dV-Ior" id="YQd-92-bI7"/>
+                        <outlet property="teamBackgroundImage" destination="jCT-fh-8Jz" id="096-US-upU"/>
+                        <outlet property="teamNameLabel" destination="PlS-dV-Ior" id="joL-bC-14f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5JS-m9-ZBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886" y="-2981"/>
+            <point key="canvasLocation" x="940" y="-2997"/>
         </scene>
         <!--Flickr Practice View Controller-->
         <scene sceneID="eio-cw-W8K">
@@ -5032,7 +5033,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvR-Mx-yNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="182" y="-467"/>
+            <point key="canvasLocation" x="327" y="-611"/>
         </scene>
         <!--Roster View Controller-->
         <scene sceneID="zMQ-xD-zAB">
@@ -7601,7 +7602,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JaI-Fa-aoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981" y="-2845"/>
+            <point key="canvasLocation" x="1377" y="-2801"/>
         </scene>
         <!--Team View Controller-->
         <scene sceneID="ZP1-Ak-Kup">
@@ -7611,18 +7612,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenFTBall.jpg" id="8zE-bz-mjG">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" id="OZU-Rk-w9c">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="Q3F-ai-ujy" kind="embed" identifier="embedTeam" id="qzL-My-zjI"/>
-                                </connections>
-                            </containerView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LMc-Lj-Pqf">
                                 <rect key="frame" x="162" y="25" width="158" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -7682,10 +7671,23 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1e9-dC-B2c">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" id="Vtc-GM-iCc">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Q3F-ai-ujy" kind="embed" identifier="embedTeam" id="bmR-pe-9o2"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="teamBackgroundImage" destination="1e9-dC-B2c" id="BF9-mj-rPf"/>
                         <outlet property="teamNameLabel" destination="xdB-ub-UA0" id="oI7-Ys-GgZ"/>
                     </connections>
                 </viewController>
@@ -7698,7 +7700,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Q3F-ai-ujy" customClass="TeamTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="22" sectionFooterHeight="22" id="aII-YV-enq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -7836,7 +7838,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moQ-Iu-lMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1066" y="-1992"/>
+            <point key="canvasLocation" x="1190" y="-2098"/>
         </scene>
         <!--Team View Controller-->
         <scene sceneID="73z-Xe-6uX">
@@ -7846,18 +7848,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenFTBall.jpg" id="md8-Ce-t8X">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" id="zBb-2z-Bvt">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="rUt-Yd-tF1" kind="embed" identifier="embedTeam" id="ibP-fh-JBb"/>
-                                </connections>
-                            </containerView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7FJ-qu-DJn">
                                 <rect key="frame" x="162" y="25" width="158" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -7917,10 +7907,23 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4Zm-3a-RYA">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" id="AYI-22-XlC">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="rUt-Yd-tF1" kind="embed" identifier="embedTeam" id="5nQ-GB-ELY"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="teamBackgroundImage" destination="4Zm-3a-RYA" id="FF7-mV-vJT"/>
                         <outlet property="teamNameLabel" destination="SNj-Y2-eAm" id="74h-3P-ILd"/>
                     </connections>
                 </viewController>
@@ -7933,7 +7936,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="rUt-Yd-tF1" customClass="TeamTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="22" sectionFooterHeight="22" id="Gcx-tV-dvs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -8081,18 +8084,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenFTBall.jpg" id="Bv9-yp-9hc">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" id="5NN-lS-Z5C">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="MQt-7h-3iC" kind="embed" identifier="embedTeam" id="JRq-mr-bPJ"/>
-                                </connections>
-                            </containerView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p3H-9a-cbx">
                                 <rect key="frame" x="162" y="25" width="158" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -8152,10 +8143,23 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3oJ-B5-jlO">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" id="ilK-sk-7eH">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="MQt-7h-3iC" kind="embed" identifier="embedTeam" id="x2d-X9-JS5"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="teamBackgroundImage" destination="3oJ-B5-jlO" id="7RN-fH-eYv"/>
                         <outlet property="teamNameLabel" destination="vyb-Hs-9RX" id="7gf-dn-fXk"/>
                     </connections>
                 </viewController>
@@ -8168,7 +8172,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="MQt-7h-3iC" customClass="TeamTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="22" sectionFooterHeight="22" id="eTb-ud-Hid">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -8316,18 +8320,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenFTBall.jpg" id="Svl-ML-4bU">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" id="nWl-Ve-6NB">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="log-Yh-ryc" kind="embed" identifier="embedTeam" id="rcy-MZ-FOm"/>
-                                </connections>
-                            </containerView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BiX-lI-6rS">
                                 <rect key="frame" x="162" y="25" width="158" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -8387,10 +8379,23 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="eHr-Zl-9fZ">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" id="WNE-pg-2gD">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="log-Yh-ryc" kind="embed" identifier="embedTeam" id="bQQ-Ou-Na9"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="teamBackgroundImage" destination="eHr-Zl-9fZ" id="vfr-D9-Tiw"/>
                         <outlet property="teamNameLabel" destination="Hql-Wu-beG" id="nYZ-M4-fTU"/>
                     </connections>
                 </viewController>
@@ -8403,7 +8408,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="log-Yh-ryc" customClass="TeamTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="22" sectionFooterHeight="22" id="8oO-hh-9MK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -8551,18 +8556,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenFTBall.jpg" id="Bgz-df-ig9">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" id="W1B-pJ-Pbl">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="Zes-EY-1ih" kind="embed" identifier="embedTeam" id="9KY-yS-ivL"/>
-                                </connections>
-                            </containerView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OXG-5a-pKw">
                                 <rect key="frame" x="162" y="25" width="158" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -8622,10 +8615,23 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Jln-Pu-X0T">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" id="dyR-xO-DSD">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Zes-EY-1ih" kind="embed" identifier="embedTeam" id="abB-D1-6Ox"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="teamBackgroundImage" destination="Jln-Pu-X0T" id="ocZ-QL-QRS"/>
                         <outlet property="teamNameLabel" destination="UZ5-Kf-AiG" id="RK9-Vg-foU"/>
                     </connections>
                 </viewController>
@@ -8833,7 +8839,6 @@
         <image name="MTennisFinal.png" width="242" height="64"/>
         <image name="MWaterPoloFinal.png" width="239" height="64"/>
         <image name="Mark Fernandez.jpg" width="150" height="176"/>
-        <image name="MenFTBall.jpg" width="266" height="400"/>
         <image name="MyPhotosLogo.png" width="75" height="75"/>
         <image name="NewsfeedIcon.png" width="368" height="368"/>
         <image name="Omar Sohail.jpg" width="150" height="176"/>
@@ -8878,26 +8883,26 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="3mH-FH-LL5"/>
-        <segue reference="ohy-EF-KnQ"/>
-        <segue reference="Hfi-uz-pbk"/>
-        <segue reference="hTh-Tg-b3d"/>
-        <segue reference="oQX-lm-Ye2"/>
-        <segue reference="cKA-Mn-vHE"/>
         <segue reference="nz0-8Y-JHX"/>
         <segue reference="mH4-BD-EJW"/>
+        <segue reference="cKA-Mn-vHE"/>
+        <segue reference="hTh-Tg-b3d"/>
+        <segue reference="oQX-lm-Ye2"/>
+        <segue reference="C6f-BF-Oyy"/>
+        <segue reference="auu-6R-MXB"/>
+        <segue reference="pLB-uG-dLC"/>
+        <segue reference="sQv-Q6-vTb"/>
+        <segue reference="1SH-Y3-PMA"/>
         <segue reference="etK-AR-q7C"/>
         <segue reference="6cF-zF-AY6"/>
         <segue reference="uWY-0q-ksa"/>
         <segue reference="1cP-Of-ahw"/>
-        <segue reference="auu-6R-MXB"/>
-        <segue reference="C6f-BF-Oyy"/>
-        <segue reference="Ke1-U2-rvj"/>
-        <segue reference="wDP-wj-eyJ"/>
-        <segue reference="yCL-Xr-dJB"/>
-        <segue reference="zKd-1U-8sy"/>
         <segue reference="xnd-Wf-AnJ"/>
-        <segue reference="pLB-uG-dLC"/>
-        <segue reference="sQv-Q6-vTb"/>
+        <segue reference="wDP-wj-eyJ"/>
+        <segue reference="Ke1-U2-rvj"/>
+        <segue reference="zKd-1U-8sy"/>
+        <segue reference="yCL-Xr-dJB"/>
+        <segue reference="Hfi-uz-pbk"/>
+        <segue reference="ohy-EF-KnQ"/>
     </inferredMetricsTieBreakers>
 </document>

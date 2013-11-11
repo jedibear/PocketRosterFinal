@@ -10,10 +10,11 @@
 
 @interface TeamViewController : UIViewController
 
-@property (nonatomic) NSString *teamName;
+@property (nonatomic) NSString *teamName, *backgroundImagePath;
 @property (nonatomic) NSString *incommingTeamURL;
 @property (nonatomic) NSMutableArray *teamLinks;
 @property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *teamBackgroundImage;
 
 -(void)setTeamName:(NSString *)team;
 

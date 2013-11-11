@@ -27,6 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   
+    
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -34,6 +36,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -48,6 +52,8 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Soccer";
+            teamVC.backgroundImagePath = @"Pocket Roster/MSoccer.jpg";
+            
         }
         
     }else if([segue.identifier isEqualToString:@"footballTVCInit"]){
@@ -103,7 +109,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Swimming And Diving";
         }
         
     }else if([segue.identifier isEqualToString:@"mensHockey"]){
@@ -111,7 +117,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Hockey";
         }
         
     }else if([segue.identifier isEqualToString:@"mensBasketball"]){
@@ -119,7 +125,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Basketball";
         }
         
     }else if([segue.identifier isEqualToString:@"mensIndoorTrack"]){
@@ -127,7 +133,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Indoor Track";
         }
         
     }else if([segue.identifier isEqualToString:@"mensSquash"]){
@@ -135,7 +141,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Squash";
         }
         
     }else if([segue.identifier isEqualToString:@"mensLax"]){
@@ -143,7 +149,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Lacrosse";
         }
         
     }else if([segue.identifier isEqualToString:@"mensTrack"]){
@@ -151,7 +157,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Track";
         }
         
     }else if([segue.identifier isEqualToString:@"mensBaseball"]){
@@ -159,7 +165,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Baseball";
         }
         
     }else if([segue.identifier isEqualToString:@"wRugby"]){
@@ -167,7 +173,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Rugby";
         }
         
     }else if([segue.identifier isEqualToString:@"wSoccer"]){
@@ -175,7 +181,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Soccer";
         }
         
     }else if([segue.identifier isEqualToString:@"wXCountry"]){
@@ -183,7 +189,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Cross Country";
         }
         
     }else if([segue.identifier isEqualToString:@"wGolf"]){
@@ -191,7 +197,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Golf";
         }
         
     }else if([segue.identifier isEqualToString:@"wSailing"]){
@@ -199,7 +205,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Sailing";
         }
         
     }else if([segue.identifier isEqualToString:@"wTennis"]){
@@ -215,7 +221,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"FieldHockey";
         }
         
     }else if([segue.identifier isEqualToString:@"wVolleyball"]){
@@ -223,7 +229,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Volleyball";
         }
         
     }else if([segue.identifier isEqualToString:@"wSwimmingAndDiving"]){
@@ -231,7 +237,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Swimming And Diving";
         }
         
     }else if([segue.identifier isEqualToString:@"wHockey"]){
@@ -239,7 +245,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Hockey";
         }
         
     }else if([segue.identifier isEqualToString:@"wBasketball"]){
@@ -247,7 +253,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Basketball";
         }
         
     }else if([segue.identifier isEqualToString:@"wIndoorTrack"]){
@@ -255,7 +261,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Indoor Track";
         }
         
     }else if([segue.identifier isEqualToString:@"wSquash"]){
@@ -263,7 +269,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Squash";
         }
         
     }else if([segue.identifier isEqualToString:@"wNorticSkiing"]){
@@ -271,7 +277,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Nortic Skiing";
         }
         
     }else if([segue.identifier isEqualToString:@"wLax"]){
@@ -279,7 +285,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Lacrosse";
         }
         
     }else if([segue.identifier isEqualToString:@"wTrack"]){
@@ -287,7 +293,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Track";
         }
         
     }else if([segue.identifier isEqualToString:@"wSoftball"]){
@@ -295,7 +301,7 @@
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
+            teamVC.teamName = @"Softball";
         }
         
     }

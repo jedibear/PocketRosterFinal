@@ -31,6 +31,7 @@
 {
     [super viewDidLoad];
     [self.teamNameLabel setText: self.teamName];
+    [self.teamBackgroundImage setImage:[[UIImage alloc] initWithContentsOfFile:self.backgroundImagePath]];
 	
     
 }
