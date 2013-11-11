@@ -1,12 +1,12 @@
 //
-//  GetFacilities.m
+//  Get Schedule
 //  Pocket Roster
 //
 //  Created by Ryan Kulesza on 11/10/13.
 //  Copyright (c) 2013 Pocket Roster. All rights reserved.
 //
 
-#import "GetSchedule"
+#import "GetSchedule.h"
 
 @interface GetSchedule ()
 
@@ -84,9 +84,6 @@
             }
             
         }
-        [scanner scanUpToString:@"\"" intoString:];
-        [scanner scanUpToString:@"/tr>" intoString:nil];
-        
 
     }
     
