@@ -10,6 +10,7 @@
 #import "Get_Data_From_Website.h"
 #import "GetTeamLinks.h"
 #import "GetImages.h"
+#import "GetFacility.h"
 
 @interface Pocket_RosterViewController ()
 
@@ -23,7 +24,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+    [GetFacility GetFacility];
     //[Get_Data_From_Website getInfo];
     //[GetTeamLinks getTeamLinkBreakdown];
     //[GetImages getMostRecentImages];
