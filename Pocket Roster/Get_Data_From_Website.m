@@ -11,11 +11,10 @@
 @implementation Get_Data_From_Website
 
 + (NSMutableDictionary *) getInfo: (NSString *) linkForURLSearch
-//+(void) getInfo
 {
     int key = 0;
-    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/fball/2013-14/roster";
-    NSURL *theURL = [[NSURL alloc] initWithString:urlStr];
+    
+    NSURL *theURL = [[NSURL alloc] initWithString:linkForURLSearch];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:theURL];
@@ -56,7 +55,7 @@
      ***************************************
     */
     NSMutableDictionary *bowdoinEntireTeam = [NSMutableDictionary new];
-    NSMutableArray *bowdoinPlayer = [NSMutableArray new];
+    
     NSMutableArray *rosterImages = [NSMutableArray new];
     
     /**
@@ -79,6 +78,7 @@
     //Number
 for (int i = 0; i < 100; i++)
 {
+    NSMutableArray *bowdoinPlayer = [NSMutableArray new];
     // Get Athlete
     [scanner scanUpToString:@"tr class=\"roster-row" intoString:nil];
     [scanner scanUpToString:@"/tr>" intoString:&stringBreakdown];
@@ -191,13 +191,14 @@ for (int i = 0; i < 100; i++)
         numberOfElements++;
         [bowdoinPlayer addObject:rosterElement8Final];
     }
+    key++;
     [bowdoinEntireTeam setObject:bowdoinPlayer forKey:[NSString stringWithFormat:@"%d", key]];
-     key++;
+     
 
      
 }
    // NSLog(@"%@", bowdoinEntireTeam);
-//return bowdoinEntireTeam;
+return bowdoinEntireTeam;
 /*
     
     -(void)setTeamRosterMenBaseball{

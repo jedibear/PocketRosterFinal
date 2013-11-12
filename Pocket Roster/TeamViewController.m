@@ -51,6 +51,8 @@
         if ([segue.destinationViewController isKindOfClass:[TeamTVC class]]) {
             TeamTVC *nFVC = (TeamTVC *)segue.destinationViewController;
             nFVC.incommingTeamURL =self.incommingTeamURL;
+            nFVC.backgroundImagePath = self.backgroundImagePath;
+            nFVC.teamName = self.teamName;
         }
     }
     

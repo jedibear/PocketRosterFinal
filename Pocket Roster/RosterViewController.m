@@ -7,8 +7,8 @@
 //
 
 #import "RosterViewController.h"
+#import "TeamViewController.h"
 #import "RosterTVC.h"
-#define NUMBER_OF_ROWS 12;
 #import "Get_Data_From_Website.h"
 
 @interface RosterViewController ()
@@ -32,6 +32,8 @@
 {
     [super viewDidLoad];
     NSLog(@"%@ fuck", self.rosterURL);
+    
+    [self.teamNameLabel setText:self.teamName];
 	// Do any additional setup after loading the view.
     
     //[Get_Data_From_Website getInfo];
@@ -50,7 +52,14 @@
 			RosterTVC *rTVC = (RosterTVC *)segue.destinationViewController;
 			rTVC.incommingURL = self.rosterURL;
 		}
-	}
+	}else if([segue.identifier isEqualToString:@"back2TVC"]){
+        if([segue.destinationViewController isKindOfClass:[TeamViewController class]]){
+            TeamViewController *tVC = (TeamViewController *)segue.destinationViewController;
+            tVC.teamName = self.teamName;
+            tVC.backgroundImagePath = self.backgroundImagePath;
+            tVC.incommingTeamURL = self.incommingTeamURL;
+        }
+    }
 
 
 }

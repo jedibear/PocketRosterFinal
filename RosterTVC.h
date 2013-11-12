@@ -10,12 +10,7 @@
 
 @interface RosterTVC : UITableViewController
 
-
-
 @property (nonatomic) NSString *key, *incommingURL;
-
-
 @property (nonatomic) NSMutableDictionary *teamRoster;
 
--(void)initializeFootballTeamRoster;
 @end

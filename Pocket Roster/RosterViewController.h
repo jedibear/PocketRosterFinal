@@ -10,6 +10,9 @@
 
 @interface RosterViewController : UIViewController
 
-@property (nonatomic) NSString *rosterURL;
+@property (nonatomic) NSString *rosterURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSString *incommingTeamURL;
+@property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
+
 
 @end

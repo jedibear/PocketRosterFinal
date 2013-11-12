@@ -34,12 +34,14 @@
 {
     [super viewDidLoad];
     NSLog(@"%@ incomming0", self.incommingTeamURL);
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    //[GetTeamLinks getTeamLinkBreakdown];
+    
+    self.teamLinks = [GetTeamLinks getTeamLinkBreakdown:self.incommingTeamURL];
 	
 
     
@@ -70,7 +72,10 @@
 	//football roster no longer works/ was using pics, need to pull from site
         if ([segue.destinationViewController isKindOfClass:[RosterViewController class]]) {
             RosterViewController *rVC = (RosterViewController *)segue.destinationViewController;
-            rVC.rosterURL =self.incommingTeamURL;
+            rVC.rosterURL = [self.teamLinks objectAtIndex:0];
+            rVC.backgroundImagePath = self.backgroundImagePath;
+            rVC.teamName = self.teamName;
+            rVC.incommingTeamURL = self.incommingTeamURL;
             
         }
     }else if ([segue.identifier isEqualToString:@"schedule/results"]) {

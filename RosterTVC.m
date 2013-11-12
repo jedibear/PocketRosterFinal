@@ -36,9 +36,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //NSLog(@"%@ HERE I AM DUMB DUMB", self.incommingURL);
+    NSLog(@"%@ HERE I AM DUMB DUMB", self.incommingURL);
     
     self.teamRoster = [Get_Data_From_Website getInfo:self.incommingURL];
+    
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -49,67 +50,6 @@
 
 
 
--(void)initializeFootballTeamRoster{
-    
-    NSArray *images = [[NSBundle mainBundle] pathsForResourcesOfType:@"jpg" inDirectory:@"FootballRosterPictures"];
-    
-    for (NSString *imagePath in images) {
-        UIImage *anImage = [[UIImage alloc] initWithContentsOfFile:imagePath];
-        
-        NSArray *componentsOfPath = [imagePath componentsSeparatedByString:@"/"];
-        NSString *athleteInfo = [componentsOfPath lastObject];
-        NSArray *componentsOfAthleteInfo = [athleteInfo componentsSeparatedByString:@"."];
-        
-        
-        if (![[componentsOfAthleteInfo objectAtIndex:1]isEqualToString:@"jpg"]) {
-            NSString *name = [componentsOfAthleteInfo objectAtIndex:0];
-            NSString *position = [componentsOfAthleteInfo objectAtIndex:1];
-            NSString *number = [componentsOfAthleteInfo objectAtIndex:2];
-            NSString *yearOfGraduation = [componentsOfAthleteInfo objectAtIndex:3];
-            self.key = [componentsOfAthleteInfo objectAtIndex:4];
-            
-            
-            
-            [self.teamRoster setObject:[NSArray arrayWithObjects:name, position, number, yearOfGraduation, anImage,  nil] forKey:self.key];
-            //NSLog(@"%@", imagePath);
-        }
-        
-        
-        //NSLog(@"%@", [self.footballTeamRoster objectForKey:self.number]);
-        
-        
-        
-        
-        
-    }
-    
-    /*
-    
-    NSArray *allKeys = [self.footballTeamRoster allKeys];
-    
-    
-    NSLog(@"%@", allKeys);
-    
-    
-    
-    
-    for (NSObject *key in allKeys) {
-        NSLog(@"%@",  [self.footballTeamRoster objectForKey:key]);
-    }
-    
-    
-    for (int i = 0; i<100; i++) {
-        
-        
-        self.key = [[NSString alloc]initWithFormat:@"%d", i];
-        
-        if ([self.footballTeamRoster objectForKey:self.key]) {
-            NSLog(@"%@", [self.footballTeamRoster objectForKey:self.key]);
-        }
-    }
-     */
-    
-}
 
 
 
@@ -139,8 +79,8 @@
 {
 
     // Return the number of rows in the section.
-    //return [self.teamRoster count]-1;
-    return 10;
+    return [self.teamRoster count]-1;
+    
 }
 
 
@@ -159,9 +99,19 @@
     }
     // Configure the cell...
     
+    NSString *athleteName, *athleteDetails;
+    
     if ([athleteObjects objectAtIndex:0]!=nil) {
-        NSString* athleteName = [[NSString alloc]initWithFormat:@"%@", [athleteObjects objectAtIndex:0]];
-        NSString* athleteDetails = [[NSString alloc]initWithFormat:@"%@   %@    %@", [athleteObjects objectAtIndex:1],[athleteObjects objectAtIndex:3],[athleteObjects objectAtIndex:2]];
+        athleteName = [[NSString alloc]initWithFormat:@"%@    %@", [athleteObjects objectAtIndex:0], [athleteObjects objectAtIndex:1]];
+        
+        if([athleteObjects count] == 3){
+            athleteDetails = [[NSString alloc]initWithFormat:@"%@", [athleteObjects objectAtIndex:2]];
+        }else if([athleteObjects count] == 4){
+            athleteDetails = [[NSString alloc]initWithFormat:@"%@     %@", [athleteObjects objectAtIndex:2], [athleteObjects objectAtIndex:3]];
+        }else{
+            athleteDetails = [[NSString alloc]initWithFormat:@"%@     %@  %@", [athleteObjects objectAtIndex:2], [athleteObjects objectAtIndex:4], [athleteObjects objectAtIndex:3]];
+        }
+        
         //UIImage* athletePic = [athleteObjects objectAtIndex:4];
         
         cell.athleteName.text = athleteName;

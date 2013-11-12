@@ -10,6 +10,6 @@
 
 @interface GetTeamLinks : NSObject
 
-+(void) getTeamLinkBreakdown;
++(NSMutableArray *) getTeamLinkBreakdown:(NSString *)incommingURL;
 
 @end
