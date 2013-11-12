@@ -56,6 +56,7 @@
         if([segue.destinationViewController isKindOfClass:[TeamViewController class]]){
             TeamViewController *tVC = (TeamViewController *)segue.destinationViewController;
             tVC.teamName = self.teamName;
+            tVC.longForm = self.longForm;
             tVC.backgroundImagePath = self.backgroundImagePath;
             tVC.incommingTeamURL = self.incommingTeamURL;
         }

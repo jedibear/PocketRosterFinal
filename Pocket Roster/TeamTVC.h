@@ -13,5 +13,6 @@
 @property (nonatomic) NSString *incommingTeamURL;
 @property (nonatomic) NSString *teamName, *backgroundImagePath;
 @property (nonatomic) NSMutableArray *teamLinks;
+@property (nonatomic) BOOL *longForm;
 
 @end

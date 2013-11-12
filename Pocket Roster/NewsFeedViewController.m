@@ -7,6 +7,7 @@
 //
 
 #import "NewsFeedViewController.h"
+#import "TeamViewController.h"
 #import "RSSTVC.h"
 
 @interface NewsFeedViewController ()
@@ -28,6 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self.teamNameLabel setText:self.teamName];
     NSLog(@"inNFWC");
 }
 
@@ -43,16 +45,29 @@
     if ([segue.identifier isEqualToString:@"embedNews"]) {
         NSLog(@"%@", self.teamName);
         
-                
-        
         if([segue.destinationViewController isKindOfClass:[RSSTVC class]]){
             RSSTVC *rSSTmp = (RSSTVC *)segue.destinationViewController;
             rSSTmp.incommingURL = self.newsURL;
+            rSSTmp.backgroundImagePath = self.backgroundImagePath;
+            rSSTmp.longForm = self.longForm;
+            rSSTmp.teamName = self.teamName;
+            rSSTmp.newsURL = self.newsURL;
+            rSSTmp.incommingTeamURL = self.incommingTeamURL;
             NSLog(@"inhere");
             //[segue.destinationViewController setTeamName:self.teamName];
         }
         
-    }
+    }else if([segue.identifier isEqualToString:@"back2TVC"]){
+            if([segue.destinationViewController isKindOfClass:[TeamViewController class]]){
+                TeamViewController *tVC = (TeamViewController *)segue.destinationViewController;
+                tVC.teamName = self.teamName;
+                tVC.longForm = self.longForm;
+                
+                tVC.backgroundImagePath = self.backgroundImagePath;
+                NSLog(@"%@",self.incommingTeamURL);
+                tVC.incommingTeamURL = self.incommingTeamURL;
+            }
+        }
 }
 
 @end

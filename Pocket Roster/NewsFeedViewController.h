@@ -10,7 +10,8 @@
 
 @interface NewsFeedViewController : UIViewController
 
-@property (nonatomic) NSString *teamName;
+@property (nonatomic) NSString *teamName, *backgroundImagePath, *incommingTeamURL;
 @property (nonatomic) NSString *newsURL;
-
+@property (nonatomic) BOOL *longForm;
+@property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
 @end

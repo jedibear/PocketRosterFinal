@@ -53,6 +53,7 @@
             nFVC.incommingTeamURL =self.incommingTeamURL;
             nFVC.backgroundImagePath = self.backgroundImagePath;
             nFVC.teamName = self.teamName;
+            nFVC.longForm = self.longForm;
         }
     }
     

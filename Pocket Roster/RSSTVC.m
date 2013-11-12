@@ -79,43 +79,27 @@
 
 -(NSString*)getCorrectURL{
     
+    NSString *rssURL;
+    NSString *baseURL = @"http://athletics.bowdoin.edu";
+    NSLog(@"%@ HERE BIACH", self.incommingURL);
+    NSURL *theURL = [[NSURL alloc] initWithString:self.incommingURL];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:theURL];
     
+    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:NULL];
     
-    /*NSString *sURL = [[NSString alloc]init];
-    if([self.teamName isEqualToString:@"General"])
-        sURL = genURL;
-    else if ([self.teamName isEqualToString:@"Football"])
-        sURL = footURL;
-    else if ([self.teamName isEqualToString: @"Mens Swimming and Diving"])
-        sURL = swimMURL;
-    else if ([self.teamName isEqualToString: @"Baseball"])
-        sURL = baseballURL;
-    else if ([self.teamName isEqualToString: @"Mens Lacrosse"])
-        sURL = laxMURL;
+    NSString *htmlCode = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
     
-    NSLog(@"%@   %@\n", self.teamName, sURL);
-     */
-       
-    return self.incommingURL;
+    NSScanner *scanner = [NSScanner scannerWithString:htmlCode];
+    [scanner scanUpToString:@"<div class=\"default-headlines" intoString:nil];
+    [scanner scanUpToString:@"/div>" intoString:nil];
+    [scanner scanUpToString:@"href=\"" intoString:nil];
+    [scanner scanUpToString:@"\">" intoString:&rssURL];
+    NSLog(@"rssURL %@", [rssURL substringFromIndex:6]);
+    return [baseURL stringByAppendingString:[rssURL substringFromIndex:6]];
 }
 
 
-/*
--(void)addArticles{
-    RSSEntry *entry1 = [[RSSEntry alloc]initWithBlogTitle:@"1" articleTitle:@"1" articleURL:@"1" articleDate:[NSDate date]];
-    RSSEntry *entry2 = [[RSSEntry alloc]initWithBlogTitle:@"2" articleTitle:@"2" articleURL:@"2" articleDate:[NSDate date]];
-    RSSEntry *entry3 = [[RSSEntry alloc]initWithBlogTitle:@"3" articleTitle:@"3" articleURL:@"3" articleDate:[NSDate date]];
-    
-    
-    [self.allArticles insertObject:entry1 atIndex:0];
-    [self.allArticles insertObject:entry2 atIndex:0];
-    [self.allArticles insertObject:entry3 atIndex:0];
-    
-    //RSSEntry *e = [self.allArticles objectAtIndex:0];
-    
-    NSLog(@"%@", entry1.articleTitle);
-}
- */
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -213,7 +197,7 @@
         NSURL *url = [NSURL URLWithString:self.imageURL];
         NSData *imageData = [[NSData alloc] initWithContentsOfURL:url];
         self.storyImage = [UIImage imageWithData:imageData];
-         //NSLog(@"found characters: %@", self.imageURL);
+         NSLog(@"found characters: %@", self.imageURL);
     }
     
 }
@@ -227,7 +211,10 @@
 		[self.item setObject:self.currentLink forKey:@"link"];
 		[self.item setObject:self.currentSummary forKey:@"summary"];
 		[self.item setObject:self.currentDate forKey:@"date"];
-        [self.item setObject:self.storyImage forKey:@"image"];
+        if (self.storyImage) {
+            [self.item setObject:self.storyImage forKey:@"image"];
+        }
+        
         
         //RSSEntry *entry = [[RSSEntry alloc]initWithBlogTitle:self.currentTitle articleTitle:self.currentSummary articleURL:self.currentLink articleDate:self.currentDate];
         
@@ -283,6 +270,12 @@
                     News_Story_View_Controller *newsTMP = (News_Story_View_Controller *)segue.destinationViewController;
                     newsTMP.newsURL = self.sequeLink;
                     newsTMP.team = self.teamName;
+                    newsTMP.teamName = self.teamName;
+                    newsTMP.newsURLInc = self.incommingURL;
+                    newsTMP.longForm = self.longForm;
+                    newsTMP.incommingTeamURL = self.incommingTeamURL;
+                    newsTMP.backgroundImagePath = self.backgroundImagePath;
+                    newsTMP.incTitle = [[self.stories objectAtIndex:indexPath.row] objectForKey:@"title"];
                     NSLog(@"RSSTVC%@", newsTMP.team);
                 }
                 

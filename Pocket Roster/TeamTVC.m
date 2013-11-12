@@ -73,6 +73,7 @@
         if ([segue.destinationViewController isKindOfClass:[RosterViewController class]]) {
             RosterViewController *rVC = (RosterViewController *)segue.destinationViewController;
             rVC.rosterURL = [self.teamLinks objectAtIndex:0];
+            rVC.longForm = self.longForm;
             rVC.backgroundImagePath = self.backgroundImagePath;
             rVC.teamName = self.teamName;
             rVC.incommingTeamURL = self.incommingTeamURL;
@@ -88,13 +89,22 @@
         
         if ([segue.destinationViewController isKindOfClass:[NewsFeedViewController class]]) {
             NewsFeedViewController *nFVC = (NewsFeedViewController *)segue.destinationViewController;
-            nFVC.newsURL =self.incommingTeamURL;
+            if(self.longForm){
+                nFVC.newsURL =[self.teamLinks objectAtIndex:3];
+            }else{
+                nFVC.newsURL = [self.teamLinks objectAtIndex:2];
+            }
+            nFVC.longForm = self.longForm;
+            nFVC.backgroundImagePath = self.backgroundImagePath;
+            nFVC.teamName = self.teamName;
+            nFVC.incommingTeamURL = self.incommingTeamURL;
         }
     }else if ([segue.identifier isEqualToString:@"coaches"]) {
         
 	if ([segue.destinationViewController isKindOfClass:[CoachesViewController class]]) {
             CoachesViewController *cVC = (CoachesViewController *)segue.destinationViewController;
             cVC.coachesURL =self.incommingTeamURL;
+           
         }
     }else if ([segue.identifier isEqualToString:@"facilities"]) {
         

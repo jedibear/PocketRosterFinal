@@ -18,6 +18,10 @@
 @property (nonatomic) NSString *currentElement, *teamName, *incommingURL;
 @property (nonatomic) UIImage *storyImage;
 
+@property (nonatomic) NSString *backgroundImagePath, *incommingTeamURL;
+@property (nonatomic) NSString *newsURL;
+@property (nonatomic) BOOL *longForm;
+
 
 
 - (void) setTeamName:(NSString *)teamName;
