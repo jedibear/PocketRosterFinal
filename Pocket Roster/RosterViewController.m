@@ -51,6 +51,7 @@
 		if([segue.destinationViewController isKindOfClass:[RosterTVC class]]){
 			RosterTVC *rTVC = (RosterTVC *)segue.destinationViewController;
 			rTVC.incommingURL = self.rosterURL;
+            
 		}
 	}else if([segue.identifier isEqualToString:@"back2TVC"]){
         if([segue.destinationViewController isKindOfClass:[TeamViewController class]]){

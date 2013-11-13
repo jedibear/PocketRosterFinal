@@ -9,6 +9,7 @@
 #import "RosterTVC.h"
 #import "RosterCell.h"
 #import "Get_Data_From_Website.h"
+#import "RosterAthleteViewController.h"
 
 @interface RosterTVC ()
 
@@ -102,21 +103,27 @@
     NSString *athleteName, *athleteDetails;
     
     if ([athleteObjects objectAtIndex:0]!=nil) {
-        athleteName = [[NSString alloc]initWithFormat:@"%@    %@", [athleteObjects objectAtIndex:0], [athleteObjects objectAtIndex:1]];
         
-        if([athleteObjects count] == 3){
-            athleteDetails = [[NSString alloc]initWithFormat:@"%@", [athleteObjects objectAtIndex:2]];
-        }else if([athleteObjects count] == 4){
-            athleteDetails = [[NSString alloc]initWithFormat:@"%@     %@", [athleteObjects objectAtIndex:2], [athleteObjects objectAtIndex:3]];
+        
+        
+        
+        
+        if([athleteObjects count] == 4){
+            athleteName = [[NSString alloc]initWithFormat:@"%@    %@", [athleteObjects objectAtIndex:1], [athleteObjects objectAtIndex:2]];
+            athleteDetails = [[NSString alloc]initWithFormat:@"%@", [athleteObjects objectAtIndex:3]];
+        }else if([athleteObjects count] == 5){
+            athleteName = [[NSString alloc]initWithFormat:@"%@    %@", [athleteObjects objectAtIndex:1], [athleteObjects objectAtIndex:2]];
+            athleteDetails = [[NSString alloc]initWithFormat:@"%@     %@", [athleteObjects objectAtIndex:3], [athleteObjects objectAtIndex:4]];
         }else{
-            athleteDetails = [[NSString alloc]initWithFormat:@"%@     %@  %@", [athleteObjects objectAtIndex:2], [athleteObjects objectAtIndex:4], [athleteObjects objectAtIndex:3]];
+            athleteName = [[NSString alloc]initWithFormat:@"%@    %@    %@", [athleteObjects objectAtIndex:1], [athleteObjects objectAtIndex:2], [athleteObjects objectAtIndex:3]];
+            athleteDetails = [[NSString alloc]initWithFormat:@"%@   %@",  [athleteObjects objectAtIndex:4] ,[athleteObjects objectAtIndex:5]];
         }
         
-        //UIImage* athletePic = [athleteObjects objectAtIndex:4];
-        
+        UIImage* athletePic = [[athleteObjects objectAtIndex:0]objectForKey:@"image"];
+        self.athleteImage = athletePic;
         cell.athleteName.text = athleteName;
         cell.athleteDetails.text = athleteDetails;
-        //cell.athleteImage.image = athletePic;
+        cell.athleteImage.image = athletePic;
         
         //NSLog(@"%lu", (unsigned long)[self.footballTeamRoster count]);
     }
@@ -125,6 +132,24 @@
     
     
     return cell;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([sender isKindOfClass:[UITableViewCell class]]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        
+        if(indexPath){
+    
+            if ([segue.identifier isEqualToString:@"athleteBio"]) {
+                if ([segue.destinationViewController isKindOfClass:[RosterAthleteViewController class]]) {
+                    RosterAthleteViewController *rAVC = (RosterAthleteViewController *)segue.destinationViewController;
+                    NSArray* athleteObjects = [self.teamRoster objectForKey:self.key];
+                    rAVC.athleteImageInput = [[athleteObjects objectAtIndex:0]objectForKey:@"image"];
+                }
+            }
+            
+        }
+    }
 }
 
 /*

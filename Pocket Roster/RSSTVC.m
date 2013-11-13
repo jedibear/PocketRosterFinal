@@ -197,7 +197,7 @@
         NSURL *url = [NSURL URLWithString:self.imageURL];
         NSData *imageData = [[NSData alloc] initWithContentsOfURL:url];
         self.storyImage = [UIImage imageWithData:imageData];
-         NSLog(@"found characters: %@", self.imageURL);
+        
     }
     
 }
@@ -276,7 +276,7 @@
                     newsTMP.incommingTeamURL = self.incommingTeamURL;
                     newsTMP.backgroundImagePath = self.backgroundImagePath;
                     newsTMP.incTitle = [[self.stories objectAtIndex:indexPath.row] objectForKey:@"title"];
-                    NSLog(@"RSSTVC%@", newsTMP.team);
+                    
                 }
                 
                 //[segue.destinationViewController setNewsURL:self.sequeLink];

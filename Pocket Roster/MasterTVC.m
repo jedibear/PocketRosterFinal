@@ -83,7 +83,7 @@
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.incommingTeamURL = self.teamURL;
             teamVC.teamName = @"Rugby";
-            //teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MSoccer" ofType:@"jpg"];
+            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MSoccer" ofType:@"jpg"];
         }
         
     }else if([segue.identifier isEqualToString:@"mensGolfTVCInit"]){
@@ -117,7 +117,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"mensSwimmingAndDiving"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mswimdive/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/mswimdive/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = NO;
@@ -127,7 +127,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"mensHockey"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mice/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/mice/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -137,7 +137,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"mensBasketball"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mbkb/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/mbkb/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -147,7 +147,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"mensIndoorTrack"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mtrack/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/mtrack/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = NO;
@@ -157,7 +157,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"mensSquash"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/msquash/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/msquash/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -167,7 +167,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"mensLax"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mlax/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/mlax/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -177,7 +177,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"mensTrack"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mtrack/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/mtrack/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = NO;
@@ -187,7 +187,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"mensBaseball"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/bsb/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/bsb/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -197,7 +197,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wRugby"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wrugby/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wrugby/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = NO;
@@ -207,7 +207,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wSoccer"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wsoc/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wsoc/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -217,7 +217,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wXCountry"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wxc/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wxc/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = NO;
@@ -227,7 +227,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wGolf"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wgolf/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wgolf/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = NO;
@@ -237,7 +237,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wSailing"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/sailing/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/sailing/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = NO;
@@ -247,7 +247,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wTennis"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wten/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wten/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -257,7 +257,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wFieldHockey"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/fh/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/fh/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -267,7 +267,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wVolleyball"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wvball/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wvball/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -277,7 +277,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wSwimmingAndDiving"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wswimdive/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wswimdive/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = NO;
@@ -287,7 +287,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wHockey"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wice/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wice/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -297,7 +297,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wBasketball"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wbkb/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wbkb/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -307,7 +307,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wIndoorTrack"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wtrack/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wtrack/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = NO;
@@ -317,7 +317,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wSquash"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wsquash/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wsquash/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -327,7 +327,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wNorticSkiing"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/nordicski/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/nordicski/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = NO;
@@ -337,7 +337,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wLax"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wlax/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wlax/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;
@@ -347,7 +347,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wTrack"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wtrack/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/wtrack/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = NO;
@@ -357,7 +357,7 @@
         }
         
     }else if([segue.identifier isEqualToString:@"wSoftball"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/sball/index";//change this
+        self.teamURL = @"http://athletics.bowdoin.edu/sports/sball/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
             teamVC.longForm = YES;

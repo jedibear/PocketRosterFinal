@@ -30,7 +30,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self.teamNameLabel setText:self.teamName];
-    NSLog(@"inNFWC");
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,7 +43,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"embedNews"]) {
-        NSLog(@"%@", self.teamName);
+       
         
         if([segue.destinationViewController isKindOfClass:[RSSTVC class]]){
             RSSTVC *rSSTmp = (RSSTVC *)segue.destinationViewController;
@@ -53,8 +53,7 @@
             rSSTmp.teamName = self.teamName;
             rSSTmp.newsURL = self.newsURL;
             rSSTmp.incommingTeamURL = self.incommingTeamURL;
-            NSLog(@"inhere");
-            //[segue.destinationViewController setTeamName:self.teamName];
+            
         }
         
     }else if([segue.identifier isEqualToString:@"back2TVC"]){
@@ -64,7 +63,6 @@
                 tVC.longForm = self.longForm;
                 
                 tVC.backgroundImagePath = self.backgroundImagePath;
-                NSLog(@"%@",self.incommingTeamURL);
                 tVC.incommingTeamURL = self.incommingTeamURL;
             }
         }
