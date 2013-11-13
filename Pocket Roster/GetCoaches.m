@@ -76,63 +76,78 @@
     
     NSScanner *scanner = [NSScanner scannerWithString:allCoachElements];
     
+    NSString *dummyCoachVariable;
+    [scanner scanUpToString:@"class=\"bio-title\">" intoString:nil];
+    [scanner scanUpToString:@"class=\"name" intoString:nil];
+    [scanner scanUpToString:@"class=\"name" intoString:nil];
+    
+    //Key That will be the if statement
+    //[scanner scanUpToString:@"div class=\"bio-wrap" intoString:nil];
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 1; i++)
     {
         [scanner scanUpToString:@"class=\"bio-title\">" intoString:nil];
         [scanner scanUpToString:@"class=\"name" intoString:nil];
         [scanner scanUpToString:@">" intoString:nil];
         [scanner scanUpToString:@"<" intoString:&coachTitlePre];
         coachTitle = [coachTitlePre substringFromIndex: dumbVariable];
-        NSLog(@"%@", coachTitle);
+        NSLog(@"Coach Name: %@", coachTitle);
         if (coachTitle)
         {
             // Adding Name
             [bowdoinCoachesElements addObject:coachTitle];
             // Adding Image
-            [scanner scanUpToString:@"class=\"about" intoString:NULL];
-            [scanner scanUpToString:@"<img src=" intoString:NULL];
-            [scanner scanUpToString:@"\"" intoString:NULL];
-            [scanner scanUpToString:@"\"" intoString:&coachImagePre];
+            [scanner scanUpToString:@"class=\"about" intoString:nil];
+            [scanner scanUpToString:@"<img src=" intoString:nil];
+            [scanner scanUpToString:@"\"" intoString:nil];
+            [scanner scanUpToString:@"?" intoString:&coachImagePre];
             coachImage = [coachImagePre substringFromIndex: dumbVariable];
-            NSLog(@"%@", coachImage);
+            NSLog(@"Coach's Image: %@", coachImage);
+            
             if (coachImage)
             {
                 [bowdoinCoachesElements addObject:coachImage];
             }
+            
             // Add Position
-            [scanner scanUpToString:@"class=\"lbl" intoString:NULL];
-            [scanner scanUpToString:@"class=\"val" intoString:NULL];
-            [scanner scanUpToString:@"\"" intoString:NULL];
+            [scanner scanUpToString:@"class=\"lbl" intoString:nil];
+            [scanner scanUpToString:@"class=\"val" intoString:nil];
+            [scanner scanUpToString:@">" intoString:nil];
             [scanner scanUpToString:@"</td>" intoString:&coachPositionPre];
             coachPosition = [coachPositionPre substringFromIndex: dumbVariable];
-            NSLog(@"%@", coachPosition);
+            NSLog(@"Coach Position: %@", coachPosition);
             if (coachPosition)
             {
                 [bowdoinCoachesElements addObject:coachPosition];
             }
+            
             // Add Phone
             [scanner scanUpToString:@"class=\"lbl" intoString:NULL];
             [scanner scanUpToString:@"class=\"val" intoString:NULL];
-            [scanner scanUpToString:@"\"" intoString:NULL];
+            [scanner scanUpToString:@">" intoString:NULL];
             [scanner scanUpToString:@"</td>" intoString:&coachPhonePre];
             coachPhone = [coachPhonePre substringFromIndex: dumbVariable];
-            NSLog(@"%@", coachPhone);
+            NSLog(@"Coach Phone Number: %@", coachPhone);
             if (coachPhone)
             {
                 [bowdoinCoachesElements addObject:coachPhonePre];
             }
+            
             // Add email
             [scanner scanUpToString:@"class=\"lbl" intoString:NULL];
             [scanner scanUpToString:@"class=\"val" intoString:NULL];
+
+            [scanner scanUpToString:@"<a herf=" intoString:NULL];
             [scanner scanUpToString:@"\"" intoString:NULL];
-            [scanner scanUpToString:@"</td>" intoString:&coachEmailPre];
+            [scanner scanUpToString:@"</a>" intoString:&coachEmailPre];
             coachEmail = [coachEmailPre substringFromIndex: dumbVariable];
-            NSLog(@"%@", coachEmail);
+            NSLog(@"Coaches Email: %@", coachEmail);
             if (coachEmail)
             {
                 [bowdoinCoachesElements addObject:coachEmail];
             }
+            /**
+            
             // Add bio
             [scanner scanUpToString:@"class=\"synopsis" intoString:NULL];
             [scanner scanUpToString:@"</div>" intoString:&wholeCoachesBioTab];
@@ -168,8 +183,9 @@
             {
                 [bowdoinCoachesElements addObject:coachBio];
             }
-
+*/
         }
+             
     }
 
 
