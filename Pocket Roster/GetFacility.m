@@ -20,7 +20,7 @@
 +(void) GetFacility
 {
 
-    NSString *urlStr = @"http://athletics.bowdoin.edu/information/facilities/files/whittier";
+    NSString *urlStr = @"http://athletics.bowdoin.edu/information/facilities/files/golf";
     NSURL *theURL = [[NSURL alloc] initWithString:urlStr];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -44,7 +44,7 @@
     NSString *writingForFacilitiesPre2;
     NSString *writingForFacilitiesPre3;
     NSMutableString *writingForFacilities = [[NSMutableString alloc] initWithString:@""];
-   
+    NSString *checkVariable;
     NSString *imageVariable;
     NSString *imageVariablePre;
     
@@ -102,7 +102,9 @@
         
         if ([writingForFacilitiesPre rangeOfString:@"<a href"].location != NSNotFound)
         {
-            NSScanner *miniScanner = [NSScanner scannerWithString:writingForFacilitiesPre];
+            NSString *dummyString = writingForFacilitiesPre;
+            
+            NSScanner *miniScanner = [NSScanner scannerWithString:dummyString];
             [miniScanner scanUpToString:@"<a href" intoString:&writingForFacilitiesPre2];
             [writingForFacilities appendString: writingForFacilitiesPre2];
             [miniScanner scanUpToString:@">" intoString:nil];
@@ -125,26 +127,29 @@
             [scanner scanUpToString:@"</p>" intoString:&writingForFacilitiesPre];
         }
     }
-     NSScanner *soloScanner = [NSScanner scannerWithString:writingForFacilitiesPre];
-    [soloScanner scanUpToString:@"src=" intoString:&writingForFacilitiesPre2];
+     //NSScanner *soloScanner = [NSScanner scannerWithString:writingForFacilitiesPre];
+    //[soloScanner scanUpToString:@"src=" intoString:&writingForFacilitiesPre2];
     for(int i = 0; i < 10; i++)
     {
-        [scanner scanUpToString:@"<p>" intoString:nil];
-        [scanner scanUpToString:@"src=" intoString:nil];
-        [scanner scanUpToString:@"\"" intoString:nil];
-        [scanner scanUpToString:@"?" intoString:&imageVariablePre];
-        imageVariable = [imageVariablePre substringFromIndex: dumbVariable];
+        [scanner scanUpToString:@"src=" intoString:&checkVariable];
         
-        if( ![imageVariable isEqual: NULL])
+        if ([writingForFacilitiesPre rangeOfString:@"<footer class="].location == NSNotFound)
         {
-            numberOfElements++;
-            [allfacilitiesElements addObject:facilityName];
-            NSLog(@"Number of Images: %d", numberOfElements);
 
-            NSLog(@"Image Name: %@", facilityName);
-
-        }
+            [scanner scanUpToString:@"\"" intoString:nil];
+            [scanner scanUpToString:@"?" intoString:&imageVariablePre];
+            facilityName = [imageVariablePre substringFromIndex: dumbVariable];
         
+            if( ![imageVariable isEqual: NULL])
+            {
+                numberOfElements++;
+                [allfacilitiesElements addObject:facilityName];
+                NSLog(@"Number of Images: %d", numberOfElements);
+
+                NSLog(@"Image Name: %@", facilityName);
+            }
+            [scanner scanUpToString:@"<p>" intoString:nil];
+        }
     }
 
 }
