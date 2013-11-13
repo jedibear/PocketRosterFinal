@@ -137,25 +137,27 @@
             [scanner scanUpToString:@"class=\"lbl" intoString:NULL];
             [scanner scanUpToString:@"class=\"val" intoString:NULL];
 
-            [scanner scanUpToString:@"<a herf=" intoString:NULL];
-            [scanner scanUpToString:@"\"" intoString:NULL];
+            [scanner scanUpToString:@">" intoString:NULL];
             [scanner scanUpToString:@"</a>" intoString:&coachEmailPre];
-            coachEmail = [coachEmailPre substringFromIndex: dumbVariable];
+            NSArray* breakDownString = [coachEmailPre componentsSeparatedByString:@">"];
+            coachEmail = [breakDownString objectAtIndex: 2];
             NSLog(@"Coaches Email: %@", coachEmail);
             if (coachEmail)
             {
                 [bowdoinCoachesElements addObject:coachEmail];
             }
-            /**
             
+            /**
             // Add bio
+            [scanner scanUpToString:@"<div class=\"tab-content" intoString:NULL];
             [scanner scanUpToString:@"class=\"synopsis" intoString:NULL];
             [scanner scanUpToString:@"</div>" intoString:&wholeCoachesBioTab];
             
-            NSScanner *miniScanner = [NSScanner scannerWithString:allCoachElements];
+            NSScanner *miniScanner = [NSScanner scannerWithString:wholeCoachesBioTab];
             NSMutableString *wholeBio = [[NSMutableString alloc] initWithString:@""];
-            for (int i = 0; i < 10; i++)
-            {
+            
+            //for (int i = 0; i < 10; i++)
+            //{
                 [miniScanner scanUpToString:@"<p>" intoString:NULL];
             
                 [miniScanner scanUpToString:@"</p>" intoString:&coachBioPre];
@@ -177,13 +179,16 @@
                         [wholeBio appendString: coachBioPre];
                     }
                 }
-            }
+            //}
             coachBio = wholeBio;
             if (coachBio)
             {
                 [bowdoinCoachesElements addObject:coachBio];
+                NSLog(@"Coaches Bio: %@", coachBio);
+
             }
-*/
+             */
+        
         }
              
     }
