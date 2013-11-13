@@ -270,12 +270,14 @@
                     News_Story_View_Controller *newsTMP = (News_Story_View_Controller *)segue.destinationViewController;
                     newsTMP.newsURL = self.sequeLink;
                     newsTMP.team = self.teamName;
+                    /**
                     newsTMP.teamName = self.teamName;
                     newsTMP.newsURLInc = self.incommingURL;
                     newsTMP.longForm = self.longForm;
                     newsTMP.incommingTeamURL = self.incommingTeamURL;
                     newsTMP.backgroundImagePath = self.backgroundImagePath;
                     newsTMP.incTitle = [[self.stories objectAtIndex:indexPath.row] objectForKey:@"title"];
+                    */
                     
                 }
                 
