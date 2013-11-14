@@ -29,8 +29,6 @@
     //get the data from the web page
     NSString * htmlFromURL = [[NSString alloc] initWithData:dataFromURL encoding:NSASCIIStringEncoding];
     
-    NSLog(@" %@", htmlFromURL);
-    
     
     NSString *stringBreakdown;
     NSString *allCoachElements;
@@ -146,6 +144,21 @@
             {
                 [bowdoinCoachesElements addObject:coachEmail];
             }
+            /**
+            //[scanner scanUpToString:@"<div class=\"tab-content" intoString:NULL];
+            //[scanner scanUpToString:@"class=\"synopsis" intoString:NULL];
+            [scanner scanUpToString:@"<strong>" intoString:NULL];
+            //[scanner scanUpToString:@">" intoString:NULL];
+            [scanner scanUpToString:@"</p>" intoString:&wholeCoachesBioTab];
+            
+             if ([wholeCoachesBioTab rangeOfString:@"<object"].location != NSNotFound)
+             {
+                 //NSScanner *miniScanner = [NSScanner scannerWithString:wholeCoachesBioTab];
+                 NSLog(@"********************Object was found");
+                 NSLog(@"First Line: %@", wholeCoachesBioTab);
+                 
+             }
+            NSLog(@"First Line: %@", wholeCoachesBioTab);
             
             /**
             // Add bio

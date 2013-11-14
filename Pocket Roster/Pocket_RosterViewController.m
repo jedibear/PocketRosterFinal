@@ -12,6 +12,7 @@
 #import "GetImages.h"
 #import "GetFacility.h"
 #import "GetCoaches.h"
+#import "GetSchedule.h"
 
 @interface Pocket_RosterViewController ()
 
@@ -27,7 +28,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     // Get Facilities Now Works as of 11/12/13
     //[GetFacility GetFacility];
-    
+    [GetSchedule getSchedule];
     // I think there is a memory leak????? Need to be fixed
     //[GetCoaches getCoachesInfo];
     //[Get_Data_From_Website getInfo];

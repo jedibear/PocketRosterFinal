@@ -12,6 +12,6 @@
 
 //+(NSMutableDictionary *) GetSchedule: (NSString *) linkForURLSearch;
 //This method is just for testing while I can push
-+(void) GetSchedule;
++(void) getSchedule;
 
 @end
