@@ -15,7 +15,7 @@
 @implementation GetSchedule
 //+(NSMutableDictionary *) getFacilities: (NSString *) linkForURLSearch;
 //This method is just for testing while I can push
-+(void) GetSchedule;
++(void) getSchedule;
 {
 
     NSString *urlStr = @"http://athletics.bowdoin.edu/sports/bsb/2012-13/schedule";
@@ -29,7 +29,6 @@
     //get the data from the web page
     NSString * htmlFromURL = [[NSString alloc] initWithData:dataFromURL encoding:NSASCIIStringEncoding];
     
-    NSLog(@" This should be the URL used: %@", htmlFromURL);
     
     
     NSString *stringBreakdown;
@@ -58,15 +57,20 @@
     NSScanner *megaScanner = [NSScanner scannerWithString:htmlFromURL];
     [megaScanner scanUpToString:@"<table class=\"schedule" intoString:NULL];
     [megaScanner scanUpToString:@"</table>" intoString:&entireRoster];
+     //NSLog(@"Entire Schedule String: %@", entireRoster);
     
     NSScanner *scanner = [NSScanner scannerWithString:entireRoster];
+    [scanner scanUpToString:@"<tbody>" intoString:nil];
+    [scanner scanUpToString:@"</tr>" intoString:nil];
     
-    // Name
-    for(int i= 0; i < 40; i++)
+    for(int i= 0; i < 1; i++)
     {
-        [scanner scanUpToString:@"tr class=\"schedule-row" intoString:nil];
-        [scanner scanUpToString:@"/tr>" intoString:&stringBreakdown];
-        
+        [scanner scanUpToString:@"<tr" intoString:nil];
+        [scanner scanUpToString:@"class=\"schedule-row" intoString:nil];
+        [scanner scanUpToString:@"</tr>" intoString:&stringBreakdown];
+        NSLog(@"First Entire Column: %@", stringBreakdown);
+
+     /**
         NSScanner *miniScanner = [NSScanner scannerWithString:stringBreakdown];
         //Number
         for (int i = 0; i < 20; i++)
@@ -83,14 +87,14 @@
                 [allScheduleElements addObject:scheduleElement1Final];
             }
             
-        }
+        //}
 
         [scanner scanUpToString:@"\"" intoString:nil];
         [scanner scanUpToString:@"/tr>" intoString:nil];
-        
-
+      
+*/
     }
-    
+
 }
 
 @end
