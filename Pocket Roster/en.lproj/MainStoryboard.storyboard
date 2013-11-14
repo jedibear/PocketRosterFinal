@@ -747,7 +747,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LuX-dB-1qC">
-                                <rect key="frame" x="156" y="4" width="164" height="66"/>
+                                <rect key="frame" x="156" y="3.9999999999999996" width="164" height="66"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -828,7 +828,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ms4-da-DcA">
-                                <rect key="frame" x="156" y="4" width="164" height="66"/>
+                                <rect key="frame" x="156" y="3.9999999999999996" width="164" height="66"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -909,7 +909,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cLC-fR-GMl">
-                                <rect key="frame" x="156" y="4" width="164" height="66"/>
+                                <rect key="frame" x="156" y="3.9999999999999996" width="164" height="66"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -3494,7 +3494,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ncE-eA-Lua">
-                                <rect key="frame" x="156" y="4" width="164" height="66"/>
+                                <rect key="frame" x="156" y="3.9999999999999996" width="164" height="66"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -5185,7 +5185,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UYs-8z-dG4">
-                                <rect key="frame" x="58" y="30.000000008045493" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -5575,7 +5575,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OBc-28-54u">
-                                <rect key="frame" x="58" y="30.000000008045493" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -5666,7 +5666,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bo4-eg-JWd">
-                                <rect key="frame" x="58" y="30.000000008045493" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -5757,7 +5757,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dQ6-fG-c7L">
-                                <rect key="frame" x="58" y="30.000000008045493" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

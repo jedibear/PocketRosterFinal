@@ -147,6 +147,7 @@
                 [bowdoinCoachesElements addObject:coachEmail];
             }
             
+            [scanner scanUpToString:@"<div class=\"tab-content" intoString:NULL];
             /**
             // Add bio
             [scanner scanUpToString:@"<div class=\"tab-content" intoString:NULL];

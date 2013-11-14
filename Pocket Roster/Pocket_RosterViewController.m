@@ -29,7 +29,7 @@
     //[GetFacility GetFacility];
     
     // I think there is a memory leak????? Need to be fixed
-    //[GetCoaches getCoachesInfo];
+    [GetCoaches getCoachesInfo];
     //[Get_Data_From_Website getInfo];
     //[GetTeamLinks getTeamLinkBreakdown];
     //[GetImages getMostRecentImages];
