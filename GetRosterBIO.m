@@ -33,7 +33,7 @@
     [bigDaddy scanUpToString:@"<img src" intoString:nil];
     [bigDaddy scanUpToString:@"\" alt" intoString:&relevantInfo];
     
-    NSLog(@"%@", [baseURL stringByAppendingString:[relevantInfo substringFromIndex:10]]);
+   
     NSURL *imageURL = [[NSURL alloc] initWithString:[baseURL stringByAppendingString:[relevantInfo substringFromIndex:10]]];
     NSData *imageData = [[NSData alloc] initWithContentsOfURL:imageURL];
     

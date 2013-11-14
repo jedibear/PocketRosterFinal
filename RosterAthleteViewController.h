@@ -12,9 +12,10 @@
 
 @property (nonatomic) NSString *incommingURL;
 @property (nonatomic) BOOL *longForm;
-@property (nonatomic) NSString *rosterURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSString *teamName, *backgroundImagePath;
 @property (nonatomic) NSString *incommingTeamURL;
 @property (nonatomic) UIImage *athleteImageInput;
+@property (nonatomic) NSMutableDictionary *roster;
 
 @property (strong, nonatomic) IBOutlet UIImageView *athleteImage;
 

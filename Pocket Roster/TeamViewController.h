@@ -15,7 +15,8 @@
 @property (nonatomic) NSMutableArray *teamLinks;
 @property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *teamBackgroundImage;
-@property (nonatomic) BOOL *longForm;
+@property (nonatomic) BOOL *longForm, *haveRoster;
+@property (nonatomic) NSMutableDictionary *teamRoster;
 
 -(void)setTeamName:(NSString *)team;
 

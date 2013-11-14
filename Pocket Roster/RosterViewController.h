@@ -11,9 +11,10 @@
 @interface RosterViewController : UIViewController
 
 
-@property (nonatomic) BOOL *longForm;
-@property (nonatomic) NSString *rosterURL, *teamName, *backgroundImagePath;
+@property (nonatomic) BOOL *longForm, *haveRoster;
+@property (nonatomic) NSString  *teamName, *backgroundImagePath;
 @property (nonatomic) NSString *incommingTeamURL;
+@property (nonatomic) NSMutableDictionary *roster;
 @property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
 
 

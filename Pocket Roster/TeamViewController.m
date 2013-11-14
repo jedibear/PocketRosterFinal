@@ -54,6 +54,8 @@
             nFVC.backgroundImagePath = self.backgroundImagePath;
             nFVC.teamName = self.teamName;
             nFVC.longForm = self.longForm;
+            nFVC.teamRoster = self.teamRoster;
+            nFVC.haveRoster= self.haveRoster;
         }
     }
     

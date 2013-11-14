@@ -63,13 +63,15 @@
     NSMutableDictionary *bowdoinEntireTeam = [NSMutableDictionary new];
     
     NSMutableArray *rosterImages = [NSMutableArray new];
+    NSMutableDictionary * bioInfo = [NSMutableDictionary new];
     
     /**
      ***************************************
      *      This is for the Table View     *
      ***************************************
      */
-    NSMutableDictionary *bioInfo = [NSMutableDictionary new];
+    
+    
     NSMutableArray *singleRosterCells = [NSMutableArray new];
     
 
@@ -113,7 +115,7 @@ while ([scanner scanUpToString:@"tr class=\"roster-row" intoString:nil]) {
        if ( ![rosterElement1Final isEqual: NULL])
        {
            numberOfElements++;
-           //[bowdoinPlayer addObject:rosterElement1Final];
+           
            [singleRosterCells addObject:rosterElement1Final];
        }
     
@@ -128,12 +130,10 @@ while ([scanner scanUpToString:@"tr class=\"roster-row" intoString:nil]) {
         
         [miniScanner scanUpToString:@"</a>" intoString:&rosterElement2];
         rosterElement2Final = [rosterElement2 substringFromIndex: dumbVariable+1];
-        //NSLog(@"ROSTER element2: %@", rosterElement2Final);
+        
         if (rosterElement2Final)
         {
             numberOfElements++;
-            //[bowdoinPlayer addObject:rosterElement2Final];
-            [singleRosterCells addObject:rosterElement2Final];
             
         }
     }
@@ -142,54 +142,51 @@ while ([scanner scanUpToString:@"tr class=\"roster-row" intoString:nil]) {
     [miniScanner scanUpToString:@">" intoString:NULL];
     [miniScanner scanUpToString:@"</td>" intoString:&rosterElement3];
     rosterElement3Final = [rosterElement3 substringFromIndex: dumbVariable];
-    //NSLog(@"ROSTER element3: %@", rosterElement3Final);
+    
     if (rosterElement3Final)
     {
         numberOfElements++;
-        //[bowdoinPlayer addObject:rosterElement3Final];
-        //[singleRosterCells addObject:rosterElement3Final];
+        
     }
 
-    //NSLog(@" ROSTER element 0: %@", rosterElement0Final);
+    
     [miniScanner scanUpToString:@"<td" intoString:NULL];
     [miniScanner scanUpToString:@">" intoString:NULL];
     [miniScanner scanUpToString:@"</td>" intoString:&rosterElement4];
     rosterElement4Final = [rosterElement4 substringFromIndex: dumbVariable];
-    //NSLog(@"element 4 %@", rosterElement4Final);
+    
     if (rosterElement4Final)
     {
         numberOfElements++;
-        //[bowdoinPlayer addObject:rosterElement4Final];
-        
-    }
-    NSLog(@"ROSTER element 1: %@", rosterElement0Final);
+        }
+    
     [miniScanner scanUpToString:@"<td" intoString:NULL];
     [miniScanner scanUpToString:@">" intoString:NULL];
     [miniScanner scanUpToString:@"</td>" intoString:&rosterElement5];
     rosterElement5Final = [rosterElement5 substringFromIndex: dumbVariable];
-    //NSLog(@"element 5 %@", rosterElement5Final);
+    
     if (rosterElement5Final)
     {
         numberOfElements++;
-        //[bowdoinPlayer addObject:rosterElement5Final];
+       
     }
     
     [miniScanner scanUpToString:@"<td" intoString:NULL];
     [miniScanner scanUpToString:@">" intoString:NULL];
     [miniScanner scanUpToString:@"</td>" intoString:&rosterElement6];
     rosterElement6Final = [rosterElement6 substringFromIndex: dumbVariable];
-    //NSLog(@"element 6 %@", rosterElement6Final);
+    
     if (rosterElement6Final)
     {
         numberOfElements++;
-        //[bowdoinPlayer addObject:rosterElement6Final];
+        
     }
     
     [miniScanner scanUpToString:@"<td" intoString:NULL];
     [miniScanner scanUpToString:@">" intoString:NULL];
     [miniScanner scanUpToString:@"</td>" intoString:&rosterElement7];
     rosterElement7Final = [rosterElement7 substringFromIndex: dumbVariable];
-   // NSLog(@"element 7%@", rosterElement7Final);
+   
     if (rosterElement7Final)
     {
         numberOfElements++;
@@ -199,49 +196,48 @@ while ([scanner scanUpToString:@"tr class=\"roster-row" intoString:nil]) {
     [miniScanner scanUpToString:@">" intoString:NULL];
     [miniScanner scanUpToString:@"</td>" intoString:&rosterElement8];
     rosterElement8Final = [rosterElement8 substringFromIndex: dumbVariable];
-    //NSLog(@"element 8 %@", rosterElement8Final);
+    
     if (rosterElement8Final)
     {
         numberOfElements++;
-        //[bowdoinPlayer addObject:rosterElement8Final];
+        
     }
     
-   bioInfo = [GetRosterBIO getBio:rosterElement0Final];
     
-    NSLog(@"%@", [bioInfo objectForKey:@"image"]);
-    //NSLog(@"%d", numberOfElements);
+    
+    
     if (numberOfElements == 3){
-        [bowdoinPlayer addObject:bioInfo];
+        [bowdoinPlayer addObject:rosterElement0Final];
         [bowdoinPlayer addObject:rosterElement1Final];
         [bowdoinPlayer addObject:rosterElement3Final];
         [bowdoinPlayer addObject:rosterElement4Final];
     }else if (numberOfElements == 4){
-        [bowdoinPlayer addObject:bioInfo];
+        [bowdoinPlayer addObject:rosterElement0Final];
         [bowdoinPlayer addObject:rosterElement1Final];
         [bowdoinPlayer addObject:rosterElement3Final];
         [bowdoinPlayer addObject:rosterElement4Final];
         [bowdoinPlayer addObject:rosterElement5Final];
     }else if (numberOfElements == 5){
-        [bowdoinPlayer addObject:bioInfo];
+        [bowdoinPlayer addObject:rosterElement0Final];
         [bowdoinPlayer addObject:rosterElement1Final];
         [bowdoinPlayer addObject:rosterElement3Final];
         [bowdoinPlayer addObject:rosterElement6Final];
     }else if(numberOfElements == 6){
-        [bowdoinPlayer addObject:bioInfo];
+        [bowdoinPlayer addObject:rosterElement0Final];
         [bowdoinPlayer addObject:rosterElement1Final];
         [bowdoinPlayer addObject:rosterElement2Final];
         [bowdoinPlayer addObject:rosterElement3Final];
         [bowdoinPlayer addObject:rosterElement4Final];
         [bowdoinPlayer addObject:rosterElement6Final];
     }else if (numberOfElements == 7){
-        [bowdoinPlayer addObject:bioInfo];
+        [bowdoinPlayer addObject:rosterElement0Final];
         [bowdoinPlayer addObject:rosterElement1Final];
         [bowdoinPlayer addObject:rosterElement2Final];
         [bowdoinPlayer addObject:rosterElement3Final];
         [bowdoinPlayer addObject:rosterElement4Final];
         [bowdoinPlayer addObject:rosterElement7Final];
     }else if (numberOfElements == 8){
-        [bowdoinPlayer addObject:bioInfo];
+        [bowdoinPlayer addObject:rosterElement0Final];
         [bowdoinPlayer addObject:rosterElement1Final];
         [bowdoinPlayer addObject:rosterElement2Final];
         [bowdoinPlayer addObject:rosterElement3Final];
@@ -257,7 +253,7 @@ while ([scanner scanUpToString:@"tr class=\"roster-row" intoString:nil]) {
 
      
 }
-   // NSLog(@"%@", bowdoinEntireTeam);
+   
 return bowdoinEntireTeam;
 
     

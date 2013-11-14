@@ -31,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"%@ fuck", self.rosterURL);
+    
     
     [self.teamNameLabel setText:self.teamName];
 	// Do any additional setup after loading the view.
@@ -50,16 +50,18 @@
 	if([segue.identifier isEqualToString:@"embedRoster"]){
 		if([segue.destinationViewController isKindOfClass:[RosterTVC class]]){
 			RosterTVC *rTVC = (RosterTVC *)segue.destinationViewController;
-			rTVC.incommingURL = self.rosterURL;
+			rTVC.teamRoster = self.roster;
             
 		}
 	}else if([segue.identifier isEqualToString:@"back2TVC"]){
         if([segue.destinationViewController isKindOfClass:[TeamViewController class]]){
             TeamViewController *tVC = (TeamViewController *)segue.destinationViewController;
             tVC.teamName = self.teamName;
+            tVC.teamRoster = self.roster;
             tVC.longForm = self.longForm;
             tVC.backgroundImagePath = self.backgroundImagePath;
             tVC.incommingTeamURL = self.incommingTeamURL;
+            tVC.haveRoster = self.haveRoster;
         }
     }
 

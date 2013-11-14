@@ -8,6 +8,9 @@
 
 #import "TeamTVC.h"
 #import "GetTeamLinks.h"
+#import "Get_Data_From_Website.h"
+#import "GetRosterBIO.h"
+#import "RosterSplashVC.h"
 #import "RosterViewController.h"
 #import "ScheduleViewController.h"
 #import "NewsFeedViewController.h"
@@ -30,21 +33,39 @@
     return self;
 }
 
+- (NSMutableDictionary *) teamRoster{
+    if(!_teamRoster){
+        _teamRoster = [[NSMutableDictionary alloc] init];
+    }
+    return _teamRoster;
+}
+/*
+- (void) updateProgress:(NSTimer *)sender{
+    UIProgressView *prog = [sender userInfo];
+    
+    if (prog.progress == 1.0) {
+        [sender invalidate];
+        
+    }else{
+        [prog setProgress:self.progress];
+    }
+}
+*/
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"%@ incomming0", self.incommingTeamURL);
+    self.teamLinks = [GetTeamLinks getTeamLinkBreakdown:self.incommingTeamURL];
     
+    
+    NSLog(@"%@", self.teamRoster);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.teamLinks = [GetTeamLinks getTeamLinkBreakdown:self.incommingTeamURL];
-	
-
     
+ 
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,19 +85,34 @@
  */
 
 
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 
     if ([segue.identifier isEqualToString:@"roster"]) {
 	//not sure if this is the right class, nothing is in RosterViewController right now.         
 	//football roster no longer works/ was using pics, need to pull from site
-        if ([segue.destinationViewController isKindOfClass:[RosterViewController class]]) {
-            RosterViewController *rVC = (RosterViewController *)segue.destinationViewController;
-            rVC.rosterURL = [self.teamLinks objectAtIndex:0];
+        
+        
+        if ([segue.destinationViewController isKindOfClass:[RosterSplashVC class]]) {
+            
+            //NSLog(@"HERE");
+            
+            
+            
+            RosterSplashVC *rVC = (RosterSplashVC *)segue.destinationViewController;
+
+            if(!self.haveRoster){
+                self.teamRoster = [Get_Data_From_Website getInfo:[self.teamLinks objectAtIndex:0]];
+            }
+            
+            rVC.roster = self.teamRoster;
             rVC.longForm = self.longForm;
             rVC.backgroundImagePath = self.backgroundImagePath;
             rVC.teamName = self.teamName;
             rVC.incommingTeamURL = self.incommingTeamURL;
+            rVC.haveRoster = self.haveRoster;
             
         }
     }else if ([segue.identifier isEqualToString:@"schedule/results"]) {
