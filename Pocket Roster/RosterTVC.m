@@ -142,9 +142,20 @@
     
             if ([segue.identifier isEqualToString:@"athleteBio"]) {
                 if ([segue.destinationViewController isKindOfClass:[RosterAthleteViewController class]]) {
+                    
                     RosterAthleteViewController *rAVC = (RosterAthleteViewController *)segue.destinationViewController;
+                    
+                    self.key = [[NSString alloc] initWithFormat:@"%ld", (long)[indexPath row]+1];
                     NSArray* athleteObjects = [self.teamRoster objectForKey:self.key];
+                    
+                    
                     rAVC.athleteImageInput = [[athleteObjects objectAtIndex:0]objectForKey:@"image"];
+                    rAVC.haveRoster = self.haveRoster;
+                    rAVC.roster = self.teamRoster;
+                    rAVC.teamName = self.teamName;
+                    rAVC.longForm = self.longForm;
+                    rAVC.incommingTeamURL = self.incommingTeamURL;
+                    rAVC.backgroundImagePath = self.backgroundImagePath;
                 }
             }
             

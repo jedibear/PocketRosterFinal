@@ -14,7 +14,7 @@
     
     NSString *baseURL = @"http://athletics.bowdoin.edu";
     
-    NSString *relevantInfo;
+    NSString *relevantInfo, *playerAttributes, *thisAttrType, *attrTypeVal;
     NSMutableDictionary *bioInfo = [[NSMutableDictionary alloc]init];
     
     
@@ -41,6 +41,21 @@
     
     
     [bioInfo setObject:athleteBioPhoto forKey:@"image"];
+    
+    [bigDaddy scanUpToString:@"<table" intoString:nil];
+    [bigDaddy scanUpToString:@"/table>" intoString:&playerAttributes];
+    
+    NSScanner *attr = [NSScanner scannerWithString:playerAttributes];
+    
+    while ([attr scanUpToString:@"class=\"lbl\"" intoString:&relevantInfo]){
+        [attr scanUpToString:@">" intoString:nil];
+        [attr scanUpToString:@": </td>" intoString:&thisAttrType];
+        [attr scanUpToString:@"class=\"val\"" intoString:nil];
+        [attr scanUpToString:@">" intoString:nil];
+        [attr scanUpToString:@"</td>" intoString:&attrTypeVal];
+        
+        [bioInfo setObject:[attrTypeVal substringFromIndex:1] forKey:[thisAttrType substringFromIndex:1]];
+    }
     
     return bioInfo;
 }

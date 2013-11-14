@@ -51,6 +51,11 @@
 		if([segue.destinationViewController isKindOfClass:[RosterTVC class]]){
 			RosterTVC *rTVC = (RosterTVC *)segue.destinationViewController;
 			rTVC.teamRoster = self.roster;
+            rTVC.longForm = self.longForm;
+            rTVC.haveRoster = self.haveRoster;
+            rTVC.teamName = self.teamName;
+            rTVC.backgroundImagePath = self.backgroundImagePath;
+            rTVC.incommingTeamURL = self.incommingTeamURL;
             
 		}
 	}else if([segue.identifier isEqualToString:@"back2TVC"]){

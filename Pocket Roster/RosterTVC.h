@@ -14,7 +14,7 @@
 @property (nonatomic, strong) NSMutableDictionary *teamRoster;
 
 
-@property (nonatomic) BOOL *longForm;
+@property (nonatomic) BOOL *longForm, *haveRoster;
 @property (nonatomic) NSString  *teamName, *backgroundImagePath;
 @property (nonatomic) NSString *incommingTeamURL;
 @property (nonatomic) UIImage *athleteImage;

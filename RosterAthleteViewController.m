@@ -7,6 +7,7 @@
 //
 
 #import "RosterAthleteViewController.h"
+#import "RosterViewController.h"
 
 @interface RosterAthleteViewController ()
 
@@ -35,5 +36,23 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"back2Roster"]) {
+        
+        if ([segue.destinationViewController isKindOfClass:[RosterViewController class]]) {
+            RosterViewController *rVC = (RosterViewController *)segue.destinationViewController;
+            
+            rVC.incommingTeamURL = self.incommingTeamURL;
+            rVC.longForm = self.longForm;
+            rVC.haveRoster = self.haveRoster;
+            rVC.backgroundImagePath = self.backgroundImagePath;
+            rVC.roster = self.roster;
+            rVC.teamName = self.teamName;
+            
+        }
+    }
+}
+
 
 @end
