@@ -36,9 +36,24 @@
     
     NSString *scheduleElement1Final;
     NSString *scheduleElement1;
+    NSString *scheduleElement2Final;
+    NSString *scheduleElement2;
+    NSString *scheduleElement3Final;
+    NSString *scheduleElement3;
+    NSString *scheduleElement4Final;
+    NSString *scheduleElement4;
+    NSString *scheduleElement5Final;
+    NSString *scheduleElement5;
+    NSString *scheduleElement6Final;
+    NSString *scheduleElement6;
+    NSString *scheduleElement7Final;
+    NSString *scheduleElement7;
+    NSString *scheduleElement8Final;
+    NSString *scheduleElement8;
+    
         
     int dumbVariable = 1;
-    int numberOfElements = 0;
+    
     
     /**
      ***************************************************
@@ -63,6 +78,7 @@
     [scanner scanUpToString:@"<tbody>" intoString:nil];
     [scanner scanUpToString:@"</tr>" intoString:nil];
     
+
     for(int i= 0; i < 1; i++)
     {
         [scanner scanUpToString:@"<tr" intoString:nil];
@@ -70,11 +86,42 @@
         [scanner scanUpToString:@"</tr>" intoString:&stringBreakdown];
         NSLog(@"First Entire Column: %@", stringBreakdown);
 
+    
+
+    
+
+
+   
+        //[scanner scanUpToString:@"<tr class=\"schedule-row" intoString:nil];
+        //[scanner scanUpToString:@"class=\"schedule-row" intoString:nil];
+        //[scanner scanUpToString:@"</tr>" intoString:&stringBreakdown];
+        //NSLog(@"First Entire Column: %@", stringBreakdown);
+
+
+
      /**
         NSScanner *miniScanner = [NSScanner scannerWithString:stringBreakdown];
         //Number
-        for (int i = 0; i < 20; i++)
+    while ([scanner scanUpToString:@"<tr class=\"schedule-row" intoString:nil])
+
+        //for (int i = 0; i < 20; i++)
+    {
+        int numberOfElements = 0;
+        NSMutableArray *allScheduleElements = [NSMutableArray new];
+        
+        NSLog(@"Made it");
+        [scanner scanUpToString:@"<tr class=\"schedule-row" intoString:nil];
+        [scanner scanUpToString:@"</tr>" intoString:&stringBreakdown];
+        
+        NSScanner *miniScanner = [NSScanner scannerWithString:stringBreakdown];
+        // Element 1
+        [miniScanner scanUpToString:@"<td" intoString:nil];
+        [miniScanner scanUpToString:@">" intoString:nil];
+        [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement1];
+        scheduleElement1Final = [scheduleElement1 substringFromIndex: dumbVariable];
+        if (scheduleElement1Final)
         {
+<<<<<<< HEAD
             [miniScanner scanUpToString:@"<td" intoString:nil];
             [miniScanner scanUpToString:@">" intoString:nil];
             [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement1];
@@ -82,10 +129,39 @@
             NSLog(@"%@", scheduleElement1Final);
             
             if ( ![scheduleElement1Final isEqual: NULL])
+=======
+            numberOfElements++;
+            NSLog(@"Element 1: %@", scheduleElement1Final);
+        }
+        
+        // Element 2
+        [miniScanner scanUpToString:@"<td" intoString:nil];
+        [miniScanner scanUpToString:@">" intoString:nil];
+        [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement2];
+        scheduleElement2Final = [scheduleElement2 substringFromIndex: dumbVariable];
+        
+        
+            if ([scheduleElement2Final rangeOfString:@"<b>"].location != NSNotFound)
+            {
+                NSScanner *subScanner = [NSScanner scannerWithString:scheduleElement2Final];
+                [subScanner scanUpToString:@"<b" intoString:nil];
+                [subScanner scanUpToString:@">" intoString:nil];
+                //[subScanner scanUpToString:@"</b>" intoString:&scheduleElement1];
+                [subScanner scanUpToString:@"\\" intoString:&scheduleElement2];
+                scheduleElement2 = [scheduleElement2 substringFromIndex: dumbVariable];
+                NSArray* breakDownString = [scheduleElement2 componentsSeparatedByString:@"<"];
+                scheduleElement2Final = [breakDownString objectAtIndex: 0];
+               //scheduleElement2Final = [scheduleElement2 substringFromIndex: dumbVariable];
+                //NSLog(@"Element: %@", scheduleElement1Final);
+                
+            }
+            if (scheduleElement2Final)
+>>>>>>> b83bb02f0fe47926031de12033120471d8298500
             {
                 numberOfElements++;
-                [allScheduleElements addObject:scheduleElement1Final];
+                NSLog(@"Element 2: %@", scheduleElement2Final);
             }
+<<<<<<< HEAD
             
         //}
 
@@ -93,7 +169,121 @@
         [scanner scanUpToString:@"/tr>" intoString:nil];
       
 */
+=======
+        //Element 3
+        [miniScanner scanUpToString:@"<td" intoString:nil];
+        [miniScanner scanUpToString:@">" intoString:nil];
+        [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement3];
+        scheduleElement3Final = [scheduleElement3 substringFromIndex: dumbVariable];
+        if (scheduleElement3Final)
+        {
+            numberOfElements++;
+            NSLog(@"Element 3: %@", scheduleElement3Final);
+        }
+
+        //Element 4
+        [miniScanner scanUpToString:@"<td" intoString:nil];
+        [miniScanner scanUpToString:@">" intoString:nil];
+        [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement4];
+        scheduleElement4Final = [scheduleElement4 substringFromIndex: dumbVariable];
+        if (scheduleElement4Final)
+        {
+            numberOfElements++;
+            NSLog(@"Element 4: %@", scheduleElement4Final);
+        }
+
+        //Element 5
+        [miniScanner scanUpToString:@"<td" intoString:nil];
+        [miniScanner scanUpToString:@">" intoString:nil];
+        [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement5];
+        scheduleElement5Final = [scheduleElement5 substringFromIndex: dumbVariable];
+        if (scheduleElement5Final)
+        {
+            numberOfElements++;
+            NSLog(@"Element 5: %@", scheduleElement5Final);
+        }
+        
+        //Element 6
+        [miniScanner scanUpToString:@"<td" intoString:nil];
+        [miniScanner scanUpToString:@">" intoString:nil];
+        [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement6];
+        scheduleElement6Final = [scheduleElement6 substringFromIndex: dumbVariable];
+        if (scheduleElement6Final)
+        {
+            numberOfElements++;
+            NSLog(@"Element 6: %@", scheduleElement6Final);
+        }
+        
+        //Element 7
+        [miniScanner scanUpToString:@"<td" intoString:nil];
+        [miniScanner scanUpToString:@">" intoString:nil];
+        [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement7];
+        scheduleElement7Final = [scheduleElement7 substringFromIndex: dumbVariable];
+        if (scheduleElement7Final)
+        {
+            numberOfElements++;
+            NSLog(@"Element 7: %@", scheduleElement7Final);
+        }
+
+        //Element 8
+        [miniScanner scanUpToString:@"<td" intoString:nil];
+        [miniScanner scanUpToString:@">" intoString:nil];
+        [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement8];
+        scheduleElement8Final = [scheduleElement8 substringFromIndex: dumbVariable];
+        if (scheduleElement8Final)
+        {
+            numberOfElements++;
+            NSLog(@"Element 8: %@", scheduleElement8Final);
+        }
+
+        [scanner scanUpToString:@"<tr class=\"schedule-row" intoString:nil];
+        [scanner scanUpToString:@"</tr>" intoString:nil];
+        
+        if (numberOfElements == 3){
+            [allScheduleElements addObject:scheduleElement1Final];
+            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:scheduleElement3Final];
+        }else if (numberOfElements == 4){
+            [allScheduleElements addObject:scheduleElement1Final];
+            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:scheduleElement3Final];
+            [allScheduleElements addObject:scheduleElement4Final];
+        }else if (numberOfElements == 5){
+            [allScheduleElements addObject:scheduleElement1Final];
+            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:scheduleElement3Final];
+            [allScheduleElements addObject:scheduleElement4Final];
+            [allScheduleElements addObject:scheduleElement5Final];
+        }else if(numberOfElements == 6){
+            [allScheduleElements addObject:scheduleElement1Final];
+            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:scheduleElement3Final];
+            [allScheduleElements addObject:scheduleElement4Final];
+            [allScheduleElements addObject:scheduleElement5Final];
+            [allScheduleElements addObject:scheduleElement6Final];
+        }else if (numberOfElements == 7){
+            [allScheduleElements addObject:scheduleElement1Final];
+            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:scheduleElement3Final];
+            [allScheduleElements addObject:scheduleElement4Final];
+            [allScheduleElements addObject:scheduleElement5Final];
+            [allScheduleElements addObject:scheduleElement6Final];
+            [allScheduleElements addObject:scheduleElement7Final];
+        }else if (numberOfElements == 8){
+            [allScheduleElements addObject:scheduleElement1Final];
+            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:scheduleElement3Final];
+            [allScheduleElements addObject:scheduleElement4Final];
+            [allScheduleElements addObject:scheduleElement5Final];
+            [allScheduleElements addObject:scheduleElement6Final];
+            [allScheduleElements addObject:scheduleElement7Final];
+            [allScheduleElements addObject:scheduleElement8Final];
+        }
+
+>>>>>>> b83bb02f0fe47926031de12033120471d8298500
     }
+    
+    
 
 }
 

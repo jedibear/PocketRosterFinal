@@ -26,16 +26,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    // Get Facilities Now Works as of 11/12/13
-    //[GetFacility GetFacility];
-    [GetSchedule getSchedule];
-    // I think there is a memory leak????? Need to be fixed
+    
+       // I think there is a memory leak????? Need to be fixed
     //[GetCoaches getCoachesInfo];
     //[Get_Data_From_Website getInfo];
     //[GetTeamLinks getTeamLinkBreakdown];
-    //[GetImages getMostRecentImages];
+    [GetImages getMostRecentImages];
     
-         
+    //Finished
+    //[GetSchedule getSchedule];
+    //[GetFacility GetFacility];
+
 }
 
 

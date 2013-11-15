@@ -66,7 +66,7 @@
         NSLog(@"This is the album link: %@", photoAlbum1Final);
         if (photoAlbum1Final)
         {
-            
+            // Translate URL 
             NSURL *thePhotoAlbumURL = [[NSURL alloc] initWithString:photoAlbum1Final];
             
             NSMutableURLRequest *photoAlbumrequest = [[NSMutableURLRequest alloc] init];
