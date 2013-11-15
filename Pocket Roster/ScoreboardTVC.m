@@ -29,10 +29,12 @@
 {
     [super viewDidLoad];
     
-    self.scoreboard = [[NSMutableDictionary alloc]init];
+    self.incommingScheduleURL = @"http://athletics.bowdoin.edu/landing/index";
     
+    self.scoreboard = [[NSMutableDictionary alloc]init];
     self.scoreboard = [GetScoreBoard getTheScoreBoard:self.incommingScheduleURL];
 
+    //NSLog(@"%@", self.scoreboard);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -65,7 +67,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    ScoreboardCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    ScoreboardCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    NSString *key = [[NSString alloc] initWithFormat:@"%ld", (long)[indexPath row]+1];
     
     // Configure the cell...
     
@@ -73,13 +77,19 @@
         cell = [[ScoreboardCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    cell.sportLabel.text = [self.scoreboard objectForKey:@"sport"];
-    cell.team1.text = [self.scoreboard objectForKey:@"team1"];
-    cell.team2.text = [self.scoreboard objectForKey:@"team2"];
-    cell.date.text = [self.scoreboard objectForKey:@"date"];
-    cell.score1.text = [self.scoreboard objectForKey:@"score1"];
-    cell.score2.text = [self.scoreboard objectForKey:@"score2"];
-    cell.status.text = [self.scoreboard objectForKey:@"status"];
+    
+    NSMutableDictionary *contestObjects = [self.scoreboard objectForKey:key];
+    
+    
+    cell.sportLabel.text = [contestObjects objectForKey:@"sport"];
+    cell.team1.text = [contestObjects objectForKey:@"team1"];
+    cell.team2.text = [contestObjects objectForKey:@"team2"];
+    cell.date.text = [contestObjects objectForKey:@"date"];
+    cell.score1.text = [contestObjects objectForKey:@"score1"];
+    cell.score2.text = [contestObjects objectForKey:@"score2"];
+    cell.status.text = [contestObjects objectForKey:@"status"];
+    
+    
     
     return cell;
 }

@@ -595,6 +595,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" id="nqX-4Q-a6r"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -3845,7 +3848,7 @@
             <objects>
                 <tableViewController id="9Jm-R0-lKr" customClass="RSSTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="134" sectionHeaderHeight="22" sectionFooterHeight="22" id="YdF-Xt-Ep4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -3983,11 +3986,11 @@
             <objects>
                 <viewController id="sU7-Nt-Ldl" customClass="WebViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Z7-iq-WKg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" id="pjG-Ky-9OV">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="-54" width="320" height="504"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                             </webView>
@@ -4133,16 +4136,16 @@
             </objects>
             <point key="canvasLocation" x="1958" y="-3557"/>
         </scene>
-        <!--Table View Controller-->
+        <!--ScoreboardTVC-->
         <scene sceneID="F54-SZ-ta7">
             <objects>
-                <tableViewController id="tcQ-78-gqy" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" id="Y18-x8-USB">
+                <tableViewController id="tcQ-78-gqy" customClass="ScoreboardTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Y18-x8-USB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="90" id="TD4-4w-6BF" customClass="ScoreboardCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ScoreboardCell" rowHeight="90" id="TD4-4w-6BF" customClass="ScoreboardCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TD4-4w-6BF" id="bI8-N5-P10">
@@ -4201,6 +4204,7 @@
                                     </subviews>
                                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="date" destination="7N2-HH-6nq" id="aRr-rH-h0s"/>
                                     <outlet property="score1" destination="GaI-N2-vKB" id="01f-t8-03U"/>
@@ -9816,6 +9820,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="FM3-qD-uOc" kind="modal" id="Wn9-hR-3OG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hMl-ou-qyB">
                                 <rect key="frame" x="0.0" y="81" width="320" height="4"/>
@@ -9926,38 +9933,38 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Wn9-hR-3OG"/>
+        <segue reference="KpL-3D-cg5"/>
+        <segue reference="dcF-hv-hmo"/>
+        <segue reference="1cP-Of-ahw"/>
+        <segue reference="1YT-yN-vOm"/>
+        <segue reference="uWY-0q-ksa"/>
+        <segue reference="p5M-4L-Nze"/>
+        <segue reference="kFR-6G-fJg"/>
+        <segue reference="ohy-EF-KnQ"/>
+        <segue reference="9eF-9v-H2L"/>
         <segue reference="cVc-Kz-KS9"/>
         <segue reference="c1b-4N-uij"/>
         <segue reference="8nJ-cb-89J"/>
         <segue reference="oQX-lm-Ye2"/>
-        <segue reference="ohy-EF-KnQ"/>
-        <segue reference="kFR-6G-fJg"/>
-        <segue reference="p5M-4L-Nze"/>
-        <segue reference="9eF-9v-H2L"/>
-        <segue reference="3mH-FH-LL5"/>
         <segue reference="yCL-Xr-dJB"/>
         <segue reference="zKd-1U-8sy"/>
+        <segue reference="TaC-pf-Fek"/>
+        <segue reference="SyN-pK-eu1"/>
+        <segue reference="C6f-BF-Oyy"/>
+        <segue reference="17k-bi-cGE"/>
+        <segue reference="1bn-dE-zPR"/>
+        <segue reference="nz0-8Y-JHX"/>
+        <segue reference="z2W-MS-J4j"/>
         <segue reference="II4-L4-Ic5"/>
         <segue reference="FEo-ng-eKc"/>
         <segue reference="72q-0R-X8d"/>
-        <segue reference="1bn-dE-zPR"/>
-        <segue reference="17k-bi-cGE"/>
-        <segue reference="nz0-8Y-JHX"/>
-        <segue reference="z2W-MS-J4j"/>
-        <segue reference="uWY-0q-ksa"/>
-        <segue reference="6cF-zF-AY6"/>
-        <segue reference="etK-AR-q7C"/>
-        <segue reference="1YT-yN-vOm"/>
-        <segue reference="1cP-Of-ahw"/>
-        <segue reference="nTE-8S-LGK"/>
+        <segue reference="7bm-gT-qhD"/>
+        <segue reference="vEZ-tR-fBo"/>
+        <segue reference="sQv-Q6-vTb"/>
         <segue reference="xnd-Wf-AnJ"/>
-        <segue reference="SyN-pK-eu1"/>
-        <segue reference="TaC-pf-Fek"/>
-        <segue reference="C6f-BF-Oyy"/>
         <segue reference="cpS-pz-z9e"/>
         <segue reference="Aes-WL-c55"/>
-        <segue reference="vEZ-tR-fBo"/>
-        <segue reference="7bm-gT-qhD"/>
-        <segue reference="sQv-Q6-vTb"/>
+        <segue reference="nTE-8S-LGK"/>
     </inferredMetricsTieBreakers>
 </document>

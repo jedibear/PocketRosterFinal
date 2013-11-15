@@ -29,7 +29,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.incommingScoreboardURL = @"http://http://athletics.bowdoin.edu/landing/index";
+    //self.incommingScoreboardURL = @"http://http://athletics.bowdoin.edu/landing/index";
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,7 +45,7 @@
         if ([segue.destinationViewController isKindOfClass:[ScoreboardTVC class]]) {
             
             ScoreboardTVC *sTVC = (ScoreboardTVC *)segue.destinationViewController;
-            sTVC.incommingScheduleURL = self.incommingScoreboardURL;
+            //sTVC.incommingScheduleURL = self.incommingScoreboardURL;
         }
     }
     
