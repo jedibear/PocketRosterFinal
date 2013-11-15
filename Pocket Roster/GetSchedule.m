@@ -99,8 +99,8 @@
 
 
 
-     
-        //NSScanner *miniScanner = [NSScanner scannerWithString:stringBreakdown];
+   
+        NSScanner *miniScanner = [NSScanner scannerWithString:stringBreakdown];
         //Number
     while ([scanner scanUpToString:@"<tr class=\"schedule-row" intoString:nil])
     {
@@ -145,8 +145,7 @@
                 //NSLog(@"Element: %@", scheduleElement1Final);
                 
             }
-            if (scheduleElement2Final)
-            {
+            if (scheduleElement2Final){
                 numberOfElements++;
                 NSLog(@"Element 2: %@", scheduleElement2Final);
             }
@@ -264,7 +263,7 @@
 
     }
     
-    
+    }
 
 }
 }
