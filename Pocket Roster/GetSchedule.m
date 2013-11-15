@@ -207,47 +207,49 @@
         [scanner scanUpToString:@"</tr>" intoString:nil];
         
         if (numberOfElements == 3){
-            [bowdoinPlayer addObject:rosterElement0Final];
-            [bowdoinPlayer addObject:rosterElement1Final];
-            [bowdoinPlayer addObject:rosterElement3Final];
-            [bowdoinPlayer addObject:rosterElement4Final];
+            [allScheduleElements addObject:scheduleElement1Final];
+            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:scheduleElement3Final];
         }else if (numberOfElements == 4){
-            [bowdoinPlayer addObject:rosterElement0Final];
-            [bowdoinPlayer addObject:rosterElement1Final];
-            [bowdoinPlayer addObject:rosterElement3Final];
-            [bowdoinPlayer addObject:rosterElement4Final];
-            [bowdoinPlayer addObject:rosterElement5Final];
+            [allScheduleElements addObject:scheduleElement1Final];
+            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:scheduleElement3Final];
+            [allScheduleElements addObject:scheduleElement4Final];
         }else if (numberOfElements == 5){
-            [bowdoinPlayer addObject:rosterElement0Final];
-            [bowdoinPlayer addObject:rosterElement1Final];
-            [bowdoinPlayer addObject:rosterElement3Final];
-            [bowdoinPlayer addObject:rosterElement6Final];
+            [allScheduleElements addObject:scheduleElement1Final];
+            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:scheduleElement3Final];
+            [allScheduleElements addObject:scheduleElement4Final];
+            [allScheduleElements addObject:scheduleElement5Final];
         }else if(numberOfElements == 6){
-            [bowdoinPlayer addObject:rosterElement0Final];
-            [bowdoinPlayer addObject:rosterElement1Final];
-            [bowdoinPlayer addObject:rosterElement2Final];
-            [bowdoinPlayer addObject:rosterElement3Final];
-            [bowdoinPlayer addObject:rosterElement4Final];
-            [bowdoinPlayer addObject:rosterElement6Final];
+            [allScheduleElements addObject:scheduleElement1Final];
+            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:scheduleElement3Final];
+            [allScheduleElements addObject:scheduleElement4Final];
+            [allScheduleElements addObject:scheduleElement5Final];
+            [allScheduleElements addObject:scheduleElement6Final];
         }else if (numberOfElements == 7){
-            [bowdoinPlayer addObject:rosterElement0Final];
-            [bowdoinPlayer addObject:rosterElement1Final];
-            [bowdoinPlayer addObject:rosterElement2Final];
-            [bowdoinPlayer addObject:rosterElement3Final];
-            [bowdoinPlayer addObject:rosterElement4Final];
-            [bowdoinPlayer addObject:rosterElement7Final];
+            [allScheduleElements addObject:scheduleElement1Final];
+            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:scheduleElement3Final];
+            [allScheduleElements addObject:scheduleElement4Final];
+            [allScheduleElements addObject:scheduleElement5Final];
+            [allScheduleElements addObject:scheduleElement6Final];
+            [allScheduleElements addObject:scheduleElement7Final];
         }else if (numberOfElements == 8){
-            [bowdoinPlayer addObject:rosterElement0Final];
-            [bowdoinPlayer addObject:rosterElement1Final];
-            [bowdoinPlayer addObject:rosterElement2Final];
-            [bowdoinPlayer addObject:rosterElement3Final];
-            [bowdoinPlayer addObject:rosterElement4Final];
-            [bowdoinPlayer addObject:rosterElement8Final];
+            [allScheduleElements addObject:scheduleElement1Final];
+            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:scheduleElement3Final];
+            [allScheduleElements addObject:scheduleElement4Final];
+            [allScheduleElements addObject:scheduleElement5Final];
+            [allScheduleElements addObject:scheduleElement6Final];
+            [allScheduleElements addObject:scheduleElement7Final];
+            [allScheduleElements addObject:scheduleElement8Final];
         }
 
     }
     
-    I
+    
 
 }
 
