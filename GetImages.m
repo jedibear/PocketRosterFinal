@@ -74,9 +74,9 @@
         [linkScanner scanUpToString:@"\"" intoString:NULL];
         [linkScanner scanUpToString:@"\">" intoString:&photoAlbum1];
         photoAlbum1Final = [photoAlbum1 substringFromIndex: dumbVariable];
-        NSLog(@"This is the album link: %@", photoAlbum1Final);
+        //NSLog(@"This is the album link: %@", photoAlbum1Final);
         [startURL appendString: photoAlbum1Final];
-        NSLog(@"This is the FINAL album link: %@", startURL);
+        //NSLog(@"This is the FINAL album link: %@", startURL);
 
         [linkScanner scanUpToString:@"</a>" intoString:&albumTitle1];
         albumTitle1Final = [albumTitle1 substringFromIndex: dumbVariable2];
@@ -101,6 +101,35 @@
             [photoAlbumScanner scanUpToString:@"<script" intoString:&photoBunch];
             //NSLog(@"Photo HTML: %@", photoBunch);
             NSScanner *photoScanner = [NSScanner scannerWithString: photoBunch];
+           while([photoScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:nil] )
+           {
+               [photoScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:nil];
+               [photoScanner scanUpToString:@"</div>" intoString:&photo1];
+               NSLog(@"This is the Tester: %@", photo1);
+           }
+            //[photoScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:&photo1];
+            //[photoScanner scanUpToString:@"<img src=" intoString:&photo1];
+            //[photoScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:nil];
+
+
+            //NSLog(@"This is the Tester");
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
             //NSString *photoAlbumGroup;
             //while ([photoAlbumScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:nil])
@@ -108,11 +137,11 @@
             //[photoAlbumScanner scanUpToString:@"<script src=\"" intoString:&photoAlbumGroup];
             //for (int i=0; i< 1; i++)
             //{
-            NSString *tester;
+            //NSString *tester;
                 //NSScanner *photosScanner = [NSScanner scannerWithString:photoAlbumGroup];
-            [photoScanner scanUpToString:@"<img scr=" intoString:&tester];
+            //[photoScanner scanUpToString:@"<img scr=" intoString:&tester];
             //[photoScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:&tester];
-            NSLog(@"Photo Number: %@", tester);
+            //NSLog(@"Photo Number: %@", tester);
             /**
                 [photoScanner scanUpToString:@"<a href=" intoString:NULL];
                 [photoScanner scanUpToString:@"\"" intoString:NULL];
