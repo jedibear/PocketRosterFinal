@@ -38,6 +38,9 @@
     NSString *albumTitle1;
     NSString *albumTitle1Final;
 
+    NSString *photo1;
+    NSString *photoFinal1;
+    
     int dumbVariable = 1;
     int dumbVariable2 = 2;
     int numberOfElements = 0;
@@ -77,7 +80,7 @@
 
         [linkScanner scanUpToString:@"</a>" intoString:&albumTitle1];
         albumTitle1Final = [albumTitle1 substringFromIndex: dumbVariable2];
-        NSLog(@"This is the album Title: %@", albumTitle1Final);
+        //NSLog(@"This is the album Title: %@", albumTitle1Final);
 
         
         if (photoAlbum1Final)
@@ -96,26 +99,32 @@
             [photoAlbumScanner scanUpToString:@"<div id=\"photo-gallery" intoString:NULL];
 
             [photoAlbumScanner scanUpToString:@"<script" intoString:&photoBunch];
-            NSLog(@"Photo HTML: %@", photoBunch);
+            //NSLog(@"Photo HTML: %@", photoBunch);
             NSScanner *photoScanner = [NSScanner scannerWithString: photoBunch];
             
             //NSString *photoAlbumGroup;
-            while ([photoAlbumScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:nil])
+            //while ([photoAlbumScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:nil])
             
             //[photoAlbumScanner scanUpToString:@"<script src=\"" intoString:&photoAlbumGroup];
             //for (int i=0; i< 1; i++)
-            {
+            //{
+            NSString *tester;
                 //NSScanner *photosScanner = [NSScanner scannerWithString:photoAlbumGroup];
+            [photoScanner scanUpToString:@"<img scr=" intoString:&tester];
+            //[photoScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:&tester];
+            NSLog(@"Photo Number: %@", tester);
+            /**
                 [photoScanner scanUpToString:@"<a href=" intoString:NULL];
                 [photoScanner scanUpToString:@"\"" intoString:NULL];
-                [photoScanner scanUpToString:@"\"" intoString:&photoAlbum1];
-                photoAlbumFinal = [photoAlbum1 substringFromIndex: dumbVariable];
+                [photoScanner scanUpToString:@"\"" intoString:&photo1];
+                photoFinal1 = [photo1 substringFromIndex: dumbVariable];
                 [photoScanner scanUpToString:@"</a>" intoString:NULL];
                 numberOfElements++;
-                NSLog(@"Photo URL Jpg: %@", photoAlbumFinal);
-                [teamLinks addObject:photoAlbumFinal];
-            
-            }
+                NSLog(@"Photo Number: %d", numberOfElements);
+                NSLog(@"Photo URL Jpg: %@", photoFinal1);
+                //[teamLinks addObject:photoAlbumFinal];
+            */
+            //}
             
         }
     }
