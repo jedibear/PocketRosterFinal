@@ -8,6 +8,7 @@
 
 #import "ScheduleViewController.h"
 #import "ScheduleTVC.h"
+#import "GetSchedule.h"
 
 @interface ScheduleViewController ()
 
@@ -28,6 +29,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self.teamNameLabel setText:self.teamName];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,27 +39,25 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"footballSchedule"]) {
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"back2Schedule"])
+    {
         
-        if([segue.destinationViewController isKindOfClass:[ScheduleTVC class]]){
-            ScheduleTVC *sTmp = (ScheduleTVC *)segue.destinationViewController;
-            sTmp.teamName = @"Football";
-            NSLog(@"inhere");
-            //[segue.destinationViewController setTeamName:self.teamName];
+        if([segue.destinationViewController isKindOfClass:[ScheduleViewController class]])
+        {
+			ScheduleViewController *sVC = (ScheduleViewController *)segue.destinationViewController;
+            sVC.incommingTeamURL = self.incommingTeamURL;
+            sVC.longForm = self.longForm;
+            sVC.haveSchedule = self.haveSchedule;
+            sVC.teamName = self.teamName;
+            sVC.backgroundImagePath = self.backgroundImagePath;
+            sVC.incommingTeamURL = self.incommingTeamURL;
         }
     
     }
-    else if ([segue.identifier isEqualToString:@"mensSwimSchedule"]) {
-        
-        if([segue.destinationViewController isKindOfClass:[ScheduleTVC class]]){
-            ScheduleTVC *sTmp = (ScheduleTVC *)segue.destinationViewController;
-            sTmp.teamName = @"Mens Swimming and Diving";
-            NSLog(@"inhere");
-            //[segue.destinationViewController setTeamName:self.teamName];
-        }
-        
-    }
+    
+    
 }
 
 @end

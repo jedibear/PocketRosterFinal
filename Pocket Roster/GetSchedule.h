@@ -10,8 +10,8 @@
 
 @interface GetSchedule : NSObject
 
-//+(NSMutableDictionary *) GetSchedule: (NSString *) linkForURLSearch;
++(NSMutableDictionary *) getSchedule: (NSString *) linkForURLSearch;
 //This method is just for testing while I can push
-+(void) getSchedule;
+//+(void) getSchedule;
 
 @end

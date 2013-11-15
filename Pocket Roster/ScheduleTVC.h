@@ -12,6 +12,7 @@
 
 @property (nonatomic) NSMutableDictionary *scheduleInfo;
 @property (nonatomic) NSString *key, *teamName;
+@property (nonatomic) NSString *incommingTeamURL;
 
 
 -(void)initializeSchedule;

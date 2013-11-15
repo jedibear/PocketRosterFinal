@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *opponentName;
 @property (weak, nonatomic) IBOutlet UILabel *dateOfContest;
 @property (weak, nonatomic) IBOutlet UILabel *result;
+@property (weak, nonatomic) IBOutlet UILabel *time;
 
 
 @end

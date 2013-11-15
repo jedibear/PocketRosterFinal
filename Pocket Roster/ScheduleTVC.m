@@ -8,6 +8,8 @@
 
 #import "ScheduleTVC.h"
 #import "ScheduleCell.h"
+#import "GetSchedule.h"
+#import "ScheduleViewController.h"
 
 @interface ScheduleTVC ()
 
@@ -36,7 +38,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self initializeSchedule];
+    //[self initializeSchedule];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -44,7 +46,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
+/**
 -(void)initializeSchedule{
     
     NSString *filepath;
@@ -82,7 +84,7 @@
         i++;       
     }
 }
-
+*/
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -137,6 +139,8 @@
     }
     return cell;
 }
+
+
 
 /*
 // Override to support conditional editing of the table view.

@@ -13,9 +13,9 @@
 @end
 
 @implementation GetSchedule
-//+(NSMutableDictionary *) getFacilities: (NSString *) linkForURLSearch;
++(NSMutableDictionary *) getFacilities: (NSString *) linkForURLSearch;
 //This method is just for testing while I can push
-+(void) getSchedule;
+//+(void) getSchedule;
 {
 
     NSString *urlStr = @"http://athletics.bowdoin.edu/sports/bsb/2012-13/schedule";
@@ -78,7 +78,7 @@
     [scanner scanUpToString:@"<tbody>" intoString:nil];
     [scanner scanUpToString:@"</tr>" intoString:nil];
     
-
+/**
     for(int i= 0; i < 1; i++)
     {
         [scanner scanUpToString:@"<tr" intoString:nil];
@@ -86,7 +86,7 @@
         [scanner scanUpToString:@"</tr>" intoString:&stringBreakdown];
         NSLog(@"First Entire Column: %@", stringBreakdown);
 
-    
+    */
 
     
 
@@ -261,9 +261,10 @@
         }
 
 
-    }
+    //}
     
     }
+    return allScheduleElements;
 
 }
 
