@@ -206,8 +206,48 @@
         [scanner scanUpToString:@"<tr class=\"schedule-row" intoString:nil];
         [scanner scanUpToString:@"</tr>" intoString:nil];
         
+        if (numberOfElements == 3){
+            [bowdoinPlayer addObject:rosterElement0Final];
+            [bowdoinPlayer addObject:rosterElement1Final];
+            [bowdoinPlayer addObject:rosterElement3Final];
+            [bowdoinPlayer addObject:rosterElement4Final];
+        }else if (numberOfElements == 4){
+            [bowdoinPlayer addObject:rosterElement0Final];
+            [bowdoinPlayer addObject:rosterElement1Final];
+            [bowdoinPlayer addObject:rosterElement3Final];
+            [bowdoinPlayer addObject:rosterElement4Final];
+            [bowdoinPlayer addObject:rosterElement5Final];
+        }else if (numberOfElements == 5){
+            [bowdoinPlayer addObject:rosterElement0Final];
+            [bowdoinPlayer addObject:rosterElement1Final];
+            [bowdoinPlayer addObject:rosterElement3Final];
+            [bowdoinPlayer addObject:rosterElement6Final];
+        }else if(numberOfElements == 6){
+            [bowdoinPlayer addObject:rosterElement0Final];
+            [bowdoinPlayer addObject:rosterElement1Final];
+            [bowdoinPlayer addObject:rosterElement2Final];
+            [bowdoinPlayer addObject:rosterElement3Final];
+            [bowdoinPlayer addObject:rosterElement4Final];
+            [bowdoinPlayer addObject:rosterElement6Final];
+        }else if (numberOfElements == 7){
+            [bowdoinPlayer addObject:rosterElement0Final];
+            [bowdoinPlayer addObject:rosterElement1Final];
+            [bowdoinPlayer addObject:rosterElement2Final];
+            [bowdoinPlayer addObject:rosterElement3Final];
+            [bowdoinPlayer addObject:rosterElement4Final];
+            [bowdoinPlayer addObject:rosterElement7Final];
+        }else if (numberOfElements == 8){
+            [bowdoinPlayer addObject:rosterElement0Final];
+            [bowdoinPlayer addObject:rosterElement1Final];
+            [bowdoinPlayer addObject:rosterElement2Final];
+            [bowdoinPlayer addObject:rosterElement3Final];
+            [bowdoinPlayer addObject:rosterElement4Final];
+            [bowdoinPlayer addObject:rosterElement8Final];
+        }
 
     }
+    
+    I
 
 }
 
