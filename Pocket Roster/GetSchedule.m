@@ -18,7 +18,7 @@
 +(void) getSchedule;
 {
 
-    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/mtrack/2013-14/schedule";
+    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/bsb/2012-13/schedule";
     NSURL *theURL = [[NSURL alloc] initWithString:urlStr];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -32,7 +32,7 @@
     
     
     NSString *stringBreakdown;
-    NSString *entireSchedule;
+    NSString *entireRoster;
     
     NSString *scheduleElement1Final;
     NSString *scheduleElement1;
@@ -55,22 +55,22 @@
     
     
     NSScanner *megaScanner = [NSScanner scannerWithString:htmlFromURL];
+    [megaScanner scanUpToString:@"<table class=\"schedule" intoString:NULL];
+    [megaScanner scanUpToString:@"</table>" intoString:&entireRoster];
+     //NSLog(@"Entire Schedule String: %@", entireRoster);
     
-    [megaScanner scanUpToString:@"<table class=\"schedule" intoString:nil];
-    [megaScanner scanUpToString:@"</table>" intoString:&entireSchedule];
+    NSScanner *scanner = [NSScanner scannerWithString:entireRoster];
+    [scanner scanUpToString:@"<tbody>" intoString:nil];
+    [scanner scanUpToString:@"</tr>" intoString:nil];
     
-    
-
-    NSScanner *scanner = [NSScanner scannerWithString:entireSchedule];
-
     for(int i= 0; i < 1; i++)
     {
-        [scanner scanUpToString:@"<tr class=\"schedule-row" intoString:nil];
-        //[scanner scanUpToString:@"class=\"schedule-row" intoString:nil];
+        [scanner scanUpToString:@"<tr" intoString:nil];
+        [scanner scanUpToString:@"class=\"schedule-row" intoString:nil];
         [scanner scanUpToString:@"</tr>" intoString:&stringBreakdown];
-        //NSLog(@"First Entire Column: %@", stringBreakdown);
+        NSLog(@"First Entire Column: %@", stringBreakdown);
 
-
+     /**
         NSScanner *miniScanner = [NSScanner scannerWithString:stringBreakdown];
         //Number
         for (int i = 0; i < 20; i++)
@@ -79,30 +79,20 @@
             [miniScanner scanUpToString:@">" intoString:nil];
             [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement1];
             scheduleElement1Final = [scheduleElement1 substringFromIndex: dumbVariable];
-            NSLog(@"Element: %@", scheduleElement1Final);
+            NSLog(@"%@", scheduleElement1Final);
             
-            if ([scheduleElement1Final rangeOfString:@"<b>"].location != NSNotFound)
-            {
-                NSScanner *subScanner = [NSScanner scannerWithString:scheduleElement1Final];
-                [subScanner scanUpToString:@"<b" intoString:nil];
-                [subScanner scanUpToString:@">" intoString:nil];
-                //[subScanner scanUpToString:@"</b>" intoString:&scheduleElement1];
-                [subScanner scanUpToString:@"\\" intoString:&scheduleElement1];
-                scheduleElement1Final = [scheduleElement1 substringFromIndex: dumbVariable];
-                NSLog(@"Element: %@", scheduleElement1Final);
-                
-            }
-            if (scheduleElement1Final)
+            if ( ![scheduleElement1Final isEqual: NULL])
             {
                 numberOfElements++;
                 [allScheduleElements addObject:scheduleElement1Final];
             }
-        }
+            
+        //}
 
         [scanner scanUpToString:@"\"" intoString:nil];
         [scanner scanUpToString:@"/tr>" intoString:nil];
       
-
+*/
     }
 
 }

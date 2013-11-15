@@ -18,6 +18,10 @@
 		1E2F177A172883550023515F /* ScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F1779172883550023515F /* ScheduleCell.m */; };
 		1E2F177D1728837D0023515F /* ScheduleTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F177C1728837D0023515F /* ScheduleTVC.m */; };
 		1EA69CD9173F1C2300C31786 /* News Story View Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA69CD8173F1C2300C31786 /* News Story View Controller.m */; };
+		1EB48AD71835E8D200C42B5C /* GetScoreBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48AD61835E8D200C42B5C /* GetScoreBoard.m */; };
+		1EB48ADB1835F84800C42B5C /* ScoreboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48ADA1835F84800C42B5C /* ScoreboardViewController.m */; };
+		1EB48ADE1835F87F00C42B5C /* ScoreboardTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48ADD1835F87F00C42B5C /* ScoreboardTVC.m */; };
+		1EB48AE11835F8BB00C42B5C /* ScoreboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48AE01835F8BB00C42B5C /* ScoreboardCell.m */; };
 		1EBB3DF017223EF40032238C /* 9.-Bowdoin-College.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DEC17223EF40032238C /* 9.-Bowdoin-College.png */; };
 		1EBB3DF117223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DED17223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg */; };
 		1EBB3DF217223EF40032238C /* winter-quad-266.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DEE17223EF40032238C /* winter-quad-266.jpg */; };
@@ -258,6 +262,14 @@
 		1E2F177C1728837D0023515F /* ScheduleTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTVC.m; sourceTree = "<group>"; };
 		1EA69CD7173F1C2300C31786 /* News Story View Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "News Story View Controller.h"; path = "../News Story View Controller.h"; sourceTree = "<group>"; };
 		1EA69CD8173F1C2300C31786 /* News Story View Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "News Story View Controller.m"; path = "../News Story View Controller.m"; sourceTree = "<group>"; };
+		1EB48AD51835E8D200C42B5C /* GetScoreBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetScoreBoard.h; sourceTree = "<group>"; };
+		1EB48AD61835E8D200C42B5C /* GetScoreBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetScoreBoard.m; sourceTree = "<group>"; };
+		1EB48AD91835F84800C42B5C /* ScoreboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreboardViewController.h; sourceTree = "<group>"; };
+		1EB48ADA1835F84800C42B5C /* ScoreboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreboardViewController.m; sourceTree = "<group>"; };
+		1EB48ADC1835F87F00C42B5C /* ScoreboardTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreboardTVC.h; sourceTree = "<group>"; };
+		1EB48ADD1835F87F00C42B5C /* ScoreboardTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreboardTVC.m; sourceTree = "<group>"; };
+		1EB48ADF1835F8BB00C42B5C /* ScoreboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreboardCell.h; sourceTree = "<group>"; };
+		1EB48AE01835F8BB00C42B5C /* ScoreboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreboardCell.m; sourceTree = "<group>"; };
 		1EBB3DEC17223EF40032238C /* 9.-Bowdoin-College.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9.-Bowdoin-College.png"; sourceTree = "<group>"; };
 		1EBB3DED17223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bowdoin-hubbard-hall-spring-2012.jpg"; sourceTree = "<group>"; };
 		1EBB3DEE17223EF40032238C /* winter-quad-266.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "winter-quad-266.jpg"; sourceTree = "<group>"; };
@@ -527,6 +539,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EB48AD81835F7CE00C42B5C /* Scoreboard */ = {
+			isa = PBXGroup;
+			children = (
+				1EB48AD51835E8D200C42B5C /* GetScoreBoard.h */,
+				1EB48AD61835E8D200C42B5C /* GetScoreBoard.m */,
+				1EB48AD91835F84800C42B5C /* ScoreboardViewController.h */,
+				1EB48ADA1835F84800C42B5C /* ScoreboardViewController.m */,
+				1EB48ADC1835F87F00C42B5C /* ScoreboardTVC.h */,
+				1EB48ADD1835F87F00C42B5C /* ScoreboardTVC.m */,
+				1EB48ADF1835F8BB00C42B5C /* ScoreboardCell.h */,
+				1EB48AE01835F8BB00C42B5C /* ScoreboardCell.m */,
+			);
+			name = Scoreboard;
+			sourceTree = "<group>";
+		};
 		1ECC557E173F0EE400EBD61D /* Roster */ = {
 			isa = PBXGroup;
 			children = (
@@ -846,6 +873,7 @@
 				CF4684E2173DFD59001F8A1F /* Flickr */,
 				CF247A74173C0B8D0079AD32 /* PersonalAccount.m */,
 				CF247A73173C0B8D0079AD32 /* PersonalAccount.h */,
+				1EB48AD81835F7CE00C42B5C /* Scoreboard */,
 				1EF9AB691832CD7600A8C159 /* Team */,
 				1EF9AB681832CD1900A8C159 /* Coaches */,
 				1EF9AB671832CD0B00A8C159 /* Facilities */,
@@ -1237,6 +1265,7 @@
 				1EF619B01834F2DF0089C154 /* CustomProgressView.m in Sources */,
 				1EFF35BF1725EFFA003A5A1E /* RosterCell.m in Sources */,
 				1EFDFEC8183041C300DAF6A4 /* RecordsViewController.m in Sources */,
+				1EB48ADB1835F84800C42B5C /* ScoreboardViewController.m in Sources */,
 				1E2F177A172883550023515F /* ScheduleCell.m in Sources */,
 				1E2F177D1728837D0023515F /* ScheduleTVC.m in Sources */,
 				CF247A75173C0B8D0079AD32 /* PersonalAccount.m in Sources */,
@@ -1270,9 +1299,12 @@
 				1EF619AA183493CB0089C154 /* RosterTVC.m in Sources */,
 				1ECC557C173F0DF300EBD61D /* RSSHomeTVC.m in Sources */,
 				1ECC557D173F0DF300EBD61D /* RSSWebView.m in Sources */,
+				1EB48AE11835F8BB00C42B5C /* ScoreboardCell.m in Sources */,
 				1ECC5583173F0FDD00EBD61D /* NewsFeedViewController.m in Sources */,
 				1EA69CD9173F1C2300C31786 /* News Story View Controller.m in Sources */,
 				1E15B59217408334006D1881 /* ScheduleViewController.m in Sources */,
+				1EB48ADE1835F87F00C42B5C /* ScoreboardTVC.m in Sources */,
+				1EB48AD71835E8D200C42B5C /* GetScoreBoard.m in Sources */,
 				CFD5FC5717E957D8002F2BA2 /* Get_Data_From_Website.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
