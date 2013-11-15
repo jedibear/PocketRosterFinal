@@ -27,8 +27,36 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+   
+    
     [self.athleteImage setImage:self.athleteImageInput];
+    [self.teamNameLabel setText:self.athleteName];
 	// Do any additional setup after loading the view.
+    
+    self.hasBioStory = NO;
+    
+    NSMutableArray *tmp = [[NSMutableArray alloc]init];
+
+    
+    [self.bio enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop){
+        if ([key isEqualToString:@"bio"]) {
+            self.bioStory = [[NSString alloc]initWithString:obj];
+            self.hasBioStory = YES;
+            
+        }else if (![key isEqualToString:@"image"]) {
+                        [tmp addObject:[NSString stringWithFormat:@"%@: %@", key, obj]];
+        }
+    }];
+    
+    if (self.hasBioStory){
+        [self.athleteStory setText:self.bioStory];
+    }
+    
+    self.specs = [tmp componentsJoinedByString:@"\r"];
+    
+    [self.athleteSpecs setText:self.specs];
+   
 }
 
 - (void)didReceiveMemoryWarning

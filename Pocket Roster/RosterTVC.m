@@ -41,7 +41,7 @@
 {
     [super viewDidLoad];
     
-    NSLog(@"%@", self.teamRoster);
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -137,7 +137,7 @@
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([sender isKindOfClass:[UITableViewCell class]]) {
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
-        
+        RosterCell *cell = sender;
         if(indexPath){
     
             if ([segue.identifier isEqualToString:@"athleteBio"]) {
@@ -148,8 +148,9 @@
                     self.key = [[NSString alloc] initWithFormat:@"%ld", (long)[indexPath row]+1];
                     NSArray* athleteObjects = [self.teamRoster objectForKey:self.key];
                     
-                    
+                    rAVC.bio = [athleteObjects objectAtIndex:0];
                     rAVC.athleteImageInput = [[athleteObjects objectAtIndex:0]objectForKey:@"image"];
+                    rAVC.athleteName = cell.athleteName.text;
                     rAVC.haveRoster = self.haveRoster;
                     rAVC.roster = self.teamRoster;
                     rAVC.teamName = self.teamName;

@@ -57,6 +57,47 @@
         [bioInfo setObject:[attrTypeVal substringFromIndex:1] forKey:[thisAttrType substringFromIndex:1]];
     }
     
+    
+    
+    NSString *failSafe;
+    [bigDaddy scanUpToString:@"<footer" intoString:&failSafe];
+    
+    if([failSafe rangeOfString:@"<div class=\"synopsis"].location != NSNotFound){
+        
+        
+        
+        NSScanner *desc = [[NSScanner alloc]initWithString:failSafe];
+        
+        
+        [desc scanUpToString:@"<div class=\"synopsis" intoString:nil];
+        [desc scanUpToString:@"<" intoString:nil];
+        
+        
+        NSString *whatIWant, *test;
+        NSMutableArray *tmp = [[NSMutableArray alloc]init];
+        
+        
+        [desc scanUpToString:@"</div" intoString:&whatIWant];
+        
+        
+        NSScanner *lesGo = [[NSScanner alloc]initWithString:whatIWant];
+        
+        [lesGo scanUpToString:@"<p" intoString:nil];
+        [lesGo scanUpToString:@">" intoString:nil];
+        
+        
+        while ([lesGo scanUpToString:@"<" intoString:&test]) {
+            [tmp addObject:[test substringFromIndex:1]];
+            
+            
+            [lesGo scanUpToString:@">" intoString:nil];
+        }
+        
+        NSString *final = [tmp componentsJoinedByString:@" "];
+        [bioInfo setObject:final forKey:@"bio"];
+    }
+    
+    
     return bioInfo;
 }
 
