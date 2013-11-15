@@ -62,8 +62,6 @@
     */
     NSMutableDictionary *bowdoinEntireTeam = [NSMutableDictionary new];
     
-    NSMutableArray *rosterImages = [NSMutableArray new];
-    NSMutableDictionary * bioInfo = [NSMutableDictionary new];
     
     /**
      ***************************************
@@ -72,7 +70,7 @@
      */
     
     
-    NSMutableArray *singleRosterCells = [NSMutableArray new];
+   
     
 
     NSScanner *megaScanner = [NSScanner scannerWithString:htmlFromURL];
@@ -116,8 +114,7 @@ while ([scanner scanUpToString:@"tr class=\"roster-row" intoString:nil]) {
        {
            numberOfElements++;
            
-           [singleRosterCells addObject:rosterElement1Final];
-       }
+        }
     
    }
     else
