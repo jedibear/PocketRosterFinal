@@ -1629,7 +1629,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bowdoin-hubbard-hall-spring-2012.jpg" id="JdO-UM-stI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Spring" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LF9-UO-T5l">
@@ -10318,29 +10318,29 @@
         <segue reference="q5V-pM-u53"/>
         <segue reference="VyF-zp-8Pr"/>
         <segue reference="dcF-hv-hmo"/>
-        <segue reference="Wn9-hR-3OG"/>
+        <segue reference="lva-25-DVi"/>
         <segue reference="1YT-yN-vOm"/>
+        <segue reference="zai-Wp-m0F"/>
+        <segue reference="NRU-Zi-5A0"/>
+        <segue reference="78U-fW-9xe"/>
         <segue reference="KpL-3D-cg5"/>
         <segue reference="1cP-Of-ahw"/>
-        <segue reference="C6f-BF-Oyy"/>
-        <segue reference="TaC-pf-Fek"/>
-        <segue reference="SyN-pK-eu1"/>
         <segue reference="7bm-gT-qhD"/>
         <segue reference="vEZ-tR-fBo"/>
         <segue reference="sQv-Q6-vTb"/>
         <segue reference="II4-L4-Ic5"/>
         <segue reference="FEo-ng-eKc"/>
-        <segue reference="72q-0R-X8d"/>
         <segue reference="xnd-Wf-AnJ"/>
         <segue reference="cpS-pz-z9e"/>
         <segue reference="1bn-dE-zPR"/>
         <segue reference="17k-bi-cGE"/>
-        <segue reference="nz0-8Y-JHX"/>
         <segue reference="z2W-MS-J4j"/>
         <segue reference="9eF-9v-H2L"/>
         <segue reference="kFR-6G-fJg"/>
         <segue reference="p5M-4L-Nze"/>
         <segue reference="ohy-EF-KnQ"/>
+        <segue reference="SyN-pK-eu1"/>
+        <segue reference="TaC-pf-Fek"/>
         <segue reference="uWY-0q-ksa"/>
         <segue reference="zKd-1U-8sy"/>
         <segue reference="yCL-Xr-dJB"/>
