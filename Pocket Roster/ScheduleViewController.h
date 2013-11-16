@@ -10,6 +10,11 @@
 
 @interface ScheduleViewController : UIViewController
 
-@property (nonatomic) NSString *schedURL;
 
+
+@property (nonatomic) BOOL *longForm, *haveSchedule, *haveRoster;
+@property (nonatomic) NSString  *teamName, *backgroundImagePath;
+@property (nonatomic) NSString *incommingTeamURL, *schedURL;
+@property (nonatomic) NSMutableDictionary *schedule, *teamRoster;
+@property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
 @end

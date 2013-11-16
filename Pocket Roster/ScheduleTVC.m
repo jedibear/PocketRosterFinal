@@ -38,53 +38,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[self initializeSchedule];
-
+    
+    self.scheduleInfo = [GetSchedule getSchedule:self.schedURL];
+    NSLog(@"%@schedINFO",self.scheduleInfo);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-/**
--(void)initializeSchedule{
-    
-    NSString *filepath;
-    
-    NSError *error = nil;
-    
-    if ([self.teamName isEqualToString: @"Football"]) {
-        filepath = [[NSBundle mainBundle]pathForResource:@"football2012results" ofType:@"txt" inDirectory:@"FootballRosterPictures"];
-    }
-    else if ([self.teamName isEqualToString:@"Mens Swimming and Diving"]){
-        filepath = [[NSBundle mainBundle]pathForResource:@"mensSwimmingSchedule" ofType:@"txt"];
-    }
-    
-    NSString *fileInfo = [NSString stringWithContentsOfFile:filepath encoding: NSUTF8StringEncoding error:&error];
-    
-    if (error) {
-        NSLog(@"you suck, theres an error");
-    }
-   
-     //NSLog(@"%@", filepath);
-    
-    NSArray *contestInfo = [fileInfo componentsSeparatedByString:@"\n"];
-    
-    int i = 1;
-    for (NSString *obj in contestInfo) {
-        NSArray *contest = [obj componentsSeparatedByString:@"/"];
-        NSString *date = [contest objectAtIndex:0];
-        NSString *opponent = [contest objectAtIndex:1];
-        NSString *result = [contest objectAtIndex:2];
-        self.key = [NSString stringWithFormat:@"%d",i];
-        
-        [self.scheduleInfo setObject:[NSArray arrayWithObjects:date,opponent,result, nil] forKey:self.key];
-        
-        
-        i++;       
-    }
-}
-*/
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

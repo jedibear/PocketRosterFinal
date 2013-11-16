@@ -7,6 +7,7 @@
 //
 
 #import "ScheduleViewController.h"
+#import "TeamViewController.h"
 #import "ScheduleTVC.h"
 #import "GetSchedule.h"
 
@@ -31,7 +32,7 @@
 	// Do any additional setup after loading the view.
     
     [self.teamNameLabel setText:self.teamName];
-    
+    NSLog(@"%@ sched",self.incommingTeamURL);
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,22 +40,28 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"back2Schedule"])
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"back2TVC"])
     {
         
-        if([segue.destinationViewController isKindOfClass:[ScheduleViewController class]])
+        if([segue.destinationViewController isKindOfClass:[TeamViewController class]])
         {
-			ScheduleViewController *sVC = (ScheduleViewController *)segue.destinationViewController;
+			TeamViewController *sVC = (TeamViewController *)segue.destinationViewController;
             sVC.incommingTeamURL = self.incommingTeamURL;
             sVC.longForm = self.longForm;
-            sVC.haveSchedule = self.haveSchedule;
+            sVC.haveRoster = self.haveRoster;
             sVC.teamName = self.teamName;
             sVC.backgroundImagePath = self.backgroundImagePath;
-            sVC.incommingTeamURL = self.incommingTeamURL;
         }
     
+    }else if ([segue.identifier isEqualToString:@"embedSchedule"]){
+        
+        if([segue.destinationViewController isKindOfClass:[ScheduleTVC class]]){
+            
+            ScheduleTVC *sTVC = (ScheduleTVC *)segue.destinationViewController;
+            
+            sTVC.schedURL = self.schedURL;
+        }
     }
     
     

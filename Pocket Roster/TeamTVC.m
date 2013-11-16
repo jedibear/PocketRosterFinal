@@ -39,25 +39,14 @@
     }
     return _teamRoster;
 }
-/*
-- (void) updateProgress:(NSTimer *)sender{
-    UIProgressView *prog = [sender userInfo];
-    
-    if (prog.progress == 1.0) {
-        [sender invalidate];
-        
-    }else{
-        [prog setProgress:self.progress];
-    }
-}
-*/
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.teamLinks = [GetTeamLinks getTeamLinkBreakdown:self.incommingTeamURL];
     
     
-    NSLog(@"%@", self.teamRoster);
+    //NSLog(@"%@", self.teamRoster);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -115,11 +104,22 @@
             rVC.haveRoster = self.haveRoster;
             
         }
-    }else if ([segue.identifier isEqualToString:@"schedule/results"]) {
+    }else if ([segue.identifier isEqualToString:@"schedule"]) {
         
         if ([segue.destinationViewController isKindOfClass:[ScheduleViewController class]]) {
+            
             ScheduleViewController *sVC = (ScheduleViewController *)segue.destinationViewController;
-            sVC.schedURL =self.incommingTeamURL;
+            
+            
+            sVC.schedURL = [self.teamLinks objectAtIndex:1];
+            sVC.incommingTeamURL = self.incommingTeamURL;
+            sVC.teamRoster = self.teamRoster;
+            sVC.longForm = self.longForm;
+            sVC.teamName = self.teamName;
+            sVC.backgroundImagePath = self.backgroundImagePath;
+            sVC.haveRoster = self.haveRoster;
+            
+            
         }
     }else if ([segue.identifier isEqualToString:@"news"]) {
         

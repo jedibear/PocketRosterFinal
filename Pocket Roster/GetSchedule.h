@@ -11,7 +11,8 @@
 @interface GetSchedule : NSObject
 
 +(NSMutableDictionary *) getSchedule: (NSString *) linkForURLSearch;
-//This method is just for testing while I can push
-//+(void) getSchedule;
+
+
+
 
 @end

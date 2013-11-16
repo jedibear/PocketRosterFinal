@@ -245,7 +245,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E15B59017408334006D1881 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleViewController.h; path = ../ScheduleViewController.h; sourceTree = "<group>"; };
 		1E15B59117408334006D1881 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleViewController.m; path = ../ScheduleViewController.m; sourceTree = "<group>"; };
 		1E18AACB174002A200AFA86F /* BowdoinNews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinNews.png; sourceTree = "<group>"; };
 		1E2F176C172881B70023515F /* mensCrew.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensCrew.jpg; sourceTree = "<group>"; };
@@ -258,6 +257,7 @@
 		1E2F1779172883550023515F /* ScheduleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleCell.m; sourceTree = "<group>"; };
 		1E2F177B1728837D0023515F /* ScheduleTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTVC.h; sourceTree = "<group>"; };
 		1E2F177C1728837D0023515F /* ScheduleTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTVC.m; sourceTree = "<group>"; };
+		1E66ECA418374FBF004FDFC8 /* ScheduleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
 		1EA69CD7173F1C2300C31786 /* News Story View Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "News Story View Controller.h"; path = "../News Story View Controller.h"; sourceTree = "<group>"; };
 		1EA69CD8173F1C2300C31786 /* News Story View Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "News Story View Controller.m"; path = "../News Story View Controller.m"; sourceTree = "<group>"; };
 		1EB48AD51835E8D200C42B5C /* GetScoreBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetScoreBoard.h; sourceTree = "<group>"; };
@@ -582,7 +582,7 @@
 			children = (
 				CFE1F8DE18303DF600E8BD9E /* GetSchedule.h */,
 				CFE1F8DF18303DF600E8BD9E /* GetSchedule.m */,
-				1E15B59017408334006D1881 /* ScheduleViewController.h */,
+				1E66ECA418374FBF004FDFC8 /* ScheduleViewController.h */,
 				1E15B59117408334006D1881 /* ScheduleViewController.m */,
 				1E2F1778172883550023515F /* ScheduleCell.h */,
 				1E2F1779172883550023515F /* ScheduleCell.m */,

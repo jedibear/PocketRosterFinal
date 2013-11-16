@@ -13,13 +13,11 @@
 @end
 
 @implementation GetSchedule
-+(NSMutableDictionary *) getFacilities: (NSString *) linkForURLSearch;
-//This method is just for testing while I can push
-//+(void) getSchedule;
-{
 
-    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/bsb/2012-13/schedule";
-    NSURL *theURL = [[NSURL alloc] initWithString:urlStr];
++(NSMutableDictionary *) getSchedule:(NSString *)linkForURLSearch{
+
+    
+    NSURL *theURL = [[NSURL alloc] initWithString:linkForURLSearch];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:theURL];
@@ -29,10 +27,10 @@
     //get the data from the web page
     NSString * htmlFromURL = [[NSString alloc] initWithData:dataFromURL encoding:NSASCIIStringEncoding];
     
+    //NSLog(@"%@ link", htmlFromURL);
     
-    
-    NSString *stringBreakdown;
-    NSString *entireRoster;
+    NSString *stringBreakdown, *test, *key;
+    NSString *entireSchedule;
     
     NSString *scheduleElement1Final;
     NSString *scheduleElement1;
@@ -52,7 +50,7 @@
     NSString *scheduleElement8;
     
         
-    int dumbVariable = 1;
+    int dumbVariable = 1, keyNum = 1;
     
     
     /**
@@ -60,7 +58,8 @@
      *   This is for all the elements in the schedule  *
      ***************************************************
      */
-    NSMutableArray *allScheduleElements = [NSMutableArray new];
+   
+    NSMutableDictionary *wholeSched = [NSMutableDictionary new];
     
     /**
      ***************************************
@@ -70,13 +69,24 @@
     
     
     NSScanner *megaScanner = [NSScanner scannerWithString:htmlFromURL];
-    [megaScanner scanUpToString:@"<table class=\"schedule" intoString:NULL];
-    [megaScanner scanUpToString:@"</table>" intoString:&entireRoster];
-     //NSLog(@"Entire Schedule String: %@", entireRoster);
     
-    NSScanner *scanner = [NSScanner scannerWithString:entireRoster];
-    [scanner scanUpToString:@"<tbody>" intoString:nil];
-    [scanner scanUpToString:@"</tr>" intoString:nil];
+    if ([htmlFromURL rangeOfString:@"schedule-data"].location != NSNotFound) {
+        [megaScanner scanUpToString:@"<table class=\"schedule-data" intoString:nil];
+        //NSLog(@"test1: %@", test);
+        [megaScanner scanUpToString:@"</table>" intoString:nil];
+        //NSLog(@"test2: %@", test);
+    }
+    
+    
+    
+    [megaScanner scanUpToString:@"<table class=\"schedule" intoString:nil];
+    [megaScanner scanUpToString:@"</table>" intoString:&entireSchedule];
+     //NSLog(@"Entire Schedule String: %@", entireSchedule);
+    
+    NSScanner *scanner = [NSScanner scannerWithString:entireSchedule];
+    //[scanner scanUpToString:@"<tbody>" intoString:nil];
+    //[scanner scanUpToString:@"</tr>" intoString:nil];
+    NSLog(@"here");
     
 /**
     for(int i= 0; i < 1; i++)
@@ -100,10 +110,9 @@
 
 
    
-        NSScanner *miniScanner = [NSScanner scannerWithString:stringBreakdown];
+    
         //Number
-    while ([scanner scanUpToString:@"<tr class=\"schedule-row" intoString:nil])
-    {
+    while ([scanner scanUpToString:@"<tr class=\"schedule-row" intoString:nil]){
         int numberOfElements = 0;
         NSMutableArray *allScheduleElements = [NSMutableArray new];
         
@@ -116,19 +125,19 @@
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement1];
-        scheduleElement1Final = [scheduleElement1 substringFromIndex: dumbVariable];
+        scheduleElement1Final = [[scheduleElement1 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""] ;
         if (scheduleElement1Final)
         {
 
             numberOfElements++;
-            NSLog(@"Element 1: %@", scheduleElement1Final);
+            //NSLog(@"Element 1: %@", scheduleElement1Final);
         }
         
         // Element 2
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement2];
-        scheduleElement2Final = [scheduleElement2 substringFromIndex: dumbVariable];
+        scheduleElement2Final = [[scheduleElement2 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
         
         
             if ([scheduleElement2Final rangeOfString:@"<b>"].location != NSNotFound)
@@ -140,80 +149,80 @@
                 [subScanner scanUpToString:@"\\" intoString:&scheduleElement2];
                 scheduleElement2 = [scheduleElement2 substringFromIndex: dumbVariable];
                 NSArray* breakDownString = [scheduleElement2 componentsSeparatedByString:@"<"];
-                scheduleElement2Final = [breakDownString objectAtIndex: 0];
+                scheduleElement2Final = [[breakDownString objectAtIndex: 0]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
                //scheduleElement2Final = [scheduleElement2 substringFromIndex: dumbVariable];
                 //NSLog(@"Element: %@", scheduleElement1Final);
                 
             }
             if (scheduleElement2Final){
                 numberOfElements++;
-                NSLog(@"Element 2: %@", scheduleElement2Final);
+                //NSLog(@"Element 2: %@", scheduleElement2Final);
             }
 
         //Element 3
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement3];
-        scheduleElement3Final = [scheduleElement3 substringFromIndex: dumbVariable];
+        scheduleElement3Final = [[scheduleElement3 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
         if (scheduleElement3Final)
         {
             numberOfElements++;
-            NSLog(@"Element 3: %@", scheduleElement3Final);
+            //NSLog(@"Element 3: %@", scheduleElement3Final);
         }
 
         //Element 4
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement4];
-        scheduleElement4Final = [scheduleElement4 substringFromIndex: dumbVariable];
+        scheduleElement4Final = [[scheduleElement4 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
         if (scheduleElement4Final)
         {
             numberOfElements++;
-            NSLog(@"Element 4: %@", scheduleElement4Final);
+            //NSLog(@"Element 4: %@", scheduleElement4Final);
         }
 
         //Element 5
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement5];
-        scheduleElement5Final = [scheduleElement5 substringFromIndex: dumbVariable];
+        scheduleElement5Final = [[scheduleElement5 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
         if (scheduleElement5Final)
         {
             numberOfElements++;
-            NSLog(@"Element 5: %@", scheduleElement5Final);
+            //NSLog(@"Element 5: %@", scheduleElement5Final);
         }
         
         //Element 6
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement6];
-        scheduleElement6Final = [scheduleElement6 substringFromIndex: dumbVariable];
+        scheduleElement6Final = [[scheduleElement6 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
         if (scheduleElement6Final)
         {
             numberOfElements++;
-            NSLog(@"Element 6: %@", scheduleElement6Final);
+            //NSLog(@"Element 6: %@", scheduleElement6Final);
         }
         
         //Element 7
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement7];
-        scheduleElement7Final = [scheduleElement7 substringFromIndex: dumbVariable];
+        scheduleElement7Final = [[scheduleElement7 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
         if (scheduleElement7Final)
         {
             numberOfElements++;
-            NSLog(@"Element 7: %@", scheduleElement7Final);
+            //NSLog(@"Element 7: %@", scheduleElement7Final);
         }
 
         //Element 8
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement8];
-        scheduleElement8Final = [scheduleElement8 substringFromIndex: dumbVariable];
+        scheduleElement8Final = [[scheduleElement8 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
         if (scheduleElement8Final)
         {
             numberOfElements++;
-            NSLog(@"Element 8: %@", scheduleElement8Final);
+            //NSLog(@"Element 8: %@", scheduleElement8Final);
         }
 
         [scanner scanUpToString:@"<tr class=\"schedule-row" intoString:nil];
@@ -260,11 +269,12 @@
             [allScheduleElements addObject:scheduleElement8Final];
         }
 
-
-    //}
+        key = [[NSString alloc]initWithFormat:@"%d", keyNum];
+        [wholeSched setObject:allScheduleElements forKey:key];
+        keyNum++;
     
     }
-    return allScheduleElements;
+    return wholeSched;
 
 }
 
