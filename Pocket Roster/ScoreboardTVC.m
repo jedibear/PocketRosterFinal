@@ -33,7 +33,11 @@
     
     self.scoreboard = [[NSMutableDictionary alloc]init];
     self.scoreboard = [GetScoreBoard getTheScoreBoard:self.incommingScheduleURL];
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc]init];
 
+    [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    [self setRefreshControl:refreshControl];
     //NSLog(@"%@", self.scoreboard);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -46,6 +50,20 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) refresh: (UIRefreshControl *)sender{
+    
+    sender.attributedTitle = [[NSAttributedString alloc]initWithString:@"Refreshing Scoreboard..."];
+    
+    self.scoreboard = [GetScoreBoard getTheScoreBoard:@"http://athletics.bowdoin.edu/landing/index"];
+    
+    [self.scoreboard removeObjectForKey:@"1"];
+    NSLog(@"%@", self.scoreboard);
+    
+    [self.tableView setNeedsDisplay];
+    
+    [(UIRefreshControl *)sender endRefreshing];
 }
 
 #pragma mark - Table view data source
@@ -61,21 +79,20 @@
 {
 
     // Return the number of rows in the section.
+    //NSLog(@"%@", self.scoreboard);
     return [self.scoreboard count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    ScoreboardCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"ScoreboardCell";
+    ScoreboardCell *cell = (ScoreboardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     NSString *key = [[NSString alloc] initWithFormat:@"%ld", (long)[indexPath row]+1];
     
     // Configure the cell...
     
-    if(cell == nil){
-        cell = [[ScoreboardCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+    
     
     
     NSMutableDictionary *contestObjects = [self.scoreboard objectForKey:key];

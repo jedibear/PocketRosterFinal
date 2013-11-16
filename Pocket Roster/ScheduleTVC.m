@@ -68,23 +68,21 @@
 {
 
     // Return the number of rows in the section.
-    return [self.scheduleInfo count];
+    return [self.scheduleInfo count]-1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"ScheduleCell";
-    ScheduleCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    ScheduleCell *cell = (ScheduleCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     self.key = [[NSString alloc] initWithFormat:@"%ld", (long)[indexPath row]+1];
     
     NSArray* contestObjects = [self.scheduleInfo objectForKey:self.key];
     
+    //UITableViewCellStyle *scheduleStyle = [[UITableViewCellStyle alloc]]
     
     
-    if(cell == nil && [contestObjects objectAtIndex:0] != nil){
-        cell = [[ScheduleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
     // Configure the cell...
     
     if([contestObjects objectAtIndex:0] != nil){
@@ -95,7 +93,9 @@
         
         cell.dateOfContest.text = date;
         
-        
+        //NSScanner *scan = [[NSScanner alloc]initWithString:opponent];
+        //[scan scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        //[scan scanUpToString:@" " intoString:&opponent];
         
         cell.opponentName.text = opponent;
         cell.result.text = result;

@@ -26,7 +26,7 @@
     NSString *htmlCode = [[NSString alloc]initWithData:dataFromURL encoding:NSASCIIStringEncoding];
     
     NSMutableDictionary *scoreboard = [NSMutableDictionary new];
-    NSMutableDictionary *contest = [NSMutableDictionary new];
+    
     
     NSLog(@"here");
     
@@ -35,7 +35,7 @@
     [bigScanner scanUpToString:@"<div class=\"schedule-boxscore\">" intoString:&test];
     //NSLog(@"%@",test);
     [bigScanner scanUpToString:@"<div id=\"tabs-rcol-content2\">" intoString:&tmp];
-    NSLog(@"%@",tmp);
+    //NSLog(@"%@",tmp);
     NSScanner *smallScanner = [[NSScanner alloc]initWithString:tmp];
     
     //get to the first boxscore entry
@@ -44,8 +44,9 @@
     
     //problem here, never gets past this
     while ([smallScanner scanUpToString:@"<div class=\"boxscore" intoString:&tmp2]) {
+        NSMutableDictionary *contest = [NSMutableDictionary new];
         
-        NSLog(@"here2");
+        //NSLog(@"%@here2", tmp2);
         
         NSScanner *baby = [[NSScanner alloc]initWithString:tmp2];
         
@@ -53,7 +54,7 @@
         [baby scanUpToString:@"<div class=\"date" intoString:nil];
         [baby scanUpToString:@">" intoString:nil];
         [baby scanUpToString:@"</div>" intoString:&date];
-        NSLog(@"%@", date);
+        //NSLog(@"%@", date);
         
         //put the date into the contest dict
         [contest setObject:[[date substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""] forKey:@"date"];
@@ -65,17 +66,17 @@
         [baby scanUpToString:@"<" intoString:nil];
         [baby scanUpToString:@">" intoString:nil];
         [baby scanUpToString:@"</span>" intoString:&sport];
-        NSLog(@"%@", sport);
+        //NSLog(@"%@", sport);
         
         //put the sport into the dict
         [contest setObject:[[sport substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""] forKey:@"sport"];
-        
+        NSLog(@"%@",sport);
         
         //get the score for team 1
         [baby scanUpToString:@"<div class=\"float-right score" intoString:nil];
         [baby scanUpToString:@">" intoString:nil];
         [baby scanUpToString:@"</div>" intoString:&score1];
-        NSLog(@"%@", score1);
+        //NSLog(@"%@", score1);
         
         //put the score1 into the dict
         [contest setObject:[[score1 substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""] forKey:@"score1"];
@@ -83,28 +84,42 @@
         //get team1
         [baby scanUpToString:@">" intoString:nil];
         [baby scanUpToString:@"</div>" intoString:&team1];
-        NSLog(@"%@", team1);
+        //NSLog(@"%@", team1);
         
         //put team1 in the dict
-        [contest setObject:[[team1 substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""] forKey:@"team1"];
+        
+        NSScanner *team1Scan = [[NSScanner alloc]initWithString:[[team1 substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""]];
+        [team1Scan scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        [team1Scan scanUpToString:@" " intoString:&team1];
+        
+        
+        [contest setObject:team1 forKey:@"team1"];
         
         
         //get appending str (either at or vs.)
         [baby scanUpToString:@"<div class=\"team\"" intoString:nil];
         [baby scanUpToString:@">" intoString:nil];
         [baby scanUpToString:@"<div" intoString:&app];
-        NSLog(@"%@app",app);
+        //NSLog(@"%@app",app);
         
         
         
         //put the appending string into the dict
-        [contest setObject:[[app substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""] forKey:@"app"];
+        
+        NSScanner *appScan = [[NSScanner alloc]initWithString:[[app substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""]];
+        [appScan scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        [appScan scanUpToString:@" " intoString:&app];
+        
+        
+        
+        
+        [contest setObject:app forKey:@"app"];
         
         
         //get the score for the 2nd team
         [baby scanUpToString:@">" intoString:nil];
         [baby scanUpToString:@"</div>" intoString:&score2];
-        NSLog(@"%@score2", score2);
+        //NSLog(@"%@score2", score2);
         
         //save the score for the 2nd team
         [contest setObject:[[score2 substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""] forKey:@"score2"];
@@ -113,19 +128,27 @@
         //get the 2nd team
         [baby scanUpToString:@">" intoString:nil];
         [baby scanUpToString:@"</div>" intoString:&team2];
-        NSLog(@"%@team2", team2);
+        //NSLog(@"%@team2", team2);
         
         //save the 2nd team
-        [contest setObject:[[team2 substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""] forKey:@"team2"];
+        
+        NSScanner *team2Scan = [[NSScanner alloc]initWithString:[[team2 substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""]];
+        [team2Scan scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        [team2Scan scanUpToString:@" " intoString:&team2];
+        
+        
+        [contest setObject:team2 forKey:@"team2"];
         
         //scan up to status, check to see if there were special notes
         [baby scanUpToString:@"<div class=\"status" intoString:&test];
         
         //take care of a case where there is a special note
         if([test rangeOfString:@"notes"].location != NSNotFound){
-            [baby scanUpToString:@"<div class=\"notes" intoString:nil];
-            [baby scanUpToString:@">" intoString:nil];
-            [baby scanUpToString:@"</div>" intoString:&specialNote];
+            NSScanner *baby2    =   [[NSScanner alloc]initWithString:test];
+            
+            [baby2 scanUpToString:@"<div class=\"notes" intoString:&specialNote];
+            [baby2 scanUpToString:@">" intoString:&specialNote];            
+            [baby2 scanUpToString:@"</div>" intoString:&specialNote];
             
             [contest setObject:[[specialNote substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""] forKey:@"note"];
         }
@@ -142,6 +165,10 @@
         NSString *scoreEntryKey = [[NSString alloc]initWithFormat:@"%d",key];
         [scoreboard setObject:contest forKey:scoreEntryKey];
         key++;
+        
+        NSLog(@"%d",key);
+        
+        [smallScanner scanUpToString:@">" intoString:nil];
     }
     
     return scoreboard;

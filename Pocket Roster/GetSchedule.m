@@ -34,7 +34,7 @@
     
     NSString *scheduleElement1Final;
     NSString *scheduleElement1;
-    NSString *scheduleElement2Final;
+    NSString *scheduleElement2aFinal, *scheduleElement2bFinal;
     NSString *scheduleElement2;
     NSString *scheduleElement3Final;
     NSString *scheduleElement3;
@@ -125,7 +125,14 @@
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement1];
+        
         scheduleElement1Final = [[scheduleElement1 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""] ;
+        
+        NSScanner *scan1 = [[NSScanner alloc]initWithString:scheduleElement1Final];
+        [scan1 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        [scan1 scanUpToString:@"" intoString:&scheduleElement1Final];
+        
+        //
         if (scheduleElement1Final)
         {
 
@@ -137,34 +144,60 @@
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement2];
-        scheduleElement2Final = [[scheduleElement2 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
         
         
-            if ([scheduleElement2Final rangeOfString:@"<b>"].location != NSNotFound)
+        scheduleElement2aFinal = [[scheduleElement2 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+       
+        
+        
+            if ([scheduleElement2aFinal rangeOfString:@"<b>"].location != NSNotFound)
             {
-                NSScanner *subScanner = [NSScanner scannerWithString:scheduleElement2Final];
+                NSScanner *subScanner = [NSScanner scannerWithString:scheduleElement2aFinal];
                 [subScanner scanUpToString:@"<b" intoString:nil];
                 [subScanner scanUpToString:@">" intoString:nil];
                 //[subScanner scanUpToString:@"</b>" intoString:&scheduleElement1];
                 [subScanner scanUpToString:@"\\" intoString:&scheduleElement2];
                 scheduleElement2 = [scheduleElement2 substringFromIndex: dumbVariable];
                 NSArray* breakDownString = [scheduleElement2 componentsSeparatedByString:@"<"];
-                scheduleElement2Final = [[breakDownString objectAtIndex: 0]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-               //scheduleElement2Final = [scheduleElement2 substringFromIndex: dumbVariable];
-                //NSLog(@"Element: %@", scheduleElement1Final);
+                scheduleElement2aFinal = [[breakDownString objectAtIndex: 0]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+                
+                NSScanner *scan2 = [[NSScanner alloc]initWithString:scheduleElement2aFinal];
+                [scan2 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+                [scan2 scanUpToString:@" " intoString:&scheduleElement2aFinal];
+               
+                [scan2 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+                [scan2 scanUpToString:@"" intoString:&scheduleElement2bFinal];
                 
             }
-            if (scheduleElement2Final){
+            if (scheduleElement2aFinal){
                 numberOfElements++;
                 //NSLog(@"Element 2: %@", scheduleElement2Final);
             }
-
+        
+        
+        
+        NSScanner *scan2 = [[NSScanner alloc]initWithString:scheduleElement2aFinal];
+        [scan2 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        [scan2 scanUpToString:@" " intoString:&scheduleElement2aFinal];
+        
+        [scan2 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        [scan2 scanUpToString:@"" intoString:&scheduleElement2bFinal];
+        
+        
         //Element 3
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement3];
+        
         scheduleElement3Final = [[scheduleElement3 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-        if (scheduleElement3Final)
+
+        
+        NSScanner *scan3 = [[NSScanner alloc]initWithString:scheduleElement3Final];
+        [scan3 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        [scan3 scanUpToString:@"" intoString:&scheduleElement3Final];
+        
+        
+        //        if (scheduleElement3Final)
         {
             numberOfElements++;
             //NSLog(@"Element 3: %@", scheduleElement3Final);
@@ -174,7 +207,13 @@
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement4];
+        
         scheduleElement4Final = [[scheduleElement4 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+        
+        NSScanner *scan4 = [[NSScanner alloc]initWithString:scheduleElement4Final];
+        [scan4 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        [scan4 scanUpToString:@"" intoString:&scheduleElement4Final];
+        //
         if (scheduleElement4Final)
         {
             numberOfElements++;
@@ -185,7 +224,13 @@
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement5];
+        
         scheduleElement5Final = [[scheduleElement5 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+        
+        NSScanner *scan5 = [[NSScanner alloc]initWithString:scheduleElement5Final];
+        [scan5 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        [scan5 scanUpToString:@"" intoString:&scheduleElement5Final];
+        //
         if (scheduleElement5Final)
         {
             numberOfElements++;
@@ -196,7 +241,13 @@
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement6];
+        
         scheduleElement6Final = [[scheduleElement6 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+        
+        NSScanner *scan6 = [[NSScanner alloc]initWithString:scheduleElement6Final];
+        [scan6 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        [scan6 scanUpToString:@"" intoString:&scheduleElement6Final];
+        //
         if (scheduleElement6Final)
         {
             numberOfElements++;
@@ -207,7 +258,13 @@
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement7];
+        
         scheduleElement7Final = [[scheduleElement7 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+        
+        NSScanner *scan7 = [[NSScanner alloc]initWithString:scheduleElement7Final];
+        [scan7 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        [scan7 scanUpToString:@"" intoString:&scheduleElement7Final];
+        
         if (scheduleElement7Final)
         {
             numberOfElements++;
@@ -218,7 +275,13 @@
         [miniScanner scanUpToString:@"<td" intoString:nil];
         [miniScanner scanUpToString:@">" intoString:nil];
         [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement8];
+        
         scheduleElement8Final = [[scheduleElement8 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+        
+        NSScanner *scan8 = [[NSScanner alloc]initWithString:scheduleElement8Final];
+        [scan8 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
+        [scan8 scanUpToString:@"" intoString:&scheduleElement8Final];
+        
         if (scheduleElement8Final)
         {
             numberOfElements++;
@@ -230,29 +293,29 @@
         
         if (numberOfElements == 3){
             [allScheduleElements addObject:scheduleElement1Final];
-            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:[NSString stringWithFormat:@"%@%@",scheduleElement2aFinal,scheduleElement2bFinal]];
             [allScheduleElements addObject:scheduleElement3Final];
         }else if (numberOfElements == 4){
             [allScheduleElements addObject:scheduleElement1Final];
-            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:[NSString stringWithFormat:@"%@%@",scheduleElement2aFinal,scheduleElement2bFinal]];
             [allScheduleElements addObject:scheduleElement3Final];
             [allScheduleElements addObject:scheduleElement4Final];
         }else if (numberOfElements == 5){
             [allScheduleElements addObject:scheduleElement1Final];
-            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:[NSString stringWithFormat:@"%@%@",scheduleElement2aFinal,scheduleElement2bFinal]];
             [allScheduleElements addObject:scheduleElement3Final];
             [allScheduleElements addObject:scheduleElement4Final];
             [allScheduleElements addObject:scheduleElement5Final];
         }else if(numberOfElements == 6){
             [allScheduleElements addObject:scheduleElement1Final];
-            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:[NSString stringWithFormat:@"%@%@",scheduleElement2aFinal,scheduleElement2bFinal]];
             [allScheduleElements addObject:scheduleElement3Final];
             [allScheduleElements addObject:scheduleElement4Final];
             [allScheduleElements addObject:scheduleElement5Final];
             [allScheduleElements addObject:scheduleElement6Final];
         }else if (numberOfElements == 7){
             [allScheduleElements addObject:scheduleElement1Final];
-            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:[NSString stringWithFormat:@"%@%@",scheduleElement2aFinal,scheduleElement2bFinal]];
             [allScheduleElements addObject:scheduleElement3Final];
             [allScheduleElements addObject:scheduleElement4Final];
             [allScheduleElements addObject:scheduleElement5Final];
@@ -260,7 +323,7 @@
             [allScheduleElements addObject:scheduleElement7Final];
         }else if (numberOfElements == 8){
             [allScheduleElements addObject:scheduleElement1Final];
-            [allScheduleElements addObject:scheduleElement2Final];
+            [allScheduleElements addObject:[NSString stringWithFormat:@"%@%@",scheduleElement2aFinal,scheduleElement2bFinal]];
             [allScheduleElements addObject:scheduleElement3Final];
             [allScheduleElements addObject:scheduleElement4Final];
             [allScheduleElements addObject:scheduleElement5Final];

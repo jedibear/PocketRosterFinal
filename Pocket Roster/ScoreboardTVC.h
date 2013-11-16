@@ -13,4 +13,6 @@
 @property (nonatomic) NSString *incommingScheduleURL;
 @property (nonatomic) NSMutableDictionary *scoreboard;
 
+- (void) refresh: (UIRefreshControl *)sender;
+
 @end
