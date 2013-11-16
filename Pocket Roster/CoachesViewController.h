@@ -10,6 +10,9 @@
 
 @interface CoachesViewController : UIViewController
 
-@property (nonatomic) NSString *coachesURL;
+@property (nonatomic) NSString *coachesURL, *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) BOOL *haveRoster, *longForm;
+@property (nonatomic) NSMutableDictionary *teamRoster;
+@property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
 
 @end

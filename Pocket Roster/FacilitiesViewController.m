@@ -7,6 +7,7 @@
 //
 
 #import "FacilitiesViewController.h"
+#import "TeamViewController.h"
 #import "FacilitiesTVC.h"
 
 @interface FacilitiesViewController ()
@@ -28,6 +29,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self.teamNameLabel setText:self.teamName];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,6 +45,39 @@
         if ([segue.destinationViewController isKindOfClass:[FacilitiesTVC class]]) {
             FacilitiesTVC *fTVC = (FacilitiesTVC *)segue.destinationViewController;
             fTVC.facilitiesURL = self.facilitiesURL;
+        }
+    }else if ([segue.identifier isEqualToString:@"back2TVC"]){
+        if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
+            TeamViewController *tVC = (TeamViewController *)segue.destinationViewController;
+            
+            tVC.teamName = self.teamName;
+            tVC.teamRoster = self.teamRoster;
+            tVC.backgroundImagePath = self.backgroundImagePath;
+            tVC.haveRoster = self.haveRoster;
+            tVC.longForm = self.longForm;
+            tVC.incommingTeamURL = self.incommingTeamURL;
+        }
+    }else if ([segue.identifier isEqualToString:@"readOn"]){
+        if([segue.destinationViewController isKindOfClass:[FacilitiesViewController class]]){
+            FacilitiesViewController *fVC = (FacilitiesViewController *)segue.destinationViewController;
+            
+            fVC.teamRoster = self.teamRoster;
+            fVC.teamName = self.teamName;
+            fVC.backgroundImagePath = self.backgroundImagePath;
+            fVC.haveRoster = self.haveRoster;
+            fVC.longForm = self.longForm;
+            fVC.incommingTeamURL = self.incommingTeamURL;
+        }
+    }else if ([segue.identifier isEqualToString:@"back2Facilities"]){
+        if ([segue.destinationViewController isKindOfClass:[FacilitiesViewController class]]) {
+            FacilitiesViewController *fVC = (FacilitiesViewController *)segue.destinationViewController;
+            
+            fVC.teamRoster = self.teamRoster;
+            fVC.teamName = self.teamName;
+            fVC.backgroundImagePath = self.backgroundImagePath;
+            fVC.haveRoster = self.haveRoster;
+            fVC.longForm = self.longForm;
+            fVC.incommingTeamURL = self.incommingTeamURL;
         }
     }
 }

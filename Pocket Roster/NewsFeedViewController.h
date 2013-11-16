@@ -12,6 +12,6 @@
 
 @property (nonatomic) NSString *teamName, *backgroundImagePath, *incommingTeamURL;
 @property (nonatomic) NSString *newsURL;
-@property (nonatomic) BOOL *longForm;
+@property (nonatomic) BOOL *longForm, *haveRoster;
 @property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
 @end

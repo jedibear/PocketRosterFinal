@@ -59,7 +59,7 @@
     self.scoreboard = [GetScoreBoard getTheScoreBoard:@"http://athletics.bowdoin.edu/landing/index"];
     
     [self.scoreboard removeObjectForKey:@"1"];
-    NSLog(@"%@", self.scoreboard);
+    NSLog(@"%@here", self.scoreboard);
     
     [self.tableView setNeedsDisplay];
     

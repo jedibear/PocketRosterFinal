@@ -12,4 +12,6 @@
 
 @property (nonatomic) NSString *coachesURL;
 
+@property (nonatomic) NSMutableDictionary *coaches;
+
 @end

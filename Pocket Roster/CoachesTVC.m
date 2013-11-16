@@ -7,6 +7,8 @@
 //
 
 #import "CoachesTVC.h"
+#import "GetCoaches.h"
+#import "CoachesCell.h"
 
 @interface CoachesTVC ()
 
@@ -27,6 +29,7 @@
 {
     [super viewDidLoad];
 
+    self.coaches = [GetCoaches getCoaches:self.coachesURL];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -44,24 +47,33 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return [self.coaches count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"CoachesCell";
+    CoachesCell *cell = (CoachesCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    NSString *key = [[NSString alloc] initWithFormat:@"%ld", (long)[indexPath row]];
+    
+    NSMutableArray *details = [self.coaches objectForKey:key];
+    
+    cell.coachesName.text = [details objectAtIndex:0];
+    cell.coachesPosition.text = [details objectAtIndex:2];
+    cell.coachesPhone.text = [details objectAtIndex:3];
+    cell.coachesEmail.text = [details objectAtIndex:4];
     // Configure the cell...
+    
     
     return cell;
 }

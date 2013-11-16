@@ -134,19 +134,46 @@
             nFVC.backgroundImagePath = self.backgroundImagePath;
             nFVC.teamName = self.teamName;
             nFVC.incommingTeamURL = self.incommingTeamURL;
+            nFVC.haveRoster = self.haveRoster;
         }
     }else if ([segue.identifier isEqualToString:@"coaches"]) {
         
-	if ([segue.destinationViewController isKindOfClass:[CoachesViewController class]]) {
+        if ([segue.destinationViewController isKindOfClass:[CoachesViewController class]]) {
             CoachesViewController *cVC = (CoachesViewController *)segue.destinationViewController;
-            cVC.coachesURL =self.incommingTeamURL;
-           
+        
+        
+            if (self.longForm) {
+                cVC.coachesURL = [self.teamLinks objectAtIndex:4];
+            }else{
+                cVC.coachesURL = [self.teamLinks objectAtIndex:3];
+            }
+        
+            cVC.incommingTeamURL = self.incommingTeamURL;
+            cVC.longForm = self.longForm;
+            cVC.haveRoster = self.haveRoster;
+            cVC.backgroundImagePath = self.backgroundImagePath;
+            cVC.teamName = self.teamName;
+            cVC.teamRoster = self.teamRoster;
+        
         }
     }else if ([segue.identifier isEqualToString:@"facilities"]) {
         
-	if ([segue.destinationViewController isKindOfClass:[FacilitiesViewController class]]) {
+        if ([segue.destinationViewController isKindOfClass:[FacilitiesViewController class]]) {
             FacilitiesViewController *fVC = (FacilitiesViewController *)segue.destinationViewController;
-            fVC.facilitiesURL =self.incommingTeamURL;
+            
+            if (self.longForm) {
+                fVC.facilitiesURL = [self.teamLinks objectAtIndex:5];
+            }else{
+                fVC.facilitiesURL = [self.teamLinks objectAtIndex:4];
+            }
+            
+                fVC.incommingTeamURL = self.incommingTeamURL;
+                fVC.longForm = self.longForm;
+                fVC.haveRoster = self.haveRoster;
+                fVC.backgroundImagePath = self.backgroundImagePath;
+                fVC.teamName = self.teamName;
+            fVC.teamRoster = self.teamRoster;
+        
         }
     }else if ([segue.identifier isEqualToString:@"records"]) {
         

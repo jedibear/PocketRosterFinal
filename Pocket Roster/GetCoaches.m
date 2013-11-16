@@ -14,12 +14,9 @@
 
 @implementation GetCoaches
 
-//+ (NSMutableDictionary *) getCoaches: (NSString *) linkForURLSearch
-+(void) getCoachesInfo
-{
-    //int key = 0;
-    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/wbkb/coaches/index";
-    NSURL *theURL = [[NSURL alloc] initWithString:urlStr];
++ (NSMutableDictionary *) getCoaches: (NSString *) linkForURLSearch{
+    int key = 0;
+    NSURL *theURL = [[NSURL alloc] initWithString:linkForURLSearch];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:theURL];
@@ -50,7 +47,7 @@
     
     NSString *coachBioPre;
     NSString *wholeCoachesBioTab;
-    NSString *coachBio;
+    NSString *coachBio, *test;
     
     int dumbVariable = 1;
     
@@ -59,7 +56,9 @@
      *   This is for the Coaches Profile  *
      ***************************************
      */
-    NSMutableArray *bowdoinCoachesElements = [NSMutableArray new];
+    
+    NSMutableDictionary *coaches = [NSMutableDictionary new];
+   
     
     /**
      ***************************************
@@ -72,19 +71,24 @@
     [megaScanner scanUpToString:@"div id=\"mainbody\" class=\"clearfix\">" intoString:NULL];
     [megaScanner scanUpToString:@"<footer class=\"clearfix\">" intoString:&allCoachElements];
     
-    NSScanner *scanner = [NSScanner scannerWithString:allCoachElements];
+    NSScanner *scanner1 = [NSScanner scannerWithString:allCoachElements];
     
     NSString *dummyCoachVariable;
-    [scanner scanUpToString:@"class=\"bio-title\">" intoString:nil];
-    [scanner scanUpToString:@"class=\"name" intoString:nil];
-    [scanner scanUpToString:@"class=\"name" intoString:nil];
+    //[scanner scanUpToString:@"class=\"bio-title\">" intoString:nil];
+    //[scanner scanUpToString:@"class=\"name" intoString:nil];
+    //[scanner scanUpToString:@"class=\"name" intoString:nil];
     
     //Key That will be the if statement
-    //[scanner scanUpToString:@"div class=\"bio-wrap" intoString:nil];
+    [scanner1 scanUpToString:@"div class=\"bio-wrap clearfix\"" intoString:nil];
+    [scanner1 scanUpToString:@">" intoString:nil];
 
-    for (int i = 0; i < 1; i++)
-    {
-        [scanner scanUpToString:@"class=\"bio-title\">" intoString:nil];
+    while ([scanner1 scanUpToString:@"<div class=\"bio-wrap clearfix\"" intoString:&test]) {
+        NSLog(@"%@",test);
+        NSScanner *scanner = [[NSScanner alloc]initWithString:test];
+        
+        [scanner scanUpToString:@"class=\"bio-title\"" intoString:nil];
+         NSMutableArray *bowdoinCoachesElements = [NSMutableArray new];
+        
         [scanner scanUpToString:@"class=\"name" intoString:nil];
         [scanner scanUpToString:@">" intoString:nil];
         [scanner scanUpToString:@"<" intoString:&coachTitlePre];
@@ -128,7 +132,7 @@
             NSLog(@"Coach Phone Number: %@", coachPhone);
             if (coachPhone)
             {
-                [bowdoinCoachesElements addObject:coachPhonePre];
+                [bowdoinCoachesElements addObject:coachPhone];
             }
             
             // Add email
@@ -144,6 +148,11 @@
             {
                 [bowdoinCoachesElements addObject:coachEmail];
             }
+            
+            [coaches setObject:bowdoinCoachesElements forKey:[NSString stringWithFormat:@"%d", key]];
+            key++;
+            
+            [scanner1 scanUpToString:@">" intoString:nil];
             /**
             //[scanner scanUpToString:@"<div class=\"tab-content" intoString:NULL];
             //[scanner scanUpToString:@"class=\"synopsis" intoString:NULL];
@@ -206,7 +215,7 @@
              
     }
 
-
+    return coaches;
 }
 
 @end

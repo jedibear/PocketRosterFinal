@@ -10,6 +10,12 @@
 
 @interface FacilitiesViewController : UIViewController
 
-@property (nonatomic) NSString *facilitiesURL;
+@property (nonatomic) NSString *facilitiesURL, *incommingTeamURL, *teamName;
+@property (nonatomic) NSString *backgroundImagePath;
+@property (nonatomic) BOOL *longForm, *haveRoster;
+@property (nonatomic) NSMutableDictionary *teamRoster;
+
+@property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
+
 
 @end

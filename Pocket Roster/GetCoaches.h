@@ -11,7 +11,7 @@
 @interface GetCoaches : NSObject
 
 
-//+(NSMutableDictionary *) getInfo: (NSString *) linkForURLSearch;
-+(void) getCoachesInfo;
++(NSMutableDictionary *) getCoaches: (NSString *) linkForURLSearch;
+
 
 @end

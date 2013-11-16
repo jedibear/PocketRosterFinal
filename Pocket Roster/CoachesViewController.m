@@ -7,6 +7,8 @@
 //
 
 #import "CoachesViewController.h"
+#import "TeamViewController.h"
+#import "GetCoaches.h"
 #import "CoachesTVC.h"
 
 @interface CoachesViewController ()
@@ -28,9 +30,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-
+    [self.teamNameLabel setText:self.teamName];
     //verify that the URL was passed
-    NSLog(@"%@", self.coachesURL);
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +47,19 @@
         if ([segue.destinationViewController isKindOfClass:[CoachesTVC class]]) {
             CoachesTVC *cTVC = (CoachesTVC *)segue.destinationViewController;
             cTVC.coachesURL = self.coachesURL;
+        }
+    }else if ([segue.identifier isEqualToString:@"back2TVC"]){
+        NSLog(@"HERE");
+        if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
+            
+            TeamViewController *tVC = (TeamViewController *)segue.destinationViewController;
+            
+            tVC.teamName = self.teamName;
+            tVC.teamRoster = self.teamRoster;
+            tVC.longForm = self.longForm;
+            tVC.backgroundImagePath = self.backgroundImagePath;
+            tVC.incommingTeamURL = self.incommingTeamURL;
+            tVC.haveRoster = self.haveRoster;
         }
     }
 }
