@@ -236,6 +236,7 @@
 		CFE1F92C1838302100E8BD9E /* CreditsBackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F92B1838302100E8BD9E /* CreditsBackButton.png */; };
 		CFE1F92E1838303000E8BD9E /* CreditsBack.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F92D1838303000E8BD9E /* CreditsBack.png */; };
 		CFE1F930183830D800E8BD9E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F92F183830D800E8BD9E /* info.png */; };
+		CFE1F93218391FEA00E8BD9E /* CreditsBack4.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F93118391FEA00E8BD9E /* CreditsBack4.png */; };
 		CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFA17FE448B0071814C /* OldIcon.png */; };
 /* End PBXBuildFile section */
 
@@ -519,6 +520,7 @@
 		CFE1F92B1838302100E8BD9E /* CreditsBackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsBackButton.png; sourceTree = "<group>"; };
 		CFE1F92D1838303000E8BD9E /* CreditsBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsBack.png; sourceTree = "<group>"; };
 		CFE1F92F183830D800E8BD9E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		CFE1F93118391FEA00E8BD9E /* CreditsBack4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsBack4.png; sourceTree = "<group>"; };
 		CFF5ECFA17FE448B0071814C /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OldIcon.png; path = "Pocket Roster/OldIcon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -836,6 +838,7 @@
 		CF6568C5171782B700AE84AC = {
 			isa = PBXGroup;
 			children = (
+				CFE1F93118391FEA00E8BD9E /* CreditsBack4.png */,
 				1EDB02E518385E9A008D7BC2 /* teams.h */,
 				CFE1F92F183830D800E8BD9E /* info.png */,
 				CFE1F92D1838303000E8BD9E /* CreditsBack.png */,
@@ -1074,6 +1077,7 @@
 				CF6568DF171782B700AE84AC /* InfoPlist.strings in Resources */,
 				CF6568E7171782B700AE84AC /* Default.png in Resources */,
 				CF6568E9171782B700AE84AC /* Default@2x.png in Resources */,
+				CFE1F93218391FEA00E8BD9E /* CreditsBack4.png in Resources */,
 				CF6568EB171782B700AE84AC /* Default-568h@2x.png in Resources */,
 				CFE1F8D0182EEB4E00E8BD9E /* WLax.jpg in Resources */,
 				CF6568EE171782B700AE84AC /* MainStoryboard.storyboard in Resources */,
