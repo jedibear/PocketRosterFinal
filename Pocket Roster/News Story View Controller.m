@@ -28,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.storyTitle setText:self.incTitle];
 	// Do any additional setup after loading the view.
 }
 
@@ -51,12 +52,17 @@
             //[segue.destinationViewController setTeamName:self.teamName];
         }        
     }
-    else if ([segue.identifier isEqualToString:@"back"]){
+    else if ([segue.identifier isEqualToString:@"back2NFVC"]){
         NSLog(@"back");
         if ([segue.destinationViewController isKindOfClass:[NewsFeedViewController class]]) {
+            
             NewsFeedViewController *nFVC = (NewsFeedViewController *)segue.destinationViewController;
             nFVC.teamName = self.team;
-            NSLog(@"NSVC%@",self.team);
+            nFVC.longForm = self.longForm;
+            nFVC.backgroundImagePath = self.backgroundImagePath;
+            nFVC.newsURL = self.newsURLInc;
+            nFVC.incommingTeamURL = self.incommingTeamURL;
+            NSLog(@"NSVC%@",self.incommingTeamURL);
         }
         
     }

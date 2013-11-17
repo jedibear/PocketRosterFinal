@@ -11,6 +11,11 @@
 @interface News_Story_View_Controller : UIViewController
 
 @property (nonatomic) NSString *newsURL, *team;
+@property (strong, nonatomic) IBOutlet UILabel *storyTitle;
+
+@property (nonatomic) NSString *teamName, *backgroundImagePath, *incommingTeamURL, *incTitle;
+@property (nonatomic) NSString *newsURLInc;
+@property (nonatomic) BOOL *longForm;
 
 
 @end

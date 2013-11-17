@@ -22,7 +22,13 @@
     
     NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
     
-    NSData *htmlCode = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:NULL];
+    NSError *error;
+    
+    NSData *htmlCode = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:&error];
+    
+    if(error){
+        NSLog(@"connection Error");
+    }
     
     NSString *htmlCodeFromURL = [[NSString alloc]initWithData:htmlCode encoding:NSASCIIStringEncoding];
     
@@ -39,8 +45,14 @@
     
     UIImage *athleteBioPhoto = [[UIImage alloc]initWithData:imageData];
     
+    if (athleteBioPhoto) {
+        [bioInfo setObject:athleteBioPhoto forKey:@"image"];
+    }else{
+        NSLog(@"no bio photo");
+        UIImage *altPhoto = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"rosterPhotoMissing" ofType:@"jpg"]];
+        [bioInfo setObject:altPhoto forKey:@"image"];
+    }
     
-    [bioInfo setObject:athleteBioPhoto forKey:@"image"];
     
     [bigDaddy scanUpToString:@"<table" intoString:nil];
     [bigDaddy scanUpToString:@"/table>" intoString:&playerAttributes];

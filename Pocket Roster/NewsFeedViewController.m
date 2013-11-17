@@ -31,6 +31,9 @@
 	// Do any additional setup after loading the view.
     [self.teamNameLabel setText:self.teamName];
     
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,7 +49,15 @@
        
         
         if([segue.destinationViewController isKindOfClass:[RSSTVC class]]){
+            
             RSSTVC *rSSTmp = (RSSTVC *)segue.destinationViewController;
+            
+            NSLog(@"here1");
+            if (!self.incommingTeamURL) {
+                self.newsURL = @"http://athletics.bowdoin.edu/landing/headlines-featured?feed=rss_2.0";
+                NSLog(@"here2");
+            }
+            
             rSSTmp.incommingURL = self.newsURL;
             rSSTmp.backgroundImagePath = self.backgroundImagePath;
             rSSTmp.longForm = self.longForm;

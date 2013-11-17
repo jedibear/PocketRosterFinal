@@ -82,20 +82,24 @@
     NSString *rssURL;
     NSString *baseURL = @"http://athletics.bowdoin.edu";
     NSLog(@"%@ HERE BIACH", self.incommingURL);
-    NSURL *theURL = [[NSURL alloc] initWithString:self.incommingURL];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:theURL];
+    if(!self.incommingTeamURL){
+        return self.incommingURL;
+    }else{
+        NSURL *theURL = [[NSURL alloc] initWithString:self.incommingURL];
+        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:theURL];
     
-    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:NULL];
+        NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:NULL];
+        
+        NSString *htmlCode = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
     
-    NSString *htmlCode = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
-    
-    NSScanner *scanner = [NSScanner scannerWithString:htmlCode];
-    [scanner scanUpToString:@"<div class=\"default-headlines" intoString:nil];
-    [scanner scanUpToString:@"/div>" intoString:nil];
-    [scanner scanUpToString:@"href=\"" intoString:nil];
-    [scanner scanUpToString:@"\">" intoString:&rssURL];
-    NSLog(@"rssURL %@", [rssURL substringFromIndex:6]);
-    return [baseURL stringByAppendingString:[rssURL substringFromIndex:6]];
+        NSScanner *scanner = [NSScanner scannerWithString:htmlCode];
+        [scanner scanUpToString:@"<div class=\"default-headlines" intoString:nil];
+        [scanner scanUpToString:@"/div>" intoString:nil];
+        [scanner scanUpToString:@"href=\"" intoString:nil];
+        [scanner scanUpToString:@"\">" intoString:&rssURL];
+        NSLog(@"rssURL %@", [rssURL substringFromIndex:6]);
+        return [baseURL stringByAppendingString:[rssURL substringFromIndex:6]];
+    }
 }
 
 
@@ -268,16 +272,16 @@
                 
                 if ([segue.destinationViewController isKindOfClass:[News_Story_View_Controller class]]) {
                     News_Story_View_Controller *newsTMP = (News_Story_View_Controller *)segue.destinationViewController;
-                    newsTMP.newsURL = self.sequeLink;
+                    
                     newsTMP.team = self.teamName;
-                    /**
-                    newsTMP.teamName = self.teamName;
+                    
+                    
                     newsTMP.newsURLInc = self.incommingURL;
                     newsTMP.longForm = self.longForm;
                     newsTMP.incommingTeamURL = self.incommingTeamURL;
                     newsTMP.backgroundImagePath = self.backgroundImagePath;
                     newsTMP.incTitle = [[self.stories objectAtIndex:indexPath.row] objectForKey:@"title"];
-                    */
+                   
                     
                 }
                 

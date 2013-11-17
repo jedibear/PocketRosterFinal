@@ -46,14 +46,14 @@
         
         if([segue.destinationViewController isKindOfClass:[TeamViewController class]])
         {
-            /**
+            
 			TeamViewController *sVC = (TeamViewController *)segue.destinationViewController;
             sVC.incommingTeamURL = self.incommingTeamURL;
             sVC.longForm = self.longForm;
             sVC.haveRoster = self.haveRoster;
             sVC.teamName = self.teamName;
             sVC.backgroundImagePath = self.backgroundImagePath;
-             */
+            
         }
     
     }else if ([segue.identifier isEqualToString:@"embedSchedule"]){
@@ -61,9 +61,9 @@
         if([segue.destinationViewController isKindOfClass:[ScheduleTVC class]]){
             
             ScheduleTVC *sTVC = (ScheduleTVC *)segue.destinationViewController;
-            /**
+            
             sTVC.schedURL = self.schedURL;
-             */
+            
         }
     }
     

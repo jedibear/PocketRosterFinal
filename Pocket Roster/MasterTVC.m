@@ -7,6 +7,7 @@
 //
 
 #import "MasterTVC.h"
+#import "teams.h"
 #import "TeamViewController.h"
 
 @interface MasterTVC ()
@@ -47,323 +48,314 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"mensSoccerTVCInit"]) {
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/msoc/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Soccer";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MSoccer" ofType:@"jpg"];
+            teamVC.longForm = mensSoccerLongForm;
+            teamVC.incommingTeamURL = mensSoccerStartingURL;
+            teamVC.teamName = mensSoccerName;
+            teamVC.backgroundImagePath = mensSoccerBackgroundImagePath;
             
         }
         
     }else if([segue.identifier isEqualToString:@"footballTVCInit"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/fball/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = @"http://athletics.bowdoin.edu/sports/fball/index";
-            teamVC.teamName = @"Football";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MFootball" ofType:@"jpg"];
+            teamVC.longForm = footballLongForm;
+            teamVC.incommingTeamURL =footballStartingURL;
+            teamVC.teamName = footballName;
+            teamVC.backgroundImagePath = footballBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensXCountryTVCInit"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mxc/index";
-        if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
-            TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Cross Country";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MCrossCountry" ofType:@"jpg"];
-        }
         
-    }else if([segue.identifier isEqualToString:@"mensRugbyTVCInit"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mrugby/index";
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Rugby";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MSoccer" ofType:@"jpg"];
+            teamVC.longForm = mensXCountryLongForm;
+            teamVC.incommingTeamURL = mensXCountryStartingURL;
+            teamVC.teamName = mensXCountryName;
+            teamVC.backgroundImagePath = mensXCountryBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensGolfTVCInit"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mgolf/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Golf";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MGolf" ofType:@"jpg"];
+            teamVC.longForm = mensGolfLongForm;
+            teamVC.incommingTeamURL = mensGolfStartingURL;
+            teamVC.teamName = mensGolfName;
+            teamVC.backgroundImagePath = mensGolfBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensSailingTVCInit"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/sailing/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Sailing";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MSailing" ofType:@"jpg"];
+            teamVC.longForm = mensSailingLongForm;
+            teamVC.incommingTeamURL = mensSailingStartingURL;
+            teamVC.teamName = mensSailingName;
+            teamVC.backgroundImagePath = mensSailingBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensTennisTVCInit"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mten/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MTennis" ofType:@"jpg"];
+            teamVC.longForm = mensTennisLongForm;
+            teamVC.incommingTeamURL = mensTennisStartingURL;
+            teamVC.teamName = mensTennisName;
+            teamVC.backgroundImagePath = mensTennisBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensSwimmingAndDiving"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mswimdive/index";
+       
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Swimming And Diving";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MSwimming" ofType:@"jpg"];
+            teamVC.longForm = mensSwimmingLongForm;
+            teamVC.incommingTeamURL = mensSwimmingStartingURL;
+            teamVC.teamName = mensSwimmingName;
+            teamVC.backgroundImagePath = mensSwimmingBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensHockey"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mice/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Hockey";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MHockey" ofType:@"jpg"];
+            teamVC.longForm = mensIceHockeyLongForm;
+            teamVC.incommingTeamURL = mensIceHockeyStartingURL;
+            teamVC.teamName = mensIceHockeyName;
+            teamVC.backgroundImagePath = mensIceHockeyBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensBasketball"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mbkb/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Basketball";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MBacketball" ofType:@"jpg"];
+            teamVC.longForm = mensBasketballLongForm;
+            teamVC.incommingTeamURL = mensBasketballStartingURL;
+            teamVC.teamName = mensBasketballName;
+            teamVC.backgroundImagePath = mensBasketballBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensIndoorTrack"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mtrack/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Indoor Track";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MTrack" ofType:@"jpg"];
+            teamVC.longForm = mensTrackLongForm;
+            teamVC.incommingTeamURL = mensTrackStartingURL;
+            teamVC.teamName = mensIndoorTrackName;
+            teamVC.backgroundImagePath = mensTrackBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensSquash"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/msquash/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Squash";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MSquash" ofType:@"jpg"];
+            teamVC.longForm = mensSquashLongForm;
+            teamVC.incommingTeamURL = mensSquashStartingURL;
+            teamVC.teamName = mensSquashName;
+            teamVC.backgroundImagePath = mensSquashBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensLax"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mlax/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Lacrosse";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"BLax" ofType:@"jpg"];
+            teamVC.longForm = mensLacrosseLongForm;
+            teamVC.incommingTeamURL = mensLacrosseStartingURL;
+            teamVC.teamName = mensLacrosseName;
+            teamVC.backgroundImagePath = mensLacrosseBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensTrack"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/mtrack/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Track";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MTrack" ofType:@"jpg"];
+            teamVC.longForm = mensTrackLongForm;
+            teamVC.incommingTeamURL = mensTrackStartingURL;
+            teamVC.teamName = mensTrackName;
+            teamVC.backgroundImagePath = mensTrackBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensBaseball"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/bsb/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Baseball";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"MBaseball" ofType:@"jpg"];
+            teamVC.longForm = baseballLongForm;
+            teamVC.incommingTeamURL = baseballStartingURL;
+            teamVC.teamName = baseballName;
+            teamVC.backgroundImagePath = baseballBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wRugby"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wrugby/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Rugby";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WRugby" ofType:@"jpg"];
+            teamVC.longForm = womensRugbyLongForm;
+            teamVC.incommingTeamURL = womensRugbyStartingURL;
+            teamVC.teamName = womensRugbyName;
+            teamVC.backgroundImagePath = womensRugbyBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wSoccer"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wsoc/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Soccer";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WSoccer" ofType:@"jpg"];
+            teamVC.longForm = womensSoccerLongForm;
+            teamVC.incommingTeamURL = womensSoccerStartingURL;
+            teamVC.teamName = womensSoccerName;
+            teamVC.backgroundImagePath = womensSoccerBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wXCountry"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wxc/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Cross Country";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WCrossCountry" ofType:@"jpg"];
+            teamVC.longForm = womensXCountryLongForm;
+            teamVC.incommingTeamURL = womensXCountryStartingURL;
+            teamVC.teamName = womensXCountryName;
+            teamVC.backgroundImagePath = womensXCountryBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wGolf"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wgolf/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Golf";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WGolf" ofType:@"jpg"];
+            teamVC.longForm = womensGolfLongForm;
+            teamVC.incommingTeamURL = womensGolfStartingURL;
+            teamVC.teamName = womensGolfName;
+            teamVC.backgroundImagePath = womensGolfBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wSailing"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/sailing/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Sailing";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WSailing" ofType:@"jpg"];
+            teamVC.longForm = womensSailingLongForm;
+            teamVC.incommingTeamURL = womensSailingStartingURL;
+            teamVC.teamName = womensSailingName;
+            teamVC.backgroundImagePath = womensSailingBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wTennis"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wten/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Tennis";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WTennis" ofType:@"jpg"];
+            teamVC.longForm = womensTennisLongForm;
+            teamVC.incommingTeamURL = womensTennisStartingURL;
+            teamVC.teamName = womensTennisName;
+            teamVC.backgroundImagePath = womensTennisBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wFieldHockey"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/fh/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"FieldHockey";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WFeildHockey" ofType:@"jpg"];
+            teamVC.longForm = fieldhockeyLongForm;
+            teamVC.incommingTeamURL = fieldhockeyStartingURL;
+            teamVC.teamName = fieldhockeyName;
+            teamVC.backgroundImagePath = fieldHockeyBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wVolleyball"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wvball/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Volleyball";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WVolleyball" ofType:@"jpg"];
+            teamVC.longForm = womensVolleyballLongForm;
+            teamVC.incommingTeamURL = womensVolleyballStartingURL;
+            teamVC.teamName = womensVolleyballName;
+            teamVC.backgroundImagePath = womensVolleyballBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wSwimmingAndDiving"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wswimdive/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Swimming And Diving";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WSwimming" ofType:@"jpg"];
+            teamVC.longForm = womensSwimmingLongForm;
+            teamVC.incommingTeamURL = womensSwimmingStartingURL;
+            teamVC.teamName = womensSwimmingName;
+            teamVC.backgroundImagePath = womensSwimmingBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wHockey"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wice/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Hockey";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WHockey" ofType:@"jpg"];
+            teamVC.longForm = womensIceHockeyLongForm;
+            teamVC.incommingTeamURL = womensIceHockeyStartingURL;
+            teamVC.teamName = womensIceHockeyName;
+            teamVC.backgroundImagePath = womensIceHockeyBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wBasketball"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wbkb/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Basketball";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WBasketball" ofType:@"jpg"];
+            teamVC.longForm = womensBasketballLongForm;
+            teamVC.incommingTeamURL = womensBasketballStartingURL;
+            teamVC.teamName = womensBasketballName;
+            teamVC.backgroundImagePath = womensBasketballBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wIndoorTrack"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wtrack/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Indoor Track";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WTrack" ofType:@"jpg"];
+            teamVC.longForm = womensTrackLongForm;
+            teamVC.incommingTeamURL = womensTrackStartingURL;
+            teamVC.teamName = womensTrackName;
+            teamVC.backgroundImagePath = womensTrackBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wSquash"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wsquash/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Squash";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WSquash" ofType:@"jpg"];
+            teamVC.longForm = womensSquashLongForm;
+            teamVC.incommingTeamURL = womensSquashStartingURL;
+            teamVC.teamName = womensSquashName;
+            teamVC.backgroundImagePath = womensSquashBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wNorticSkiing"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/nordicski/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Nortic Skiing";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WSkiing" ofType:@"jpg"];
+            teamVC.longForm = womensNordicSkiing;
+            teamVC.incommingTeamURL = womensNordicStartingURL;
+            teamVC.teamName = womensNordicSkiingName;
+            teamVC.backgroundImagePath = womensNordicSkiingBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wLax"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wlax/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Lacrosse";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WLax" ofType:@"jpg"];
+            teamVC.longForm = womensLacrosseLongForm;
+            teamVC.incommingTeamURL = womensLacrosseStartingURL;
+            teamVC.teamName = womensLacrosseName;
+            teamVC.backgroundImagePath = womensLacrosseBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wTrack"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/wtrack/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = NO;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Track";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WTrack" ofType:@"jpg"];
+            teamVC.longForm = womensTrackLongForm;
+            teamVC.incommingTeamURL = womensTrackStartingURL;
+            teamVC.teamName = womensTrackName;
+            teamVC.backgroundImagePath = womensTrackBackgroundImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wSoftball"]){
-        self.teamURL = @"http://athletics.bowdoin.edu/sports/sball/index";
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
-            teamVC.longForm = YES;
-            teamVC.incommingTeamURL = self.teamURL;
-            teamVC.teamName = @"Softball";
-            teamVC.backgroundImagePath = [[NSBundle mainBundle] pathForResource:@"WSoftball" ofType:@"jpg"];
+            teamVC.longForm = softballLongForm;
+            teamVC.incommingTeamURL = softballStartingURL;
+            teamVC.teamName = softballName;
+            teamVC.backgroundImagePath = softballBackgroundImagePath;
         }
         
     }

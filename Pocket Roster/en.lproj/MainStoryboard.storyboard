@@ -578,7 +578,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xgf-pa-f2U" kind="modal" modalTransitionStyle="crossDissolve" id="KpL-3D-cg5"/>
+                                    <segue destination="DOg-gk-edS" kind="modal" identifier="genNews" id="34r-ir-Qsr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="int-cP-a43">
@@ -642,7 +642,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G74-4z-8oL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2676" y="369"/>
+            <point key="canvasLocation" x="-2552" y="429"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="t2m-59-ucT">
@@ -1593,7 +1593,7 @@
             <objects>
                 <tableViewController id="d2f-wY-d1r" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QHr-GK-mDs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -3331,7 +3331,7 @@
             <objects>
                 <tableViewController id="7br-fV-zIz" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dXs-ad-1Bj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -3525,141 +3525,6 @@
             </objects>
             <point key="canvasLocation" x="1011" y="-9071"/>
         </scene>
-        <!--HomeTVC-->
-        <scene sceneID="wW4-lG-vFb">
-            <objects>
-                <tableViewController id="hc7-YG-V3Z" customClass="RSSHomeTVC" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="79D-FI-1N7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="separatorColor" white="0.61345232660000004" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RSSHomeCell" rowHeight="93" id="txk-hS-GDZ" customClass="RSSHomeCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="93"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="txk-hS-GDZ" id="Sbo-Sf-faI">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="92"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fiz-gS-VQc">
-                                            <rect key="frame" x="20" y="36" width="280" height="35"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="25"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="shadowOffset" width="1" height="-1"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="teamName" destination="Fiz-gS-VQc" id="qiN-ig-03i"/>
-                                    <segue destination="DOg-gk-edS" kind="modal" identifier="teamPush" modalTransitionStyle="crossDissolve" id="ydm-gM-c9Z"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="hc7-YG-V3Z" id="bdw-0C-bHS"/>
-                            <outlet property="delegate" destination="hc7-YG-V3Z" id="pl1-kT-Rty"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="AxB-ax-jp2"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sHb-ri-I1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-868" y="-454"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gMl-Yl-jiZ">
-            <objects>
-                <viewController id="xgf-pa-f2U" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T4f-Jw-Utt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Football Background.jpg" id="dpv-8u-J6Z">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <containerView contentMode="scaleToFill" id="NUN-XE-7dw">
-                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="hc7-YG-V3Z" kind="embed" id="MJ4-rn-ffG"/>
-                                </connections>
-                            </containerView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FVk-V1-c7c">
-                                <rect key="frame" x="162" y="25" width="158" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XvH-a6-Gbu">
-                                <rect key="frame" x="11" y="26" width="49" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="HomeBearLogo.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="FM3-qD-uOc" kind="modal" id="etK-AR-q7C"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wjn-8M-hHd">
-                                <rect key="frame" x="0.0" y="81" width="320" height="4"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Cls-Dv-s7W">
-                                <rect key="frame" x="128" y="20" width="64" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="HomeB.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pNe-C4-F8b">
-                                <rect key="frame" x="122" y="36" width="119" height="42"/>
-                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="2" height="2"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="News" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FXy-aa-URp">
-                                <rect key="frame" x="127" y="54" width="126" height="42"/>
-                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="2" height="2"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OHi-kw-Yrz">
-                                <rect key="frame" x="251" y="25" width="61" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="FavsB.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vZx-6L-hle" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1243" y="-536"/>
-        </scene>
         <!--RSSTVC-->
         <scene sceneID="z5J-Rn-T42">
             <objects>
@@ -3713,7 +3578,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9S-5q-xde" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-367" y="-577"/>
+            <point key="canvasLocation" x="-1139" y="-499"/>
         </scene>
         <!--News Feed View Controller-->
         <scene sceneID="SPH-OO-QpK">
@@ -3749,9 +3614,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="xgf-pa-f2U" kind="modal" id="6cF-zF-AY6"/>
-                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nsg-zU-juw">
                                 <rect key="frame" x="0.0" y="81" width="320" height="4"/>
@@ -3796,7 +3658,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1V7-Bu-Ljd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-628" y="-747"/>
+            <point key="canvasLocation" x="-1314" y="-691"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="864-Na-XfK">
@@ -3821,7 +3683,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AKc-WD-548" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40" y="-493"/>
+            <point key="canvasLocation" x="-646" y="-437"/>
         </scene>
         <!--News Story View Controller-->
         <scene sceneID="9AI-Ed-JDQ">
@@ -3896,7 +3758,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvR-Mx-yNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-203" y="-611"/>
+            <point key="canvasLocation" x="-889" y="-555"/>
         </scene>
         <!--RosterTVC-->
         <scene sceneID="h2l-nj-3e5">
@@ -4834,7 +4696,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UYs-8z-dG4">
-                                <rect key="frame" x="64" y="30.000000007347332" width="204" height="42"/>
+                                <rect key="frame" x="64" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -5088,7 +4950,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OBc-28-54u">
-                                <rect key="frame" x="58" y="30.000000007403077" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -5179,7 +5041,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bo4-eg-JWd">
-                                <rect key="frame" x="64" y="30.000000007347332" width="204" height="42"/>
+                                <rect key="frame" x="64" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -5270,7 +5132,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dQ6-fG-c7L">
-                                <rect key="frame" x="58" y="30.000000007347317" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -5640,7 +5502,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BdV-5J-q9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1443" y="-9071"/>
+            <point key="canvasLocation" x="1447" y="-9051"/>
         </scene>
         <!--TeamTVC-->
         <scene sceneID="msV-sy-o2C">
@@ -7029,7 +6891,7 @@
             <objects>
                 <tableViewController id="UoK-fy-KuL" customClass="RSSTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="134" sectionHeaderHeight="22" sectionFooterHeight="22" id="1q2-IP-mFV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -7084,11 +6946,11 @@
             <objects>
                 <viewController id="NSV-2y-e7F" customClass="WebViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sFg-Jd-nYo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" id="w9p-Ep-F76">
-                                <rect key="frame" x="0.0" y="119" width="320" height="449"/>
+                                <rect key="frame" x="0.0" y="1" width="320" height="449"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                             </webView>
@@ -10790,7 +10652,7 @@
             <objects>
                 <viewController id="Teu-22-nZM" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="mlK-WJ-pyw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZSb-M2-Gb3">
                             <size key="itemSize" width="230" height="159"/>
@@ -12710,7 +12572,6 @@
         <image name="CreditsBack.png" width="346" height="616"/>
         <image name="CreditsBackButton.png" width="81" height="74"/>
         <image name="FavsB.png" width="115" height="114"/>
-        <image name="Football Background.jpg" width="538" height="960"/>
         <image name="HomeB.png" width="150" height="147"/>
         <image name="HomeBearLogo.png" width="115" height="113"/>
         <image name="LionHome.jpg" width="612" height="612"/>
@@ -12760,45 +12621,44 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="nTE-8S-LGK"/>
-        <segue reference="Wzr-IQ-2zX"/>
-        <segue reference="VyF-zp-8Pr"/>
-        <segue reference="aOv-SL-9e3"/>
-        <segue reference="Huv-8r-45z"/>
-        <segue reference="KpL-3D-cg5"/>
-        <segue reference="1cP-Of-ahw"/>
-        <segue reference="yCL-Xr-dJB"/>
-        <segue reference="zKd-1U-8sy"/>
+        <segue reference="xnd-Wf-AnJ"/>
         <segue reference="6ox-vb-Wn0"/>
-        <segue reference="nz0-8Y-JHX"/>
         <segue reference="17k-bi-cGE"/>
-        <segue reference="9eF-9v-H2L"/>
-        <segue reference="cKy-py-LNF"/>
+        <segue reference="nz0-8Y-JHX"/>
+        <segue reference="7bm-gT-qhD"/>
+        <segue reference="uAu-mg-N7y"/>
+        <segue reference="sQv-Q6-vTb"/>
+        <segue reference="NC4-rH-UbV"/>
+        <segue reference="A5n-Vx-AYr"/>
+        <segue reference="YXV-nd-LZJ"/>
         <segue reference="ohy-EF-KnQ"/>
-        <segue reference="qI7-3V-cv0"/>
+        <segue reference="9eF-9v-H2L"/>
         <segue reference="II4-L4-Ic5"/>
         <segue reference="tO6-pd-jeH"/>
         <segue reference="Udu-p2-qEL"/>
         <segue reference="72q-0R-X8d"/>
         <segue reference="0x1-we-ra9"/>
-        <segue reference="mMk-QF-Q8H"/>
-        <segue reference="7bm-gT-qhD"/>
-        <segue reference="uAu-mg-N7y"/>
-        <segue reference="sQv-Q6-vTb"/>
-        <segue reference="1SH-Y3-PMA"/>
-        <segue reference="jWr-1m-8Ix"/>
-        <segue reference="NC4-rH-UbV"/>
-        <segue reference="6Ks-fJ-hXk"/>
-        <segue reference="C6f-BF-Oyy"/>
         <segue reference="H6u-hk-R8X"/>
+        <segue reference="C6f-BF-Oyy"/>
         <segue reference="Z5J-qO-EM6"/>
         <segue reference="SyN-pK-eu1"/>
-        <segue reference="s1A-Nn-PRF"/>
+        <segue reference="cVc-Kz-KS9"/>
+        <segue reference="c1b-4N-uij"/>
+        <segue reference="VyF-zp-8Pr"/>
+        <segue reference="q5V-pM-u53"/>
+        <segue reference="yCL-Xr-dJB"/>
+        <segue reference="zKd-1U-8sy"/>
+        <segue reference="dcF-hv-hmo"/>
+        <segue reference="aOv-SL-9e3"/>
+        <segue reference="jfE-Ml-3tJ"/>
+        <segue reference="1YT-yN-vOm"/>
+        <segue reference="1cP-Of-ahw"/>
+        <segue reference="34r-ir-Qsr"/>
+        <segue reference="jWr-1m-8Ix"/>
+        <segue reference="nTE-8S-LGK"/>
         <segue reference="Sjg-E2-yMw"/>
-        <segue reference="Aes-WL-c55"/>
-        <segue reference="uWY-0q-ksa"/>
-        <segue reference="xnd-Wf-AnJ"/>
-        <segue reference="SHg-x4-5kI"/>
         <segue reference="p5M-4L-Nze"/>
+        <segue reference="Aes-WL-c55"/>
+        <segue reference="s1A-Nn-PRF"/>
     </inferredMetricsTieBreakers>
 </document>
