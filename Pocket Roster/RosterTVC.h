@@ -1,4 +1,4 @@
-/
+//
 //  RosterTVC.h
 //  Pocket Roster
 //
@@ -10,12 +10,11 @@
 
 @interface RosterTVC : UITableViewController
 
-@property (nonatomic) NSString *key;
-@property (nonatomic, strong) NSMutableDictionary *teamRoster;
-
+@property (nonatomic) NSString *key, *incommingURL;
+@property (nonatomic) NSMutableDictionary *teamRoster;
 
 @property (nonatomic) BOOL *longForm, *haveRoster;
-@property (nonatomic) NSString  *teamName, *backgroundImagePath;
+@property (nonatomic) NSString *rosterURL, *teamName, *backgroundImagePath;
 @property (nonatomic) NSString *incommingTeamURL;
 @property (nonatomic) UIImage *athleteImage;
 

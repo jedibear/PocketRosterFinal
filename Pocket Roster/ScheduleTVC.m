@@ -92,6 +92,7 @@
         
         NSString *opponent = [[NSString alloc] initWithFormat:@"%@", [contestObjects objectAtIndex:1]];
         NSString *result = [[NSString alloc] initWithFormat:@"%@", [contestObjects objectAtIndex:2]];
+        NSString *time = [[NSString alloc] initWithFormat:@"%@", [contestObjects objectAtIndex:3]];
         
         cell.dateOfContest.text = date;
         
@@ -101,6 +102,7 @@
         
         cell.opponentName.text = opponent;
         cell.result.text = result;
+        cell.time.text = time;
         
     }
     return cell;

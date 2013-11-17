@@ -11,7 +11,7 @@
 		1E11F670183950B40091E8C2 /* RosterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F66F183950B40091E8C2 /* RosterCell.m */; };
 		1E11F673183950D00091E8C2 /* RosterAthleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F672183950D00091E8C2 /* RosterAthleteViewController.m */; };
 		1E11F676183950EB0091E8C2 /* CoachesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F675183950EB0091E8C2 /* CoachesCell.m */; };
-		1E15B59217408334006D1881 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E15B59117408334006D1881 /* ScheduleViewController.m */; };
+		1E11F678183954640091E8C2 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F677183954640091E8C2 /* ScheduleViewController.m */; };
 		1E18AACC174002A200AFA86F /* BowdoinNews.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E18AACB174002A200AFA86F /* BowdoinNews.png */; };
 		1E2F1772172881B80023515F /* mensCrew.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F176C172881B70023515F /* mensCrew.jpg */; };
 		1E2F1773172881B80023515F /* mensGolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F176D172881B70023515F /* mensGolf.jpg */; };
@@ -259,7 +259,7 @@
 		1E11F672183950D00091E8C2 /* RosterAthleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RosterAthleteViewController.m; sourceTree = "<group>"; };
 		1E11F674183950EB0091E8C2 /* CoachesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoachesCell.h; sourceTree = "<group>"; };
 		1E11F675183950EB0091E8C2 /* CoachesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoachesCell.m; sourceTree = "<group>"; };
-		1E15B59117408334006D1881 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleViewController.m; path = ../ScheduleViewController.m; sourceTree = "<group>"; };
+		1E11F677183954640091E8C2 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 		1E18AACB174002A200AFA86F /* BowdoinNews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinNews.png; sourceTree = "<group>"; };
 		1E2F176C172881B70023515F /* mensCrew.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensCrew.jpg; sourceTree = "<group>"; };
 		1E2F176D172881B70023515F /* mensGolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensGolf.jpg; sourceTree = "<group>"; };
@@ -592,7 +592,7 @@
 				CFE1F8DE18303DF600E8BD9E /* GetSchedule.h */,
 				CFE1F8DF18303DF600E8BD9E /* GetSchedule.m */,
 				1E66ECA418374FBF004FDFC8 /* ScheduleViewController.h */,
-				1E15B59117408334006D1881 /* ScheduleViewController.m */,
+				1E11F677183954640091E8C2 /* ScheduleViewController.m */,
 				1E2F1778172883550023515F /* ScheduleCell.h */,
 				1E2F1779172883550023515F /* ScheduleCell.m */,
 				1E2F177B1728837D0023515F /* ScheduleTVC.h */,
@@ -1268,6 +1268,7 @@
 				CF6569161717863100AE84AC /* FlickrPhotoTableViewController.m in Sources */,
 				CF65691A1717870700AE84AC /* LatestFlickrPhotosTVC.m in Sources */,
 				1EDB02E8183878DD008D7BC2 /* RosterBioScrollView.m in Sources */,
+				1E11F678183954640091E8C2 /* ScheduleViewController.m in Sources */,
 				1EFDFEC7183041C300DAF6A4 /* RecordsTVC.m in Sources */,
 				1EFDFEBC1830419600DAF6A4 /* CoachesTVC.m in Sources */,
 				CF65691D171787DF00AE84AC /* AppDelegate.m in Sources */,
@@ -1315,7 +1316,6 @@
 				1ECC557D173F0DF300EBD61D /* RSSWebView.m in Sources */,
 				1EB48AE11835F8BB00C42B5C /* ScoreboardCell.m in Sources */,
 				1ECC5583173F0FDD00EBD61D /* NewsFeedViewController.m in Sources */,
-				1E15B59217408334006D1881 /* ScheduleViewController.m in Sources */,
 				1EB48ADE1835F87F00C42B5C /* ScoreboardTVC.m in Sources */,
 				1EB48AD71835E8D200C42B5C /* GetScoreBoard.m in Sources */,
 				1EDB02E218385092008D7BC2 /* News Story View Controller.m in Sources */,
