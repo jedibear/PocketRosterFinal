@@ -31,6 +31,8 @@
    
     
     [self.athleteImage setImage:self.athleteImageInput];
+    [self.bioScrollView addSubview:self.athleteImage];
+    
     [self.teamNameLabel setText:self.athleteName];
 	// Do any additional setup after loading the view.
     
@@ -51,11 +53,13 @@
     
     if (self.hasBioStory){
         [self.athleteStory setText:self.bioStory];
+        [self.bioScrollView addSubview:self.athleteStory];
     }
     
     self.specs = [tmp componentsJoinedByString:@"\r"];
     
     [self.athleteSpecs setText:self.specs];
+    [self.bioScrollView addSubview:self.athleteSpecs];
    
 }
 

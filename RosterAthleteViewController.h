@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RosterBioScrollView.h"
 
 @interface RosterAthleteViewController : UIViewController
 
@@ -18,8 +19,13 @@
 @property (nonatomic) NSMutableDictionary *roster, *bio;
 
 @property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
+
 @property (strong, nonatomic) IBOutlet UIImageView *athleteImage;
 @property (strong, nonatomic) IBOutlet UILabel *athleteSpecs;
 @property (strong, nonatomic) IBOutlet UILabel *athleteStory;
+
+@property (strong, nonatomic) IBOutlet RosterBioScrollView *bioScrollView;
+
+
 
 @end

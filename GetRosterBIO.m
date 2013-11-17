@@ -14,7 +14,7 @@
     
     NSString *baseURL = @"http://athletics.bowdoin.edu";
     
-    NSString *relevantInfo, *playerAttributes, *thisAttrType, *attrTypeVal;
+    NSString *relevantInfo, *playerAttributes, *thisAttrType, *attrTypeVal, *tmpStr;
     NSMutableDictionary *bioInfo = [[NSMutableDictionary alloc]init];
     
     
@@ -99,7 +99,26 @@
         
         
         while ([lesGo scanUpToString:@"<" intoString:&test]) {
-            [tmp addObject:[test substringFromIndex:1]];
+            
+            if ([test rangeOfString:@"&"].location != NSNotFound) {
+                NSScanner *sneakyBastard = [[NSScanner alloc]initWithString:test];
+                
+                NSMutableArray *stringElements = [[NSMutableArray alloc]init];
+                while ([sneakyBastard scanUpToString:@"&" intoString:&tmpStr]) {
+                    
+                    [stringElements addObject:[tmpStr substringFromIndex:1]];
+                    [sneakyBastard scanUpToString:@";" intoString:nil];
+                }
+                if (stringElements) {
+                    
+                    [tmp addObject:[stringElements componentsJoinedByString:@" "]];
+                    
+                }
+                
+            }else{
+                [tmp addObject:[test substringFromIndex:1]];
+            }
+            
             
             
             [lesGo scanUpToString:@">" intoString:nil];

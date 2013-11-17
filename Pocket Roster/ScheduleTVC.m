@@ -41,6 +41,8 @@
     
     self.scheduleInfo = [GetSchedule getSchedule:self.schedURL];
     NSLog(@"%@schedINFO",self.scheduleInfo);
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  

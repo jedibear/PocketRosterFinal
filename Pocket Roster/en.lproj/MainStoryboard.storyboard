@@ -5343,7 +5343,7 @@
             <objects>
                 <tableViewController id="TNU-PS-vvn" customClass="TeamTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="s2H-Y9-ARP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -6891,7 +6891,7 @@
             <objects>
                 <tableViewController id="UoK-fy-KuL" customClass="RSSTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="134" sectionHeaderHeight="22" sectionFooterHeight="22" id="1q2-IP-mFV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -6946,11 +6946,11 @@
             <objects>
                 <viewController id="NSV-2y-e7F" customClass="WebViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sFg-Jd-nYo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" id="w9p-Ep-F76">
-                                <rect key="frame" x="0.0" y="1" width="320" height="449"/>
+                                <rect key="frame" x="0.0" y="119" width="320" height="449"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                             </webView>
@@ -8331,7 +8331,7 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="r75-Hn-yLx" customClass="RosterAthleteBioView">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="r75-Hn-yLx" customClass="RosterBioScrollView">
                                 <rect key="frame" x="0.0" y="84" width="320" height="484"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
@@ -8346,14 +8346,23 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RRR-a7-iHp">
+                                        <rect key="frame" x="20" y="195" width="280" height="406"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="athleteImage" destination="0hc-sJ-0im" id="GA0-ft-Ucd"/>
-                        <outlet property="athleteSpecs" destination="AkM-i4-94o" id="qqy-tq-QoE"/>
+                        <outlet property="athleteImage" destination="0hc-sJ-0im" id="Xbs-vd-ArZ"/>
+                        <outlet property="athleteSpecs" destination="AkM-i4-94o" id="WbL-6K-GcT"/>
+                        <outlet property="athleteStory" destination="RRR-a7-iHp" id="YkA-e8-ySA"/>
+                        <outlet property="bioScrollView" destination="r75-Hn-yLx" id="SQt-TK-p5m"/>
                         <outlet property="teamNameLabel" destination="nJ4-jW-oJp" id="B5e-B4-WgS"/>
                     </connections>
                 </viewController>
@@ -8827,11 +8836,11 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x8k-SM-ZtB">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bio Available" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x8k-SM-ZtB">
                                         <rect key="frame" x="20" y="195" width="280" height="269"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -8840,9 +8849,9 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="athleteImage" destination="fqC-di-ZHp" id="VCl-Ls-0Pd"/>
-                        <outlet property="athleteSpecs" destination="b6b-mp-jye" id="fg9-GU-BCW"/>
-                        <outlet property="athleteStory" destination="x8k-SM-ZtB" id="PDi-69-cjs"/>
+                        <outlet property="athleteImage" destination="fqC-di-ZHp" id="GJ8-2i-GTB"/>
+                        <outlet property="athleteSpecs" destination="b6b-mp-jye" id="o35-hN-zmf"/>
+                        <outlet property="athleteStory" destination="x8k-SM-ZtB" id="aqF-Dk-Y1K"/>
                         <outlet property="teamNameLabel" destination="3Ea-R1-Oc5" id="vyG-7d-d1q"/>
                     </connections>
                 </viewController>
@@ -8932,14 +8941,22 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bio Available" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cuB-XN-fKf">
+                                        <rect key="frame" x="20" y="195" width="280" height="269"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="athleteImage" destination="cf7-9j-HJI" id="ucS-2u-b9f"/>
-                        <outlet property="athleteSpecs" destination="5oH-JD-wm8" id="tdY-cz-SCR"/>
+                        <outlet property="athleteImage" destination="cf7-9j-HJI" id="E0l-mG-VLB"/>
+                        <outlet property="athleteSpecs" destination="5oH-JD-wm8" id="3iC-lx-PSo"/>
+                        <outlet property="athleteStory" destination="cuB-XN-fKf" id="ncU-6Z-ujX"/>
                         <outlet property="teamNameLabel" destination="zho-bc-kdk" id="Qj3-xW-ldc"/>
                     </connections>
                 </viewController>
@@ -9029,14 +9046,22 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bio Available" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6ie-yF-so9">
+                                        <rect key="frame" x="20" y="195" width="280" height="269"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="athleteImage" destination="f72-nJ-2jG" id="oht-RE-jcy"/>
-                        <outlet property="athleteSpecs" destination="PsL-vB-rPc" id="yAG-mV-L0m"/>
+                        <outlet property="athleteImage" destination="f72-nJ-2jG" id="EfH-Ke-6Ti"/>
+                        <outlet property="athleteSpecs" destination="PsL-vB-rPc" id="849-jo-aaX"/>
+                        <outlet property="athleteStory" destination="6ie-yF-so9" id="Al1-FL-5PE"/>
                         <outlet property="teamNameLabel" destination="9nv-uj-28E" id="wMa-DI-h3t"/>
                     </connections>
                 </viewController>
@@ -9126,14 +9151,22 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bio Available" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YVx-gt-jkc">
+                                        <rect key="frame" x="20" y="195" width="280" height="269"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="athleteImage" destination="BZK-2O-t67" id="01P-rF-DoG"/>
-                        <outlet property="athleteSpecs" destination="cvQ-mP-s66" id="GVq-UZ-9BW"/>
+                        <outlet property="athleteImage" destination="BZK-2O-t67" id="LVP-uG-HPw"/>
+                        <outlet property="athleteSpecs" destination="cvQ-mP-s66" id="Nua-iF-mcb"/>
+                        <outlet property="athleteStory" destination="YVx-gt-jkc" id="NFj-8L-Ram"/>
                         <outlet property="teamNameLabel" destination="wa0-za-5fZ" id="rnb-Av-q0i"/>
                     </connections>
                 </viewController>
@@ -9223,14 +9256,22 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Bio Available" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vnX-it-hcg">
+                                        <rect key="frame" x="20" y="195" width="280" height="269"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="athleteImage" destination="7cG-nj-PZd" id="8ec-6F-uBt"/>
-                        <outlet property="athleteSpecs" destination="2ok-kQ-FHV" id="As0-8J-WJt"/>
+                        <outlet property="athleteImage" destination="7cG-nj-PZd" id="QaL-XY-Q0w"/>
+                        <outlet property="athleteSpecs" destination="2ok-kQ-FHV" id="G8y-Nh-yoU"/>
+                        <outlet property="athleteStory" destination="vnX-it-hcg" id="jaV-co-lIa"/>
                         <outlet property="teamNameLabel" destination="lkr-nj-8Bx" id="Q8H-b2-E2l"/>
                     </connections>
                 </viewController>
@@ -9404,7 +9445,7 @@
             <objects>
                 <tableViewController id="fKQ-XT-a8R" customClass="ScheduleTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="117" sectionHeaderHeight="22" sectionFooterHeight="22" id="kW0-X8-58G">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -9574,7 +9615,7 @@
             <objects>
                 <viewController id="GKy-tp-P0w" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="57b-P4-25T">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9IX-Zo-hrc">
                             <size key="itemSize" width="230" height="159"/>
@@ -12621,44 +12662,44 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="xnd-Wf-AnJ"/>
-        <segue reference="6ox-vb-Wn0"/>
-        <segue reference="17k-bi-cGE"/>
-        <segue reference="nz0-8Y-JHX"/>
-        <segue reference="7bm-gT-qhD"/>
-        <segue reference="uAu-mg-N7y"/>
-        <segue reference="sQv-Q6-vTb"/>
-        <segue reference="NC4-rH-UbV"/>
-        <segue reference="A5n-Vx-AYr"/>
+        <segue reference="72q-0R-X8d"/>
+        <segue reference="tO6-pd-jeH"/>
+        <segue reference="Udu-p2-qEL"/>
+        <segue reference="II4-L4-Ic5"/>
+        <segue reference="1cP-Of-ahw"/>
+        <segue reference="aOv-SL-9e3"/>
+        <segue reference="jfE-Ml-3tJ"/>
+        <segue reference="34r-ir-Qsr"/>
+        <segue reference="dcF-hv-hmo"/>
+        <segue reference="1YT-yN-vOm"/>
+        <segue reference="jWr-1m-8Ix"/>
         <segue reference="YXV-nd-LZJ"/>
         <segue reference="ohy-EF-KnQ"/>
         <segue reference="9eF-9v-H2L"/>
-        <segue reference="II4-L4-Ic5"/>
-        <segue reference="tO6-pd-jeH"/>
-        <segue reference="Udu-p2-qEL"/>
-        <segue reference="72q-0R-X8d"/>
-        <segue reference="0x1-we-ra9"/>
+        <segue reference="NC4-rH-UbV"/>
+        <segue reference="uAu-mg-N7y"/>
+        <segue reference="sQv-Q6-vTb"/>
+        <segue reference="7bm-gT-qhD"/>
+        <segue reference="Aes-WL-c55"/>
+        <segue reference="xnd-Wf-AnJ"/>
+        <segue reference="SyN-pK-eu1"/>
         <segue reference="H6u-hk-R8X"/>
         <segue reference="C6f-BF-Oyy"/>
         <segue reference="Z5J-qO-EM6"/>
-        <segue reference="SyN-pK-eu1"/>
+        <segue reference="xTh-kW-qs2"/>
+        <segue reference="SHg-x4-5kI"/>
         <segue reference="cVc-Kz-KS9"/>
-        <segue reference="c1b-4N-uij"/>
-        <segue reference="VyF-zp-8Pr"/>
-        <segue reference="q5V-pM-u53"/>
-        <segue reference="yCL-Xr-dJB"/>
+        <segue reference="A5n-Vx-AYr"/>
         <segue reference="zKd-1U-8sy"/>
-        <segue reference="dcF-hv-hmo"/>
-        <segue reference="aOv-SL-9e3"/>
-        <segue reference="jfE-Ml-3tJ"/>
-        <segue reference="1YT-yN-vOm"/>
-        <segue reference="1cP-Of-ahw"/>
-        <segue reference="34r-ir-Qsr"/>
-        <segue reference="jWr-1m-8Ix"/>
+        <segue reference="yCL-Xr-dJB"/>
+        <segue reference="17k-bi-cGE"/>
+        <segue reference="6ox-vb-Wn0"/>
+        <segue reference="nz0-8Y-JHX"/>
         <segue reference="nTE-8S-LGK"/>
         <segue reference="Sjg-E2-yMw"/>
+        <segue reference="8nJ-cb-89J"/>
         <segue reference="p5M-4L-Nze"/>
-        <segue reference="Aes-WL-c55"/>
         <segue reference="s1A-Nn-PRF"/>
+        <segue reference="cpS-pz-z9e"/>
     </inferredMetricsTieBreakers>
 </document>
