@@ -7,7 +7,9 @@
 //
 
 #import "ScheduleViewController.h"
+#import "TeamViewController.h"
 #import "ScheduleTVC.h"
+#import "GetSchedule.h"
 
 @interface ScheduleViewController ()
 
@@ -28,6 +30,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self.teamNameLabel setText:self.teamName];
+    NSLog(@"%@ sched",self.incommingTeamURL);
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,26 +41,33 @@
     // Dispose of any resources that can be recreated.
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"footballSchedule"]) {
+    if ([segue.identifier isEqualToString:@"back2TVC"])
+    {
         
-        if([segue.destinationViewController isKindOfClass:[ScheduleTVC class]]){
-            ScheduleTVC *sTmp = (ScheduleTVC *)segue.destinationViewController;
-            sTmp.teamName = @"Football";
-            NSLog(@"inhere");
-            //[segue.destinationViewController setTeamName:self.teamName];
+        if([segue.destinationViewController isKindOfClass:[TeamViewController class]])
+        {
+            
+			TeamViewController *sVC = (TeamViewController *)segue.destinationViewController;
+            sVC.incommingTeamURL = self.incommingTeamURL;
+            sVC.longForm = self.longForm;
+            sVC.haveRoster = self.haveRoster;
+            sVC.teamName = self.teamName;
+            sVC.backgroundImagePath = self.backgroundImagePath;
+            
         }
     
-    }
-    else if ([segue.identifier isEqualToString:@"mensSwimSchedule"]) {
+    }else if ([segue.identifier isEqualToString:@"embedSchedule"]){
         
         if([segue.destinationViewController isKindOfClass:[ScheduleTVC class]]){
-            ScheduleTVC *sTmp = (ScheduleTVC *)segue.destinationViewController;
-            sTmp.teamName = @"Mens Swimming and Diving";
-            NSLog(@"inhere");
-            //[segue.destinationViewController setTeamName:self.teamName];
+            
+            ScheduleTVC *sTVC = (ScheduleTVC *)segue.destinationViewController;
+            
+            sTVC.schedURL = self.schedURL;
+            
         }
-        
     }
+    
+    
 }
 
 @end
