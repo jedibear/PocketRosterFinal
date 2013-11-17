@@ -232,6 +232,9 @@
 		CFE1F8E018303DF600E8BD9E /* GetSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1F8DF18303DF600E8BD9E /* GetSchedule.m */; };
 		CFE1F8E4183674C400E8BD9E /* HomeBearLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8E3183674C400E8BD9E /* HomeBearLogo.png */; };
 		CFE1F8E61836758B00E8BD9E /* FavsB.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8E51836758B00E8BD9E /* FavsB.png */; };
+		CFE1F92C1838302100E8BD9E /* CreditsBackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F92B1838302100E8BD9E /* CreditsBackButton.png */; };
+		CFE1F92E1838303000E8BD9E /* CreditsBack.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F92D1838303000E8BD9E /* CreditsBack.png */; };
+		CFE1F930183830D800E8BD9E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F92F183830D800E8BD9E /* info.png */; };
 		CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFA17FE448B0071814C /* OldIcon.png */; };
 /* End PBXBuildFile section */
 
@@ -510,6 +513,9 @@
 		CFE1F8DF18303DF600E8BD9E /* GetSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSchedule.m; sourceTree = "<group>"; };
 		CFE1F8E3183674C400E8BD9E /* HomeBearLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBearLogo.png; sourceTree = "<group>"; };
 		CFE1F8E51836758B00E8BD9E /* FavsB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavsB.png; sourceTree = "<group>"; };
+		CFE1F92B1838302100E8BD9E /* CreditsBackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsBackButton.png; sourceTree = "<group>"; };
+		CFE1F92D1838303000E8BD9E /* CreditsBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsBack.png; sourceTree = "<group>"; };
+		CFE1F92F183830D800E8BD9E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		CFF5ECFA17FE448B0071814C /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OldIcon.png; path = "Pocket Roster/OldIcon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -827,6 +833,9 @@
 		CF6568C5171782B700AE84AC = {
 			isa = PBXGroup;
 			children = (
+				CFE1F92F183830D800E8BD9E /* info.png */,
+				CFE1F92D1838303000E8BD9E /* CreditsBack.png */,
+				CFE1F92B1838302100E8BD9E /* CreditsBackButton.png */,
 				CF024E2E1816307F00F9CF54 /* icon.png */,
 				CF024E2C18162E3100F9CF54 /* icon2.png */,
 				CFF5ECFA17FE448B0071814C /* OldIcon.png */,
@@ -1101,6 +1110,7 @@
 				1EBB3DF217223EF40032238C /* winter-quad-266.jpg in Resources */,
 				CFE1F8D6182EEB4E00E8BD9E /* WSquash.jpg in Resources */,
 				1EBB3DF317223EF40032238C /* Bowdoin_College_Quad_308x150.jpg in Resources */,
+				CFE1F930183830D800E8BD9E /* info.png in Resources */,
 				1E2F1772172881B80023515F /* mensCrew.jpg in Resources */,
 				1E2F1773172881B80023515F /* mensGolf.jpg in Resources */,
 				1E2F1774172881B80023515F /* mensRugby.jpg in Resources */,
@@ -1166,7 +1176,9 @@
 				CF247ABB173C32940079AD32 /* WTennisFinal.png in Resources */,
 				CF247ABD173C32A70079AD32 /* WVoleyFinal.png in Resources */,
 				CF247ABF173C32B40079AD32 /* WSoftballFinal.png in Resources */,
+				CFE1F92E1838303000E8BD9E /* CreditsBack.png in Resources */,
 				CF247ADB173D8C280079AD32 /* BMenFinal.png in Resources */,
+				CFE1F92C1838302100E8BD9E /* CreditsBackButton.png in Resources */,
 				CF247ADD173D8C2C0079AD32 /* BWomenFinal.png in Resources */,
 				CFE1F8C0182EEB4E00E8BD9E /* MCrossCountry.jpg in Resources */,
 				CF247AE3173D8D0D0079AD32 /* BClubFinal.png in Resources */,

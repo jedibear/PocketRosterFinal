@@ -61,8 +61,9 @@
         if([segue.destinationViewController isKindOfClass:[ScheduleTVC class]]){
             
             ScheduleTVC *sTVC = (ScheduleTVC *)segue.destinationViewController;
-            
+            /**
             sTVC.schedURL = self.schedURL;
+             */
         }
     }
     
