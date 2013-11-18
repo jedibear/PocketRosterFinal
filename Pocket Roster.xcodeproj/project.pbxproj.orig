@@ -1090,11 +1090,14 @@
 				CF6568EC171782B700AE84AC /* MainStoryboard.storyboard */,
 				CF6568EF171782B700AE84AC /* Pocket_RosterViewController.h */,
 				CF6568F0171782B700AE84AC /* Pocket_RosterViewController.m */,
+<<<<<<< HEAD
+=======
 				CF65691E171795E800AE84AC /* ImageViewController.h */,
 				CF65691F171795E800AE84AC /* ImageViewController.m */,
 				CFE1F9BA1839EA7C00E8BD9E /* Club Background Images */,
 				CFE1F9431839DAD000E8BD9E /* BackImagesPhoto */,
 				CFE1F9401839DAA200E8BD9E /* BackImagesSchedule */,
+>>>>>>> 3bebfe3b584641741cdf28d172ab9c07ad07ff6c
 				CFE1F89E182EE78700E8BD9E /* BackgroundImages */,
 				CF6568DB171782B700AE84AC /* Supporting Files */,
 			);
