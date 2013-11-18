@@ -9,6 +9,7 @@
 #import "CoachesTVC.h"
 #import "GetCoaches.h"
 #import "CoachesCell.h"
+#import "CoachesBioViewController.h"
 
 @interface CoachesTVC ()
 
@@ -66,16 +67,51 @@
     
     NSString *key = [[NSString alloc] initWithFormat:@"%ld", (long)[indexPath row]];
     
-    NSMutableArray *details = [self.coaches objectForKey:key];
+    NSMutableDictionary *details = [self.coaches objectForKey:key];
     
-    cell.coachesName.text = [details objectAtIndex:0];
-    cell.coachesPosition.text = [details objectAtIndex:2];
-    cell.coachesPhone.text = [details objectAtIndex:3];
-    cell.coachesEmail.text = [details objectAtIndex:4];
+    cell.coachesName.text = [details objectForKey:@"name"];
+    cell.coachPic.image = [details objectForKey:@"image"];
+    cell.coachesPosition.text = [details objectForKey:@"position"];
+    
     // Configure the cell...
     
     
     return cell;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([sender isKindOfClass:[UITableViewCell class]]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        //RosterCell *cell = sender;
+        if(indexPath){
+            
+            if ([segue.identifier isEqualToString:@"coachBio"]) {
+                if ([segue.destinationViewController isKindOfClass:[CoachesBioViewController class]]) {
+                    
+                    CoachesBioViewController *rAVC = (CoachesBioViewController *)segue.destinationViewController;
+                    
+                    NSString *key = [[NSString alloc] initWithFormat:@"%ld", (long)[indexPath row]];
+                    NSMutableDictionary *athleteObjects = [self.coaches objectForKey:key];
+                    
+                    
+                    rAVC.athleteName = [athleteObjects objectForKey:@"name"];
+                    
+                    
+                    
+                    rAVC.bio = [athleteObjects objectForKey:@"bio"];
+                    rAVC.athleteImageInput = [athleteObjects objectForKey:@"image"];
+                    rAVC.incommingURL = self.coachesURL;
+                    rAVC.haveRoster = self.haveRoster;
+                    rAVC.roster = self.roster;
+                    rAVC.teamName = self.teamName;
+                    rAVC.longForm = self.longForm;
+                    rAVC.incommingTeamURL = self.incommingTeamURL;
+                    rAVC.backgroundImagePath = self.backgroundImagePath;
+                }
+            }
+            
+        }
+    }
 }
 
 /*

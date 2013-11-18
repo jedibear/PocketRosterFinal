@@ -1,15 +1,14 @@
 //
-//  RosterAthleteViewController.h
+//  CoachesBioViewController.h
 //  Pocket Roster
 //
-//  Created by James P. Garvey on 11/12/13.
+//  Created by James P. Garvey on 11/17/13.
 //  Copyright (c) 2013 Pocket Roster. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "RosterBioScrollView.h"
 
-@interface RosterAthleteViewController : UIViewController
+@interface CoachesBioViewController : UIViewController
 
 @property (nonatomic) NSString *incommingURL;
 @property (nonatomic) BOOL *longForm, *haveRoster, *hasBioStory;
@@ -24,9 +23,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *athleteSpecs;
 @property (strong, nonatomic) IBOutlet UILabel *athleteStory;
 
-@property (strong, nonatomic) IBOutlet RosterBioScrollView *bioScrollView;
-@property (strong, nonatomic) IBOutlet UITextView *bioTextHolder;
 
+@property (strong, nonatomic) IBOutlet UITextView *bioTextHolder;
 
 
 @end

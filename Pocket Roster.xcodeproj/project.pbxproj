@@ -12,6 +12,7 @@
 		1E11F673183950D00091E8C2 /* RosterAthleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F672183950D00091E8C2 /* RosterAthleteViewController.m */; };
 		1E11F676183950EB0091E8C2 /* CoachesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F675183950EB0091E8C2 /* CoachesCell.m */; };
 		1E11F678183954640091E8C2 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F677183954640091E8C2 /* ScheduleViewController.m */; };
+		1E11F67D183998630091E8C2 /* CoachesBioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F67C183998630091E8C2 /* CoachesBioViewController.m */; };
 		1E18AACC174002A200AFA86F /* BowdoinNews.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E18AACB174002A200AFA86F /* BowdoinNews.png */; };
 		1E2F1772172881B80023515F /* mensCrew.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F176C172881B70023515F /* mensCrew.jpg */; };
 		1E2F1773172881B80023515F /* mensGolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F176D172881B70023515F /* mensGolf.jpg */; };
@@ -260,6 +261,8 @@
 		1E11F674183950EB0091E8C2 /* CoachesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoachesCell.h; sourceTree = "<group>"; };
 		1E11F675183950EB0091E8C2 /* CoachesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoachesCell.m; sourceTree = "<group>"; };
 		1E11F677183954640091E8C2 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		1E11F67B183998630091E8C2 /* CoachesBioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoachesBioViewController.h; sourceTree = "<group>"; };
+		1E11F67C183998630091E8C2 /* CoachesBioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoachesBioViewController.m; sourceTree = "<group>"; };
 		1E18AACB174002A200AFA86F /* BowdoinNews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinNews.png; sourceTree = "<group>"; };
 		1E2F176C172881B70023515F /* mensCrew.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensCrew.jpg; sourceTree = "<group>"; };
 		1E2F176D172881B70023515F /* mensGolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensGolf.jpg; sourceTree = "<group>"; };
@@ -658,6 +661,8 @@
 				1E11F674183950EB0091E8C2 /* CoachesCell.h */,
 				1E11F675183950EB0091E8C2 /* CoachesCell.m */,
 				1EFDFEBA1830419600DAF6A4 /* CoachesTVC.h */,
+				1E11F67B183998630091E8C2 /* CoachesBioViewController.h */,
+				1E11F67C183998630091E8C2 /* CoachesBioViewController.m */,
 				1EFDFEBB1830419600DAF6A4 /* CoachesTVC.m */,
 				1EFDFEB71830414C00DAF6A4 /* CoachesViewController.h */,
 				1EFDFEB81830414C00DAF6A4 /* CoachesViewController.m */,
@@ -1281,6 +1286,7 @@
 				1EFDFEC8183041C300DAF6A4 /* RecordsViewController.m in Sources */,
 				1EB48ADB1835F84800C42B5C /* ScoreboardViewController.m in Sources */,
 				1E2F177A172883550023515F /* ScheduleCell.m in Sources */,
+				1E11F67D183998630091E8C2 /* CoachesBioViewController.m in Sources */,
 				1E2F177D1728837D0023515F /* ScheduleTVC.m in Sources */,
 				CF247A75173C0B8D0079AD32 /* PersonalAccount.m in Sources */,
 				1E11F676183950EB0091E8C2 /* CoachesCell.m in Sources */,

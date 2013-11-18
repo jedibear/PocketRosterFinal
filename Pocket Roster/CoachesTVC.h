@@ -10,8 +10,10 @@
 
 @interface CoachesTVC : UITableViewController
 
-@property (nonatomic) NSString *coachesURL;
+@property (nonatomic) NSString *coachesURL, *teamName, *backgroundImagePath, *incommingTeamURL;
+@property (nonatomic) BOOL *haveRoster, *longForm;
+@property (nonatomic) NSMutableDictionary *coaches, *roster;
 
-@property (nonatomic) NSMutableDictionary *coaches;
+
 
 @end

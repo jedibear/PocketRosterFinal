@@ -27,6 +27,8 @@
     NSString * htmlFromURL = [[NSString alloc] initWithData:dataFromURL encoding:NSASCIIStringEncoding];
     
     
+    NSString *baseURL = @"http://athletics.bowdoin.edu";
+    
     NSString *stringBreakdown;
     NSString *allCoachElements;
     
@@ -73,7 +75,7 @@
     
     NSScanner *scanner1 = [NSScanner scannerWithString:allCoachElements];
     
-    NSString *dummyCoachVariable;
+    //NSString *dummyCoachVariable;
     //[scanner scanUpToString:@"class=\"bio-title\">" intoString:nil];
     //[scanner scanUpToString:@"class=\"name" intoString:nil];
     //[scanner scanUpToString:@"class=\"name" intoString:nil];
@@ -87,7 +89,7 @@
         NSScanner *scanner = [[NSScanner alloc]initWithString:test];
         
         [scanner scanUpToString:@"class=\"bio-title\"" intoString:nil];
-         NSMutableArray *bowdoinCoachesElements = [NSMutableArray new];
+         NSMutableDictionary *bowdoinCoachesElements = [NSMutableDictionary new];
         
         [scanner scanUpToString:@"class=\"name" intoString:nil];
         [scanner scanUpToString:@">" intoString:nil];
@@ -97,18 +99,25 @@
         if (coachTitle)
         {
             // Adding Name
-            [bowdoinCoachesElements addObject:coachTitle];
+            [bowdoinCoachesElements setObject:coachTitle forKey:@"name"];
             // Adding Image
             [scanner scanUpToString:@"class=\"about" intoString:nil];
             [scanner scanUpToString:@"<img src=" intoString:nil];
             [scanner scanUpToString:@"\"" intoString:nil];
             [scanner scanUpToString:@"?" intoString:&coachImagePre];
-            coachImage = [coachImagePre substringFromIndex: dumbVariable];
+            coachImage = [baseURL stringByAppendingString:[coachImagePre substringFromIndex: dumbVariable]];
             NSLog(@"Coach's Image: %@", coachImage);
             
             if (coachImage)
             {
-                [bowdoinCoachesElements addObject:coachImage];
+                NSURL *imageURL = [[NSURL alloc] initWithString:coachImage];
+                NSData *imageData = [[NSData alloc]initWithContentsOfURL:imageURL];
+                UIImage *coachPic= [[UIImage alloc]initWithData:imageData];
+                [bowdoinCoachesElements setObject:coachPic forKey:@"image"];
+            }else{
+                NSLog(@"no bio photo");
+                UIImage *altPhoto = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"rosterPhotoMissing" ofType:@"jpg"]];
+                [bowdoinCoachesElements setObject:altPhoto forKey:@"image"];
             }
             
             // Add Position
@@ -120,7 +129,7 @@
             NSLog(@"Coach Position: %@", coachPosition);
             if (coachPosition)
             {
-                [bowdoinCoachesElements addObject:coachPosition];
+                [bowdoinCoachesElements setObject:coachPosition forKey:@"position"];
             }
             
             // Add Phone
@@ -132,7 +141,7 @@
             NSLog(@"Coach Phone Number: %@", coachPhone);
             if (coachPhone)
             {
-                [bowdoinCoachesElements addObject:coachPhone];
+                [bowdoinCoachesElements setObject:coachPhone forKey:@"phone"];
             }
             
             // Add email
@@ -146,8 +155,68 @@
             NSLog(@"Coaches Email: %@", coachEmail);
             if (coachEmail)
             {
-                [bowdoinCoachesElements addObject:coachEmail];
+                [bowdoinCoachesElements setObject:coachEmail forKey:@"email"];
             }
+            
+            
+            NSString *failSafe;
+            [scanner scanUpToString:@"<footer" intoString:&failSafe];
+            
+            if([failSafe rangeOfString:@"<div class=\"synopsis"].location != NSNotFound){
+                
+                
+                
+                NSScanner *desc = [[NSScanner alloc]initWithString:failSafe];
+                
+                
+                [desc scanUpToString:@"<div class=\"synopsis" intoString:nil];
+                [desc scanUpToString:@"<" intoString:nil];
+                
+                
+                NSString *whatIWant, *test, *tmpStr;
+                NSMutableArray *tmp = [[NSMutableArray alloc]init];
+                
+                
+                [desc scanUpToString:@"</div" intoString:&whatIWant];
+                
+                
+                NSScanner *lesGo = [[NSScanner alloc]initWithString:whatIWant];
+                
+                [lesGo scanUpToString:@"<p" intoString:nil];
+                [lesGo scanUpToString:@">" intoString:nil];
+                
+                
+                while ([lesGo scanUpToString:@"<" intoString:&test]) {
+                    
+                    if ([test rangeOfString:@"&"].location != NSNotFound) {
+                        NSScanner *sneakyBastard = [[NSScanner alloc]initWithString:test];
+                        
+                        NSMutableArray *stringElements = [[NSMutableArray alloc]init];
+                        while ([sneakyBastard scanUpToString:@"&" intoString:&tmpStr]) {
+                            
+                            [stringElements addObject:[tmpStr substringFromIndex:1]];
+                            [sneakyBastard scanUpToString:@";" intoString:nil];
+                        }
+                        if (stringElements) {
+                            
+                            [tmp addObject:[stringElements componentsJoinedByString:@" "]];
+                            
+                        }
+                        
+                    }else{
+                        [tmp addObject:[test substringFromIndex:1]];
+                    }
+                    
+                    
+                    
+                    [lesGo scanUpToString:@">" intoString:nil];
+                }
+                
+                NSString *final = [tmp componentsJoinedByString:@" "];
+                [bowdoinCoachesElements setObject:final forKey:@"bio"];
+            }
+            
+            
             
             [coaches setObject:bowdoinCoachesElements forKey:[NSString stringWithFormat:@"%d", key]];
             key++;

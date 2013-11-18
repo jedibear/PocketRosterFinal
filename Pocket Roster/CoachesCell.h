@@ -11,7 +11,7 @@
 @interface CoachesCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *coachesName;
 @property (strong, nonatomic) IBOutlet UILabel *coachesPosition;
-@property (strong, nonatomic) IBOutlet UILabel *coachesPhone;
-@property (strong, nonatomic) IBOutlet UILabel *coachesEmail;
+@property (strong, nonatomic) IBOutlet UIImageView *coachPic;
+
 
 @end

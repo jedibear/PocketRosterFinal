@@ -1,19 +1,19 @@
 //
-//  RosterAthleteViewController.m
+//  CoachesBioViewController.m
 //  Pocket Roster
 //
-//  Created by James P. Garvey on 11/12/13.
+//  Created by James P. Garvey on 11/17/13.
 //  Copyright (c) 2013 Pocket Roster. All rights reserved.
 //
 
-#import "RosterAthleteViewController.h"
-#import "RosterViewController.h"
+#import "CoachesBioViewController.h"
+#import "CoachesViewController.h"
 
-@interface RosterAthleteViewController ()
+@interface CoachesBioViewController ()
 
 @end
 
-@implementation RosterAthleteViewController
+@implementation CoachesBioViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,11 +27,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-   
+	// Do any additional setup after loading the view.
     
     [self.athleteImage setImage:self.athleteImageInput];
-    [self.bioScrollView addSubview:self.athleteImage];
+    
     
     [self.teamNameLabel setText:self.athleteName];
 	// Do any additional setup after loading the view.
@@ -39,7 +38,7 @@
     self.hasBioStory = NO;
     
     NSMutableArray *tmp = [[NSMutableArray alloc]init];
-
+    
     
     [self.bio enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop){
         if ([key isEqualToString:@"bio"]) {
@@ -47,7 +46,7 @@
             self.hasBioStory = YES;
             
         }else if (![key isEqualToString:@"image"]) {
-                        [tmp addObject:[NSString stringWithFormat:@"%@: %@", key, obj]];
+            [tmp addObject:[NSString stringWithFormat:@"%@: %@", key, obj]];
         }
     }];
     
@@ -59,8 +58,8 @@
     self.specs = [tmp componentsJoinedByString:@"\r"];
     
     [self.athleteSpecs setText:self.specs];
-    [self.bioScrollView addSubview:self.athleteSpecs];
-   
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,21 +69,21 @@
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"back2Roster"]) {
+    if ([segue.identifier isEqualToString:@"back2Coaches"]) {
         
-        if ([segue.destinationViewController isKindOfClass:[RosterViewController class]]) {
-            RosterViewController *rVC = (RosterViewController *)segue.destinationViewController;
+        if ([segue.destinationViewController isKindOfClass:[CoachesViewController class]]) {
+            CoachesViewController *rVC = (CoachesViewController *)segue.destinationViewController;
             
             rVC.incommingTeamURL = self.incommingTeamURL;
             rVC.longForm = self.longForm;
             rVC.haveRoster = self.haveRoster;
             rVC.backgroundImagePath = self.backgroundImagePath;
-            rVC.roster = self.roster;
+            rVC.teamRoster = self.roster;
             rVC.teamName = self.teamName;
+            rVC.coachesURL = self.incommingURL;
             
         }
     }
 }
-
 
 @end

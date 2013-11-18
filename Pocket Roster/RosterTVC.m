@@ -104,10 +104,6 @@
     
     if ([athleteObjects objectAtIndex:0]!=nil) {
         
-        
-        
-        
-        
         if([athleteObjects count] == 4){
             athleteName = [[NSString alloc]initWithFormat:@"%@    %@", [athleteObjects objectAtIndex:1], [athleteObjects objectAtIndex:2]];
             athleteDetails = [[NSString alloc]initWithFormat:@"%@", [athleteObjects objectAtIndex:3]];
