@@ -11,6 +11,11 @@
 
 @interface ImageViewController : UIViewController
 
-@property (nonatomic, strong) NSURL *imageURL;
+@property (nonatomic, strong) NSString *incommingURL;
+@property (strong, nonatomic) IBOutlet UIImageView *zoomedImage;
+@property (nonatomic) UIImage *incImage;
+@property (nonatomic) BOOL *imagesLoaded;
+
+@property (nonatomic) NSMutableArray *pictures;
 
 @end

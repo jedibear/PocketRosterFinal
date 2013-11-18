@@ -10,6 +10,6 @@
 
 
 @interface GetAlbums : NSObject
-+(void) getAllAlbums;
++(NSMutableDictionary *) getAllAlbums: (NSString *)linkForSearch;
 
 @end

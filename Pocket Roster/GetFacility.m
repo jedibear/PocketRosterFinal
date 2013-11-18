@@ -66,24 +66,39 @@
 
     
     NSScanner *megaScanner = [NSScanner scannerWithString:htmlFromURL];
-    [megaScanner scanUpToString:@"<div class=\"rich mobile-article clearfix" intoString:NULL];
+    [megaScanner scanUpToString:@"<div class=\"rich mobile-article clearfix" intoString:nil];
     [megaScanner scanUpToString:@"<div>" intoString:&entireFacilitiesHTML];
     
     NSScanner *scanner = [NSScanner scannerWithString:entireFacilitiesHTML];
     
     // For Name of facilities
     
-    [scanner scanUpToString:@"<strong" intoString:nil];
-    [scanner scanUpToString:@">" intoString:nil];
-    [scanner scanUpToString:@"</strong>" intoString:&facilityNamePre];
-    facilityName = [facilityNamePre substringFromIndex: dumbVariable];
-    NSLog(@"Facility Name: %@", facilityName);
+
+    
         
-                if ( ![facilityName isEqual: NULL])
-                {
-                    numberOfElements++;
-                    [facility setObject:facilityName forKey:@"Name"];
-                }
+    if ([entireFacilitiesHTML rangeOfString:@"<h2 class=\"article-title"].location != NSNotFound){
+        
+        [scanner scanUpToString:@"<h2 class=\"article-title" intoString:nil];
+        [scanner scanUpToString:@">" intoString:nil];
+        [scanner scanUpToString:@"</h2>" intoString:&facilityNamePre];
+        
+        facilityName = [facilityNamePre substringFromIndex: dumbVariable];
+        NSLog(@"Facility Name: %@", facilityName);
+        numberOfElements++;
+        [facility setObject:facilityName forKey:@"Name"];
+        
+        
+    }else{
+        
+        [scanner scanUpToString:@"<strong" intoString:nil];
+        [scanner scanUpToString:@">" intoString:nil];
+        [scanner scanUpToString:@"</strong>" intoString:&facilityNamePre];
+        
+        facilityName = [facilityNamePre substringFromIndex: dumbVariable];
+        NSLog(@"Facility Name: %@", facilityName);
+        numberOfElements++;
+        [facility setObject:facilityName forKey:@"Name"];
+    }
     //Gets the initial writing paragraph
 
     [scanner scanUpToString:@"<p" intoString:nil];

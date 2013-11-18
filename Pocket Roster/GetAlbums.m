@@ -12,17 +12,19 @@
 
 
 
-+(void) getAllAlbums
-{
-    //NSString *urlStr = @"http://athletics.bowdoin.edu/landing/index";
-    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/mswimdive/index";
-    NSURL *theURL = [[NSURL alloc] initWithString:urlStr];
++(NSMutableDictionary *) getAllAlbums: (NSString *)linkForSearch{
+    NSLog(@"%@here2",linkForSearch);
+   
+    NSURL *theURL = [[NSURL alloc] initWithString:linkForSearch];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:theURL];
     
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    [request setURL:theURL];
+    NSError *error;
+    NSData *dataFromURL = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:&error];
     
-    NSData *dataFromURL = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:NULL];
-    
+    if(error){
+        NSLog(@"there was an error");
+    }
+
     //get the data from the web page
     NSString * htmlFromURL = [[NSString alloc] initWithData:dataFromURL encoding:NSASCIIStringEncoding];
     
@@ -35,10 +37,11 @@
     NSString *albumTitle1Final;
     int dumbVariable = 1;
     int dumbVariable2 = 2;
+    int key = 1;
     
+   
+    NSMutableDictionary *albums = [NSMutableDictionary new];
     
-    NSMutableArray *teamLinks = [NSMutableArray new];
-    NSMutableArray *albumTitles = [NSMutableArray new];
     
     /**
      ********************************
@@ -59,9 +62,8 @@
     
     NSScanner *linkScanner = [NSScanner scannerWithString:photoLinkBunch];
     
-    while ([linkScanner scanUpToString:@"<a href=" intoString:NULL])
-        
-    {
+    while ([linkScanner scanUpToString:@"<a href=" intoString:nil]){
+        NSMutableDictionary *albumDetails = [NSMutableDictionary new];
         NSMutableString *startURL = [[NSMutableString alloc] initWithString:@"http://athletics.bowdoin.edu"];
         
         [linkScanner scanUpToString:@"<a href=" intoString:NULL];
@@ -72,23 +74,26 @@
         [startURL appendString: photoAlbum1Final];
         
         
-        [linkScanner scanUpToString:@"</a>" intoString:&albumTitle1];
+        [linkScanner scanUpToString:@"</a" intoString:&albumTitle1];
         albumTitle1Final = [albumTitle1 substringFromIndex: dumbVariable2];
         
         
         if (photoAlbum1Final)
         {
-            [teamLinks addObject:startURL];
+            [albumDetails setObject:startURL forKey:@"link"];
             NSLog(@"This is the album Title: %@", startURL);
             
-            [albumTitles addObject:albumTitle1Final];
+            [albumDetails setObject:albumTitle1Final forKey:@"title"];
             NSLog(@"This is the album Title: %@", albumTitle1Final);
             
+            [albums setObject:albumDetails forKey:[NSString stringWithFormat:@"%d", key]];
+            key++;
         }
         
+        [linkScanner scanUpToString:@">" intoString:nil];
     }
     
-    
+    return albums;
 }
 
 @end
