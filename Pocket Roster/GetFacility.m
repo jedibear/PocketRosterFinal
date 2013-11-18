@@ -16,12 +16,10 @@
 
 
 
-//+ (NSMutableDictionary *) GetFacility: (NSString *) linkForURLSearch
-+(void) GetFacility
-{
++ (NSMutableDictionary *) GetFacility: (NSString *) linkForURLSearch{
 
-    NSString *urlStr = @"http://athletics.bowdoin.edu/information/facilities/files/golf";
-    NSURL *theURL = [[NSURL alloc] initWithString:urlStr];
+    
+    NSURL *theURL = [[NSURL alloc] initWithString:linkForURLSearch];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:theURL];
@@ -37,8 +35,8 @@
 
     NSString *entireFacilitiesHTML;
     
-    NSString *facilityName;
-    NSString *facilityNamePre;
+    NSString *facilityName, *facilityNamePre;
+    NSString *baseURL = @"http://athletics.bowdoin.edu";
 
     NSString *writingForFacilitiesPre;
     NSString *writingForFacilitiesPre2;
@@ -48,6 +46,8 @@
     NSString *imageVariable;
     NSString *imageVariablePre;
     
+    NSMutableDictionary *facility = [NSMutableDictionary new];
+    
     int dumbVariable = 1;
     int numberOfElements = 0;
     
@@ -56,7 +56,7 @@
      *   This is for all the elements in the schedule  *
      ***************************************************
      */
-    NSMutableArray *allfacilitiesElements = [NSMutableArray new];
+    NSMutableArray *allfacilitiesImages = [NSMutableArray new];
     
     /**
      ***************************************
@@ -82,7 +82,7 @@
                 if ( ![facilityName isEqual: NULL])
                 {
                     numberOfElements++;
-                    [allfacilitiesElements addObject:facilityName];
+                    [facility setObject:facilityName forKey:@"Name"];
                 }
     //Gets the initial writing paragraph
 
@@ -103,12 +103,57 @@
         if ([writingForFacilitiesPre rangeOfString:@"<a href"].location != NSNotFound)
         {
             NSString *dummyString = writingForFacilitiesPre;
+            NSString *tmpStr;
             
             NSScanner *miniScanner = [NSScanner scannerWithString:dummyString];
+            
+            
             [miniScanner scanUpToString:@"<a href" intoString:&writingForFacilitiesPre2];
+            
+            if ([writingForFacilitiesPre2 rangeOfString:@"&"].location != NSNotFound) {
+                NSScanner *sneakyBastard = [[NSScanner alloc]initWithString:writingForFacilitiesPre2];
+                
+                NSMutableArray *stringElements = [[NSMutableArray alloc]init];
+                while ([sneakyBastard scanUpToString:@"&" intoString:&tmpStr]) {
+                    
+                    if ([[tmpStr substringToIndex:1]isEqualToString:@";"]) {
+                        tmpStr = [tmpStr substringToIndex:1];
+                    }
+                    [stringElements addObject:tmpStr];
+                    [sneakyBastard scanUpToString:@";" intoString:nil];
+                }
+                if (stringElements) {
+                    
+                    writingForFacilitiesPre2 = [stringElements componentsJoinedByString:@" "];
+                    
+                }
+                
+            }
+            
             [writingForFacilities appendString: writingForFacilitiesPre2];
             [miniScanner scanUpToString:@">" intoString:nil];
             [miniScanner scanUpToString:@"</a>" intoString:&writingForFacilitiesPre2];
+            
+            if ([writingForFacilitiesPre2 rangeOfString:@"&"].location != NSNotFound) {
+                NSScanner *sneakyBastard = [[NSScanner alloc]initWithString:writingForFacilitiesPre2];
+                
+                NSMutableArray *stringElements = [[NSMutableArray alloc]init];
+                while ([sneakyBastard scanUpToString:@"&" intoString:&tmpStr]) {
+                    
+                    if ([[tmpStr substringToIndex:1]isEqualToString:@";"]) {
+                        tmpStr = [tmpStr substringToIndex:1];
+                    }
+                    [stringElements addObject:tmpStr];
+                    [sneakyBastard scanUpToString:@";" intoString:nil];
+                }
+                if (stringElements) {
+                    
+                    writingForFacilitiesPre2 = [stringElements componentsJoinedByString:@" "];
+                    
+                }
+                
+            }
+            
             writingForFacilitiesPre3 = [writingForFacilitiesPre2 substringFromIndex: dumbVariable];
             [writingForFacilities appendString: writingForFacilitiesPre3];
             NSLog(@"Facility Total Writing (IN IF): %@", writingForFacilities);
@@ -120,30 +165,58 @@
         else
         {
             writingForFacilitiesPre2 = [writingForFacilitiesPre substringFromIndex: dumbVariable];
+            
+            if ([writingForFacilitiesPre2 rangeOfString:@"&"].location != NSNotFound) {
+                NSScanner *sneakyBastard = [[NSScanner alloc]initWithString:writingForFacilitiesPre2];
+                NSString *tmpStr;
+                NSMutableArray *stringElements = [[NSMutableArray alloc]init];
+                while ([sneakyBastard scanUpToString:@"&" intoString:&tmpStr]) {
+                    
+                    [stringElements addObject:[tmpStr substringFromIndex:1]];
+                    [sneakyBastard scanUpToString:@";" intoString:nil];
+                }
+                if (stringElements) {
+                    
+                    writingForFacilitiesPre2 = [stringElements componentsJoinedByString:@" "];
+                    
+                }
+                
+            }
+            
+            
             [writingForFacilities appendString: writingForFacilitiesPre2];
             NSLog(@"Facility Total Writing (IN ELSE): %@", writingForFacilities);
             [scanner scanUpToString:@"<p" intoString:nil];
             [scanner scanUpToString:@">" intoString:nil];
             [scanner scanUpToString:@"</p>" intoString:&writingForFacilitiesPre];
+            writingForFacilitiesPre = [writingForFacilitiesPre substringFromIndex:1];
         }
     }
-     //NSScanner *soloScanner = [NSScanner scannerWithString:writingForFacilitiesPre];
-    //[soloScanner scanUpToString:@"src=" intoString:&writingForFacilitiesPre2];
-    for(int i = 0; i < 10; i++)
-    {
-        [scanner scanUpToString:@"src=" intoString:&checkVariable];
+    
+    
+    [facility setObject:writingForFacilities forKey:@"facilitiesText"];
+    
+    
+    while ([scanner scanUpToString:@"src=" intoString:&checkVariable]) {
+        
         
         if ([writingForFacilitiesPre rangeOfString:@"<footer class="].location == NSNotFound)
         {
 
             [scanner scanUpToString:@"\"" intoString:nil];
             [scanner scanUpToString:@"?" intoString:&imageVariablePre];
-            facilityName = [imageVariablePre substringFromIndex: dumbVariable];
+            imageVariable = [imageVariablePre substringFromIndex: dumbVariable];
         
-            if( ![imageVariable isEqual: NULL])
+            if(imageVariable)
             {
                 numberOfElements++;
-                [allfacilitiesElements addObject:facilityName];
+                NSURL *imageURL = [[NSURL alloc] initWithString:[baseURL stringByAppendingString:imageVariable]];
+                NSData *imageData = [[NSData alloc]initWithContentsOfURL:imageURL];
+                UIImage *image = [[UIImage alloc]initWithData:imageData];
+                
+                if(image){
+                    [allfacilitiesImages addObject:image];
+                }
                 NSLog(@"Number of Images: %d", numberOfElements);
 
                 NSLog(@"Image Name: %@", facilityName);
@@ -151,6 +224,7 @@
             [scanner scanUpToString:@"<p>" intoString:nil];
         }
     }
-
+    [facility setObject:allfacilitiesImages forKey:@"images"];
+    return facility;
 }
 @end

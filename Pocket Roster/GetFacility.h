@@ -14,8 +14,7 @@
 
 
 
-//+(NSMutableDictionary *) GetFacility.h: (NSString *) linkForURLSearch;
-//This method is just for testing while I can push 
-+(void) GetFacility;
++(NSMutableDictionary *) GetFacility: (NSString *) linkForURLSearch;
+
 
 @end

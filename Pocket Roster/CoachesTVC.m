@@ -98,7 +98,7 @@
                     
                     
                     
-                    rAVC.bio = [athleteObjects objectForKey:@"bio"];
+                    rAVC.bio = athleteObjects;
                     rAVC.athleteImageInput = [athleteObjects objectForKey:@"image"];
                     rAVC.incommingURL = self.coachesURL;
                     rAVC.haveRoster = self.haveRoster;

@@ -9,6 +9,7 @@
 #import "FacilitiesViewController.h"
 #import "TeamViewController.h"
 #import "FacilitiesTVC.h"
+#import "GetFacility.h"
 
 @interface FacilitiesViewController ()
 
@@ -30,7 +31,16 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    self.imageIndex = 0;
+    
     [self.teamNameLabel setText:self.teamName];
+    
+    self.facility = [GetFacility GetFacility:self.facilitiesURL];
+    self.images = [self.facility objectForKey:@"images"];
+    [self.facilityName setText:[self.facility objectForKey:@"Name"]];
+    [self.facilityImage setImage:[self.images objectAtIndex:self.imageIndex]];
+    [self.facilityText setText:[self.facility objectForKey:@"facilitiesText"]];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -82,4 +92,32 @@
     }
 }
 
+- (IBAction)nextImage:(UIButton *)sender {
+    
+    
+    int index = self.imageIndex;
+    NSLog(@"%dNEXT",index);
+    if (index == [self.images count]-1) {
+        self.imageIndex = 0;
+    }else{
+        self.imageIndex = index+1;
+    }
+    
+    [self.facilityImage setImage:[self.images objectAtIndex:self.imageIndex]];
+    
+}
+
+- (IBAction)previousImage:(UIButton *)sender {
+    
+    int index = self.imageIndex;
+    NSLog(@"%dPREV", index);
+    if (index == 0) {
+        self.imageIndex = [self.images count]-1;
+    }else{
+        self.imageIndex = index - 1;
+    }
+    
+    [self.facilityImage setImage:[self.images objectAtIndex:self.imageIndex]];
+    
+}
 @end

@@ -13,9 +13,16 @@
 @property (nonatomic) NSString *facilitiesURL, *incommingTeamURL, *teamName;
 @property (nonatomic) NSString *backgroundImagePath;
 @property (nonatomic) BOOL *longForm, *haveRoster;
-@property (nonatomic) NSMutableDictionary *teamRoster;
+@property (nonatomic) NSMutableDictionary *teamRoster, *facility;
+@property (nonatomic) NSMutableArray *images;
+@property (nonatomic) NSUInteger *imageIndex;
 
 @property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *facilityName;
 
+@property (strong, nonatomic) IBOutlet UIImageView *facilityImage;
+@property (strong, nonatomic) IBOutlet UITextView *facilityText;
+- (IBAction)nextImage:(UIButton *)sender;
+- (IBAction)previousImage:(UIButton *)sender;
 
 @end

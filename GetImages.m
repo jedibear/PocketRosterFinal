@@ -14,7 +14,7 @@
 +(void) getMostRecentImages
 {
     
-    NSString *urlStr = @"http://athletics.bowdoin.edu/sports/mswimdive/team_photos/Men-s_Swimming_Team_Photos_Archive";
+    NSString *urlStr = @"http://athletics.bowdoin.edu/landing/index";
     NSURL *theURL = [[NSURL alloc] initWithString:urlStr];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -25,52 +25,138 @@
     //get the data from the web page
     NSString * htmlFromURL = [[NSString alloc] initWithData:dataFromURL encoding:NSASCIIStringEncoding];
     
+    
+    
+    NSString *photoLinkBunch;
     NSString *photoBunch;
+    
+    
+    NSString *photoAlbum1;
+    NSString *photoAlbumFinal;
+    NSString *photoAlbum1Final;
+    
+    NSString *albumTitle1;
+    NSString *albumTitle1Final;
+
     NSString *photo1;
     NSString *photoFinal1;
     
     int dumbVariable = 1;
+    int dumbVariable2 = 2;
+    int numberOfElements = 0;
     
-    
-    NSMutableArray *photoTitles = [NSMutableArray new];
+    NSMutableArray *teamLinks = [NSMutableArray new];
+    NSMutableArray *albumTitles = [NSMutableArray new];
     
     /**
      ********************************
-     *          Get Photos          *
+     *      Whole Album String      *
      ********************************
      */
     
+    NSScanner *miniScanner = [NSScanner scannerWithString:htmlFromURL];
+    [miniScanner scanUpToString:@"photo-galleries\">" intoString:NULL];
+    [miniScanner scanUpToString:@"combo-box\">" intoString:NULL];
+    [miniScanner scanUpToString:@"</div>" intoString:&photoLinkBunch];
     
-    NSScanner *photoAlbumScanner = [NSScanner scannerWithString:htmlFromURL];
+    /**
+     ********************************
+     *          Get Album           *
+     ********************************
+     */
     
-    [photoAlbumScanner scanUpToString:@"<div id=\"mainbody\" class=\"clearfix\">" intoString:NULL];
-    [photoAlbumScanner scanUpToString:@"<div id=\"photo-gallery" intoString:NULL];
-    
-    [photoAlbumScanner scanUpToString:@"<script" intoString:&photoBunch];
-    NSScanner *photoScanner = [NSScanner scannerWithString: photoBunch];
-    while([photoScanner scanUpToString:@"<div class=\"item" intoString:nil] )
+    NSScanner *linkScanner = [NSScanner scannerWithString:photoLinkBunch];
+    for (int i=0; i< 1; i++)
     {
-        [photoScanner scanUpToString:@"<div class=\"item" intoString:nil];
-        [photoScanner scanUpToString:@"<a href=" intoString:nil];
-        [photoScanner scanUpToString:@"<img src=" intoString:nil];
+        NSMutableString *startURL = [[NSMutableString alloc] initWithString:@"http://athletics.bowdoin.edu"];
         
-        [photoScanner scanUpToString:@"\"" intoString:nil];
-        [photoScanner scanUpToString:@"?" intoString:&photo1];
-        photoFinal1 = [photo1 substringFromIndex: dumbVariable];
+        [linkScanner scanUpToString:@"<a href=" intoString:NULL];
+        [linkScanner scanUpToString:@"\"" intoString:NULL];
+        [linkScanner scanUpToString:@"\">" intoString:&photoAlbum1];
+        photoAlbum1Final = [photoAlbum1 substringFromIndex: dumbVariable];
+        //NSLog(@"This is the album link: %@", photoAlbum1Final);
+        [startURL appendString: photoAlbum1Final];
+        //NSLog(@"This is the FINAL album link: %@", startURL);
+
+        [linkScanner scanUpToString:@"</a>" intoString:&albumTitle1];
+        albumTitle1Final = [albumTitle1 substringFromIndex: dumbVariable2];
+        //NSLog(@"This is the album Title: %@", albumTitle1Final);
+
         
-        NSLog(@"This is the JPG: %@", photoFinal1);
-        if(photoFinal1)
+        if (photoAlbum1Final)
         {
-            [photoTitles addObject:photoFinal1];
+            // Translate URL
+            NSURL *thePhotoAlbumURL = [[NSURL alloc] initWithString:startURL];
+
+            NSMutableURLRequest *photoAlbumrequest = [[NSMutableURLRequest alloc] init];
+            [photoAlbumrequest setURL: thePhotoAlbumURL];
+            NSData *dataPhotoGalleryURL = [NSURLConnection sendSynchronousRequest:photoAlbumrequest returningResponse:NULL error:NULL];
+            NSString * htmlForPhotoAlbum = [[NSString alloc] initWithData:dataPhotoGalleryURL encoding:NSASCIIStringEncoding];
+            NSScanner *photoAlbumScanner = [NSScanner scannerWithString:htmlForPhotoAlbum];
+            
+            // Scanning the New URL
+            [photoAlbumScanner scanUpToString:@"<div id=\"mainbody\" class=\"clearfix\">" intoString:NULL];
+            [photoAlbumScanner scanUpToString:@"<div id=\"photo-gallery" intoString:NULL];
+
+            [photoAlbumScanner scanUpToString:@"<script" intoString:&photoBunch];
+            //NSLog(@"Photo HTML: %@", photoBunch);
+            NSScanner *photoScanner = [NSScanner scannerWithString: photoBunch];
+           while([photoScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:nil] )
+           {
+               [photoScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:nil];
+               [photoScanner scanUpToString:@"</div>" intoString:&photo1];
+               NSLog(@"This is the Tester: %@", photo1);
+           }
+            //[photoScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:&photo1];
+            //[photoScanner scanUpToString:@"<img src=" intoString:&photo1];
+            //[photoScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:nil];
+
+
+            //NSLog(@"This is the Tester");
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            //NSString *photoAlbumGroup;
+            //while ([photoAlbumScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:nil])
+            
+            //[photoAlbumScanner scanUpToString:@"<script src=\"" intoString:&photoAlbumGroup];
+            //for (int i=0; i< 1; i++)
+            //{
+            //NSString *tester;
+                //NSScanner *photosScanner = [NSScanner scannerWithString:photoAlbumGroup];
+            //[photoScanner scanUpToString:@"<img scr=" intoString:&tester];
+            //[photoScanner scanUpToString:@"<div class=\"item ready masonry-brick" intoString:&tester];
+            //NSLog(@"Photo Number: %@", tester);
+            /**
+                [photoScanner scanUpToString:@"<a href=" intoString:NULL];
+                [photoScanner scanUpToString:@"\"" intoString:NULL];
+                [photoScanner scanUpToString:@"\"" intoString:&photo1];
+                photoFinal1 = [photo1 substringFromIndex: dumbVariable];
+                [photoScanner scanUpToString:@"</a>" intoString:NULL];
+                numberOfElements++;
+                NSLog(@"Photo Number: %d", numberOfElements);
+                NSLog(@"Photo URL Jpg: %@", photoFinal1);
+                //[teamLinks addObject:photoAlbumFinal];
+            */
+            //}
             
         }
     }
-    
-    
-    
-    
-    
-    
 }
 
 

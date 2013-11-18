@@ -47,6 +47,11 @@
         if ([segue.destinationViewController isKindOfClass:[CoachesTVC class]]) {
             CoachesTVC *cTVC = (CoachesTVC *)segue.destinationViewController;
             cTVC.coachesURL = self.coachesURL;
+            cTVC.incommingTeamURL = self.incommingTeamURL;
+            cTVC.teamName = self.teamName;
+            cTVC.longForm = self.longForm;
+            cTVC.backgroundImagePath = self.backgroundImagePath;
+            cTVC.haveRoster = self.haveRoster;
         }
     }else if ([segue.identifier isEqualToString:@"back2TVC"]){
         NSLog(@"HERE");
