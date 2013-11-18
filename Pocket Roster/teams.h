@@ -248,7 +248,12 @@
 //#define womensWaterPoloStartingURL   @"http://athletics.bowdoin.edu/sports/mrugby/index";
 //#define mensWaterPoloStartingURL   @"http://athletics.bowdoin.edu/sports/mrugby/index";
 
-
+// backgroundImagePath For Club Sports
+#define womensCrewBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"WCrewBack" ofType:@"jpg"]
+#define mensCrewBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"MCrewBack" ofType:@"jpg"]
+#define mensRugbyBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"MRugbyBack" ofType:@"jpg"]
+#define womensWaterPoloBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"WWaterpoloBack" ofType:@"jpg"]
+#define mensWaterPoloBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"MWaterpoloBack" ofType:@"jpg"]
 
 
 #endif

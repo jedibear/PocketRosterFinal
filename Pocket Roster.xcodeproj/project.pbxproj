@@ -299,7 +299,7 @@
 		CFE1F9B91839EA6E00E8BD9E /* MBaseballPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9B81839EA6E00E8BD9E /* MBaseballPhoto.jpg */; };
 		CFE1F9BC1839EB2A00E8BD9E /* MWaterpoloBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9BB1839EB2A00E8BD9E /* MWaterpoloBack.jpg */; };
 		CFE1F9BE1839EB3000E8BD9E /* WWaterpoloBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9BD1839EB3000E8BD9E /* WWaterpoloBack.jpg */; };
-		CFE1F9C01839EB3400E8BD9E /* WRowingBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9BF1839EB3400E8BD9E /* WRowingBack.jpg */; };
+		CFE1F9C01839EB3400E8BD9E /* WCrewBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9BF1839EB3400E8BD9E /* WCrewBack.jpg */; };
 		CFE1F9C21839EB3C00E8BD9E /* MCrewBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9C11839EB3C00E8BD9E /* MCrewBack.jpg */; };
 		CFE1F9C41839EB4E00E8BD9E /* MRugbyBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9C31839EB4E00E8BD9E /* MRugbyBack.jpg */; };
 		CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFA17FE448B0071814C /* OldIcon.png */; };
@@ -648,7 +648,7 @@
 		CFE1F9B81839EA6E00E8BD9E /* MBaseballPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MBaseballPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9BB1839EB2A00E8BD9E /* MWaterpoloBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MWaterpoloBack.jpg; sourceTree = "<group>"; };
 		CFE1F9BD1839EB3000E8BD9E /* WWaterpoloBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WWaterpoloBack.jpg; sourceTree = "<group>"; };
-		CFE1F9BF1839EB3400E8BD9E /* WRowingBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WRowingBack.jpg; sourceTree = "<group>"; };
+		CFE1F9BF1839EB3400E8BD9E /* WCrewBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WCrewBack.jpg; sourceTree = "<group>"; };
 		CFE1F9C11839EB3C00E8BD9E /* MCrewBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MCrewBack.jpg; sourceTree = "<group>"; };
 		CFE1F9C31839EB4E00E8BD9E /* MRugbyBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRugbyBack.jpg; sourceTree = "<group>"; };
 		CFF5ECFA17FE448B0071814C /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OldIcon.png; path = "Pocket Roster/OldIcon.png"; sourceTree = "<group>"; };
@@ -1206,7 +1206,7 @@
 			children = (
 				CFE1F9C31839EB4E00E8BD9E /* MRugbyBack.jpg */,
 				CFE1F9C11839EB3C00E8BD9E /* MCrewBack.jpg */,
-				CFE1F9BF1839EB3400E8BD9E /* WRowingBack.jpg */,
+				CFE1F9BF1839EB3400E8BD9E /* WCrewBack.jpg */,
 				CFE1F9BD1839EB3000E8BD9E /* WWaterpoloBack.jpg */,
 				CFE1F9BB1839EB2A00E8BD9E /* MWaterpoloBack.jpg */,
 			);
@@ -1409,7 +1409,7 @@
 				CF247A84173C269D0079AD32 /* MBballFinal.png in Resources */,
 				CFE1F9471839DBCA00E8BD9E /* MBasketballPhoto.jpg in Resources */,
 				CFE1F9A91839E8C100E8BD9E /* WSwimmingPhoto.jpg in Resources */,
-				CFE1F9C01839EB3400E8BD9E /* WRowingBack.jpg in Resources */,
+				CFE1F9C01839EB3400E8BD9E /* WCrewBack.jpg in Resources */,
 				CF247A87173C26B90079AD32 /* WRugbyFinal.png in Resources */,
 				CFE1F95B1839DE5C00E8BD9E /* MSailingPhoto.jpg in Resources */,
 				CFE1F97F1839E3E700E8BD9E /* WFieldHockeySchedule.jpg in Resources */,
