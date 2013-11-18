@@ -16,7 +16,7 @@
 #import "NewsFeedViewController.h"
 #import "CoachesViewController.h"
 #import "FacilitiesViewController.h"
-#import "RecordsViewController.h"
+#import "HomeImageViewController.h"
 
 @interface TeamTVC ()
 
@@ -172,14 +172,21 @@
                 fVC.haveRoster = self.haveRoster;
                 fVC.backgroundImagePath = self.backgroundImagePath;
                 fVC.teamName = self.teamName;
-            fVC.teamRoster = self.teamRoster;
+                fVC.teamRoster = self.teamRoster;
         
         }
-    }else if ([segue.identifier isEqualToString:@"records"]) {
+    }else if ([segue.identifier isEqualToString:@"images"]) {
         
-        if ([segue.destinationViewController isKindOfClass:[RecordsViewController class]]) {
-            RecordsViewController *rEVC = (RecordsViewController *)segue.destinationViewController;
-            rEVC.recordsURL =self.incommingTeamURL;
+        if ([segue.destinationViewController isKindOfClass:[HomeImageViewController class]]) {
+            HomeImageViewController *hIVC = (HomeImageViewController *)segue.destinationViewController;
+            
+            hIVC.incommingURL = self.incommingTeamURL;
+            hIVC.incommingTeamURL= self.incommingTeamURL;
+            hIVC.backgroundImagePath = self.backgroundImagePath;
+            hIVC.teamName = self.teamName;
+            hIVC.haveRoster = self.haveRoster;
+            hIVC.longForm = self.longForm;
+            
         }
     }
 }    

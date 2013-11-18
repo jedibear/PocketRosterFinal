@@ -36,7 +36,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.albums = [GetAlbums getAllAlbums:@"http://athletics.bowdoin.edu/landing/index"];
+    self.albums = [GetAlbums getAllAlbums:self.inputURL];
     
 }
 

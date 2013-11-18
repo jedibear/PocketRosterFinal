@@ -1,5 +1,5 @@
 //
-//  HomeImageTVC.h
+//  HomeViewController.h
 //  Pocket Roster
 //
 //  Created by James P. Garvey on 11/18/13.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeImageTVC : UITableViewController
-
-@property (nonatomic) NSMutableDictionary *albums;
-@property (nonatomic) NSString *inputURL;
+@interface HomeViewController : UIViewController
 
 @end

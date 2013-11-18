@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="-3024" y="-315"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="kru-gX-RID">
             <objects>
-                <viewController id="FM3-qD-uOc" sceneMemberID="viewController">
+                <viewController id="FM3-qD-uOc" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xYl-wR-g6i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -180,7 +180,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Hf5-yM-EzR" kind="modal" id="3xC-Jj-hfK"/>
+                                    <segue destination="Hf5-yM-EzR" kind="modal" identifier="homeImages" id="3xC-Jj-hfK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eaL-8f-D4U">
@@ -2716,7 +2716,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1V7-Bu-Ljd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1314" y="-691"/>
+            <point key="canvasLocation" x="-1534" y="-640"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="864-Na-XfK">
@@ -3540,7 +3540,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UYs-8z-dG4">
-                                <rect key="frame" x="64" y="30" width="204" height="42"/>
+                                <rect key="frame" x="64" y="30.000000008045493" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -3794,7 +3794,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OBc-28-54u">
-                                <rect key="frame" x="58" y="30" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30.000000008045493" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -3885,7 +3885,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bo4-eg-JWd">
-                                <rect key="frame" x="64" y="30" width="204" height="42"/>
+                                <rect key="frame" x="64" y="30.000000008045493" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -3976,7 +3976,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dQ6-fG-c7L">
-                                <rect key="frame" x="58" y="30" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30.000000008045493" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -4334,6 +4334,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="CYl-qJ-7Ch" kind="modal" identifier="images" id="oDe-jt-TV4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -11354,7 +11357,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tly-Bg-IXd">
-                                <rect key="frame" x="58" y="30" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30.000000008045493" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -13857,7 +13860,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="rS6-yJ-d2h" kind="embed" identifier="embedScoreboard" id="b45-bN-vKJ"/>
+                                    <segue destination="rS6-yJ-d2h" kind="embed" identifier="embedAlbums" id="b45-bN-vKJ"/>
                                 </connections>
                             </containerView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6AO-gD-waj">
@@ -13999,7 +14002,7 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="PTy-Y0-VZO" customClass="CollectionImageViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="LmG-xT-66v" customClass="ImageCollection">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DAM-Ye-Ljv">
                             <size key="itemSize" width="100" height="110"/>
@@ -14112,6 +14115,320 @@
             </objects>
             <point key="canvasLocation" x="271" y="-2026"/>
         </scene>
+        <!--Home ImageTVC-->
+        <scene sceneID="PKq-Qf-GWm">
+            <objects>
+                <tableViewController id="adu-1A-Ue5" customClass="HomeImageTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="cDY-LE-885">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" rowHeight="100" id="diM-F3-s3H" customClass="HomeImageCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="diM-F3-s3H" id="2fw-Un-Ncb">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u8r-Cm-Boc">
+                                            <rect key="frame" x="36" y="39" width="171" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="albumName" destination="u8r-Cm-Boc" id="nK7-5C-ccy"/>
+                                    <segue destination="727-1C-U61" kind="modal" identifier="album" id="Dnt-bF-smi"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="adu-1A-Ue5" id="TK3-3e-xXS"/>
+                            <outlet property="delegate" destination="adu-1A-Ue5" id="FhO-3k-Ofp"/>
+                        </connections>
+                    </tableView>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="RwV-YD-dpl">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeI-MD-GJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3172" y="-8178"/>
+        </scene>
+        <!--Home Image View Controller-->
+        <scene sceneID="P7Z-Lu-71A">
+            <objects>
+                <viewController id="CYl-qJ-7Ch" customClass="HomeImageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0vn-pB-xXC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView contentMode="scaleToFill" id="iZj-fb-C72">
+                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="adu-1A-Ue5" kind="embed" identifier="embedAlbums" id="EIR-6a-d0t"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="enc-0Q-Kvj">
+                                <rect key="frame" x="162" y="25" width="158" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UNl-GY-9UE">
+                                <rect key="frame" x="11" y="26" width="49" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="HomeBearLogo.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" id="Tji-DF-oQk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XC2-hc-aaL">
+                                <rect key="frame" x="0.0" y="81" width="320" height="4"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QLQ-e6-8fd">
+                                <rect key="frame" x="128" y="20" width="64" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="HomeB.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QcW-lA-JWv">
+                                <rect key="frame" x="251" y="25" width="61" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="FavsB.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Recent Images" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lel-RV-vC6">
+                                <rect key="frame" x="87" y="33" width="147" height="53"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXP-P5-lI2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2752" y="-8211"/>
+        </scene>
+        <!--Images Collection Container View Controller-->
+        <scene sceneID="O4S-ma-gyk">
+            <objects>
+                <viewController id="727-1C-U61" customClass="ImagesCollectionContainerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pN8-1H-ypA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView contentMode="scaleToFill" id="tmq-U3-oSh">
+                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="nfb-CS-rt4" kind="embed" identifier="embedPhotos" id="o6W-U9-sDj"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HvS-uJ-A0u">
+                                <rect key="frame" x="162" y="25" width="158" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hut-xA-moF">
+                                <rect key="frame" x="11" y="26" width="49" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="HomeBearLogo.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CYl-qJ-7Ch" kind="modal" id="Tp8-N7-VrK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5bL-Pl-nnd">
+                                <rect key="frame" x="0.0" y="81" width="320" height="4"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iNN-ya-Olw">
+                                <rect key="frame" x="128" y="20" width="64" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="HomeB.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3Oc-5X-ssc">
+                                <rect key="frame" x="251" y="25" width="61" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="FavsB.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scoreboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YYM-kb-0WB">
+                                <rect key="frame" x="87" y="44" width="147" height="42"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JuN-Dm-dJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3621" y="-8312"/>
+        </scene>
+        <!--Collection Image View Controller-->
+        <scene sceneID="t91-8E-d2g">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="nfb-CS-rt4" customClass="CollectionImageViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="qLx-Wd-rQ0" customClass="ImageCollection">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YYu-eA-mim">
+                            <size key="itemSize" width="100" height="110"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCCell" id="uro-UG-Dce" customClass="ImageCollectionCell">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="fom-Ea-bFa">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="cellImage" destination="fom-Ea-bFa" id="8DQ-wD-gs4"/>
+                                    <segue destination="095-gl-7q1" kind="modal" identifier="zoomPhoto" id="vBz-LN-xvz"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="nfb-CS-rt4" id="AzP-A3-qBY"/>
+                            <outlet property="delegate" destination="nfb-CS-rt4" id="otc-Ok-ZHL"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AHJ-ED-Ece" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4004" y="-8172"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="jf7-iq-ah7">
+            <objects>
+                <viewController id="095-gl-7q1" customClass="ImageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DUn-uV-XXi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pvn-4h-nJa">
+                                <rect key="frame" x="162" y="25" width="158" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fd7-ZT-lDv">
+                                <rect key="frame" x="11" y="26" width="49" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="HomeBearLogo.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="727-1C-U61" kind="modal" identifier="back2Albums" id="MPe-AW-eIH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tnO-oz-bzt">
+                                <rect key="frame" x="0.0" y="81" width="320" height="4"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ReD-c7-T9N">
+                                <rect key="frame" x="128" y="20" width="64" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="HomeB.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fzM-U3-Mo7">
+                                <rect key="frame" x="251" y="25" width="61" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="FavsB.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scoreboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fl1-h7-Pyg">
+                                <rect key="frame" x="87" y="44" width="147" height="42"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="KOd-pS-Dh5">
+                                <rect key="frame" x="11" y="100" width="301" height="448"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="zoomedImage" destination="KOd-pS-Dh5" id="jcZ-gf-eYt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kT-cA-PsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4388" y="-8312"/>
+        </scene>
     </scenes>
     <resources>
         <image name="B Logo.png" width="420" height="500"/>
@@ -14177,50 +14494,52 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="vDI-DT-6EB"/>
-        <segue reference="ohy-EF-KnQ"/>
-        <segue reference="9eF-9v-H2L"/>
-        <segue reference="I7m-BB-1e6"/>
-        <segue reference="NRU-Zi-5A0"/>
-        <segue reference="1YT-yN-vOm"/>
-        <segue reference="dvB-da-Chg"/>
-        <segue reference="JsG-Jg-SRg"/>
-        <segue reference="Y1j-bH-KX9"/>
-        <segue reference="dcF-hv-hmo"/>
-        <segue reference="34r-ir-Qsr"/>
-        <segue reference="jfE-Ml-3tJ"/>
-        <segue reference="jWr-1m-8Ix"/>
-        <segue reference="Aes-WL-c55"/>
-        <segue reference="dGo-5l-CZE"/>
-        <segue reference="II4-L4-Ic5"/>
-        <segue reference="rvx-oh-7oj"/>
-        <segue reference="72q-0R-X8d"/>
-        <segue reference="mkQ-Sz-7OY"/>
-        <segue reference="oBG-8F-FV3"/>
-        <segue reference="Ff0-Vc-1ia"/>
-        <segue reference="OLY-dB-0ci"/>
         <segue reference="HjE-wz-fW2"/>
         <segue reference="sQv-Q6-vTb"/>
         <segue reference="7bm-gT-qhD"/>
         <segue reference="vjT-OU-Xpx"/>
+        <segue reference="C6f-BF-Oyy"/>
+        <segue reference="d7Z-lf-a0I"/>
+        <segue reference="SyN-pK-eu1"/>
+        <segue reference="UGX-d4-pLE"/>
+        <segue reference="rvx-oh-7oj"/>
+        <segue reference="72q-0R-X8d"/>
+        <segue reference="II4-L4-Ic5"/>
+        <segue reference="mkQ-Sz-7OY"/>
+        <segue reference="cpS-pz-z9e"/>
+        <segue reference="Tji-DF-oQk"/>
+        <segue reference="oDe-jt-TV4"/>
         <segue reference="cVc-Kz-KS9"/>
-        <segue reference="Wzr-IQ-2zX"/>
         <segue reference="MC5-f9-FW4"/>
+        <segue reference="OFk-AO-NbN"/>
+        <segue reference="dvB-da-Chg"/>
+        <segue reference="JsG-Jg-SRg"/>
+        <segue reference="Y1j-bH-KX9"/>
+        <segue reference="jfE-Ml-3tJ"/>
+        <segue reference="1YT-yN-vOm"/>
+        <segue reference="dcF-hv-hmo"/>
+        <segue reference="34r-ir-Qsr"/>
+        <segue reference="NRU-Zi-5A0"/>
+        <segue reference="jWr-1m-8Ix"/>
+        <segue reference="Ff0-Vc-1ia"/>
+        <segue reference="OLY-dB-0ci"/>
+        <segue reference="oBG-8F-FV3"/>
+        <segue reference="tfs-Nz-Gc5"/>
+        <segue reference="i6X-ST-oyh"/>
         <segue reference="W7w-RT-wud"/>
         <segue reference="17k-bi-cGE"/>
-        <segue reference="i6X-ST-oyh"/>
-        <segue reference="OFk-AO-NbN"/>
-        <segue reference="fyi-is-imI"/>
-        <segue reference="tfs-Nz-Gc5"/>
-        <segue reference="d7Z-lf-a0I"/>
-        <segue reference="C6f-BF-Oyy"/>
-        <segue reference="UGX-d4-pLE"/>
-        <segue reference="SyN-pK-eu1"/>
-        <segue reference="p5M-4L-Nze"/>
-        <segue reference="8nJ-cb-89J"/>
+        <segue reference="9eF-9v-H2L"/>
+        <segue reference="vDI-DT-6EB"/>
+        <segue reference="ohy-EF-KnQ"/>
+        <segue reference="I7m-BB-1e6"/>
+        <segue reference="dGo-5l-CZE"/>
         <segue reference="J12-xy-yW8"/>
-        <segue reference="s1A-Nn-PRF"/>
-        <segue reference="cpS-pz-z9e"/>
         <segue reference="nTE-8S-LGK"/>
+        <segue reference="s1A-Nn-PRF"/>
+        <segue reference="fyi-is-imI"/>
+        <segue reference="p5M-4L-Nze"/>
+        <segue reference="MPe-AW-eIH"/>
+        <segue reference="Aes-WL-c55"/>
+        <segue reference="8nJ-cb-89J"/>
     </inferredMetricsTieBreakers>
 </document>

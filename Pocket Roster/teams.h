@@ -14,7 +14,7 @@
 #ifndef Pocket_Roster_teams_h
 #define Pocket_Roster_teams_h
 
-
+#define genURL @"http://athletics.bowdoin.edu/landing/index"
 /************************
  *                      *
  *  Mens Varsity Sports *

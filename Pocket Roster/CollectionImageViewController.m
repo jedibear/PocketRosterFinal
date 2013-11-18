@@ -33,10 +33,6 @@
         self.pictures = [GetImages getMostRecentImages:self.incommingURL];
         self.imagesLoaded = YES;
         
-    }else{
-        
-        
-        NSLog(@"HERE57");
     }
 	// Do any additional setup after loading the view.
     

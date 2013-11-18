@@ -1,20 +1,20 @@
 //
-//  HomeImageViewController.m
+//  HomeViewController.m
 //  Pocket Roster
 //
 //  Created by James P. Garvey on 11/18/13.
 //  Copyright (c) 2013 Pocket Roster. All rights reserved.
 //
 
+#import "HomeViewController.h"
 #import "HomeImageViewController.h"
-#import "HomeImageTVC.h"
-#import "GetImages.h"
+#import "teams.h"
 
-@interface HomeImageViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation HomeImageViewController
+@implementation HomeViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,8 +29,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,17 +39,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    if([segue.identifier isEqualToString:@"embedAlbums"]){
+    if([segue.identifier isEqualToString:@"homeImages"]){
         
-        if([segue.destinationViewController isKindOfClass:[HomeImageTVC class]]){
-            HomeImageTVC *hTVC = (HomeImageTVC *)segue.destinationViewController;
+        if([segue.destinationViewController isKindOfClass:[HomeImageViewController class]]){
+            HomeImageViewController *hVC = (HomeImageViewController *)segue.destinationViewController;
             
-            hTVC.inputURL = self.incommingURL;
+            hVC.incommingURL = genURL;
         }
     }
     
 }
-
-
 
 @end

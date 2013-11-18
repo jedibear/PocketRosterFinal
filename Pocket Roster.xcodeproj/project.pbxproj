@@ -40,6 +40,7 @@
 		1EBB3DF217223EF40032238C /* winter-quad-266.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DEE17223EF40032238C /* winter-quad-266.jpg */; };
 		1EBB3DF317223EF40032238C /* Bowdoin_College_Quad_308x150.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DEF17223EF40032238C /* Bowdoin_College_Quad_308x150.jpg */; };
 		1EC4B66F183A0C1800226160 /* ImageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC4B66E183A0C1800226160 /* ImageCollectionCell.m */; };
+		1EC4B672183A2C8100226160 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC4B671183A2C8100226160 /* HomeViewController.m */; };
 		1ECC555F173F092400EBD61D /* RSSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC555A173F092400EBD61D /* RSSCell.m */; };
 		1ECC5560173F092400EBD61D /* RSSTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC555C173F092400EBD61D /* RSSTVC.m */; };
 		1ECC5561173F092400EBD61D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC555E173F092400EBD61D /* WebViewController.m */; };
@@ -379,6 +380,8 @@
 		1EBB3DEF17223EF40032238C /* Bowdoin_College_Quad_308x150.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bowdoin_College_Quad_308x150.jpg; sourceTree = "<group>"; };
 		1EC4B66D183A0C1800226160 /* ImageCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionCell.h; sourceTree = "<group>"; };
 		1EC4B66E183A0C1800226160 /* ImageCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionCell.m; sourceTree = "<group>"; };
+		1EC4B670183A2C8100226160 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		1EC4B671183A2C8100226160 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		1ECC5559173F092400EBD61D /* RSSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSCell.h; sourceTree = "<group>"; };
 		1ECC555A173F092400EBD61D /* RSSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSCell.m; sourceTree = "<group>"; };
 		1ECC555B173F092400EBD61D /* RSSTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSTVC.h; sourceTree = "<group>"; };
@@ -849,6 +852,8 @@
 		1EF9AB691832CD7600A8C159 /* Team */ = {
 			isa = PBXGroup;
 			children = (
+				1EC4B670183A2C8100226160 /* HomeViewController.h */,
+				1EC4B671183A2C8100226160 /* HomeViewController.m */,
 				1E11F66A18394B320091E8C2 /* teams.h */,
 				CFA6039F182747BB00C21507 /* MasterTVC.h */,
 				CFA603A0182747BB00C21507 /* MasterTVC.m */,
@@ -1654,6 +1659,7 @@
 				CFE1F89D182D431200E8BD9E /* GetCoaches.m in Sources */,
 				1EF619AA183493CB0089C154 /* RosterTVC.m in Sources */,
 				1ECC557C173F0DF300EBD61D /* RSSHomeTVC.m in Sources */,
+				1EC4B672183A2C8100226160 /* HomeViewController.m in Sources */,
 				1ECC557D173F0DF300EBD61D /* RSSWebView.m in Sources */,
 				1EB48AE11835F8BB00C42B5C /* ScoreboardCell.m in Sources */,
 				1E11F6891839E0210091E8C2 /* HomeImageViewController.m in Sources */,
