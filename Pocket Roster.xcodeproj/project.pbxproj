@@ -237,6 +237,7 @@
 		CFE1F92E1838303000E8BD9E /* CreditsBack.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F92D1838303000E8BD9E /* CreditsBack.png */; };
 		CFE1F930183830D800E8BD9E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F92F183830D800E8BD9E /* info.png */; };
 		CFE1F93218391FEA00E8BD9E /* CreditsBack4.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F93118391FEA00E8BD9E /* CreditsBack4.png */; };
+		CFE1F93D18399EA300E8BD9E /* GetAlbums.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1F93C18399EA300E8BD9E /* GetAlbums.m */; };
 		CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFA17FE448B0071814C /* OldIcon.png */; };
 /* End PBXBuildFile section */
 
@@ -521,6 +522,8 @@
 		CFE1F92D1838303000E8BD9E /* CreditsBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsBack.png; sourceTree = "<group>"; };
 		CFE1F92F183830D800E8BD9E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		CFE1F93118391FEA00E8BD9E /* CreditsBack4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsBack4.png; sourceTree = "<group>"; };
+		CFE1F93B18399EA300E8BD9E /* GetAlbums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAlbums.h; sourceTree = "<group>"; };
+		CFE1F93C18399EA300E8BD9E /* GetAlbums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAlbums.m; sourceTree = "<group>"; };
 		CFF5ECFA17FE448B0071814C /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OldIcon.png; path = "Pocket Roster/OldIcon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -906,8 +909,7 @@
 				CF833B1C171E14420011DED3 /* FlickrFetcher.m */,
 				CF833B1B171E143B0011DED3 /* FlickrFetcher.h */,
 				CF833B18171E14110011DED3 /* iPad.storyboard */,
-				CFE1F898182D3AAF00E8BD9E /* GetImages.h */,
-				CFE1F899182D3AAF00E8BD9E /* GetImages.m */,
+				CFE1F93718399E3100E8BD9E /* Image */,
 				CF6568E3171782B700AE84AC /* Pocket_RosterAppDelegate.h */,
 				CF6568E4171782B700AE84AC /* Pocket_RosterAppDelegate.m */,
 				CF6569211717968500AE84AC /* AttributedStringViewController.h */,
@@ -992,6 +994,17 @@
 				CFE1F8BC182EEB4E00E8BD9E /* WVolleyball.jpg */,
 			);
 			name = BackgroundImages;
+			sourceTree = "<group>";
+		};
+		CFE1F93718399E3100E8BD9E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				CFE1F898182D3AAF00E8BD9E /* GetImages.h */,
+				CFE1F899182D3AAF00E8BD9E /* GetImages.m */,
+				CFE1F93B18399EA300E8BD9E /* GetAlbums.h */,
+				CFE1F93C18399EA300E8BD9E /* GetAlbums.m */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1280,6 +1293,7 @@
 				CF656920171795E800AE84AC /* ImageViewController.m in Sources */,
 				1E11F673183950D00091E8C2 /* RosterAthleteViewController.m in Sources */,
 				CF6569231717968500AE84AC /* AttributedStringViewController.m in Sources */,
+				CFE1F93D18399EA300E8BD9E /* GetAlbums.m in Sources */,
 				1EFDFEC2183041B300DAF6A4 /* FacilitiesViewController.m in Sources */,
 				CF833B1D171E14430011DED3 /* FlickrFetcher.m in Sources */,
 				CF833B28171ED4080011DED3 /* RosterViewController.m in Sources */,
