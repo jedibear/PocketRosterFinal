@@ -83,6 +83,37 @@
 #define mensTrackBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"MTrack" ofType:@"jpg"]
 #define baseballBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"MBaseball" ofType:@"jpg"]
 
+//mens backgroundImagePath For Schedule definitions
+#define mensSoccerBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MSoccerSchedule" ofType:@"jpg"]
+#define footballBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MFootballSchedule" ofType:@"jpg"]
+#define mensXCountryBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MCrossCountrySchedule" ofType:@"jpg"]
+#define mensGolfBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MGolfSchedule" ofType:@"jpg"]
+#define mensSailingBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MSailingSchedule" ofType:@"jpg"]
+#define mensTennisBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MTennisSchedule" ofType:@"jpg"]
+#define mensSwimmingBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MSwimmingSchedule" ofType:@"jpg"]
+#define mensIceHockeyBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MHockeySchedule" ofType:@"jpg"]
+#define mensSquashBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MSquashSchedule" ofType:@"jpg"]
+#define mensLacrosseBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"BLaxSchedule" ofType:@"jpg"]
+#define mensBasketballBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MBasketballSchedule" ofType:@"jpg"]
+#define mensTrackBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MTrackSchedule" ofType:@"jpg"]
+#define baseballBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MBaseballSchedule" ofType:@"jpg"]
+
+//mens backgroundImagePath For Photo TableView definitions
+#define mensSoccerBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MSoccerPhoto" ofType:@"jpg"]
+#define footballBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MFootballPhoto" ofType:@"jpg"]
+#define mensXCountryBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MCrossCountryPhoto" ofType:@"jpg"]
+#define mensGolfBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MGolfPhoto" ofType:@"jpg"]
+#define mensSailingBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MSailingPhoto" ofType:@"jpg"]
+#define mensTennisBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MTennisPhoto" ofType:@"jpg"]
+#define mensSwimmingBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MSwimmingPhoto" ofType:@"jpg"]
+#define mensIceHockeyBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MHockeyPhoto" ofType:@"jpg"]
+#define mensSquashBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MSquashPhoto" ofType:@"jpg"]
+#define mensLacrosseBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"BLaxPhoto" ofType:@"jpg"]
+#define mensBasketballBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MBasketballPhoto" ofType:@"jpg"]
+#define mensTrackBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MTrackPhoto" ofType:@"jpg"]
+#define baseballBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MBaseballPhoto" ofType:@"jpg"]
+
+
 
 /****************************
  *                          *
@@ -164,7 +195,43 @@
 #define womensTrackBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"WTrack" ofType:@"jpg"]
 #define softballBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"WSoftball" ofType:@"jpg"]
 #define womensNordicSkiingBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"WSkiing" ofType:@"jpg"]
-    
+
+//womens backgroundImagePath For Schedule Table View definitions
+#define womensSoccerBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WSoccerSchedule" ofType:@"jpg"]
+#define womensRugbyBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WRugbySchedule" ofType:@"jpg"]
+#define fieldHockeyBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WFieldHockeySchedule" ofType:@"jpg"]
+#define womensVolleyballBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WRugbySchedule" ofType:@"jpg"]
+#define womensXCountryBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WCrossCountrySchedule" ofType:@"jpg"]
+#define womensGolfBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WGolfSchedule" ofType:@"jpg"]
+#define womensSailingBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WSailingSchedule" ofType:@"jpg"]
+#define womensTennisBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WTennisSchedule" ofType:@"jpg"]
+#define womensSwimmingBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WSwimmingSchedule" ofType:@"jpg"]
+#define womensIceHockeyBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WHockeySchedule" ofType:@"jpg"]
+#define womensSquashBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WSquashSchedule" ofType:@"jpg"]
+#define womensLacrosseBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WLaxSchedule" ofType:@"jpg"]
+#define womensBasketballBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WBasketballSchedule" ofType:@"jpg"]
+#define womensTrackBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WTrackSchedule" ofType:@"jpg"]
+#define softballBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WSoftballSchedule" ofType:@"jpg"]
+#define womensNordicSkiingBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"WSkiingSchedule" ofType:@"jpg"]
+
+//womens backgroundImagePath for Photo Table View definitions
+#define womensSoccerBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WSoccerPhoto" ofType:@"jpg"]
+#define womensRugbyBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WRugbyPhoto" ofType:@"jpg"]
+#define fieldHockeyBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WFieldHockeyPhoto" ofType:@"jpg"]
+#define womensVolleyballBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WRugbyPhoto" ofType:@"jpg"]
+#define womensXCountryBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WCrossCountryPhoto" ofType:@"jpg"]
+#define womensGolfBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WGolfPhoto" ofType:@"jpg"]
+#define womensSailingBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WSailingPhoto" ofType:@"jpg"]
+#define womensTennisBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WTennisPhoto" ofType:@"jpg"]
+#define womensSwimmingBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WSwimmingPhoto" ofType:@"jpg"]
+#define womensIceHockeyBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WHockeyPhoto" ofType:@"jpg"]
+#define womensSquashBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WSquashPhoto" ofType:@"jpg"]
+#define womensLacrosseBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WLaxPhoto" ofType:@"jpg"]
+#define womensBasketballBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WBasketballPhoto" ofType:@"jpg"]
+#define womensTrackBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WTrackPhoto" ofType:@"jpg"]
+#define softballBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WSoftballPhoto" ofType:@"jpg"]
+#define womensNordicSkiingBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"WSkiingPhoto" ofType:@"jpg"]
+
 
 /****************************
  *                          *
@@ -175,5 +242,13 @@
 
     
 //club
-#define mensRugbyStartingURL   @"http://athletics.bowdoin.edu/sports/mrugby/index";
+#define mensRugbyStartingURL   @"http://athletics.bowdoin.edu/sports/mrugby/2013-14/schedule";
+#define womensCrewStartingURL   @"http://athletics.bowdoin.edu/sports/rowing/2013-14/schedule";
+#define mensCrewStartingURL   @"http://athletics.bowdoin.edu/sports/rowing/2013-14/schedule";
+//#define womensWaterPoloStartingURL   @"http://athletics.bowdoin.edu/sports/mrugby/index";
+//#define mensWaterPoloStartingURL   @"http://athletics.bowdoin.edu/sports/mrugby/index";
+
+
+
+
 #endif
