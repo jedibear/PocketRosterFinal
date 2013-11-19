@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"%@ TVC", self.incommingTeamURL);
+    //NSLog(@"%@ TVC", self.incommingTeamURL);
     [self.teamNameLabel setText: self.teamName];
     [self.teamBackgroundImage setImage:[[UIImage alloc] initWithContentsOfFile:self.backgroundImagePath]];
 	
@@ -47,15 +47,22 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"embedTeam"]) {
-        NSLog(@"%@",self.incommingTeamURL);
+        
         if ([segue.destinationViewController isKindOfClass:[TeamTVC class]]) {
-            TeamTVC *nFVC = (TeamTVC *)segue.destinationViewController;
-            nFVC.incommingTeamURL =self.incommingTeamURL;
-            nFVC.backgroundImagePath = self.backgroundImagePath;
-            nFVC.teamName = self.teamName;
-            nFVC.longForm = self.longForm;
-            nFVC.teamRoster = self.teamRoster;
-            nFVC.haveRoster= self.haveRoster;
+            TeamTVC *tVC = (TeamTVC *)segue.destinationViewController;
+            tVC.incommingTeamURL =self.incommingTeamURL;
+            tVC.backgroundImagePath = self.backgroundImagePath;
+            tVC.teamName = self.teamName;
+            tVC.longForm = self.longForm;
+            tVC.teamRoster = self.teamRoster;
+            tVC.haveRoster= self.haveRoster;
+            
+            tVC.stories = self.stories;
+            tVC.coaches = self.coaches;
+            tVC.albums = self.albums;
+            tVC.haveNews = self.haveNews;
+            tVC.haveCoaches = self.haveCoaches;
+            tVC.haveAlbums = self.haveAlbums;
         }
     }
     

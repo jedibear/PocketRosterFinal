@@ -50,23 +50,37 @@
 	if([segue.identifier isEqualToString:@"embedRoster"]){
 		if([segue.destinationViewController isKindOfClass:[RosterTVC class]]){
 			RosterTVC *rTVC = (RosterTVC *)segue.destinationViewController;
-			rTVC.teamRoster = self.roster;
+			rTVC.teamRoster = self.teamRoster;
             rTVC.longForm = self.longForm;
             rTVC.haveRoster = self.haveRoster;
             rTVC.teamName = self.teamName;
             rTVC.backgroundImagePath = self.backgroundImagePath;
             rTVC.incommingTeamURL = self.incommingTeamURL;
             
+            rTVC.stories = self.stories;
+            rTVC.coaches = self.coaches;
+            rTVC.albums = self.albums;
+            rTVC.haveNews = self.haveNews;
+            rTVC.haveCoaches = self.haveCoaches;
+            rTVC.haveAlbums = self.haveAlbums;
+            
 		}
 	}else if([segue.identifier isEqualToString:@"back2TVC"]){
         if([segue.destinationViewController isKindOfClass:[TeamViewController class]]){
             TeamViewController *tVC = (TeamViewController *)segue.destinationViewController;
             tVC.teamName = self.teamName;
-            tVC.teamRoster = self.roster;
+            tVC.teamRoster = self.teamRoster;
             tVC.longForm = self.longForm;
             tVC.backgroundImagePath = self.backgroundImagePath;
             tVC.incommingTeamURL = self.incommingTeamURL;
             tVC.haveRoster = self.haveRoster;
+            
+            tVC.stories = self.stories;
+            tVC.coaches = self.coaches;
+            tVC.albums = self.albums;
+            tVC.haveNews = self.haveNews;
+            tVC.haveCoaches = self.haveCoaches;
+            tVC.haveAlbums = self.haveAlbums;
         }
     }
 

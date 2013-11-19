@@ -34,6 +34,7 @@
     
     NSMutableArray *photoTitles = [NSMutableArray new];
     
+    
     /**
      ********************************
      *          Get Photos          *
@@ -73,10 +74,9 @@
                 }
             }
     
-            
+    NSString *havePhotos = @"YES";
     
     
-             
     return photoTitles;
 }
 

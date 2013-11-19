@@ -1205,7 +1205,7 @@
             <objects>
                 <tableViewController id="wEx-lJ-hgc" customClass="MasterTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MgD-w6-TTP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -3540,7 +3540,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UYs-8z-dG4">
-                                <rect key="frame" x="64" y="30.000000008045493" width="204" height="42"/>
+                                <rect key="frame" x="64" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -3794,7 +3794,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OBc-28-54u">
-                                <rect key="frame" x="58" y="30.000000008045493" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -3885,7 +3885,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bo4-eg-JWd">
-                                <rect key="frame" x="64" y="30.000000008045493" width="204" height="42"/>
+                                <rect key="frame" x="64" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -3976,7 +3976,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dQ6-fG-c7L">
-                                <rect key="frame" x="58" y="30.000000008045493" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -8456,6 +8456,10 @@
                                     <action selector="previousImage:" destination="y1U-V4-oV1" eventType="touchUpInside" id="BTT-qe-ffG"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="te8-gU-lLO">
+                                <rect key="frame" x="142" y="265" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -8463,12 +8467,13 @@
                         <outlet property="facilityImage" destination="eVm-Br-MVL" id="yrr-IA-jRM"/>
                         <outlet property="facilityName" destination="Kcb-Re-CiV" id="r5V-bn-hYl"/>
                         <outlet property="facilityText" destination="BiZ-Na-xrT" id="woi-Wa-76d"/>
+                        <outlet property="load" destination="te8-gU-lLO" id="csz-CR-zDa"/>
                         <outlet property="teamNameLabel" destination="3rm-jn-UUO" id="qLb-si-JDE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWw-ga-rcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2210" y="-8240"/>
+            <point key="canvasLocation" x="2114" y="-8136"/>
         </scene>
         <!--Coaches View Controller-->
         <scene sceneID="iED-je-AEb">
@@ -8554,7 +8559,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pT-gy-vgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2232" y="-8878"/>
+            <point key="canvasLocation" x="2232" y="-8806"/>
         </scene>
         <!--CoachesTVC-->
         <scene sceneID="8KP-V9-q9o">
@@ -11357,7 +11362,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tly-Bg-IXd">
-                                <rect key="frame" x="58" y="30.000000008045493" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -13957,7 +13962,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Hf5-yM-EzR" kind="modal" id="JsG-Jg-SRg"/>
+                                    <segue destination="Hf5-yM-EzR" kind="modal" identifier="back2Albums" id="JsG-Jg-SRg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Yx-hh-RYC">
@@ -14002,7 +14007,7 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="PTy-Y0-VZO" customClass="CollectionImageViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="LmG-xT-66v" customClass="ImageCollection">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DAM-Ye-Ljv">
                             <size key="itemSize" width="100" height="110"/>
@@ -14494,52 +14499,52 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="HjE-wz-fW2"/>
-        <segue reference="sQv-Q6-vTb"/>
-        <segue reference="7bm-gT-qhD"/>
-        <segue reference="vjT-OU-Xpx"/>
-        <segue reference="C6f-BF-Oyy"/>
-        <segue reference="d7Z-lf-a0I"/>
-        <segue reference="SyN-pK-eu1"/>
-        <segue reference="UGX-d4-pLE"/>
         <segue reference="rvx-oh-7oj"/>
         <segue reference="72q-0R-X8d"/>
-        <segue reference="II4-L4-Ic5"/>
         <segue reference="mkQ-Sz-7OY"/>
-        <segue reference="cpS-pz-z9e"/>
-        <segue reference="Tji-DF-oQk"/>
-        <segue reference="oDe-jt-TV4"/>
-        <segue reference="cVc-Kz-KS9"/>
-        <segue reference="MC5-f9-FW4"/>
-        <segue reference="OFk-AO-NbN"/>
-        <segue reference="dvB-da-Chg"/>
-        <segue reference="JsG-Jg-SRg"/>
-        <segue reference="Y1j-bH-KX9"/>
-        <segue reference="jfE-Ml-3tJ"/>
-        <segue reference="1YT-yN-vOm"/>
-        <segue reference="dcF-hv-hmo"/>
-        <segue reference="34r-ir-Qsr"/>
-        <segue reference="NRU-Zi-5A0"/>
-        <segue reference="jWr-1m-8Ix"/>
+        <segue reference="II4-L4-Ic5"/>
+        <segue reference="I7m-BB-1e6"/>
+        <segue reference="vDI-DT-6EB"/>
+        <segue reference="ohy-EF-KnQ"/>
+        <segue reference="9eF-9v-H2L"/>
         <segue reference="Ff0-Vc-1ia"/>
         <segue reference="OLY-dB-0ci"/>
         <segue reference="oBG-8F-FV3"/>
-        <segue reference="tfs-Nz-Gc5"/>
-        <segue reference="i6X-ST-oyh"/>
-        <segue reference="W7w-RT-wud"/>
+        <segue reference="8nJ-cb-89J"/>
+        <segue reference="dvB-da-Chg"/>
+        <segue reference="JsG-Jg-SRg"/>
+        <segue reference="2AS-9i-W4E"/>
+        <segue reference="34r-ir-Qsr"/>
+        <segue reference="dcF-hv-hmo"/>
+        <segue reference="jfE-Ml-3tJ"/>
+        <segue reference="1YT-yN-vOm"/>
+        <segue reference="NRU-Zi-5A0"/>
         <segue reference="17k-bi-cGE"/>
-        <segue reference="9eF-9v-H2L"/>
-        <segue reference="vDI-DT-6EB"/>
-        <segue reference="ohy-EF-KnQ"/>
-        <segue reference="I7m-BB-1e6"/>
+        <segue reference="W7w-RT-wud"/>
+        <segue reference="i6X-ST-oyh"/>
+        <segue reference="sQv-Q6-vTb"/>
+        <segue reference="HjE-wz-fW2"/>
+        <segue reference="7bm-gT-qhD"/>
+        <segue reference="vjT-OU-Xpx"/>
+        <segue reference="fyi-is-imI"/>
+        <segue reference="MC5-f9-FW4"/>
+        <segue reference="Tji-DF-oQk"/>
+        <segue reference="Tp8-N7-VrK"/>
+        <segue reference="MPe-AW-eIH"/>
+        <segue reference="oQX-lm-Ye2"/>
+        <segue reference="cVc-Kz-KS9"/>
+        <segue reference="d7Z-lf-a0I"/>
+        <segue reference="C6f-BF-Oyy"/>
+        <segue reference="SyN-pK-eu1"/>
+        <segue reference="UGX-d4-pLE"/>
+        <segue reference="nTE-8S-LGK"/>
+        <segue reference="cpS-pz-z9e"/>
+        <segue reference="tfs-Nz-Gc5"/>
+        <segue reference="OFk-AO-NbN"/>
+        <segue reference="Aes-WL-c55"/>
+        <segue reference="p5M-4L-Nze"/>
+        <segue reference="s1A-Nn-PRF"/>
         <segue reference="dGo-5l-CZE"/>
         <segue reference="J12-xy-yW8"/>
-        <segue reference="nTE-8S-LGK"/>
-        <segue reference="s1A-Nn-PRF"/>
-        <segue reference="fyi-is-imI"/>
-        <segue reference="p5M-4L-Nze"/>
-        <segue reference="MPe-AW-eIH"/>
-        <segue reference="Aes-WL-c55"/>
-        <segue reference="8nJ-cb-89J"/>
     </inferredMetricsTieBreakers>
 </document>

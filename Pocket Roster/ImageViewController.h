@@ -11,11 +11,17 @@
 
 @interface ImageViewController : UIViewController
 
-@property (nonatomic, strong) NSString *incommingURL;
+//the properties store the state of each team
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSMutableArray *teamLinks, *stories;
+@property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
+@property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
+
+@property (nonatomic, strong) NSString *incommingURL, *imageURL;
 @property (strong, nonatomic) IBOutlet UIImageView *zoomedImage;
 @property (nonatomic) UIImage *incImage;
-@property (nonatomic) BOOL *imagesLoaded;
 
-@property (nonatomic) NSMutableArray *pictures;
+
+@property (nonatomic) NSMutableDictionary *incAlbum;
 
 @end

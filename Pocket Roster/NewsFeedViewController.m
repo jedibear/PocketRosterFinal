@@ -58,12 +58,21 @@
                 NSLog(@"here2");
             }
             
-            rSSTmp.incommingURL = self.newsURL;
+            
             rSSTmp.backgroundImagePath = self.backgroundImagePath;
             rSSTmp.longForm = self.longForm;
             rSSTmp.teamName = self.teamName;
             rSSTmp.newsURL = self.newsURL;
             rSSTmp.incommingTeamURL = self.incommingTeamURL;
+            rSSTmp.teamRoster = self.teamRoster;
+            
+            rSSTmp.stories = self.stories;
+            rSSTmp.coaches = self.coaches;
+            rSSTmp.albums = self.albums;
+            rSSTmp.haveNews = self.haveNews;
+            rSSTmp.haveCoaches = self.haveCoaches;
+            rSSTmp.haveAlbums = self.haveAlbums;
+            rSSTmp.haveRoster = self.haveRoster;
             
         }
         
@@ -72,9 +81,17 @@
                 TeamViewController *tVC = (TeamViewController *)segue.destinationViewController;
                 tVC.teamName = self.teamName;
                 tVC.longForm = self.longForm;
-                
                 tVC.backgroundImagePath = self.backgroundImagePath;
                 tVC.incommingTeamURL = self.incommingTeamURL;
+                
+                tVC.teamRoster = self.teamRoster;
+                tVC.stories = self.stories;
+                tVC.coaches = self.coaches;
+                tVC.albums = self.albums;
+                tVC.haveNews = self.haveNews;
+                tVC.haveCoaches = self.haveCoaches;
+                tVC.haveAlbums = self.haveAlbums;
+                tVC.haveRoster = self.haveRoster;
             }
         }
 }

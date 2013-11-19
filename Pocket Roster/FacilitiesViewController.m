@@ -34,12 +34,28 @@
     self.imageIndex = 0;
     
     [self.teamNameLabel setText:self.teamName];
+    self.load = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    
+    
+    
+    
+}
+- (void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    [self.load startAnimating];
     
     self.facility = [GetFacility GetFacility:self.facilitiesURL];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    
     self.images = [self.facility objectForKey:@"images"];
     [self.facilityName setText:[self.facility objectForKey:@"Name"]];
     [self.facilityImage setImage:[self.images objectAtIndex:self.imageIndex]];
     [self.facilityText setText:[self.facility objectForKey:@"facilitiesText"]];
+    
+    
     
 }
 
@@ -51,12 +67,7 @@
 
 //segue for embeded coaches TVC
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"embedFacilities"]) {
-        if ([segue.destinationViewController isKindOfClass:[FacilitiesTVC class]]) {
-            FacilitiesTVC *fTVC = (FacilitiesTVC *)segue.destinationViewController;
-            fTVC.facilitiesURL = self.facilitiesURL;
-        }
-    }else if ([segue.identifier isEqualToString:@"back2TVC"]){
+   if ([segue.identifier isEqualToString:@"back2TVC"]){
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *tVC = (TeamViewController *)segue.destinationViewController;
             
@@ -66,28 +77,13 @@
             tVC.haveRoster = self.haveRoster;
             tVC.longForm = self.longForm;
             tVC.incommingTeamURL = self.incommingTeamURL;
-        }
-    }else if ([segue.identifier isEqualToString:@"readOn"]){
-        if([segue.destinationViewController isKindOfClass:[FacilitiesViewController class]]){
-            FacilitiesViewController *fVC = (FacilitiesViewController *)segue.destinationViewController;
             
-            fVC.teamRoster = self.teamRoster;
-            fVC.teamName = self.teamName;
-            fVC.backgroundImagePath = self.backgroundImagePath;
-            fVC.haveRoster = self.haveRoster;
-            fVC.longForm = self.longForm;
-            fVC.incommingTeamURL = self.incommingTeamURL;
-        }
-    }else if ([segue.identifier isEqualToString:@"back2Facilities"]){
-        if ([segue.destinationViewController isKindOfClass:[FacilitiesViewController class]]) {
-            FacilitiesViewController *fVC = (FacilitiesViewController *)segue.destinationViewController;
-            
-            fVC.teamRoster = self.teamRoster;
-            fVC.teamName = self.teamName;
-            fVC.backgroundImagePath = self.backgroundImagePath;
-            fVC.haveRoster = self.haveRoster;
-            fVC.longForm = self.longForm;
-            fVC.incommingTeamURL = self.incommingTeamURL;
+            tVC.stories = self.stories;
+            tVC.coaches = self.coaches;
+            tVC.albums = self.albums;
+            tVC.haveNews = self.haveNews;
+            tVC.haveCoaches = self.haveCoaches;
+            tVC.haveAlbums = self.haveAlbums;
         }
     }
 }

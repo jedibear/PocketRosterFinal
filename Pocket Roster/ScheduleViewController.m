@@ -54,6 +54,14 @@
             sVC.teamName = self.teamName;
             sVC.backgroundImagePath = self.backgroundImagePath;
             
+            sVC.stories = self.stories;
+            sVC.coaches = self.coaches;
+            sVC.albums = self.albums;
+            sVC.haveNews = self.haveNews;
+            sVC.haveCoaches = self.haveCoaches;
+            sVC.haveAlbums = self.haveAlbums;
+            sVC.teamRoster = self.teamRoster;
+            
         }
     
     }else if ([segue.identifier isEqualToString:@"embedSchedule"]){

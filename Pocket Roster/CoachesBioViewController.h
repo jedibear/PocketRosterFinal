@@ -10,12 +10,19 @@
 
 @interface CoachesBioViewController : UIViewController
 
+
+//the properties store the state of each team
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSMutableArray *teamLinks, *stories;
+@property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
+@property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
+
 @property (nonatomic) NSString *incommingURL;
-@property (nonatomic) BOOL *longForm, *haveRoster, *hasBioStory;
-@property (nonatomic) NSString *teamName, *backgroundImagePath, *athleteName;
-@property (nonatomic) NSString *incommingTeamURL, *specs, *bioStory;
+@property (nonatomic) BOOL  *hasBioStory;
+@property (nonatomic) NSString *athleteName;
+@property (nonatomic) NSString  *specs, *bioStory;
 @property (nonatomic) UIImage *athleteImageInput;
-@property (nonatomic) NSMutableDictionary *roster, *bio;
+@property (nonatomic) NSMutableDictionary *bio;
 
 @property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
 

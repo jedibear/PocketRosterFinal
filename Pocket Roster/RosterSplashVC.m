@@ -84,15 +84,15 @@
     }else{
     
     self.picturesDone = NO;
-    for (int i = 0; i < [self.roster count]; i++) {
+    for (int i = 0; i < [self.teamRoster count]; i++) {
         
         
         self.key = [[NSString alloc] initWithFormat:@"%d", i+1];
-        self.rosterBios = [GetRosterBIO getBio:[[self.roster objectForKey:self.key] objectAtIndex:0]];
+        self.rosterBios = [GetRosterBIO getBio:[[self.teamRoster objectForKey:self.key] objectAtIndex:0]];
         
-        self.progress = [NSNumber numberWithFloat:(float)i/(float)([self.roster count]-1)];
+        self.progress = [NSNumber numberWithFloat:(float)i/(float)([self.teamRoster count]-1)];
         
-        [[self.roster objectForKey:self.key]setObject:self.rosterBios atIndex:0];
+        [[self.teamRoster objectForKey:self.key]setObject:self.rosterBios atIndex:0];
         [customProgressView performSelectorOnMainThread:@selector(setProgress:) withObject:self.progress waitUntilDone:YES];
     }
     self.picturesDone = YES;
@@ -106,12 +106,19 @@
     if ([segue.identifier isEqualToString:@"continue"]) {
         if ([segue.destinationViewController isKindOfClass:[RosterViewController class]]) {
             RosterViewController *rVC = (RosterViewController *)segue.destinationViewController;
-            rVC.roster = self.roster;
+            rVC.teamRoster = self.teamRoster;
             rVC.longForm = self.longForm;
             rVC.incommingTeamURL = self.incommingTeamURL;
             rVC.teamName = self.teamName;
             rVC.backgroundImagePath = self.backgroundImagePath;
             rVC.haveRoster = self.haveRoster;
+            
+            rVC.stories = self.stories;
+            rVC.coaches = self.coaches;
+            rVC.albums = self.albums;
+            rVC.haveNews = self.haveNews;
+            rVC.haveCoaches = self.haveCoaches;
+            rVC.haveAlbums = self.haveAlbums;
         
         }
     }

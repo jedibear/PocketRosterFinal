@@ -35,8 +35,10 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    self.albums = [GetAlbums getAllAlbums:self.inputURL];
+    if(!self.haveAlbums){
+        self.albums = [GetAlbums getAllAlbums:self.inputURL];
+        self.haveAlbums = YES;
+    }
     
 }
 
@@ -92,11 +94,24 @@
                     NSMutableDictionary *athleteObjects = [self.albums objectForKey:key];
                     
                     NSLog(@"sending %@",[athleteObjects objectForKey:@"link"]);
-                    rAVC.incommingURL = [athleteObjects objectForKey:@"link"];
+                    rAVC.imageURL = [athleteObjects objectForKey:@"link"];
                     rAVC.albumTitle = [athleteObjects objectForKey:@"title"];
+                    rAVC.incAlbum = athleteObjects;
                     
+                    rAVC.incommingURL = self.incommingTeamURL;
+                    rAVC.incommingTeamURL= self.incommingTeamURL;
+                    rAVC.backgroundImagePath = self.backgroundImagePath;
+                    rAVC.teamName = self.teamName;
+                    rAVC.haveRoster = self.haveRoster;
+                    rAVC.longForm = self.longForm;
                     
-                    
+                    rAVC.teamRoster = self.teamRoster;
+                    rAVC.stories = self.stories;
+                    rAVC.coaches = self.coaches;
+                    rAVC.albums = self.albums;
+                    rAVC.haveNews = self.haveNews;
+                    rAVC.haveCoaches = self.haveCoaches;
+                    rAVC.haveAlbums = self.haveAlbums;
                     
                 }
             }

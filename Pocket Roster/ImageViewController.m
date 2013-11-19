@@ -43,12 +43,25 @@
 {
     if ([segue.identifier isEqualToString:@"back2Albums"]) {
         if ([segue.destinationViewController isKindOfClass:[ImagesCollectionContainerViewController class]]) {
-            ImagesCollectionContainerViewController *asc = (ImagesCollectionContainerViewController *)segue.destinationViewController;
+            ImagesCollectionContainerViewController *rAVC = (ImagesCollectionContainerViewController *)segue.destinationViewController;
             
-            asc.imagesLoaded = self.imagesLoaded;
-            asc.pictures = self.pictures;
-            asc.incommingURL = self.incommingURL;
             
+            rAVC.incommingURL = self.incommingURL;
+            
+            rAVC.incommingURL = self.incommingTeamURL;
+            rAVC.incommingTeamURL= self.incommingTeamURL;
+            rAVC.backgroundImagePath = self.backgroundImagePath;
+            rAVC.teamName = self.teamName;
+            rAVC.haveRoster = self.haveRoster;
+            rAVC.longForm = self.longForm;
+            
+            rAVC.teamRoster = self.teamRoster;
+            rAVC.stories = self.stories;
+            rAVC.coaches = self.coaches;
+            rAVC.albums = self.albums;
+            rAVC.haveNews = self.haveNews;
+            rAVC.haveCoaches = self.haveCoaches;
+            rAVC.haveAlbums = self.haveAlbums;
         }
     }
 }

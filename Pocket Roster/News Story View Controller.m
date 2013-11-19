@@ -62,7 +62,15 @@
             nFVC.backgroundImagePath = self.backgroundImagePath;
             nFVC.newsURL = self.newsURLInc;
             nFVC.incommingTeamURL = self.incommingTeamURL;
-            NSLog(@"NSVC%@",self.incommingTeamURL);
+            
+            nFVC.teamRoster = self.teamRoster;
+            nFVC.stories = self.stories;
+            nFVC.coaches = self.coaches;
+            nFVC.albums = self.albums;
+            nFVC.haveNews = self.haveNews;
+            nFVC.haveCoaches = self.haveCoaches;
+            nFVC.haveAlbums = self.haveAlbums;
+            nFVC.haveRoster = self.haveRoster;
         }
         
     }

@@ -9,12 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface ScheduleViewController : UIViewController
+//the properties store the state of each team
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSMutableArray *teamLinks, *stories;
+@property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
+@property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
 
 
 
-@property (nonatomic) BOOL *longForm, *haveSchedule, *haveRoster;
-@property (nonatomic) NSString  *teamName, *backgroundImagePath;
-@property (nonatomic) NSString *incommingTeamURL, *schedURL;
-@property (nonatomic) NSMutableDictionary *schedule, *teamRoster;
+@property (nonatomic) NSString  *schedURL;
+@property (nonatomic) NSMutableDictionary *schedule;
 @property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
 @end

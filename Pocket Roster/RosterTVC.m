@@ -155,11 +155,18 @@
                     rAVC.athleteImageInput = [[athleteObjects objectAtIndex:0]objectForKey:@"image"];
                     
                     rAVC.haveRoster = self.haveRoster;
-                    rAVC.roster = self.teamRoster;
+                    rAVC.teamRoster = self.teamRoster;
                     rAVC.teamName = self.teamName;
                     rAVC.longForm = self.longForm;
                     rAVC.incommingTeamURL = self.incommingTeamURL;
                     rAVC.backgroundImagePath = self.backgroundImagePath;
+                    
+                    rAVC.stories = self.stories;
+                    rAVC.coaches = self.coaches;
+                    rAVC.albums = self.albums;
+                    rAVC.haveNews = self.haveNews;
+                    rAVC.haveCoaches = self.haveCoaches;
+                    rAVC.haveAlbums = self.haveAlbums;
                 }
             }
             

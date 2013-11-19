@@ -79,10 +79,17 @@
             rVC.longForm = self.longForm;
             rVC.haveRoster = self.haveRoster;
             rVC.backgroundImagePath = self.backgroundImagePath;
-            rVC.teamRoster = self.roster;
+            rVC.teamRoster = self.teamRoster;
             rVC.teamName = self.teamName;
             rVC.coachesURL = self.incommingURL;
             
+            
+            rVC.stories = self.stories;
+            rVC.coaches = self.coaches;
+            rVC.albums = self.albums;
+            rVC.haveNews = self.haveNews;
+            rVC.haveCoaches = self.haveCoaches;
+            rVC.haveAlbums = self.haveAlbums;
         }
     }
 }

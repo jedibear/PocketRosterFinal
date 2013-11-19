@@ -10,14 +10,20 @@
 
 @interface TeamViewController : UIViewController
 
-@property (nonatomic) NSString *teamName, *backgroundImagePath;
-@property (nonatomic) NSString *incommingTeamURL;
-@property (nonatomic) NSMutableArray *teamLinks;
+//the properties store the state of each team
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSMutableArray *teamLinks, *stories;
+@property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
+@property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
+
+
+
+
+
 @property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *teamBackgroundImage;
-@property (nonatomic) BOOL *longForm, *haveRoster;
-@property (nonatomic) NSMutableDictionary *teamRoster;
 
--(void)setTeamName:(NSString *)team;
+
+
 
 @end

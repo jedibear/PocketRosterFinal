@@ -10,12 +10,14 @@
 
 @interface TeamTVC : UITableViewController
 
-@property (nonatomic) NSString *incommingTeamURL, *key, *schedURL;
-@property (nonatomic) NSString *teamName, *backgroundImagePath;
-@property (nonatomic) NSMutableArray *teamLinks;
-@property (nonatomic) NSMutableDictionary *teamRoster, *teamRosterBios;
-@property (nonatomic) BOOL *longForm, *haveRoster;
+//the properties store the state of each team
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSMutableArray *teamLinks, *stories;
+@property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
+@property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
 
+//properties exclusive to this VC
+@property (nonatomic) NSString *key;
 
 
 

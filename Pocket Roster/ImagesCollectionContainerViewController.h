@@ -10,8 +10,14 @@
 
 @interface ImagesCollectionContainerViewController : UIViewController
 
-@property (nonatomic) BOOL *imagesLoaded;
-@property (nonatomic) NSMutableArray *pictures;
-@property (nonatomic) NSString *incommingURL, *albumTitle;
+//the properties store the state of each team
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSMutableArray *teamLinks, *stories;
+@property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
+@property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
+
+
+@property (nonatomic) NSMutableDictionary *incAlbum;
+@property (nonatomic) NSString *incommingURL, *albumTitle, *imageURL;
 
 @end

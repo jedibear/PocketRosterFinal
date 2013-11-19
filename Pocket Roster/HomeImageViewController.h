@@ -10,8 +10,12 @@
 
 @interface HomeImageViewController : UIViewController
 
-@property (nonatomic) NSString *incommingURL, *incommingTeamURL, *backgroundImagePath, *teamName;
-@property (nonatomic) BOOL *haveRoster, *haveAlbum, *longForm, *haveNews, *haveFac;
-@property (nonatomic) NSMutableDictionary *roster, *news, *albums, *facilities;
+//the properties store the state of each team
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSMutableArray *teamLinks, *stories;
+@property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
+@property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
+
+@property (nonatomic) NSString *incommingURL;
 
 @end

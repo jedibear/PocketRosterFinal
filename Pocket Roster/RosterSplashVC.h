@@ -13,10 +13,16 @@
     CustomProgressView *customProgressView;
 }
 
+//the properties store the state of each team
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSMutableArray *teamLinks, *stories;
+@property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
+@property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
 
-@property (nonatomic) NSMutableDictionary *roster, *rosterBios;
-@property (nonatomic) BOOL *longForm, *picturesDone, *haveRoster;
-@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath, *key;
+
+@property (nonatomic) NSMutableDictionary *rosterBios;
+@property (nonatomic) BOOL *picturesDone;
+@property (nonatomic) NSString  *key;
 @property (nonatomic) NSNumber *progress;
 @property (strong, nonatomic) IBOutlet UIImageView *teamBackgroundImage;
 @property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;

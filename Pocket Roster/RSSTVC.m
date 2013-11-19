@@ -39,9 +39,10 @@
     //self.title = @"FEEDS";
     //[self addArticles];
     
-    if (self.stories == nil) {
+    if (!self.haveNews) {
         NSLog(@"sucks");
         [self fetchRSS];
+        self.haveNews = YES;
     }
     
     
@@ -81,11 +82,11 @@
     
     NSString *rssURL;
     NSString *baseURL = @"http://athletics.bowdoin.edu";
-    NSLog(@"%@ HERE BIACH", self.incommingURL);
+    NSLog(@"%@ HERE BIACH", self.newsURL);
     if(!self.incommingTeamURL){
-        return self.incommingURL;
+        return self.newsURL;
     }else{
-        NSURL *theURL = [[NSURL alloc] initWithString:self.incommingURL];
+        NSURL *theURL = [[NSURL alloc] initWithString:self.newsURL];
         NSURLRequest *request = [[NSURLRequest alloc] initWithURL:theURL];
     
         NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:NULL];
@@ -273,6 +274,7 @@
                 if ([segue.destinationViewController isKindOfClass:[News_Story_View_Controller class]]) {
                     News_Story_View_Controller *newsTMP = (News_Story_View_Controller *)segue.destinationViewController;
                     
+                    newsTMP.teamName = self.teamName;
                     newsTMP.team = self.teamName;
                     
                     
@@ -281,7 +283,15 @@
                     newsTMP.incommingTeamURL = self.incommingTeamURL;
                     newsTMP.backgroundImagePath = self.backgroundImagePath;
                     newsTMP.incTitle = [[self.stories objectAtIndex:indexPath.row] objectForKey:@"title"];
-                   
+                    
+                    newsTMP.teamRoster = self.teamRoster;
+                    newsTMP.stories = self.stories;
+                    newsTMP.coaches = self.coaches;
+                    newsTMP.albums = self.albums;
+                    newsTMP.haveNews = self.haveNews;
+                    newsTMP.haveCoaches = self.haveCoaches;
+                    newsTMP.haveAlbums = self.haveAlbums;
+                    newsTMP.haveRoster = self.haveRoster;
                     
                 }
                 

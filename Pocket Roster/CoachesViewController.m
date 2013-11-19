@@ -46,12 +46,21 @@
     if ([segue.identifier isEqualToString:@"embedCoaches"]) {
         if ([segue.destinationViewController isKindOfClass:[CoachesTVC class]]) {
             CoachesTVC *cTVC = (CoachesTVC *)segue.destinationViewController;
+            
             cTVC.coachesURL = self.coachesURL;
             cTVC.incommingTeamURL = self.incommingTeamURL;
             cTVC.teamName = self.teamName;
             cTVC.longForm = self.longForm;
             cTVC.backgroundImagePath = self.backgroundImagePath;
             cTVC.haveRoster = self.haveRoster;
+            cTVC.teamRoster = self.teamRoster;
+            
+            cTVC.stories = self.stories;
+            cTVC.coaches = self.coaches;
+            cTVC.albums = self.albums;
+            cTVC.haveNews = self.haveNews;
+            cTVC.haveCoaches = self.haveCoaches;
+            cTVC.haveAlbums = self.haveAlbums;
         }
     }else if ([segue.identifier isEqualToString:@"back2TVC"]){
         NSLog(@"HERE");
@@ -65,6 +74,13 @@
             tVC.backgroundImagePath = self.backgroundImagePath;
             tVC.incommingTeamURL = self.incommingTeamURL;
             tVC.haveRoster = self.haveRoster;
+            
+            tVC.stories = self.stories;
+            tVC.coaches = self.coaches;
+            tVC.albums = self.albums;
+            tVC.haveNews = self.haveNews;
+            tVC.haveCoaches = self.haveCoaches;
+            tVC.haveAlbums = self.haveAlbums;
         }
     }
 }

@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface GetImages : NSObject
+
 +(NSMutableArray *) getMostRecentImages: (NSString *)link;
 @end

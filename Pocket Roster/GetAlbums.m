@@ -41,7 +41,8 @@
     
    
     NSMutableDictionary *albums = [NSMutableDictionary new];
-    
+    NSMutableArray *pictures = [NSMutableArray new];
+    NSString *havePictures = @"NO";
     
     /**
      ********************************
@@ -85,6 +86,8 @@
             
             [albumDetails setObject:albumTitle1Final forKey:@"title"];
             NSLog(@"This is the album Title: %@", albumTitle1Final);
+            [albumDetails setObject:pictures forKey:@"pictures"];
+            [albumDetails setObject:havePictures forKey:@"picturesLoaded"];
             
             [albums setObject:albumDetails forKey:[NSString stringWithFormat:@"%d", key]];
             key++;

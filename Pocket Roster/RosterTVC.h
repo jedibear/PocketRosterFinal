@@ -10,12 +10,14 @@
 
 @interface RosterTVC : UITableViewController
 
-@property (nonatomic) NSString *key, *incommingURL;
-@property (nonatomic) NSMutableDictionary *teamRoster;
+//the properties store the state of each team
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSMutableArray *teamLinks, *stories;
+@property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
+@property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
 
-@property (nonatomic) BOOL *longForm, *haveRoster;
-@property (nonatomic) NSString *rosterURL, *teamName, *backgroundImagePath;
-@property (nonatomic) NSString *incommingTeamURL;
+
+@property (nonatomic) NSString *key;
 @property (nonatomic) UIImage *athleteImage;
 
 @end

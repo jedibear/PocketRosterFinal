@@ -10,8 +10,14 @@
 
 @interface NewsFeedViewController : UIViewController
 
-@property (nonatomic) NSString *teamName, *backgroundImagePath, *incommingTeamURL;
+//the properties store the state of each team
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSMutableArray *teamLinks, *stories;
+@property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
+@property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
+
+
 @property (nonatomic) NSString *newsURL;
-@property (nonatomic) BOOL *longForm, *haveRoster;
+
 @property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
 @end

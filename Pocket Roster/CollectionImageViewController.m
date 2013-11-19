@@ -29,10 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if(!self.imagesLoaded){
-        self.pictures = [GetImages getMostRecentImages:self.incommingURL];
-        self.imagesLoaded = YES;
-        
+    if(![[self.incAlbum objectForKey:@"picturesLoaded"]isEqualToString:@"YES"]){
+        NSString *havePictures = @"YES";
+        [self.incAlbum setObject:[GetImages getMostRecentImages:self.incommingURL] forKey:@"pictures"];
+        [self.incAlbum setObject:havePictures forKey:@"picturesLoaded"];
+
     }
 	// Do any additional setup after loading the view.
     
@@ -49,7 +50,7 @@
 // 1
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section {
     
-    return [self.pictures count]-1;
+    return [[self.incAlbum objectForKey:@"pictures"] count]-1;
 }
 // 2
 - (NSInteger)numberOfSectionsInCollectionView: (UICollectionView *)collectionView {
@@ -61,7 +62,7 @@
     ImageCollectionCell *cell = (ImageCollectionCell *)[cv dequeueReusableCellWithReuseIdentifier:@"ImageCCell" forIndexPath:indexPath];
     
     
-    cell.cellImage.image = [self.pictures objectAtIndex:[indexPath row]];
+    cell.cellImage.image = [[self.incAlbum objectForKey:@"pictures"] objectAtIndex:[indexPath row]];
     
     return cell;
 }
@@ -76,10 +77,23 @@
                     
                     ImageViewController *rAVC = (ImageViewController *)segue.destinationViewController;
                     
-                    rAVC.incImage = [self.pictures objectAtIndex:[indexPath row]];
-                    rAVC.imagesLoaded = self.imagesLoaded;
-                    rAVC.pictures = self.pictures;
+                    rAVC.incImage = [[self.incAlbum objectForKey:@"pictures"] objectAtIndex:[indexPath row]];
+                    rAVC.incAlbum= self.incAlbum;
                     
+                    rAVC.incommingURL = self.incommingTeamURL;
+                    rAVC.incommingTeamURL= self.incommingTeamURL;
+                    rAVC.backgroundImagePath = self.backgroundImagePath;
+                    rAVC.teamName = self.teamName;
+                    rAVC.haveRoster = self.haveRoster;
+                    rAVC.longForm = self.longForm;
+                    
+                    rAVC.teamRoster = self.teamRoster;
+                    rAVC.stories = self.stories;
+                    rAVC.coaches = self.coaches;
+                    rAVC.albums = self.albums;
+                    rAVC.haveNews = self.haveNews;
+                    rAVC.haveCoaches = self.haveCoaches;
+                    rAVC.haveAlbums = self.haveAlbums;
                 }
             }
             

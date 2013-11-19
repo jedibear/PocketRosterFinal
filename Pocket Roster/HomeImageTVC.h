@@ -10,7 +10,13 @@
 
 @interface HomeImageTVC : UITableViewController
 
-@property (nonatomic) NSMutableDictionary *albums;
-@property (nonatomic) NSString *inputURL;
+//the properties store the state of each team
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSMutableArray *teamLinks, *stories;
+@property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
+@property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
+
+
+@property (nonatomic) NSString *inputURL, *incommingURL;
 
 @end

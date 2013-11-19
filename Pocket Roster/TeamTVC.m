@@ -96,13 +96,19 @@
                 self.teamRoster = [Get_Data_From_Website getInfo:[self.teamLinks objectAtIndex:0]];
             }
             
-            rVC.roster = self.teamRoster;
+            rVC.teamRoster = self.teamRoster;
             rVC.longForm = self.longForm;
             rVC.backgroundImagePath = self.backgroundImagePath;
             rVC.teamName = self.teamName;
             rVC.incommingTeamURL = self.incommingTeamURL;
             rVC.haveRoster = self.haveRoster;
             
+            rVC.stories = self.stories;
+            rVC.coaches = self.coaches;
+            rVC.albums = self.albums;
+            rVC.haveNews = self.haveNews;
+            rVC.haveCoaches = self.haveCoaches;
+            rVC.haveAlbums = self.haveAlbums;
         }
     }else if ([segue.identifier isEqualToString:@"schedule"]) {
         
@@ -118,6 +124,13 @@
             sVC.teamName = self.teamName;
             sVC.backgroundImagePath = self.backgroundImagePath;
             sVC.haveRoster = self.haveRoster;
+            
+            sVC.stories = self.stories;
+            sVC.coaches = self.coaches;
+            sVC.albums = self.albums;
+            sVC.haveNews = self.haveNews;
+            sVC.haveCoaches = self.haveCoaches;
+            sVC.haveAlbums = self.haveAlbums;
             
             
         }
@@ -135,6 +148,14 @@
             nFVC.teamName = self.teamName;
             nFVC.incommingTeamURL = self.incommingTeamURL;
             nFVC.haveRoster = self.haveRoster;
+            
+            nFVC.teamRoster = self.teamRoster;
+            nFVC.stories = self.stories;
+            nFVC.coaches = self.coaches;
+            nFVC.albums = self.albums;
+            nFVC.haveNews = self.haveNews;
+            nFVC.haveCoaches = self.haveCoaches;
+            nFVC.haveAlbums = self.haveAlbums;
         }
     }else if ([segue.identifier isEqualToString:@"coaches"]) {
         
@@ -154,6 +175,13 @@
             cVC.backgroundImagePath = self.backgroundImagePath;
             cVC.teamName = self.teamName;
             cVC.teamRoster = self.teamRoster;
+            
+            cVC.stories = self.stories;
+            cVC.coaches = self.coaches;
+            cVC.albums = self.albums;
+            cVC.haveNews = self.haveNews;
+            cVC.haveCoaches = self.haveCoaches;
+            cVC.haveAlbums = self.haveAlbums;
         
         }
     }else if ([segue.identifier isEqualToString:@"facilities"]) {
@@ -167,12 +195,19 @@
                 fVC.facilitiesURL = [self.teamLinks objectAtIndex:4];
             }
             
-                fVC.incommingTeamURL = self.incommingTeamURL;
-                fVC.longForm = self.longForm;
-                fVC.haveRoster = self.haveRoster;
-                fVC.backgroundImagePath = self.backgroundImagePath;
-                fVC.teamName = self.teamName;
-                fVC.teamRoster = self.teamRoster;
+            fVC.incommingTeamURL = self.incommingTeamURL;
+            fVC.longForm = self.longForm;
+            fVC.haveRoster = self.haveRoster;
+            fVC.backgroundImagePath = self.backgroundImagePath;
+            fVC.teamName = self.teamName;
+            fVC.teamRoster = self.teamRoster;
+            
+            fVC.stories = self.stories;
+            fVC.coaches = self.coaches;
+            fVC.albums = self.albums;
+            fVC.haveNews = self.haveNews;
+            fVC.haveCoaches = self.haveCoaches;
+            fVC.haveAlbums = self.haveAlbums;
         
         }
     }else if ([segue.identifier isEqualToString:@"images"]) {
@@ -186,6 +221,14 @@
             hIVC.teamName = self.teamName;
             hIVC.haveRoster = self.haveRoster;
             hIVC.longForm = self.longForm;
+            
+            hIVC.teamRoster = self.teamRoster;
+            hIVC.stories = self.stories;
+            hIVC.coaches = self.coaches;
+            hIVC.albums = self.albums;
+            hIVC.haveNews = self.haveNews;
+            hIVC.haveCoaches = self.haveCoaches;
+            hIVC.haveAlbums = self.haveAlbums;
             
         }
     }
