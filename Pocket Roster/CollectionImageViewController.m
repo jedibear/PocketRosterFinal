@@ -94,6 +94,9 @@
                     rAVC.haveNews = self.haveNews;
                     rAVC.haveCoaches = self.haveCoaches;
                     rAVC.haveAlbums = self.haveAlbums;
+                    
+                    rAVC.imageBackground = self.imageBackground;
+                    rAVC.schedBackground = self.schedBackground;
                 }
             }
             

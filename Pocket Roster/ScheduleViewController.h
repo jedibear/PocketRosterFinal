@@ -10,11 +10,12 @@
 
 @interface ScheduleViewController : UIViewController
 //the properties store the state of each team
-@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath, *schedBackground, *imageBackground;
 @property (nonatomic) NSMutableArray *teamLinks, *stories;
 @property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
 @property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
 
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 
 @property (nonatomic) NSString  *schedURL;

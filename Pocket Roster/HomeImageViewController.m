@@ -63,6 +63,9 @@
             hVC.haveNews = self.haveNews;
             hVC.haveCoaches = self.haveCoaches;
             hVC.haveAlbums = self.haveAlbums;
+            
+            hVC.schedBackground = self.schedBackground;
+            hVC.imageBackground = self.imageBackground;
         }
     }else if([segue.identifier isEqualToString:@"back2TVC"]){
         if([segue.destinationViewController isKindOfClass:[TeamViewController class]]){
@@ -83,6 +86,9 @@
             hVC.haveNews = self.haveNews;
             hVC.haveCoaches = self.haveCoaches;
             hVC.haveAlbums = self.haveAlbums;
+            
+            hVC.schedBackground = self.schedBackground;
+            hVC.imageBackground = self.imageBackground;
             
         }
     }

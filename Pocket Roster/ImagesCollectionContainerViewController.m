@@ -63,6 +63,9 @@
             rAVC.haveCoaches = self.haveCoaches;
             rAVC.haveAlbums = self.haveAlbums;
             
+            rAVC.schedBackground = self.schedBackground;
+            rAVC.imageBackground = self.imageBackground;
+            
             
         }
     }else if([segue.identifier isEqualToString:@"back2Albums"]){
@@ -86,6 +89,9 @@
             hVC.haveNews = self.haveNews;
             hVC.haveCoaches = self.haveCoaches;
             hVC.haveAlbums = self.haveAlbums;
+            
+            hVC.schedBackground = self.schedBackground;
+            hVC.imageBackground = self.imageBackground;
         }
     }
 }

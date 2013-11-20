@@ -74,6 +74,9 @@
             rSSTmp.haveAlbums = self.haveAlbums;
             rSSTmp.haveRoster = self.haveRoster;
             
+            rSSTmp.schedBackground = self.schedBackground;
+            rSSTmp.imageBackground = self.imageBackground;
+            
         }
         
     }else if([segue.identifier isEqualToString:@"back2TVC"]){
@@ -83,6 +86,7 @@
                 tVC.longForm = self.longForm;
                 tVC.backgroundImagePath = self.backgroundImagePath;
                 tVC.incommingTeamURL = self.incommingTeamURL;
+                NSLog(@"%@",self.incommingTeamURL);
                 
                 tVC.teamRoster = self.teamRoster;
                 tVC.stories = self.stories;
@@ -92,6 +96,9 @@
                 tVC.haveCoaches = self.haveCoaches;
                 tVC.haveAlbums = self.haveAlbums;
                 tVC.haveRoster = self.haveRoster;
+                
+                tVC.schedBackground = self.schedBackground;
+                tVC.imageBackground = self.imageBackground;
             }
         }
 }

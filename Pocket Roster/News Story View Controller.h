@@ -11,7 +11,7 @@
 @interface News_Story_View_Controller : UIViewController
 
 //the properties store the state of each team
-@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath;
+@property (nonatomic) NSString *incommingTeamURL, *teamName, *backgroundImagePath, *schedBackground, *imageBackground;
 @property (nonatomic) NSMutableArray *teamLinks, *stories;
 @property (nonatomic) NSMutableDictionary *teamRoster, *coaches, *albums;
 @property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
@@ -20,8 +20,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *storyTitle;
 
 @property (nonatomic) NSString *incTitle;
-@property (nonatomic) NSString *newsURLInc;
+@property (nonatomic) NSString *newsURLInc, *segueLink;
 
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 
 
 @end

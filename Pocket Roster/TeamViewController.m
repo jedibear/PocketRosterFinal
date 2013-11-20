@@ -63,6 +63,9 @@
             tVC.haveNews = self.haveNews;
             tVC.haveCoaches = self.haveCoaches;
             tVC.haveAlbums = self.haveAlbums;
+            
+            tVC.schedBackground = self.schedBackground;
+            tVC.imageBackground = self.imageBackground;
         }
     }
     

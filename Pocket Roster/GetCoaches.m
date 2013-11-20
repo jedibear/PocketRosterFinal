@@ -29,27 +29,10 @@
     
     NSString *baseURL = @"http://athletics.bowdoin.edu";
     
-    NSString *stringBreakdown;
-    NSString *allCoachElements;
-    
-    NSString *coachTitlePre;
-    NSString *coachTitle;
-    
-    NSString *coachImagePre;
-    NSString *coachImage;
-    
-    NSString *coachPositionPre;
-    NSString *coachPosition;
-    
-    NSString *coachPhonePre;
-    NSString *coachPhone;
-    
-    NSString *coachEmailPre;
-    NSString *coachEmail;
-    
-    NSString *coachBioPre;
-    NSString *wholeCoachesBioTab;
-    NSString *coachBio, *test;
+
+    NSString *allCoachElements, *coachTitlePre, *coachTitle, *coachImagePre, *coachImage;
+    NSString *coachPositionPre, *coachPosition, *coachPhonePre, *coachPhone, *coachEmailPre;
+    NSString *coachEmail, *test;
     
     int dumbVariable = 1;
     
@@ -222,63 +205,7 @@
             key++;
             
             [scanner1 scanUpToString:@">" intoString:nil];
-            /**
-            //[scanner scanUpToString:@"<div class=\"tab-content" intoString:NULL];
-            //[scanner scanUpToString:@"class=\"synopsis" intoString:NULL];
-            [scanner scanUpToString:@"<strong>" intoString:NULL];
-            //[scanner scanUpToString:@">" intoString:NULL];
-            [scanner scanUpToString:@"</p>" intoString:&wholeCoachesBioTab];
             
-             if ([wholeCoachesBioTab rangeOfString:@"<object"].location != NSNotFound)
-             {
-                 //NSScanner *miniScanner = [NSScanner scannerWithString:wholeCoachesBioTab];
-                 NSLog(@"********************Object was found");
-                 NSLog(@"First Line: %@", wholeCoachesBioTab);
-                 
-             }
-            NSLog(@"First Line: %@", wholeCoachesBioTab);
-            
-            /**
-            // Add bio
-            [scanner scanUpToString:@"<div class=\"tab-content" intoString:NULL];
-            [scanner scanUpToString:@"class=\"synopsis" intoString:NULL];
-            [scanner scanUpToString:@"</div>" intoString:&wholeCoachesBioTab];
-            
-            NSScanner *miniScanner = [NSScanner scannerWithString:wholeCoachesBioTab];
-            NSMutableString *wholeBio = [[NSMutableString alloc] initWithString:@""];
-            
-            //for (int i = 0; i < 10; i++)
-            //{
-                [miniScanner scanUpToString:@"<p>" intoString:NULL];
-            
-                [miniScanner scanUpToString:@"</p>" intoString:&coachBioPre];
-                if(coachBioPre)
-                {
-                    //Test whether there is a bio video in the format
-
-                    if ([coachBioPre rangeOfString:@"object"].location != NSNotFound)
-                    {
-                        [scanner scanUpToString:@"</object>" intoString:NULL];
-                        [miniScanner scanUpToString:@"<p>" intoString:NULL];
-                        [miniScanner scanUpToString:@"</p>" intoString:&coachBioPre];
-                        coachBioPre = [coachBioPre substringFromIndex: 3];
-                        [wholeBio appendString: coachBioPre];
-                    }
-                    else
-                    {
-                        coachBioPre = [coachBioPre substringFromIndex: 3];
-                        [wholeBio appendString: coachBioPre];
-                    }
-                }
-            //}
-            coachBio = wholeBio;
-            if (coachBio)
-            {
-                [bowdoinCoachesElements addObject:coachBio];
-                NSLog(@"Coaches Bio: %@", coachBio);
-
-            }
-             */
         
         }
              

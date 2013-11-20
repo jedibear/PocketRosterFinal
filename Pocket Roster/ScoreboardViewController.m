@@ -45,7 +45,7 @@
         if ([segue.destinationViewController isKindOfClass:[ScoreboardTVC class]]) {
             
             ScoreboardTVC *sTVC = (ScoreboardTVC *)segue.destinationViewController;
-            //sTVC.incommingScheduleURL = self.incommingScoreboardURL;
+            sTVC.incommingScheduleURL = self.incommingScoreboardURL;
         }
     }
     

@@ -13,13 +13,19 @@
 +(NSMutableArray *) getTeamLinkBreakdown:(NSString *)incommingURL
 {
 
+    NSLog(@"%@", incommingURL);
     
     NSURL *theURL = [[NSURL alloc] initWithString:incommingURL];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:theURL];
     
-    NSData *dataFromURL = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:NULL];
+    NSError *error;
+    NSData *dataFromURL = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:&error];
+    
+    if(error){
+        NSLog(@"THERE WAS A PROBLEM");
+    }
     
     //get the data from the web page
     NSString * htmlFromURL = [[NSString alloc] initWithData:dataFromURL encoding:NSASCIIStringEncoding];
@@ -51,10 +57,10 @@
     NSString *baseURL = @"http://athletics.bowdoin.edu";
     
     NSScanner *miniScanner = [NSScanner scannerWithString:htmlFromURL];
-    [miniScanner scanUpToString:@"navbar-secondary" intoString:NULL];
+    [miniScanner scanUpToString:@"navbar-secondary" intoString:&rosterTab];
     [miniScanner scanUpToString:@"<div id=\"links-container\">" intoString:NULL];
     [miniScanner scanUpToString:@"</div>" intoString:&linksString];
-   
+    NSLog(@"HERE1 %@", rosterTab);
     /**
      ********************************
      *            Roster            *
@@ -66,6 +72,8 @@
         [linkScanner scanUpToString:@"<a href=" intoString:NULL];
         [linkScanner scanUpToString:@"\"" intoString:NULL];
         [linkScanner scanUpToString:@"\">" intoString:&rosterTab];
+    
+    NSLog(@"HERE2");
         rosterTabFinal = [baseURL stringByAppendingString:[rosterTab substringFromIndex: dumbVariable]];
         NSLog(@"%@", rosterTabFinal);
         if (rosterTabFinal)

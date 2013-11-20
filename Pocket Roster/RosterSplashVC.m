@@ -120,6 +120,8 @@
             rVC.haveCoaches = self.haveCoaches;
             rVC.haveAlbums = self.haveAlbums;
         
+            rVC.schedBackground = self.schedBackground;
+            rVC.imageBackground = self.imageBackground;
         }
     }
 }

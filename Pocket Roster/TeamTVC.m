@@ -43,6 +43,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"%@",self.incommingTeamURL);
     self.teamLinks = [GetTeamLinks getTeamLinkBreakdown:self.incommingTeamURL];
     
     
@@ -109,6 +110,9 @@
             rVC.haveNews = self.haveNews;
             rVC.haveCoaches = self.haveCoaches;
             rVC.haveAlbums = self.haveAlbums;
+            
+            rVC.schedBackground = self.schedBackground;
+            rVC.imageBackground = self.imageBackground;
         }
     }else if ([segue.identifier isEqualToString:@"schedule"]) {
         
@@ -132,7 +136,8 @@
             sVC.haveCoaches = self.haveCoaches;
             sVC.haveAlbums = self.haveAlbums;
             
-            
+            sVC.schedBackground = self.schedBackground;
+            sVC.imageBackground = self.imageBackground;
         }
     }else if ([segue.identifier isEqualToString:@"news"]) {
         
@@ -156,6 +161,9 @@
             nFVC.haveNews = self.haveNews;
             nFVC.haveCoaches = self.haveCoaches;
             nFVC.haveAlbums = self.haveAlbums;
+            
+            nFVC.schedBackground = self.schedBackground;
+            nFVC.imageBackground = self.imageBackground;
         }
     }else if ([segue.identifier isEqualToString:@"coaches"]) {
         
@@ -182,6 +190,9 @@
             cVC.haveNews = self.haveNews;
             cVC.haveCoaches = self.haveCoaches;
             cVC.haveAlbums = self.haveAlbums;
+            
+            cVC.schedBackground = self.schedBackground;
+            cVC.imageBackground = self.imageBackground;
         
         }
     }else if ([segue.identifier isEqualToString:@"facilities"]) {
@@ -208,6 +219,9 @@
             fVC.haveNews = self.haveNews;
             fVC.haveCoaches = self.haveCoaches;
             fVC.haveAlbums = self.haveAlbums;
+            
+            fVC.schedBackground = self.schedBackground;
+            fVC.imageBackground = self.imageBackground;
         
         }
     }else if ([segue.identifier isEqualToString:@"images"]) {
@@ -229,6 +243,9 @@
             hIVC.haveNews = self.haveNews;
             hIVC.haveCoaches = self.haveCoaches;
             hIVC.haveAlbums = self.haveAlbums;
+            
+            hIVC.schedBackground = self.schedBackground;
+            hIVC.imageBackground = self.imageBackground;
             
         }
     }

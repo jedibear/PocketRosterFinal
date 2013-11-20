@@ -113,6 +113,9 @@
                     rAVC.haveCoaches = self.haveCoaches;
                     rAVC.haveAlbums = self.haveAlbums;
                     
+                    rAVC.schedBackground = self.schedBackground;
+                    rAVC.imageBackground = self.imageBackground;
+                    
                 }
             }
             

@@ -33,6 +33,7 @@
     
     [self.teamNameLabel setText:self.teamName];
     NSLog(@"%@ sched",self.incommingTeamURL);
+    [self.backgroundImage setImage:[[UIImage alloc] initWithContentsOfFile:self.schedBackground]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,6 +62,9 @@
             sVC.haveCoaches = self.haveCoaches;
             sVC.haveAlbums = self.haveAlbums;
             sVC.teamRoster = self.teamRoster;
+            
+            sVC.schedBackground = self.schedBackground;
+            sVC.imageBackground = self.imageBackground;
             
         }
     

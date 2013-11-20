@@ -61,6 +61,9 @@
             cTVC.haveNews = self.haveNews;
             cTVC.haveCoaches = self.haveCoaches;
             cTVC.haveAlbums = self.haveAlbums;
+            
+            cTVC.schedBackground = self.schedBackground;
+            cTVC.imageBackground = self.imageBackground;
         }
     }else if ([segue.identifier isEqualToString:@"back2TVC"]){
         NSLog(@"HERE");
@@ -81,6 +84,9 @@
             tVC.haveNews = self.haveNews;
             tVC.haveCoaches = self.haveCoaches;
             tVC.haveAlbums = self.haveAlbums;
+            
+            tVC.schedBackground = self.schedBackground;
+            tVC.imageBackground = self.imageBackground;
         }
     }
 }

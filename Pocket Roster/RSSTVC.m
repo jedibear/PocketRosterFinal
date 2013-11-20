@@ -276,9 +276,9 @@
                     
                     newsTMP.teamName = self.teamName;
                     newsTMP.team = self.teamName;
+                    newsTMP.newsURL = self.sequeLink;
                     
-                    
-                    newsTMP.newsURLInc = self.incommingURL;
+                    newsTMP.newsURLInc = self.newsURL;
                     newsTMP.longForm = self.longForm;
                     newsTMP.incommingTeamURL = self.incommingTeamURL;
                     newsTMP.backgroundImagePath = self.backgroundImagePath;
@@ -292,6 +292,9 @@
                     newsTMP.haveCoaches = self.haveCoaches;
                     newsTMP.haveAlbums = self.haveAlbums;
                     newsTMP.haveRoster = self.haveRoster;
+                    
+                    newsTMP.schedBackground = self.schedBackground;
+                    newsTMP.imageBackground = self.imageBackground;
                     
                 }
                 

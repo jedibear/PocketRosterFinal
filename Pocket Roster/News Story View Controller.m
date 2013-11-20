@@ -30,6 +30,14 @@
     [super viewDidLoad];
     [self.storyTitle setText:self.incTitle];
 	// Do any additional setup after loading the view.
+    
+    NSString *articleURL = [self.newsURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    //NSLog(@"%@", articleURL);
+    NSURL *url = [NSURL URLWithString:articleURL];
+    //NSLog(@"%@", url);
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    //NSLog(@"%@", requestObj);
+    [self.webView loadRequest:requestObj];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,17 +50,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"embedStory"]) {
-        //NSLog(@"%@", self.teamName);       
-        
-        if([segue.destinationViewController isKindOfClass:[WebViewController class]]){
-            WebViewController *wVCTmp = (WebViewController *)segue.destinationViewController;
-            wVCTmp.inputURL = self.newsURL;
-            NSLog(@"inhere");
-            //[segue.destinationViewController setTeamName:self.teamName];
-        }        
-    }
-    else if ([segue.identifier isEqualToString:@"back2NFVC"]){
+    if ([segue.identifier isEqualToString:@"back2NFVC"]){
         NSLog(@"back");
         if ([segue.destinationViewController isKindOfClass:[NewsFeedViewController class]]) {
             
@@ -71,6 +69,9 @@
             nFVC.haveCoaches = self.haveCoaches;
             nFVC.haveAlbums = self.haveAlbums;
             nFVC.haveRoster = self.haveRoster;
+            
+            nFVC.schedBackground = self.schedBackground;
+            nFVC.imageBackground = self.imageBackground;
         }
         
     }

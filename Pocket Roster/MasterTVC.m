@@ -55,6 +55,8 @@
             teamVC.incommingTeamURL = mensSoccerStartingURL;
             teamVC.teamName = mensSoccerName;
             teamVC.backgroundImagePath = mensSoccerBackgroundImagePath;
+            teamVC.schedBackground = mensSoccerBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensSoccerBackgroundPhotoImagePath;
             
         }
         
@@ -66,6 +68,9 @@
             teamVC.incommingTeamURL =footballStartingURL;
             teamVC.teamName = footballName;
             teamVC.backgroundImagePath = footballBackgroundImagePath;
+            
+            teamVC.schedBackground = footballBackgroundScheduleImagePath;
+            teamVC.imageBackground = footballBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensXCountryTVCInit"]){
@@ -76,6 +81,9 @@
             teamVC.incommingTeamURL = mensXCountryStartingURL;
             teamVC.teamName = mensXCountryName;
             teamVC.backgroundImagePath = mensXCountryBackgroundImagePath;
+            
+            teamVC.schedBackground = mensXCountryBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensXCountryBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensGolfTVCInit"]){
@@ -86,6 +94,9 @@
             teamVC.incommingTeamURL = mensGolfStartingURL;
             teamVC.teamName = mensGolfName;
             teamVC.backgroundImagePath = mensGolfBackgroundImagePath;
+            
+            teamVC.schedBackground = mensGolfBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensGolfBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensSailingTVCInit"]){
@@ -96,6 +107,9 @@
             teamVC.incommingTeamURL = mensSailingStartingURL;
             teamVC.teamName = mensSailingName;
             teamVC.backgroundImagePath = mensSailingBackgroundImagePath;
+            
+            teamVC.schedBackground = mensSailingBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensSailingBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensTennisTVCInit"]){
@@ -106,6 +120,9 @@
             teamVC.incommingTeamURL = mensTennisStartingURL;
             teamVC.teamName = mensTennisName;
             teamVC.backgroundImagePath = mensTennisBackgroundImagePath;
+            
+            teamVC.schedBackground = mensTennisBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensTennisBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensSwimmingAndDiving"]){
@@ -116,6 +133,9 @@
             teamVC.incommingTeamURL = mensSwimmingStartingURL;
             teamVC.teamName = mensSwimmingName;
             teamVC.backgroundImagePath = mensSwimmingBackgroundImagePath;
+            
+            teamVC.schedBackground = mensSwimmingBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensSwimmingBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensHockey"]){
@@ -126,6 +146,9 @@
             teamVC.incommingTeamURL = mensIceHockeyStartingURL;
             teamVC.teamName = mensIceHockeyName;
             teamVC.backgroundImagePath = mensIceHockeyBackgroundImagePath;
+            
+            teamVC.schedBackground = mensIceHockeyBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensIceHockeyBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensBasketball"]){
@@ -136,6 +159,9 @@
             teamVC.incommingTeamURL = mensBasketballStartingURL;
             teamVC.teamName = mensBasketballName;
             teamVC.backgroundImagePath = mensBasketballBackgroundImagePath;
+            
+            teamVC.schedBackground = mensBasketballBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensBasketballBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensIndoorTrack"]){
@@ -146,6 +172,9 @@
             teamVC.incommingTeamURL = mensTrackStartingURL;
             teamVC.teamName = mensIndoorTrackName;
             teamVC.backgroundImagePath = mensTrackBackgroundImagePath;
+            
+            teamVC.schedBackground = mensTrackBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensTrackBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensSquash"]){
@@ -156,6 +185,9 @@
             teamVC.incommingTeamURL = mensSquashStartingURL;
             teamVC.teamName = mensSquashName;
             teamVC.backgroundImagePath = mensSquashBackgroundImagePath;
+            
+            teamVC.schedBackground = mensSquashBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensSquashBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensLax"]){
@@ -166,6 +198,9 @@
             teamVC.incommingTeamURL = mensLacrosseStartingURL;
             teamVC.teamName = mensLacrosseName;
             teamVC.backgroundImagePath = mensLacrosseBackgroundImagePath;
+            
+            teamVC.schedBackground = mensLacrosseBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensLacrosseBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensTrack"]){
@@ -186,6 +221,9 @@
             teamVC.incommingTeamURL = baseballStartingURL;
             teamVC.teamName = baseballName;
             teamVC.backgroundImagePath = baseballBackgroundImagePath;
+            
+            teamVC.schedBackground = baseballBackgroundScheduleImagePath;
+            teamVC.imageBackground = baseballBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wRugby"]){
@@ -196,6 +234,9 @@
             teamVC.incommingTeamURL = womensRugbyStartingURL;
             teamVC.teamName = womensRugbyName;
             teamVC.backgroundImagePath = womensRugbyBackgroundImagePath;
+            
+            teamVC.schedBackground = womensRugbyBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensRugbyBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wSoccer"]){
@@ -206,6 +247,9 @@
             teamVC.incommingTeamURL = womensSoccerStartingURL;
             teamVC.teamName = womensSoccerName;
             teamVC.backgroundImagePath = womensSoccerBackgroundImagePath;
+            
+            teamVC.schedBackground = womensSoccerBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensSoccerBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wXCountry"]){
@@ -216,6 +260,9 @@
             teamVC.incommingTeamURL = womensXCountryStartingURL;
             teamVC.teamName = womensXCountryName;
             teamVC.backgroundImagePath = womensXCountryBackgroundImagePath;
+            
+            teamVC.schedBackground = womensXCountryBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensXCountryBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wGolf"]){
@@ -226,6 +273,9 @@
             teamVC.incommingTeamURL = womensGolfStartingURL;
             teamVC.teamName = womensGolfName;
             teamVC.backgroundImagePath = womensGolfBackgroundImagePath;
+            
+            teamVC.schedBackground = womensGolfBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensGolfBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wSailing"]){
@@ -236,6 +286,9 @@
             teamVC.incommingTeamURL = womensSailingStartingURL;
             teamVC.teamName = womensSailingName;
             teamVC.backgroundImagePath = womensSailingBackgroundImagePath;
+            
+            teamVC.schedBackground = womensSailingBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensSailingBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wTennis"]){
@@ -246,6 +299,9 @@
             teamVC.incommingTeamURL = womensTennisStartingURL;
             teamVC.teamName = womensTennisName;
             teamVC.backgroundImagePath = womensTennisBackgroundImagePath;
+            
+            teamVC.schedBackground = womensTennisBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensTennisBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wFieldHockey"]){
@@ -256,6 +312,9 @@
             teamVC.incommingTeamURL = fieldhockeyStartingURL;
             teamVC.teamName = fieldhockeyName;
             teamVC.backgroundImagePath = fieldHockeyBackgroundImagePath;
+            
+            teamVC.schedBackground = fieldHockeyBackgroundScheduleImagePath;
+            teamVC.imageBackground = fieldHockeyBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wVolleyball"]){
@@ -266,6 +325,9 @@
             teamVC.incommingTeamURL = womensVolleyballStartingURL;
             teamVC.teamName = womensVolleyballName;
             teamVC.backgroundImagePath = womensVolleyballBackgroundImagePath;
+            
+            teamVC.schedBackground = womensVolleyballBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensVolleyballBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wSwimmingAndDiving"]){
@@ -276,6 +338,9 @@
             teamVC.incommingTeamURL = womensSwimmingStartingURL;
             teamVC.teamName = womensSwimmingName;
             teamVC.backgroundImagePath = womensSwimmingBackgroundImagePath;
+            
+            teamVC.schedBackground = womensSwimmingBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensSwimmingBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wHockey"]){
@@ -286,6 +351,9 @@
             teamVC.incommingTeamURL = womensIceHockeyStartingURL;
             teamVC.teamName = womensIceHockeyName;
             teamVC.backgroundImagePath = womensIceHockeyBackgroundImagePath;
+            
+            teamVC.schedBackground = womensIceHockeyBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensIceHockeyBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wBasketball"]){
@@ -296,6 +364,9 @@
             teamVC.incommingTeamURL = womensBasketballStartingURL;
             teamVC.teamName = womensBasketballName;
             teamVC.backgroundImagePath = womensBasketballBackgroundImagePath;
+            
+            teamVC.schedBackground = womensBasketballBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensBasketballBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wIndoorTrack"]){
@@ -306,6 +377,9 @@
             teamVC.incommingTeamURL = womensTrackStartingURL;
             teamVC.teamName = womensTrackName;
             teamVC.backgroundImagePath = womensTrackBackgroundImagePath;
+            
+            teamVC.schedBackground = womensTrackBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensTrackBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wSquash"]){
@@ -316,6 +390,9 @@
             teamVC.incommingTeamURL = womensSquashStartingURL;
             teamVC.teamName = womensSquashName;
             teamVC.backgroundImagePath = womensSquashBackgroundImagePath;
+            
+            teamVC.schedBackground = womensSquashBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensSquashBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wNorticSkiing"]){
@@ -326,6 +403,10 @@
             teamVC.incommingTeamURL = womensNordicStartingURL;
             teamVC.teamName = womensNordicSkiingName;
             teamVC.backgroundImagePath = womensNordicSkiingBackgroundImagePath;
+            
+            teamVC.schedBackground = womensNordicSkiingBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensNordicSkiingBackgroundPhotoImagePath;
+            
         }
         
     }else if([segue.identifier isEqualToString:@"wLax"]){
@@ -336,6 +417,9 @@
             teamVC.incommingTeamURL = womensLacrosseStartingURL;
             teamVC.teamName = womensLacrosseName;
             teamVC.backgroundImagePath = womensLacrosseBackgroundImagePath;
+            
+            teamVC.schedBackground = womensLacrosseBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensLacrosseBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wTrack"]){
@@ -346,6 +430,9 @@
             teamVC.incommingTeamURL = womensTrackStartingURL;
             teamVC.teamName = womensTrackName;
             teamVC.backgroundImagePath = womensTrackBackgroundImagePath;
+            
+            teamVC.schedBackground = womensTrackBackgroundScheduleImagePath;
+            teamVC.imageBackground = womensTrackBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"wSoftball"]){
@@ -356,6 +443,9 @@
             teamVC.incommingTeamURL = softballStartingURL;
             teamVC.teamName = softballName;
             teamVC.backgroundImagePath = softballBackgroundImagePath;
+            
+            teamVC.schedBackground = softballBackgroundScheduleImagePath;
+            teamVC.imageBackground = softballBackgroundPhotoImagePath;
         }
         
     }
