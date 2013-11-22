@@ -5,6 +5,12 @@
 //  Created by Ryan Kulesza on 4/11/13.
 //  Copyright (c) 2013 Pocket Roster. All rights reserved.
 //
+
+/*
+ *  For the next update: swiping left or right should pull up the next photo
+ *  and display in the zoomed format
+ *
+ */
 #import "ImageViewController.h"
 #import "ImagesCollectionContainerViewController.h"
 
@@ -46,9 +52,10 @@
             ImagesCollectionContainerViewController *rAVC = (ImagesCollectionContainerViewController *)segue.destinationViewController;
             
             
-            rAVC.incommingURL = self.incommingURL;
+            rAVC.imageURL = self.imageURL;
+            rAVC.incAlbum = self.incAlbum;
             
-            rAVC.incommingURL = self.incommingTeamURL;
+            rAVC.incommingURL = self.incommingURL;
             rAVC.incommingTeamURL= self.incommingTeamURL;
             rAVC.backgroundImagePath = self.backgroundImagePath;
             rAVC.teamName = self.teamName;

@@ -38,8 +38,17 @@
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     //NSLog(@"%@", requestObj);
     [self.webView loadRequest:requestObj];
+    
 }
-
+/*
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    
+    
+}
+*/
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

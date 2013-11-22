@@ -29,17 +29,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    //NSLog(@"%@ bada-bing", self.incAlbum);
+    
+    if (self.haveAlbums) {
+        NSLog(@"yup containerVC");
+    }
+    
     if(![[self.incAlbum objectForKey:@"picturesLoaded"]isEqualToString:@"YES"]){
         NSString *havePictures = @"YES";
-        [self.incAlbum setObject:[GetImages getMostRecentImages:self.incommingURL] forKey:@"pictures"];
+        [self.incAlbum setObject:[GetImages getMostRecentImages:self.imageURL] forKey:@"pictures"];
         [self.incAlbum setObject:havePictures forKey:@"picturesLoaded"];
-
+        
+        [self.albums setObject:self.incAlbum forKey:self.saveKey];
+        //NSLog(@"inside %@", [self.incAlbum objectForKey:@"picturesLoaded"]);
     }
+    
 	// Do any additional setup after loading the view.
     
 }
-
-
+/*
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    
+    
+}
+*/
 
 - (void)didReceiveMemoryWarning
 {
@@ -79,8 +96,9 @@
                     
                     rAVC.incImage = [[self.incAlbum objectForKey:@"pictures"] objectAtIndex:[indexPath row]];
                     rAVC.incAlbum= self.incAlbum;
+                    rAVC.imageURL = self.imageURL;
                     
-                    rAVC.incommingURL = self.incommingTeamURL;
+                    rAVC.incommingURL = self.incommingURL;
                     rAVC.incommingTeamURL= self.incommingTeamURL;
                     rAVC.backgroundImagePath = self.backgroundImagePath;
                     rAVC.teamName = self.teamName;

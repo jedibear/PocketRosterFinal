@@ -57,11 +57,10 @@
     NSString *baseURL = @"http://athletics.bowdoin.edu";
     
     NSScanner *miniScanner = [NSScanner scannerWithString:htmlFromURL];
-    [miniScanner scanUpToString:@"navbar-secondary" intoString:&rosterTab];
-    [miniScanner scanUpToString:@"<div id=\"links-container\">" intoString:NULL];
+    [miniScanner scanUpToString:@"navbar-secondary" intoString:nil];
+    [miniScanner scanUpToString:@"<div id=\"links-container\">" intoString:nil];
     [miniScanner scanUpToString:@"</div>" intoString:&linksString];
-    NSLog(@"HERE1 %@", rosterTab);
-    /**
+        /**
      ********************************
      *            Roster            *
      ********************************
@@ -73,9 +72,9 @@
         [linkScanner scanUpToString:@"\"" intoString:NULL];
         [linkScanner scanUpToString:@"\">" intoString:&rosterTab];
     
-    NSLog(@"HERE2");
+   
         rosterTabFinal = [baseURL stringByAppendingString:[rosterTab substringFromIndex: dumbVariable]];
-        NSLog(@"%@", rosterTabFinal);
+        //NSLog(@"%@", rosterTabFinal);
         if (rosterTabFinal)
         {
             numberOfElements++;
@@ -91,7 +90,7 @@
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&scheduleTab];
     scheduleTabFinal = [baseURL stringByAppendingString:[scheduleTab substringFromIndex: dumbVariable]];
-    NSLog(@"%@", scheduleTabFinal);
+    //NSLog(@"%@", scheduleTabFinal);
     if (scheduleTabFinal)
     {
         numberOfElements++;
@@ -108,7 +107,7 @@
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&newsTab];
     newsTabFinal = [baseURL stringByAppendingString:[newsTab substringFromIndex: dumbVariable]];
-    NSLog(@"%@", newsTabFinal);
+    //NSLog(@"%@", newsTabFinal);
     if (newsTabFinal)
     {
         numberOfElements++;
@@ -124,7 +123,7 @@
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&coachesTab];
     coachesTabFinal = [baseURL stringByAppendingString:[coachesTab substringFromIndex: dumbVariable]];
-    NSLog(@"%@", coachesTabFinal);
+   // NSLog(@"%@", coachesTabFinal);
     if (coachesTabFinal)
     {
         numberOfElements++;
@@ -140,7 +139,7 @@
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&facilitiesTab];
     facilitiesTabFinal = [baseURL stringByAppendingString:[facilitiesTab substringFromIndex: dumbVariable]];
-    NSLog(@"%@", facilitiesTabFinal);
+    //NSLog(@"%@", facilitiesTabFinal);
     if (facilitiesTabFinal)
     {
         numberOfElements++;
@@ -156,7 +155,7 @@
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&recordsTab];
     recordsTabFinal = [baseURL stringByAppendingString:[recordsTab substringFromIndex: dumbVariable]];
-    NSLog(@"%@", recordsTabFinal);
+   // NSLog(@"%@", recordsTabFinal);
     if (recordsTabFinal)
     {
         numberOfElements++;

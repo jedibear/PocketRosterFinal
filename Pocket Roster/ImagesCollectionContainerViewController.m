@@ -31,6 +31,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    if (self.haveAlbums) {
+        NSLog(@"yup containerVC");
+    }
+    
     
 }
 
@@ -47,8 +51,10 @@
             
             rAVC.incAlbum = self.incAlbum;
             rAVC.incommingURL = self.incommingURL;
+            rAVC.imageURL = self.imageURL;
+            rAVC.saveKey = self.saveKey;
             
-            rAVC.incommingURL = self.incommingTeamURL;
+            
             rAVC.incommingTeamURL= self.incommingTeamURL;
             rAVC.backgroundImagePath = self.backgroundImagePath;
             rAVC.teamName = self.teamName;
@@ -73,7 +79,12 @@
             
             HomeImageViewController *hVC = (HomeImageViewController *)segue.destinationViewController;
             
+            if (self.haveAlbums) {
+                NSLog(@"yup backtoAlbumsVC");
+            }
+            
             hVC.incommingURL = self.incommingURL;
+        
             
             hVC.incommingURL = self.incommingTeamURL;
             hVC.incommingTeamURL= self.incommingTeamURL;

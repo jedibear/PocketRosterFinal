@@ -74,7 +74,7 @@
                 }
             }
     
-    NSString *havePhotos = @"YES";
+    
     
     
     return photoTitles;

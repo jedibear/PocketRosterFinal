@@ -32,16 +32,30 @@
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    if (self.haveAlbums) {
+        NSLog(@"yup homeImageTVC");
+    }
+    
     if(!self.haveAlbums){
         self.albums = [GetAlbums getAllAlbums:self.inputURL];
         self.haveAlbums = YES;
     }
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
     
 }
-
+/*
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    
+    
+}
+*/
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -71,9 +85,7 @@
     // Configure the cell...
     
     NSString *key = [[NSString alloc] initWithFormat:@"%ld", (long)[indexPath row]+1];
-    
     NSMutableDictionary *details = [self.albums objectForKey:key];
-    
     cell.albumName.text = [details objectForKey:@"title"];
     
     return cell;
@@ -97,8 +109,9 @@
                     rAVC.imageURL = [athleteObjects objectForKey:@"link"];
                     rAVC.albumTitle = [athleteObjects objectForKey:@"title"];
                     rAVC.incAlbum = athleteObjects;
+                    rAVC.saveKey = key;
                     
-                    rAVC.incommingURL = self.incommingTeamURL;
+                    rAVC.incommingURL = self.incommingURL;
                     rAVC.incommingTeamURL= self.incommingTeamURL;
                     rAVC.backgroundImagePath = self.backgroundImagePath;
                     rAVC.teamName = self.teamName;

@@ -17,7 +17,6 @@
 		1E11F6861839D8980091E8C2 /* GetRosterBIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F6851839D8980091E8C2 /* GetRosterBIO.m */; };
 		1E11F6891839E0210091E8C2 /* HomeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F6881839E0210091E8C2 /* HomeImageViewController.m */; };
 		1E11F68C1839E0500091E8C2 /* HomeImageTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F68B1839E0500091E8C2 /* HomeImageTVC.m */; };
-		1E11F68F1839E0B30091E8C2 /* ImageCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F68E1839E0B30091E8C2 /* ImageCollection.m */; };
 		1E11F6921839E10E0091E8C2 /* CollectionImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F6911839E10E0091E8C2 /* CollectionImageViewController.m */; };
 		1E11F6961839E3E50091E8C2 /* ImagesCollectionContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F6951839E3E50091E8C2 /* ImagesCollectionContainerViewController.m */; };
 		1E11F6991839E8F80091E8C2 /* HomeImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F6981839E8F80091E8C2 /* HomeImageCell.m */; };
@@ -31,6 +30,7 @@
 		1E2F1777172881B80023515F /* mensTennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F1771172881B80023515F /* mensTennis.jpg */; };
 		1E2F177A172883550023515F /* ScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F1779172883550023515F /* ScheduleCell.m */; };
 		1E2F177D1728837D0023515F /* ScheduleTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F177C1728837D0023515F /* ScheduleTVC.m */; };
+		1EA3F9C9183EA08800D3605A /* ImageCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA3F9C8183EA08800D3605A /* ImageCollection.m */; };
 		1EB48AD71835E8D200C42B5C /* GetScoreBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48AD61835E8D200C42B5C /* GetScoreBoard.m */; };
 		1EB48ADB1835F84800C42B5C /* ScoreboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48ADA1835F84800C42B5C /* ScoreboardViewController.m */; };
 		1EB48ADE1835F87F00C42B5C /* ScoreboardTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48ADD1835F87F00C42B5C /* ScoreboardTVC.m */; };
@@ -58,8 +58,6 @@
 		1EFDFEBC1830419600DAF6A4 /* CoachesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDFEBB1830419600DAF6A4 /* CoachesTVC.m */; };
 		1EFDFEC1183041B300DAF6A4 /* FacilitiesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDFEBE183041B300DAF6A4 /* FacilitiesTVC.m */; };
 		1EFDFEC2183041B300DAF6A4 /* FacilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDFEC0183041B300DAF6A4 /* FacilitiesViewController.m */; };
-		1EFDFEC7183041C300DAF6A4 /* RecordsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDFEC4183041C300DAF6A4 /* RecordsTVC.m */; };
-		1EFDFEC8183041C300DAF6A4 /* RecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDFEC6183041C300DAF6A4 /* RecordsViewController.m */; };
 		1EFDFECC18304EDB00DAF6A4 /* TeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDFECB18304EDB00DAF6A4 /* TeamViewController.m */; };
 		CF024E1F180F0EC100F9CF54 /* B Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E1E180F0EC100F9CF54 /* B Logo.png */; };
 		CF024E2518102BF200F9CF54 /* HomeB.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2418102BF200F9CF54 /* HomeB.png */; };
@@ -345,8 +343,6 @@
 		1E11F6881839E0210091E8C2 /* HomeImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeImageViewController.m; sourceTree = "<group>"; };
 		1E11F68A1839E0500091E8C2 /* HomeImageTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeImageTVC.h; sourceTree = "<group>"; };
 		1E11F68B1839E0500091E8C2 /* HomeImageTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeImageTVC.m; sourceTree = "<group>"; };
-		1E11F68D1839E0B30091E8C2 /* ImageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollection.h; sourceTree = "<group>"; };
-		1E11F68E1839E0B30091E8C2 /* ImageCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollection.m; sourceTree = "<group>"; };
 		1E11F6901839E10E0091E8C2 /* CollectionImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionImageViewController.h; sourceTree = "<group>"; };
 		1E11F6911839E10E0091E8C2 /* CollectionImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionImageViewController.m; sourceTree = "<group>"; };
 		1E11F6941839E3E50091E8C2 /* ImagesCollectionContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesCollectionContainerViewController.h; sourceTree = "<group>"; };
@@ -366,6 +362,8 @@
 		1E2F177B1728837D0023515F /* ScheduleTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTVC.h; sourceTree = "<group>"; };
 		1E2F177C1728837D0023515F /* ScheduleTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTVC.m; sourceTree = "<group>"; };
 		1E66ECA418374FBF004FDFC8 /* ScheduleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		1EA3F9C7183EA08800D3605A /* ImageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollection.h; sourceTree = "<group>"; };
+		1EA3F9C8183EA08800D3605A /* ImageCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollection.m; sourceTree = "<group>"; };
 		1EB48AD51835E8D200C42B5C /* GetScoreBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetScoreBoard.h; sourceTree = "<group>"; };
 		1EB48AD61835E8D200C42B5C /* GetScoreBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetScoreBoard.m; sourceTree = "<group>"; };
 		1EB48AD91835F84800C42B5C /* ScoreboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreboardViewController.h; sourceTree = "<group>"; };
@@ -414,10 +412,6 @@
 		1EFDFEBE183041B300DAF6A4 /* FacilitiesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacilitiesTVC.m; sourceTree = "<group>"; };
 		1EFDFEBF183041B300DAF6A4 /* FacilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacilitiesViewController.h; sourceTree = "<group>"; };
 		1EFDFEC0183041B300DAF6A4 /* FacilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacilitiesViewController.m; sourceTree = "<group>"; };
-		1EFDFEC3183041C300DAF6A4 /* RecordsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordsTVC.h; sourceTree = "<group>"; };
-		1EFDFEC4183041C300DAF6A4 /* RecordsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordsTVC.m; sourceTree = "<group>"; };
-		1EFDFEC5183041C300DAF6A4 /* RecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordsViewController.h; sourceTree = "<group>"; };
-		1EFDFEC6183041C300DAF6A4 /* RecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordsViewController.m; sourceTree = "<group>"; };
 		1EFDFECA18304EDB00DAF6A4 /* TeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamViewController.h; sourceTree = "<group>"; };
 		1EFDFECB18304EDB00DAF6A4 /* TeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamViewController.m; sourceTree = "<group>"; };
 		CF024E1E180F0EC100F9CF54 /* B Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "B Logo.png"; sourceTree = "<group>"; };
@@ -706,10 +700,10 @@
 		1E11F6931839E1F60091E8C2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1EA3F9C7183EA08800D3605A /* ImageCollection.h */,
+				1EA3F9C8183EA08800D3605A /* ImageCollection.m */,
 				1E11F68A1839E0500091E8C2 /* HomeImageTVC.h */,
 				1E11F68B1839E0500091E8C2 /* HomeImageTVC.m */,
-				1E11F68D1839E0B30091E8C2 /* ImageCollection.h */,
-				1E11F68E1839E0B30091E8C2 /* ImageCollection.m */,
 				1E11F6941839E3E50091E8C2 /* ImagesCollectionContainerViewController.h */,
 				1E11F6951839E3E50091E8C2 /* ImagesCollectionContainerViewController.m */,
 				1E11F6901839E10E0091E8C2 /* CollectionImageViewController.h */,
@@ -806,17 +800,6 @@
 				1ECC5579173F0DF300EBD61D /* RSSWebView.m */,
 			);
 			name = "RSS News";
-			sourceTree = "<group>";
-		};
-		1EF9AB661832CCFB00A8C159 /* Records */ = {
-			isa = PBXGroup;
-			children = (
-				1EFDFEC3183041C300DAF6A4 /* RecordsTVC.h */,
-				1EFDFEC4183041C300DAF6A4 /* RecordsTVC.m */,
-				1EFDFEC5183041C300DAF6A4 /* RecordsViewController.h */,
-				1EFDFEC6183041C300DAF6A4 /* RecordsViewController.m */,
-			);
-			name = Records;
 			sourceTree = "<group>";
 		};
 		1EF9AB671832CD0B00A8C159 /* Facilities */ = {
@@ -1072,7 +1055,6 @@
 				1EF9AB691832CD7600A8C159 /* Team */,
 				1EF9AB681832CD1900A8C159 /* Coaches */,
 				1EF9AB671832CD0B00A8C159 /* Facilities */,
-				1EF9AB661832CCFB00A8C159 /* Records */,
 				1ECC557E173F0EE400EBD61D /* Roster */,
 				1ECC5580173F0F0500EBD61D /* RSS News */,
 				1ECC557F173F0EF300EBD61D /* Schedule */,
@@ -1607,7 +1589,6 @@
 				CF6569161717863100AE84AC /* FlickrPhotoTableViewController.m in Sources */,
 				CF65691A1717870700AE84AC /* LatestFlickrPhotosTVC.m in Sources */,
 				1E11F678183954640091E8C2 /* ScheduleViewController.m in Sources */,
-				1EFDFEC7183041C300DAF6A4 /* RecordsTVC.m in Sources */,
 				1EFDFEBC1830419600DAF6A4 /* CoachesTVC.m in Sources */,
 				CF65691D171787DF00AE84AC /* AppDelegate.m in Sources */,
 				CF656920171795E800AE84AC /* ImageViewController.m in Sources */,
@@ -1617,7 +1598,6 @@
 				CF833B1D171E14430011DED3 /* FlickrFetcher.m in Sources */,
 				CF833B28171ED4080011DED3 /* RosterViewController.m in Sources */,
 				1E11F69D1839F2910091E8C2 /* GetImages.m in Sources */,
-				1EFDFEC8183041C300DAF6A4 /* RecordsViewController.m in Sources */,
 				1EB48ADB1835F84800C42B5C /* ScoreboardViewController.m in Sources */,
 				1E2F177A172883550023515F /* ScheduleCell.m in Sources */,
 				1E11F67D183998630091E8C2 /* CoachesBioViewController.m in Sources */,
@@ -1645,12 +1625,12 @@
 				1E11F670183950B40091E8C2 /* RosterCell.m in Sources */,
 				1E11F6921839E10E0091E8C2 /* CollectionImageViewController.m in Sources */,
 				1ECC555F173F092400EBD61D /* RSSCell.m in Sources */,
+				1EA3F9C9183EA08800D3605A /* ImageCollection.m in Sources */,
 				1ECC5560173F092400EBD61D /* RSSTVC.m in Sources */,
 				1ECC5561173F092400EBD61D /* WebViewController.m in Sources */,
 				1EFDFECC18304EDB00DAF6A4 /* TeamViewController.m in Sources */,
 				1E11F6861839D8980091E8C2 /* GetRosterBIO.m in Sources */,
 				CFA603A41827592700C21507 /* TeamTVC.m in Sources */,
-				1E11F68F1839E0B30091E8C2 /* ImageCollection.m in Sources */,
 				1ECC557A173F0DF300EBD61D /* RSSEntry.m in Sources */,
 				1ECC557B173F0DF300EBD61D /* RSSHomeCell.m in Sources */,
 				CFA603A1182747BB00C21507 /* MasterTVC.m in Sources */,

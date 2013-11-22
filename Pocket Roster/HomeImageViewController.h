@@ -17,5 +17,6 @@
 @property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
 
 @property (nonatomic) NSString *incommingURL;
+@property (strong, nonatomic) IBOutlet UIImageView *imagePicBackground;
 
 @end

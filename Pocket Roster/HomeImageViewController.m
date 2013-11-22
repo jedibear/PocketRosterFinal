@@ -31,6 +31,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    if (self.haveAlbums) {
+        NSLog(@"yup homeImageVC");
+    }
+    NSLog(@"%@ image background input", self.imageBackground);
+    [self.imagePicBackground setImage:[[UIImage alloc] initWithContentsOfFile:self.imageBackground]];
+    
     
 }
 
@@ -49,7 +55,7 @@
             
             hVC.inputURL = self.incommingURL;
             
-            hVC.incommingURL = self.incommingTeamURL;
+            hVC.incommingURL = self.incommingURL;
             hVC.incommingTeamURL= self.incommingTeamURL;
             hVC.backgroundImagePath = self.backgroundImagePath;
             hVC.teamName = self.teamName;
@@ -68,11 +74,13 @@
             hVC.imageBackground = self.imageBackground;
         }
     }else if([segue.identifier isEqualToString:@"back2TVC"]){
+        
+        NSLog(@"IN HERE %@", self.incommingTeamURL);
         if([segue.destinationViewController isKindOfClass:[TeamViewController class]]){
             
             TeamViewController *hVC = (TeamViewController *)segue.destinationViewController;
             
-           
+            
             hVC.incommingTeamURL= self.incommingTeamURL;
             hVC.backgroundImagePath = self.backgroundImagePath;
             hVC.teamName = self.teamName;
