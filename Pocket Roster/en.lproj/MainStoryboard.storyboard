@@ -2890,17 +2890,17 @@
         <!--ScoreboardTVC-->
         <scene sceneID="F54-SZ-ta7">
             <objects>
-                <tableViewController id="tcQ-78-gqy" customClass="ScoreboardTVC" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="tcQ-78-gqy" customClass="ScoreboardTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" id="Y18-x8-USB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ScoreboardCell" rowHeight="125" id="TD4-4w-6BF" customClass="ScoreboardCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TD4-4w-6BF" id="bI8-N5-P10">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TD4-4w-6BF" id="bI8-N5-P10">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -2993,7 +2993,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n87-c0-fml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3077" y="-1916"/>
+            <point key="canvasLocation" x="-3158" y="-2015"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="W1a-8s-MO7">
@@ -8165,7 +8165,7 @@
                                 <rect key="frame" x="0.0" y="84" width="320" height="484"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" id="Igf-WN-ydg">
+                            <containerView contentMode="scaleToFill" id="Igf-WN-ydg">
                                 <rect key="frame" x="0.0" y="90" width="320" height="478"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -24447,22 +24447,18 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="3fc-uo-Mhd"/>
-        <segue reference="5iD-Rt-hZK"/>
-        <segue reference="gpP-rc-Cgf"/>
+        <segue reference="xgi-aN-lHD"/>
+        <segue reference="Q9t-gr-g74"/>
+        <segue reference="sQv-Q6-vTb"/>
         <segue reference="1SH-Y3-PMA"/>
         <segue reference="c6k-1a-6n5"/>
         <segue reference="Q9t-gr-g74"/>
         <segue reference="jWr-1m-8Ix"/>
         <segue reference="9eF-9v-H2L"/>
-        <segue reference="6ZS-SK-Ezy"/>
-        <segue reference="OFk-AO-NbN"/>
-        <segue reference="Gld-oA-fR0"/>
-        <segue reference="e8M-jM-Gij"/>
-        <segue reference="bvw-09-EOJ"/>
-        <segue reference="MTY-gH-kBm"/>
-        <segue reference="PUH-Ay-ZTi"/>
-        <segue reference="beu-x6-iyl"/>
+        <segue reference="3fc-uo-Mhd"/>
+        <segue reference="7bm-gT-qhD"/>
+        <segue reference="vjT-OU-Xpx"/>
+        <segue reference="0x1-we-ra9"/>
         <segue reference="ZRV-IE-b6O"/>
         <segue reference="72q-0R-X8d"/>
         <segue reference="11h-8S-kvl"/>
@@ -24471,6 +24467,34 @@
         <segue reference="k46-E2-KBE"/>
         <segue reference="YhN-z1-QPI"/>
         <segue reference="NvP-sF-xiW"/>
+        <segue reference="Dnt-bF-smi"/>
+        <segue reference="Tp8-N7-VrK"/>
+        <segue reference="Tji-DF-oQk"/>
+        <segue reference="cVc-Kz-KS9"/>
+        <segue reference="MC5-f9-FW4"/>
+        <segue reference="VKn-ar-eFd"/>
+        <segue reference="bvw-09-EOJ"/>
+        <segue reference="e8M-jM-Gij"/>
+        <segue reference="iji-fs-euv"/>
+        <segue reference="C6f-BF-Oyy"/>
+        <segue reference="UGX-d4-pLE"/>
+        <segue reference="sCi-eI-3s9"/>
+        <segue reference="Zjb-ZR-303"/>
+        <segue reference="NPE-dw-xrA"/>
+        <segue reference="9Te-G4-FL5"/>
+        <segue reference="aqP-HZ-F0C"/>
+        <segue reference="KIy-tm-La7"/>
+        <segue reference="ick-bF-2pH"/>
+        <segue reference="HrA-JP-fds"/>
+        <segue reference="PR0-gs-RDt"/>
+        <segue reference="asZ-KM-2UD"/>
+        <segue reference="vNX-jz-RYS"/>
+        <segue reference="z2W-MS-J4j"/>
+        <segue reference="W7w-RT-wud"/>
+        <segue reference="nz0-8Y-JHX"/>
+        <segue reference="17k-bi-cGE"/>
+        <segue reference="fTn-cB-XwC"/>
+        <segue reference="nYY-0O-lc4"/>
         <segue reference="v1E-hd-ndA"/>
         <segue reference="VPG-cG-G38"/>
         <segue reference="5Ww-Fe-tGA"/>
@@ -24527,6 +24551,12 @@
         <segue reference="bqo-fI-q0T"/>
         <segue reference="8nJ-cb-89J"/>
         <segue reference="RyR-wt-gCQ"/>
+        <segue reference="J12-xy-yW8"/>
+        <segue reference="Pkz-jY-u8Y"/>
+        <segue reference="tWS-LA-BmT"/>
+        <segue reference="YhN-z1-QPI"/>
+        <segue reference="Aes-WL-c55"/>
+        <segue reference="NRy-c8-HF5"/>
         <segue reference="zFm-Yv-8Q2"/>
         <segue reference="kD1-wh-JFm"/>
         <segue reference="V9U-uW-zJA"/>
