@@ -2968,9 +2968,9 @@
                                             <size key="shadowOffset" width="-1" height="-1"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="date" destination="7N2-HH-6nq" id="aRr-rH-h0s"/>
                                     <outlet property="score1" destination="GaI-N2-vKB" id="01f-t8-03U"/>
@@ -8145,10 +8145,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <containerView contentMode="scaleToFill" id="Igf-WN-ydg">
-                                <rect key="frame" x="0.0" y="159" width="320" height="409"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Football Background.jpg" id="YRw-vw-Z7i">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" id="Igf-WN-ydg">
+                                <rect key="frame" x="0.0" y="90" width="320" height="478"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="tcQ-78-gqy" kind="embed" identifier="embedScoreboard" id="Ltr-Sl-JEb"/>
                                 </connections>
@@ -8204,10 +8208,6 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gQP-p9-fsh">
-                                <rect key="frame" x="72" y="20" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -24388,6 +24388,7 @@
         <image name="CreditsBack4.png" width="348" height="531"/>
         <image name="CreditsBackButton.png" width="81" height="74"/>
         <image name="FavsB.png" width="115" height="114"/>
+        <image name="Football Background.jpg" width="538" height="960"/>
         <image name="HomeB.png" width="150" height="147"/>
         <image name="HomeBearLogo.png" width="115" height="113"/>
         <image name="MCrewFinal.png" width="240" height="65"/>
