@@ -51,7 +51,6 @@
 		1ECC5583173F0FDD00EBD61D /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5582173F0FDD00EBD61D /* NewsFeedViewController.m */; };
 		1EDB02E218385092008D7BC2 /* News Story View Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB02E118385092008D7BC2 /* News Story View Controller.m */; };
 		1EDB02E4183855B3008D7BC2 /* rosterPhotoMissing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EDB02E3183855B3008D7BC2 /* rosterPhotoMissing.jpg */; };
-		1EE8F04918517DB100EDFB72 /* LoadImageSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EE8F04818517DB100EDFB72 /* LoadImageSmall.png */; };
 		1EF619AA183493CB0089C154 /* RosterTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF619A9183493CB0089C154 /* RosterTVC.m */; };
 		1EF619AD1834C6600089C154 /* RosterSplashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF619AC1834C6600089C154 /* RosterSplashVC.m */; };
 		1EF619B21834FD7A0089C154 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF619B11834FD7A0089C154 /* QuartzCore.framework */; };
@@ -309,6 +308,7 @@
 		CFE1F9C01839EB3400E8BD9E /* WCrewBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9BF1839EB3400E8BD9E /* WCrewBack.jpg */; };
 		CFE1F9C21839EB3C00E8BD9E /* MCrewBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9C11839EB3C00E8BD9E /* MCrewBack.jpg */; };
 		CFE1F9C41839EB4E00E8BD9E /* MRugbyBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9C31839EB4E00E8BD9E /* MRugbyBack.jpg */; };
+		CFE1F9C618520ABB00E8BD9E /* LoadImageSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9C518520ABB00E8BD9E /* LoadImageSmall.png */; };
 		CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFA17FE448B0071814C /* OldIcon.png */; };
 /* End PBXBuildFile section */
 
@@ -400,7 +400,6 @@
 		1EDB02E018385092008D7BC2 /* News Story View Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "News Story View Controller.h"; sourceTree = "<group>"; };
 		1EDB02E118385092008D7BC2 /* News Story View Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "News Story View Controller.m"; sourceTree = "<group>"; };
 		1EDB02E3183855B3008D7BC2 /* rosterPhotoMissing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rosterPhotoMissing.jpg; sourceTree = SOURCE_ROOT; };
-		1EE8F04818517DB100EDFB72 /* LoadImageSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoadImageSmall.png; sourceTree = "<group>"; };
 		1EF619A8183493CB0089C154 /* RosterTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosterTVC.h; sourceTree = "<group>"; };
 		1EF619A9183493CB0089C154 /* RosterTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RosterTVC.m; sourceTree = "<group>"; };
 		1EF619AB1834C6600089C154 /* RosterSplashVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosterSplashVC.h; sourceTree = "<group>"; };
@@ -671,6 +670,7 @@
 		CFE1F9BF1839EB3400E8BD9E /* WCrewBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WCrewBack.jpg; sourceTree = "<group>"; };
 		CFE1F9C11839EB3C00E8BD9E /* MCrewBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MCrewBack.jpg; sourceTree = "<group>"; };
 		CFE1F9C31839EB4E00E8BD9E /* MRugbyBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRugbyBack.jpg; sourceTree = "<group>"; };
+		CFE1F9C518520ABB00E8BD9E /* LoadImageSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoadImageSmall.png; sourceTree = "<group>"; };
 		CFF5ECFA17FE448B0071814C /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OldIcon.png; path = "Pocket Roster/OldIcon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -891,7 +891,7 @@
 				CF247A1E173B41330079AD32 /* HomeBearLogo2.png */,
 				CF247A1A173B40D10079AD32 /* MyPhotosLogo.png */,
 				CF247A18173B40C50079AD32 /* LiveScoresLogo.png */,
-				1EE8F04818517DB100EDFB72 /* LoadImageSmall.png */,
+				CFE1F9C518520ABB00E8BD9E /* LoadImageSmall.png */,
 			);
 			name = "General Images";
 			sourceTree = "<group>";
@@ -1358,7 +1358,6 @@
 				CFE1F99F1839E79600E8BD9E /* WSoftballSchedule.jpg in Resources */,
 				CFE1F9AF1839E96C00E8BD9E /* WTrackSchedule.jpg in Resources */,
 				CFE1F98B1839E55000E8BD9E /* WLaxSchedule.jpg in Resources */,
-				1EE8F04918517DB100EDFB72 /* LoadImageSmall.png in Resources */,
 				CFE1F99D1839E6FD00E8BD9E /* WSoccerPhoto.jpg in Resources */,
 				CFE1F9A51839E88E00E8BD9E /* WSquashPhoto.jpg in Resources */,
 				CF833B3D1720C38A0011DED3 /* BowdoinFootball.jpg in Resources */,
@@ -1491,6 +1490,7 @@
 				CFE1F9421839DABD00E8BD9E /* BLaxSchedule.jpg in Resources */,
 				CFE1F9871839E4BE00E8BD9E /* WHockeySchedule.jpg in Resources */,
 				CFE1F9991839E6BB00E8BD9E /* WSkiingPhoto.jpg in Resources */,
+				CFE1F9C618520ABB00E8BD9E /* LoadImageSmall.png in Resources */,
 				CFE1F98F1839E5A600E8BD9E /* WRugbySchedule.jpg in Resources */,
 				CFE1F9511839DCB600E8BD9E /* MFootballPhoto.jpg in Resources */,
 				CFE1F94D1839DC5000E8BD9E /* MCrossCountryPhoto.jpg in Resources */,
