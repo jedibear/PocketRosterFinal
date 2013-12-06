@@ -18,7 +18,7 @@
 
 @property (nonatomic) NSString *coachesURL;
 
-@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *coachActivity;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *load;
 
 
 

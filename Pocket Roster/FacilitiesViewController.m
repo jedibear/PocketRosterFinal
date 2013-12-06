@@ -34,8 +34,8 @@
     self.imageIndex = 0;
     
     [self.teamNameLabel setText:self.teamName];
-    self.load = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    
+    //self.load = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [self.load startAnimating];
     
     
     
@@ -45,7 +45,7 @@
     [super viewDidAppear:animated];
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    [self.load startAnimating];
+    
     
     self.facility = [GetFacility GetFacility:self.facilitiesURL];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
@@ -55,7 +55,7 @@
     [self.facilityImage setImage:[self.images objectAtIndex:self.imageIndex]];
     [self.facilityText setText:[self.facility objectForKey:@"facilitiesText"]];
     
-    
+    [self.load stopAnimating];
     
 }
 

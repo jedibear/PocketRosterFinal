@@ -13,6 +13,7 @@
     float current_val, new_val;
     id delegate;
     UILabel *progressLabel;
+    UIImageView *centerImage;
     BOOL *annimationIsInProgress;
 }
 

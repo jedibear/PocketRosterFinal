@@ -18,5 +18,6 @@
 
 
 @property (nonatomic) NSString *inputURL, *incommingURL;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *load;
 
 @end

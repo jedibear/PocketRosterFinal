@@ -51,6 +51,7 @@
 		1ECC5583173F0FDD00EBD61D /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5582173F0FDD00EBD61D /* NewsFeedViewController.m */; };
 		1EDB02E218385092008D7BC2 /* News Story View Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB02E118385092008D7BC2 /* News Story View Controller.m */; };
 		1EDB02E4183855B3008D7BC2 /* rosterPhotoMissing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EDB02E3183855B3008D7BC2 /* rosterPhotoMissing.jpg */; };
+		1EE8F04918517DB100EDFB72 /* LoadImageSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EE8F04818517DB100EDFB72 /* LoadImageSmall.png */; };
 		1EF619AA183493CB0089C154 /* RosterTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF619A9183493CB0089C154 /* RosterTVC.m */; };
 		1EF619AD1834C6600089C154 /* RosterSplashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF619AC1834C6600089C154 /* RosterSplashVC.m */; };
 		1EF619B21834FD7A0089C154 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF619B11834FD7A0089C154 /* QuartzCore.framework */; };
@@ -399,6 +400,7 @@
 		1EDB02E018385092008D7BC2 /* News Story View Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "News Story View Controller.h"; sourceTree = "<group>"; };
 		1EDB02E118385092008D7BC2 /* News Story View Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "News Story View Controller.m"; sourceTree = "<group>"; };
 		1EDB02E3183855B3008D7BC2 /* rosterPhotoMissing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rosterPhotoMissing.jpg; sourceTree = SOURCE_ROOT; };
+		1EE8F04818517DB100EDFB72 /* LoadImageSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoadImageSmall.png; sourceTree = "<group>"; };
 		1EF619A8183493CB0089C154 /* RosterTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosterTVC.h; sourceTree = "<group>"; };
 		1EF619A9183493CB0089C154 /* RosterTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RosterTVC.m; sourceTree = "<group>"; };
 		1EF619AB1834C6600089C154 /* RosterSplashVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosterSplashVC.h; sourceTree = "<group>"; };
@@ -889,6 +891,7 @@
 				CF247A1E173B41330079AD32 /* HomeBearLogo2.png */,
 				CF247A1A173B40D10079AD32 /* MyPhotosLogo.png */,
 				CF247A18173B40C50079AD32 /* LiveScoresLogo.png */,
+				1EE8F04818517DB100EDFB72 /* LoadImageSmall.png */,
 			);
 			name = "General Images";
 			sourceTree = "<group>";
@@ -1355,6 +1358,7 @@
 				CFE1F99F1839E79600E8BD9E /* WSoftballSchedule.jpg in Resources */,
 				CFE1F9AF1839E96C00E8BD9E /* WTrackSchedule.jpg in Resources */,
 				CFE1F98B1839E55000E8BD9E /* WLaxSchedule.jpg in Resources */,
+				1EE8F04918517DB100EDFB72 /* LoadImageSmall.png in Resources */,
 				CFE1F99D1839E6FD00E8BD9E /* WSoccerPhoto.jpg in Resources */,
 				CFE1F9A51839E88E00E8BD9E /* WSquashPhoto.jpg in Resources */,
 				CF833B3D1720C38A0011DED3 /* BowdoinFootball.jpg in Resources */,

@@ -32,8 +32,12 @@
 	// Do any additional setup after loading the view.
     
     [self.teamNameLabel setText:self.teamName];
-    NSLog(@"%@ sched",self.incommingTeamURL);
+    NSLog(@"%@ sched",self.schedBackground);
+    
+    
     [self.backgroundImage setImage:[[UIImage alloc] initWithContentsOfFile:self.schedBackground]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

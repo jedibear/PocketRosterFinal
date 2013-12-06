@@ -31,6 +31,7 @@
 
 - (void) setTeamName:(NSString *)teamName;
 
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *load;
 
 
 @end

@@ -36,14 +36,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.load startAnimating];
     //self.title = @"FEEDS";
     //[self addArticles];
     
-    if (!self.haveNews) {
-        //NSLog(@"sucks");
-        [self fetchRSS];
-        self.haveNews = YES;
-    }
+    
     
     
     
@@ -54,15 +51,22 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-/*
+
 -(void)viewDidAppear:(BOOL)animated{
     
     [super viewDidAppear:animated];
     
+    if (!self.haveNews) {
+        //NSLog(@"sucks");
+        [self fetchRSS];
+        self.haveNews = YES;
+    }
     
+    [self.load stopAnimating];
+    [self.tableView reloadData];
     
 }
-*/
+
 -(void)fetchRSS{
     
     self.stories = [[NSMutableArray alloc]init];

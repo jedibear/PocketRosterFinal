@@ -61,6 +61,11 @@
         progressLabel.textAlignment = NSTextAlignmentCenter ;
         progressLabel.alpha = self.alpha;
         [self addSubview:progressLabel];
+        
+        centerImage = [[UIImageView alloc]initWithImage:[[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"LoadImageSmall" ofType:@"png"]]];
+        centerImage.center = CGPointMake(self.frame.size.width/2,self.frame.size.height/2);
+        
+        [self addSubview:centerImage];
     }
     return self;
 }

@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //NSLog(@"%@ TVC", self.incommingTeamURL);
+    NSLog(@"%@ TVC", self.schedBackground);
     [self.teamNameLabel setText: self.teamName];
     [self.teamBackgroundImage setImage:[[UIImage alloc] initWithContentsOfFile:self.backgroundImagePath]];
 	

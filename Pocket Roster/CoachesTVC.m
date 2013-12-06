@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
 
-    
+    [self.load startAnimating];
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -39,32 +39,20 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-/*
+
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
-    
-    
-    [self.tableView setNeedsDisplay];
-}
-*/
-
--(void)loadView{
-    
-    
     
     if(!self.haveCoaches){
         self.coaches = [GetCoaches getCoaches:self.coachesURL];
         self.haveCoaches = YES;
     }
     
-    self.coachActivity = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    self.coachActivity.center = self.tableView.center;
-    
-    [self.tableView addSubview:self.coachActivity];
-    
-    
+    [self.load stopAnimating];
+    [self.tableView reloadData];
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {

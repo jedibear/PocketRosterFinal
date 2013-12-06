@@ -19,6 +19,7 @@
 
 @property (nonatomic) NSMutableDictionary *incAlbum;
 @property (nonatomic) NSString *incommingURL, *albumTitle, *imageURL;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *load;
 
 
 @end

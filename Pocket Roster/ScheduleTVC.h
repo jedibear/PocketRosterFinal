@@ -13,6 +13,7 @@
 @property (nonatomic) NSMutableDictionary *scheduleInfo;
 @property (nonatomic) NSString *key, *teamName;
 @property (nonatomic) NSString *schedURL;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *load;
 
 
 @end

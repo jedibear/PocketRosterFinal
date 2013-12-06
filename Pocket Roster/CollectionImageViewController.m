@@ -31,6 +31,18 @@
     [super viewDidLoad];
 
     //NSLog(@"%@ bada-bing", self.incAlbum);
+    [self.load startAnimating];
+    
+    
+	// Do any additional setup after loading the view.
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    
     
     if (self.haveAlbums) {
         NSLog(@"yup containerVC");
@@ -45,18 +57,10 @@
         //NSLog(@"inside %@", [self.incAlbum objectForKey:@"picturesLoaded"]);
     }
     
-	// Do any additional setup after loading the view.
+    [self.load stopAnimating];
+    [self.collectionView reloadData];
     
 }
-/*
--(void)viewDidAppear:(BOOL)animated{
-    
-    [super viewDidAppear:animated];
-    
-    
-    
-}
-*/
 
 - (void)didReceiveMemoryWarning
 {

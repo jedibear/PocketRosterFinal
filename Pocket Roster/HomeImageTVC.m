@@ -29,33 +29,36 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    [self.load startAnimating];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    if (self.haveAlbums) {
-        NSLog(@"yup homeImageTVC");
-    }
     
-    if(!self.haveAlbums){
-        self.albums = [GetAlbums getAllAlbums:self.inputURL];
-        self.haveAlbums = YES;
-    }
- 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     
 }
-/*
+
 -(void)viewDidAppear:(BOOL)animated{
     
     [super viewDidAppear:animated];
     
+    if (self.haveAlbums) {
+        NSLog(@"yup homeImageTVC");
+    }
+    NSLog(@"homeImageTVC %@", self.schedBackground);
+    if(!self.haveAlbums){
+        self.albums = [GetAlbums getAllAlbums:self.inputURL];
+        self.haveAlbums = YES;
+    }
     
+    
+    [self.load stopAnimating];
+    [self.tableView reloadData];
     
 }
-*/
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

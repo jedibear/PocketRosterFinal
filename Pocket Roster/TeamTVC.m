@@ -120,7 +120,7 @@
             
             ScheduleViewController *sVC = (ScheduleViewController *)segue.destinationViewController;
             
-            
+            NSLog(@"schedURL: %@", [self.teamLinks objectAtIndex:1]);
             sVC.schedURL = [self.teamLinks objectAtIndex:1];
             sVC.incommingTeamURL = self.incommingTeamURL;
             sVC.teamRoster = self.teamRoster;
@@ -246,7 +246,7 @@
             
             hIVC.schedBackground = self.schedBackground;
             hIVC.imageBackground = self.imageBackground;
-            
+            NSLog(@"image segue %@", hIVC.schedBackground);
         }
     }
 }    

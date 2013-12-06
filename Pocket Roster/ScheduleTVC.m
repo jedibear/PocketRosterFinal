@@ -38,9 +38,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.load startAnimating];
     
-    self.scheduleInfo = [GetSchedule getSchedule:self.schedURL];
-    NSLog(@"%@schedINFO",self.scheduleInfo);
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -48,6 +47,18 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    
+    self.scheduleInfo = [GetSchedule getSchedule:self.schedURL];
+    //NSLog(@"%@schedINFO",self.scheduleInfo);
+    
+    [self.load stopAnimating];
+    [self.tableView reloadData];
 }
 
 
