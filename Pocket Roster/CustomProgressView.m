@@ -66,6 +66,16 @@
         centerImage.center = CGPointMake(self.frame.size.width/2,self.frame.size.height/2);
         
         [self addSubview:centerImage];
+        
+        progressStatus = [[UILabel alloc]initWithFrame:CGRectMake((self.frame.size.width-300)/2, self.frame.size.height/2+75, 300, 80.0)];
+        
+        progressStatus.font = [UIFont boldSystemFontOfSize:12.0];
+        progressStatus.text = @"Please wait while we load the roster...";
+        progressStatus.backgroundColor = [UIColor clearColor];
+        progressStatus.textColor = [UIColor whiteColor];
+        progressStatus.textAlignment = NSTextAlignmentCenter;
+        progressStatus.alpha = self.alpha;
+        [self addSubview:progressStatus];
     }
     return self;
 }

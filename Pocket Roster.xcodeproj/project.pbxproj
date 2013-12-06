@@ -22,6 +22,7 @@
 		1E11F6991839E8F80091E8C2 /* HomeImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F6981839E8F80091E8C2 /* HomeImageCell.m */; };
 		1E11F69D1839F2910091E8C2 /* GetImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F69C1839F2910091E8C2 /* GetImages.m */; };
 		1E18AACC174002A200AFA86F /* BowdoinNews.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E18AACB174002A200AFA86F /* BowdoinNews.png */; };
+		1E2B7C5D185239A000814BB9 /* getStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B7C5C185239A000814BB9 /* getStory.m */; };
 		1E2F1772172881B80023515F /* mensCrew.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F176C172881B70023515F /* mensCrew.jpg */; };
 		1E2F1773172881B80023515F /* mensGolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F176D172881B70023515F /* mensGolf.jpg */; };
 		1E2F1774172881B80023515F /* mensRugby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F176E172881B70023515F /* mensRugby.jpg */; };
@@ -352,6 +353,8 @@
 		1E11F6981839E8F80091E8C2 /* HomeImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeImageCell.m; sourceTree = "<group>"; };
 		1E11F69C1839F2910091E8C2 /* GetImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetImages.m; sourceTree = "<group>"; };
 		1E18AACB174002A200AFA86F /* BowdoinNews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinNews.png; sourceTree = "<group>"; };
+		1E2B7C5B185239A000814BB9 /* getStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getStory.h; sourceTree = "<group>"; };
+		1E2B7C5C185239A000814BB9 /* getStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getStory.m; sourceTree = "<group>"; };
 		1E2F176C172881B70023515F /* mensCrew.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensCrew.jpg; sourceTree = "<group>"; };
 		1E2F176D172881B70023515F /* mensGolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensGolf.jpg; sourceTree = "<group>"; };
 		1E2F176E172881B70023515F /* mensRugby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mensRugby.jpg; sourceTree = "<group>"; };
@@ -782,6 +785,8 @@
 		1ECC5580173F0F0500EBD61D /* RSS News */ = {
 			isa = PBXGroup;
 			children = (
+				1E2B7C5B185239A000814BB9 /* getStory.h */,
+				1E2B7C5C185239A000814BB9 /* getStory.m */,
 				1EDB02E018385092008D7BC2 /* News Story View Controller.h */,
 				1EDB02E118385092008D7BC2 /* News Story View Controller.m */,
 				1ECC5581173F0FDD00EBD61D /* NewsFeedViewController.h */,
@@ -1628,6 +1633,7 @@
 				CF468501173E0246001F8A1F /* FlickrPhotoCell.m in Sources */,
 				1E11F670183950B40091E8C2 /* RosterCell.m in Sources */,
 				1E11F6921839E10E0091E8C2 /* CollectionImageViewController.m in Sources */,
+				1E2B7C5D185239A000814BB9 /* getStory.m in Sources */,
 				1ECC555F173F092400EBD61D /* RSSCell.m in Sources */,
 				1EA3F9C9183EA08800D3605A /* ImageCollection.m in Sources */,
 				1ECC5560173F092400EBD61D /* RSSTVC.m in Sources */,

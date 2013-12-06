@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-     
+    
     //NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@", self.inputURL]];
     NSString *articleURL = [self.inputURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     //NSLog(@"%@", articleURL);

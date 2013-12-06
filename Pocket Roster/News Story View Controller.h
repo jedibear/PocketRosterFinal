@@ -23,6 +23,9 @@
 @property (nonatomic) NSString *newsURLInc, *segueLink;
 
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
-
+@property (strong, nonatomic) NSMutableDictionary *story;
+@property (strong, nonatomic) IBOutlet UIImageView *storyImage;
+@property (strong, nonatomic) IBOutlet UITextView *storyBody;
+@property (strong, nonatomic) IBOutlet UILabel *storyCaption;
 
 @end

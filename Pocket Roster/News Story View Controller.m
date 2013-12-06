@@ -9,6 +9,7 @@
 #import "News Story View Controller.h"
 #import "NewsFeedViewController.h"
 #import "WebViewController.h"
+#import "getStory.h"
 
 @interface News_Story_View_Controller ()
 
@@ -30,14 +31,15 @@
     [super viewDidLoad];
     [self.storyTitle setText:self.incTitle];
 	// Do any additional setup after loading the view.
+    NSLog(@"%@ inputRSSURL", self.newsURL);
     
-    NSString *articleURL = [self.newsURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    //NSLog(@"%@", articleURL);
-    NSURL *url = [NSURL URLWithString:articleURL];
-    //NSLog(@"%@", url);
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    //NSLog(@"%@", requestObj);
-    [self.webView loadRequest:requestObj];
+    self.story = [getStory getStory:self.newsURL];
+    
+    self.storyImage.image = [self.story objectForKey:@"image"];
+    self.storyCaption.text = [self.story objectForKey:@"caption"];
+    self.storyBody.text = [self.story objectForKey:@"story"];
+    
+    
     
 }
 /*

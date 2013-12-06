@@ -280,6 +280,8 @@
             if ([segue.identifier isEqualToString:@"webView"]) {
                     
                 self.sequeLink = [[self.stories objectAtIndex:indexPath.row]objectForKey:@"link"];
+                NSString *newsURL = [self.sequeLink stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+                newsURL = [newsURL stringByReplacingOccurrencesOfString:@" " withString:@""];
                 //self.currentTitle = [[self.stories objectAtIndex:indexPath.row]objectForKey:@"title"];
                 //NSLog(@"%@", self.sequeLink);
                 
@@ -288,7 +290,7 @@
                     
                     newsTMP.teamName = self.teamName;
                     newsTMP.team = self.teamName;
-                    newsTMP.newsURL = self.sequeLink;
+                    newsTMP.newsURL = newsURL;
                     
                     newsTMP.newsURLInc = self.newsURL;
                     newsTMP.longForm = self.longForm;

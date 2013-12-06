@@ -12,7 +12,7 @@
 @interface CustomProgressView : UIView{
     float current_val, new_val;
     id delegate;
-    UILabel *progressLabel;
+    UILabel *progressLabel, *progressStatus;
     UIImageView *centerImage;
     BOOL *annimationIsInProgress;
 }
