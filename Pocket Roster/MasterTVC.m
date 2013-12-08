@@ -73,6 +73,19 @@
             teamVC.imageBackground = footballBackgroundPhotoImagePath;
         }
         
+    }else if([segue.identifier isEqualToString:@"mensNordicSki"]){
+        
+        if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
+            TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;
+            teamVC.longForm = mensNordicSkiing;
+            teamVC.incommingTeamURL =mensNordicSkiStartingURL;
+            teamVC.teamName = mensNordicSkiName;
+            teamVC.backgroundImagePath = mensNordicSkiingBackgroundImagePath;
+            
+            teamVC.schedBackground = mensNordicSkiingBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensNordicSkiingBackgroundPhotoImagePath;
+        }
+        
     }else if([segue.identifier isEqualToString:@"mensXCountryTVCInit"]){
         
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {

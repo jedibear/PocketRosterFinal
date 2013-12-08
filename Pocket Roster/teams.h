@@ -36,6 +36,7 @@
 #define mensLacrosseStartingURL   @"http://athletics.bowdoin.edu/sports/mlax/index";
 #define mensTrackStartingURL   @"http://athletics.bowdoin.edu/sports/mtrack/index";
 #define baseballStartingURL   @"http://athletics.bowdoin.edu/sports/bsb/index";
+#define mensNordicSkiStartingURL @"http://athletics.bowdoin.edu/sports/nordicski/index";
 
 //mens longForm definitions
 #define mensSoccerLongForm   YES;
@@ -51,6 +52,7 @@
 #define mensSquashLongForm   YES;
 #define mensLacrosseLongForm   YES;
 #define baseballLongForm   YES;
+#define mensNordicSkiing   NO;
 
 //mens teamName definitions
 #define mensSoccerName   @"Soccer";
@@ -67,6 +69,7 @@
 #define mensSquashName   @"Squash";
 #define mensLacrosseName   @"Lacrosse";
 #define baseballName   @"Baseball";
+#define mensNordicSkiName @"Nordic Skiing";
 
 //mens backgroundImagePath definitions
 #define mensSoccerBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"MSoccer" ofType:@"jpg"]
@@ -82,6 +85,7 @@
 #define mensBasketballBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"MBasketball" ofType:@"jpg"]
 #define mensTrackBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"MTrack" ofType:@"jpg"]
 #define baseballBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"MBaseball" ofType:@"jpg"]
+#define mensNordicSkiingBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"MSkiing" ofType:@"jpg"]
 
 //mens backgroundImagePath For Schedule definitions
 #define mensSoccerBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MSoccerSchedule" ofType:@"jpg"]
@@ -97,6 +101,7 @@
 #define mensBasketballBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MBasketballSchedule" ofType:@"jpg"]
 #define mensTrackBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MTrackSchedule" ofType:@"jpg"]
 #define baseballBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MBaseballSchedule" ofType:@"jpg"]
+#define mensNordicSkiingBackgroundScheduleImagePath [[NSBundle mainBundle]pathForResource:@"MSkiingSchedule" ofType:@"jpg"]
 
 //mens backgroundImagePath For Photo TableView definitions
 #define mensSoccerBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MSoccerPhoto" ofType:@"jpg"]
@@ -112,7 +117,7 @@
 #define mensBasketballBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MBasketballPhoto" ofType:@"jpg"]
 #define mensTrackBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MTrackPhoto" ofType:@"jpg"]
 #define baseballBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MBaseballPhoto" ofType:@"jpg"]
-
+#define mensNordicSkiingBackgroundPhotoImagePath [[NSBundle mainBundle]pathForResource:@"MSkiingPhoto" ofType:@"jpg"]
 
 
 /****************************
