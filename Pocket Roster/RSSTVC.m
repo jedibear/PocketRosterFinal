@@ -70,7 +70,7 @@
 -(void)fetchRSS{
     
     self.stories = [[NSMutableArray alloc]init];
-    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
         
     NSURL *xmlURL = [NSURL URLWithString:[self getCorrectURL]];
      //NSLog(@"%@", xmlURL);
@@ -140,8 +140,9 @@
     return [self.stories count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     static NSString *CellIdentifier = @"Cell";
     RSSCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
@@ -150,16 +151,6 @@
     if (cell == nil) {
         cell = [[RSSCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    
-    //RSSEntry *entry = [self.allArticles objectAtIndex:indexPath.row];
-    //NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    //[dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
-    //[dateFormatter setDateStyle:NSDateFormatterMediumStyle];
-    
-    //NSString *articleDateString = [dateFormatter stringFromDate:entry.articleDate];
-    
-    //cell.textLabel.text = entry.articleTitle;
-    //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@", articleDateString, entry.blogTitle];
     
     cell.title.text = [[self.stories objectAtIndex:indexPath.row] objectForKey:@"title"];
     cell.description.text = [[self.stories objectAtIndex:indexPath.row]objectForKey:@"summary"];

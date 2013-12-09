@@ -18,7 +18,7 @@
 
 + (NSMutableDictionary *) GetFacility: (NSString *) linkForURLSearch{
 
-    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     NSURL *theURL = [[NSURL alloc] initWithString:linkForURLSearch];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -178,6 +178,8 @@
         }
     }
     [facility setObject:allfacilitiesImages forKey:@"images"];
+    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     return facility;
 }
 @end

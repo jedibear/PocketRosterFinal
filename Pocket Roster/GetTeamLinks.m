@@ -10,9 +10,10 @@
 
 @implementation GetTeamLinks
 
-+(NSMutableArray *) getTeamLinkBreakdown:(NSString *)incommingURL
-{
++(NSMutableArray *) getTeamLinkBreakdown:(NSString *)incommingURL{
 
+    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     NSLog(@"%@", incommingURL);
     
     NSURL *theURL = [[NSURL alloc] initWithString:incommingURL];
@@ -162,7 +163,7 @@
         [teamLinks addObject:recordsTabFinal];
     }
     
-    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     return teamLinks;
     
 }

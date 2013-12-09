@@ -12,6 +12,8 @@
 
 +(NSMutableDictionary*) getBio: (NSString *)inputURL{
     
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    
     NSString *baseURL = @"http://athletics.bowdoin.edu";
     
     NSString *relevantInfo, *playerAttributes, *thisAttrType, *attrTypeVal, *tmpStr;
@@ -128,7 +130,7 @@
         [bioInfo setObject:final forKey:@"bio"];
     }
     
-    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     return bioInfo;
 }
 

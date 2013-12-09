@@ -16,7 +16,7 @@
 
 +(NSMutableDictionary *) getSchedule:(NSString *)linkForURLSearch{
 
-    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     NSURL *theURL = [[NSURL alloc] initWithString:linkForURLSearch];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -229,75 +229,7 @@
             numberOfElements++;
             //NSLog(@"Element 4: %@", scheduleElement4Final);
         }
-/*
-        //Element 5
-        [miniScanner scanUpToString:@"<td" intoString:nil];
-        [miniScanner scanUpToString:@">" intoString:nil];
-        [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement5];
-        
-        scheduleElement5Final = [[scheduleElement5 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-        
-        NSScanner *scan5 = [[NSScanner alloc]initWithString:scheduleElement5Final];
-        [scan5 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
-        [scan5 scanUpToString:@"  " intoString:&scheduleElement5Final];
-        //
-        if (scheduleElement5Final)
-        {
-            numberOfElements++;
-            //NSLog(@"Element 5: %@", scheduleElement5Final);
-        }
-        
-        //Element 6
-        [miniScanner scanUpToString:@"<td" intoString:nil];
-        [miniScanner scanUpToString:@">" intoString:nil];
-        [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement6];
-        
-        scheduleElement6Final = [[scheduleElement6 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-        
-        NSScanner *scan6 = [[NSScanner alloc]initWithString:scheduleElement6Final];
-        [scan6 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
-        [scan6 scanUpToString:@"  " intoString:&scheduleElement6Final];
-        //
-        if (scheduleElement6Final)
-        {
-            numberOfElements++;
-            //NSLog(@"Element 6: %@", scheduleElement6Final);
-        }
-        
-        //Element 7
-        [miniScanner scanUpToString:@"<td" intoString:nil];
-        [miniScanner scanUpToString:@">" intoString:nil];
-        [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement7];
-        
-        scheduleElement7Final = [[scheduleElement7 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-        
-        NSScanner *scan7 = [[NSScanner alloc]initWithString:scheduleElement7Final];
-        [scan7 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
-        [scan7 scanUpToString:@"  " intoString:&scheduleElement7Final];
-        
-        if (scheduleElement7Final)
-        {
-            numberOfElements++;
-            //NSLog(@"Element 7: %@", scheduleElement7Final);
-        }
 
-        //Element 8
-        [miniScanner scanUpToString:@"<td" intoString:nil];
-        [miniScanner scanUpToString:@">" intoString:nil];
-        [miniScanner scanUpToString:@"</td>" intoString:&scheduleElement8];
-        
-        scheduleElement8Final = [[scheduleElement8 substringFromIndex: dumbVariable]stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-        
-        NSScanner *scan8 = [[NSScanner alloc]initWithString:scheduleElement8Final];
-        [scan8 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
-        [scan8 scanUpToString:@"  " intoString:&scheduleElement8Final];
-        
-        if (scheduleElement8Final)
-        {
-            numberOfElements++;
-            //NSLog(@"Element 8: %@", scheduleElement8Final);
-        }
- */
 
         [scanner scanUpToString:@"<tr class=\"schedule-row" intoString:nil];
         [scanner scanUpToString:@"</tr>" intoString:nil];
@@ -312,44 +244,13 @@
             [allScheduleElements addObject:scheduleElement3Final];
             [allScheduleElements addObject:scheduleElement4Final];
         }
-        /*
-        else if (numberOfElements == 5){
-            [allScheduleElements addObject:scheduleElement1Final];
-            [allScheduleElements addObject:[NSString stringWithFormat:@"%@%@",scheduleElement2aFinal,scheduleElement2bFinal]];
-            [allScheduleElements addObject:scheduleElement3Final];
-            [allScheduleElements addObject:scheduleElement4Final];
-            [allScheduleElements addObject:scheduleElement5Final];
-        }else if(numberOfElements == 6){
-            [allScheduleElements addObject:scheduleElement1Final];
-            [allScheduleElements addObject:[NSString stringWithFormat:@"%@%@",scheduleElement2aFinal,scheduleElement2bFinal]];
-            [allScheduleElements addObject:scheduleElement3Final];
-            [allScheduleElements addObject:scheduleElement4Final];
-            [allScheduleElements addObject:scheduleElement5Final];
-            [allScheduleElements addObject:scheduleElement6Final];
-        }else if (numberOfElements == 7){
-            [allScheduleElements addObject:scheduleElement1Final];
-            [allScheduleElements addObject:[NSString stringWithFormat:@"%@%@",scheduleElement2aFinal,scheduleElement2bFinal]];
-            [allScheduleElements addObject:scheduleElement3Final];
-            [allScheduleElements addObject:scheduleElement4Final];
-            [allScheduleElements addObject:scheduleElement5Final];
-            [allScheduleElements addObject:scheduleElement6Final];
-            [allScheduleElements addObject:scheduleElement7Final];
-        }else if (numberOfElements == 8){
-            [allScheduleElements addObject:scheduleElement1Final];
-            [allScheduleElements addObject:[NSString stringWithFormat:@"%@%@",scheduleElement2aFinal,scheduleElement2bFinal]];
-            [allScheduleElements addObject:scheduleElement3Final];
-            [allScheduleElements addObject:scheduleElement4Final];
-            [allScheduleElements addObject:scheduleElement5Final];
-            [allScheduleElements addObject:scheduleElement6Final];
-            [allScheduleElements addObject:scheduleElement7Final];
-            [allScheduleElements addObject:scheduleElement8Final];
-        }
-*/
+        
         key = [[NSString alloc]initWithFormat:@"%d", keyNum];
         [wholeSched setObject:allScheduleElements forKey:key];
         keyNum++;
     
     }
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     return wholeSched;
 
 }

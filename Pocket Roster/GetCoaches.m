@@ -15,6 +15,9 @@
 @implementation GetCoaches
 
 + (NSMutableDictionary *) getCoaches: (NSString *) linkForURLSearch{
+    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    
     int key = 0;
     NSURL *theURL = [[NSURL alloc] initWithString:linkForURLSearch];
     
@@ -211,6 +214,8 @@
              
     }
 
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    
     return coaches;
 }
 

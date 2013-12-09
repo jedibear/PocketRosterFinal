@@ -80,6 +80,11 @@
 - (void)getAthleteBios{
     
     if (self.haveRoster) {
+        
+        self.progress = [NSNumber numberWithFloat:1.0];
+        [customProgressView performSelectorOnMainThread:@selector(setProgress:) withObject:self.progress waitUntilDone:YES];
+        
+        
         [self performSegueWithIdentifier:@"continue" sender:self];
     }else{
     

@@ -13,6 +13,7 @@
 
 +(NSMutableArray *) getMostRecentImages: (NSString *)link{
     
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
     NSURL *theURL = [[NSURL alloc] initWithString:link];
     
@@ -75,7 +76,7 @@
             }
     
     
-    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     
     return photoTitles;
 }

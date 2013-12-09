@@ -12,6 +12,8 @@
 
 +(NSMutableDictionary*) getStory: (NSString *)inputURL{
     
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    
     NSLog(@"inputURL%@", inputURL);
     
     NSString *baseURL = @"http://athletics.bowdoin.edu";
@@ -107,6 +109,8 @@
     
     NSString *final = [tmp componentsJoinedByString:@" "];
     [rssStory setObject:final forKey:@"story"];
+    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     
     return rssStory;
 }

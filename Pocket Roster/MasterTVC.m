@@ -224,6 +224,9 @@
             teamVC.incommingTeamURL = mensTrackStartingURL;
             teamVC.teamName = mensTrackName;
             teamVC.backgroundImagePath = mensTrackBackgroundImagePath;
+            
+            teamVC.schedBackground = mensTrackBackgroundScheduleImagePath;
+            teamVC.imageBackground = mensTrackBackgroundPhotoImagePath;
         }
         
     }else if([segue.identifier isEqualToString:@"mensBaseball"]){
@@ -408,7 +411,7 @@
             teamVC.imageBackground = womensSquashBackgroundPhotoImagePath;
         }
         
-    }else if([segue.identifier isEqualToString:@"wNorticSkiing"]){
+    }else if([segue.identifier isEqualToString:@"wNordicSkiing"]){
         
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             TeamViewController *teamVC = (TeamViewController *) segue.destinationViewController;

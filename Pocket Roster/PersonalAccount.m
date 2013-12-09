@@ -64,16 +64,16 @@
  * This is where I go through the text file and pull the information I need 
  */
 
-- (void) addUsersInfo:(NSString *)username
-{
+- (void) addUsersInfo:(NSString *)username{
+    
  NSString *filePath = [[NSBundle mainBundle] pathForResource:@"POCKETROSTERTEXTFILE" ofType:@"txt"];
  NSString *fileContents = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
  
  NSScanner *scanner = [NSScanner scannerWithString:fileContents];
  
  
- NSString *userLoad = [NSString stringWithFormat:@"Username %d", username];
- [scanner scanUpToString:userLoad intoString:NULL];
+    NSString *userLoad = [[NSString alloc] initWithFormat:@"Username %@",username];
+    [scanner scanUpToString:userLoad intoString:NULL];
  
  //NSLog(@"Usernaem: %@", username);
  

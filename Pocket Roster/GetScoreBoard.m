@@ -14,6 +14,8 @@
 //takes the URL of the Bowdoin Athletics Homepage in and returns an NSMutableDict filled with games played
 + (NSMutableDictionary *)getTheScoreBoard:(NSString *)homePageURL{
     
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    
     int key = 1;
     NSLog(@"%@", homePageURL);
     NSString *team1, *team2, *sport, *score1, *score2, *status, *specialNote, *date, *tmp, *tmp2, *app, *test;
@@ -170,6 +172,8 @@
         
         [smallScanner scanUpToString:@">" intoString:nil];
     }
+    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     
     return scoreboard;
 }

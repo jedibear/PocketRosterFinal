@@ -11,8 +11,9 @@
 
 @implementation Get_Data_From_Website
 
-+ (NSMutableDictionary *) getInfo: (NSString *) linkForURLSearch
-{
++ (NSMutableDictionary *) getInfo: (NSString *) linkForURLSearch{
+    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     int key = 0;
     
     NSURL *theURL = [[NSURL alloc] initWithString:linkForURLSearch];
@@ -251,6 +252,7 @@ while ([scanner scanUpToString:@"tr class=\"roster-row" intoString:nil]) {
      
 }
    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 return bowdoinEntireTeam;
 
     

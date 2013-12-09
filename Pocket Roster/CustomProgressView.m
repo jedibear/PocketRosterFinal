@@ -128,7 +128,13 @@
     
     annimationIsInProgress = YES;
     
-    float animation_time = to_value-self.current_val;
+    float animation_time;
+    
+    if (to_value == 1.0 && self.current_val == 0.0) {
+        animation_time = 0.1;
+    }else{
+        animation_time = to_value-self.current_val;
+    }
     
     [self performSelector:@selector(SetAnimationDone) withObject:Nil afterDelay:animation_time];
     

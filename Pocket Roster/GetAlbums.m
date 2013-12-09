@@ -14,6 +14,8 @@
 
 +(NSMutableDictionary *) getAllAlbums: (NSString *)linkForSearch{
     NSLog(@"%@here2",linkForSearch);
+    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
    
     NSURL *theURL = [[NSURL alloc] initWithString:linkForSearch];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:theURL];
@@ -95,6 +97,8 @@
         
         [linkScanner scanUpToString:@">" intoString:nil];
     }
+    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     
     return albums;
 }

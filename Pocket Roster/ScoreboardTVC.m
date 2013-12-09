@@ -61,9 +61,10 @@
     [self.scoreboard removeObjectForKey:@"1"];
     NSLog(@"%@here", self.scoreboard);
     
-    [self.tableView setNeedsDisplay];
+    [self.tableView reloadData];
     
     [(UIRefreshControl *)sender endRefreshing];
+    
 }
 
 #pragma mark - Table view data source

@@ -27,6 +27,6 @@
 
 @protocol CustomProgressViewDelegate
 
--(void)didFinishAnimation:(CustomProgressView *) progressView;
+
 
 @end
