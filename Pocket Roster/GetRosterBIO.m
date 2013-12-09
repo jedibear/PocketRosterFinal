@@ -47,12 +47,16 @@
     
     UIImage *athleteBioPhoto = [[UIImage alloc]initWithData:imageData];
     
+    
     if (athleteBioPhoto) {
+        
         [bioInfo setObject:athleteBioPhoto forKey:@"image"];
+        
     }else{
-        NSLog(@"no bio photo");
+        
         UIImage *altPhoto = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"rosterPhotoMissing" ofType:@"jpg"]];
         [bioInfo setObject:altPhoto forKey:@"image"];
+        
     }
     
     

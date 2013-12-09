@@ -13,7 +13,7 @@
 
 
 +(NSMutableDictionary *) getAllAlbums: (NSString *)linkForSearch{
-    NSLog(@"%@here2",linkForSearch);
+   
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
    
@@ -84,10 +84,10 @@
         if (photoAlbum1Final)
         {
             [albumDetails setObject:startURL forKey:@"link"];
-           // NSLog(@"This is the album Title: %@", startURL);
+           
             
             [albumDetails setObject:albumTitle1Final forKey:@"title"];
-            //NSLog(@"This is the album Title: %@", albumTitle1Final);
+            
             [albumDetails setObject:pictures forKey:@"pictures"];
             [albumDetails setObject:havePictures forKey:@"picturesLoaded"];
             

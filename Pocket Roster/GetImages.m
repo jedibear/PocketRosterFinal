@@ -65,7 +65,7 @@
                     NSURL *imageURL = [[NSURL alloc]initWithString:[baseURL stringByAppendingString:photoFinal1]];
                     NSData *imageData = [[NSData alloc]initWithContentsOfURL:imageURL];
                     UIImage *photo = [[UIImage alloc]initWithData:imageData];
-                    NSLog(@"This is the JPG: %@", photo);
+                    
                     if (photo) {
                         [photoTitles addObject:photo];
                         

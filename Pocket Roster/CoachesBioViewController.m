@@ -36,10 +36,7 @@
 	// Do any additional setup after loading the view.
     
     self.hasBioStory = NO;
-    
     NSMutableArray *tmp = [[NSMutableArray alloc]init];
-    
-    NSLog(@"%@", self.bio);
     
     [self.bio enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop){
         if ([key isEqualToString:@"bio"]) {

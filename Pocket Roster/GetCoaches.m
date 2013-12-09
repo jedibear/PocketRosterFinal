@@ -71,7 +71,7 @@
     [scanner1 scanUpToString:@">" intoString:nil];
 
     while ([scanner1 scanUpToString:@"<div class=\"bio-wrap clearfix\"" intoString:&test]) {
-        NSLog(@"%@",test);
+        
         NSScanner *scanner = [[NSScanner alloc]initWithString:test];
         
         [scanner scanUpToString:@"class=\"bio-title\"" intoString:nil];
@@ -81,27 +81,28 @@
         [scanner scanUpToString:@">" intoString:nil];
         [scanner scanUpToString:@"<" intoString:&coachTitlePre];
         coachTitle = [coachTitlePre substringFromIndex: dumbVariable];
-        NSLog(@"Coach Name: %@", coachTitle);
-        if (coachTitle)
-        {
+        
+        if (coachTitle){
+            
             // Adding Name
             [bowdoinCoachesElements setObject:coachTitle forKey:@"name"];
+            
             // Adding Image
             [scanner scanUpToString:@"class=\"about" intoString:nil];
             [scanner scanUpToString:@"<img src=" intoString:nil];
             [scanner scanUpToString:@"\"" intoString:nil];
             [scanner scanUpToString:@"?" intoString:&coachImagePre];
-            coachImage = [baseURL stringByAppendingString:[coachImagePre substringFromIndex: dumbVariable]];
-            NSLog(@"Coach's Image: %@", coachImage);
             
-            if (coachImage)
-            {
+            coachImage = [baseURL stringByAppendingString:[coachImagePre substringFromIndex: dumbVariable]];
+            
+            
+            if (coachImage){
                 NSURL *imageURL = [[NSURL alloc] initWithString:coachImage];
                 NSData *imageData = [[NSData alloc]initWithContentsOfURL:imageURL];
                 UIImage *coachPic= [[UIImage alloc]initWithData:imageData];
                 [bowdoinCoachesElements setObject:coachPic forKey:@"image"];
             }else{
-                NSLog(@"no bio photo");
+                
                 UIImage *altPhoto = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"rosterPhotoMissing" ofType:@"jpg"]];
                 [bowdoinCoachesElements setObject:altPhoto forKey:@"image"];
             }
@@ -111,10 +112,10 @@
             [scanner scanUpToString:@"class=\"val" intoString:nil];
             [scanner scanUpToString:@">" intoString:nil];
             [scanner scanUpToString:@"</td>" intoString:&coachPositionPre];
+            
             coachPosition = [coachPositionPre substringFromIndex: dumbVariable];
-            NSLog(@"Coach Position: %@", coachPosition);
-            if (coachPosition)
-            {
+            
+            if (coachPosition){
                 [bowdoinCoachesElements setObject:coachPosition forKey:@"position"];
             }
             
@@ -123,10 +124,10 @@
             [scanner scanUpToString:@"class=\"val" intoString:NULL];
             [scanner scanUpToString:@">" intoString:NULL];
             [scanner scanUpToString:@"</td>" intoString:&coachPhonePre];
+            
             coachPhone = [coachPhonePre substringFromIndex: dumbVariable];
-            NSLog(@"Coach Phone Number: %@", coachPhone);
-            if (coachPhone)
-            {
+            
+            if (coachPhone){
                 [bowdoinCoachesElements setObject:coachPhone forKey:@"phone"];
             }
             
@@ -137,10 +138,10 @@
             [scanner scanUpToString:@">" intoString:NULL];
             [scanner scanUpToString:@"</a>" intoString:&coachEmailPre];
             NSArray* breakDownString = [coachEmailPre componentsSeparatedByString:@">"];
+            
             coachEmail = [breakDownString objectAtIndex: 2];
-            NSLog(@"Coaches Email: %@", coachEmail);
-            if (coachEmail)
-            {
+            
+            if (coachEmail){
                 [bowdoinCoachesElements setObject:coachEmail forKey:@"email"];
             }
             

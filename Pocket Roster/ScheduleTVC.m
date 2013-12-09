@@ -55,7 +55,6 @@
     
     
     self.scheduleInfo = [GetSchedule getSchedule:self.schedURL];
-    //NSLog(@"%@schedINFO",self.scheduleInfo);
     
     [self.load stopAnimating];
     [self.tableView reloadData];

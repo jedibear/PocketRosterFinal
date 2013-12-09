@@ -38,7 +38,7 @@
 
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
     [self setRefreshControl:refreshControl];
-    //NSLog(@"%@", self.scoreboard);
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -59,7 +59,7 @@
     self.scoreboard = [GetScoreBoard getTheScoreBoard:@"http://athletics.bowdoin.edu/landing/index"];
     
     [self.scoreboard removeObjectForKey:@"1"];
-    NSLog(@"%@here", self.scoreboard);
+    
     
     [self.tableView reloadData];
     
@@ -80,7 +80,6 @@
 {
 
     // Return the number of rows in the section.
-    //NSLog(@"%@", self.scoreboard);
     return [self.scoreboard count];
 }
 

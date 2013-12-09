@@ -120,8 +120,7 @@
         cell.athleteName.text = athleteName;
         cell.athleteDetails.text = athleteDetails;
         cell.athleteImage.image = athletePic;
-        
-        //NSLog(@"%lu", (unsigned long)[self.footballTeamRoster count]);
+       
     }
     
     

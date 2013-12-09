@@ -43,11 +43,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"%@",self.incommingTeamURL);
+    
     self.teamLinks = [GetTeamLinks getTeamLinkBreakdown:self.incommingTeamURL];
     
     
-    //NSLog(@"%@", self.teamRoster);
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -87,10 +87,6 @@
         
         if ([segue.destinationViewController isKindOfClass:[RosterSplashVC class]]) {
             
-            //NSLog(@"HERE");
-            
-            
-            
             RosterSplashVC *rVC = (RosterSplashVC *)segue.destinationViewController;
 
             if(!self.haveRoster){
@@ -120,7 +116,7 @@
             
             ScheduleViewController *sVC = (ScheduleViewController *)segue.destinationViewController;
             
-            NSLog(@"schedURL: %@", [self.teamLinks objectAtIndex:1]);
+
             sVC.schedURL = [self.teamLinks objectAtIndex:1];
             sVC.incommingTeamURL = self.incommingTeamURL;
             sVC.teamRoster = self.teamRoster;
@@ -246,7 +242,7 @@
             
             hIVC.schedBackground = self.schedBackground;
             hIVC.imageBackground = self.imageBackground;
-            NSLog(@"image segue %@", hIVC.schedBackground);
+           
         }
     }
 }    

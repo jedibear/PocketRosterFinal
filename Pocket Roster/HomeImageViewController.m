@@ -31,11 +31,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    if (self.haveAlbums) {
-        NSLog(@"yup homeImageVC");
-    }
-    NSLog(@"image background input %@", self.imageBackground);
-    NSLog(@"sched background input %@", self.schedBackground);
     [self.imagePicBackground setImage:[[UIImage alloc] initWithContentsOfFile:self.imageBackground]];
     
     
@@ -76,7 +71,7 @@
         }
     }else if([segue.identifier isEqualToString:@"back2TVC"]){
         
-        NSLog(@"IN HERE %@", self.schedBackground);
+        
         if([segue.destinationViewController isKindOfClass:[TeamViewController class]]){
             
             TeamViewController *hVC = (TeamViewController *)segue.destinationViewController;

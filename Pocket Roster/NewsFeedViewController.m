@@ -52,10 +52,9 @@
             
             RSSTVC *rSSTmp = (RSSTVC *)segue.destinationViewController;
             
-            NSLog(@"here1");
+            
             if (!self.incommingTeamURL) {
                 self.newsURL = @"http://athletics.bowdoin.edu/landing/headlines-featured?feed=rss_2.0";
-                NSLog(@"here2");
             }
             
             
@@ -86,7 +85,7 @@
                 tVC.longForm = self.longForm;
                 tVC.backgroundImagePath = self.backgroundImagePath;
                 tVC.incommingTeamURL = self.incommingTeamURL;
-                NSLog(@"%@",self.incommingTeamURL);
+                
                 
                 tVC.teamRoster = self.teamRoster;
                 tVC.stories = self.stories;

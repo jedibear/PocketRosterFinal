@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E08C6D318566FCD00AB5F3C /* Pocket_RosterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E08C6D218566FCD00AB5F3C /* Pocket_RosterAppDelegate.m */; };
+		1E08C6D61856704400AB5F3C /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E08C6D51856704400AB5F3C /* ImageViewController.m */; };
 		1E11F66D1839509B0091E8C2 /* CustomProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F66C1839509B0091E8C2 /* CustomProgressView.m */; };
 		1E11F670183950B40091E8C2 /* RosterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F66F183950B40091E8C2 /* RosterCell.m */; };
 		1E11F673183950D00091E8C2 /* RosterAthleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11F672183950D00091E8C2 /* RosterAthleteViewController.m */; };
@@ -31,7 +33,6 @@
 		1E2F1777172881B80023515F /* mensTennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E2F1771172881B80023515F /* mensTennis.jpg */; };
 		1E2F177A172883550023515F /* ScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F1779172883550023515F /* ScheduleCell.m */; };
 		1E2F177D1728837D0023515F /* ScheduleTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F177C1728837D0023515F /* ScheduleTVC.m */; };
-		1EA3F9C9183EA08800D3605A /* ImageCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA3F9C8183EA08800D3605A /* ImageCollection.m */; };
 		1EB48AD71835E8D200C42B5C /* GetScoreBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48AD61835E8D200C42B5C /* GetScoreBoard.m */; };
 		1EB48ADB1835F84800C42B5C /* ScoreboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48ADA1835F84800C42B5C /* ScoreboardViewController.m */; };
 		1EB48ADE1835F87F00C42B5C /* ScoreboardTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48ADD1835F87F00C42B5C /* ScoreboardTVC.m */; };
@@ -44,11 +45,6 @@
 		1EC4B672183A2C8100226160 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC4B671183A2C8100226160 /* HomeViewController.m */; };
 		1ECC555F173F092400EBD61D /* RSSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC555A173F092400EBD61D /* RSSCell.m */; };
 		1ECC5560173F092400EBD61D /* RSSTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC555C173F092400EBD61D /* RSSTVC.m */; };
-		1ECC5561173F092400EBD61D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC555E173F092400EBD61D /* WebViewController.m */; };
-		1ECC557A173F0DF300EBD61D /* RSSEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5573173F0DF300EBD61D /* RSSEntry.m */; };
-		1ECC557B173F0DF300EBD61D /* RSSHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5575173F0DF300EBD61D /* RSSHomeCell.m */; };
-		1ECC557C173F0DF300EBD61D /* RSSHomeTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5577173F0DF300EBD61D /* RSSHomeTVC.m */; };
-		1ECC557D173F0DF300EBD61D /* RSSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5579173F0DF300EBD61D /* RSSWebView.m */; };
 		1ECC5583173F0FDD00EBD61D /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5582173F0FDD00EBD61D /* NewsFeedViewController.m */; };
 		1EDB02E218385092008D7BC2 /* News Story View Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB02E118385092008D7BC2 /* News Story View Controller.m */; };
 		1EDB02E4183855B3008D7BC2 /* rosterPhotoMissing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EDB02E3183855B3008D7BC2 /* rosterPhotoMissing.jpg */; };
@@ -57,7 +53,6 @@
 		1EF619B21834FD7A0089C154 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF619B11834FD7A0089C154 /* QuartzCore.framework */; };
 		1EFDFEB91830414C00DAF6A4 /* CoachesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDFEB81830414C00DAF6A4 /* CoachesViewController.m */; };
 		1EFDFEBC1830419600DAF6A4 /* CoachesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDFEBB1830419600DAF6A4 /* CoachesTVC.m */; };
-		1EFDFEC1183041B300DAF6A4 /* FacilitiesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDFEBE183041B300DAF6A4 /* FacilitiesTVC.m */; };
 		1EFDFEC2183041B300DAF6A4 /* FacilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDFEC0183041B300DAF6A4 /* FacilitiesViewController.m */; };
 		1EFDFECC18304EDB00DAF6A4 /* TeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDFECB18304EDB00DAF6A4 /* TeamViewController.m */; };
 		CF024E1F180F0EC100F9CF54 /* B Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E1E180F0EC100F9CF54 /* B Logo.png */; };
@@ -139,41 +134,24 @@
 		CF4684D8173DC2D1001F8A1F /* BOWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */; };
 		CF4684DB173DC4D0001F8A1F /* LoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4684DA173DC4D0001F8A1F /* LoginButton.png */; };
 		CF4684E1173DF963001F8A1F /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4684E0173DF963001F8A1F /* OldIcon.png */; };
-		CF4684F0173DFD9B001F8A1F /* FlickrPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684E4173DFD9B001F8A1F /* FlickrPhotoViewController.m */; };
-		CF4684F1173DFD9B001F8A1F /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684E6173DFD9B001F8A1F /* Flickr.m */; };
-		CF4684F2173DFD9B001F8A1F /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684E8173DFD9B001F8A1F /* FlickrPhoto.m */; };
-		CF4684F3173DFD9B001F8A1F /* FlickrPracticeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684EA173DFD9B001F8A1F /* FlickrPracticeAppDelegate.m */; };
-		CF4684F5173DFD9B001F8A1F /* FlickrPracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684ED173DFD9B001F8A1F /* FlickrPracticeViewController.m */; };
-		CF4684F6173DFD9B001F8A1F /* FlickrPhotoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684EF173DFD9B001F8A1F /* FlickrPhotoHeaderView.m */; };
-		CF468501173E0246001F8A1F /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF468500173E0245001F8A1F /* FlickrPhotoCell.m */; };
 		CF56488F174096690067FBBB /* NewsfeedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF56488E174096690067FBBB /* NewsfeedIcon.png */; };
 		CF6568D5171782B700AE84AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D4171782B700AE84AC /* UIKit.framework */; };
 		CF6568D7171782B700AE84AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D6171782B700AE84AC /* Foundation.framework */; };
 		CF6568D9171782B700AE84AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D8171782B700AE84AC /* CoreGraphics.framework */; };
 		CF6568DF171782B700AE84AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF6568DD171782B700AE84AC /* InfoPlist.strings */; };
 		CF6568E1171782B700AE84AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6568E0171782B700AE84AC /* main.m */; };
-		CF6568E5171782B700AE84AC /* Pocket_RosterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6568E4171782B700AE84AC /* Pocket_RosterAppDelegate.m */; };
 		CF6568E7171782B700AE84AC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6568E6171782B700AE84AC /* Default.png */; };
 		CF6568E9171782B700AE84AC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6568E8171782B700AE84AC /* Default@2x.png */; };
 		CF6568EB171782B700AE84AC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6568EA171782B700AE84AC /* Default-568h@2x.png */; };
 		CF6568EE171782B700AE84AC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6568EC171782B700AE84AC /* MainStoryboard.storyboard */; };
-		CF6568F1171782B700AE84AC /* Pocket_RosterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6568F0171782B700AE84AC /* Pocket_RosterViewController.m */; };
 		CF6568F9171782B700AE84AC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568F8171782B700AE84AC /* SenTestingKit.framework */; };
 		CF6568FA171782B700AE84AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D4171782B700AE84AC /* UIKit.framework */; };
 		CF6568FB171782B700AE84AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D6171782B700AE84AC /* Foundation.framework */; };
 		CF656903171782B700AE84AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF656901171782B700AE84AC /* InfoPlist.strings */; };
 		CF656906171782B700AE84AC /* Pocket_RosterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF656905171782B700AE84AC /* Pocket_RosterTests.m */; };
-		CF6569161717863100AE84AC /* FlickrPhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6569141717863100AE84AC /* FlickrPhotoTableViewController.m */; };
-		CF65691A1717870700AE84AC /* LatestFlickrPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6569191717870700AE84AC /* LatestFlickrPhotosTVC.m */; };
 		CF65691D171787DF00AE84AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65691C171787DF00AE84AC /* AppDelegate.m */; };
-		CF656920171795E800AE84AC /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65691F171795E800AE84AC /* ImageViewController.m */; };
-		CF6569231717968500AE84AC /* AttributedStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6569221717968500AE84AC /* AttributedStringViewController.m */; };
-		CF65692A17179C1F00AE84AC /* BowdoinButton.jpm.png in Resources */ = {isa = PBXBuildFile; fileRef = CF65692917179C1F00AE84AC /* BowdoinButton.jpm.png */; };
 		CF65692C17179F9800AE84AC /* SwimmingCover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF65692B17179F9800AE84AC /* SwimmingCover.jpg */; };
-		CF65692E1717ABD700AE84AC /* SwimLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF65692D1717ABD700AE84AC /* SwimLogo.jpg */; };
-		CF6569321717BA1B00AE84AC /* FootballLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6569311717BA1B00AE84AC /* FootballLogo.png */; };
 		CF833B19171E14110011DED3 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF833B18171E14110011DED3 /* iPad.storyboard */; };
-		CF833B1D171E14430011DED3 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CF833B1C171E14420011DED3 /* FlickrFetcher.m */; };
 		CF833B28171ED4080011DED3 /* RosterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF833B27171ED4080011DED3 /* RosterViewController.m */; };
 		CF833B391720C0E40011DED3 /* BowdoinSwimming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B381720C0E40011DED3 /* BowdoinSwimming.jpg */; };
 		CF833B3A1720C0E40011DED3 /* BowdoinSwimming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B381720C0E40011DED3 /* BowdoinSwimming.jpg */; };
@@ -324,6 +302,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E08C6D118566FCD00AB5F3C /* Pocket_RosterAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pocket_RosterAppDelegate.h; sourceTree = "<group>"; };
+		1E08C6D218566FCD00AB5F3C /* Pocket_RosterAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pocket_RosterAppDelegate.m; sourceTree = "<group>"; };
+		1E08C6D41856704400AB5F3C /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		1E08C6D51856704400AB5F3C /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		1E11F66A18394B320091E8C2 /* teams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = teams.h; sourceTree = "<group>"; };
 		1E11F66B1839509B0091E8C2 /* CustomProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomProgressView.h; sourceTree = "<group>"; };
 		1E11F66C1839509B0091E8C2 /* CustomProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomProgressView.m; sourceTree = "<group>"; };
@@ -366,8 +348,6 @@
 		1E2F177B1728837D0023515F /* ScheduleTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTVC.h; sourceTree = "<group>"; };
 		1E2F177C1728837D0023515F /* ScheduleTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTVC.m; sourceTree = "<group>"; };
 		1E66ECA418374FBF004FDFC8 /* ScheduleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
-		1EA3F9C7183EA08800D3605A /* ImageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollection.h; sourceTree = "<group>"; };
-		1EA3F9C8183EA08800D3605A /* ImageCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollection.m; sourceTree = "<group>"; };
 		1EB48AD51835E8D200C42B5C /* GetScoreBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetScoreBoard.h; sourceTree = "<group>"; };
 		1EB48AD61835E8D200C42B5C /* GetScoreBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetScoreBoard.m; sourceTree = "<group>"; };
 		1EB48AD91835F84800C42B5C /* ScoreboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreboardViewController.h; sourceTree = "<group>"; };
@@ -388,16 +368,6 @@
 		1ECC555A173F092400EBD61D /* RSSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSCell.m; sourceTree = "<group>"; };
 		1ECC555B173F092400EBD61D /* RSSTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSTVC.h; sourceTree = "<group>"; };
 		1ECC555C173F092400EBD61D /* RSSTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSTVC.m; sourceTree = "<group>"; };
-		1ECC555D173F092400EBD61D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		1ECC555E173F092400EBD61D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		1ECC5572173F0DF300EBD61D /* RSSEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSEntry.h; sourceTree = "<group>"; };
-		1ECC5573173F0DF300EBD61D /* RSSEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSEntry.m; sourceTree = "<group>"; };
-		1ECC5574173F0DF300EBD61D /* RSSHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSHomeCell.h; sourceTree = "<group>"; };
-		1ECC5575173F0DF300EBD61D /* RSSHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSHomeCell.m; sourceTree = "<group>"; };
-		1ECC5576173F0DF300EBD61D /* RSSHomeTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSHomeTVC.h; sourceTree = "<group>"; };
-		1ECC5577173F0DF300EBD61D /* RSSHomeTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSHomeTVC.m; sourceTree = "<group>"; };
-		1ECC5578173F0DF300EBD61D /* RSSWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSWebView.h; sourceTree = "<group>"; };
-		1ECC5579173F0DF300EBD61D /* RSSWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSWebView.m; sourceTree = "<group>"; };
 		1ECC5581173F0FDD00EBD61D /* NewsFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedViewController.h; sourceTree = "<group>"; };
 		1ECC5582173F0FDD00EBD61D /* NewsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedViewController.m; sourceTree = "<group>"; };
 		1EDB02E018385092008D7BC2 /* News Story View Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "News Story View Controller.h"; sourceTree = "<group>"; };
@@ -412,8 +382,6 @@
 		1EFDFEB81830414C00DAF6A4 /* CoachesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoachesViewController.m; sourceTree = "<group>"; };
 		1EFDFEBA1830419600DAF6A4 /* CoachesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoachesTVC.h; sourceTree = "<group>"; };
 		1EFDFEBB1830419600DAF6A4 /* CoachesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoachesTVC.m; sourceTree = "<group>"; };
-		1EFDFEBD183041B300DAF6A4 /* FacilitiesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacilitiesTVC.h; sourceTree = "<group>"; };
-		1EFDFEBE183041B300DAF6A4 /* FacilitiesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacilitiesTVC.m; sourceTree = "<group>"; };
 		1EFDFEBF183041B300DAF6A4 /* FacilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacilitiesViewController.h; sourceTree = "<group>"; };
 		1EFDFEC0183041B300DAF6A4 /* FacilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacilitiesViewController.m; sourceTree = "<group>"; };
 		1EFDFECA18304EDB00DAF6A4 /* TeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamViewController.h; sourceTree = "<group>"; };
@@ -489,20 +457,6 @@
 		CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOWLoginViewController.m; sourceTree = "<group>"; };
 		CF4684DA173DC4D0001F8A1F /* LoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton.png; sourceTree = "<group>"; };
 		CF4684E0173DF963001F8A1F /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OldIcon.png; sourceTree = "<group>"; };
-		CF4684E3173DFD9B001F8A1F /* FlickrPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoViewController.h; sourceTree = "<group>"; };
-		CF4684E4173DFD9B001F8A1F /* FlickrPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoViewController.m; sourceTree = "<group>"; };
-		CF4684E5173DFD9B001F8A1F /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flickr.h; sourceTree = "<group>"; };
-		CF4684E6173DFD9B001F8A1F /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flickr.m; sourceTree = "<group>"; };
-		CF4684E7173DFD9B001F8A1F /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
-		CF4684E8173DFD9B001F8A1F /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
-		CF4684E9173DFD9B001F8A1F /* FlickrPracticeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPracticeAppDelegate.h; sourceTree = "<group>"; };
-		CF4684EA173DFD9B001F8A1F /* FlickrPracticeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPracticeAppDelegate.m; sourceTree = "<group>"; };
-		CF4684EC173DFD9B001F8A1F /* FlickrPracticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPracticeViewController.h; sourceTree = "<group>"; };
-		CF4684ED173DFD9B001F8A1F /* FlickrPracticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPracticeViewController.m; sourceTree = "<group>"; };
-		CF4684EE173DFD9B001F8A1F /* FlickrPhotoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoHeaderView.h; sourceTree = "<group>"; };
-		CF4684EF173DFD9B001F8A1F /* FlickrPhotoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoHeaderView.m; sourceTree = "<group>"; };
-		CF4684FF173E0245001F8A1F /* FlickrPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoCell.h; sourceTree = "<group>"; };
-		CF468500173E0245001F8A1F /* FlickrPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoCell.m; sourceTree = "<group>"; };
 		CF56488E174096690067FBBB /* NewsfeedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewsfeedIcon.png; sourceTree = "<group>"; };
 		CF6568D0171782B700AE84AC /* Pocket Roster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Roster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6568D4171782B700AE84AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -512,38 +466,22 @@
 		CF6568DE171782B700AE84AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF6568E0171782B700AE84AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF6568E2171782B700AE84AC /* Pocket Roster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pocket Roster-Prefix.pch"; sourceTree = "<group>"; };
-		CF6568E3171782B700AE84AC /* Pocket_RosterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pocket_RosterAppDelegate.h; sourceTree = "<group>"; };
-		CF6568E4171782B700AE84AC /* Pocket_RosterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pocket_RosterAppDelegate.m; sourceTree = "<group>"; };
 		CF6568E6171782B700AE84AC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CF6568E8171782B700AE84AC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CF6568EA171782B700AE84AC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CF6568ED171782B700AE84AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CF6568EF171782B700AE84AC /* Pocket_RosterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pocket_RosterViewController.h; sourceTree = "<group>"; };
-		CF6568F0171782B700AE84AC /* Pocket_RosterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pocket_RosterViewController.m; sourceTree = "<group>"; };
 		CF6568F7171782B700AE84AC /* Pocket RosterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pocket RosterTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6568F8171782B700AE84AC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CF656900171782B700AE84AC /* Pocket RosterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pocket RosterTests-Info.plist"; sourceTree = "<group>"; };
 		CF656902171782B700AE84AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF656904171782B700AE84AC /* Pocket_RosterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pocket_RosterTests.h; sourceTree = "<group>"; };
 		CF656905171782B700AE84AC /* Pocket_RosterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pocket_RosterTests.m; sourceTree = "<group>"; };
-		CF6569131717863100AE84AC /* FlickrPhotoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoTableViewController.h; sourceTree = "<group>"; };
-		CF6569141717863100AE84AC /* FlickrPhotoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTableViewController.m; sourceTree = "<group>"; };
-		CF6569181717870700AE84AC /* LatestFlickrPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestFlickrPhotosTVC.h; sourceTree = "<group>"; };
-		CF6569191717870700AE84AC /* LatestFlickrPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestFlickrPhotosTVC.m; sourceTree = "<group>"; };
 		CF65691B171787DF00AE84AC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF65691C171787DF00AE84AC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CF65691E171795E800AE84AC /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
-		CF65691F171795E800AE84AC /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
-		CF6569211717968500AE84AC /* AttributedStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedStringViewController.h; sourceTree = "<group>"; };
-		CF6569221717968500AE84AC /* AttributedStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedStringViewController.m; sourceTree = "<group>"; };
-		CF656924171797A100AE84AC /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
-		CF65692917179C1F00AE84AC /* BowdoinButton.jpm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinButton.jpm.png; sourceTree = "<group>"; };
+		CF65691E171795E800AE84AC /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = "/Volumes/GARVS_VIPER/PR/Pocket Roster/ImageViewController.h"; sourceTree = "<absolute>"; };
+		CF65691F171795E800AE84AC /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = "/Volumes/GARVS_VIPER/PR/Pocket Roster/ImageViewController.m"; sourceTree = "<absolute>"; };
 		CF65692B17179F9800AE84AC /* SwimmingCover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwimmingCover.jpg; sourceTree = "<group>"; };
-		CF65692D1717ABD700AE84AC /* SwimLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwimLogo.jpg; sourceTree = "<group>"; };
-		CF6569311717BA1B00AE84AC /* FootballLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FootballLogo.png; sourceTree = "<group>"; };
 		CF833B18171E14110011DED3 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
-		CF833B1B171E143B0011DED3 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
-		CF833B1C171E14420011DED3 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
 		CF833B26171ED4080011DED3 /* RosterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosterViewController.h; sourceTree = "<group>"; };
 		CF833B27171ED4080011DED3 /* RosterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RosterViewController.m; sourceTree = "<group>"; };
 		CF833B381720C0E40011DED3 /* BowdoinSwimming.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinSwimming.jpg; sourceTree = "<group>"; };
@@ -705,8 +643,6 @@
 		1E11F6931839E1F60091E8C2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				1EA3F9C7183EA08800D3605A /* ImageCollection.h */,
-				1EA3F9C8183EA08800D3605A /* ImageCollection.m */,
 				1E11F68A1839E0500091E8C2 /* HomeImageTVC.h */,
 				1E11F68B1839E0500091E8C2 /* HomeImageTVC.m */,
 				1E11F6941839E3E50091E8C2 /* ImagesCollectionContainerViewController.h */,
@@ -725,6 +661,8 @@
 				1EC4B66E183A0C1800226160 /* ImageCollectionCell.m */,
 				CF65691E171795E800AE84AC /* ImageViewController.h */,
 				CF65691F171795E800AE84AC /* ImageViewController.m */,
+				1E08C6D41856704400AB5F3C /* ImageViewController.h */,
+				1E08C6D51856704400AB5F3C /* ImageViewController.m */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -795,16 +733,6 @@
 				1ECC555A173F092400EBD61D /* RSSCell.m */,
 				1ECC555B173F092400EBD61D /* RSSTVC.h */,
 				1ECC555C173F092400EBD61D /* RSSTVC.m */,
-				1ECC555D173F092400EBD61D /* WebViewController.h */,
-				1ECC555E173F092400EBD61D /* WebViewController.m */,
-				1ECC5572173F0DF300EBD61D /* RSSEntry.h */,
-				1ECC5573173F0DF300EBD61D /* RSSEntry.m */,
-				1ECC5574173F0DF300EBD61D /* RSSHomeCell.h */,
-				1ECC5575173F0DF300EBD61D /* RSSHomeCell.m */,
-				1ECC5576173F0DF300EBD61D /* RSSHomeTVC.h */,
-				1ECC5577173F0DF300EBD61D /* RSSHomeTVC.m */,
-				1ECC5578173F0DF300EBD61D /* RSSWebView.h */,
-				1ECC5579173F0DF300EBD61D /* RSSWebView.m */,
 			);
 			name = "RSS News";
 			sourceTree = "<group>";
@@ -814,8 +742,6 @@
 			children = (
 				CFE1F8DB1830067100E8BD9E /* GetFacility.h */,
 				CFE1F8DC1830067100E8BD9E /* GetFacility.m */,
-				1EFDFEBD183041B300DAF6A4 /* FacilitiesTVC.h */,
-				1EFDFEBE183041B300DAF6A4 /* FacilitiesTVC.m */,
 				1EFDFEBF183041B300DAF6A4 /* FacilitiesViewController.h */,
 				1EFDFEC0183041B300DAF6A4 /* FacilitiesViewController.m */,
 			);
@@ -927,10 +853,7 @@
 				CF833B3F1720C73D0011DED3 /* BowdoinSoccer.jpg */,
 				CF833B3C1720C38A0011DED3 /* BowdoinFootball.jpg */,
 				CF833B381720C0E40011DED3 /* BowdoinSwimming.jpg */,
-				CF6569311717BA1B00AE84AC /* FootballLogo.png */,
-				CF65692D1717ABD700AE84AC /* SwimLogo.jpg */,
 				CF65692B17179F9800AE84AC /* SwimmingCover.jpg */,
-				CF65692917179C1F00AE84AC /* BowdoinButton.jpm.png */,
 				CF247AE2173D8D0D0079AD32 /* BClubFinal.png */,
 				CF247ADC173D8C2B0079AD32 /* BWomenFinal.png */,
 				CF247ADA173D8C270079AD32 /* BMenFinal.png */,
@@ -969,6 +892,8 @@
 		CF4684C0173DC009001F8A1F /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				CF247A74173C0B8D0079AD32 /* PersonalAccount.m */,
+				CF247A73173C0B8D0079AD32 /* PersonalAccount.h */,
 				CF4684DA173DC4D0001F8A1F /* LoginButton.png */,
 				CF4684D1173DC2D1001F8A1F /* BOWAppDelegate.h */,
 				CF4684D2173DC2D1001F8A1F /* BOWAppDelegate.m */,
@@ -985,27 +910,6 @@
 			children = (
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CF4684E2173DFD59001F8A1F /* Flickr */ = {
-			isa = PBXGroup;
-			children = (
-				CF4684FF173E0245001F8A1F /* FlickrPhotoCell.h */,
-				CF468500173E0245001F8A1F /* FlickrPhotoCell.m */,
-				CF4684E3173DFD9B001F8A1F /* FlickrPhotoViewController.h */,
-				CF4684E4173DFD9B001F8A1F /* FlickrPhotoViewController.m */,
-				CF4684E5173DFD9B001F8A1F /* Flickr.h */,
-				CF4684E6173DFD9B001F8A1F /* Flickr.m */,
-				CF4684E7173DFD9B001F8A1F /* FlickrPhoto.h */,
-				CF4684E8173DFD9B001F8A1F /* FlickrPhoto.m */,
-				CF4684E9173DFD9B001F8A1F /* FlickrPracticeAppDelegate.h */,
-				CF4684EA173DFD9B001F8A1F /* FlickrPracticeAppDelegate.m */,
-				CF4684EC173DFD9B001F8A1F /* FlickrPracticeViewController.h */,
-				CF4684ED173DFD9B001F8A1F /* FlickrPracticeViewController.m */,
-				CF4684EE173DFD9B001F8A1F /* FlickrPhotoHeaderView.h */,
-				CF4684EF173DFD9B001F8A1F /* FlickrPhotoHeaderView.m */,
-			);
-			name = Flickr;
 			sourceTree = "<group>";
 		};
 		CF6568C5171782B700AE84AC = {
@@ -1057,7 +961,6 @@
 				CF4684E0173DF963001F8A1F /* OldIcon.png */,
 				CF247A77173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt */,
 				CF4684C0173DC009001F8A1F /* Login */,
-				CF4684E2173DFD59001F8A1F /* Flickr */,
 				1E11F6931839E1F60091E8C2 /* Images */,
 				1EB48AD81835F7CE00C42B5C /* Scoreboard */,
 				1EF9AB691832CD7600A8C159 /* Team */,
@@ -1066,27 +969,12 @@
 				1ECC557E173F0EE400EBD61D /* Roster */,
 				1ECC5580173F0F0500EBD61D /* RSS News */,
 				1ECC557F173F0EF300EBD61D /* Schedule */,
-				CF6569131717863100AE84AC /* FlickrPhotoTableViewController.h */,
-				CF6569141717863100AE84AC /* FlickrPhotoTableViewController.m */,
 				CF65691B171787DF00AE84AC /* AppDelegate.h */,
 				CF65691C171787DF00AE84AC /* AppDelegate.m */,
-				CF6569181717870700AE84AC /* LatestFlickrPhotosTVC.h */,
-				CF6569191717870700AE84AC /* LatestFlickrPhotosTVC.m */,
-				CF656924171797A100AE84AC /* FlickrAPIKey.h */,
-				CF833B1C171E14420011DED3 /* FlickrFetcher.m */,
-				CF833B1B171E143B0011DED3 /* FlickrFetcher.h */,
+				1E08C6D118566FCD00AB5F3C /* Pocket_RosterAppDelegate.h */,
+				1E08C6D218566FCD00AB5F3C /* Pocket_RosterAppDelegate.m */,
 				CF833B18171E14110011DED3 /* iPad.storyboard */,
-				CF6568E3171782B700AE84AC /* Pocket_RosterAppDelegate.h */,
-				CF6568E4171782B700AE84AC /* Pocket_RosterAppDelegate.m */,
-				CF247A74173C0B8D0079AD32 /* PersonalAccount.m */,
-				CF247A73173C0B8D0079AD32 /* PersonalAccount.h */,
-				CF6569211717968500AE84AC /* AttributedStringViewController.h */,
-				CF6569221717968500AE84AC /* AttributedStringViewController.m */,
 				CF6568EC171782B700AE84AC /* MainStoryboard.storyboard */,
-				CF6568EF171782B700AE84AC /* Pocket_RosterViewController.h */,
-				CF6568F0171782B700AE84AC /* Pocket_RosterViewController.m */,
-				CF65691E171795E800AE84AC /* ImageViewController.h */,
-				CF65691F171795E800AE84AC /* ImageViewController.m */,
 				CFE1F9BA1839EA7C00E8BD9E /* Club Background Images */,
 				CFE1F9431839DAD000E8BD9E /* BackImagesPhoto */,
 				CFE1F9401839DAA200E8BD9E /* BackImagesSchedule */,
@@ -1346,14 +1234,11 @@
 				CF6568EB171782B700AE84AC /* Default-568h@2x.png in Resources */,
 				CFE1F8D0182EEB4E00E8BD9E /* WLax.jpg in Resources */,
 				CF6568EE171782B700AE84AC /* MainStoryboard.storyboard in Resources */,
-				CF65692A17179C1F00AE84AC /* BowdoinButton.jpm.png in Resources */,
 				CF65692C17179F9800AE84AC /* SwimmingCover.jpg in Resources */,
 				CFE1F9811839E3EC00E8BD9E /* WFieldHockeyPhoto.jpg in Resources */,
 				CF024E2F1816307F00F9CF54 /* icon.png in Resources */,
-				CF65692E1717ABD700AE84AC /* SwimLogo.jpg in Resources */,
 				CFE1F9771839E27200E8BD9E /* WBasketballPhoto.jpg in Resources */,
 				CFE1F98D1839E55600E8BD9E /* WLaxPhoto.jpg in Resources */,
-				CF6569321717BA1B00AE84AC /* FootballLogo.png in Resources */,
 				CF833B19171E14110011DED3 /* iPad.storyboard in Resources */,
 				CFE1F9851839E45E00E8BD9E /* WGolfSchedule.jpg in Resources */,
 				CFE1F9531839DD1100E8BD9E /* MGolfPhoto.jpg in Resources */,
@@ -1592,19 +1477,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6568E1171782B700AE84AC /* main.m in Sources */,
-				CF6568E5171782B700AE84AC /* Pocket_RosterAppDelegate.m in Sources */,
-				CF6568F1171782B700AE84AC /* Pocket_RosterViewController.m in Sources */,
 				1EFDFEB91830414C00DAF6A4 /* CoachesViewController.m in Sources */,
-				CF6569161717863100AE84AC /* FlickrPhotoTableViewController.m in Sources */,
-				CF65691A1717870700AE84AC /* LatestFlickrPhotosTVC.m in Sources */,
 				1E11F678183954640091E8C2 /* ScheduleViewController.m in Sources */,
 				1EFDFEBC1830419600DAF6A4 /* CoachesTVC.m in Sources */,
 				CF65691D171787DF00AE84AC /* AppDelegate.m in Sources */,
-				CF656920171795E800AE84AC /* ImageViewController.m in Sources */,
 				1E11F673183950D00091E8C2 /* RosterAthleteViewController.m in Sources */,
-				CF6569231717968500AE84AC /* AttributedStringViewController.m in Sources */,
 				1EFDFEC2183041B300DAF6A4 /* FacilitiesViewController.m in Sources */,
-				CF833B1D171E14430011DED3 /* FlickrFetcher.m in Sources */,
 				CF833B28171ED4080011DED3 /* RosterViewController.m in Sources */,
 				1E11F69D1839F2910091E8C2 /* GetImages.m in Sources */,
 				1EB48ADB1835F84800C42B5C /* ScoreboardViewController.m in Sources */,
@@ -1616,41 +1494,29 @@
 				1E11F676183950EB0091E8C2 /* CoachesCell.m in Sources */,
 				CF4684D7173DC2D1001F8A1F /* BOWAppDelegate.m in Sources */,
 				CF4684D8173DC2D1001F8A1F /* BOWLoginViewController.m in Sources */,
-				CF4684F0173DFD9B001F8A1F /* FlickrPhotoViewController.m in Sources */,
+				1E08C6D61856704400AB5F3C /* ImageViewController.m in Sources */,
+				1E08C6D318566FCD00AB5F3C /* Pocket_RosterAppDelegate.m in Sources */,
 				1E11F66D1839509B0091E8C2 /* CustomProgressView.m in Sources */,
-				CF4684F1173DFD9B001F8A1F /* Flickr.m in Sources */,
 				CF024E321818C0C600F9CF54 /* GetTeamLinks.m in Sources */,
-				CF4684F2173DFD9B001F8A1F /* FlickrPhoto.m in Sources */,
 				CFE1F8DD1830067100E8BD9E /* GetFacility.m in Sources */,
 				1E11F68C1839E0500091E8C2 /* HomeImageTVC.m in Sources */,
-				CF4684F3173DFD9B001F8A1F /* FlickrPracticeAppDelegate.m in Sources */,
 				CFE1F8E018303DF600E8BD9E /* GetSchedule.m in Sources */,
 				1E11F6961839E3E50091E8C2 /* ImagesCollectionContainerViewController.m in Sources */,
 				1E11F6991839E8F80091E8C2 /* HomeImageCell.m in Sources */,
 				1E11F6821839D8690091E8C2 /* GetAlbums.m in Sources */,
-				CF4684F5173DFD9B001F8A1F /* FlickrPracticeViewController.m in Sources */,
-				CF4684F6173DFD9B001F8A1F /* FlickrPhotoHeaderView.m in Sources */,
-				CF468501173E0246001F8A1F /* FlickrPhotoCell.m in Sources */,
 				1E11F670183950B40091E8C2 /* RosterCell.m in Sources */,
 				1E11F6921839E10E0091E8C2 /* CollectionImageViewController.m in Sources */,
 				1E2B7C5D185239A000814BB9 /* getStory.m in Sources */,
 				1ECC555F173F092400EBD61D /* RSSCell.m in Sources */,
-				1EA3F9C9183EA08800D3605A /* ImageCollection.m in Sources */,
 				1ECC5560173F092400EBD61D /* RSSTVC.m in Sources */,
-				1ECC5561173F092400EBD61D /* WebViewController.m in Sources */,
 				1EFDFECC18304EDB00DAF6A4 /* TeamViewController.m in Sources */,
 				1E11F6861839D8980091E8C2 /* GetRosterBIO.m in Sources */,
 				CFA603A41827592700C21507 /* TeamTVC.m in Sources */,
-				1ECC557A173F0DF300EBD61D /* RSSEntry.m in Sources */,
-				1ECC557B173F0DF300EBD61D /* RSSHomeCell.m in Sources */,
 				CFA603A1182747BB00C21507 /* MasterTVC.m in Sources */,
 				1EF619AD1834C6600089C154 /* RosterSplashVC.m in Sources */,
-				1EFDFEC1183041B300DAF6A4 /* FacilitiesTVC.m in Sources */,
 				CFE1F89D182D431200E8BD9E /* GetCoaches.m in Sources */,
 				1EF619AA183493CB0089C154 /* RosterTVC.m in Sources */,
-				1ECC557C173F0DF300EBD61D /* RSSHomeTVC.m in Sources */,
 				1EC4B672183A2C8100226160 /* HomeViewController.m in Sources */,
-				1ECC557D173F0DF300EBD61D /* RSSWebView.m in Sources */,
 				1EB48AE11835F8BB00C42B5C /* ScoreboardCell.m in Sources */,
 				1E11F6891839E0210091E8C2 /* HomeImageViewController.m in Sources */,
 				1ECC5583173F0FDD00EBD61D /* NewsFeedViewController.m in Sources */,

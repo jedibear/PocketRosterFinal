@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
 
-    //NSLog(@"%@ bada-bing", self.incAlbum);
+    
     [self.load startAnimating];
     
     
@@ -42,19 +42,12 @@
     
     [super viewDidAppear:animated];
     
-    
-    
-    if (self.haveAlbums) {
-        NSLog(@"yup containerVC");
-    }
-    
     if(![[self.incAlbum objectForKey:@"picturesLoaded"]isEqualToString:@"YES"]){
         NSString *havePictures = @"YES";
         [self.incAlbum setObject:[GetImages getMostRecentImages:self.imageURL] forKey:@"pictures"];
         [self.incAlbum setObject:havePictures forKey:@"picturesLoaded"];
         
         [self.albums setObject:self.incAlbum forKey:self.saveKey];
-        //NSLog(@"inside %@", [self.incAlbum objectForKey:@"picturesLoaded"]);
     }
     
     [self.load stopAnimating];

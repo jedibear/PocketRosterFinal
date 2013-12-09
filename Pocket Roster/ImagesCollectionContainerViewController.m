@@ -31,9 +31,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    if (self.haveAlbums) {
-        NSLog(@"yup containerVC");
-    }
+    
     
     
 }
@@ -79,9 +77,6 @@
             
             HomeImageViewController *hVC = (HomeImageViewController *)segue.destinationViewController;
             
-            if (self.haveAlbums) {
-                NSLog(@"yup backtoAlbumsVC");
-            }
             
             hVC.incommingURL = self.incommingURL;
         

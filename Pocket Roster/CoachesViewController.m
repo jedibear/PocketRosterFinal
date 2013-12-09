@@ -66,7 +66,7 @@
             cTVC.imageBackground = self.imageBackground;
         }
     }else if ([segue.identifier isEqualToString:@"back2TVC"]){
-        NSLog(@"HERE");
+        
         if ([segue.destinationViewController isKindOfClass:[TeamViewController class]]) {
             
             TeamViewController *tVC = (TeamViewController *)segue.destinationViewController;

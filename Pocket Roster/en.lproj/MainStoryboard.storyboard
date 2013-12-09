@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
-        <!--Pocket Roster View Controller-->
+        <!--View Controller-->
         <scene sceneID="erU-eQ-Jsn">
             <objects>
-                <viewController id="nmm-iI-2GF" customClass="Pocket_RosterViewController" sceneMemberID="viewController">
+                <viewController id="nmm-iI-2GF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QYx-H7-jBX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -83,16 +83,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BowdoinClawBlack.jpeg" id="Lea-Q4-8ZR">
-                                <rect key="frame" x="232" y="31" width="36" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iPhoneSetFallBackground.png" id="TKd-nT-6ve">
                                 <rect key="frame" x="0.0" y="76" width="320" height="492"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BowdoinClawWhite.jpeg" id="9PC-mU-c6b">
-                                <rect key="frame" x="44" y="30" width="35" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="R9y-AG-8mH">
@@ -221,7 +213,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nFA-3F-bYG">
-                                <rect key="frame" x="119" y="35" width="142" height="64"/>
+                                <rect key="frame" x="119" y="35" width="105" height="64"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -522,7 +514,7 @@
             <objects>
                 <tableViewController id="uJT-dV-vNQ" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SHP-MY-0Pv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="479"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -2420,7 +2412,7 @@
             <objects>
                 <tableViewController id="7br-fV-zIz" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dXs-ad-1Bj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -2619,7 +2611,7 @@
             <objects>
                 <tableViewController id="9Jm-R0-lKr" customClass="RSSTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="134" sectionHeaderHeight="22" sectionFooterHeight="22" id="YdF-Xt-Ep4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="cYL-xO-aHX">
@@ -2819,7 +2811,7 @@
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="tcQ-78-gqy" customClass="ScoreboardTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" id="Y18-x8-USB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -10309,7 +10301,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pq2-nd-YID">
-                                <rect key="frame" x="64" y="30.000000007403077" width="204" height="42"/>
+                                <rect key="frame" x="64" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -12261,7 +12253,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aM9-oN-iYj">
-                                <rect key="frame" x="64" y="30.000000007403077" width="204" height="42"/>
+                                <rect key="frame" x="64" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -14174,7 +14166,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xjf-Nn-ukF">
-                                <rect key="frame" x="58" y="30.000000007403077" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -16074,7 +16066,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="taN-xf-Yj3">
-                                <rect key="frame" x="58" y="30.000000007403077" width="204" height="42"/>
+                                <rect key="frame" x="58" y="30" width="204" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -20907,7 +20899,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <activityIndicatorView key="backgroundView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="4Av-8n-wOC">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
                         <cells>
@@ -26187,17 +26179,16 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="zp3-ZH-DMV"/>
-        <segue reference="cOf-JH-8eN"/>
-        <segue reference="11h-8S-kvl"/>
-        <segue reference="boC-5w-SXc"/>
-        <segue reference="fu2-wa-hoM"/>
-        <segue reference="CWs-FK-Nvz"/>
-        <segue reference="Gdj-60-Xcf"/>
-        <segue reference="q4i-13-3g8"/>
-        <segue reference="cvh-kN-Pbk"/>
-        <segue reference="bvw-09-EOJ"/>
-        <segue reference="e8M-jM-Gij"/>
+        <segue reference="Xd6-zK-xI2"/>
+        <segue reference="Rrg-Oh-NwK"/>
+        <segue reference="g2F-A3-Nyr"/>
+        <segue reference="fTn-cB-XwC"/>
+        <segue reference="nYY-0O-lc4"/>
+        <segue reference="Y8c-7u-6vq"/>
+        <segue reference="Bpf-0d-GKz"/>
+        <segue reference="gA2-KR-xHd"/>
+        <segue reference="pda-td-ys3"/>
+        <segue reference="zLU-cB-loR"/>
         <segue reference="Zjb-ZR-303"/>
         <segue reference="NPE-dw-xrA"/>
         <segue reference="9Te-G4-FL5"/>
@@ -26205,80 +26196,81 @@
         <segue reference="WLN-rw-hAc"/>
         <segue reference="oBG-8F-FV3"/>
         <segue reference="KIy-tm-La7"/>
-        <segue reference="FNv-vN-Vfl"/>
-        <segue reference="HrA-JP-fds"/>
-        <segue reference="PR0-gs-RDt"/>
-        <segue reference="lIc-4a-CIC"/>
-        <segue reference="6F7-6u-A4f"/>
-        <segue reference="BVI-d1-1wy"/>
-        <segue reference="VVN-yD-yRg"/>
-        <segue reference="3l1-cn-Yhj"/>
-        <segue reference="KNQ-wC-Fqv"/>
-        <segue reference="mMk-QF-Q8H"/>
-        <segue reference="xK9-Fi-ImF"/>
-        <segue reference="kTE-Lv-PhA"/>
-        <segue reference="tLG-fB-QyS"/>
-        <segue reference="Tji-DF-oQk"/>
-        <segue reference="Tp8-N7-VrK"/>
-        <segue reference="MPe-AW-eIH"/>
-        <segue reference="oQX-lm-Ye2"/>
-        <segue reference="VyF-zp-8Pr"/>
+        <segue reference="bWi-q0-PjC"/>
+        <segue reference="b2R-m7-unl"/>
+        <segue reference="q4i-13-3g8"/>
+        <segue reference="cvh-kN-Pbk"/>
+        <segue reference="Gdj-60-Xcf"/>
+        <segue reference="7Ig-m1-OeX"/>
         <segue reference="VPG-cG-G38"/>
         <segue reference="5Ww-Fe-tGA"/>
         <segue reference="1Ky-HJ-6bE"/>
         <segue reference="v1E-hd-ndA"/>
+        <segue reference="VKn-ar-eFd"/>
+        <segue reference="zp3-ZH-DMV"/>
+        <segue reference="cOf-JH-8eN"/>
+        <segue reference="boC-5w-SXc"/>
+        <segue reference="VpI-Q8-VmD"/>
         <segue reference="jzj-H4-hvi"/>
-        <segue reference="k46-E2-KBE"/>
-        <segue reference="KmK-dI-aVv"/>
-        <segue reference="u6V-dE-ay1"/>
-        <segue reference="ogw-9r-dmG"/>
-        <segue reference="RyI-yg-66N"/>
-        <segue reference="EZZ-qn-hFr"/>
-        <segue reference="34r-ir-Qsr"/>
-        <segue reference="Xd6-zK-xI2"/>
-        <segue reference="Rrg-Oh-NwK"/>
-        <segue reference="1SH-Y3-PMA"/>
-        <segue reference="g2F-A3-Nyr"/>
-        <segue reference="Y1j-bH-KX9"/>
-        <segue reference="JsG-Jg-SRg"/>
         <segue reference="asZ-KM-2UD"/>
         <segue reference="vNX-jz-RYS"/>
-        <segue reference="nYY-0O-lc4"/>
-        <segue reference="fTn-cB-XwC"/>
-        <segue reference="zSS-Z2-YyB"/>
-        <segue reference="tAs-au-eGH"/>
-        <segue reference="pda-td-ys3"/>
-        <segue reference="zLU-cB-loR"/>
-        <segue reference="zFm-Yv-8Q2"/>
-        <segue reference="7Ig-m1-OeX"/>
-        <segue reference="VpI-Q8-VmD"/>
-        <segue reference="Huv-8r-45z"/>
-        <segue reference="dad-FU-esw"/>
-        <segue reference="NRy-c8-HF5"/>
-        <segue reference="gA2-KR-xHd"/>
-        <segue reference="Bpf-0d-GKz"/>
-        <segue reference="Y8c-7u-6vq"/>
-        <segue reference="5JJ-yZ-8Sk"/>
+        <segue reference="jfE-Ml-3tJ"/>
+        <segue reference="aOv-SL-9e3"/>
+        <segue reference="dcF-hv-hmo"/>
+        <segue reference="34r-ir-Qsr"/>
+        <segue reference="3xC-Jj-hfK"/>
+        <segue reference="1YT-yN-vOm"/>
+        <segue reference="Pkz-jY-u8Y"/>
+        <segue reference="VVN-yD-yRg"/>
+        <segue reference="BVI-d1-1wy"/>
+        <segue reference="6F7-6u-A4f"/>
+        <segue reference="3l1-cn-Yhj"/>
+        <segue reference="lIc-4a-CIC"/>
+        <segue reference="KNQ-wC-Fqv"/>
+        <segue reference="ktL-pN-9Jn"/>
         <segue reference="49m-Iy-coo"/>
         <segue reference="ayU-7O-SBE"/>
-        <segue reference="ktL-pN-9Jn"/>
+        <segue reference="5JJ-yZ-8Sk"/>
         <segue reference="bJR-A2-CZJ"/>
-        <segue reference="b2R-m7-unl"/>
-        <segue reference="RyR-wt-gCQ"/>
-        <segue reference="ick-bF-2pH"/>
+        <segue reference="HrA-JP-fds"/>
+        <segue reference="PR0-gs-RDt"/>
+        <segue reference="fu2-wa-hoM"/>
+        <segue reference="MPe-AW-eIH"/>
+        <segue reference="Tp8-N7-VrK"/>
+        <segue reference="Tji-DF-oQk"/>
+        <segue reference="oQX-lm-Ye2"/>
+        <segue reference="VyF-zp-8Pr"/>
+        <segue reference="k46-E2-KBE"/>
+        <segue reference="bvw-09-EOJ"/>
+        <segue reference="e8M-jM-Gij"/>
         <segue reference="xgi-aN-lHD"/>
-        <segue reference="tjB-sF-a6S"/>
+        <segue reference="mMk-QF-Q8H"/>
+        <segue reference="KmK-dI-aVv"/>
+        <segue reference="u6V-dE-ay1"/>
+        <segue reference="d6z-q9-q3k"/>
+        <segue reference="RyR-wt-gCQ"/>
         <segue reference="GF2-CE-IGL"/>
         <segue reference="kQR-Og-HrP"/>
-        <segue reference="VKn-ar-eFd"/>
-        <segue reference="8rS-BQ-LW8"/>
-        <segue reference="Pkz-jY-u8Y"/>
-        <segue reference="9oK-WO-rKN"/>
-        <segue reference="2pK-ME-wGX"/>
-        <segue reference="bWi-q0-PjC"/>
-        <segue reference="d6z-q9-q3k"/>
+        <segue reference="zFm-Yv-8Q2"/>
         <segue reference="YhN-z1-QPI"/>
         <segue reference="J12-xy-yW8"/>
+        <segue reference="2pK-ME-wGX"/>
+        <segue reference="kTE-Lv-PhA"/>
+        <segue reference="ick-bF-2pH"/>
+        <segue reference="CWs-FK-Nvz"/>
+        <segue reference="RyI-yg-66N"/>
+        <segue reference="ogw-9r-dmG"/>
+        <segue reference="zSS-Z2-YyB"/>
+        <segue reference="tAs-au-eGH"/>
+        <segue reference="tLG-fB-QyS"/>
+        <segue reference="FNv-vN-Vfl"/>
         <segue reference="bqo-fI-q0T"/>
+        <segue reference="NRy-c8-HF5"/>
+        <segue reference="dad-FU-esw"/>
+        <segue reference="8rS-BQ-LW8"/>
+        <segue reference="xK9-Fi-ImF"/>
+        <segue reference="Y1j-bH-KX9"/>
+        <segue reference="9oK-WO-rKN"/>
+        <segue reference="tjB-sF-a6S"/>
     </inferredMetricsTieBreakers>
 </document>

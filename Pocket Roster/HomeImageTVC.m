@@ -44,10 +44,7 @@
     
     [super viewDidAppear:animated];
     
-    if (self.haveAlbums) {
-        NSLog(@"yup homeImageTVC");
-    }
-    NSLog(@"homeImageTVC %@", self.schedBackground);
+    
     if(!self.haveAlbums){
         self.albums = [GetAlbums getAllAlbums:self.inputURL];
         self.haveAlbums = YES;
@@ -108,7 +105,7 @@
                     NSString *key = [[NSString alloc] initWithFormat:@"%ld", (long)[indexPath row]+1];
                     NSMutableDictionary *athleteObjects = [self.albums objectForKey:key];
                     
-                    NSLog(@"sending %@",[athleteObjects objectForKey:@"link"]);
+                    
                     rAVC.imageURL = [athleteObjects objectForKey:@"link"];
                     rAVC.albumTitle = [athleteObjects objectForKey:@"title"];
                     rAVC.incAlbum = athleteObjects;

@@ -14,7 +14,7 @@
 
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-    NSLog(@"%@", incommingURL);
+    
     
     NSURL *theURL = [[NSURL alloc] initWithString:incommingURL];
     
@@ -75,7 +75,7 @@
     
    
         rosterTabFinal = [baseURL stringByAppendingString:[rosterTab substringFromIndex: dumbVariable]];
-        //NSLog(@"%@", rosterTabFinal);
+    
         if (rosterTabFinal)
         {
             numberOfElements++;
@@ -91,7 +91,7 @@
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&scheduleTab];
     scheduleTabFinal = [baseURL stringByAppendingString:[scheduleTab substringFromIndex: dumbVariable]];
-    //NSLog(@"%@", scheduleTabFinal);
+    
     if (scheduleTabFinal)
     {
         numberOfElements++;
@@ -108,7 +108,7 @@
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&newsTab];
     newsTabFinal = [baseURL stringByAppendingString:[newsTab substringFromIndex: dumbVariable]];
-    //NSLog(@"%@", newsTabFinal);
+    
     if (newsTabFinal)
     {
         numberOfElements++;
@@ -124,7 +124,7 @@
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&coachesTab];
     coachesTabFinal = [baseURL stringByAppendingString:[coachesTab substringFromIndex: dumbVariable]];
-   // NSLog(@"%@", coachesTabFinal);
+   
     if (coachesTabFinal)
     {
         numberOfElements++;
@@ -140,7 +140,7 @@
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&facilitiesTab];
     facilitiesTabFinal = [baseURL stringByAppendingString:[facilitiesTab substringFromIndex: dumbVariable]];
-    //NSLog(@"%@", facilitiesTabFinal);
+    
     if (facilitiesTabFinal)
     {
         numberOfElements++;
@@ -156,7 +156,7 @@
     [linkScanner scanUpToString:@"\"" intoString:NULL];
     [linkScanner scanUpToString:@"\">" intoString:&recordsTab];
     recordsTabFinal = [baseURL stringByAppendingString:[recordsTab substringFromIndex: dumbVariable]];
-   // NSLog(@"%@", recordsTabFinal);
+   
     if (recordsTabFinal)
     {
         numberOfElements++;

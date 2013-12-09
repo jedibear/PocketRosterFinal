@@ -27,7 +27,7 @@
     //get the data from the web page
     NSString * htmlFromURL = [[NSString alloc] initWithData:dataFromURL encoding:NSASCIIStringEncoding];
     
-    //NSLog(@"%@ link", htmlFromURL);
+    
     
     NSString *stringBreakdown,  *key;
     NSString *entireSchedule;
@@ -105,11 +105,9 @@
         [scan1 scanUpToString:@"" intoString:&scheduleElement1Final];
         
         //
-        if (scheduleElement1Final)
-        {
+        if (scheduleElement1Final){
 
             numberOfElements++;
-            //NSLog(@"Element 1: %@", scheduleElement1Final);
         }
         
         // Element 2
@@ -122,8 +120,7 @@
        
         
         
-            if ([scheduleElement2aFinal rangeOfString:@"<b>"].location != NSNotFound)
-            {
+            if ([scheduleElement2aFinal rangeOfString:@"<b>"].location != NSNotFound){
                 
                 
                 NSScanner *subScanner = [NSScanner scannerWithString:scheduleElement2aFinal];
@@ -166,7 +163,6 @@
             }
             if (scheduleElement2aFinal){
                 numberOfElements++;
-                //NSLog(@"Element 2: %@", scheduleElement2Final);
             }
         
         
@@ -194,10 +190,9 @@
         
         
         
-        //        if (scheduleElement3Final)
-        {
+        if (scheduleElement3Final){
             numberOfElements++;
-            //NSLog(@"Element 3: %@", scheduleElement3Final);
+            
         }
 
         //Element 4
@@ -219,15 +214,8 @@
             [scan4 scanUpToString:@"  " intoString:&scheduleElement4Final];
         }
         
-        
-        
-        
-        
-        //
-        if (scheduleElement4Final)
-        {
+        if (scheduleElement4Final){
             numberOfElements++;
-            //NSLog(@"Element 4: %@", scheduleElement4Final);
         }
 
 

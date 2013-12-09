@@ -31,10 +31,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self.teamNameLabel setText:self.teamName];
-    NSLog(@"%@ sched",self.schedBackground);
-    
-    
+    [self.teamNameLabel setText:self.teamName];    
     [self.backgroundImage setImage:[[UIImage alloc] initWithContentsOfFile:self.schedBackground]];
     
     

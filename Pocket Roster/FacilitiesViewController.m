@@ -8,7 +8,6 @@
 
 #import "FacilitiesViewController.h"
 #import "TeamViewController.h"
-#import "FacilitiesTVC.h"
 #import "GetFacility.h"
 
 @interface FacilitiesViewController ()
@@ -95,7 +94,7 @@
     
     
     int index = self.imageIndex;
-    NSLog(@"%dNEXT",index);
+    
     if (index == [self.images count]-1) {
         self.imageIndex = 0;
     }else{
@@ -109,7 +108,7 @@
 - (IBAction)previousImage:(UIButton *)sender {
     
     int index = self.imageIndex;
-    NSLog(@"%dPREV", index);
+    
     if (index == 0) {
         self.imageIndex = [self.images count]-1;
     }else{

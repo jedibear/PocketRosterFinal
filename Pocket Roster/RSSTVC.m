@@ -7,7 +7,6 @@
 //
 
 #import "RSSTVC.h"
-#import "RSSEntry.h"
 #import "RSSCell.h"
 #import "News Story View Controller.h"
 #define genURL @"http://athletics.bowdoin.edu/landing/headlines-featured?feed=rss_2.0"
@@ -57,7 +56,7 @@
     [super viewDidAppear:animated];
     
     if (!self.haveNews) {
-        //NSLog(@"sucks");
+        
         [self fetchRSS];
         self.haveNews = YES;
     }
@@ -73,11 +72,6 @@
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
         
     NSURL *xmlURL = [NSURL URLWithString:[self getCorrectURL]];
-     //NSLog(@"%@", xmlURL);
-    
-    
-    
-    //NSData* xmlData = [[NSMutableData alloc] initWithContentsOfURL:[NSURL URLWithString:newsURL]];
     
     NSXMLParser *rssParser = [[NSXMLParser alloc]initWithContentsOfURL:xmlURL];
     
@@ -94,7 +88,7 @@
     
     NSString *rssURL;
     NSString *baseURL = @"http://athletics.bowdoin.edu";
-    NSLog(@"%@ HERE BIACH", self.newsURL);
+    
     if(!self.incommingTeamURL){
         return self.newsURL;
     }else{
@@ -110,7 +104,7 @@
         [scanner scanUpToString:@"/div>" intoString:nil];
         [scanner scanUpToString:@"href=\"" intoString:nil];
         [scanner scanUpToString:@"\">" intoString:&rssURL];
-        NSLog(@"rssURL %@", [rssURL substringFromIndex:6]);
+        
         return [baseURL stringByAppendingString:[rssURL substringFromIndex:6]];
     }
 }
@@ -174,9 +168,7 @@
 }
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
-	//NSLog(@"found this element: %@", elementName);
-	
-    
+   
 	if ([elementName isEqualToString:@"item"]) {
 		// clear out our story item caches...
 		self.item = [[NSMutableDictionary alloc] init];
@@ -212,7 +204,7 @@
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     
-	//NSLog(@"ended element: %@", elementName);
+	
 	if ([elementName isEqualToString:@"item"]) {
 		// save values to an item, then store that item into the array...
 		[self.item setObject:self.currentTitle forKey:@"title"];
@@ -223,11 +215,8 @@
             [self.item setObject:self.storyImage forKey:@"image"];
         }
         
-        
-        //RSSEntry *entry = [[RSSEntry alloc]initWithBlogTitle:self.currentTitle articleTitle:self.currentSummary articleURL:self.currentLink articleDate:self.currentDate];
-        
 		[self.stories addObject:self.item ];
-		//NSLog(@"adding story: %@", self.currentTitle);
+		
 	}
 }
 
@@ -267,14 +256,11 @@
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
        
         if (indexPath) {
-             //NSLog(@"%@", indexPath);
             if ([segue.identifier isEqualToString:@"webView"]) {
                     
                 self.sequeLink = [[self.stories objectAtIndex:indexPath.row]objectForKey:@"link"];
                 NSString *newsURL = [self.sequeLink stringByReplacingOccurrencesOfString:@"\n" withString:@""];
                 newsURL = [newsURL stringByReplacingOccurrencesOfString:@" " withString:@""];
-                //self.currentTitle = [[self.stories objectAtIndex:indexPath.row]objectForKey:@"title"];
-                //NSLog(@"%@", self.sequeLink);
                 
                 if ([segue.destinationViewController isKindOfClass:[News_Story_View_Controller class]]) {
                     News_Story_View_Controller *newsTMP = (News_Story_View_Controller *)segue.destinationViewController;
@@ -366,7 +352,7 @@
     // Navigation logic may go here. Create and push another view controller.
     //self.sequeLink = [[self.stories objectAtIndex:indexPath.row]objectForKey:@"link"];
     //self.wVC.inputURL = self.sequeLink;
-   // NSLog(@"int here bitch");
+   
    //[self performSegueWithIdentifier:@"webView" sender:self];
     
     //[self getCorrectLink:indexPath.row];

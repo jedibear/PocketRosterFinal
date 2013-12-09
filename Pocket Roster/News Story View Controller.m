@@ -8,7 +8,6 @@
 
 #import "News Story View Controller.h"
 #import "NewsFeedViewController.h"
-#import "WebViewController.h"
 #import "getStory.h"
 
 @interface News_Story_View_Controller ()
@@ -31,7 +30,6 @@
     [super viewDidLoad];
     [self.storyTitle setText:self.incTitle];
 	// Do any additional setup after loading the view.
-    NSLog(@"%@ inputRSSURL", self.newsURL);
     
     self.story = [getStory getStory:self.newsURL];
     
@@ -62,7 +60,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"back2NFVC"]){
-        NSLog(@"back");
+        
         if ([segue.destinationViewController isKindOfClass:[NewsFeedViewController class]]) {
             
             NewsFeedViewController *nFVC = (NewsFeedViewController *)segue.destinationViewController;

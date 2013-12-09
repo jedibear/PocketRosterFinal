@@ -9,7 +9,6 @@
 #import "TeamViewController.h"
 #import "TeamTVC.h"
 #import "NewsFeedViewController.h"
-#import "FlickrPracticeViewController.h"
 
 
 @interface TeamViewController ()
@@ -30,7 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"%@ TVC", self.schedBackground);
+    
     [self.teamNameLabel setText: self.teamName];
     [self.teamBackgroundImage setImage:[[UIImage alloc] initWithContentsOfFile:self.backgroundImagePath]];
 	

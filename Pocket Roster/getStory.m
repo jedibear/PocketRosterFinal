@@ -14,7 +14,7 @@
     
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
-    NSLog(@"inputURL%@", inputURL);
+    
     
     NSString *baseURL = @"http://athletics.bowdoin.edu";
     NSString *tmpStr, *caption, *imgURL, *tmp2;
@@ -23,7 +23,6 @@
     NSMutableDictionary *rssStory = [[NSMutableDictionary alloc]init];
     
     NSURL *url = [[NSURL alloc]initWithString:inputURL];
-    NSLog(@"url=%@, inputURL =%@",url, inputURL);
     NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
     NSError *error;
     
