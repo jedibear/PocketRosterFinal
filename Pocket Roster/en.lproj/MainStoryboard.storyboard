@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="nmm-iI-2GF">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -172,7 +172,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Hf5-yM-EzR" kind="modal" identifier="homeImages" id="3xC-Jj-hfK"/>
+                                    <segue destination="Hf5-yM-EzR" kind="modal" identifier="homeImages" modalTransitionStyle="crossDissolve" id="3xC-Jj-hfK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eaL-8f-D4U">
@@ -202,7 +202,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="DOg-gk-edS" kind="modal" identifier="genNews" id="34r-ir-Qsr"/>
+                                    <segue destination="DOg-gk-edS" kind="modal" identifier="genNews" modalTransitionStyle="crossDissolve" id="34r-ir-Qsr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="int-cP-a43">
@@ -712,7 +712,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="p6r-RL-OUp" kind="modal" identifier="mensSwimmingAndDiving" id="IMq-2v-3Gq"/>
+                                            <segue destination="p6r-RL-OUp" kind="modal" identifier="mensSwimmingAndDiving" modalTransitionStyle="crossDissolve" id="IMq-2v-3Gq"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="YtW-fz-ujc">
@@ -737,7 +737,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="p6r-RL-OUp" kind="modal" identifier="mensHockey" id="2Fy-B7-wHo"/>
+                                            <segue destination="p6r-RL-OUp" kind="modal" identifier="mensHockey" modalTransitionStyle="crossDissolve" id="2Fy-B7-wHo"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="yC6-CY-AgC">
@@ -763,7 +763,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="p6r-RL-OUp" kind="modal" identifier="mensBasketball" id="dCe-me-vkg"/>
+                                            <segue destination="p6r-RL-OUp" kind="modal" identifier="mensBasketball" modalTransitionStyle="crossDissolve" id="dCe-me-vkg"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="l3D-St-SzM">
@@ -790,7 +790,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="p6r-RL-OUp" kind="modal" identifier="mensIndoorTrack" id="25S-yd-FgI"/>
+                                            <segue destination="p6r-RL-OUp" kind="modal" identifier="mensIndoorTrack" modalTransitionStyle="crossDissolve" id="25S-yd-FgI"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="wPs-CL-zbE">
@@ -819,7 +819,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="p6r-RL-OUp" kind="modal" identifier="mensSquash" id="cE5-i1-4FN"/>
+                                            <segue destination="p6r-RL-OUp" kind="modal" identifier="mensSquash" modalTransitionStyle="crossDissolve" id="cE5-i1-4FN"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="R1H-mi-owz">
@@ -850,7 +850,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="p6r-RL-OUp" kind="modal" identifier="mensNordicSki" id="N31-vF-slL"/>
+                                            <segue destination="p6r-RL-OUp" kind="modal" identifier="mensNordicSki" modalTransitionStyle="crossDissolve" id="N31-vF-slL"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1009,7 +1009,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KDt-el-hgw" kind="modal" id="WsU-3Z-bMu"/>
+                                    <segue destination="KDt-el-hgw" kind="modal" modalTransitionStyle="crossDissolve" id="WsU-3Z-bMu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4MW-ZS-J0k">
@@ -1175,7 +1175,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KDt-el-hgw" kind="modal" id="1SH-Y3-PMA"/>
+                                    <segue destination="KDt-el-hgw" kind="modal" modalTransitionStyle="crossDissolve" id="1SH-Y3-PMA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4J8-GL-pae">
@@ -1221,7 +1221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USn-c2-r45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2846" y="-2857"/>
+            <point key="canvasLocation" x="2718" y="-2857"/>
         </scene>
         <!--MasterTVC-->
         <scene sceneID="npP-1J-hSG">
@@ -1282,7 +1282,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="o6b-vx-ewQ" kind="modal" identifier="mensSoccerTVCInit" id="0XS-9P-dLA"/>
+                                            <segue destination="o6b-vx-ewQ" kind="modal" identifier="mensSoccerTVCInit" modalTransitionStyle="crossDissolve" id="0XS-9P-dLA"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="AZ3-I6-gdD">
@@ -1309,7 +1309,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="o6b-vx-ewQ" kind="modal" identifier="mensXCountryTVCInit" id="DIy-hN-vlq"/>
+                                            <segue destination="o6b-vx-ewQ" kind="modal" identifier="mensXCountryTVCInit" modalTransitionStyle="crossDissolve" id="DIy-hN-vlq"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="cWs-AM-2o9">
@@ -1335,7 +1335,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="o6b-vx-ewQ" kind="modal" identifier="mensGolfTVCInit" id="TOh-AG-uzY"/>
+                                            <segue destination="o6b-vx-ewQ" kind="modal" identifier="mensGolfTVCInit" modalTransitionStyle="crossDissolve" id="TOh-AG-uzY"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="VTn-C6-4Mt">
@@ -1361,7 +1361,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="o6b-vx-ewQ" kind="modal" identifier="mensSailingTVCInit" id="h96-tj-UER"/>
+                                            <segue destination="o6b-vx-ewQ" kind="modal" identifier="mensSailingTVCInit" modalTransitionStyle="crossDissolve" id="h96-tj-UER"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="gpk-c4-nBC">
@@ -1387,7 +1387,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="o6b-vx-ewQ" kind="modal" identifier="mensTennisTVCInit" id="Rj6-pA-lt0"/>
+                                            <segue destination="o6b-vx-ewQ" kind="modal" identifier="mensTennisTVCInit" modalTransitionStyle="crossDissolve" id="Rj6-pA-lt0"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1408,7 +1408,7 @@
             <objects>
                 <tableViewController id="gTb-Eb-g7v" customClass="MasterTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rId-7y-hTK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.61345232660000004" alpha="1" colorSpace="calibratedWhite"/>
@@ -1437,7 +1437,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="5EH-Rg-d7t" kind="modal" identifier="mensLax" id="Clf-jl-dtl"/>
+                                            <segue destination="5EH-Rg-d7t" kind="modal" identifier="mensLax" modalTransitionStyle="crossDissolve" id="Clf-jl-dtl"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="MLh-9s-pZS">
@@ -1462,7 +1462,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="5EH-Rg-d7t" kind="modal" identifier="mensTrack" id="q0a-cl-mUL"/>
+                                            <segue destination="5EH-Rg-d7t" kind="modal" identifier="mensTrack" modalTransitionStyle="crossDissolve" id="q0a-cl-mUL"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Baseball" rowHeight="55" id="VQV-dC-MGq">
@@ -1487,7 +1487,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="5EH-Rg-d7t" kind="modal" identifier="mensBaseball" id="oW9-py-l8M"/>
+                                            <segue destination="5EH-Rg-d7t" kind="modal" identifier="mensBaseball" modalTransitionStyle="crossDissolve" id="oW9-py-l8M"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="WZS-ns-tcV">
@@ -1513,7 +1513,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="5EH-Rg-d7t" kind="modal" identifier="mensGolfTVCInit" id="Vpg-8U-Z5e"/>
+                                            <segue destination="5EH-Rg-d7t" kind="modal" identifier="mensGolfTVCInit" modalTransitionStyle="crossDissolve" id="Vpg-8U-Z5e"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="55" id="G8C-cB-jUU">
@@ -1539,7 +1539,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="5EH-Rg-d7t" kind="modal" identifier="mensTennisTVCInit" id="Xd6-zK-xI2"/>
+                                            <segue destination="5EH-Rg-d7t" kind="modal" identifier="mensTennisTVCInit" modalTransitionStyle="crossDissolve" id="Xd6-zK-xI2"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1553,7 +1553,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IT-uS-Na2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3330" y="-2843"/>
+            <point key="canvasLocation" x="3046" y="-2819"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7Tm-Uh-Fmw">
@@ -2441,7 +2441,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="5Re-Xa-sUp" kind="modal" id="jWr-1m-8Ix"/>
+                                            <segue destination="5Re-Xa-sUp" kind="modal" modalTransitionStyle="crossDissolve" id="jWr-1m-8Ix"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="155" id="deR-Qf-hZr">
@@ -2499,7 +2499,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="OmK-x5-KVf" kind="modal" id="c6k-1a-6n5"/>
+                                            <segue destination="OmK-x5-KVf" kind="modal" modalTransitionStyle="crossDissolve" id="c6k-1a-6n5"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -2542,7 +2542,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5Re-Xa-sUp" kind="modal" id="oQX-lm-Ye2"/>
+                                    <segue destination="5Re-Xa-sUp" kind="modal" modalTransitionStyle="crossDissolve" id="oQX-lm-Ye2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UMS-yu-dqH">
@@ -2604,7 +2604,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5JS-m9-ZBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1011" y="-9071"/>
+            <point key="canvasLocation" x="963" y="-9135"/>
         </scene>
         <!--RSSTVC-->
         <scene sceneID="z5J-Rn-T42">
@@ -2651,7 +2651,7 @@
                                     <outlet property="description" destination="SOU-Kd-qc1" id="WJ8-6x-DNp"/>
                                     <outlet property="image" destination="bz2-Qw-PE9" id="G30-2S-ekb"/>
                                     <outlet property="title" destination="f0p-k6-6Cr" id="LJa-Kz-Zj4"/>
-                                    <segue destination="2tR-zv-HDD" kind="modal" identifier="webView" id="aL5-sg-9xt"/>
+                                    <segue destination="2tR-zv-HDD" kind="modal" identifier="webView" modalTransitionStyle="crossDissolve" id="aL5-sg-9xt"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2666,7 +2666,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9S-5q-xde" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1139" y="-499"/>
+            <point key="canvasLocation" x="-1303" y="-486"/>
         </scene>
         <!--News Feed View Controller-->
         <scene sceneID="SPH-OO-QpK">
@@ -2703,7 +2703,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FM3-qD-uOc" kind="modal" id="EZZ-qn-hFr"/>
+                                    <segue destination="FM3-qD-uOc" kind="modal" modalTransitionStyle="crossDissolve" id="EZZ-qn-hFr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nsg-zU-juw">
@@ -2749,7 +2749,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1V7-Bu-Ljd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1534" y="-640"/>
+            <point key="canvasLocation" x="-1698" y="-636"/>
         </scene>
         <!--RosterTVC-->
         <scene sceneID="h2l-nj-3e5">
@@ -2792,7 +2792,7 @@
                                     <outlet property="athleteDetails" destination="dJI-zf-lJw" id="Vko-da-2J7"/>
                                     <outlet property="athleteImage" destination="Co3-GG-hoq" id="zuE-3W-Nkh"/>
                                     <outlet property="athleteName" destination="Ndd-gv-e2U" id="oY3-GN-kdL"/>
-                                    <segue destination="Rcr-oT-pcP" kind="modal" identifier="athleteBio" id="tEU-5a-Ipf"/>
+                                    <segue destination="Rcr-oT-pcP" kind="modal" identifier="athleteBio" modalTransitionStyle="crossDissolve" id="tEU-5a-Ipf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2804,7 +2804,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ubh-YG-NZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2881" y="-10772"/>
+            <point key="canvasLocation" x="2706" y="-10804"/>
         </scene>
         <!--ScoreboardTVC-->
         <scene sceneID="F54-SZ-ta7">
@@ -2912,7 +2912,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n87-c0-fml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3158" y="-2015"/>
+            <point key="canvasLocation" x="-3153" y="-2014"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="W1a-8s-MO7">
@@ -3382,7 +3382,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="cnL-Cd-EPl" kind="modal" identifier="roster" id="LAB-qD-jUJ"/>
+                                            <segue destination="cnL-Cd-EPl" kind="modal" identifier="roster" modalTransitionStyle="crossDissolve" id="LAB-qD-jUJ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="S1E-ZG-j9a">
@@ -3406,7 +3406,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="hjc-MZ-wCU" kind="modal" identifier="news" id="cVc-Kz-KS9"/>
+                                            <segue destination="hjc-MZ-wCU" kind="modal" identifier="news" modalTransitionStyle="crossDissolve" id="cVc-Kz-KS9"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="R0K-Hh-DXL">
@@ -3430,7 +3430,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="Mbf-k3-Qr5" kind="modal" identifier="schedule" id="hoi-CN-vTN"/>
+                                            <segue destination="Mbf-k3-Qr5" kind="modal" identifier="schedule" modalTransitionStyle="crossDissolve" id="hoi-CN-vTN"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="msl-M9-L96">
@@ -3454,7 +3454,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="8vk-h6-Sbd" kind="modal" identifier="coaches" id="MC5-f9-FW4"/>
+                                            <segue destination="8vk-h6-Sbd" kind="modal" identifier="coaches" modalTransitionStyle="crossDissolve" id="MC5-f9-FW4"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="lLe-Ua-4Ia">
@@ -3502,7 +3502,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="CYl-qJ-7Ch" kind="modal" identifier="images" id="oDe-jt-TV4"/>
+                                            <segue destination="CYl-qJ-7Ch" kind="modal" identifier="images" modalTransitionStyle="crossDissolve" id="oDe-jt-TV4"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -3545,7 +3545,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" id="c1b-4N-uij"/>
+                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="c1b-4N-uij"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qBB-O7-Gvq">
@@ -3603,7 +3603,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYG-L4-v5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2542" y="-10772"/>
+            <point key="canvasLocation" x="2375" y="-10804"/>
         </scene>
         <!--News Feed View Controller-->
         <scene sceneID="8kX-Jk-JEC">
@@ -3632,7 +3632,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" id="7dw-Le-r9w"/>
+                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="7dw-Le-r9w"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hm9-EG-TO5">
@@ -3689,7 +3689,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eoo-vV-zpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2210" y="-10121"/>
+            <point key="canvasLocation" x="1906" y="-10129"/>
         </scene>
         <!--RSSTVC-->
         <scene sceneID="iob-ku-y41">
@@ -3736,7 +3736,7 @@
                                     <outlet property="description" destination="77g-xG-17v" id="wyC-m1-Ty7"/>
                                     <outlet property="image" destination="3Ya-Qh-vOI" id="91I-oo-OJR"/>
                                     <outlet property="title" destination="HOM-oY-gAe" id="EQm-2h-3TR"/>
-                                    <segue destination="g4C-iX-Txf" kind="modal" identifier="webView" id="vhS-r3-CbX"/>
+                                    <segue destination="g4C-iX-Txf" kind="modal" identifier="webView" modalTransitionStyle="crossDissolve" id="vhS-r3-CbX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -3751,7 +3751,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UuK-PW-yJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2541" y="-10121"/>
+            <point key="canvasLocation" x="2232" y="-10087"/>
         </scene>
         <!--News Story View Controller-->
         <scene sceneID="S2N-Bq-YiC">
@@ -3780,7 +3780,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hjc-MZ-wCU" kind="modal" identifier="back2NFVC" id="mMk-QF-Q8H"/>
+                                    <segue destination="hjc-MZ-wCU" kind="modal" identifier="back2NFVC" modalTransitionStyle="crossDissolve" id="mMk-QF-Q8H"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HDQ-N2-KUr">
@@ -3843,7 +3843,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cbl-Sw-ACZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2896" y="-10121"/>
+            <point key="canvasLocation" x="2684" y="-10189"/>
         </scene>
         <!--Roster Athlete View Controller-->
         <scene sceneID="k0D-8n-9PL">
@@ -3872,7 +3872,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oO4-Ot-smA" kind="modal" identifier="back2Roster" id="8nJ-cb-89J"/>
+                                    <segue destination="oO4-Ot-smA" kind="modal" identifier="back2Roster" modalTransitionStyle="crossDissolve" id="8nJ-cb-89J"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dpH-Lb-1jo">
@@ -3943,7 +3943,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oz6-MB-6DZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3305" y="-10825"/>
+            <point key="canvasLocation" x="3077" y="-10809"/>
         </scene>
         <!--Roster SplashVC-->
         <scene sceneID="uGo-d8-6o6">
@@ -3974,7 +3974,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oO4-Ot-smA" kind="modal" identifier="continue" id="VyF-zp-8Pr"/>
+                                    <segue destination="oO4-Ot-smA" kind="modal" identifier="continue" modalTransitionStyle="crossDissolve" id="VyF-zp-8Pr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gq6-hm-9GO">
@@ -4007,7 +4007,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6H-wl-gYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2210" y="-10772"/>
+            <point key="canvasLocation" x="2022" y="-10784"/>
         </scene>
         <!--Scoreboard View Controller-->
         <scene sceneID="qEv-ZI-QZS">
@@ -4115,7 +4115,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" id="4uy-XM-Lss"/>
+                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="4uy-XM-Lss"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hGx-BC-fYH">
@@ -4285,7 +4285,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" id="xTh-kW-qs2"/>
+                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="xTh-kW-qs2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GNr-oc-JLv">
@@ -4414,7 +4414,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" id="Wzr-IQ-2zX"/>
+                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="Wzr-IQ-2zX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D7L-ar-NvN">
@@ -4471,7 +4471,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pT-gy-vgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2232" y="-8806"/>
+            <point key="canvasLocation" x="2092" y="-8870"/>
         </scene>
         <!--CoachesTVC-->
         <scene sceneID="8KP-V9-q9o">
@@ -4518,7 +4518,7 @@
                                     <outlet property="coachPic" destination="vqx-Ba-Mgh" id="LZX-TO-ogu"/>
                                     <outlet property="coachesName" destination="fil-9J-KQX" id="hLy-qC-6gb"/>
                                     <outlet property="coachesPosition" destination="SLP-QM-E6s" id="xbY-lA-RPj"/>
-                                    <segue destination="uQV-t3-l69" kind="modal" identifier="coachBio" id="Nyc-cb-wY6"/>
+                                    <segue destination="uQV-t3-l69" kind="modal" identifier="coachBio" modalTransitionStyle="crossDissolve" id="Nyc-cb-wY6"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -4533,7 +4533,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ij-YE-IBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2712" y="-8908"/>
+            <point key="canvasLocation" x="2348" y="-8776"/>
         </scene>
         <!--News Feed View Controller-->
         <scene sceneID="oIJ-6c-Zf2">
@@ -5512,7 +5512,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8vk-h6-Sbd" kind="modal" identifier="back2Coaches" id="xK9-Fi-ImF"/>
+                                    <segue destination="8vk-h6-Sbd" kind="modal" identifier="back2Coaches" modalTransitionStyle="crossDissolve" id="xK9-Fi-ImF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AlZ-mo-LPq">
@@ -5592,8 +5592,9 @@
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="895-Fj-LgZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="L3O-OS-i62">
                             <rect key="frame" x="0.0" y="122" width="320" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -5602,7 +5603,7 @@
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" rowHeight="100" id="eMR-RY-egs" customClass="HomeImageCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eMR-RY-egs" id="QI4-ii-gpA">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="center" tableViewCell="eMR-RY-egs" id="QI4-ii-gpA">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -5615,11 +5616,12 @@
                                             <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="albumName" destination="d9M-we-jfj" id="xNZ-gQ-h8e"/>
-                                    <segue destination="9t8-6S-maO" kind="modal" identifier="album" id="2AS-9i-W4E"/>
+                                    <segue destination="9t8-6S-maO" kind="modal" identifier="album" modalTransitionStyle="crossDissolve" id="2AS-9i-W4E"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -5637,7 +5639,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osF-6H-fdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-923" y="-1936"/>
+            <point key="canvasLocation" x="-1183" y="-1879"/>
         </scene>
         <!--Home Image View Controller-->
         <scene sceneID="G8d-Jq-ShT">
@@ -5647,10 +5649,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BowdoinImageBackground.jpg" id="1RG-XE-8jF">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <containerView contentMode="scaleToFill" id="y1Z-qg-XPc">
                                 <rect key="frame" x="0.0" y="90" width="320" height="478"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="rS6-yJ-d2h" kind="embed" identifier="embedAlbums" id="b45-bN-vKJ"/>
                                 </connections>
@@ -5674,7 +5680,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FM3-qD-uOc" kind="modal" id="dvB-da-Chg"/>
+                                    <segue destination="FM3-qD-uOc" kind="modal" modalTransitionStyle="crossDissolve" id="dvB-da-Chg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g1e-o7-aGb">
@@ -5749,7 +5755,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Hf5-yM-EzR" kind="modal" identifier="back2Albums" id="JsG-Jg-SRg"/>
+                                    <segue destination="Hf5-yM-EzR" kind="modal" identifier="back2Albums" modalTransitionStyle="crossDissolve" id="JsG-Jg-SRg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Yx-hh-RYC">
@@ -5779,7 +5785,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJE-Sm-dBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-512" y="-2026"/>
+            <point key="canvasLocation" x="-752" y="-2006"/>
         </scene>
         <!--Collection Image View Controller-->
         <scene sceneID="IIB-En-PRk">
@@ -5815,7 +5821,7 @@
                                 </view>
                                 <connections>
                                     <outlet property="cellImage" destination="jYi-L2-EgH" id="mjb-2F-J4e"/>
-                                    <segue destination="fnD-Gg-fdC" kind="modal" identifier="zoomPhoto" id="N17-4H-BSk"/>
+                                    <segue destination="fnD-Gg-fdC" kind="modal" identifier="zoomPhoto" modalTransitionStyle="crossDissolve" id="N17-4H-BSk"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -5830,7 +5836,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THg-ab-egJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-150" y="-1936"/>
+            <point key="canvasLocation" x="-422" y="-1846"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="FWQ-2u-69W">
@@ -5859,7 +5865,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9t8-6S-maO" kind="modal" identifier="back2Albums" id="Y1j-bH-KX9"/>
+                                    <segue destination="9t8-6S-maO" kind="modal" identifier="back2Albums" modalTransitionStyle="crossDissolve" id="Y1j-bH-KX9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tSH-Tz-FiE">
@@ -5932,7 +5938,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="albumName" destination="u8r-Cm-Boc" id="nK7-5C-ccy"/>
-                                    <segue destination="727-1C-U61" kind="modal" identifier="album" id="Dnt-bF-smi"/>
+                                    <segue destination="727-1C-U61" kind="modal" identifier="album" modalTransitionStyle="crossDissolve" id="Dnt-bF-smi"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -5950,7 +5956,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZeI-MD-GJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3174" y="-8166"/>
+            <point key="canvasLocation" x="2725" y="-8046"/>
         </scene>
         <!--Home Image View Controller-->
         <scene sceneID="P7Z-Lu-71A">
@@ -5979,7 +5985,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" id="Tji-DF-oQk"/>
+                                    <segue destination="o6b-vx-ewQ" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="Tji-DF-oQk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XC2-hc-aaL">
@@ -6032,7 +6038,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mXP-P5-lI2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2752" y="-8211"/>
+            <point key="canvasLocation" x="2616" y="-8095"/>
         </scene>
         <!--Images Collection Container View Controller-->
         <scene sceneID="O4S-ma-gyk">
@@ -6069,7 +6075,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CYl-qJ-7Ch" kind="modal" identifier="back2Albums" id="Tp8-N7-VrK"/>
+                                    <segue destination="CYl-qJ-7Ch" kind="modal" identifier="back2Albums" modalTransitionStyle="crossDissolve" id="Tp8-N7-VrK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5bL-Pl-nnd">
@@ -6135,7 +6141,7 @@
                                 </view>
                                 <connections>
                                     <outlet property="cellImage" destination="fom-Ea-bFa" id="8DQ-wD-gs4"/>
-                                    <segue destination="095-gl-7q1" kind="modal" identifier="zoomPhoto" id="vBz-LN-xvz"/>
+                                    <segue destination="095-gl-7q1" kind="modal" identifier="zoomPhoto" modalTransitionStyle="crossDissolve" id="vBz-LN-xvz"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -6150,7 +6156,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHJ-ED-Ece" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4004" y="-8172"/>
+            <point key="canvasLocation" x="3704" y="-8172"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="jf7-iq-ah7">
@@ -6179,7 +6185,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="727-1C-U61" kind="modal" identifier="back2Albums" id="MPe-AW-eIH"/>
+                                    <segue destination="727-1C-U61" kind="modal" identifier="back2Albums" modalTransitionStyle="crossDissolve" id="MPe-AW-eIH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tnO-oz-bzt">
@@ -6216,7 +6222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kT-cA-PsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4388" y="-8312"/>
+            <point key="canvasLocation" x="4096" y="-8312"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="z8C-TL-6Qa">
@@ -21029,7 +21035,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yHY-lW-UKi" kind="modal" id="3l1-cn-Yhj"/>
+                                    <segue destination="yHY-lW-UKi" kind="modal" modalTransitionStyle="crossDissolve" id="3l1-cn-Yhj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8qv-fV-kwo">
@@ -21134,7 +21140,7 @@
                                     <outlet property="athleteDetails" destination="FUn-0r-6ty" id="a3f-Ll-gz9"/>
                                     <outlet property="athleteImage" destination="JsP-Nh-GZK" id="3aJ-uJ-Rsx"/>
                                     <outlet property="athleteName" destination="MfG-fk-8GI" id="HMx-Cm-pDJ"/>
-                                    <segue destination="gUt-W7-zAC" kind="modal" identifier="athleteBio" id="bXI-qO-U5Q"/>
+                                    <segue destination="gUt-W7-zAC" kind="modal" identifier="athleteBio" modalTransitionStyle="crossDissolve" id="bXI-qO-U5Q"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -21146,14 +21152,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9DT-hO-D8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3447" y="-7084"/>
+            <point key="canvasLocation" x="3179" y="-7064"/>
         </scene>
         <!--TeamTVC-->
         <scene sceneID="1yl-d1-Dw7">
             <objects>
                 <tableViewController id="4R6-hu-3On" customClass="TeamTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="b6q-hD-vGw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -21181,7 +21187,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="Ehq-on-coH" kind="modal" identifier="roster" id="tDE-yd-P5z"/>
+                                            <segue destination="Ehq-on-coH" kind="modal" identifier="roster" modalTransitionStyle="crossDissolve" id="tDE-yd-P5z"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="pub-XC-Eoh">
@@ -21205,7 +21211,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="JfO-eK-YJ8" kind="modal" identifier="news" id="lIc-4a-CIC"/>
+                                            <segue destination="JfO-eK-YJ8" kind="modal" identifier="news" modalTransitionStyle="crossDissolve" id="lIc-4a-CIC"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="vvw-N0-3aa">
@@ -21229,7 +21235,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="HhW-lh-ahB" kind="modal" identifier="schedule" id="eWB-BJ-ztu"/>
+                                            <segue destination="HhW-lh-ahB" kind="modal" identifier="schedule" modalTransitionStyle="crossDissolve" id="eWB-BJ-ztu"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="tcW-vU-lA7">
@@ -21278,7 +21284,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="l7s-Xr-LrG" kind="modal" identifier="facilities" id="mpH-ho-ekn"/>
+                                            <segue destination="l7s-Xr-LrG" kind="modal" identifier="facilities" modalTransitionStyle="crossDissolve" id="mpH-ho-ekn"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="fWt-Fb-hko">
@@ -21344,7 +21350,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="p6r-RL-OUp" kind="modal" identifier="back2TVC" id="dlO-Qi-AkM"/>
+                                    <segue destination="p6r-RL-OUp" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="dlO-Qi-AkM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="58A-by-PN4">
@@ -21402,7 +21408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPh-oO-Tdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3108" y="-7084"/>
+            <point key="canvasLocation" x="2656" y="-7084"/>
         </scene>
         <!--News Feed View Controller-->
         <scene sceneID="ugu-nf-nvc">
@@ -21431,7 +21437,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="p6r-RL-OUp" kind="modal" identifier="back2TVC" id="waD-mg-Lk0"/>
+                                    <segue destination="p6r-RL-OUp" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="waD-mg-Lk0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u7Q-ef-ulQ">
@@ -21488,14 +21494,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8DX-vw-7L8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2776" y="-6433"/>
+            <point key="canvasLocation" x="2440" y="-6433"/>
         </scene>
         <!--RSSTVC-->
         <scene sceneID="nfa-Kz-Jj3">
             <objects>
                 <tableViewController id="1We-Nv-1ia" customClass="RSSTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="134" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ohn-9h-83R">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="Ow9-8p-APY">
@@ -21535,7 +21541,7 @@
                                     <outlet property="description" destination="MmQ-Lm-zFg" id="1PM-dF-8Bd"/>
                                     <outlet property="image" destination="EhK-1d-pho" id="wA2-tI-Sjq"/>
                                     <outlet property="title" destination="ucL-Kh-7Oy" id="1oq-iM-AT6"/>
-                                    <segue destination="UbY-9n-YVB" kind="modal" identifier="webView" id="F9Q-zV-nkN"/>
+                                    <segue destination="UbY-9n-YVB" kind="modal" identifier="webView" modalTransitionStyle="crossDissolve" id="F9Q-zV-nkN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -21550,7 +21556,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gRh-ra-vsR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3107" y="-6433"/>
+            <point key="canvasLocation" x="2887" y="-6433"/>
         </scene>
         <!--News Story View Controller-->
         <scene sceneID="dVX-6Y-DBb">
@@ -21579,7 +21585,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="JfO-eK-YJ8" kind="modal" identifier="back2NFVC" id="PTj-LA-VNS"/>
+                                    <segue destination="JfO-eK-YJ8" kind="modal" identifier="back2NFVC" modalTransitionStyle="crossDissolve" id="PTj-LA-VNS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gFC-pu-Ub3">
@@ -21671,7 +21677,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yE0-F2-cW6" kind="modal" identifier="back2Roster" id="tLG-fB-QyS"/>
+                                    <segue destination="yE0-F2-cW6" kind="modal" identifier="back2Roster" modalTransitionStyle="crossDissolve" id="tLG-fB-QyS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W7C-eS-1K4">
@@ -21773,7 +21779,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yE0-F2-cW6" kind="modal" identifier="continue" id="LUW-mX-r35"/>
+                                    <segue destination="yE0-F2-cW6" kind="modal" identifier="continue" modalTransitionStyle="crossDissolve" id="LUW-mX-r35"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HIT-ur-UoJ">
@@ -21806,7 +21812,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZmH-Z7-gZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2776" y="-7084"/>
+            <point key="canvasLocation" x="2555" y="-7084"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="Vje-CD-RDv">
@@ -21835,7 +21841,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="p6r-RL-OUp" kind="modal" identifier="back2TVC" id="FCd-BC-An0"/>
+                                    <segue destination="p6r-RL-OUp" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="FCd-BC-An0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ehc-EV-cJu">
@@ -21897,14 +21903,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7aW-VJ-tOW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2832" y="-5768"/>
+            <point key="canvasLocation" x="2621" y="-5780"/>
         </scene>
         <!--ScheduleTVC-->
         <scene sceneID="gLq-Qs-wCA">
             <objects>
                 <tableViewController id="a86-3s-XQU" customClass="ScheduleTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="117" sectionHeaderHeight="22" sectionFooterHeight="22" id="Gjn-oq-u0g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -22005,7 +22011,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="p6r-RL-OUp" kind="modal" identifier="back2TVC" id="hR9-cm-tec"/>
+                                    <segue destination="p6r-RL-OUp" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="hR9-cm-tec"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g1V-Zj-OWO">
@@ -22134,7 +22140,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="p6r-RL-OUp" kind="modal" identifier="back2TVC" id="lnw-fc-qJZ"/>
+                                    <segue destination="p6r-RL-OUp" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="lnw-fc-qJZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OZA-sz-DAc">
@@ -22191,14 +22197,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrx-hh-2AP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2798" y="-5118"/>
+            <point key="canvasLocation" x="2506" y="-5110"/>
         </scene>
         <!--CoachesTVC-->
         <scene sceneID="DwE-6p-DPM">
             <objects>
                 <tableViewController id="DTX-am-Czp" customClass="CoachesTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="22" sectionFooterHeight="22" id="gXf-6r-ASO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="I4w-TE-olq">
@@ -22238,7 +22244,7 @@
                                     <outlet property="coachPic" destination="HF7-OO-gKa" id="P8D-Y2-svE"/>
                                     <outlet property="coachesName" destination="tja-t5-j3l" id="SN1-m2-IwT"/>
                                     <outlet property="coachesPosition" destination="wnU-iC-pFC" id="7aW-en-L2a"/>
-                                    <segue destination="CG1-b8-VrU" kind="modal" identifier="coachBio" id="UIW-vM-cl1"/>
+                                    <segue destination="CG1-b8-VrU" kind="modal" identifier="coachBio" modalTransitionStyle="crossDissolve" id="UIW-vM-cl1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -22253,7 +22259,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1P-QH-Txi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3278" y="-5220"/>
+            <point key="canvasLocation" x="2938" y="-5152"/>
         </scene>
         <!--Coaches Bio View Controller-->
         <scene sceneID="rYk-Xg-7vG">
@@ -22282,7 +22288,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4wv-0M-HkR" kind="modal" identifier="back2Coaches" id="58m-bY-vZR"/>
+                                    <segue destination="4wv-0M-HkR" kind="modal" identifier="back2Coaches" modalTransitionStyle="crossDissolve" id="58m-bY-vZR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Adb-rC-CCK">
@@ -22360,7 +22366,7 @@
             <objects>
                 <tableViewController id="qgw-Qe-gm3" customClass="HomeImageTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="gk5-N2-nTa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -22389,7 +22395,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="albumName" destination="WHF-I2-rEm" id="LBO-f3-0le"/>
-                                    <segue destination="M6e-yx-5fv" kind="modal" identifier="album" id="aHW-aU-iDB"/>
+                                    <segue destination="M6e-yx-5fv" kind="modal" identifier="album" modalTransitionStyle="crossDissolve" id="aHW-aU-iDB"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -22407,7 +22413,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWn-AW-miF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2797" y="-4286"/>
+            <point key="canvasLocation" x="2448" y="-4250"/>
         </scene>
         <!--Home Image View Controller-->
         <scene sceneID="Jt3-rP-kmJ">
@@ -22436,7 +22442,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="p6r-RL-OUp" kind="modal" identifier="back2TVC" id="6F7-6u-A4f"/>
+                                    <segue destination="p6r-RL-OUp" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="6F7-6u-A4f"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8aH-Qn-cBx">
@@ -22489,7 +22495,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="140-Xc-DID" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2375" y="-4331"/>
+            <point key="canvasLocation" x="2159" y="-4328"/>
         </scene>
         <!--Images Collection Container View Controller-->
         <scene sceneID="wg8-sy-6Ud">
@@ -22526,7 +22532,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CVs-uY-YKf" kind="modal" identifier="back2Albums" id="BVI-d1-1wy"/>
+                                    <segue destination="CVs-uY-YKf" kind="modal" identifier="back2Albums" modalTransitionStyle="crossDissolve" id="BVI-d1-1wy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i6p-Tx-UWi">
@@ -22556,7 +22562,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ylo-3I-PTJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3244" y="-4432"/>
+            <point key="canvasLocation" x="2827" y="-4388"/>
         </scene>
         <!--Collection Image View Controller-->
         <scene sceneID="AuT-Sr-IUf">
@@ -22592,7 +22598,7 @@
                                 </view>
                                 <connections>
                                     <outlet property="cellImage" destination="8i8-CT-Z2G" id="0JU-Wv-FDC"/>
-                                    <segue destination="Iwz-oH-0fs" kind="modal" identifier="zoomPhoto" id="Yze-EM-KVp"/>
+                                    <segue destination="Iwz-oH-0fs" kind="modal" identifier="zoomPhoto" modalTransitionStyle="crossDissolve" id="Yze-EM-KVp"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -22636,7 +22642,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="M6e-yx-5fv" kind="modal" identifier="back2Albums" id="VVN-yD-yRg"/>
+                                    <segue destination="M6e-yx-5fv" kind="modal" identifier="back2Albums" modalTransitionStyle="crossDissolve" id="VVN-yD-yRg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="huA-mc-3Ky">
@@ -24375,7 +24381,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="OmK-x5-KVf" kind="modal" id="Rrg-Oh-NwK"/>
+                                    <segue destination="OmK-x5-KVf" kind="modal" modalTransitionStyle="crossDissolve" id="Rrg-Oh-NwK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z5t-gi-eV9">
@@ -24437,14 +24443,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QKj-Qb-nct" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3871" y="-2908"/>
+            <point key="canvasLocation" x="3639" y="-2835"/>
         </scene>
         <!--RosterTVC-->
         <scene sceneID="wel-h4-CKX">
             <objects>
                 <tableViewController id="4Fj-dc-Jau" customClass="RosterTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="s6a-VZ-Ji4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -24480,7 +24486,7 @@
                                     <outlet property="athleteDetails" destination="8Dk-kI-mzP" id="sK2-r0-B5e"/>
                                     <outlet property="athleteImage" destination="qnW-WK-J5u" id="45v-2c-s61"/>
                                     <outlet property="athleteName" destination="5uf-cw-mtc" id="zs1-UX-pjP"/>
-                                    <segue destination="ycy-Ha-Gp2" kind="modal" identifier="athleteBio" id="Ra8-Lr-ZQ3"/>
+                                    <segue destination="ycy-Ha-Gp2" kind="modal" identifier="athleteBio" modalTransitionStyle="crossDissolve" id="Ra8-Lr-ZQ3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -24492,14 +24498,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VC1-OC-qC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6107" y="-4564"/>
+            <point key="canvasLocation" x="5831" y="-4564"/>
         </scene>
         <!--TeamTVC-->
         <scene sceneID="x5a-B9-qSb">
             <objects>
                 <tableViewController id="zQB-ts-yMQ" customClass="TeamTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="vzo-rg-v03">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -24527,7 +24533,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="jje-yS-Ivc" kind="modal" identifier="roster" id="ebz-c8-c9n"/>
+                                            <segue destination="jje-yS-Ivc" kind="modal" identifier="roster" modalTransitionStyle="crossDissolve" id="ebz-c8-c9n"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="idW-du-o6o">
@@ -24551,7 +24557,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="xEi-G6-3YU" kind="modal" identifier="news" id="RHO-9z-i9q"/>
+                                            <segue destination="xEi-G6-3YU" kind="modal" identifier="news" modalTransitionStyle="crossDissolve" id="RHO-9z-i9q"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="3Y8-up-zf2">
@@ -24575,7 +24581,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="Bdm-Ya-W33" kind="modal" identifier="schedule" id="4zh-WH-H4Q"/>
+                                            <segue destination="Bdm-Ya-W33" kind="modal" identifier="schedule" modalTransitionStyle="crossDissolve" id="4zh-WH-H4Q"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="pmc-zl-GHL">
@@ -24599,7 +24605,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="qdr-Fp-JYL" kind="modal" identifier="coaches" id="0CL-l5-K4k"/>
+                                            <segue destination="qdr-Fp-JYL" kind="modal" identifier="coaches" modalTransitionStyle="crossDissolve" id="0CL-l5-K4k"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="PDB-3U-M4L">
@@ -24624,7 +24630,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="jHw-Ry-KaK" kind="modal" identifier="facilities" id="479-ci-0e7"/>
+                                            <segue destination="jHw-Ry-KaK" kind="modal" identifier="facilities" modalTransitionStyle="crossDissolve" id="479-ci-0e7"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="mOl-ao-evZ">
@@ -24647,7 +24653,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="Oja-N8-yOr" kind="modal" identifier="images" id="YXl-sx-zt0"/>
+                                            <segue destination="Oja-N8-yOr" kind="modal" identifier="images" modalTransitionStyle="crossDissolve" id="YXl-sx-zt0"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -24661,7 +24667,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qg5-8N-h9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5009" y="-2979"/>
+            <point key="canvasLocation" x="4629" y="-2975"/>
         </scene>
         <!--Roster View Controller-->
         <scene sceneID="r97-0I-wvP">
@@ -24690,7 +24696,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5EH-Rg-d7t" kind="modal" identifier="back2TVC" id="Asp-R6-k78"/>
+                                    <segue destination="5EH-Rg-d7t" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="Asp-R6-k78"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ts7-Wx-6RE">
@@ -24748,7 +24754,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LcW-Ct-mvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5768" y="-4564"/>
+            <point key="canvasLocation" x="5524" y="-4564"/>
         </scene>
         <!--News Feed View Controller-->
         <scene sceneID="MmY-WM-9FA">
@@ -24777,7 +24783,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5EH-Rg-d7t" kind="modal" identifier="back2TVC" id="IsN-07-SPI"/>
+                                    <segue destination="5EH-Rg-d7t" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="IsN-07-SPI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0BP-oU-hoZ">
@@ -24834,7 +24840,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uz-xh-RCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5436" y="-3913"/>
+            <point key="canvasLocation" x="5184" y="-3889"/>
         </scene>
         <!--RSSTVC-->
         <scene sceneID="hdo-Fl-Tlb">
@@ -24881,7 +24887,7 @@
                                     <outlet property="description" destination="NQU-bc-eOb" id="KLZ-f3-by9"/>
                                     <outlet property="image" destination="zSP-7e-HEP" id="Ihe-Fr-odx"/>
                                     <outlet property="title" destination="72w-9U-jGo" id="lYu-ON-Mf2"/>
-                                    <segue destination="rCR-D0-Bdz" kind="modal" identifier="webView" id="egf-U2-c8V"/>
+                                    <segue destination="rCR-D0-Bdz" kind="modal" identifier="webView" modalTransitionStyle="crossDissolve" id="egf-U2-c8V"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -24896,7 +24902,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igY-ik-WfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5767" y="-3913"/>
+            <point key="canvasLocation" x="5515" y="-3829"/>
         </scene>
         <!--News Story View Controller-->
         <scene sceneID="T4h-lB-DYP">
@@ -24925,7 +24931,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xEi-G6-3YU" kind="modal" identifier="back2NFVC" id="b2R-m7-unl"/>
+                                    <segue destination="xEi-G6-3YU" kind="modal" identifier="back2NFVC" modalTransitionStyle="crossDissolve" id="b2R-m7-unl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qdV-XI-I0W">
@@ -25017,7 +25023,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gN9-BT-4lz" kind="modal" identifier="back2Roster" id="DR5-c2-w5u"/>
+                                    <segue destination="gN9-BT-4lz" kind="modal" identifier="back2Roster" modalTransitionStyle="crossDissolve" id="DR5-c2-w5u"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Blg-Aq-VbQ">
@@ -25119,7 +25125,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gN9-BT-4lz" kind="modal" identifier="continue" id="g2F-A3-Nyr"/>
+                                    <segue destination="gN9-BT-4lz" kind="modal" identifier="continue" modalTransitionStyle="crossDissolve" id="g2F-A3-Nyr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6xn-cF-7Fc">
@@ -25152,7 +25158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bea-bo-8HD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5436" y="-4564"/>
+            <point key="canvasLocation" x="5184" y="-4564"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="Ejw-9X-PHg">
@@ -25181,7 +25187,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5EH-Rg-d7t" kind="modal" identifier="back2TVC" id="gpg-mk-OMD"/>
+                                    <segue destination="5EH-Rg-d7t" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="gpg-mk-OMD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5xR-Ct-qz7">
@@ -25243,14 +25249,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="guh-wH-P1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5492" y="-3248"/>
+            <point key="canvasLocation" x="5340" y="-3252"/>
         </scene>
         <!--ScheduleTVC-->
         <scene sceneID="xo0-c2-An1">
             <objects>
                 <tableViewController id="IFP-HW-hty" customClass="ScheduleTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="117" sectionHeaderHeight="22" sectionFooterHeight="22" id="xzO-z9-uCH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -25351,7 +25357,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5EH-Rg-d7t" kind="modal" identifier="back2TVC" id="48x-Dh-jKz"/>
+                                    <segue destination="5EH-Rg-d7t" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="48x-Dh-jKz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2n9-de-0P9">
@@ -25451,7 +25457,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOR-nH-PJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5340" y="-1928"/>
+            <point key="canvasLocation" x="5124" y="-1924"/>
         </scene>
         <!--Coaches View Controller-->
         <scene sceneID="ISs-w3-jgR">
@@ -25480,7 +25486,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5EH-Rg-d7t" kind="modal" identifier="back2TVC" id="ICw-qO-Xfp"/>
+                                    <segue destination="5EH-Rg-d7t" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="ICw-qO-Xfp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NkI-vb-Q8a">
@@ -25537,7 +25543,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWb-mu-SgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5458" y="-2598"/>
+            <point key="canvasLocation" x="5184" y="-2618"/>
         </scene>
         <!--CoachesTVC-->
         <scene sceneID="n5t-bb-XHY">
@@ -25584,7 +25590,7 @@
                                     <outlet property="coachPic" destination="MBG-Zy-uHu" id="Z3V-Rh-uaa"/>
                                     <outlet property="coachesName" destination="7pR-LA-IcB" id="9ib-dU-Gzo"/>
                                     <outlet property="coachesPosition" destination="0GO-o0-WlF" id="7hL-dc-HuN"/>
-                                    <segue destination="ara-K1-cFm" kind="modal" identifier="coachBio" id="2YH-1j-y9m"/>
+                                    <segue destination="ara-K1-cFm" kind="modal" identifier="coachBio" modalTransitionStyle="crossDissolve" id="2YH-1j-y9m"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -25599,7 +25605,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRp-Cw-ass" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5938" y="-2700"/>
+            <point key="canvasLocation" x="5666" y="-2644"/>
         </scene>
         <!--Coaches Bio View Controller-->
         <scene sceneID="DFj-Q3-cGK">
@@ -25628,7 +25634,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qdr-Fp-JYL" kind="modal" identifier="back2Coaches" id="9oK-WO-rKN"/>
+                                    <segue destination="qdr-Fp-JYL" kind="modal" identifier="back2Coaches" modalTransitionStyle="crossDissolve" id="9oK-WO-rKN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cak-yO-xDi">
@@ -25735,7 +25741,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="albumName" destination="znt-Td-v0m" id="k9Y-a4-moo"/>
-                                    <segue destination="QCe-XF-bgE" kind="modal" identifier="album" id="32F-qx-9Jr"/>
+                                    <segue destination="QCe-XF-bgE" kind="modal" identifier="album" modalTransitionStyle="crossDissolve" id="32F-qx-9Jr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -25753,7 +25759,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nb3-iH-Ef1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6400" y="-1958"/>
+            <point key="canvasLocation" x="6116" y="-1930"/>
         </scene>
         <!--Home Image View Controller-->
         <scene sceneID="VPl-kH-2l6">
@@ -25782,7 +25788,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5EH-Rg-d7t" kind="modal" identifier="back2TVC" id="UkG-4A-qfF"/>
+                                    <segue destination="5EH-Rg-d7t" kind="modal" identifier="back2TVC" modalTransitionStyle="crossDissolve" id="UkG-4A-qfF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="abt-YV-xfO">
@@ -25835,7 +25841,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ma5-Xa-p4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5978" y="-2003"/>
+            <point key="canvasLocation" x="5838" y="-2006"/>
         </scene>
         <!--Images Collection Container View Controller-->
         <scene sceneID="aJG-x6-nCm">
@@ -25872,7 +25878,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Oja-N8-yOr" kind="modal" identifier="back2Albums" id="ogw-9r-dmG"/>
+                                    <segue destination="Oja-N8-yOr" kind="modal" identifier="back2Albums" modalTransitionStyle="crossDissolve" id="ogw-9r-dmG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yXu-KZ-gec">
@@ -25902,14 +25908,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yw-ir-MBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6847" y="-2104"/>
+            <point key="canvasLocation" x="6587" y="-2059"/>
         </scene>
         <!--Collection Image View Controller-->
         <scene sceneID="QMK-Zr-Oyo">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="kwM-tx-Eve" customClass="CollectionImageViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="i7T-LA-Ihp" customClass="ImageCollection">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hNQ-nz-hMZ">
                             <size key="itemSize" width="100" height="110"/>
@@ -25918,7 +25924,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <activityIndicatorView key="backgroundView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="9CE-xb-yju">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
                         <cells>
@@ -25938,7 +25944,7 @@
                                 </view>
                                 <connections>
                                     <outlet property="cellImage" destination="iT3-Sj-KSL" id="fln-xY-aw5"/>
-                                    <segue destination="Iun-o7-ejO" kind="modal" identifier="zoomPhoto" id="J8k-P5-zog"/>
+                                    <segue destination="Iun-o7-ejO" kind="modal" identifier="zoomPhoto" modalTransitionStyle="crossDissolve" id="J8k-P5-zog"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -25953,7 +25959,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tw-MM-j1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7230" y="-1964"/>
+            <point key="canvasLocation" x="6994" y="-1961"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="WWD-05-iCA">
@@ -25982,7 +25988,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="QCe-XF-bgE" kind="modal" identifier="back2Albums" id="RyI-yg-66N"/>
+                                    <segue destination="QCe-XF-bgE" kind="modal" identifier="back2Albums" modalTransitionStyle="crossDissolve" id="RyI-yg-66N"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eHy-mW-RR4">
@@ -26048,7 +26054,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="DOg-gk-edS" kind="modal" id="V1o-lv-Mzc"/>
+                                    <segue destination="DOg-gk-edS" kind="modal" modalTransitionStyle="crossDissolve" id="V1o-lv-Mzc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P3g-9h-BpK">
@@ -26126,6 +26132,7 @@
         <image name="BowdoinCrossCountry 2.jpg" width="234" height="114"/>
         <image name="BowdoinFootball.jpg" width="960" height="506"/>
         <image name="BowdoinHockey.png" width="378" height="138"/>
+        <image name="BowdoinImageBackground.jpg" width="292" height="438"/>
         <image name="BowdoinLacrose.png" width="374" height="138"/>
         <image name="BowdoinSoccer 2.jpg" width="398" height="194"/>
         <image name="BowdoinSwimming.jpg" width="1717" height="664"/>
@@ -26179,98 +26186,98 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Xd6-zK-xI2"/>
-        <segue reference="Rrg-Oh-NwK"/>
-        <segue reference="g2F-A3-Nyr"/>
-        <segue reference="fTn-cB-XwC"/>
+        <segue reference="jfE-Ml-3tJ"/>
+        <segue reference="EZZ-qn-hFr"/>
+        <segue reference="V1o-lv-Mzc"/>
+        <segue reference="1YT-yN-vOm"/>
+        <segue reference="HrA-JP-fds"/>
+        <segue reference="PR0-gs-RDt"/>
+        <segue reference="kQR-Og-HrP"/>
+        <segue reference="GF2-CE-IGL"/>
+        <segue reference="5JJ-yZ-8Sk"/>
+        <segue reference="49m-Iy-coo"/>
+        <segue reference="ayU-7O-SBE"/>
+        <segue reference="bJR-A2-CZJ"/>
+        <segue reference="ktL-pN-9Jn"/>
+        <segue reference="9oK-WO-rKN"/>
+        <segue reference="boC-5w-SXc"/>
+        <segue reference="zp3-ZH-DMV"/>
+        <segue reference="cOf-JH-8eN"/>
         <segue reference="nYY-0O-lc4"/>
-        <segue reference="Y8c-7u-6vq"/>
-        <segue reference="Bpf-0d-GKz"/>
-        <segue reference="gA2-KR-xHd"/>
-        <segue reference="pda-td-ys3"/>
-        <segue reference="zLU-cB-loR"/>
-        <segue reference="Zjb-ZR-303"/>
+        <segue reference="fTn-cB-XwC"/>
+        <segue reference="58m-bY-vZR"/>
+        <segue reference="KIy-tm-La7"/>
         <segue reference="NPE-dw-xrA"/>
         <segue reference="9Te-G4-FL5"/>
         <segue reference="aqP-HZ-F0C"/>
         <segue reference="WLN-rw-hAc"/>
         <segue reference="oBG-8F-FV3"/>
-        <segue reference="KIy-tm-La7"/>
-        <segue reference="bWi-q0-PjC"/>
-        <segue reference="b2R-m7-unl"/>
-        <segue reference="q4i-13-3g8"/>
-        <segue reference="cvh-kN-Pbk"/>
-        <segue reference="Gdj-60-Xcf"/>
-        <segue reference="7Ig-m1-OeX"/>
-        <segue reference="VPG-cG-G38"/>
-        <segue reference="5Ww-Fe-tGA"/>
-        <segue reference="1Ky-HJ-6bE"/>
-        <segue reference="v1E-hd-ndA"/>
-        <segue reference="VKn-ar-eFd"/>
-        <segue reference="zp3-ZH-DMV"/>
-        <segue reference="cOf-JH-8eN"/>
-        <segue reference="boC-5w-SXc"/>
-        <segue reference="VpI-Q8-VmD"/>
-        <segue reference="jzj-H4-hvi"/>
-        <segue reference="asZ-KM-2UD"/>
-        <segue reference="vNX-jz-RYS"/>
-        <segue reference="jfE-Ml-3tJ"/>
-        <segue reference="aOv-SL-9e3"/>
-        <segue reference="dcF-hv-hmo"/>
-        <segue reference="34r-ir-Qsr"/>
-        <segue reference="3xC-Jj-hfK"/>
-        <segue reference="1YT-yN-vOm"/>
-        <segue reference="Pkz-jY-u8Y"/>
-        <segue reference="VVN-yD-yRg"/>
-        <segue reference="BVI-d1-1wy"/>
-        <segue reference="6F7-6u-A4f"/>
-        <segue reference="3l1-cn-Yhj"/>
-        <segue reference="lIc-4a-CIC"/>
-        <segue reference="KNQ-wC-Fqv"/>
-        <segue reference="ktL-pN-9Jn"/>
-        <segue reference="49m-Iy-coo"/>
-        <segue reference="ayU-7O-SBE"/>
-        <segue reference="5JJ-yZ-8Sk"/>
-        <segue reference="bJR-A2-CZJ"/>
-        <segue reference="HrA-JP-fds"/>
-        <segue reference="PR0-gs-RDt"/>
-        <segue reference="fu2-wa-hoM"/>
+        <segue reference="Zjb-ZR-303"/>
         <segue reference="MPe-AW-eIH"/>
         <segue reference="Tp8-N7-VrK"/>
         <segue reference="Tji-DF-oQk"/>
         <segue reference="oQX-lm-Ye2"/>
-        <segue reference="VyF-zp-8Pr"/>
+        <segue reference="NRy-c8-HF5"/>
+        <segue reference="KmK-dI-aVv"/>
+        <segue reference="u6V-dE-ay1"/>
+        <segue reference="VKn-ar-eFd"/>
+        <segue reference="Gdj-60-Xcf"/>
+        <segue reference="q4i-13-3g8"/>
+        <segue reference="cvh-kN-Pbk"/>
+        <segue reference="Bpf-0d-GKz"/>
+        <segue reference="Y8c-7u-6vq"/>
+        <segue reference="gA2-KR-xHd"/>
+        <segue reference="5Ww-Fe-tGA"/>
+        <segue reference="1Ky-HJ-6bE"/>
+        <segue reference="VPG-cG-G38"/>
+        <segue reference="v1E-hd-ndA"/>
+        <segue reference="CWs-FK-Nvz"/>
+        <segue reference="mMk-QF-Q8H"/>
+        <segue reference="Y1j-bH-KX9"/>
+        <segue reference="JsG-Jg-SRg"/>
+        <segue reference="RyI-yg-66N"/>
+        <segue reference="ogw-9r-dmG"/>
+        <segue reference="d6z-q9-q3k"/>
+        <segue reference="jzj-H4-hvi"/>
+        <segue reference="zLU-cB-loR"/>
+        <segue reference="pda-td-ys3"/>
+        <segue reference="zSS-Z2-YyB"/>
+        <segue reference="tAs-au-eGH"/>
+        <segue reference="dad-FU-esw"/>
+        <segue reference="tjB-sF-a6S"/>
+        <segue reference="b2R-m7-unl"/>
+        <segue reference="tLG-fB-QyS"/>
+        <segue reference="bWi-q0-PjC"/>
+        <segue reference="fu2-wa-hoM"/>
+        <segue reference="VVN-yD-yRg"/>
+        <segue reference="BVI-d1-1wy"/>
+        <segue reference="6F7-6u-A4f"/>
+        <segue reference="3l1-cn-Yhj"/>
+        <segue reference="YhN-z1-QPI"/>
+        <segue reference="asZ-KM-2UD"/>
+        <segue reference="vNX-jz-RYS"/>
+        <segue reference="kTE-Lv-PhA"/>
+        <segue reference="PTj-LA-VNS"/>
+        <segue reference="Pkz-jY-u8Y"/>
+        <segue reference="Rrg-Oh-NwK"/>
+        <segue reference="Vpg-8U-Z5e"/>
+        <segue reference="1SH-Y3-PMA"/>
+        <segue reference="xgi-aN-lHD"/>
+        <segue reference="RyR-wt-gCQ"/>
+        <segue reference="8rS-BQ-LW8"/>
+        <segue reference="zFm-Yv-8Q2"/>
+        <segue reference="7Ig-m1-OeX"/>
+        <segue reference="ick-bF-2pH"/>
+        <segue reference="DR5-c2-w5u"/>
         <segue reference="k46-E2-KBE"/>
         <segue reference="bvw-09-EOJ"/>
         <segue reference="e8M-jM-Gij"/>
-        <segue reference="xgi-aN-lHD"/>
-        <segue reference="mMk-QF-Q8H"/>
-        <segue reference="KmK-dI-aVv"/>
-        <segue reference="u6V-dE-ay1"/>
-        <segue reference="d6z-q9-q3k"/>
-        <segue reference="RyR-wt-gCQ"/>
-        <segue reference="GF2-CE-IGL"/>
-        <segue reference="kQR-Og-HrP"/>
-        <segue reference="zFm-Yv-8Q2"/>
-        <segue reference="YhN-z1-QPI"/>
+        <segue reference="xK9-Fi-ImF"/>
+        <segue reference="VpI-Q8-VmD"/>
         <segue reference="J12-xy-yW8"/>
         <segue reference="2pK-ME-wGX"/>
-        <segue reference="kTE-Lv-PhA"/>
-        <segue reference="ick-bF-2pH"/>
-        <segue reference="CWs-FK-Nvz"/>
-        <segue reference="RyI-yg-66N"/>
-        <segue reference="ogw-9r-dmG"/>
-        <segue reference="zSS-Z2-YyB"/>
-        <segue reference="tAs-au-eGH"/>
-        <segue reference="tLG-fB-QyS"/>
         <segue reference="FNv-vN-Vfl"/>
         <segue reference="bqo-fI-q0T"/>
-        <segue reference="NRy-c8-HF5"/>
-        <segue reference="dad-FU-esw"/>
-        <segue reference="8rS-BQ-LW8"/>
-        <segue reference="xK9-Fi-ImF"/>
-        <segue reference="Y1j-bH-KX9"/>
-        <segue reference="9oK-WO-rKN"/>
-        <segue reference="tjB-sF-a6S"/>
+        <segue reference="8nJ-cb-89J"/>
     </inferredMetricsTieBreakers>
 </document>

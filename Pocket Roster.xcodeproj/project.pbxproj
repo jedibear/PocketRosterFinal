@@ -182,6 +182,7 @@
 		CFA603A1182747BB00C21507 /* MasterTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA603A0182747BB00C21507 /* MasterTVC.m */; };
 		CFA603A41827592700C21507 /* TeamTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA603A31827592700C21507 /* TeamTVC.m */; };
 		CFA603A618282EA900C21507 /* MenFTBall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFA603A518282EA900C21507 /* MenFTBall.jpg */; };
+		CFAFE95F18599C7900BAEBA8 /* BowdoinImageBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFAFE95E18599C7900BAEBA8 /* BowdoinImageBackground.jpg */; };
 		CFD5FC5717E957D8002F2BA2 /* Get_Data_From_Website.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */; };
 		CFE1F89D182D431200E8BD9E /* GetCoaches.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1F89C182D431200E8BD9E /* GetCoaches.m */; };
 		CFE1F8BD182EEB4E00E8BD9E /* BLax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F89F182EEB4E00E8BD9E /* BLax.jpg */; };
@@ -502,6 +503,7 @@
 		CFA603A21827592700C21507 /* TeamTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamTVC.h; sourceTree = "<group>"; };
 		CFA603A31827592700C21507 /* TeamTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamTVC.m; sourceTree = "<group>"; };
 		CFA603A518282EA900C21507 /* MenFTBall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MenFTBall.jpg; sourceTree = "<group>"; };
+		CFAFE95E18599C7900BAEBA8 /* BowdoinImageBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinImageBackground.jpg; sourceTree = "<group>"; };
 		CFD5FC5517E957D7002F2BA2 /* Get_Data_From_Website.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Get_Data_From_Website.h; sourceTree = "<group>"; };
 		CFD5FC5617E957D8002F2BA2 /* Get_Data_From_Website.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Get_Data_From_Website.m; sourceTree = "<group>"; };
 		CFE1F89B182D431200E8BD9E /* GetCoaches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCoaches.h; sourceTree = "<group>"; };
@@ -796,6 +798,7 @@
 		CF247A16173B408F0079AD32 /* General Images */ = {
 			isa = PBXGroup;
 			children = (
+				CFAFE95E18599C7900BAEBA8 /* BowdoinImageBackground.jpg */,
 				CFE1F8E3183674C400E8BD9E /* HomeBearLogo.png */,
 				CFA603A518282EA900C21507 /* MenFTBall.jpg */,
 				CF024E39181AB16300F9CF54 /* Football Background.jpg */,
@@ -1378,6 +1381,7 @@
 				CF247AB9173C32840079AD32 /* WCrossCountry.png in Resources */,
 				CF247ABB173C32940079AD32 /* WTennisFinal.png in Resources */,
 				CFE1F9421839DABD00E8BD9E /* BLaxSchedule.jpg in Resources */,
+				CFAFE95F18599C7900BAEBA8 /* BowdoinImageBackground.jpg in Resources */,
 				CFE1F9871839E4BE00E8BD9E /* WHockeySchedule.jpg in Resources */,
 				CFE1F9991839E6BB00E8BD9E /* WSkiingPhoto.jpg in Resources */,
 				CFE1F9C618520ABB00E8BD9E /* LoadImageSmall.png in Resources */,
