@@ -88,7 +88,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="R9y-AG-8mH">
-                                <rect key="frame" x="11" y="21" width="50" height="50"/>
+                                <rect key="frame" x="11" y="22" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="HomeBearLogo.png">
@@ -221,7 +221,7 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WJd-Vr-zZV">
-                                <rect key="frame" x="252" y="21" width="55" height="55"/>
+                                <rect key="frame" x="261" y="25" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -3813,11 +3813,11 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6RK-EH-S29">
-                                <rect key="frame" x="59" y="94" width="202" height="192"/>
+                                <rect key="frame" x="106" y="90" width="109" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="PtK-aL-Adw">
-                                <rect key="frame" x="11" y="319" width="301" height="239"/>
+                                <rect key="frame" x="11" y="222" width="301" height="336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -18272,11 +18272,11 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ddH-jI-LC2">
-                                <rect key="frame" x="59" y="94" width="202" height="192"/>
+                                <rect key="frame" x="106" y="90" width="109" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3xT-A5-V5j">
-                                <rect key="frame" x="11" y="319" width="301" height="239"/>
+                                <rect key="frame" x="11" y="222" width="301" height="336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -19945,11 +19945,11 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="E4j-4Y-yFd">
-                                <rect key="frame" x="59" y="94" width="202" height="192"/>
+                                <rect key="frame" x="106" y="90" width="109" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Ip6-FU-vbN">
-                                <rect key="frame" x="11" y="319" width="301" height="239"/>
+                                <rect key="frame" x="11" y="222" width="301" height="336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -21618,11 +21618,11 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="pbY-Y5-3jf">
-                                <rect key="frame" x="59" y="94" width="202" height="192"/>
+                                <rect key="frame" x="106" y="90" width="109" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="7ug-nx-g0u">
-                                <rect key="frame" x="11" y="319" width="301" height="239"/>
+                                <rect key="frame" x="11" y="222" width="301" height="336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -23291,11 +23291,11 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="IkX-JH-xfp">
-                                <rect key="frame" x="59" y="94" width="202" height="192"/>
+                                <rect key="frame" x="106" y="90" width="109" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8sZ-Dx-hh8">
-                                <rect key="frame" x="11" y="319" width="301" height="239"/>
+                                <rect key="frame" x="11" y="222" width="301" height="336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -24964,11 +24964,11 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="g0h-gD-ABl">
-                                <rect key="frame" x="59" y="94" width="202" height="192"/>
+                                <rect key="frame" x="106" y="90" width="109" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="p3E-GJ-6tT">
-                                <rect key="frame" x="11" y="319" width="301" height="239"/>
+                                <rect key="frame" x="11" y="222" width="301" height="336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -26087,11 +26087,11 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="eaD-EU-3ro">
-                                <rect key="frame" x="59" y="94" width="202" height="192"/>
+                                <rect key="frame" x="107" y="93" width="109" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ORA-n9-K1M">
-                                <rect key="frame" x="11" y="319" width="301" height="239"/>
+                                <rect key="frame" x="11" y="225" width="301" height="333"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -26187,8 +26187,10 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="jfE-Ml-3tJ"/>
-        <segue reference="EZZ-qn-hFr"/>
-        <segue reference="V1o-lv-Mzc"/>
+        <segue reference="TLi-e1-qsV"/>
+        <segue reference="dcF-hv-hmo"/>
+        <segue reference="34r-ir-Qsr"/>
+        <segue reference="3xC-Jj-hfK"/>
         <segue reference="1YT-yN-vOm"/>
         <segue reference="HrA-JP-fds"/>
         <segue reference="PR0-gs-RDt"/>
@@ -26215,8 +26217,6 @@
         <segue reference="Zjb-ZR-303"/>
         <segue reference="MPe-AW-eIH"/>
         <segue reference="Tp8-N7-VrK"/>
-        <segue reference="Tji-DF-oQk"/>
-        <segue reference="oQX-lm-Ye2"/>
         <segue reference="NRy-c8-HF5"/>
         <segue reference="KmK-dI-aVv"/>
         <segue reference="u6V-dE-ay1"/>
@@ -26234,7 +26234,6 @@
         <segue reference="CWs-FK-Nvz"/>
         <segue reference="mMk-QF-Q8H"/>
         <segue reference="Y1j-bH-KX9"/>
-        <segue reference="JsG-Jg-SRg"/>
         <segue reference="RyI-yg-66N"/>
         <segue reference="ogw-9r-dmG"/>
         <segue reference="d6z-q9-q3k"/>
@@ -26261,9 +26260,10 @@
         <segue reference="Pkz-jY-u8Y"/>
         <segue reference="Rrg-Oh-NwK"/>
         <segue reference="Vpg-8U-Z5e"/>
-        <segue reference="1SH-Y3-PMA"/>
         <segue reference="xgi-aN-lHD"/>
         <segue reference="RyR-wt-gCQ"/>
+        <segue reference="xTh-kW-qs2"/>
+        <segue reference="oQX-lm-Ye2"/>
         <segue reference="8rS-BQ-LW8"/>
         <segue reference="zFm-Yv-8Q2"/>
         <segue reference="7Ig-m1-OeX"/>
