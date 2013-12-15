@@ -37,7 +37,6 @@
 		1EB48ADB1835F84800C42B5C /* ScoreboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48ADA1835F84800C42B5C /* ScoreboardViewController.m */; };
 		1EB48ADE1835F87F00C42B5C /* ScoreboardTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48ADD1835F87F00C42B5C /* ScoreboardTVC.m */; };
 		1EB48AE11835F8BB00C42B5C /* ScoreboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB48AE01835F8BB00C42B5C /* ScoreboardCell.m */; };
-		1EBB3DF017223EF40032238C /* 9.-Bowdoin-College.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DEC17223EF40032238C /* 9.-Bowdoin-College.png */; };
 		1EBB3DF117223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DED17223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg */; };
 		1EBB3DF217223EF40032238C /* winter-quad-266.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DEE17223EF40032238C /* winter-quad-266.jpg */; };
 		1EBB3DF317223EF40032238C /* Bowdoin_College_Quad_308x150.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EBB3DEF17223EF40032238C /* Bowdoin_College_Quad_308x150.jpg */; };
@@ -57,8 +56,6 @@
 		1EFDFECC18304EDB00DAF6A4 /* TeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFDFECB18304EDB00DAF6A4 /* TeamViewController.m */; };
 		CF024E1F180F0EC100F9CF54 /* B Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E1E180F0EC100F9CF54 /* B Logo.png */; };
 		CF024E2518102BF200F9CF54 /* HomeB.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2418102BF200F9CF54 /* HomeB.png */; };
-		CF024E2718102ECF00F9CF54 /* HomeBearLogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2618102ECF00F9CF54 /* HomeBearLogo1.png */; };
-		CF024E2D18162E3100F9CF54 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2C18162E3100F9CF54 /* icon2.png */; };
 		CF024E2F1816307F00F9CF54 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF024E2E1816307F00F9CF54 /* icon.png */; };
 		CF024E321818C0C600F9CF54 /* GetTeamLinks.m in Sources */ = {isa = PBXBuildFile; fileRef = CF024E311818C0C600F9CF54 /* GetTeamLinks.m */; };
 		CF024E3A181AB16300F9CF54 /* Football Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF024E39181AB16300F9CF54 /* Football Background.jpg */; };
@@ -68,8 +65,6 @@
 		CF247A21173B41510079AD32 /* TeamsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A20173B41510079AD32 /* TeamsLogo.png */; };
 		CF247A23173B42320079AD32 /* BowdoinMen.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A22173B42320079AD32 /* BowdoinMen.png */; };
 		CF247A25173B42370079AD32 /* BowdoinWomen.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A24173B42370079AD32 /* BowdoinWomen.png */; };
-		CF247A27173B423F0079AD32 /* BackButtonWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A26173B423F0079AD32 /* BackButtonWhite.png */; };
-		CF247A29173B425F0079AD32 /* LionHome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF247A28173B425F0079AD32 /* LionHome.jpg */; };
 		CF247A2B173B42680079AD32 /* BowdoinClawWhite.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF247A2A173B42680079AD32 /* BowdoinClawWhite.jpeg */; };
 		CF247A2D173B426C0079AD32 /* BowdoinClawBlack.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF247A2C173B426C0079AD32 /* BowdoinClawBlack.jpeg */; };
 		CF247A2F173B42830079AD32 /* BowdoinOfficailLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A2E173B42830079AD32 /* BowdoinOfficailLogo.png */; };
@@ -78,9 +73,7 @@
 		CF247A46173B6D6F0079AD32 /* RecentPhotosBig.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A45173B6D6F0079AD32 /* RecentPhotosBig.png */; };
 		CF247A48173B6FD10079AD32 /* BowdoinMenFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A47173B6FD10079AD32 /* BowdoinMenFinal.png */; };
 		CF247A4A173B6FD60079AD32 /* BowdoinWomenFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A49173B6FD60079AD32 /* BowdoinWomenFinal.png */; };
-		CF247A4C173BD31B0079AD32 /* BowdoinLogin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF247A4B173BD31B0079AD32 /* BowdoinLogin.jpg */; };
 		CF247A4E173BD6890079AD32 /* wordmark.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A4D173BD6890079AD32 /* wordmark.png */; };
-		CF247A56173BD91D0079AD32 /* LoginButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A55173BD91D0079AD32 /* LoginButton2.png */; };
 		CF247A6D173BF7AB0079AD32 /* BowdoinClubFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A6C173BF7AB0079AD32 /* BowdoinClubFinal.png */; };
 		CF247A6E173BF7AB0079AD32 /* BowdoinClubFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A6C173BF7AB0079AD32 /* BowdoinClubFinal.png */; };
 		CF247A75173C0B8D0079AD32 /* PersonalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = CF247A74173C0B8D0079AD32 /* PersonalAccount.m */; };
@@ -131,10 +124,38 @@
 		CF247AED173DAA130079AD32 /* WBasketballFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AEC173DAA120079AD32 /* WBasketballFinal.png */; };
 		CF247AEF173DAC7B0079AD32 /* WFieldHockeyFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247AEE173DAC7B0079AD32 /* WFieldHockeyFinal.png */; };
 		CF2CE126185CE908003E0CDB /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE125185CE908003E0CDB /* info.png */; };
+		CF2CE128185D5DA6003E0CDB /* HomeBearLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE127185D5DA6003E0CDB /* HomeBearLogo.png */; };
+		CF2CE12C185D5ED2003E0CDB /* FavsB.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE12B185D5ED2003E0CDB /* FavsB.png */; };
+		CF2CE12E185D73FC003E0CDB /* WVolleyballPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE12D185D73FC003E0CDB /* WVolleyballPhoto.jpg */; };
+		CF2CE132185D751C003E0CDB /* WSwimmingPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE131185D751C003E0CDB /* WSwimmingPhoto.jpg */; };
+		CF2CE134185D757F003E0CDB /* WSoftballPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE133185D757F003E0CDB /* WSoftballPhoto.jpg */; };
+		CF2CE136185D77D9003E0CDB /* WHockeyPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE135185D77D9003E0CDB /* WHockeyPhoto.jpg */; };
+		CF2CE138185D787B003E0CDB /* WBasketballPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE137185D787B003E0CDB /* WBasketballPhoto.jpg */; };
+		CF2CE13A185D78E9003E0CDB /* WTennisSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE139185D78E9003E0CDB /* WTennisSchedule.jpg */; };
+		CF2CE13C185D7923003E0CDB /* WSoftballSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE13B185D7923003E0CDB /* WSoftballSchedule.jpg */; };
+		CF2CE13E185D797E003E0CDB /* WSoccerSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE13D185D797E003E0CDB /* WSoccerSchedule.jpg */; };
+		CF2CE140185D79A7003E0CDB /* WSkiingSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE13F185D79A7003E0CDB /* WSkiingSchedule.jpg */; };
+		CF2CE142185D79E0003E0CDB /* WHockeySchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE141185D79E0003E0CDB /* WHockeySchedule.jpg */; };
+		CF2CE144185D7A14003E0CDB /* WBasketballSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE143185D7A14003E0CDB /* WBasketballSchedule.jpg */; };
+		CF2CE146185D7A48003E0CDB /* MTennisSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE145185D7A48003E0CDB /* MTennisSchedule.jpg */; };
+		CF2CE148185D7A7F003E0CDB /* MSwimmingSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE147185D7A7F003E0CDB /* MSwimmingSchedule.jpg */; };
+		CF2CE14A185D7AAB003E0CDB /* MSkiingSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE149185D7AAB003E0CDB /* MSkiingSchedule.jpg */; };
+		CF2CE14C185D7B30003E0CDB /* MSkiing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE14B185D7B30003E0CDB /* MSkiing.jpg */; };
+		CF2CE14E185D7B5F003E0CDB /* MTennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE14D185D7B5F003E0CDB /* MTennis.jpg */; };
+		CF2CE150185D7BCB003E0CDB /* WBasketball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE14F185D7BCB003E0CDB /* WBasketball.jpg */; };
+		CF2CE152185D7C25003E0CDB /* WHockey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE151185D7C25003E0CDB /* WHockey.jpg */; };
+		CF2CE154185D7C65003E0CDB /* WLax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE153185D7C65003E0CDB /* WLax.jpg */; };
+		CF2CE156185D7CC7003E0CDB /* WSkiing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE155185D7CC7003E0CDB /* WSkiing.jpg */; };
+		CF2CE158185D7CF8003E0CDB /* WSoccer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE157185D7CF8003E0CDB /* WSoccer.jpg */; };
+		CF2CE15A185D7D23003E0CDB /* WTennis1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE159185D7D23003E0CDB /* WTennis1.jpg */; };
+		CF2CE15C185D7D4B003E0CDB /* WTrack1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE15B185D7D4B003E0CDB /* WTrack1.jpg */; };
+		CF2CE15E185D7DAF003E0CDB /* WVolleyball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE15D185D7DAF003E0CDB /* WVolleyball.jpg */; };
+		CF2CE160185D891A003E0CDB /* WTrackPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE15F185D891A003E0CDB /* WTrackPhoto.jpg */; };
+		CF2CE162185D8935003E0CDB /* WTrack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE161185D8935003E0CDB /* WTrack.jpg */; };
+		CF2CE164185D894A003E0CDB /* WTennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE163185D894A003E0CDB /* WTennis.jpg */; };
 		CF4684D7173DC2D1001F8A1F /* BOWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684D2173DC2D1001F8A1F /* BOWAppDelegate.m */; };
 		CF4684D8173DC2D1001F8A1F /* BOWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */; };
 		CF4684DB173DC4D0001F8A1F /* LoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4684DA173DC4D0001F8A1F /* LoginButton.png */; };
-		CF4684E1173DF963001F8A1F /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4684E0173DF963001F8A1F /* OldIcon.png */; };
 		CF56488F174096690067FBBB /* NewsfeedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF56488E174096690067FBBB /* NewsfeedIcon.png */; };
 		CF6568D5171782B700AE84AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D4171782B700AE84AC /* UIKit.framework */; };
 		CF6568D7171782B700AE84AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D6171782B700AE84AC /* Foundation.framework */; };
@@ -194,32 +215,22 @@
 		CFE1F8C2182EEB4E00E8BD9E /* MGolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8A4182EEB4E00E8BD9E /* MGolf.jpg */; };
 		CFE1F8C3182EEB4E00E8BD9E /* MHockey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8A5182EEB4E00E8BD9E /* MHockey.jpg */; };
 		CFE1F8C4182EEB4E00E8BD9E /* MSailing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8A6182EEB4E00E8BD9E /* MSailing.jpg */; };
-		CFE1F8C5182EEB4E00E8BD9E /* MSkiing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8A7182EEB4E00E8BD9E /* MSkiing.jpg */; };
 		CFE1F8C6182EEB4E00E8BD9E /* MSoccer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8A8182EEB4E00E8BD9E /* MSoccer.jpg */; };
 		CFE1F8C7182EEB4E00E8BD9E /* MSquash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8A9182EEB4E00E8BD9E /* MSquash.jpg */; };
 		CFE1F8C8182EEB4E00E8BD9E /* MSwimming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8AA182EEB4E00E8BD9E /* MSwimming.jpg */; };
-		CFE1F8C9182EEB4E00E8BD9E /* MTennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8AB182EEB4E00E8BD9E /* MTennis.jpg */; };
 		CFE1F8CA182EEB4E00E8BD9E /* MTrack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8AC182EEB4E00E8BD9E /* MTrack.jpg */; };
-		CFE1F8CB182EEB4E00E8BD9E /* WBasketball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8AD182EEB4E00E8BD9E /* WBasketball.jpg */; };
 		CFE1F8CC182EEB4E00E8BD9E /* WCrossCountry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8AE182EEB4E00E8BD9E /* WCrossCountry.jpg */; };
 		CFE1F8CD182EEB4E00E8BD9E /* WFeildHockey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8AF182EEB4E00E8BD9E /* WFeildHockey.jpg */; };
 		CFE1F8CE182EEB4E00E8BD9E /* WGolf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8B0182EEB4E00E8BD9E /* WGolf.jpg */; };
-		CFE1F8CF182EEB4E00E8BD9E /* WHockey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8B1182EEB4E00E8BD9E /* WHockey.jpg */; };
-		CFE1F8D0182EEB4E00E8BD9E /* WLax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8B2182EEB4E00E8BD9E /* WLax.jpg */; };
+		CFE1F8CF182EEB4E00E8BD9E /* WHockey1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8B1182EEB4E00E8BD9E /* WHockey1.jpg */; };
 		CFE1F8D1182EEB4E00E8BD9E /* WRugby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8B3182EEB4E00E8BD9E /* WRugby.jpg */; };
 		CFE1F8D2182EEB4E00E8BD9E /* WSailing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8B4182EEB4E00E8BD9E /* WSailing.jpg */; };
-		CFE1F8D3182EEB4E00E8BD9E /* WSkiing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8B5182EEB4E00E8BD9E /* WSkiing.jpg */; };
-		CFE1F8D4182EEB4E00E8BD9E /* WSoccer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8B6182EEB4E00E8BD9E /* WSoccer.jpg */; };
 		CFE1F8D5182EEB4E00E8BD9E /* WSoftball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8B7182EEB4E00E8BD9E /* WSoftball.jpg */; };
 		CFE1F8D6182EEB4E00E8BD9E /* WSquash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8B8182EEB4E00E8BD9E /* WSquash.jpg */; };
 		CFE1F8D7182EEB4E00E8BD9E /* WSwimming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8B9182EEB4E00E8BD9E /* WSwimming.jpg */; };
-		CFE1F8D8182EEB4E00E8BD9E /* WTennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8BA182EEB4E00E8BD9E /* WTennis.jpg */; };
-		CFE1F8D9182EEB4E00E8BD9E /* WTrack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8BB182EEB4E00E8BD9E /* WTrack.jpg */; };
-		CFE1F8DA182EEB4E00E8BD9E /* WVolleyball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8BC182EEB4E00E8BD9E /* WVolleyball.jpg */; };
 		CFE1F8DD1830067100E8BD9E /* GetFacility.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1F8DC1830067100E8BD9E /* GetFacility.m */; };
 		CFE1F8E018303DF600E8BD9E /* GetSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1F8DF18303DF600E8BD9E /* GetSchedule.m */; };
-		CFE1F8E4183674C400E8BD9E /* HomeBearLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8E3183674C400E8BD9E /* HomeBearLogo.png */; };
-		CFE1F8E61836758B00E8BD9E /* FavsB.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8E51836758B00E8BD9E /* FavsB.png */; };
+		CFE1F8E61836758B00E8BD9E /* FavsBold.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F8E51836758B00E8BD9E /* FavsBold.png */; };
 		CFE1F92C1838302100E8BD9E /* CreditsBackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F92B1838302100E8BD9E /* CreditsBackButton.png */; };
 		CFE1F92E1838303000E8BD9E /* CreditsBack.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F92D1838303000E8BD9E /* CreditsBack.png */; };
 		CFE1F93218391FEA00E8BD9E /* CreditsBack4.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F93118391FEA00E8BD9E /* CreditsBack4.png */; };
@@ -237,50 +248,35 @@
 		CFE1F9591839DDC100E8BD9E /* MHockeySchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9581839DDC100E8BD9E /* MHockeySchedule.jpg */; };
 		CFE1F95B1839DE5C00E8BD9E /* MSailingPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F95A1839DE5C00E8BD9E /* MSailingPhoto.jpg */; };
 		CFE1F95D1839DE6100E8BD9E /* MSailingSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F95C1839DE6100E8BD9E /* MSailingSchedule.jpg */; };
-		CFE1F95F1839DE9900E8BD9E /* MSkiingSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F95E1839DE9900E8BD9E /* MSkiingSchedule.jpg */; };
 		CFE1F9611839DEA200E8BD9E /* MSkiingPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9601839DEA200E8BD9E /* MSkiingPhoto.jpg */; };
 		CFE1F9631839DFF500E8BD9E /* MSoccerSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9621839DFF500E8BD9E /* MSoccerSchedule.jpg */; };
 		CFE1F9651839DFFF00E8BD9E /* MSoccerPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9641839DFFF00E8BD9E /* MSoccerPhoto.jpg */; };
 		CFE1F9671839E03A00E8BD9E /* MSquashSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9661839E03A00E8BD9E /* MSquashSchedule.jpg */; };
 		CFE1F9691839E03F00E8BD9E /* MSquashPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9681839E03F00E8BD9E /* MSquashPhoto.jpg */; };
-		CFE1F96B1839E07F00E8BD9E /* MSwimmingSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F96A1839E07F00E8BD9E /* MSwimmingSchedule.jpg */; };
 		CFE1F96D1839E08800E8BD9E /* MSwimmingPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F96C1839E08800E8BD9E /* MSwimmingPhoto.jpg */; };
-		CFE1F96F1839E0D800E8BD9E /* MTennisSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F96E1839E0D800E8BD9E /* MTennisSchedule.jpg */; };
 		CFE1F9711839E0DF00E8BD9E /* MTennisPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9701839E0DF00E8BD9E /* MTennisPhoto.jpg */; };
 		CFE1F9731839E1D900E8BD9E /* MTrackSchedulePhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9721839E1D900E8BD9E /* MTrackSchedulePhoto.jpg */; };
 		CFE1F9751839E1E400E8BD9E /* MTrackSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9741839E1E400E8BD9E /* MTrackSchedule.jpg */; };
-		CFE1F9771839E27200E8BD9E /* WBasketballPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9761839E27200E8BD9E /* WBasketballPhoto.jpg */; };
-		CFE1F9791839E28800E8BD9E /* WBasketballSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9781839E28800E8BD9E /* WBasketballSchedule.jpg */; };
 		CFE1F97B1839E2E600E8BD9E /* WCrossCountryPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F97A1839E2E600E8BD9E /* WCrossCountryPhoto.jpg */; };
 		CFE1F97D1839E2EA00E8BD9E /* WCrossCountrySchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F97C1839E2EA00E8BD9E /* WCrossCountrySchedule.jpg */; };
 		CFE1F97F1839E3E700E8BD9E /* WFieldHockeySchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F97E1839E3E700E8BD9E /* WFieldHockeySchedule.jpg */; };
 		CFE1F9811839E3EC00E8BD9E /* WFieldHockeyPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9801839E3EC00E8BD9E /* WFieldHockeyPhoto.jpg */; };
 		CFE1F9831839E45700E8BD9E /* WGolfPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9821839E45700E8BD9E /* WGolfPhoto.jpg */; };
 		CFE1F9851839E45E00E8BD9E /* WGolfSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9841839E45E00E8BD9E /* WGolfSchedule.jpg */; };
-		CFE1F9871839E4BE00E8BD9E /* WHockeySchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9861839E4BE00E8BD9E /* WHockeySchedule.jpg */; };
-		CFE1F9891839E4C600E8BD9E /* WHockeyPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9881839E4C600E8BD9E /* WHockeyPhoto.jpg */; };
 		CFE1F98B1839E55000E8BD9E /* WLaxSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F98A1839E55000E8BD9E /* WLaxSchedule.jpg */; };
 		CFE1F98D1839E55600E8BD9E /* WLaxPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F98C1839E55600E8BD9E /* WLaxPhoto.jpg */; };
 		CFE1F98F1839E5A600E8BD9E /* WRugbySchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F98E1839E5A600E8BD9E /* WRugbySchedule.jpg */; };
 		CFE1F9911839E5AA00E8BD9E /* WRugbyPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9901839E5AA00E8BD9E /* WRugbyPhoto.jpg */; };
 		CFE1F9931839E67300E8BD9E /* WSailingSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9921839E67300E8BD9E /* WSailingSchedule.jpg */; };
 		CFE1F9951839E68000E8BD9E /* WSailingPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9941839E68000E8BD9E /* WSailingPhoto.png */; };
-		CFE1F9971839E6B500E8BD9E /* WSkiingSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9961839E6B500E8BD9E /* WSkiingSchedule.jpg */; };
 		CFE1F9991839E6BB00E8BD9E /* WSkiingPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9981839E6BB00E8BD9E /* WSkiingPhoto.jpg */; };
-		CFE1F99B1839E6F700E8BD9E /* WSoccerSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F99A1839E6F700E8BD9E /* WSoccerSchedule.jpg */; };
 		CFE1F99D1839E6FD00E8BD9E /* WSoccerPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F99C1839E6FD00E8BD9E /* WSoccerPhoto.jpg */; };
-		CFE1F99F1839E79600E8BD9E /* WSoftballSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F99E1839E79600E8BD9E /* WSoftballSchedule.jpg */; };
-		CFE1F9A11839E7A300E8BD9E /* WSoftballPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9A01839E7A300E8BD9E /* WSoftballPhoto.jpg */; };
 		CFE1F9A31839E88600E8BD9E /* WSquashSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9A21839E88600E8BD9E /* WSquashSchedule.jpg */; };
 		CFE1F9A51839E88E00E8BD9E /* WSquashPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9A41839E88E00E8BD9E /* WSquashPhoto.jpg */; };
 		CFE1F9A71839E8BB00E8BD9E /* WSwimmingSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9A61839E8BB00E8BD9E /* WSwimmingSchedule.jpg */; };
-		CFE1F9A91839E8C100E8BD9E /* WSwimmingPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9A81839E8C100E8BD9E /* WSwimmingPhoto.jpg */; };
-		CFE1F9AB1839E90B00E8BD9E /* WTennisSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9AA1839E90B00E8BD9E /* WTennisSchedule.jpg */; };
 		CFE1F9AD1839E91300E8BD9E /* WTennisPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9AC1839E91300E8BD9E /* WTennisPhoto.jpg */; };
 		CFE1F9AF1839E96C00E8BD9E /* WTrackSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9AE1839E96C00E8BD9E /* WTrackSchedule.jpg */; };
-		CFE1F9B11839E97300E8BD9E /* WTrackPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9B01839E97300E8BD9E /* WTrackPhoto.jpg */; };
 		CFE1F9B31839E9F100E8BD9E /* WVolleyballSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9B21839E9F100E8BD9E /* WVolleyballSchedule.jpg */; };
-		CFE1F9B51839E9F800E8BD9E /* WVolleyballPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9B41839E9F800E8BD9E /* WVolleyballPhoto.jpg */; };
 		CFE1F9B71839EA6500E8BD9E /* MBaseballSchedule.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9B61839EA6500E8BD9E /* MBaseballSchedule.jpg */; };
 		CFE1F9B91839EA6E00E8BD9E /* MBaseballPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9B81839EA6E00E8BD9E /* MBaseballPhoto.jpg */; };
 		CFE1F9BC1839EB2A00E8BD9E /* MWaterpoloBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9BB1839EB2A00E8BD9E /* MWaterpoloBack.jpg */; };
@@ -289,7 +285,6 @@
 		CFE1F9C21839EB3C00E8BD9E /* MCrewBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9C11839EB3C00E8BD9E /* MCrewBack.jpg */; };
 		CFE1F9C41839EB4E00E8BD9E /* MRugbyBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9C31839EB4E00E8BD9E /* MRugbyBack.jpg */; };
 		CFE1F9C618520ABB00E8BD9E /* LoadImageSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = CFE1F9C518520ABB00E8BD9E /* LoadImageSmall.png */; };
-		CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF5ECFA17FE448B0071814C /* OldIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -357,7 +352,6 @@
 		1EB48ADD1835F87F00C42B5C /* ScoreboardTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreboardTVC.m; sourceTree = "<group>"; };
 		1EB48ADF1835F8BB00C42B5C /* ScoreboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreboardCell.h; sourceTree = "<group>"; };
 		1EB48AE01835F8BB00C42B5C /* ScoreboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreboardCell.m; sourceTree = "<group>"; };
-		1EBB3DEC17223EF40032238C /* 9.-Bowdoin-College.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9.-Bowdoin-College.png"; sourceTree = "<group>"; };
 		1EBB3DED17223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bowdoin-hubbard-hall-spring-2012.jpg"; sourceTree = "<group>"; };
 		1EBB3DEE17223EF40032238C /* winter-quad-266.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "winter-quad-266.jpg"; sourceTree = "<group>"; };
 		1EBB3DEF17223EF40032238C /* Bowdoin_College_Quad_308x150.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bowdoin_College_Quad_308x150.jpg; sourceTree = "<group>"; };
@@ -389,8 +383,6 @@
 		1EFDFECB18304EDB00DAF6A4 /* TeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamViewController.m; sourceTree = "<group>"; };
 		CF024E1E180F0EC100F9CF54 /* B Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "B Logo.png"; sourceTree = "<group>"; };
 		CF024E2418102BF200F9CF54 /* HomeB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeB.png; sourceTree = "<group>"; };
-		CF024E2618102ECF00F9CF54 /* HomeBearLogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBearLogo1.png; sourceTree = "<group>"; };
-		CF024E2C18162E3100F9CF54 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
 		CF024E2E1816307F00F9CF54 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		CF024E301818C0C600F9CF54 /* GetTeamLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTeamLinks.h; sourceTree = "<group>"; };
 		CF024E311818C0C600F9CF54 /* GetTeamLinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTeamLinks.m; sourceTree = "<group>"; };
@@ -401,8 +393,6 @@
 		CF247A20173B41510079AD32 /* TeamsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TeamsLogo.png; sourceTree = "<group>"; };
 		CF247A22173B42320079AD32 /* BowdoinMen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinMen.png; sourceTree = "<group>"; };
 		CF247A24173B42370079AD32 /* BowdoinWomen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinWomen.png; sourceTree = "<group>"; };
-		CF247A26173B423F0079AD32 /* BackButtonWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButtonWhite.png; sourceTree = "<group>"; };
-		CF247A28173B425F0079AD32 /* LionHome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LionHome.jpg; sourceTree = "<group>"; };
 		CF247A2A173B42680079AD32 /* BowdoinClawWhite.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinClawWhite.jpeg; sourceTree = "<group>"; };
 		CF247A2C173B426C0079AD32 /* BowdoinClawBlack.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinClawBlack.jpeg; sourceTree = "<group>"; };
 		CF247A2E173B42830079AD32 /* BowdoinOfficailLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinOfficailLogo.png; sourceTree = "<group>"; };
@@ -411,9 +401,7 @@
 		CF247A45173B6D6F0079AD32 /* RecentPhotosBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecentPhotosBig.png; sourceTree = "<group>"; };
 		CF247A47173B6FD10079AD32 /* BowdoinMenFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinMenFinal.png; sourceTree = "<group>"; };
 		CF247A49173B6FD60079AD32 /* BowdoinWomenFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinWomenFinal.png; sourceTree = "<group>"; };
-		CF247A4B173BD31B0079AD32 /* BowdoinLogin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinLogin.jpg; sourceTree = "<group>"; };
 		CF247A4D173BD6890079AD32 /* wordmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wordmark.png; sourceTree = "<group>"; };
-		CF247A55173BD91D0079AD32 /* LoginButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton2.png; sourceTree = "<group>"; };
 		CF247A6C173BF7AB0079AD32 /* BowdoinClubFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinClubFinal.png; sourceTree = "<group>"; };
 		CF247A73173C0B8D0079AD32 /* PersonalAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalAccount.h; sourceTree = "<group>"; };
 		CF247A74173C0B8D0079AD32 /* PersonalAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalAccount.m; sourceTree = "<group>"; };
@@ -452,13 +440,41 @@
 		CF247AEC173DAA120079AD32 /* WBasketballFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WBasketballFinal.png; sourceTree = "<group>"; };
 		CF247AEE173DAC7B0079AD32 /* WFieldHockeyFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WFieldHockeyFinal.png; sourceTree = "<group>"; };
 		CF2CE125185CE908003E0CDB /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		CF2CE127185D5DA6003E0CDB /* HomeBearLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBearLogo.png; sourceTree = "<group>"; };
+		CF2CE12B185D5ED2003E0CDB /* FavsB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavsB.png; sourceTree = "<group>"; };
+		CF2CE12D185D73FC003E0CDB /* WVolleyballPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WVolleyballPhoto.jpg; sourceTree = "<group>"; };
+		CF2CE131185D751C003E0CDB /* WSwimmingPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSwimmingPhoto.jpg; sourceTree = "<group>"; };
+		CF2CE133185D757F003E0CDB /* WSoftballPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSoftballPhoto.jpg; sourceTree = "<group>"; };
+		CF2CE135185D77D9003E0CDB /* WHockeyPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WHockeyPhoto.jpg; sourceTree = "<group>"; };
+		CF2CE137185D787B003E0CDB /* WBasketballPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WBasketballPhoto.jpg; sourceTree = "<group>"; };
+		CF2CE139185D78E9003E0CDB /* WTennisSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTennisSchedule.jpg; sourceTree = "<group>"; };
+		CF2CE13B185D7923003E0CDB /* WSoftballSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSoftballSchedule.jpg; sourceTree = "<group>"; };
+		CF2CE13D185D797E003E0CDB /* WSoccerSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSoccerSchedule.jpg; sourceTree = "<group>"; };
+		CF2CE13F185D79A7003E0CDB /* WSkiingSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSkiingSchedule.jpg; sourceTree = "<group>"; };
+		CF2CE141185D79E0003E0CDB /* WHockeySchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WHockeySchedule.jpg; sourceTree = "<group>"; };
+		CF2CE143185D7A14003E0CDB /* WBasketballSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WBasketballSchedule.jpg; sourceTree = "<group>"; };
+		CF2CE145185D7A48003E0CDB /* MTennisSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MTennisSchedule.jpg; sourceTree = "<group>"; };
+		CF2CE147185D7A7F003E0CDB /* MSwimmingSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSwimmingSchedule.jpg; sourceTree = "<group>"; };
+		CF2CE149185D7AAB003E0CDB /* MSkiingSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSkiingSchedule.jpg; sourceTree = "<group>"; };
+		CF2CE14B185D7B30003E0CDB /* MSkiing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSkiing.jpg; sourceTree = "<group>"; };
+		CF2CE14D185D7B5F003E0CDB /* MTennis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MTennis.jpg; sourceTree = "<group>"; };
+		CF2CE14F185D7BCB003E0CDB /* WBasketball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WBasketball.jpg; sourceTree = "<group>"; };
+		CF2CE151185D7C25003E0CDB /* WHockey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WHockey.jpg; sourceTree = "<group>"; };
+		CF2CE153185D7C65003E0CDB /* WLax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WLax.jpg; sourceTree = "<group>"; };
+		CF2CE155185D7CC7003E0CDB /* WSkiing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSkiing.jpg; sourceTree = "<group>"; };
+		CF2CE157185D7CF8003E0CDB /* WSoccer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSoccer.jpg; sourceTree = "<group>"; };
+		CF2CE159185D7D23003E0CDB /* WTennis1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTennis1.jpg; sourceTree = "<group>"; };
+		CF2CE15B185D7D4B003E0CDB /* WTrack1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTrack1.jpg; sourceTree = "<group>"; };
+		CF2CE15D185D7DAF003E0CDB /* WVolleyball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WVolleyball.jpg; sourceTree = "<group>"; };
+		CF2CE15F185D891A003E0CDB /* WTrackPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTrackPhoto.jpg; sourceTree = "<group>"; };
+		CF2CE161185D8935003E0CDB /* WTrack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTrack.jpg; sourceTree = "<group>"; };
+		CF2CE163185D894A003E0CDB /* WTennis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTennis.jpg; sourceTree = "<group>"; };
 		CF4684D1173DC2D1001F8A1F /* BOWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWAppDelegate.h; sourceTree = "<group>"; };
 		CF4684D2173DC2D1001F8A1F /* BOWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOWAppDelegate.m; sourceTree = "<group>"; };
 		CF4684D3173DC2D1001F8A1F /* BOWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWLoginViewController.h; sourceTree = "<group>"; };
 		CF4684D4173DC2D1001F8A1F /* BOWLoginViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWLoginViewControllerDelegate.h; sourceTree = "<group>"; };
 		CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOWLoginViewController.m; sourceTree = "<group>"; };
 		CF4684DA173DC4D0001F8A1F /* LoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton.png; sourceTree = "<group>"; };
-		CF4684E0173DF963001F8A1F /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OldIcon.png; sourceTree = "<group>"; };
 		CF56488E174096690067FBBB /* NewsfeedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewsfeedIcon.png; sourceTree = "<group>"; };
 		CF6568D0171782B700AE84AC /* Pocket Roster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Roster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6568D4171782B700AE84AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -517,34 +533,24 @@
 		CFE1F8A4182EEB4E00E8BD9E /* MGolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MGolf.jpg; sourceTree = "<group>"; };
 		CFE1F8A5182EEB4E00E8BD9E /* MHockey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MHockey.jpg; sourceTree = "<group>"; };
 		CFE1F8A6182EEB4E00E8BD9E /* MSailing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSailing.jpg; sourceTree = "<group>"; };
-		CFE1F8A7182EEB4E00E8BD9E /* MSkiing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSkiing.jpg; sourceTree = "<group>"; };
 		CFE1F8A8182EEB4E00E8BD9E /* MSoccer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSoccer.jpg; sourceTree = "<group>"; };
 		CFE1F8A9182EEB4E00E8BD9E /* MSquash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSquash.jpg; sourceTree = "<group>"; };
 		CFE1F8AA182EEB4E00E8BD9E /* MSwimming.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSwimming.jpg; sourceTree = "<group>"; };
-		CFE1F8AB182EEB4E00E8BD9E /* MTennis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MTennis.jpg; sourceTree = "<group>"; };
 		CFE1F8AC182EEB4E00E8BD9E /* MTrack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MTrack.jpg; sourceTree = "<group>"; };
-		CFE1F8AD182EEB4E00E8BD9E /* WBasketball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WBasketball.jpg; sourceTree = "<group>"; };
 		CFE1F8AE182EEB4E00E8BD9E /* WCrossCountry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WCrossCountry.jpg; sourceTree = "<group>"; };
 		CFE1F8AF182EEB4E00E8BD9E /* WFeildHockey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WFeildHockey.jpg; sourceTree = "<group>"; };
 		CFE1F8B0182EEB4E00E8BD9E /* WGolf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WGolf.jpg; sourceTree = "<group>"; };
-		CFE1F8B1182EEB4E00E8BD9E /* WHockey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WHockey.jpg; sourceTree = "<group>"; };
-		CFE1F8B2182EEB4E00E8BD9E /* WLax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WLax.jpg; sourceTree = "<group>"; };
+		CFE1F8B1182EEB4E00E8BD9E /* WHockey1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WHockey1.jpg; sourceTree = "<group>"; };
 		CFE1F8B3182EEB4E00E8BD9E /* WRugby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WRugby.jpg; sourceTree = "<group>"; };
 		CFE1F8B4182EEB4E00E8BD9E /* WSailing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSailing.jpg; sourceTree = "<group>"; };
-		CFE1F8B5182EEB4E00E8BD9E /* WSkiing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSkiing.jpg; sourceTree = "<group>"; };
-		CFE1F8B6182EEB4E00E8BD9E /* WSoccer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSoccer.jpg; sourceTree = "<group>"; };
 		CFE1F8B7182EEB4E00E8BD9E /* WSoftball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSoftball.jpg; sourceTree = "<group>"; };
 		CFE1F8B8182EEB4E00E8BD9E /* WSquash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSquash.jpg; sourceTree = "<group>"; };
 		CFE1F8B9182EEB4E00E8BD9E /* WSwimming.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSwimming.jpg; sourceTree = "<group>"; };
-		CFE1F8BA182EEB4E00E8BD9E /* WTennis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTennis.jpg; sourceTree = "<group>"; };
-		CFE1F8BB182EEB4E00E8BD9E /* WTrack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTrack.jpg; sourceTree = "<group>"; };
-		CFE1F8BC182EEB4E00E8BD9E /* WVolleyball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WVolleyball.jpg; sourceTree = "<group>"; };
 		CFE1F8DB1830067100E8BD9E /* GetFacility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetFacility.h; sourceTree = "<group>"; };
 		CFE1F8DC1830067100E8BD9E /* GetFacility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetFacility.m; sourceTree = "<group>"; };
 		CFE1F8DE18303DF600E8BD9E /* GetSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetSchedule.h; sourceTree = "<group>"; };
 		CFE1F8DF18303DF600E8BD9E /* GetSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSchedule.m; sourceTree = "<group>"; };
-		CFE1F8E3183674C400E8BD9E /* HomeBearLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBearLogo.png; sourceTree = "<group>"; };
-		CFE1F8E51836758B00E8BD9E /* FavsB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavsB.png; sourceTree = "<group>"; };
+		CFE1F8E51836758B00E8BD9E /* FavsBold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavsBold.png; sourceTree = "<group>"; };
 		CFE1F92B1838302100E8BD9E /* CreditsBackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsBackButton.png; sourceTree = "<group>"; };
 		CFE1F92D1838303000E8BD9E /* CreditsBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsBack.png; sourceTree = "<group>"; };
 		CFE1F93118391FEA00E8BD9E /* CreditsBack4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsBack4.png; sourceTree = "<group>"; };
@@ -562,50 +568,35 @@
 		CFE1F9581839DDC100E8BD9E /* MHockeySchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MHockeySchedule.jpg; sourceTree = "<group>"; };
 		CFE1F95A1839DE5C00E8BD9E /* MSailingPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSailingPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F95C1839DE6100E8BD9E /* MSailingSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSailingSchedule.jpg; sourceTree = "<group>"; };
-		CFE1F95E1839DE9900E8BD9E /* MSkiingSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSkiingSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F9601839DEA200E8BD9E /* MSkiingPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSkiingPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9621839DFF500E8BD9E /* MSoccerSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSoccerSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F9641839DFFF00E8BD9E /* MSoccerPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSoccerPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9661839E03A00E8BD9E /* MSquashSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSquashSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F9681839E03F00E8BD9E /* MSquashPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSquashPhoto.jpg; sourceTree = "<group>"; };
-		CFE1F96A1839E07F00E8BD9E /* MSwimmingSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSwimmingSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F96C1839E08800E8BD9E /* MSwimmingPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MSwimmingPhoto.jpg; sourceTree = "<group>"; };
-		CFE1F96E1839E0D800E8BD9E /* MTennisSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MTennisSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F9701839E0DF00E8BD9E /* MTennisPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MTennisPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9721839E1D900E8BD9E /* MTrackSchedulePhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MTrackSchedulePhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9741839E1E400E8BD9E /* MTrackSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MTrackSchedule.jpg; sourceTree = "<group>"; };
-		CFE1F9761839E27200E8BD9E /* WBasketballPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WBasketballPhoto.jpg; sourceTree = "<group>"; };
-		CFE1F9781839E28800E8BD9E /* WBasketballSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WBasketballSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F97A1839E2E600E8BD9E /* WCrossCountryPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WCrossCountryPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F97C1839E2EA00E8BD9E /* WCrossCountrySchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WCrossCountrySchedule.jpg; sourceTree = "<group>"; };
 		CFE1F97E1839E3E700E8BD9E /* WFieldHockeySchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WFieldHockeySchedule.jpg; sourceTree = "<group>"; };
 		CFE1F9801839E3EC00E8BD9E /* WFieldHockeyPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WFieldHockeyPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9821839E45700E8BD9E /* WGolfPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WGolfPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9841839E45E00E8BD9E /* WGolfSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WGolfSchedule.jpg; sourceTree = "<group>"; };
-		CFE1F9861839E4BE00E8BD9E /* WHockeySchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WHockeySchedule.jpg; sourceTree = "<group>"; };
-		CFE1F9881839E4C600E8BD9E /* WHockeyPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WHockeyPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F98A1839E55000E8BD9E /* WLaxSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WLaxSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F98C1839E55600E8BD9E /* WLaxPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WLaxPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F98E1839E5A600E8BD9E /* WRugbySchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WRugbySchedule.jpg; sourceTree = "<group>"; };
 		CFE1F9901839E5AA00E8BD9E /* WRugbyPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WRugbyPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9921839E67300E8BD9E /* WSailingSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSailingSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F9941839E68000E8BD9E /* WSailingPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSailingPhoto.png; sourceTree = "<group>"; };
-		CFE1F9961839E6B500E8BD9E /* WSkiingSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSkiingSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F9981839E6BB00E8BD9E /* WSkiingPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSkiingPhoto.jpg; sourceTree = "<group>"; };
-		CFE1F99A1839E6F700E8BD9E /* WSoccerSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSoccerSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F99C1839E6FD00E8BD9E /* WSoccerPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSoccerPhoto.jpg; sourceTree = "<group>"; };
-		CFE1F99E1839E79600E8BD9E /* WSoftballSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSoftballSchedule.jpg; sourceTree = "<group>"; };
-		CFE1F9A01839E7A300E8BD9E /* WSoftballPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSoftballPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9A21839E88600E8BD9E /* WSquashSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSquashSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F9A41839E88E00E8BD9E /* WSquashPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSquashPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9A61839E8BB00E8BD9E /* WSwimmingSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSwimmingSchedule.jpg; sourceTree = "<group>"; };
-		CFE1F9A81839E8C100E8BD9E /* WSwimmingPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WSwimmingPhoto.jpg; sourceTree = "<group>"; };
-		CFE1F9AA1839E90B00E8BD9E /* WTennisSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTennisSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F9AC1839E91300E8BD9E /* WTennisPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTennisPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9AE1839E96C00E8BD9E /* WTrackSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTrackSchedule.jpg; sourceTree = "<group>"; };
-		CFE1F9B01839E97300E8BD9E /* WTrackPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTrackPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9B21839E9F100E8BD9E /* WVolleyballSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WVolleyballSchedule.jpg; sourceTree = "<group>"; };
-		CFE1F9B41839E9F800E8BD9E /* WVolleyballPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WVolleyballPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9B61839EA6500E8BD9E /* MBaseballSchedule.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MBaseballSchedule.jpg; sourceTree = "<group>"; };
 		CFE1F9B81839EA6E00E8BD9E /* MBaseballPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MBaseballPhoto.jpg; sourceTree = "<group>"; };
 		CFE1F9BB1839EB2A00E8BD9E /* MWaterpoloBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MWaterpoloBack.jpg; sourceTree = "<group>"; };
@@ -614,7 +605,6 @@
 		CFE1F9C11839EB3C00E8BD9E /* MCrewBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MCrewBack.jpg; sourceTree = "<group>"; };
 		CFE1F9C31839EB4E00E8BD9E /* MRugbyBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MRugbyBack.jpg; sourceTree = "<group>"; };
 		CFE1F9C518520ABB00E8BD9E /* LoadImageSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoadImageSmall.png; sourceTree = "<group>"; };
-		CFF5ECFA17FE448B0071814C /* OldIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OldIcon.png; path = "Pocket Roster/OldIcon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -788,7 +778,8 @@
 		CF024E1D180F0EB000F9CF54 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				CFE1F8E51836758B00E8BD9E /* FavsB.png */,
+				CFE1F8E51836758B00E8BD9E /* FavsBold.png */,
+				CF2CE12B185D5ED2003E0CDB /* FavsB.png */,
 				CF024E2418102BF200F9CF54 /* HomeB.png */,
 				CF024E1E180F0EC100F9CF54 /* B Logo.png */,
 			);
@@ -799,16 +790,13 @@
 			isa = PBXGroup;
 			children = (
 				CFAFE95E18599C7900BAEBA8 /* BowdoinImageBackground.jpg */,
-				CFE1F8E3183674C400E8BD9E /* HomeBearLogo.png */,
+				CF2CE127185D5DA6003E0CDB /* HomeBearLogo.png */,
 				CFA603A518282EA900C21507 /* MenFTBall.jpg */,
 				CF024E39181AB16300F9CF54 /* Football Background.jpg */,
-				CF024E2618102ECF00F9CF54 /* HomeBearLogo1.png */,
 				CF56488E174096690067FBBB /* NewsfeedIcon.png */,
 				CF247A6C173BF7AB0079AD32 /* BowdoinClubFinal.png */,
 				1E18AACB174002A200AFA86F /* BowdoinNews.png */,
-				CF247A55173BD91D0079AD32 /* LoginButton2.png */,
 				CF247A4D173BD6890079AD32 /* wordmark.png */,
-				CF247A4B173BD31B0079AD32 /* BowdoinLogin.jpg */,
 				CF247A49173B6FD60079AD32 /* BowdoinWomenFinal.png */,
 				CF247A47173B6FD10079AD32 /* BowdoinMenFinal.png */,
 				CF247A45173B6D6F0079AD32 /* RecentPhotosBig.png */,
@@ -817,8 +805,6 @@
 				CF247A2E173B42830079AD32 /* BowdoinOfficailLogo.png */,
 				CF247A2C173B426C0079AD32 /* BowdoinClawBlack.jpeg */,
 				CF247A2A173B42680079AD32 /* BowdoinClawWhite.jpeg */,
-				CF247A28173B425F0079AD32 /* LionHome.jpg */,
-				CF247A26173B423F0079AD32 /* BackButtonWhite.png */,
 				CF247A24173B42370079AD32 /* BowdoinWomen.png */,
 				CF247A22173B42320079AD32 /* BowdoinMen.png */,
 				CF247A20173B41510079AD32 /* TeamsLogo.png */,
@@ -923,11 +909,8 @@
 				CFE1F92D1838303000E8BD9E /* CreditsBack.png */,
 				CFE1F92B1838302100E8BD9E /* CreditsBackButton.png */,
 				CF024E2E1816307F00F9CF54 /* icon.png */,
-				CF024E2C18162E3100F9CF54 /* icon2.png */,
-				CFF5ECFA17FE448B0071814C /* OldIcon.png */,
 				CF4684BE173DBF8E001F8A1F /* TumbnailFinal */,
 				CF247AE8173D8D660079AD32 /* iPhoneSetFallBackground.png */,
-				1EBB3DEC17223EF40032238C /* 9.-Bowdoin-College.png */,
 				CF247A16173B408F0079AD32 /* General Images */,
 				CF6568DA171782B700AE84AC /* Pocket Roster */,
 				CF6568FE171782B700AE84AC /* Pocket RosterTests */,
@@ -961,7 +944,6 @@
 			isa = PBXGroup;
 			children = (
 				CF024E1D180F0EB000F9CF54 /* New Group */,
-				CF4684E0173DF963001F8A1F /* OldIcon.png */,
 				CF247A77173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt */,
 				CF4684C0173DC009001F8A1F /* Login */,
 				1E11F6931839E1F60091E8C2 /* Images */,
@@ -1032,28 +1014,31 @@
 				CFE1F8A4182EEB4E00E8BD9E /* MGolf.jpg */,
 				CFE1F8A5182EEB4E00E8BD9E /* MHockey.jpg */,
 				CFE1F8A6182EEB4E00E8BD9E /* MSailing.jpg */,
-				CFE1F8A7182EEB4E00E8BD9E /* MSkiing.jpg */,
+				CF2CE14B185D7B30003E0CDB /* MSkiing.jpg */,
 				CFE1F8A8182EEB4E00E8BD9E /* MSoccer.jpg */,
 				CFE1F8A9182EEB4E00E8BD9E /* MSquash.jpg */,
 				CFE1F8AA182EEB4E00E8BD9E /* MSwimming.jpg */,
-				CFE1F8AB182EEB4E00E8BD9E /* MTennis.jpg */,
+				CF2CE14D185D7B5F003E0CDB /* MTennis.jpg */,
 				CFE1F8AC182EEB4E00E8BD9E /* MTrack.jpg */,
-				CFE1F8AD182EEB4E00E8BD9E /* WBasketball.jpg */,
+				CF2CE14F185D7BCB003E0CDB /* WBasketball.jpg */,
 				CFE1F8AE182EEB4E00E8BD9E /* WCrossCountry.jpg */,
 				CFE1F8AF182EEB4E00E8BD9E /* WFeildHockey.jpg */,
 				CFE1F8B0182EEB4E00E8BD9E /* WGolf.jpg */,
-				CFE1F8B1182EEB4E00E8BD9E /* WHockey.jpg */,
-				CFE1F8B2182EEB4E00E8BD9E /* WLax.jpg */,
+				CFE1F8B1182EEB4E00E8BD9E /* WHockey1.jpg */,
+				CF2CE151185D7C25003E0CDB /* WHockey.jpg */,
+				CF2CE153185D7C65003E0CDB /* WLax.jpg */,
 				CFE1F8B3182EEB4E00E8BD9E /* WRugby.jpg */,
 				CFE1F8B4182EEB4E00E8BD9E /* WSailing.jpg */,
-				CFE1F8B5182EEB4E00E8BD9E /* WSkiing.jpg */,
-				CFE1F8B6182EEB4E00E8BD9E /* WSoccer.jpg */,
+				CF2CE155185D7CC7003E0CDB /* WSkiing.jpg */,
+				CF2CE157185D7CF8003E0CDB /* WSoccer.jpg */,
 				CFE1F8B7182EEB4E00E8BD9E /* WSoftball.jpg */,
 				CFE1F8B8182EEB4E00E8BD9E /* WSquash.jpg */,
 				CFE1F8B9182EEB4E00E8BD9E /* WSwimming.jpg */,
-				CFE1F8BA182EEB4E00E8BD9E /* WTennis.jpg */,
-				CFE1F8BB182EEB4E00E8BD9E /* WTrack.jpg */,
-				CFE1F8BC182EEB4E00E8BD9E /* WVolleyball.jpg */,
+				CF2CE159185D7D23003E0CDB /* WTennis1.jpg */,
+				CF2CE163185D894A003E0CDB /* WTennis.jpg */,
+				CF2CE15B185D7D4B003E0CDB /* WTrack1.jpg */,
+				CF2CE161185D8935003E0CDB /* WTrack.jpg */,
+				CF2CE15D185D7DAF003E0CDB /* WVolleyball.jpg */,
 			);
 			name = BackgroundImages;
 			sourceTree = "<group>";
@@ -1064,26 +1049,26 @@
 				CFE1F9B61839EA6500E8BD9E /* MBaseballSchedule.jpg */,
 				CFE1F9B21839E9F100E8BD9E /* WVolleyballSchedule.jpg */,
 				CFE1F9AE1839E96C00E8BD9E /* WTrackSchedule.jpg */,
-				CFE1F9AA1839E90B00E8BD9E /* WTennisSchedule.jpg */,
+				CF2CE139185D78E9003E0CDB /* WTennisSchedule.jpg */,
 				CFE1F9A61839E8BB00E8BD9E /* WSwimmingSchedule.jpg */,
 				CFE1F9A21839E88600E8BD9E /* WSquashSchedule.jpg */,
-				CFE1F99E1839E79600E8BD9E /* WSoftballSchedule.jpg */,
-				CFE1F99A1839E6F700E8BD9E /* WSoccerSchedule.jpg */,
-				CFE1F9961839E6B500E8BD9E /* WSkiingSchedule.jpg */,
+				CF2CE13B185D7923003E0CDB /* WSoftballSchedule.jpg */,
+				CF2CE13D185D797E003E0CDB /* WSoccerSchedule.jpg */,
+				CF2CE13F185D79A7003E0CDB /* WSkiingSchedule.jpg */,
 				CFE1F9921839E67300E8BD9E /* WSailingSchedule.jpg */,
 				CFE1F98E1839E5A600E8BD9E /* WRugbySchedule.jpg */,
 				CFE1F98A1839E55000E8BD9E /* WLaxSchedule.jpg */,
-				CFE1F9861839E4BE00E8BD9E /* WHockeySchedule.jpg */,
+				CF2CE141185D79E0003E0CDB /* WHockeySchedule.jpg */,
 				CFE1F9841839E45E00E8BD9E /* WGolfSchedule.jpg */,
 				CFE1F97E1839E3E700E8BD9E /* WFieldHockeySchedule.jpg */,
 				CFE1F97C1839E2EA00E8BD9E /* WCrossCountrySchedule.jpg */,
-				CFE1F9781839E28800E8BD9E /* WBasketballSchedule.jpg */,
+				CF2CE143185D7A14003E0CDB /* WBasketballSchedule.jpg */,
 				CFE1F9721839E1D900E8BD9E /* MTrackSchedulePhoto.jpg */,
-				CFE1F96E1839E0D800E8BD9E /* MTennisSchedule.jpg */,
-				CFE1F96A1839E07F00E8BD9E /* MSwimmingSchedule.jpg */,
+				CF2CE145185D7A48003E0CDB /* MTennisSchedule.jpg */,
+				CF2CE147185D7A7F003E0CDB /* MSwimmingSchedule.jpg */,
 				CFE1F9661839E03A00E8BD9E /* MSquashSchedule.jpg */,
 				CFE1F9621839DFF500E8BD9E /* MSoccerSchedule.jpg */,
-				CFE1F95E1839DE9900E8BD9E /* MSkiingSchedule.jpg */,
+				CF2CE149185D7AAB003E0CDB /* MSkiingSchedule.jpg */,
 				CFE1F95C1839DE6100E8BD9E /* MSailingSchedule.jpg */,
 				CFE1F9581839DDC100E8BD9E /* MHockeySchedule.jpg */,
 				CFE1F9541839DD1600E8BD9E /* MGolfSchedule.jpg */,
@@ -1099,22 +1084,22 @@
 			isa = PBXGroup;
 			children = (
 				CFE1F9B81839EA6E00E8BD9E /* MBaseballPhoto.jpg */,
-				CFE1F9B41839E9F800E8BD9E /* WVolleyballPhoto.jpg */,
-				CFE1F9B01839E97300E8BD9E /* WTrackPhoto.jpg */,
+				CF2CE12D185D73FC003E0CDB /* WVolleyballPhoto.jpg */,
+				CF2CE15F185D891A003E0CDB /* WTrackPhoto.jpg */,
 				CFE1F9AC1839E91300E8BD9E /* WTennisPhoto.jpg */,
-				CFE1F9A81839E8C100E8BD9E /* WSwimmingPhoto.jpg */,
+				CF2CE131185D751C003E0CDB /* WSwimmingPhoto.jpg */,
 				CFE1F9A41839E88E00E8BD9E /* WSquashPhoto.jpg */,
-				CFE1F9A01839E7A300E8BD9E /* WSoftballPhoto.jpg */,
+				CF2CE133185D757F003E0CDB /* WSoftballPhoto.jpg */,
 				CFE1F99C1839E6FD00E8BD9E /* WSoccerPhoto.jpg */,
 				CFE1F9981839E6BB00E8BD9E /* WSkiingPhoto.jpg */,
 				CFE1F9941839E68000E8BD9E /* WSailingPhoto.png */,
 				CFE1F9901839E5AA00E8BD9E /* WRugbyPhoto.jpg */,
 				CFE1F98C1839E55600E8BD9E /* WLaxPhoto.jpg */,
-				CFE1F9881839E4C600E8BD9E /* WHockeyPhoto.jpg */,
+				CF2CE135185D77D9003E0CDB /* WHockeyPhoto.jpg */,
 				CFE1F9821839E45700E8BD9E /* WGolfPhoto.jpg */,
 				CFE1F9801839E3EC00E8BD9E /* WFieldHockeyPhoto.jpg */,
 				CFE1F97A1839E2E600E8BD9E /* WCrossCountryPhoto.jpg */,
-				CFE1F9761839E27200E8BD9E /* WBasketballPhoto.jpg */,
+				CF2CE137185D787B003E0CDB /* WBasketballPhoto.jpg */,
 				CFE1F9741839E1E400E8BD9E /* MTrackSchedule.jpg */,
 				CFE1F9701839E0DF00E8BD9E /* MTennisPhoto.jpg */,
 				CFE1F96C1839E08800E8BD9E /* MSwimmingPhoto.jpg */,
@@ -1221,26 +1206,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2CE15A185D7D23003E0CDB /* WTennis1.jpg in Resources */,
+				CF2CE156185D7CC7003E0CDB /* WSkiing.jpg in Resources */,
 				CFE1F8CC182EEB4E00E8BD9E /* WCrossCountry.jpg in Resources */,
-				CFE1F8D8182EEB4E00E8BD9E /* WTennis.jpg in Resources */,
 				CFE1F8D1182EEB4E00E8BD9E /* WRugby.jpg in Resources */,
 				CF6568DF171782B700AE84AC /* InfoPlist.strings in Resources */,
-				CFE1F9B11839E97300E8BD9E /* WTrackPhoto.jpg in Resources */,
 				CFE1F94F1839DCAA00E8BD9E /* MFootballSchedule.jpg in Resources */,
 				CFE1F9AD1839E91300E8BD9E /* WTennisPhoto.jpg in Resources */,
+				CF2CE12C185D5ED2003E0CDB /* FavsB.png in Resources */,
 				CFE1F9C41839EB4E00E8BD9E /* MRugbyBack.jpg in Resources */,
 				CFE1F9591839DDC100E8BD9E /* MHockeySchedule.jpg in Resources */,
 				CF6568E7171782B700AE84AC /* Default.png in Resources */,
 				CF6568E9171782B700AE84AC /* Default@2x.png in Resources */,
+				CF2CE162185D8935003E0CDB /* WTrack.jpg in Resources */,
 				CFE1F93218391FEA00E8BD9E /* CreditsBack4.png in Resources */,
 				CFE1F9C21839EB3C00E8BD9E /* MCrewBack.jpg in Resources */,
 				CF6568EB171782B700AE84AC /* Default-568h@2x.png in Resources */,
-				CFE1F8D0182EEB4E00E8BD9E /* WLax.jpg in Resources */,
 				CF6568EE171782B700AE84AC /* MainStoryboard.storyboard in Resources */,
 				CF65692C17179F9800AE84AC /* SwimmingCover.jpg in Resources */,
 				CFE1F9811839E3EC00E8BD9E /* WFieldHockeyPhoto.jpg in Resources */,
 				CF024E2F1816307F00F9CF54 /* icon.png in Resources */,
-				CFE1F9771839E27200E8BD9E /* WBasketballPhoto.jpg in Resources */,
 				CFE1F98D1839E55600E8BD9E /* WLaxPhoto.jpg in Resources */,
 				CF833B19171E14110011DED3 /* iPad.storyboard in Resources */,
 				CFE1F9851839E45E00E8BD9E /* WGolfSchedule.jpg in Resources */,
@@ -1248,14 +1233,14 @@
 				CF833B391720C0E40011DED3 /* BowdoinSwimming.jpg in Resources */,
 				CF024E2518102BF200F9CF54 /* HomeB.png in Resources */,
 				CFA603A618282EA900C21507 /* MenFTBall.jpg in Resources */,
-				CFE1F99F1839E79600E8BD9E /* WSoftballSchedule.jpg in Resources */,
+				CF2CE12E185D73FC003E0CDB /* WVolleyballPhoto.jpg in Resources */,
 				CFE1F9AF1839E96C00E8BD9E /* WTrackSchedule.jpg in Resources */,
 				CFE1F98B1839E55000E8BD9E /* WLaxSchedule.jpg in Resources */,
+				CF2CE140185D79A7003E0CDB /* WSkiingSchedule.jpg in Resources */,
 				CFE1F99D1839E6FD00E8BD9E /* WSoccerPhoto.jpg in Resources */,
 				CFE1F9A51839E88E00E8BD9E /* WSquashPhoto.jpg in Resources */,
 				CF833B3D1720C38A0011DED3 /* BowdoinFootball.jpg in Resources */,
 				CF833B401720C73E0011DED3 /* BowdoinSoccer.jpg in Resources */,
-				CFE1F9891839E4C600E8BD9E /* WHockeyPhoto.jpg in Resources */,
 				CF833B431720C8410011DED3 /* Bowdoin Basketball.jpg in Resources */,
 				CFE1F8C2182EEB4E00E8BD9E /* MGolf.jpg in Resources */,
 				CF833B491720C9AC0011DED3 /* BowdoinHockey.png in Resources */,
@@ -1271,17 +1256,13 @@
 				CF2CE126185CE908003E0CDB /* info.png in Resources */,
 				CFE1F9731839E1D900E8BD9E /* MTrackSchedulePhoto.jpg in Resources */,
 				CF833B611720D19C0011DED3 /* BowdoinBearPhoto.jpg in Resources */,
-				CFE1F8DA182EEB4E00E8BD9E /* WVolleyball.jpg in Resources */,
-				CFF5ECFB17FE448B0071814C /* OldIcon.png in Resources */,
 				CFE1F8C4182EEB4E00E8BD9E /* MSailing.jpg in Resources */,
 				CFE1F9451839DAE100E8BD9E /* BLaxPhoto.jpg in Resources */,
 				CFE1F8C8182EEB4E00E8BD9E /* MSwimming.jpg in Resources */,
-				CF024E2718102ECF00F9CF54 /* HomeBearLogo1.png in Resources */,
 				CFE1F8C1182EEB4E00E8BD9E /* MFootball.jpg in Resources */,
 				CF024E1F180F0EC100F9CF54 /* B Logo.png in Resources */,
 				CF024E3A181AB16300F9CF54 /* Football Background.jpg in Resources */,
 				CFE1F8BF182EEB4E00E8BD9E /* MBaseball.jpg in Resources */,
-				1EBB3DF017223EF40032238C /* 9.-Bowdoin-College.png in Resources */,
 				1EBB3DF117223EF40032238C /* bowdoin-hubbard-hall-spring-2012.jpg in Resources */,
 				1EBB3DF217223EF40032238C /* winter-quad-266.jpg in Resources */,
 				CFE1F8D6182EEB4E00E8BD9E /* WSquash.jpg in Resources */,
@@ -1289,42 +1270,45 @@
 				1EBB3DF317223EF40032238C /* Bowdoin_College_Quad_308x150.jpg in Resources */,
 				1E2F1772172881B80023515F /* mensCrew.jpg in Resources */,
 				1E2F1773172881B80023515F /* mensGolf.jpg in Resources */,
-				CFE1F95F1839DE9900E8BD9E /* MSkiingSchedule.jpg in Resources */,
-				CFE1F9971839E6B500E8BD9E /* WSkiingSchedule.jpg in Resources */,
 				1E2F1774172881B80023515F /* mensRugby.jpg in Resources */,
 				1E2F1775172881B80023515F /* mensSailing.jpg in Resources */,
-				CFE1F9791839E28800E8BD9E /* WBasketballSchedule.jpg in Resources */,
 				CFE1F8C3182EEB4E00E8BD9E /* MHockey.jpg in Resources */,
 				CFE1F9A71839E8BB00E8BD9E /* WSwimmingSchedule.jpg in Resources */,
 				1E2F1776172881B80023515F /* mensSquash.jpg in Resources */,
-				CFE1F8D3182EEB4E00E8BD9E /* WSkiing.jpg in Resources */,
 				1E2F1777172881B80023515F /* mensTennis.jpg in Resources */,
 				CF247A19173B40C50079AD32 /* LiveScoresLogo.png in Resources */,
-				CFE1F9AB1839E90B00E8BD9E /* WTennisSchedule.jpg in Resources */,
 				CF247A1B173B40D10079AD32 /* MyPhotosLogo.png in Resources */,
-				CFE1F8CF182EEB4E00E8BD9E /* WHockey.jpg in Resources */,
-				CFE1F8E4183674C400E8BD9E /* HomeBearLogo.png in Resources */,
-				CFE1F8C5182EEB4E00E8BD9E /* MSkiing.jpg in Resources */,
+				CFE1F8CF182EEB4E00E8BD9E /* WHockey1.jpg in Resources */,
 				CFE1F8BE182EEB4E00E8BD9E /* MBasketball.jpg in Resources */,
 				CF247A1F173B41330079AD32 /* HomeBearLogo2.png in Resources */,
 				CF247A21173B41510079AD32 /* TeamsLogo.png in Resources */,
 				CFE1F9691839E03F00E8BD9E /* MSquashPhoto.jpg in Resources */,
 				CF247A23173B42320079AD32 /* BowdoinMen.png in Resources */,
 				CF247A25173B42370079AD32 /* BowdoinWomen.png in Resources */,
-				CF247A27173B423F0079AD32 /* BackButtonWhite.png in Resources */,
-				CF247A29173B425F0079AD32 /* LionHome.jpg in Resources */,
 				CF247A2B173B42680079AD32 /* BowdoinClawWhite.jpeg in Resources */,
+				CF2CE136185D77D9003E0CDB /* WHockeyPhoto.jpg in Resources */,
+				CF2CE138185D787B003E0CDB /* WBasketballPhoto.jpg in Resources */,
+				CF2CE13A185D78E9003E0CDB /* WTennisSchedule.jpg in Resources */,
+				CF2CE13C185D7923003E0CDB /* WSoftballSchedule.jpg in Resources */,
+				CF2CE144185D7A14003E0CDB /* WBasketballSchedule.jpg in Resources */,
+				CF2CE14A185D7AAB003E0CDB /* MSkiingSchedule.jpg in Resources */,
+				CF2CE146185D7A48003E0CDB /* MTennisSchedule.jpg in Resources */,
+				CF2CE152185D7C25003E0CDB /* WHockey.jpg in Resources */,
+				CF2CE160185D891A003E0CDB /* WTrackPhoto.jpg in Resources */,
+				CF2CE14E185D7B5F003E0CDB /* MTennis.jpg in Resources */,
+				CF2CE142185D79E0003E0CDB /* WHockeySchedule.jpg in Resources */,
+				CF2CE13E185D797E003E0CDB /* WSoccerSchedule.jpg in Resources */,
+				CF2CE134185D757F003E0CDB /* WSoftballPhoto.jpg in Resources */,
+				CF2CE132185D751C003E0CDB /* WSwimmingPhoto.jpg in Resources */,
 				CF247A2D173B426C0079AD32 /* BowdoinClawBlack.jpeg in Resources */,
 				CF247A2F173B42830079AD32 /* BowdoinOfficailLogo.png in Resources */,
 				CF247A31173B428C0079AD32 /* GenericFaceProfilePic.jpg in Resources */,
 				CF247A44173B6D6A0079AD32 /* LiveScoresBig.png in Resources */,
+				CF2CE15C185D7D4B003E0CDB /* WTrack1.jpg in Resources */,
 				CF247A46173B6D6F0079AD32 /* RecentPhotosBig.png in Resources */,
 				CF247A48173B6FD10079AD32 /* BowdoinMenFinal.png in Resources */,
-				CFE1F8CB182EEB4E00E8BD9E /* WBasketball.jpg in Resources */,
 				CFE1F9571839DDB600E8BD9E /* MHockeyPhoto.jpg in Resources */,
 				CF247A4A173B6FD60079AD32 /* BowdoinWomenFinal.png in Resources */,
-				CFE1F96F1839E0D800E8BD9E /* MTennisSchedule.jpg in Resources */,
-				CF247A4C173BD31B0079AD32 /* BowdoinLogin.jpg in Resources */,
 				CF247A4E173BD6890079AD32 /* wordmark.png in Resources */,
 				CFE1F8CE182EEB4E00E8BD9E /* WGolf.jpg in Resources */,
 				CF247A6D173BF7AB0079AD32 /* BowdoinClubFinal.png in Resources */,
@@ -1332,14 +1316,13 @@
 				CFE1F9B71839EA6500E8BD9E /* MBaseballSchedule.jpg in Resources */,
 				CF247A78173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt in Resources */,
 				CF247A7E173C26720079AD32 /* WSoccerFinal.png in Resources */,
-				CFE1F9A11839E7A300E8BD9E /* WSoftballPhoto.jpg in Resources */,
 				CF247A81173C26840079AD32 /* WLaxFinal.png in Resources */,
 				CF247A84173C269D0079AD32 /* MBballFinal.png in Resources */,
 				CFE1F9471839DBCA00E8BD9E /* MBasketballPhoto.jpg in Resources */,
-				CFE1F9A91839E8C100E8BD9E /* WSwimmingPhoto.jpg in Resources */,
 				CFE1F9C01839EB3400E8BD9E /* WCrewBack.jpg in Resources */,
 				CF247A87173C26B90079AD32 /* WRugbyFinal.png in Resources */,
 				CFE1F95B1839DE5C00E8BD9E /* MSailingPhoto.jpg in Resources */,
+				CF2CE150185D7BCB003E0CDB /* WBasketball.jpg in Resources */,
 				CFE1F97F1839E3E700E8BD9E /* WFieldHockeySchedule.jpg in Resources */,
 				CFE1F9951839E68000E8BD9E /* WSailingPhoto.png in Resources */,
 				CF247A8A173C26CC0079AD32 /* CRoboCupFinal.png in Resources */,
@@ -1348,14 +1331,14 @@
 				CFE1F8D5182EEB4E00E8BD9E /* WSoftball.jpg in Resources */,
 				CFE1F97D1839E2EA00E8BD9E /* WCrossCountrySchedule.jpg in Resources */,
 				CFE1F9B91839EA6E00E8BD9E /* MBaseballPhoto.jpg in Resources */,
-				CFE1F96B1839E07F00E8BD9E /* MSwimmingSchedule.jpg in Resources */,
 				CFE1F9611839DEA200E8BD9E /* MSkiingPhoto.jpg in Resources */,
 				CFE1F9B31839E9F100E8BD9E /* WVolleyballSchedule.jpg in Resources */,
 				CF247A93173C2FA30079AD32 /* WCrewFinal.png in Resources */,
 				CF247A96173C307D0079AD32 /* MGolfFinal.png in Resources */,
 				CF247A99173C308F0079AD32 /* MCrewFinal.png in Resources */,
 				CF247AA4173C31C00079AD32 /* WSkiFinal.png in Resources */,
-				CFE1F8D4182EEB4E00E8BD9E /* WSoccer.jpg in Resources */,
+				CF2CE148185D7A7F003E0CDB /* MSwimmingSchedule.jpg in Resources */,
+				CF2CE14C185D7B30003E0CDB /* MSkiing.jpg in Resources */,
 				CF247AA7173C31D70079AD32 /* MLaxFinal.png in Resources */,
 				CFE1F9751839E1E400E8BD9E /* MTrackSchedule.jpg in Resources */,
 				CF247AA9173C31E70079AD32 /* WSailFinal.png in Resources */,
@@ -1364,6 +1347,8 @@
 				CF247AAF173C322A0079AD32 /* WHockeyFinal.png in Resources */,
 				CFE1F8BD182EEB4E00E8BD9E /* BLax.jpg in Resources */,
 				CFE1F94B1839DC4A00E8BD9E /* MCrossCountrySchedule.jpg in Resources */,
+				CF2CE154185D7C65003E0CDB /* WLax.jpg in Resources */,
+				CF2CE158185D7CF8003E0CDB /* WSoccer.jpg in Resources */,
 				CFE1F9931839E67300E8BD9E /* WSailingSchedule.jpg in Resources */,
 				CFE1F8D2182EEB4E00E8BD9E /* WSailing.jpg in Resources */,
 				CF247AB1173C323C0079AD32 /* WTrackFinal.png in Resources */,
@@ -1375,16 +1360,16 @@
 				CFE1F8C7182EEB4E00E8BD9E /* MSquash.jpg in Resources */,
 				CFE1F9491839DBD400E8BD9E /* MBasketballSchedule.jpg in Resources */,
 				CF247AB7173C32760079AD32 /* MSquashFinal.png in Resources */,
-				CFE1F8D9182EEB4E00E8BD9E /* WTrack.jpg in Resources */,
-				CFE1F99B1839E6F700E8BD9E /* WSoccerSchedule.jpg in Resources */,
+				CF2CE128185D5DA6003E0CDB /* HomeBearLogo.png in Resources */,
 				CFE1F96D1839E08800E8BD9E /* MSwimmingPhoto.jpg in Resources */,
+				CF2CE15E185D7DAF003E0CDB /* WVolleyball.jpg in Resources */,
 				CF247AB9173C32840079AD32 /* WCrossCountry.png in Resources */,
 				CF247ABB173C32940079AD32 /* WTennisFinal.png in Resources */,
 				CFE1F9421839DABD00E8BD9E /* BLaxSchedule.jpg in Resources */,
 				CFAFE95F18599C7900BAEBA8 /* BowdoinImageBackground.jpg in Resources */,
-				CFE1F9871839E4BE00E8BD9E /* WHockeySchedule.jpg in Resources */,
 				CFE1F9991839E6BB00E8BD9E /* WSkiingPhoto.jpg in Resources */,
 				CFE1F9C618520ABB00E8BD9E /* LoadImageSmall.png in Resources */,
+				CF2CE164185D894A003E0CDB /* WTennis.jpg in Resources */,
 				CFE1F98F1839E5A600E8BD9E /* WRugbySchedule.jpg in Resources */,
 				CFE1F9511839DCB600E8BD9E /* MFootballPhoto.jpg in Resources */,
 				CFE1F94D1839DC5000E8BD9E /* MCrossCountryPhoto.jpg in Resources */,
@@ -1412,13 +1397,9 @@
 				CFE1F9911839E5AA00E8BD9E /* WRugbyPhoto.jpg in Resources */,
 				CF4684DB173DC4D0001F8A1F /* LoginButton.png in Resources */,
 				CFE1F97B1839E2E600E8BD9E /* WCrossCountryPhoto.jpg in Resources */,
-				CFE1F9B51839E9F800E8BD9E /* WVolleyballPhoto.jpg in Resources */,
-				CFE1F8C9182EEB4E00E8BD9E /* MTennis.jpg in Resources */,
-				CF024E2D18162E3100F9CF54 /* icon2.png in Resources */,
-				CF4684E1173DF963001F8A1F /* OldIcon.png in Resources */,
 				CF56488F174096690067FBBB /* NewsfeedIcon.png in Resources */,
 				CFE1F9BC1839EB2A00E8BD9E /* MWaterpoloBack.jpg in Resources */,
-				CFE1F8E61836758B00E8BD9E /* FavsB.png in Resources */,
+				CFE1F8E61836758B00E8BD9E /* FavsBold.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1440,7 +1421,6 @@
 				CF833B5D1720CBF50011DED3 /* BowdoinSoccer 2.jpg in Resources */,
 				CF833B5F1720CBF50011DED3 /* BowdoinTrack 2.png in Resources */,
 				CF833B621720D19C0011DED3 /* BowdoinBearPhoto.jpg in Resources */,
-				CF247A56173BD91D0079AD32 /* LoginButton2.png in Resources */,
 				CF247A6E173BF7AB0079AD32 /* BowdoinClubFinal.png in Resources */,
 				CF247A79173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt in Resources */,
 				CF247A7F173C26720079AD32 /* WSoccerFinal.png in Resources */,
