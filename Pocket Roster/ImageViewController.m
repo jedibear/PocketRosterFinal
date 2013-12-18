@@ -36,7 +36,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [self.zoomedImage setImage:self.incImage];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.incImage]];
+    [imageView sizeToFit];
+    self.zoomedImage = imageView;
+    
+   
+    //[self.zoomedImage setImage:self.incImage];
     
 }
 
