@@ -501,8 +501,6 @@
 		CF656905171782B700AE84AC /* Pocket_RosterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pocket_RosterTests.m; sourceTree = "<group>"; };
 		CF65691B171787DF00AE84AC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF65691C171787DF00AE84AC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CF65691E171795E800AE84AC /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = "/Volumes/GARVS_VIPER/PR/Pocket Roster/ImageViewController.h"; sourceTree = "<absolute>"; };
-		CF65691F171795E800AE84AC /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = "/Volumes/GARVS_VIPER/PR/Pocket Roster/ImageViewController.m"; sourceTree = "<absolute>"; };
 		CF65692B17179F9800AE84AC /* SwimmingCover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwimmingCover.jpg; sourceTree = "<group>"; };
 		CF833B18171E14110011DED3 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		CF833B26171ED4080011DED3 /* RosterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosterViewController.h; sourceTree = "<group>"; };
@@ -656,8 +654,6 @@
 				1E11F6981839E8F80091E8C2 /* HomeImageCell.m */,
 				1EC4B66D183A0C1800226160 /* ImageCollectionCell.h */,
 				1EC4B66E183A0C1800226160 /* ImageCollectionCell.m */,
-				CF65691E171795E800AE84AC /* ImageViewController.h */,
-				CF65691F171795E800AE84AC /* ImageViewController.m */,
 				1E08C6D41856704400AB5F3C /* ImageViewController.h */,
 				1E08C6D51856704400AB5F3C /* ImageViewController.m */,
 			);
