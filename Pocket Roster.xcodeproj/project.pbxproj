@@ -154,6 +154,8 @@
 		CF2CE162185D8935003E0CDB /* WTrack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE161185D8935003E0CDB /* WTrack.jpg */; };
 		CF2CE164185D894A003E0CDB /* WTennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE163185D894A003E0CDB /* WTennis.jpg */; };
 		CF2CE16D186130A7003E0CDB /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2CE16C186130A7003E0CDB /* HomeVC.m */; };
+		CF2CE17D18615EDF003E0CDB /* iPhone4Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE17C18615EDF003E0CDB /* iPhone4Board.storyboard */; };
+		CF2CE17F18615F3C003E0CDB /* iPhone5Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE17E18615F3C003E0CDB /* iPhone5Board.storyboard */; };
 		CF4684D7173DC2D1001F8A1F /* BOWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684D2173DC2D1001F8A1F /* BOWAppDelegate.m */; };
 		CF4684D8173DC2D1001F8A1F /* BOWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */; };
 		CF4684DB173DC4D0001F8A1F /* LoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4684DA173DC4D0001F8A1F /* LoginButton.png */; };
@@ -472,6 +474,8 @@
 		CF2CE163185D894A003E0CDB /* WTennis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WTennis.jpg; sourceTree = "<group>"; };
 		CF2CE16B186130A7003E0CDB /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		CF2CE16C186130A7003E0CDB /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		CF2CE17C18615EDF003E0CDB /* iPhone4Board.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone4Board.storyboard; sourceTree = "<group>"; };
+		CF2CE17E18615F3C003E0CDB /* iPhone5Board.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone5Board.storyboard; sourceTree = "<group>"; };
 		CF4684D1173DC2D1001F8A1F /* BOWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWAppDelegate.h; sourceTree = "<group>"; };
 		CF4684D2173DC2D1001F8A1F /* BOWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOWAppDelegate.m; sourceTree = "<group>"; };
 		CF4684D3173DC2D1001F8A1F /* BOWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWLoginViewController.h; sourceTree = "<group>"; };
@@ -963,6 +967,8 @@
 				1E08C6D218566FCD00AB5F3C /* Pocket_RosterAppDelegate.m */,
 				CF833B18171E14110011DED3 /* iPad.storyboard */,
 				CF6568EC171782B700AE84AC /* MainStoryboard.storyboard */,
+				CF2CE17C18615EDF003E0CDB /* iPhone4Board.storyboard */,
+				CF2CE17E18615F3C003E0CDB /* iPhone5Board.storyboard */,
 				CF2CE16B186130A7003E0CDB /* HomeVC.h */,
 				CF2CE16C186130A7003E0CDB /* HomeVC.m */,
 				CFE1F9BA1839EA7C00E8BD9E /* Club Background Images */,
@@ -1362,8 +1368,10 @@
 				CF247AB5173C32670079AD32 /* MRugbyFinal.png in Resources */,
 				CFE1F8C6182EEB4E00E8BD9E /* MSoccer.jpg in Resources */,
 				CFE1F9631839DFF500E8BD9E /* MSoccerSchedule.jpg in Resources */,
+				CF2CE17D18615EDF003E0CDB /* iPhone4Board.storyboard in Resources */,
 				CFE1F8C7182EEB4E00E8BD9E /* MSquash.jpg in Resources */,
 				CFE1F9491839DBD400E8BD9E /* MBasketballSchedule.jpg in Resources */,
+				CF2CE17F18615F3C003E0CDB /* iPhone5Board.storyboard in Resources */,
 				CF247AB7173C32760079AD32 /* MSquashFinal.png in Resources */,
 				CF2CE128185D5DA6003E0CDB /* HomeBearLogo.png in Resources */,
 				CFE1F96D1839E08800E8BD9E /* MSwimmingPhoto.jpg in Resources */,

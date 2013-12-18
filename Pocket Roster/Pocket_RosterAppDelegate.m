@@ -13,9 +13,29 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UIStoryboard *sb;
+    
+    CGSize result = [[UIScreen mainScreen] bounds].size;
+    if(result.height == 480)
+    {
+        sb = [UIStoryboard storyboardWithName:@"iPhone4Board" bundle:nil];
+        
+        //        rootVC = [[UIViewController alloc] initWithNibName:@"iPhone4Board" bundle:nil];
+    } else {
+        sb = [UIStoryboard storyboardWithName:@"iPhone5Board" bundle:nil];
+        
+    }
+    
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"homeVC"];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
+    
     return YES;
+
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
