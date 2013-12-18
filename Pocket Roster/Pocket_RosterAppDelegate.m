@@ -22,7 +22,7 @@
         
         //        rootVC = [[UIViewController alloc] initWithNibName:@"iPhone4Board" bundle:nil];
     } else {
-        sb = [UIStoryboard storyboardWithName:@"iPhone5Board" bundle:nil];
+        sb = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
         
     }
     
