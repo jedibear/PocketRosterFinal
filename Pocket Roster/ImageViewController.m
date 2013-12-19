@@ -45,9 +45,9 @@
     
     
     CGRect frame = imageView.frame;
-    //frame.size.width = 340;
-    //frame.origin.x = self.view.frame.size.width/2 - 170;
-    //frame.origin.y = self.view.frame.size.height/2 - frame.size.height/2;
+    frame.size.width = 340;
+    frame.origin.x = self.view.frame.size.width/2 - 170;
+    frame.origin.y = self.view.frame.size.height/2 - frame.size.height/2;
     imageView.frame = frame;
     
     self.zoomedImage = imageView;
