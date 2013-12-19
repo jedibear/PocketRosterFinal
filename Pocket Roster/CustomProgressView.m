@@ -182,4 +182,8 @@
     [circle addAnimation:drawAnimation forKey:@"drawCircleAnimation"];
     self.current_val = to_value;
 }
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
 @end

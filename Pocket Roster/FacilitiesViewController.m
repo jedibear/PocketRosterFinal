@@ -118,4 +118,8 @@
     [self.facilityImage setImage:[self.images objectAtIndex:self.imageIndex]];
     
 }
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
 @end

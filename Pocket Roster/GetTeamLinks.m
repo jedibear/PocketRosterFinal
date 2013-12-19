@@ -26,6 +26,8 @@
     
     if(error){
         NSLog(@"THERE WAS A PROBLEM");
+        NSLog(@"Error is -> %@",[error localizedDescription]);
+        
     }
     
     //get the data from the web page

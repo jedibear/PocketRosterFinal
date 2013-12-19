@@ -171,5 +171,8 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 }
-
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
 @end

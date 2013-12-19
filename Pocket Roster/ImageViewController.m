@@ -35,13 +35,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    //UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.incImage]];
-    //[imageView sizeToFit];
-    //self.zoomedImage = imageView;
+	
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:self.incImage];
+    imageView.center = self.view.center;
+    [self.view addSubview:imageView];
     
-   
-    [self.zoomedImage setImage:self.incImage];
+    
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    
+    CGRect frame = imageView.frame;
+    //frame.size.width = 340;
+    //frame.origin.x = self.view.frame.size.width/2 - 170;
+    //frame.origin.y = self.view.frame.size.height/2 - frame.size.height/2;
+    imageView.frame = frame;
+    
+    self.zoomedImage = imageView;
     
 }
 
@@ -79,5 +88,9 @@
             rAVC.schedBackground = self.schedBackground;
         }
     }
+}
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 @end
