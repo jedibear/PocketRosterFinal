@@ -9,6 +9,7 @@
 #import "MasterTVC.h"
 #import "teams.h"
 #import "TeamViewController.h"
+#import "ScheduleViewController.h"
 
 @interface MasterTVC ()
 
@@ -465,6 +466,78 @@
         }
         
     }
+    
+    /***************************************
+     *                                     *
+     *           Club Hook Ups             *
+     *                                     *
+     ***************************************
+     */
+    else if([segue.identifier isEqualToString:@"wCrew"]){
+
+    if ([segue.destinationViewController isKindOfClass:[ScheduleViewController class]]) {
+
+        ScheduleViewController *teamVC = (ScheduleViewController *) segue.destinationViewController;
+
+        teamVC.longForm = womensCrewLongForm;
+
+        teamVC.incommingTeamURL = womensCrewStartingURL;
+
+        teamVC.teamName = womensCrewName;
+
+        teamVC.backgroundImagePath = womensCrewBackgroundImagePath;
+        
+        teamVC.schedBackground = womensCrewBackgroundImagePath;
+        teamVC.imageBackground = womensCrewBackgroundImagePath;
+        
+        teamVC.schedURL = womensCrewStartingURL;
+    }
+    
+}
+    else if([segue.identifier isEqualToString:@"mCrew"]){
+        
+        if ([segue.destinationViewController isKindOfClass:[ScheduleViewController class]]) {
+            
+            ScheduleViewController *teamVC = (ScheduleViewController *) segue.destinationViewController;
+            
+            teamVC.longForm = mensCrewLongForm;
+            
+            teamVC.incommingTeamURL = mensCrewStartingURL;
+            
+            teamVC.teamName = mensCrewName;
+            
+            teamVC.backgroundImagePath = mensCrewBackgroundImagePath;
+            
+            teamVC.schedBackground = mensCrewBackgroundImagePath;
+            teamVC.imageBackground = mensCrewBackgroundImagePath;
+            
+            teamVC.schedURL = mensCrewStartingURL;
+        }
+        
+    }
+    
+    else if([segue.identifier isEqualToString:@"mRugby"]){
+        
+        if ([segue.destinationViewController isKindOfClass:[ScheduleViewController class]]) {
+            
+            ScheduleViewController *teamVC = (ScheduleViewController *) segue.destinationViewController;
+            
+            teamVC.longForm = mensRugbyLongForm;
+            
+            teamVC.incommingTeamURL = mensRugbyStartingURL;
+            
+            teamVC.teamName = mensRugbyName;
+            
+            teamVC.backgroundImagePath = mensCrewBackgroundImagePath;
+            
+            teamVC.schedBackground = mensRugbyBackgroundImagePath;
+            teamVC.imageBackground = mensRugbyBackgroundImagePath;
+            
+            teamVC.schedURL = mensRugbyStartingURL;
+        }
+        
+    }
+
 }
 
 

@@ -17,6 +17,7 @@
 +(NSMutableDictionary *) getSchedule:(NSString *)linkForURLSearch{
 
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+
     NSURL *theURL = [[NSURL alloc] initWithString:linkForURLSearch];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];

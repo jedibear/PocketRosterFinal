@@ -77,8 +77,6 @@
 		CF247A4E173BD6890079AD32 /* wordmark.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A4D173BD6890079AD32 /* wordmark.png */; };
 		CF247A6D173BF7AB0079AD32 /* BowdoinClubFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A6C173BF7AB0079AD32 /* BowdoinClubFinal.png */; };
 		CF247A6E173BF7AB0079AD32 /* BowdoinClubFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A6C173BF7AB0079AD32 /* BowdoinClubFinal.png */; };
-		CF247A75173C0B8D0079AD32 /* PersonalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = CF247A74173C0B8D0079AD32 /* PersonalAccount.m */; };
-		CF247A76173C0B8D0079AD32 /* PersonalAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = CF247A74173C0B8D0079AD32 /* PersonalAccount.m */; };
 		CF247A78173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF247A77173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt */; };
 		CF247A79173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF247A77173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt */; };
 		CF247A7E173C26720079AD32 /* WSoccerFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = CF247A7D173C26720079AD32 /* WSoccerFinal.png */; };
@@ -156,9 +154,6 @@
 		CF2CE164185D894A003E0CDB /* WTennis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE163185D894A003E0CDB /* WTennis.jpg */; };
 		CF2CE16D186130A7003E0CDB /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2CE16C186130A7003E0CDB /* HomeVC.m */; };
 		CF2CE17D18615EDF003E0CDB /* iPhone4Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2CE17C18615EDF003E0CDB /* iPhone4Board.storyboard */; };
-		CF4684D7173DC2D1001F8A1F /* BOWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684D2173DC2D1001F8A1F /* BOWAppDelegate.m */; };
-		CF4684D8173DC2D1001F8A1F /* BOWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */; };
-		CF4684DB173DC4D0001F8A1F /* LoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4684DA173DC4D0001F8A1F /* LoginButton.png */; };
 		CF56488F174096690067FBBB /* NewsfeedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = CF56488E174096690067FBBB /* NewsfeedIcon.png */; };
 		CF6568D5171782B700AE84AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D4171782B700AE84AC /* UIKit.framework */; };
 		CF6568D7171782B700AE84AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6568D6171782B700AE84AC /* Foundation.framework */; };
@@ -176,7 +171,6 @@
 		CF656906171782B700AE84AC /* Pocket_RosterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF656905171782B700AE84AC /* Pocket_RosterTests.m */; };
 		CF65691D171787DF00AE84AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65691C171787DF00AE84AC /* AppDelegate.m */; };
 		CF65692C17179F9800AE84AC /* SwimmingCover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF65692B17179F9800AE84AC /* SwimmingCover.jpg */; };
-		CF833B19171E14110011DED3 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF833B18171E14110011DED3 /* iPad.storyboard */; };
 		CF833B28171ED4080011DED3 /* RosterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF833B27171ED4080011DED3 /* RosterViewController.m */; };
 		CF833B391720C0E40011DED3 /* BowdoinSwimming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B381720C0E40011DED3 /* BowdoinSwimming.jpg */; };
 		CF833B3A1720C0E40011DED3 /* BowdoinSwimming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF833B381720C0E40011DED3 /* BowdoinSwimming.jpg */; };
@@ -412,8 +406,6 @@
 		CF247A49173B6FD60079AD32 /* BowdoinWomenFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinWomenFinal.png; sourceTree = "<group>"; };
 		CF247A4D173BD6890079AD32 /* wordmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wordmark.png; sourceTree = "<group>"; };
 		CF247A6C173BF7AB0079AD32 /* BowdoinClubFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BowdoinClubFinal.png; sourceTree = "<group>"; };
-		CF247A73173C0B8D0079AD32 /* PersonalAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalAccount.h; sourceTree = "<group>"; };
-		CF247A74173C0B8D0079AD32 /* PersonalAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalAccount.m; sourceTree = "<group>"; };
 		CF247A77173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = POCKETROSTERTEXTFILE.txt; sourceTree = "<group>"; };
 		CF247A7D173C26720079AD32 /* WSoccerFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSoccerFinal.png; sourceTree = "<group>"; };
 		CF247A80173C26840079AD32 /* WLaxFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WLaxFinal.png; sourceTree = "<group>"; };
@@ -481,12 +473,6 @@
 		CF2CE16B186130A7003E0CDB /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		CF2CE16C186130A7003E0CDB /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		CF2CE17C18615EDF003E0CDB /* iPhone4Board.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone4Board.storyboard; sourceTree = "<group>"; };
-		CF4684D1173DC2D1001F8A1F /* BOWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWAppDelegate.h; sourceTree = "<group>"; };
-		CF4684D2173DC2D1001F8A1F /* BOWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOWAppDelegate.m; sourceTree = "<group>"; };
-		CF4684D3173DC2D1001F8A1F /* BOWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWLoginViewController.h; sourceTree = "<group>"; };
-		CF4684D4173DC2D1001F8A1F /* BOWLoginViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOWLoginViewControllerDelegate.h; sourceTree = "<group>"; };
-		CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOWLoginViewController.m; sourceTree = "<group>"; };
-		CF4684DA173DC4D0001F8A1F /* LoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton.png; sourceTree = "<group>"; };
 		CF56488E174096690067FBBB /* NewsfeedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewsfeedIcon.png; sourceTree = "<group>"; };
 		CF6568D0171782B700AE84AC /* Pocket Roster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Roster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6568D4171782B700AE84AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -509,7 +495,6 @@
 		CF65691B171787DF00AE84AC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF65691C171787DF00AE84AC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CF65692B17179F9800AE84AC /* SwimmingCover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SwimmingCover.jpg; sourceTree = "<group>"; };
-		CF833B18171E14110011DED3 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		CF833B26171ED4080011DED3 /* RosterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosterViewController.h; sourceTree = "<group>"; };
 		CF833B27171ED4080011DED3 /* RosterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RosterViewController.m; sourceTree = "<group>"; };
 		CF833B381720C0E40011DED3 /* BowdoinSwimming.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BowdoinSwimming.jpg; sourceTree = "<group>"; };
@@ -892,29 +877,6 @@
 			name = TumbnailFinal;
 			sourceTree = "<group>";
 		};
-		CF4684C0173DC009001F8A1F /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				CF247A74173C0B8D0079AD32 /* PersonalAccount.m */,
-				CF247A73173C0B8D0079AD32 /* PersonalAccount.h */,
-				CF4684DA173DC4D0001F8A1F /* LoginButton.png */,
-				CF4684D1173DC2D1001F8A1F /* BOWAppDelegate.h */,
-				CF4684D2173DC2D1001F8A1F /* BOWAppDelegate.m */,
-				CF4684D3173DC2D1001F8A1F /* BOWLoginViewController.h */,
-				CF4684D4173DC2D1001F8A1F /* BOWLoginViewControllerDelegate.h */,
-				CF4684D5173DC2D1001F8A1F /* BOWLoginViewController.m */,
-				CF4684C3173DC034001F8A1F /* Supporting Files */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
-		CF4684C3173DC034001F8A1F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		CF6568C5171782B700AE84AC = {
 			isa = PBXGroup;
 			children = (
@@ -965,7 +927,6 @@
 			children = (
 				CF024E1D180F0EB000F9CF54 /* New Group */,
 				CF247A77173C0CDA0079AD32 /* POCKETROSTERTEXTFILE.txt */,
-				CF4684C0173DC009001F8A1F /* Login */,
 				1E11F6931839E1F60091E8C2 /* Images */,
 				1EB48AD81835F7CE00C42B5C /* Scoreboard */,
 				1EF9AB691832CD7600A8C159 /* Team */,
@@ -978,7 +939,6 @@
 				CF65691C171787DF00AE84AC /* AppDelegate.m */,
 				1E08C6D118566FCD00AB5F3C /* Pocket_RosterAppDelegate.h */,
 				1E08C6D218566FCD00AB5F3C /* Pocket_RosterAppDelegate.m */,
-				CF833B18171E14110011DED3 /* iPad.storyboard */,
 				CF6568EC171782B700AE84AC /* MainStoryboard.storyboard */,
 				CF2CE17C18615EDF003E0CDB /* iPhone4Board.storyboard */,
 				CF2CE16B186130A7003E0CDB /* HomeVC.h */,
@@ -1250,7 +1210,6 @@
 				CFE1F9811839E3EC00E8BD9E /* WFieldHockeyPhoto.jpg in Resources */,
 				CF024E2F1816307F00F9CF54 /* iconOld.png in Resources */,
 				CFE1F98D1839E55600E8BD9E /* WLaxPhoto.jpg in Resources */,
-				CF833B19171E14110011DED3 /* iPad.storyboard in Resources */,
 				CFE1F9851839E45E00E8BD9E /* WGolfSchedule.jpg in Resources */,
 				CFE1F9531839DD1100E8BD9E /* MGolfPhoto.jpg in Resources */,
 				CF833B391720C0E40011DED3 /* BowdoinSwimming.jpg in Resources */,
@@ -1422,7 +1381,6 @@
 				CF247AED173DAA130079AD32 /* WBasketballFinal.png in Resources */,
 				CF247AEF173DAC7B0079AD32 /* WFieldHockeyFinal.png in Resources */,
 				CFE1F9911839E5AA00E8BD9E /* WRugbyPhoto.jpg in Resources */,
-				CF4684DB173DC4D0001F8A1F /* LoginButton.png in Resources */,
 				CFC1F42A1862C3F300535AA0 /* creditBack4.png in Resources */,
 				CFE1F97B1839E2E600E8BD9E /* WCrossCountryPhoto.jpg in Resources */,
 				CF56488F174096690067FBBB /* NewsfeedIcon.png in Resources */,
@@ -1503,10 +1461,7 @@
 				1E11F67D183998630091E8C2 /* CoachesBioViewController.m in Sources */,
 				1E2F177D1728837D0023515F /* ScheduleTVC.m in Sources */,
 				1EC4B66F183A0C1800226160 /* ImageCollectionCell.m in Sources */,
-				CF247A75173C0B8D0079AD32 /* PersonalAccount.m in Sources */,
 				1E11F676183950EB0091E8C2 /* CoachesCell.m in Sources */,
-				CF4684D7173DC2D1001F8A1F /* BOWAppDelegate.m in Sources */,
-				CF4684D8173DC2D1001F8A1F /* BOWLoginViewController.m in Sources */,
 				1E08C6D61856704400AB5F3C /* ImageViewController.m in Sources */,
 				1E08C6D318566FCD00AB5F3C /* Pocket_RosterAppDelegate.m in Sources */,
 				1E11F66D1839509B0091E8C2 /* CustomProgressView.m in Sources */,
@@ -1546,7 +1501,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF656906171782B700AE84AC /* Pocket_RosterTests.m in Sources */,
-				CF247A76173C0B8D0079AD32 /* PersonalAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

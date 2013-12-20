@@ -245,13 +245,21 @@
  ****************************
  */
 
+
     
 //club
 #define mensRugbyStartingURL   @"http://athletics.bowdoin.edu/sports/mrugby/2013-14/schedule";
 #define womensCrewStartingURL   @"http://athletics.bowdoin.edu/sports/rowing/2013-14/schedule";
 #define mensCrewStartingURL   @"http://athletics.bowdoin.edu/sports/rowing/2013-14/schedule";
-//#define womensWaterPoloStartingURL   @"http://athletics.bowdoin.edu/sports/mrugby/index";
-//#define mensWaterPoloStartingURL   @"http://athletics.bowdoin.edu/sports/mrugby/index";
+
+#define womensCrewLongForm   YES;
+#define mensCrewLongForm   YES;
+#define mensRugbyLongForm   YES;
+
+#define womensCrewName   @"Women's Crew";
+#define mensCrewName   @"Men's Crew";
+#define mensRugbyName   @"Men's Rugby";
+
 
 // backgroundImagePath For Club Sports
 #define womensCrewBackgroundImagePath [[NSBundle mainBundle]pathForResource:@"WCrewBack" ofType:@"jpg"]
