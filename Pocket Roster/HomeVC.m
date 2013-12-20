@@ -47,7 +47,7 @@
                                  
                                  NSString *emailBody = @" ";
                                  [mailer setMessageBody:emailBody isHTML:NO];
-                                 [self presentModalViewController:mailer animated:YES];
+                                 [self presentViewController:mailer animated:YES completion:nil];
                                  
                                  }
                                  else
@@ -82,7 +82,7 @@
             break;
     }
     // Remove the mail view
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
