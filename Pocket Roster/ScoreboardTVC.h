@@ -14,5 +14,6 @@
 @property (nonatomic) NSMutableDictionary *scoreboard;
 
 - (void) refresh: (UIRefreshControl *)sender;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *load;
 
 @end

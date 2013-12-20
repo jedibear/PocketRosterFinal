@@ -28,7 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [load startAnimating];
+    [self.load startAnimating];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -45,12 +45,14 @@
     self.scoreboard = [[NSMutableDictionary alloc]init];
     self.scoreboard = [GetScoreBoard getTheScoreBoard:self.incommingScheduleURL];
     
-    [load stopAnimating];
+    [self.load stopAnimating];
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc]init];
 
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
     [self setRefreshControl:refreshControl];
+    [self.tableView reloadData];
+
     
 }
 
