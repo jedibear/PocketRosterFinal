@@ -406,7 +406,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="koa-qf-Fte"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="koa-qf-Fte"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YDL-Lm-tz8">
@@ -491,6 +491,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="eZ2-DQ-x7X"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Seasons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OzQ-c3-aeA">
                                 <rect key="frame" x="127" y="53" width="139" height="42"/>
@@ -1031,6 +1034,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="WPO-zj-3N7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x6U-FQ-6Es">
                                 <rect key="frame" x="133" y="35" width="139" height="42"/>
@@ -1114,6 +1120,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="AB3-EG-vQJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X7r-3o-iRW">
                                 <rect key="frame" x="124" y="35" width="119" height="42"/>
@@ -1197,6 +1206,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="Iv2-yT-g6K"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ipc-g0-KjK">
                                 <rect key="frame" x="128" y="35" width="132" height="42"/>
@@ -1613,7 +1625,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="tCU-Yn-cws"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="t1S-WY-4fn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m72-SA-pxc">
@@ -1645,7 +1657,7 @@
             <objects>
                 <tableViewController id="Kkc-8n-udI" customClass="MasterTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cll-7j-L3D">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1889,6 +1901,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="pRm-jA-dgR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V5Z-PJ-cQt">
                                 <rect key="frame" x="124" y="35" width="119" height="42"/>
@@ -1919,7 +1934,7 @@
             <objects>
                 <tableViewController id="Zef-F1-zlN" customClass="MasterTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Gza-zb-Lvj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.61345232660000004" alpha="1" colorSpace="calibratedWhite"/>
@@ -2570,6 +2585,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="nBe-5u-lgz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JO3-E8-dWc">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -3146,6 +3164,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="1kV-Ma-aPg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p2L-EY-bKA">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -3233,6 +3254,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="ODx-SY-EFb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oZU-p4-eLN">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -3381,6 +3405,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="40g-Im-Vpr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="on5-nq-BYW">
                                 <rect key="frame" x="68" y="20" width="184" height="56"/>
@@ -3473,6 +3500,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="e62-wR-Qqx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nJ4-jW-oJp">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -3664,7 +3694,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qch-XT-WE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3203" y="6160"/>
+            <point key="canvasLocation" x="-864" y="-2698"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="iF1-sM-ZBy">
@@ -3716,6 +3746,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="MMI-w3-JdJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SqD-je-FrW">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -3885,11 +3918,14 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vg8-O6-So5">
-                                <rect key="frame" x="258" y="29" width="46" height="46"/>
+                                <rect key="frame" x="254" y="29" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="KJR-ZE-yDo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3rm-jn-UUO">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -4019,6 +4055,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="nqM-5G-0DL"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="86g-Jh-m6V">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -4167,6 +4206,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="niT-h3-1EY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e5v-P0-KOt">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -4336,6 +4378,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" id="6fS-J7-cbV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Recent Images" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Z8-If-1Mi">
                                 <rect key="frame" x="87" y="33" width="147" height="53"/>
@@ -4411,6 +4456,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" id="1NM-aa-F2w"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yhm-a2-3Lj">
                                 <rect key="frame" x="87" y="45" width="147" height="53"/>
@@ -4627,6 +4675,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="ari-t1-cHZ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lel-RV-vC6">
                                 <rect key="frame" x="87" y="37" width="147" height="53"/>
@@ -4717,6 +4768,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="rzq-dS-aZp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NVt-e6-1gv">
                                 <rect key="frame" x="87" y="45" width="147" height="53"/>
@@ -5196,7 +5250,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="bB8-Hw-nV2"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="bB8-Hw-nV2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R2n-cj-Pil">
@@ -5286,7 +5340,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="lXO-f6-e5B"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="lXO-f6-e5B"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="agp-XN-rkM">
@@ -5437,7 +5491,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="ekl-mE-ObU"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="ekl-mE-ObU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V81-30-BS0">
@@ -5479,7 +5533,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9s4-6y-w2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2909" y="6651"/>
+            <point key="canvasLocation" x="2938" y="6597"/>
         </scene>
         <!--Roster Athlete View Controller-->
         <scene sceneID="d5c-CO-qzW">
@@ -5532,7 +5586,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="n7b-0X-ep3"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="n7b-0X-ep3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K7H-mV-iff">
@@ -5699,7 +5753,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="8fz-z6-YTZ"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="8fz-z6-YTZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ui5-oP-aXJ">
@@ -5876,7 +5930,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="JoJ-Hl-eSq"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="JoJ-Hl-eSq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="apu-Le-S84">
@@ -6008,7 +6062,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="3uk-uS-D60"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="3uk-uS-D60"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HLd-Di-DZp">
@@ -6159,7 +6213,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="9fF-7C-DS4"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="9fF-7C-DS4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WAj-6F-8qx">
@@ -6318,7 +6372,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="1ht-m7-oLb"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="1ht-m7-oLb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hqp-gY-Mau">
@@ -6411,7 +6465,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="48N-Ai-h6h"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="48N-Ai-h6h"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J5S-J3-zTd">
@@ -6573,6 +6627,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="LYr-EJ-gmi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="030-Nj-9o2">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -6674,7 +6731,7 @@
             <objects>
                 <tableViewController id="PMZ-pG-PFB" customClass="TeamTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="pMU-YO-mAV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -6888,6 +6945,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="Jfj-pQ-KT8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fZ0-HE-Jp1">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -6975,6 +7035,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="Mlt-YE-alu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NJT-G7-VpH">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -7016,7 +7079,7 @@
             <objects>
                 <tableViewController id="Z33-dE-b0O" customClass="RSSTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="134" sectionHeaderHeight="22" sectionFooterHeight="22" id="GFu-fg-6sW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="GhB-SW-1ud">
@@ -7123,6 +7186,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="F7H-CJ-odi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="imt-1t-Us5">
                                 <rect key="frame" x="68" y="20" width="184" height="56"/>
@@ -7215,6 +7281,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="nkH-L3-iIp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KYF-oG-UdY">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -7379,6 +7448,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="z4J-Vm-RFE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xo8-JJ-dmb">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -7425,7 +7497,7 @@
             <objects>
                 <tableViewController id="Iok-JF-OPS" customClass="ScheduleTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="117" sectionHeaderHeight="22" sectionFooterHeight="22" id="PQv-gM-w6V">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -7553,6 +7625,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="Lgq-Rz-f6X"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pab-Au-vME">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -7682,6 +7757,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="PIO-Pc-hDc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EL3-hw-bcJ">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -7723,7 +7801,7 @@
             <objects>
                 <tableViewController id="E0B-P7-Vxk" customClass="CoachesTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="22" sectionFooterHeight="22" id="Umj-eP-67g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="x3e-RW-9S5">
@@ -7830,6 +7908,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="EP6-Y8-Jo8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d2u-rO-ZPQ">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -7986,6 +8067,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="Jw1-Hz-YPm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="alr-X9-bSg">
                                 <rect key="frame" x="87" y="37" width="147" height="53"/>
@@ -8076,6 +8160,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="ZzU-Pv-Fma"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jaa-7T-i5V">
                                 <rect key="frame" x="87" y="46" width="147" height="53"/>
@@ -8231,11 +8318,14 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hG6-lN-349">
-                                <rect key="frame" x="258" y="29" width="46" height="46"/>
+                                <rect key="frame" x="254" y="29" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="zcY-sz-Seb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3ya-8e-aGP">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -8551,6 +8641,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="KyZ-qp-JsJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iBW-Et-4gw">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -8638,6 +8731,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="zRG-ZF-MrV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tm5-BG-UxF">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -8679,7 +8775,7 @@
             <objects>
                 <tableViewController id="1We-Nv-1ia" customClass="RSSTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="134" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ohn-9h-83R">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="Ow9-8p-APY">
@@ -8786,6 +8882,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="XDm-ft-mSr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k2g-Xj-dh8">
                                 <rect key="frame" x="68" y="20" width="184" height="56"/>
@@ -8879,6 +8978,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="YMS-Ih-mV9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lZA-ZY-7cJ">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -9043,6 +9145,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="kcR-R8-SKH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="62o-i8-fdO">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -9217,6 +9322,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" id="w2F-wG-Zob"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yM1-Q9-JRC">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -9346,6 +9454,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="r2R-JB-F5H"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oKh-26-S9l">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -9489,11 +9600,14 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iMD-f8-xG8">
-                                <rect key="frame" x="258" y="29" width="46" height="46"/>
+                                <rect key="frame" x="254" y="29" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="RH8-2i-O36"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aNR-1i-iqI">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -9650,6 +9764,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" id="JBy-Vz-u1R"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jd6-IU-uXF">
                                 <rect key="frame" x="87" y="37" width="147" height="53"/>
@@ -9740,6 +9857,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" id="fJM-yP-BjC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vfZ-Xf-rdO">
                                 <rect key="frame" x="87" y="44" width="147" height="53"/>
@@ -9900,6 +10020,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="pUF-NH-DHl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gz6-gf-nDx">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -9946,7 +10069,7 @@
             <objects>
                 <tableViewController id="QdW-U2-qHY" customClass="RosterTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="4O2-vu-GlF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -10001,7 +10124,7 @@
             <objects>
                 <tableViewController id="GRs-at-4ye" customClass="TeamTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="JjM-cD-7ry">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -10215,6 +10338,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="Gdn-JC-kLT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dIT-sL-KEb">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -10302,6 +10428,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="sic-YE-4LE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ncP-qj-aId">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -10445,11 +10574,14 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="D0C-eJ-Idt">
-                                <rect key="frame" x="258" y="29" width="46" height="46"/>
+                                <rect key="frame" x="260" y="29" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="HBr-Nt-fb1"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UvR-2V-YeR">
                                 <rect key="frame" x="68" y="20" width="184" height="56"/>
@@ -10542,6 +10674,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="xTD-FQ-GE7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="POU-02-o8L">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -10706,6 +10841,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="wbY-pV-QDe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zaR-oQ-Rgk">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -10745,7 +10883,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vku-rs-V2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3327" y="-613"/>
+            <point key="canvasLocation" x="3066" y="-701"/>
         </scene>
         <!--ScheduleTVC-->
         <scene sceneID="rGj-DC-j4G">
@@ -10880,6 +11018,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="xSe-yi-0fU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="epZ-y1-rBX">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -11009,6 +11150,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="yOB-6Q-Bxu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R6s-Sz-oTP">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -11157,6 +11301,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="qPN-FE-IqX"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z5d-lh-Fk2">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -11313,6 +11460,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="IaW-m6-vh3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nMU-va-sF0">
                                 <rect key="frame" x="87" y="37" width="147" height="53"/>
@@ -11403,6 +11553,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="hME-8Z-JzN"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M6l-nP-M4L">
                                 <rect key="frame" x="87" y="45" width="147" height="53"/>
@@ -11563,6 +11716,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="Umg-5P-yeO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xxf-Ky-VWf">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -11878,6 +12034,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="eto-Ct-vjC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a8a-0I-bA6">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -11965,6 +12124,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="PKm-FF-I1V"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MJ4-ou-wCi">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -12113,6 +12275,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="4dS-VH-8uP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rlh-wk-5KP">
                                 <rect key="frame" x="68" y="20" width="184" height="56"/>
@@ -12205,6 +12370,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="QZm-4F-3zr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8uO-zQ-kL1">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -12369,6 +12537,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="xBD-60-muf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v5s-Sf-ZnR">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -12543,6 +12714,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="N7m-ay-jNY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8dJ-q4-s6X">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -12672,6 +12846,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="VuM-Yb-6Il"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r4I-Qk-FsA">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -12820,6 +12997,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="LG2-rk-W6t"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i3q-61-fQa">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -12976,6 +13156,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="7VH-fl-Uh0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0FB-0f-ren">
                                 <rect key="frame" x="87" y="37" width="147" height="53"/>
@@ -13066,6 +13249,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="CqH-ly-JGZ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gUG-7C-eDX">
                                 <rect key="frame" x="87" y="46" width="147" height="53"/>
@@ -14638,52 +14824,52 @@
         <segue reference="zSS-Z2-YyB"/>
         <segue reference="tAs-au-eGH"/>
         <segue reference="cvh-kN-Pbk"/>
-        <segue reference="AHN-CG-oCf"/>
-        <segue reference="qXl-aH-665"/>
-        <segue reference="kn6-zI-SFc"/>
-        <segue reference="Gdj-60-Xcf"/>
-        <segue reference="gA2-KR-xHd"/>
-        <segue reference="evm-Iz-CzK"/>
+        <segue reference="Jn3-OX-nTe"/>
+        <segue reference="wMg-AO-fAc"/>
+        <segue reference="xkx-an-Dfc"/>
+        <segue reference="qqF-TU-SMJ"/>
         <segue reference="Y8c-7u-6vq"/>
+        <segue reference="6Ks-fJ-hXk"/>
         <segue reference="BVI-d1-1wy"/>
         <segue reference="VVN-yD-yRg"/>
+        <segue reference="6F7-6u-A4f"/>
+        <segue reference="3l1-cn-Yhj"/>
         <segue reference="Y1j-bH-KX9"/>
         <segue reference="JsG-Jg-SRg"/>
-        <segue reference="hR9-cm-tec"/>
-        <segue reference="lIc-4a-CIC"/>
-        <segue reference="LUW-mX-r35"/>
+        <segue reference="6fS-J7-cbV"/>
+        <segue reference="dvB-da-Chg"/>
+        <segue reference="v2i-bf-luh"/>
+        <segue reference="PGo-hc-LQ6"/>
         <segue reference="hKP-yy-4dp"/>
         <segue reference="ShM-0a-CXD"/>
         <segue reference="cOf-JH-8eN"/>
-        <segue reference="11h-8S-kvl"/>
-        <segue reference="n7b-0X-ep3"/>
-        <segue reference="Wn9-hR-3OG"/>
-        <segue reference="dcF-hv-hmo"/>
-        <segue reference="v2i-bf-luh"/>
-        <segue reference="jWr-1m-8Ix"/>
-        <segue reference="gpP-rc-Cgf"/>
-        <segue reference="c6k-1a-6n5"/>
-        <segue reference="PGo-hc-LQ6"/>
         <segue reference="KmK-dI-aVv"/>
         <segue reference="u6V-dE-ay1"/>
-        <segue reference="48x-Dh-jKz"/>
-        <segue reference="0CL-l5-K4k"/>
-        <segue reference="RHO-9z-i9q"/>
+        <segue reference="Asp-R6-k78"/>
+        <segue reference="DR5-c2-w5u"/>
+        <segue reference="Rrg-Oh-NwK"/>
         <segue reference="tjB-sF-a6S"/>
         <segue reference="MPe-AW-eIH"/>
         <segue reference="Tp8-N7-VrK"/>
-        <segue reference="MC5-f9-FW4"/>
+        <segue reference="xK9-Fi-ImF"/>
+        <segue reference="WsU-3Z-bMu"/>
+        <segue reference="oQX-lm-Ye2"/>
         <segue reference="xTh-kW-qs2"/>
-        <segue reference="cVc-Kz-KS9"/>
-        <segue reference="VyF-zp-8Pr"/>
+        <segue reference="9oK-WO-rKN"/>
+        <segue reference="mMk-QF-Q8H"/>
         <segue reference="RyI-yg-66N"/>
         <segue reference="ogw-9r-dmG"/>
         <segue reference="7Ig-m1-OeX"/>
+        <segue reference="8nJ-cb-89J"/>
         <segue reference="d6z-q9-q3k"/>
+        <segue reference="PTj-LA-VNS"/>
+        <segue reference="tLG-fB-QyS"/>
+        <segue reference="dad-FU-esw"/>
         <segue reference="VpI-Q8-VmD"/>
         <segue reference="58m-bY-vZR"/>
+        <segue reference="b2R-m7-unl"/>
         <segue reference="V1o-lv-Mzc"/>
-        <segue reference="DR5-c2-w5u"/>
+        <segue reference="8rS-BQ-LW8"/>
         <segue reference="Huv-8r-45z"/>
     </inferredMetricsTieBreakers>
 </document>
