@@ -47,6 +47,8 @@
 		1ECC5583173F0FDD00EBD61D /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECC5582173F0FDD00EBD61D /* NewsFeedViewController.m */; };
 		1EDB02E218385092008D7BC2 /* News Story View Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB02E118385092008D7BC2 /* News Story View Controller.m */; };
 		1EDB02E4183855B3008D7BC2 /* rosterPhotoMissing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EDB02E3183855B3008D7BC2 /* rosterPhotoMissing.jpg */; };
+		1EEA9722186407E20010A177 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEA9721186407E20010A177 /* MessageUI.framework */; };
+		1EEA9725186408690010A177 /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA9724186408690010A177 /* EmailViewController.m */; };
 		1EF619AA183493CB0089C154 /* RosterTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF619A9183493CB0089C154 /* RosterTVC.m */; };
 		1EF619AD1834C6600089C154 /* RosterSplashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF619AC1834C6600089C154 /* RosterSplashVC.m */; };
 		1EF619B21834FD7A0089C154 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF619B11834FD7A0089C154 /* QuartzCore.framework */; };
@@ -375,6 +377,9 @@
 		1EDB02E018385092008D7BC2 /* News Story View Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "News Story View Controller.h"; sourceTree = "<group>"; };
 		1EDB02E118385092008D7BC2 /* News Story View Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "News Story View Controller.m"; sourceTree = "<group>"; };
 		1EDB02E3183855B3008D7BC2 /* rosterPhotoMissing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rosterPhotoMissing.jpg; sourceTree = SOURCE_ROOT; };
+		1EEA9721186407E20010A177 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1EEA9723186408690010A177 /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
+		1EEA9724186408690010A177 /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
 		1EF619A8183493CB0089C154 /* RosterTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosterTVC.h; sourceTree = "<group>"; };
 		1EF619A9183493CB0089C154 /* RosterTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RosterTVC.m; sourceTree = "<group>"; };
 		1EF619AB1834C6600089C154 /* RosterSplashVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosterSplashVC.h; sourceTree = "<group>"; };
@@ -625,6 +630,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEA9722186407E20010A177 /* MessageUI.framework in Frameworks */,
 				1EF619B21834FD7A0089C154 /* QuartzCore.framework in Frameworks */,
 				CF6568D5171782B700AE84AC /* UIKit.framework in Frameworks */,
 				CF6568D7171782B700AE84AC /* Foundation.framework in Frameworks */,
@@ -915,6 +921,8 @@
 		CF6568C5171782B700AE84AC = {
 			isa = PBXGroup;
 			children = (
+				1EEA9723186408690010A177 /* EmailViewController.h */,
+				1EEA9724186408690010A177 /* EmailViewController.m */,
 				CFC1F4251862AEB600535AA0 /* imageBackDrop5.png */,
 				CFC1F4231862AEAE00535AA0 /* imageBackDrop4.png */,
 				CF2CE125185CE908003E0CDB /* info.png */,
@@ -947,6 +955,7 @@
 		CF6568D3171782B700AE84AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1EEA9721186407E20010A177 /* MessageUI.framework */,
 				1EF619B11834FD7A0089C154 /* QuartzCore.framework */,
 				CF6568D4171782B700AE84AC /* UIKit.framework */,
 				CF6568D6171782B700AE84AC /* Foundation.framework */,
@@ -1510,6 +1519,7 @@
 				CFE1F8DD1830067100E8BD9E /* GetFacility.m in Sources */,
 				1E11F68C1839E0500091E8C2 /* HomeImageTVC.m in Sources */,
 				CFE1F8E018303DF600E8BD9E /* GetSchedule.m in Sources */,
+				1EEA9725186408690010A177 /* EmailViewController.m in Sources */,
 				1E11F6961839E3E50091E8C2 /* ImagesCollectionContainerViewController.m in Sources */,
 				1E11F6991839E8F80091E8C2 /* HomeImageCell.m in Sources */,
 				1E11F6821839D8690091E8C2 /* GetAlbums.m in Sources */,
