@@ -120,30 +120,36 @@
             }
             
             // Add Phone
-            [scanner scanUpToString:@"class=\"lbl" intoString:NULL];
-            [scanner scanUpToString:@"class=\"val" intoString:NULL];
-            [scanner scanUpToString:@">" intoString:NULL];
-            [scanner scanUpToString:@"</td>" intoString:&coachPhonePre];
+            if ([test rangeOfString:@"Phone"].location != NSNotFound) {
+                [scanner scanUpToString:@"class=\"lbl" intoString:NULL];
+                [scanner scanUpToString:@"class=\"val" intoString:NULL];
+                [scanner scanUpToString:@">" intoString:NULL];
+                [scanner scanUpToString:@"</td>" intoString:&coachPhonePre];
             
-            coachPhone = [coachPhonePre substringFromIndex: dumbVariable];
-            
-            if (coachPhone){
-                [bowdoinCoachesElements setObject:coachPhone forKey:@"phone"];
+                coachPhone = [coachPhonePre substringFromIndex: dumbVariable];
+                
+                if (coachPhone){
+                    [bowdoinCoachesElements setObject:coachPhone forKey:@"phone"];
+                }
             }
+            
             
             // Add email
-            [scanner scanUpToString:@"class=\"lbl" intoString:NULL];
-            [scanner scanUpToString:@"class=\"val" intoString:NULL];
+            if ([test rangeOfString:@"Email"].location != NSNotFound) {
+                [scanner scanUpToString:@"class=\"lbl" intoString:NULL];
+                [scanner scanUpToString:@"class=\"val" intoString:NULL];
 
-            [scanner scanUpToString:@">" intoString:NULL];
-            [scanner scanUpToString:@"</a>" intoString:&coachEmailPre];
-            NSArray* breakDownString = [coachEmailPre componentsSeparatedByString:@">"];
+                [scanner scanUpToString:@">" intoString:NULL];
+                [scanner scanUpToString:@"</a>" intoString:&coachEmailPre];
+                NSArray* breakDownString = [coachEmailPre componentsSeparatedByString:@">"];
             
-            coachEmail = [breakDownString objectAtIndex: 2];
+                coachEmail = [breakDownString objectAtIndex: 2];
             
-            if (coachEmail){
-                [bowdoinCoachesElements setObject:coachEmail forKey:@"email"];
+                if (coachEmail){
+                    [bowdoinCoachesElements setObject:coachEmail forKey:@"email"];
+                }
             }
+            
             
             
             NSString *failSafe;

@@ -28,22 +28,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [load startAnimating];
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+- (void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    
     
     self.incommingScheduleURL = @"http://athletics.bowdoin.edu/landing/index";
     
     self.scoreboard = [[NSMutableDictionary alloc]init];
     self.scoreboard = [GetScoreBoard getTheScoreBoard:self.incommingScheduleURL];
     
+    [load stopAnimating];
+    
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc]init];
 
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
     [self setRefreshControl:refreshControl];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,9 +65,6 @@
     sender.attributedTitle = [[NSAttributedString alloc]initWithString:@"Refreshing Scoreboard..."];
     
     self.scoreboard = [GetScoreBoard getTheScoreBoard:@"http://athletics.bowdoin.edu/landing/index"];
-    
-    [self.scoreboard removeObjectForKey:@"1"];
-    
     
     [self.tableView reloadData];
     
