@@ -89,7 +89,7 @@
         
         NSScanner *team1Scan = [[NSScanner alloc]initWithString:[[team1 substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""]];
         [team1Scan scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
-        [team1Scan scanUpToString:@" " intoString:&team1];
+        [team1Scan scanUpToString:@"" intoString:&team1];
         
         
         [contest setObject:team1 forKey:@"team1"];
@@ -132,7 +132,7 @@
         //save the 2nd team
         NSScanner *team2Scan = [[NSScanner alloc]initWithString:[[team2 substringFromIndex:1]stringByReplacingOccurrencesOfString:@"\n" withString:@""]];
         [team2Scan scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
-        [team2Scan scanUpToString:@" " intoString:&team2];
+        [team2Scan scanUpToString:@"" intoString:&team2];
         
         
         [contest setObject:team2 forKey:@"team2"];
