@@ -2749,6 +2749,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="4UF-yy-QJ9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1rv-jI-jFj">
                                 <rect key="frame" x="124" y="40" width="119" height="42"/>
@@ -3694,7 +3697,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qch-XT-WE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-864" y="-2698"/>
+            <point key="canvasLocation" x="-3389" y="-2210"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="iF1-sM-ZBy">
@@ -4379,7 +4382,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="6fS-J7-cbV"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="1mX-HW-LYo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Recent Images" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Z8-If-1Mi">
@@ -4457,7 +4460,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="1NM-aa-F2w"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="1NM-aa-F2w"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yhm-a2-3Lj">
@@ -9323,7 +9326,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="w2F-wG-Zob"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="w2F-wG-Zob"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yM1-Q9-JRC">
@@ -9765,7 +9768,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="JBy-Vz-u1R"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="JBy-Vz-u1R"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jd6-IU-uXF">
@@ -9858,7 +9861,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b6S-HY-nrG" kind="modal" id="fJM-yP-BjC"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="fJM-yP-BjC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vfZ-Xf-rdO">
@@ -13389,7 +13392,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="DOg-gk-edS" kind="modal" modalTransitionStyle="crossDissolve" id="V1o-lv-Mzc"/>
+                                    <segue destination="b6S-HY-nrG" kind="modal" modalTransitionStyle="crossDissolve" id="mfC-kP-WFq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P3g-9h-BpK">
@@ -14826,6 +14829,11 @@
         <segue reference="cvh-kN-Pbk"/>
         <segue reference="Jn3-OX-nTe"/>
         <segue reference="wMg-AO-fAc"/>
+        <segue reference="t1S-WY-4fn"/>
+        <segue reference="Wn9-hR-3OG"/>
+        <segue reference="v2i-bf-luh"/>
+        <segue reference="3xC-Jj-hfK"/>
+        <segue reference="PGo-hc-LQ6"/>
         <segue reference="xkx-an-Dfc"/>
         <segue reference="qqF-TU-SMJ"/>
         <segue reference="Y8c-7u-6vq"/>
@@ -14835,11 +14843,6 @@
         <segue reference="6F7-6u-A4f"/>
         <segue reference="3l1-cn-Yhj"/>
         <segue reference="Y1j-bH-KX9"/>
-        <segue reference="JsG-Jg-SRg"/>
-        <segue reference="6fS-J7-cbV"/>
-        <segue reference="dvB-da-Chg"/>
-        <segue reference="v2i-bf-luh"/>
-        <segue reference="PGo-hc-LQ6"/>
         <segue reference="hKP-yy-4dp"/>
         <segue reference="ShM-0a-CXD"/>
         <segue reference="cOf-JH-8eN"/>
@@ -14868,7 +14871,6 @@
         <segue reference="VpI-Q8-VmD"/>
         <segue reference="58m-bY-vZR"/>
         <segue reference="b2R-m7-unl"/>
-        <segue reference="V1o-lv-Mzc"/>
         <segue reference="8rS-BQ-LW8"/>
         <segue reference="Huv-8r-45z"/>
     </inferredMetricsTieBreakers>
