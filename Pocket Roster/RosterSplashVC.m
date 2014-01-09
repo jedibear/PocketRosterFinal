@@ -40,24 +40,13 @@
         [self.teamNameLabel setText: self.teamName];
         [self.teamBackgroundImage setImage:[[UIImage alloc] initWithContentsOfFile:self.backgroundImagePath]];
     
-   
-    
-    /*
-    
-    
-    */
-    
 }
 
 - (void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
-    //self.queue = [NSOperationQueue new];
-   // NSInvocationOperation *operation = [[NSInvocationOperation alloc]initWithTarget:self selector:@selector(getAthleteBios) object:nil];
-    //[self.queue addOperation:operation];
+   
     [self performSelectorInBackground:@selector(getAthleteBios) withObject:nil];
-    //operation = [[NSInvocationOperation alloc]initWithTarget:self selector:@selector(updateProgressBar) object:nil];
-    //[self.queue addOperation:operation];
+   
 }
 
 - (NSMutableDictionary *) rosterBios{

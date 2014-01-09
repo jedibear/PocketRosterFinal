@@ -36,19 +36,7 @@
 {
     [super viewDidLoad];
     [self.load startAnimating];
-    //self.title = @"FEEDS";
-    //[self addArticles];
     
-    
-    
-    
-    
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -156,12 +144,10 @@
 
 
 - (void)parserDidStartDocument:(NSXMLParser *)parser {
-	NSLog(@"found file and started parsing");
 }
 
 - (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
 	NSString * errorString = [NSString stringWithFormat:@"Unable to download story feed from web site (Error code %i )", [parseError code]];
-	NSLog(@"error parsing XML: %@", errorString);
     
 	UIAlertView * errorAlert = [[UIAlertView alloc] initWithTitle:@"Error loading content" message:errorString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
 	[errorAlert show];
@@ -239,13 +225,7 @@
 }
 
 - (void)parserDidEndDocument:(NSXMLParser *)parser {
-    
-	//[activityIndicator stopAnimating];
-	//[activityIndicator removeFromSuperview];
-    
-	NSLog(@"all done!");
-	NSLog(@"stories array has %d items", [self.stories count]);
-	//[newsTable reloadData];
+   
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -289,77 +269,19 @@
                     
                 }
                 
-                //[segue.destinationViewController setNewsURL:self.sequeLink];
-                //[segue.destinationViewController setTitle:self.currentTitle];
+                
                 
             }
         }
     }
 }
-/*
--(void) performSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
-    
-    if([identifier isEqualToString:@"webView"]){
-        [self performSegueWithIdentifier:identifier sender:self];
-    }
-}
- */
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 
 
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    //self.sequeLink = [[self.stories objectAtIndex:indexPath.row]objectForKey:@"link"];
-    //self.wVC.inputURL = self.sequeLink;
-   
-   //[self performSegueWithIdentifier:@"webView" sender:self];
     
-    //[self getCorrectLink:indexPath.row];
-    //[self performSegueWithIdentifier:@"webView" sender:self];
-    
-     // ...
-     // Pass the selected object to the new view controller.
         
 }
 -(UIStatusBarStyle)preferredStatusBarStyle

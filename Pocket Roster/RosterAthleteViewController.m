@@ -49,7 +49,6 @@
     }];
     
     if (self.hasBioStory){
-        //[self.athleteStory setText:self.bioStory];
         [self.bioTextHolder setText:self.bioStory];
     }
     

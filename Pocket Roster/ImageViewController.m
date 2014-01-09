@@ -36,24 +36,19 @@
 {
     [super viewDidLoad];
 	
-    //UIImageView *imageView = [[UIImageView alloc] initWithImage:self.incImage];
     self.zoomedImage.image = self.incImage;
-    //imageView.center = self.view.center;
     self.zoomedImage.center = self.view.center;
-    //[self.view addSubview:imageView];
     
     self.zoomedImage.contentMode = UIViewContentModeScaleAspectFit;
-    //imageView.contentMode = UIViewContentModeScaleAspectFit;
-    
     
     CGRect frame = self.zoomedImage.frame;
     frame.size.width = 340;
     frame.origin.x = self.view.frame.size.width/2 - 170;
     frame.origin.y = self.view.frame.size.height/2 - frame.size.height/2;
-    //imageView.frame = frame;
+
     self.zoomedImage.image = self.incImage;
     self.zoomedImage.frame = frame;
-    //[imageView removeFromSuperview];
+
     
     
 }

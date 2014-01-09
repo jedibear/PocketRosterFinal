@@ -127,18 +127,15 @@
                 NSScanner *subScanner = [NSScanner scannerWithString:scheduleElement2aFinal];
                 [subScanner scanUpToString:@"<b" intoString:nil];
                 [subScanner scanUpToString:@">" intoString:nil];
-                //[subScanner scanUpToString:@"</b>" intoString:&scheduleElement1];
-                
+              
                 [subScanner scanUpToString:@"\n" intoString:&scheduleElement2];
                 scheduleElement2 = [scheduleElement2 substringFromIndex: dumbVariable];
-                //NSArray* breakDownString = [scheduleElement2 componentsSeparatedByString:@"<"];
                 
                
                 NSScanner *scan2 = [[NSScanner alloc]initWithString:scheduleElement2aFinal];
                 [scan2 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];
                 [scan2 scanUpToString:@"\n" intoString:&scheduleElement2aFinal];
                 
-                //scheduleElement2aFinal = [scheduleElement2aFinal stringByReplacingOccurrencesOfString:@"\n" withString:@""];
                 scheduleElement2aFinal = [scheduleElement2aFinal stringByReplacingOccurrencesOfString:@"b>" withString:@""];
                 
                 [scan2 scanUpToCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:nil];

@@ -22,12 +22,12 @@
     
     NSError *error;
     NSData *dataFromURL = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:&error];
-    
+    /**
     if(error){
         NSLog(@"there was an error");
         NSLog(@"%@",[error localizedDescription]);
     }
-
+     */
     //get the data from the web page
     NSString * htmlFromURL = [[NSString alloc] initWithData:dataFromURL encoding:NSASCIIStringEncoding];
     

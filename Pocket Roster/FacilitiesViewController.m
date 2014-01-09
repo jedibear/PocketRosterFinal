@@ -33,7 +33,7 @@
     self.imageIndex = 0;
     
     [self.teamNameLabel setText:self.teamName];
-    //self.load = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+
     [self.load startAnimating];
     
     

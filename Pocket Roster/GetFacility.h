@@ -11,9 +11,6 @@
 
 @interface GetFacility : NSObject
 
-
-
-
 +(NSMutableDictionary *) GetFacility: (NSString *) linkForURLSearch;
 
 

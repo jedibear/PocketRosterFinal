@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="bxX-mJ-p8u">
             <objects>
-                <viewController id="BB4-5X-GPb" sceneMemberID="viewController">
+                <viewController id="BB4-5X-GPb" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k0k-fd-X6i"/>
                         <viewControllerLayoutGuide type="bottom" id="PcB-MC-8Ae"/>
@@ -113,7 +113,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="IPX-d3-9gy" kind="modal" modalTransitionStyle="crossDissolve" id="NQS-xj-y8C"/>
+                                    <segue destination="IPX-d3-9gy" kind="modal" identifier="homeImages" modalTransitionStyle="crossDissolve" id="NQS-xj-y8C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRK-GV-UaR">
@@ -127,6 +127,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Skj-he-X1p" kind="modal" modalTransitionStyle="crossDissolve" id="y4s-7V-pr7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5l-L8-CaH">
                                 <rect key="frame" x="20" y="389" width="85" height="85"/>
@@ -165,7 +168,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AO0-kk-80W" kind="modal" modalTransitionStyle="crossDissolve" id="l0S-z0-tQ4"/>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Yrw-Dd-Fdc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -175,12 +178,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emQ-q4-emD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3635" y="16263"/>
+            <point key="canvasLocation" x="-3672" y="16147"/>
         </scene>
-        <!--Pocket Roster View Controller-->
+        <!--HomeVC-->
         <scene sceneID="UBh-Yc-u6V">
             <objects>
-                <viewController storyboardIdentifier="homeVC" id="k8t-Cc-X5r" customClass="Pocket_RosterViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeVC" id="k8t-Cc-X5r" customClass="HomeVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MiH-7h-b1H"/>
                         <viewControllerLayoutGuide type="bottom" id="M06-fG-eMP"/>
@@ -248,187 +251,6 @@
             </objects>
             <point key="canvasLocation" x="-4126" y="16263"/>
         </scene>
-        <!--ScoreboardTVC-->
-        <scene sceneID="Jgq-Nx-29k">
-            <objects>
-                <tableViewController id="VKx-pJ-S60" customClass="ScoreboardTVC" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" id="qTw-bj-Fyd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="398"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="IZM-uF-wj1">
-                            <rect key="frame" x="0.0" y="147" width="320" height="37"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </activityIndicatorView>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ScoreboardCell" rowHeight="125" id="HdK-ed-tRM" customClass="ScoreboardCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="125"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HdK-ed-tRM" id="HPf-k5-tnq">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKZ-S5-kUE">
-                                            <rect key="frame" x="20" y="41" width="180" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmx-hs-6bv">
-                                            <rect key="frame" x="20" y="78" width="180" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EG-oI-0jx">
-                                            <rect key="frame" x="20" y="11" width="189" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnI-Ow-PjE">
-                                            <rect key="frame" x="208" y="41" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbn-9i-QuJ">
-                                            <rect key="frame" x="208" y="78" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJm-EK-otP">
-                                            <rect key="frame" x="258" y="61" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUy-N2-c3M">
-                                            <rect key="frame" x="217" y="11" width="83" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="date" destination="xUy-N2-c3M" id="oqn-eD-XMp"/>
-                                    <outlet property="score1" destination="ZnI-Ow-PjE" id="ezT-mQ-zkl"/>
-                                    <outlet property="score2" destination="lbn-9i-QuJ" id="fwV-Xw-Ez4"/>
-                                    <outlet property="sportLabel" destination="4EG-oI-0jx" id="l9J-Tb-GtS"/>
-                                    <outlet property="status" destination="yJm-EK-otP" id="xrA-rp-TAm"/>
-                                    <outlet property="team1" destination="JKZ-S5-kUE" id="IyP-Yv-eOc"/>
-                                    <outlet property="team2" destination="xmx-hs-6bv" id="wza-js-2DA"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="VKx-pJ-S60" id="PLJ-wm-pZH"/>
-                            <outlet property="delegate" destination="VKx-pJ-S60" id="vSa-rp-CSG"/>
-                        </connections>
-                    </tableView>
-                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="26x-aJ-hsf">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </refreshControl>
-                    <connections>
-                        <outlet property="load" destination="IZM-uF-wj1" id="iTq-8b-nXd"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uui-KQ-6cs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3917" y="15510"/>
-        </scene>
-        <!--Scoreboard View Controller-->
-        <scene sceneID="oO8-O2-jgr">
-            <objects>
-                <viewController id="AO0-kk-80W" customClass="ScoreboardViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dom-Fa-TeW"/>
-                        <viewControllerLayoutGuide type="bottom" id="ulm-oc-TK4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PGU-Kz-Xgx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Dh-c1-IJR">
-                                <rect key="frame" x="0.0" y="85" width="320" height="398"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="VKx-pJ-S60" kind="embed" identifier="embedScoreboard" id="ubg-M7-ddT"/>
-                                </connections>
-                            </containerView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngF-de-7Mp">
-                                <rect key="frame" x="162" y="22" width="158" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4N-gh-V15">
-                                <rect key="frame" x="11" y="26" width="49" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="HomeBearLogo.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BB4-5X-GPb" kind="modal" modalTransitionStyle="crossDissolve" id="40z-XR-h1F"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFO-WK-UEW">
-                                <rect key="frame" x="0.0" y="81" width="320" height="4"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygk-I1-9uJ">
-                                <rect key="frame" x="128" y="20" width="64" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="HomeB.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwz-8i-v3o">
-                                <rect key="frame" x="260" y="27" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="FavsB.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Scoreboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq8-Oe-dGq">
-                                <rect key="frame" x="92" y="52" width="147" height="42"/>
-                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="2" height="2"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cBw-D1-Ayf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3766" y="15412"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="EwW-ii-Rmh">
             <objects>
@@ -491,6 +313,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="ijS-5l-KAO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sv7-91-KTj">
                                 <rect key="frame" x="136" y="35" width="142" height="42"/>
@@ -515,14 +340,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jtE-qT-Ekx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4362" y="14512"/>
+            <point key="canvasLocation" x="5449" y="13189"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="CIY-v0-9Aa">
             <objects>
                 <tableViewController id="dzH-9q-DAk" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iuV-Fs-woc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="391"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -584,7 +409,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="n00-2l-E8E" kind="modal" id="NBW-kg-XMJ"/>
+                                            <segue destination="n00-2l-E8E" kind="modal" modalTransitionStyle="crossDissolve" id="NBW-kg-XMJ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="135" id="Tlb-On-NgC">
@@ -623,7 +448,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkv-pm-O0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4403" y="14702"/>
+            <point key="canvasLocation" x="5835" y="13030"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="TOb-MP-bzB">
@@ -687,6 +512,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="8Bz-ND-eB2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ee-bR-alj">
                                 <rect key="frame" x="134" y="32" width="139" height="42"/>
@@ -947,6 +775,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Uhp-gt-J5S"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I6-tA-dw6">
                                 <rect key="frame" x="57" y="26" width="206" height="42"/>
@@ -1267,6 +1098,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Xuw-6s-lem"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WU6-rt-x4E">
                                 <rect key="frame" x="57" y="32" width="206" height="42"/>
@@ -1359,6 +1193,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="YKj-hx-JoC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxt-BZ-wnF">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -1512,6 +1349,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="IgO-Za-p9Q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="184" translatesAutoresizingMaskIntoConstraints="NO" id="bcE-kn-CqG">
                                 <rect key="frame" x="68" y="25" width="184" height="56"/>
@@ -1609,6 +1449,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="lnd-se-7mf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeu-2N-uCI">
                                 <rect key="frame" x="57" y="32" width="206" height="42"/>
@@ -1637,7 +1480,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="No bio available." translatesAutoresizingMaskIntoConstraints="NO" id="zsH-YG-KvP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="No bio available." translatesAutoresizingMaskIntoConstraints="NO" id="zsH-YG-KvP">
                                 <rect key="frame" x="10" y="231" width="301" height="249"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1783,6 +1626,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Dbd-62-KmI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iue-sh-oJw">
                                 <rect key="frame" x="56" y="35" width="206" height="42"/>
@@ -1962,6 +1808,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="XjB-fs-N9Q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEE-Tq-XY1">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -2091,11 +1940,14 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wd-mD-T6s">
-                                <rect key="frame" x="261" y="29" width="46" height="46"/>
+                                <rect key="frame" x="261" y="28" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="V5d-UL-bMH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAy-Qp-2Gl">
                                 <rect key="frame" x="57" y="35" width="206" height="42"/>
@@ -2410,6 +2262,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Bqu-g7-Gr2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7a-5d-3LX">
                                 <rect key="frame" x="87" y="43" width="147" height="53"/>
@@ -2505,6 +2360,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="eR4-I2-NAY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1m0-ru-Oyj">
                                 <rect key="frame" x="87" y="46" width="147" height="53"/>
@@ -2683,6 +2541,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="XcL-uU-OcA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Women's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piT-DB-qbW">
                                 <rect key="frame" x="119" y="32" width="142" height="42"/>
@@ -2707,14 +2568,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QkA-Pn-RRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1317" y="18786"/>
+            <point key="canvasLocation" x="-1837" y="18474"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="hO7-yU-CZZ">
             <objects>
                 <tableViewController id="Max-Du-3fm" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Mkt-nX-UGe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="391"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -2815,7 +2676,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHK-ao-49e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1128" y="18977"/>
+            <point key="canvasLocation" x="-1984" y="19630"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="wxA-sr-Qch">
@@ -2856,7 +2717,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wem-BQ-Gmj" kind="modal" id="bB9-m1-Ghh"/>
+                                    <segue destination="wem-BQ-Gmj" kind="modal" modalTransitionStyle="crossDissolve" id="bB9-m1-Ghh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEI-xF-aNo">
@@ -2879,6 +2740,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Vyx-8R-rPi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNn-Bl-we7">
                                 <rect key="frame" x="134" y="32" width="139" height="42"/>
@@ -3469,6 +3333,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="tLw-Ez-LBU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiD-Rs-FyJ">
                                 <rect key="frame" x="57" y="32" width="206" height="42"/>
@@ -3561,6 +3428,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="K69-Et-e1S"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGO-XR-4hu">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -3714,6 +3584,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="l2c-eP-kWP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="184" translatesAutoresizingMaskIntoConstraints="NO" id="5Eu-6I-4xD">
                                 <rect key="frame" x="68" y="25" width="184" height="56"/>
@@ -3811,6 +3684,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="llJ-FL-hqI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIc-iN-Do9">
                                 <rect key="frame" x="57" y="32" width="206" height="42"/>
@@ -3839,7 +3715,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="No bio available." translatesAutoresizingMaskIntoConstraints="NO" id="SNP-1s-Je6">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="No bio available." translatesAutoresizingMaskIntoConstraints="NO" id="SNP-1s-Je6">
                                 <rect key="frame" x="10" y="231" width="301" height="249"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -3985,6 +3861,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="hcj-PY-J06"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhI-QY-XSy">
                                 <rect key="frame" x="56" y="35" width="206" height="42"/>
@@ -4164,6 +4043,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="BMc-al-BBS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehT-qt-FI9">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -4298,6 +4180,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="pWu-v8-0yP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPi-UN-2Cy">
                                 <rect key="frame" x="57" y="35" width="206" height="42"/>
@@ -4451,6 +4336,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="09c-Jw-G5Z"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8w-em-tU8">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -4612,6 +4500,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="F17-SI-mlh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riw-kA-IZt">
                                 <rect key="frame" x="87" y="43" width="147" height="53"/>
@@ -4707,6 +4598,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="epv-2N-YGQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfp-5O-DmQ">
                                 <rect key="frame" x="87" y="46" width="147" height="53"/>
@@ -4730,7 +4624,7 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="fgV-jH-DwN" customClass="CollectionImageViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="Ogk-sD-uMS" customClass="ImageCollection">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="397"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ojq-U2-Lw1">
                             <size key="itemSize" width="100" height="110"/>
@@ -4739,7 +4633,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <activityIndicatorView key="backgroundView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="GAt-83-Sh6">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="397"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
                         <cells>
@@ -4877,6 +4771,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="77N-hn-oe6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYb-3O-KzS">
                                 <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -5197,6 +5094,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="5x1-xc-6Vl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWX-Kd-DfY">
                                 <rect key="frame" x="57" y="32" width="206" height="42"/>
@@ -5289,6 +5189,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="i7E-WI-RJ7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vec-Eo-p9c">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -5442,6 +5345,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="bpV-8n-HgC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="184" translatesAutoresizingMaskIntoConstraints="NO" id="o5J-Zr-DLM">
                                 <rect key="frame" x="68" y="25" width="184" height="56"/>
@@ -5539,6 +5445,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="luj-B0-NT8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51X-Bm-sPj">
                                 <rect key="frame" x="57" y="32" width="206" height="42"/>
@@ -5567,7 +5476,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="No bio available." translatesAutoresizingMaskIntoConstraints="NO" id="nPo-Qv-6oe">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="No bio available." translatesAutoresizingMaskIntoConstraints="NO" id="nPo-Qv-6oe">
                                 <rect key="frame" x="10" y="231" width="301" height="249"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5713,6 +5622,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="okU-Cn-9uS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ya-gC-FAW">
                                 <rect key="frame" x="56" y="35" width="206" height="42"/>
@@ -5892,6 +5804,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="cd8-24-Lg2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzK-hO-rQA">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -6026,6 +5941,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="4mg-Ro-JKU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTg-11-cvK">
                                 <rect key="frame" x="57" y="35" width="206" height="42"/>
@@ -6179,6 +6097,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="duX-G2-Nto"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPj-zP-3XI">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -6284,7 +6205,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5U-aJ-f3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8610" y="17400"/>
+            <point key="canvasLocation" x="8632" y="17230"/>
         </scene>
         <!--Home Image View Controller-->
         <scene sceneID="ft5-rB-FPU">
@@ -6340,6 +6261,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="xuQ-eI-eCg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sda-Be-dVu">
                                 <rect key="frame" x="87" y="43" width="147" height="53"/>
@@ -6435,6 +6359,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="zT4-Ci-ck7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccr-4M-hXp">
                                 <rect key="frame" x="87" y="46" width="147" height="53"/>
@@ -6590,7 +6517,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dzH-9q-DAk" kind="modal" modalTransitionStyle="crossDissolve" id="am5-V4-dCJ"/>
+                                    <segue destination="wem-BQ-Gmj" kind="modal" modalTransitionStyle="crossDissolve" id="I6W-1I-rmH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfn-07-eAT">
@@ -6845,6 +6772,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="pyK-ff-Wdp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSs-Rb-AN3">
                                 <rect key="frame" x="57" y="26" width="206" height="42"/>
@@ -6885,7 +6815,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YC3-Rh-4a4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14" y="15118"/>
+            <point key="canvasLocation" x="-133" y="14934"/>
         </scene>
         <!--RosterTVC-->
         <scene sceneID="V91-n4-uy9">
@@ -7165,6 +7095,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Xb5-4J-BWq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocJ-z9-aat">
                                 <rect key="frame" x="57" y="32" width="206" height="42"/>
@@ -7257,6 +7190,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="K9P-sp-MF3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfP-8P-BCt">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -7410,6 +7346,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="GS0-ON-paV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="184" translatesAutoresizingMaskIntoConstraints="NO" id="wgU-5D-yok">
                                 <rect key="frame" x="68" y="25" width="184" height="56"/>
@@ -7507,6 +7446,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="xIk-rR-24c"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9L-Jl-r3Y">
                                 <rect key="frame" x="57" y="32" width="206" height="42"/>
@@ -7535,7 +7477,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="No bio available." translatesAutoresizingMaskIntoConstraints="NO" id="eEM-kS-kWp">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="No bio available." translatesAutoresizingMaskIntoConstraints="NO" id="eEM-kS-kWp">
                                 <rect key="frame" x="10" y="231" width="301" height="249"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -7681,6 +7623,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="ndS-lS-bk6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Li-Y7-eF1">
                                 <rect key="frame" x="56" y="35" width="206" height="42"/>
@@ -7860,6 +7805,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="dhM-l2-LHT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaJ-wm-uZH">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -7994,6 +7942,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Bwv-0Y-oVD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7im-1X-ffv">
                                 <rect key="frame" x="57" y="35" width="206" height="42"/>
@@ -8147,6 +8098,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Saq-06-UAe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQG-SN-bkQ">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -8308,6 +8262,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Tju-Ov-h0K"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37Y-dw-FDt">
                                 <rect key="frame" x="87" y="43" width="147" height="53"/>
@@ -8403,6 +8360,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="hSD-q0-okb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBL-LN-OyI">
                                 <rect key="frame" x="87" y="46" width="147" height="53"/>
@@ -8581,6 +8541,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="mvA-BP-qOf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Women's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWE-tA-bzy">
                                 <rect key="frame" x="114" y="32" width="139" height="42"/>
@@ -8661,6 +8624,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Isf-1A-rYp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdP-gd-MbK">
                                 <rect key="frame" x="57" y="26" width="206" height="42"/>
@@ -8763,7 +8729,7 @@
             <objects>
                 <tableViewController id="yBA-bf-EoE" customClass="TeamTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="uFP-Op-E5Z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="396"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -8981,6 +8947,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="RHP-Da-f6F"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XU2-kO-or5">
                                 <rect key="frame" x="57" y="32" width="206" height="42"/>
@@ -9073,6 +9042,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="ado-Qh-csb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZh-t2-zIQ">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -9226,6 +9198,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="bSg-DJ-C3A"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="184" translatesAutoresizingMaskIntoConstraints="NO" id="ihd-an-dut">
                                 <rect key="frame" x="68" y="25" width="184" height="56"/>
@@ -9323,6 +9298,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="NaM-yJ-ws8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d11-nU-l6Y">
                                 <rect key="frame" x="57" y="32" width="206" height="42"/>
@@ -9345,13 +9323,13 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="162" translatesAutoresizingMaskIntoConstraints="NO" id="5JF-8H-7nR">
-                                <rect key="frame" x="150" y="93" width="162" height="130"/>
+                                <rect key="frame" x="149" y="93" width="162" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="No bio available." translatesAutoresizingMaskIntoConstraints="NO" id="0oI-Tz-jsb">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="No bio available." translatesAutoresizingMaskIntoConstraints="NO" id="0oI-Tz-jsb">
                                 <rect key="frame" x="10" y="231" width="301" height="249"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -9497,6 +9475,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="FBv-A0-yS5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLy-du-Lx3">
                                 <rect key="frame" x="56" y="35" width="206" height="42"/>
@@ -9676,6 +9657,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="du2-v3-ocY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDz-eo-s2M">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -9810,6 +9794,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Xcd-Go-ROX"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLP-Jd-Z5t">
                                 <rect key="frame" x="57" y="35" width="206" height="42"/>
@@ -9963,6 +9950,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="tr0-uj-bFG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xq-Dd-q8s">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -10124,6 +10114,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="kJG-QQ-UL2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az1-8E-XJL">
                                 <rect key="frame" x="87" y="43" width="147" height="53"/>
@@ -10219,6 +10212,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="YAQ-Iw-MqT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pt-CM-pk6">
                                 <rect key="frame" x="87" y="46" width="147" height="53"/>
@@ -10242,7 +10238,7 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="zwL-C0-S9v" customClass="CollectionImageViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="CfJ-lh-9iL" customClass="ImageCollection">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="397"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="l0V-oS-Pxb">
                             <size key="itemSize" width="100" height="110"/>
@@ -10251,7 +10247,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <activityIndicatorView key="backgroundView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="QAJ-JD-4gh">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="397"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
                         <cells>
@@ -10397,6 +10393,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="a97-00-Yek"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Women's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czv-R7-cLP">
                                 <rect key="frame" x="118" y="32" width="139" height="42"/>
@@ -10428,7 +10427,7 @@
             <objects>
                 <tableViewController id="NmO-7I-9x2" customClass="MasterTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pul-Jf-NdG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="393"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.61345232660000004" alpha="1" colorSpace="calibratedWhite"/>
@@ -10853,7 +10852,7 @@
             <objects>
                 <tableViewController id="H86-sl-Kxe" customClass="MasterTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DX3-lw-Y1g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="393"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -11080,6 +11079,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="Hpl-rf-Y5o"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1c-tW-D1P">
                                 <rect key="frame" x="57" y="26" width="206" height="42"/>
@@ -11182,7 +11184,7 @@
             <objects>
                 <tableViewController id="WHd-d3-fJn" customClass="TeamTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="LET-oP-1eH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="396"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -11400,6 +11402,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="dsC-dY-MlK"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kr6-ie-B4q">
                                 <rect key="frame" x="57" y="32" width="206" height="42"/>
@@ -11492,6 +11497,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="tJc-r3-RLb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tF-z2-Y8m">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -11645,6 +11653,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="9bW-SO-KYx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="184" translatesAutoresizingMaskIntoConstraints="NO" id="9pt-Y8-VNM">
                                 <rect key="frame" x="68" y="25" width="184" height="56"/>
@@ -11742,6 +11753,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="c0C-25-7Tb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhe-jq-wcX">
                                 <rect key="frame" x="57" y="32" width="206" height="42"/>
@@ -11770,7 +11784,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="No bio available." translatesAutoresizingMaskIntoConstraints="NO" id="Hhl-Uw-nnj">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="No bio available." translatesAutoresizingMaskIntoConstraints="NO" id="Hhl-Uw-nnj">
                                 <rect key="frame" x="10" y="231" width="301" height="249"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -11916,6 +11930,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="ekB-Pw-hTK"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z58-R6-iRm">
                                 <rect key="frame" x="56" y="35" width="206" height="42"/>
@@ -11963,7 +11980,7 @@
             <objects>
                 <tableViewController id="I71-NV-2l4" customClass="ScheduleTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="117" sectionHeaderHeight="22" sectionFooterHeight="22" id="qhI-dt-qSC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="396"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -12095,6 +12112,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="d0k-la-4pf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXC-c1-L2c">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -12229,6 +12249,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="4oT-YE-Q6O"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiv-Jb-97z">
                                 <rect key="frame" x="57" y="35" width="206" height="42"/>
@@ -12382,6 +12405,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="RGO-Vb-CvM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c73-aQ-iDL">
                                 <rect key="frame" x="57" y="33" width="206" height="42"/>
@@ -12793,7 +12819,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="N1m-LM-e0h" kind="modal" id="Nd5-tb-UEp"/>
+                                    <segue destination="N1m-LM-e0h" kind="modal" modalTransitionStyle="crossDissolve" id="Nd5-tb-UEp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9v-Mf-hht">
@@ -12816,6 +12842,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="2oq-zc-m6e"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Women's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfD-qI-sWa">
                                 <rect key="frame" x="114" y="32" width="139" height="42"/>
@@ -12942,7 +12971,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BB4-5X-GPb" kind="modal" modalTransitionStyle="crossDissolve" id="fkJ-cn-wsT"/>
+                                    <segue destination="BB4-5X-GPb" kind="modal" id="gue-YB-rn7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnm-rB-DBA">
@@ -12965,6 +12994,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="89w-wN-Ujd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Recent Images" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="147" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-HE-LXH">
                                 <rect key="frame" x="87" y="32" width="147" height="53"/>
@@ -12981,7 +13013,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7PB-uX-B1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3171" y="15047"/>
+            <point key="canvasLocation" x="-3256" y="15268"/>
         </scene>
         <!--Images Collection Container View Controller-->
         <scene sceneID="S2F-fL-DF0">
@@ -13045,6 +13077,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="cvj-3m-Ggm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ger-yZ-CyA">
                                 <rect key="frame" x="87" y="44" width="147" height="53"/>
@@ -13061,7 +13096,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFf-O4-vvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2404" y="15013"/>
+            <point key="canvasLocation" x="-2654" y="14633"/>
         </scene>
         <!--Collection Image View Controller-->
         <scene sceneID="ZXj-TP-YxM">
@@ -13285,6 +13320,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="4cm-Sh-co2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfV-9O-V3L">
                                 <rect key="frame" x="122" y="34" width="119" height="42"/>
@@ -13309,7 +13347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEK-US-C6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2833" y="16189"/>
+            <point key="canvasLocation" x="-2627" y="16682"/>
         </scene>
         <!--News Story View Controller-->
         <scene sceneID="g3a-Ku-WIU">
@@ -13365,6 +13403,9 @@
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="psI-FW-T7z"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bowdoin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="184" translatesAutoresizingMaskIntoConstraints="NO" id="fCX-S5-jgc">
                                 <rect key="frame" x="68" y="17" width="184" height="56"/>
@@ -13378,7 +13419,7 @@
                                 <rect key="frame" x="107" y="93" width="109" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z5Y-rf-ZOa">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5Y-rf-ZOa">
                                 <rect key="frame" x="11" y="221" width="301" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -13676,7 +13717,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5Y-bw-zKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3738" y="18447"/>
+            <point key="canvasLocation" x="-3006" y="18209"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="Wqd-Ro-mbF">
@@ -13687,7 +13728,7 @@
                         <viewControllerLayoutGuide type="bottom" id="srK-Bu-M2D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XCb-tQ-jeX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sjj-hQ-64U">
@@ -13736,6 +13777,9 @@
                                         <state key="normal" image="FavsB.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="wCw-5i-AJd"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Nc-l6-AwU">
                                         <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -13754,11 +13798,11 @@
                                         <size key="shadowOffset" width="2" height="2"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MWaterpoloBack.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fdx-y6-s4k">
-                                        <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                        <rect key="frame" x="0.0" y="85" width="320" height="396"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zus-ud-H9U">
-                                        <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                        <rect key="frame" x="0.0" y="83" width="320" height="398"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
@@ -13771,10 +13815,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FeA-Fi-U7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4067" y="18292"/>
+            <point key="canvasLocation" x="-4167" y="17915"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="6a6-59-x7b">
@@ -14189,11 +14234,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Pms-cp-Ifq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S41-cZ-7j5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tag-SP-KiJ">
-                                <rect key="frame" x="0.0" y="85" width="320" height="483"/>
+                                <rect key="frame" x="0.0" y="83" width="320" height="397"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -14208,7 +14253,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzL-l4-2wK">
-                                <rect key="frame" x="11" y="28" width="46" height="46"/>
+                                <rect key="frame" x="12" y="28" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="HomeBearLogo.png">
@@ -14218,27 +14263,33 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BB4-5X-GPb" kind="modal" modalTransitionStyle="crossDissolve" id="5wC-pc-X9D"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfn-0h-YKk">
-                                <rect key="frame" x="0.0" y="81" width="320" height="4"/>
+                                <rect key="frame" x="0.0" y="83" width="320" height="4"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsS-on-RIK">
-                                <rect key="frame" x="128" y="20" width="64" height="62"/>
+                                <rect key="frame" x="128" y="22" width="64" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="HomeB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeJ-ES-ZAb">
-                                <rect key="frame" x="258" y="29" width="46" height="46"/>
+                                <rect key="frame" x="261" y="29" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="ccW-pA-grI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Club" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSE-1g-3BN">
                                 <rect key="frame" x="133" y="51" width="119" height="42"/>
@@ -14251,10 +14302,11 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghO-ic-Lam" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3376" y="18221"/>
+            <point key="canvasLocation" x="-3457" y="17076"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="97w-aM-ePF">
@@ -14265,7 +14317,7 @@
                         <viewControllerLayoutGuide type="bottom" id="meY-dG-cgp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nCE-eV-LwE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eaw-dK-ntb">
@@ -14309,11 +14361,14 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hn6-Xf-Wxk">
-                                        <rect key="frame" x="258" y="29" width="46" height="46"/>
+                                        <rect key="frame" x="254" y="29" width="46" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="FavsB.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="GuZ-Zr-OdV"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Women's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gs-FI-KNc">
                                         <rect key="frame" x="57" y="31" width="206" height="42"/>
@@ -14332,11 +14387,11 @@
                                         <size key="shadowOffset" width="2" height="2"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WWaterpoloBack.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="77k-pb-whL">
-                                        <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                        <rect key="frame" x="0.0" y="83" width="320" height="399"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AMU-Dq-6Qo">
-                                        <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                        <rect key="frame" x="0.0" y="83" width="320" height="398"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
@@ -14349,6 +14404,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJq-1I-kYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -14809,7 +14865,7 @@
                         <viewControllerLayoutGuide type="bottom" id="EwZ-mz-tJZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XZx-vU-aaf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veP-XN-4zM">
@@ -14820,7 +14876,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUO-ZJ-YKx">
-                                <rect key="frame" x="11" y="28" width="46" height="46"/>
+                                <rect key="frame" x="12" y="28" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="HomeBearLogo.png">
@@ -14835,28 +14891,31 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaP-6h-y8e">
-                                <rect key="frame" x="0.0" y="81" width="320" height="4"/>
+                                <rect key="frame" x="0.0" y="83" width="320" height="4"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jol-5b-vut">
-                                <rect key="frame" x="128" y="20" width="64" height="62"/>
+                                <rect key="frame" x="128" y="22" width="64" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="HomeB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vg-4q-TUZ">
-                                <rect key="frame" x="258" y="29" width="46" height="46"/>
+                                <rect key="frame" x="261" y="29" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="FavsB.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fOg-VK-dSd" kind="modal" modalTransitionStyle="crossDissolve" id="og8-KR-EIe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Men's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6Q-gp-Ozn">
-                                <rect key="frame" x="57" y="31" width="206" height="42"/>
+                                <rect key="frame" x="57" y="35" width="206" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -14864,7 +14923,7 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohb-Wg-kLb">
-                                <rect key="frame" x="57" y="51" width="206" height="42"/>
+                                <rect key="frame" x="57" y="52" width="206" height="42"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -14872,11 +14931,11 @@
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <imageView userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwz-ec-dme">
-                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="394"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TmV-fl-c9p">
-                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="394"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -14886,6 +14945,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="backgroundImage" destination="qwz-ec-dme" id="WPZ-eY-yCF"/>
                         <outlet property="teamNameLabel" destination="j6Q-gp-Ozn" id="HhM-4X-Nym"/>
@@ -14893,7 +14953,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YEV-wC-GRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3415" y="19059"/>
+            <point key="canvasLocation" x="-3529" y="18796"/>
         </scene>
         <!--ScheduleTVC-->
         <scene sceneID="eKb-yo-vvJ">
@@ -14978,6 +15038,206 @@
             </objects>
             <point key="canvasLocation" x="-2917" y="19231"/>
         </scene>
+        <!--ScoreboardTVC-->
+        <scene sceneID="Ktd-vC-Dbs">
+            <objects>
+                <tableViewController hidesBottomBarWhenPushed="YES" id="JqQ-XT-HFF" customClass="ScoreboardTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" id="a61-oG-EaE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="nsD-A9-9he">
+                            <rect key="frame" x="0.0" y="147" width="320" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ScoreboardCell" rowHeight="125" id="546-fD-1fj" customClass="ScoreboardCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="125"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="546-fD-1fj" id="Qif-jb-y6u">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDu-e8-jJe">
+                                            <rect key="frame" x="20" y="41" width="180" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="2" height="1"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIe-Jm-Sj2">
+                                            <rect key="frame" x="20" y="78" width="180" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="2" height="1"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJC-Mq-96E">
+                                            <rect key="frame" x="20" y="11" width="189" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="2" height="1"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRd-de-zFt">
+                                            <rect key="frame" x="208" y="41" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="2" height="1"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qf-Ts-vzY">
+                                            <rect key="frame" x="208" y="78" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="2" height="1"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZy-uS-liZ">
+                                            <rect key="frame" x="258" y="61" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="2" height="1"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yz2-LG-W8O">
+                                            <rect key="frame" x="217" y="11" width="83" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="2" height="1"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="date" destination="yz2-LG-W8O" id="EQu-7N-Ws5"/>
+                                    <outlet property="score1" destination="aRd-de-zFt" id="gW2-rA-9i7"/>
+                                    <outlet property="score2" destination="1qf-Ts-vzY" id="hxa-9Z-JOr"/>
+                                    <outlet property="sportLabel" destination="MJC-Mq-96E" id="tMG-nW-rK1"/>
+                                    <outlet property="status" destination="DZy-uS-liZ" id="j2a-Nv-dux"/>
+                                    <outlet property="team1" destination="kDu-e8-jJe" id="0em-L5-YeK"/>
+                                    <outlet property="team2" destination="BIe-Jm-Sj2" id="Jcf-c7-qJ9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JqQ-XT-HFF" id="T6C-iT-TPJ"/>
+                            <outlet property="delegate" destination="JqQ-XT-HFF" id="fKg-rf-PEW"/>
+                        </connections>
+                    </tableView>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="POT-Md-JUa">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                    <connections>
+                        <outlet property="load" destination="nsD-A9-9he" id="3ME-UA-eFg"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Lp-az-yst" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3707" y="15631"/>
+        </scene>
+        <!--Scoreboard View Controller-->
+        <scene sceneID="eTS-CI-HII">
+            <objects>
+                <viewController id="fOg-VK-dSd" customClass="ScoreboardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v1m-5g-aOo"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Oy-rw-Xja"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2NP-fw-JHY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Football Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jQK-xX-a5M">
+                                <rect key="frame" x="0.0" y="87" width="320" height="393"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wIy-eS-d8L">
+                                <rect key="frame" x="0.0" y="87" width="320" height="393"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="JqQ-XT-HFF" kind="embed" identifier="embedScoreboard" id="AYx-V0-waD"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQt-4n-K6O">
+                                <rect key="frame" x="162" y="25" width="158" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bK-mI-u4m">
+                                <rect key="frame" x="12" y="28" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="HomeBearLogo.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BB4-5X-GPb" kind="modal" id="Bew-Af-tQP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeR-Oa-ap6">
+                                <rect key="frame" x="0.0" y="83" width="320" height="4"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wP-W9-eIM">
+                                <rect key="frame" x="128" y="23" width="64" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="HomeB.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLn-uj-hh5">
+                                <rect key="frame" x="256" y="26" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="FavsB.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Scoreboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avD-fN-NQk">
+                                <rect key="frame" x="87" y="54" width="147" height="42"/>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DjV-78-yiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3395" y="14689"/>
+        </scene>
     </scenes>
     <resources>
         <image name="B Logo.png" width="420" height="500"/>
@@ -14997,6 +15257,7 @@
         <image name="Bowdoin_College_Quad_308x150.jpg" width="308" height="150"/>
         <image name="CreditsBackButton.png" width="81" height="74"/>
         <image name="FavsB.png" width="75" height="74"/>
+        <image name="Football Background.jpg" width="538" height="960"/>
         <image name="HomeB.png" width="150" height="147"/>
         <image name="HomeBearLogo.png" width="50" height="49"/>
         <image name="MCrewFinal.png" width="240" height="65"/>
@@ -15043,57 +15304,57 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="bMg-LO-Tj5"/>
-        <segue reference="8a7-Rw-dZw"/>
-        <segue reference="fcV-W1-zKz"/>
-        <segue reference="OJe-jU-apU"/>
-        <segue reference="Tcz-Pc-J25"/>
-        <segue reference="BTv-Fj-7Cw"/>
-        <segue reference="etQ-pB-zDh"/>
-        <segue reference="NQS-xj-y8C"/>
-        <segue reference="hjG-35-7YJ"/>
-        <segue reference="zdV-Ou-Nyd"/>
-        <segue reference="Y0X-Cd-s7J"/>
-        <segue reference="xhv-PC-JbX"/>
-        <segue reference="VMH-id-Awv"/>
-        <segue reference="X1Z-X9-nR9"/>
-        <segue reference="Yqa-ej-4FJ"/>
-        <segue reference="WzW-Fx-YAb"/>
-        <segue reference="lVo-Or-mQh"/>
-        <segue reference="kgi-Gs-2OP"/>
-        <segue reference="Co7-TU-2Jw"/>
-        <segue reference="Se8-KQ-8rP"/>
-        <segue reference="iEi-D8-ncV"/>
-        <segue reference="svC-ow-DxZ"/>
-        <segue reference="NGO-2B-Eqm"/>
-        <segue reference="am5-V4-dCJ"/>
-        <segue reference="9CO-yE-WMe"/>
-        <segue reference="NBW-kg-XMJ"/>
-        <segue reference="0We-Mh-R0G"/>
-        <segue reference="7bl-Mh-33k"/>
-        <segue reference="EZe-HM-7hy"/>
-        <segue reference="qSr-Yn-fRw"/>
-        <segue reference="dLD-xQ-wms"/>
-        <segue reference="0nl-rO-EAw"/>
-        <segue reference="I9W-qY-aLV"/>
-        <segue reference="pOp-5W-QEh"/>
-        <segue reference="OXB-mx-ZO2"/>
-        <segue reference="ibd-jf-qIV"/>
-        <segue reference="NLP-6r-W9s"/>
         <segue reference="D3T-v9-ibI"/>
-        <segue reference="Ihn-fO-mBv"/>
+        <segue reference="dLq-Cn-t6G"/>
+        <segue reference="YRW-i3-vp0"/>
+        <segue reference="guu-f7-Zk7"/>
+        <segue reference="vrP-8k-jZd"/>
+        <segue reference="oZu-Wy-TVi"/>
+        <segue reference="y4s-7V-pr7"/>
+        <segue reference="gue-YB-rn7"/>
+        <segue reference="rGa-8L-4Fj"/>
+        <segue reference="ibd-jf-qIV"/>
+        <segue reference="BTv-Fj-7Cw"/>
+        <segue reference="OXB-mx-ZO2"/>
         <segue reference="OY5-zZ-gmZ"/>
-        <segue reference="XQ6-jl-p2M"/>
-        <segue reference="imq-58-9ZA"/>
-        <segue reference="wWf-T5-nw7"/>
+        <segue reference="OJe-jU-apU"/>
+        <segue reference="fcV-W1-zKz"/>
+        <segue reference="eR4-I2-NAY"/>
         <segue reference="veW-xz-fQE"/>
         <segue reference="LM6-MD-qzG"/>
-        <segue reference="tNX-7c-BEI"/>
-        <segue reference="2Ah-hB-Gqf"/>
-        <segue reference="pAR-o6-iUH"/>
-        <segue reference="Tua-2w-zaR"/>
+        <segue reference="1ls-SD-eRk"/>
+        <segue reference="Nd5-tb-UEp"/>
+        <segue reference="exR-Kw-6iQ"/>
+        <segue reference="J1q-4g-lNb"/>
+        <segue reference="EZe-HM-7hy"/>
+        <segue reference="7bl-Mh-33k"/>
         <segue reference="aap-aM-r42"/>
+        <segue reference="I5P-he-cDd"/>
+        <segue reference="j6r-SI-3vY"/>
+        <segue reference="Ic5-NG-cbi"/>
+        <segue reference="e14-hw-QKr"/>
+        <segue reference="PFf-Pq-Ddv"/>
+        <segue reference="Co7-TU-2Jw"/>
+        <segue reference="I9W-qY-aLV"/>
+        <segue reference="leq-hC-mxl"/>
+        <segue reference="CZh-DD-M6m"/>
+        <segue reference="XQ6-jl-p2M"/>
+        <segue reference="bB9-m1-Ghh"/>
+        <segue reference="Usi-ux-IlJ"/>
+        <segue reference="hXn-Om-5vV"/>
+        <segue reference="yOS-lk-PYb"/>
+        <segue reference="nBX-A9-3aw"/>
+        <segue reference="BbH-Pp-VJf"/>
+        <segue reference="Ihn-fO-mBv"/>
         <segue reference="fK4-oc-khc"/>
+        <segue reference="NLP-6r-W9s"/>
+        <segue reference="pAR-o6-iUH"/>
+        <segue reference="imq-58-9ZA"/>
+        <segue reference="wWf-T5-nw7"/>
+        <segue reference="Tua-2w-zaR"/>
         <segue reference="5Zk-fH-pAg"/>
+        <segue reference="2Ah-hB-Gqf"/>
+        <segue reference="tNX-7c-BEI"/>
+        <segue reference="A6r-9z-oKp"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -99,16 +99,7 @@
         numberOfElements++;
         [facility setObject:facilityName forKey:@"Name"];
     }
-    //Gets the initial writing paragraph
-    
-    
-/*
-    [scanner scanUpToString:@"<p" intoString:nil];
-    [scanner scanUpToString:@">" intoString:nil];
-    [scanner scanUpToString:@"</p>" intoString:&writingForFacilitiesPre];
-    writingForFacilitiesPre2 = [writingForFacilitiesPre substringFromIndex: dumbVariable];
-    [writingForFacilities appendString: writingForFacilitiesPre2];
-    */
+
     
     
     [scanner scanUpToString:@"<p" intoString:nil];

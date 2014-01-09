@@ -17,9 +17,6 @@
 @property (nonatomic) BOOL *longForm, *haveRoster, *haveNews, *haveCoaches, *haveAlbums;
 
 
-
-
-
 @property (strong, nonatomic) IBOutlet UILabel *teamNameLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *teamBackgroundImage;
 

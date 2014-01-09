@@ -23,13 +23,13 @@
     
     NSError *error;
     NSData *dataFromURL = [NSURLConnection sendSynchronousRequest:request returningResponse:NULL error:&error];
-    
+    /**
     if(error){
         NSLog(@"THERE WAS A PROBLEM");
         NSLog(@"Error is -> %@",[error localizedDescription]);
         
     }
-    
+    */
     //get the data from the web page
     NSString * htmlFromURL = [[NSString alloc] initWithData:dataFromURL encoding:NSASCIIStringEncoding];
     
@@ -63,7 +63,7 @@
     [miniScanner scanUpToString:@"navbar-secondary" intoString:nil];
     [miniScanner scanUpToString:@"<div id=\"links-container\">" intoString:nil];
     [miniScanner scanUpToString:@"</div>" intoString:&linksString];
-        /**
+    /**
      ********************************
      *            Roster            *
      ********************************

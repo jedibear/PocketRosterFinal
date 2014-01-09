@@ -2,7 +2,7 @@
 //  HomeImageViewController.m
 //  Pocket Roster
 //
-//  Created by James P. Garvey on 11/18/13.
+//  Created by Ryan Kulesza on 11/18/13.
 //  Copyright (c) 2013 Pocket Roster. All rights reserved.
 //
 
