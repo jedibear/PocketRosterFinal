@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CF6568CF171782B700AE84AC"
                BuildableName = "Pocket Roster.app"
-               BlueprintName = "Pocket Roster"
-               ReferencedContainer = "container:Pocket Roster.xcodeproj">
+               BlueprintName = "Bowdoin Pocket Roster"
+               ReferencedContainer = "container:Bowdoin Pocket Roster.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CF6568F6171782B700AE84AC"
                BuildableName = "Pocket RosterTests.octest"
-               BlueprintName = "Pocket RosterTests"
-               ReferencedContainer = "container:Pocket Roster.xcodeproj">
+               BlueprintName = "Bowdoin Pocket RosterTests"
+               ReferencedContainer = "container:Bowdoin Pocket Roster.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CF6568CF171782B700AE84AC"
             BuildableName = "Pocket Roster.app"
-            BlueprintName = "Pocket Roster"
-            ReferencedContainer = "container:Pocket Roster.xcodeproj">
+            BlueprintName = "Bowdoin Pocket Roster"
+            ReferencedContainer = "container:Bowdoin Pocket Roster.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CF6568CF171782B700AE84AC"
             BuildableName = "Pocket Roster.app"
-            BlueprintName = "Pocket Roster"
-            ReferencedContainer = "container:Pocket Roster.xcodeproj">
+            BlueprintName = "Bowdoin Pocket Roster"
+            ReferencedContainer = "container:Bowdoin Pocket Roster.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CF6568CF171782B700AE84AC"
             BuildableName = "Pocket Roster.app"
-            BlueprintName = "Pocket Roster"
-            ReferencedContainer = "container:Pocket Roster.xcodeproj">
+            BlueprintName = "Bowdoin Pocket Roster"
+            ReferencedContainer = "container:Bowdoin Pocket Roster.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

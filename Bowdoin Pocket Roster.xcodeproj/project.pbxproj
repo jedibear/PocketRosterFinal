@@ -474,11 +474,11 @@
 		CF2CE16C186130A7003E0CDB /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		CF2CE17C18615EDF003E0CDB /* iPhone4Board.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone4Board.storyboard; sourceTree = "<group>"; };
 		CF56488E174096690067FBBB /* NewsfeedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewsfeedIcon.png; sourceTree = "<group>"; };
-		CF6568D0171782B700AE84AC /* Pocket Roster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Roster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6568D0171782B700AE84AC /* Bowdoin Pocket Roster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bowdoin Pocket Roster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6568D4171782B700AE84AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CF6568D6171782B700AE84AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CF6568D8171782B700AE84AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CF6568DC171782B700AE84AC /* Pocket Roster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pocket Roster-Info.plist"; sourceTree = "<group>"; };
+		CF6568DC171782B700AE84AC /* Bowdoin Pocket Roster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bowdoin Pocket Roster-Info.plist"; sourceTree = "<group>"; };
 		CF6568DE171782B700AE84AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF6568E0171782B700AE84AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF6568E2171782B700AE84AC /* Pocket Roster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pocket Roster-Prefix.pch"; sourceTree = "<group>"; };
@@ -486,7 +486,7 @@
 		CF6568E8171782B700AE84AC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CF6568EA171782B700AE84AC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CF6568ED171782B700AE84AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CF6568F7171782B700AE84AC /* Pocket RosterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pocket RosterTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6568F7171782B700AE84AC /* Bowdoin Pocket RosterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bowdoin Pocket RosterTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6568F8171782B700AE84AC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CF656900171782B700AE84AC /* Pocket RosterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pocket RosterTests-Info.plist"; sourceTree = "<group>"; };
 		CF656902171782B700AE84AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -896,8 +896,8 @@
 		CF6568D1171782B700AE84AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF6568D0171782B700AE84AC /* Pocket Roster.app */,
-				CF6568F7171782B700AE84AC /* Pocket RosterTests.octest */,
+				CF6568D0171782B700AE84AC /* Bowdoin Pocket Roster.app */,
+				CF6568F7171782B700AE84AC /* Bowdoin Pocket RosterTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -948,7 +948,7 @@
 		CF6568DB171782B700AE84AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CF6568DC171782B700AE84AC /* Pocket Roster-Info.plist */,
+				CF6568DC171782B700AE84AC /* Bowdoin Pocket Roster-Info.plist */,
 				CF6568DD171782B700AE84AC /* InfoPlist.strings */,
 				CF6568E0171782B700AE84AC /* main.m */,
 				CF6568E2171782B700AE84AC /* Pocket Roster-Prefix.pch */,
@@ -1109,9 +1109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CF6568CF171782B700AE84AC /* Pocket Roster */ = {
+		CF6568CF171782B700AE84AC /* Bowdoin Pocket Roster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF656909171782B700AE84AC /* Build configuration list for PBXNativeTarget "Pocket Roster" */;
+			buildConfigurationList = CF656909171782B700AE84AC /* Build configuration list for PBXNativeTarget "Bowdoin Pocket Roster" */;
 			buildPhases = (
 				CF6568CC171782B700AE84AC /* Sources */,
 				CF6568CD171782B700AE84AC /* Frameworks */,
@@ -1121,14 +1121,14 @@
 			);
 			dependencies = (
 			);
-			name = "Pocket Roster";
+			name = "Bowdoin Pocket Roster";
 			productName = "Pocket Roster";
-			productReference = CF6568D0171782B700AE84AC /* Pocket Roster.app */;
+			productReference = CF6568D0171782B700AE84AC /* Bowdoin Pocket Roster.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CF6568F6171782B700AE84AC /* Pocket RosterTests */ = {
+		CF6568F6171782B700AE84AC /* Bowdoin Pocket RosterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF65690C171782B700AE84AC /* Build configuration list for PBXNativeTarget "Pocket RosterTests" */;
+			buildConfigurationList = CF65690C171782B700AE84AC /* Build configuration list for PBXNativeTarget "Bowdoin Pocket RosterTests" */;
 			buildPhases = (
 				CF6568F2171782B700AE84AC /* Sources */,
 				CF6568F3171782B700AE84AC /* Frameworks */,
@@ -1140,9 +1140,9 @@
 			dependencies = (
 				CF6568FD171782B700AE84AC /* PBXTargetDependency */,
 			);
-			name = "Pocket RosterTests";
+			name = "Bowdoin Pocket RosterTests";
 			productName = "Pocket RosterTests";
-			productReference = CF6568F7171782B700AE84AC /* Pocket RosterTests.octest */;
+			productReference = CF6568F7171782B700AE84AC /* Bowdoin Pocket RosterTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -1160,7 +1160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CF6568CA171782B700AE84AC /* Build configuration list for PBXProject "Pocket Roster" */;
+			buildConfigurationList = CF6568CA171782B700AE84AC /* Build configuration list for PBXProject "Bowdoin Pocket Roster" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1172,8 +1172,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CF6568CF171782B700AE84AC /* Pocket Roster */,
-				CF6568F6171782B700AE84AC /* Pocket RosterTests */,
+				CF6568CF171782B700AE84AC /* Bowdoin Pocket Roster */,
+				CF6568F6171782B700AE84AC /* Bowdoin Pocket RosterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1501,7 +1501,7 @@
 /* Begin PBXTargetDependency section */
 		CF6568FD171782B700AE84AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CF6568CF171782B700AE84AC /* Pocket Roster */;
+			target = CF6568CF171782B700AE84AC /* Bowdoin Pocket Roster */;
 			targetProxy = CF6568FC171782B700AE84AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1590,10 +1590,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pocket Roster/Pocket Roster-Prefix.pch";
-				INFOPLIST_FILE = "Pocket Roster/Pocket Roster-Info.plist";
+				GCC_PREFIX_HEADER = "Pocket Roster/Bowdoin Pocket Roster-Prefix.pch";
+				INFOPLIST_FILE = "Pocket Roster/Bowdoin Pocket Roster-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bowdoin Pocket Roster";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -1606,10 +1606,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pocket Roster/Pocket Roster-Prefix.pch";
-				INFOPLIST_FILE = "Pocket Roster/Pocket Roster-Info.plist";
+				GCC_PREFIX_HEADER = "Pocket Roster/Bowdoin Pocket Roster-Prefix.pch";
+				INFOPLIST_FILE = "Pocket Roster/Bowdoin Pocket Roster-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bowdoin Pocket Roster";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -1627,7 +1627,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pocket Roster/Pocket Roster-Prefix.pch";
 				INFOPLIST_FILE = "Pocket RosterTests/Pocket RosterTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bowdoin Pocket RosterTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1644,7 +1644,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pocket Roster/Pocket Roster-Prefix.pch";
 				INFOPLIST_FILE = "Pocket RosterTests/Pocket RosterTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bowdoin Pocket RosterTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -1653,7 +1653,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CF6568CA171782B700AE84AC /* Build configuration list for PBXProject "Pocket Roster" */ = {
+		CF6568CA171782B700AE84AC /* Build configuration list for PBXProject "Bowdoin Pocket Roster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF656907171782B700AE84AC /* Debug */,
@@ -1662,7 +1662,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF656909171782B700AE84AC /* Build configuration list for PBXNativeTarget "Pocket Roster" */ = {
+		CF656909171782B700AE84AC /* Build configuration list for PBXNativeTarget "Bowdoin Pocket Roster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF65690A171782B700AE84AC /* Debug */,
@@ -1671,7 +1671,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF65690C171782B700AE84AC /* Build configuration list for PBXNativeTarget "Pocket RosterTests" */ = {
+		CF65690C171782B700AE84AC /* Build configuration list for PBXNativeTarget "Bowdoin Pocket RosterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF65690D171782B700AE84AC /* Debug */,
