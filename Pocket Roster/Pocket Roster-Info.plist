@@ -19,7 +19,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>Pocket-Roster.${PocketRoster:rfc1034identifier}</string>
+	<string>Bowdoin-Pocket-Roster.</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
